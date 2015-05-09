@@ -1,0 +1,76 @@
+ <%
+--[[
+    Info    路由器固件升级
+]]--
+
+local XQSysUtil = require "xiaoqiang.util.XQSysUtil"
+local ver = require("xiaoqiang.XQVersion").webVersion
+local XQSysUtil = require("xiaoqiang.util.XQSysUtil")
+local romVersion = XQSysUtil.getRomVersion()
+local request_uri = luci.http.getenv("REQUEST_URI")
+%>
+<%include('web/inc/head')%>
+<title>小米路由器</title>
+<link rel="stylesheet" href="<%=resource%>/web/css/page.set.upgread.css?v=<%=ver%>"/>
+</head>
+<body>
+<!-- upgread -->
+<div class="mod-setting-panel">
+    <div class="hd">
+        <h3>升级检测</h3>
+    </div>
+    <div class="bd">
+        <div class="mod-set-upgread">
+            <p id="vChecking">当前版本<em class="em"><%=romVersion%></em>，<span id="checkRet">正在检测更新，请稍候...</span></p>
+            <p class="hasnewver" style="display:none;">发现新版本，<em class="em"><!-- <span id="nowVer">1.1.1（内测版）</span> -->升级包大小为<em class="em"><span id="romSize"></span></em></em>，请点击立即更新到最新版本。</p>
+            <div id="dldProgress" class="progress-box" style="display:none;">
+                <div class="progress" style="width:365px;">
+                    <div class="bar" id="persentWidth" style="width: 0%;"></div>
+                </div>
+                <span class="progress-text">已更新<b id="persent" class="value">0</b>%</span>
+            </div>
+            <p class="hasnewver" style="display:none;"><a href="#" class="btn btn-primary" id="btnUpgread"><span>立即更新</span></a></p>
+            <div class="logs" id="changelog" style="display:none;">
+                <iframe name="setting" id="changelogUrl" style="width:100%; border:0;background:none;" src="about:blank" frameborder="0" height="500" scrolling="yes"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /upgread -->
+<%include('web/inc/g.js.base')%>
+<script>
+//check ota
+$(global_event).on('upgrade:check', function(evt, data){
+    var request_date = {};
+    $.getJSON('<%=luci.dispatcher.build_url("api","xqsystem","check_rom_update")%>',{},function(rsp)
+    {
+        if(rsp.code == 0){
+            if(rsp.needUpdate == 1){
+                // $("#nowVer").html(rsp.version);
+                $("#romSize").html(byteFormat(rsp.fileSize));
+                $('#vChecking').hide();
+                $(".hasnewver").show();
+            } else {
+                $("#checkRet").html('你的版本是最新的，无需升级。');
+                $(".hasnewver").hide();
+            }
+
+            if (rsp.changelogUrl && rsp.changelogUrl != ""){
+                $('#changelogUrl').attr('src', rsp.changelogUrl);
+                $('#changelogUrl').load(function(){
+                    $('#changelog').show();
+                });
+            }
+        } else {
+            $("#checkRet").html('检查失败，网络繁忙请刷新页面重试。');
+        }
+    })
+});
+<%include("web/inc/upgrade.js")%>
+$(function(){
+    $(global_event).trigger('upgrade:check');
+    $(global_event).trigger('upgrade:initEvent');
+});
+</script>
+</body>
+</html>

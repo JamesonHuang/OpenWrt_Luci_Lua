@@ -1,0 +1,134 @@
+<%
+--[[
+	Info	MAC 地址绑定
+]]--
+
+local remote_addr = luci.http.getenv("REMOTE_ADDR")
+local mac = string.upper(luci.sys.net.ip4mac(remote_addr))
+local ver = require("xiaoqiang.XQVersion").webVersion
+local request_uri = luci.http.getenv("REQUEST_URI")
+%>
+<%include('web/inc/head')%>
+<title>小米路由器</title>
+<link rel="stylesheet" href="<%=resource%>/web/css/page.set.default.css?v=<%=ver%>" type="text/css"/>
+</head>
+<body>
+<div class="mod-setting-panel">
+	<div class="hd">
+		<h3>MAC地址克隆</h3>
+	</div>
+	<div class="bd">
+		<div class="mod-set-macclone">
+			<p style="margin-bottom:20px;">你路由器当前使用的MAC地址是：<span id="currMac">获取中...</span>，<br>如需克隆MAC地址，请做如下操作：</p>
+			<form action="/" class="form form-horizontal" name="macClone" id="macClone">
+				<div class="item">
+					<label class="k">克隆方式：</label>
+					<span class="v">
+						<select name="macType" id="macType" class="beautify" style="width:290px;">
+							<option value="default">恢复出厂MAC地址</option>
+							<option value="ip">克隆当前设备的MAC地址: <%=mac%> </option>
+							<option value="diy">手动输入MAC地址</option>
+						</select>
+					</span>
+					<em class="t"></em>
+				</div>
+				<div class="item" id="mac_input_box" style="display:none;">
+					<label class="k">MAC地址：</label>
+					<span class="v"><input type="text" name="mac" class="text input-large"></span>
+					<em class="t"></em>
+				</div>
+				<div class="item item-control">
+					<button type="submit" class="btn btn-primary" id="btnSubmit"><span><%:保存%></span></button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<%include('web/inc/g.js.base')%>
+<script>
+$(global_event).on('mac:wait', function(evt, data){
+	var root = document.getElementById('macClone');
+	$('input, select, button', root).prop("disabled", true);
+	$('#btnSubmit').html('<span>处理中...</span>')
+});
+
+$(global_event).on('mac:done', function(evt, data){
+	var root = document.getElementById('macClone');
+	$('input, select, button', root).prop("disabled", false);
+	$('#btnSubmit').html('<span>保存</span>')
+});
+
+$(global_event).on('mac:get', function(evt, data){
+	var request_date = {};
+	$.getJSON("<%=luci.dispatcher.build_url("api", "xqnetwork","wan_info")%>",request_date,function(rsp)
+	{
+		if(rsp.code == 0){
+			if (rsp.info.mac && rsp.info.mac != ""){
+				$('#currMac').text(rsp.info.mac.toUpperCase());
+			}
+		} else {
+			$('#currMac').text('获取失败，原因'+rsp.msg);
+		}
+	});
+});
+
+$(global_event).on('mac:set', function(evt, data){
+	var request_date = data.request_date;
+	$.getJSON("<%=luci.dispatcher.build_url("api", "xqnetwork","mac_clone")%>",request_date,function(rsp){
+		if(rsp.code == 0){
+			window.top.art.dialog({title:false, width: 200, content:"修改成功."}).lock().time(4*1000);
+			setTimeout(function(){
+				window.top.location.reload(1);
+			}, 4 * 1000);
+		} else {
+			window.top.art.dialog({title:false,content:rsp.msg}).lock().time(4*1000);
+		}
+		$(global_event).trigger('mac:done');
+	});
+});
+
+$(global_event).on('mac:bindEvent', function(evt, data){
+	$("select[name='macType']").change(function(){
+		console.log('change');
+		var val = $(this).val();
+		if(val == "diy"){
+			$("#mac_input_box").show();
+			$("input[name='mac']").val("");
+		} else if (val == "ip") {
+			$("#mac_input_box").hide();
+			$("input[name='mac']").val("<%=mac%>");
+		} else if (val == "default") {
+			$("#mac_input_box").hide();
+			$("input[name='mac']").val("");
+		}
+	});
+
+	$('#macClone').submit(function(e){
+		e.preventDefault();
+		var validator = true;
+		var formName = this.name;
+		var mac;
+		var request_date = {};
+		if ($("select[name='macType']").val() == "diy"){
+			validator = FormValidator.checkAll(formName, [{
+				name: 'mac',
+				display :'MAC地址',
+				rules: 'required|valid_mac'
+			}]);
+		}
+		if (validator) {
+			mac = $.trim($("input[name='mac']").val());
+			request_date = {"mac":mac.toUpperCase()};
+			$(global_event).trigger('mac:wait');
+			$(global_event).trigger('mac:set', {request_date : request_date});
+		}
+	});
+});
+
+$(document).ready(function(){
+	$(global_event).trigger('mac:get');
+	$(global_event).trigger('mac:bindEvent');
+});
+</script>
+</body>
+</html>

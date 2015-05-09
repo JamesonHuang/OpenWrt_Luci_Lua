@@ -1,0 +1,143 @@
+<%
+--[[
+	Info	路由器权限
+]]--
+
+local ver = require("xiaoqiang.XQVersion").webVersion
+local request_uri = luci.http.getenv("REQUEST_URI")
+%>
+<%include('web/inc/head')%>
+<title>小米路由器</title>
+<link rel="stylesheet" href="<%=resource%>/web/css/page.set.passport.css?v=<%=ver%>"/>
+</head>
+<body>
+<!-- upgread -->
+<div class="mod-setting-panel">
+	<div class="hd">
+		<h3>修改管理密码</h3>
+	</div>
+	<div class="bd">
+		<div class="mod-set-passport">
+			<form action="<%=luci.dispatcher.build_url("api", "xqsystem","set_name_password")%>" class="form form-horizontal" method="post" name="passport" id="passport">
+				<!-- <div class="item">
+					<label for="pwd" class="k">路由器名称：</label>
+					<span class="v" id="inputRouterName"></span>
+					<em class="t"></em>
+				</div> -->
+				<input type="hidden" name="routerName" value="小米路由器">
+				<div class="item" id="oldpwdbox">
+					<label for="pwd" class="k">原密码：</label>
+					<span class="v"><input type="password" name="oldPwd" id="old_password" class="text input-large"></span>
+					<em class="t"></em>
+				</div>
+				<div class="item">
+					<label for="pwd" class="k">新密码：</label>
+					<span class="v"><input type="password" name="newPwd" id="password" class="text input-large"></span>
+					<em class="t"></em>
+				</div>
+				<div class="item">
+					<label for="pwd" class="k">确认密码：</label>
+					<span class="v"><input type="password" name="newPwd2" id="password2" class="text input-large"></span>
+					<em class="t"></em>
+				</div>
+				<div class="item item-control">
+					<button type="submit" id="btnSetPwd" class="btn btn-primary btn-large"><span>确认</span></button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<%include('web/inc/g.js.base')%>
+<script>
+$(global_event).on('passport:succ', function(evt, data){
+	$.lightalert().setContent('恭喜你，修改成功！').show();
+	setTimeout(function(){
+		self.location.reload(1);
+	}, 1.5 * 1000);
+});
+
+$(global_event).on('passport:fail', function(evt, data){
+	if (data.code == 1552) {
+		$('#oldpwdbox').addClass('item-err');
+		$('#oldpwdbox').find('.t').text(data.msg).show();
+	}else{
+		$.lightalert().setContent(data.msg).show();
+	}
+});
+
+$(global_event).on('passport:set', function(evt, data){
+	$('#passport').on('submit', function(e){
+		e.preventDefault();
+		var formName = this.name;
+		var validator = FormValidator.checkAll(formName, [
+		{
+			name: 'oldPwd',
+			display :'原密码',
+			rules: 'required'
+		}, {
+			name: 'newPwd',
+			display :'新密码',
+			rules: 'required|not_matches[oldPwd]|min_length[8]|max_length[63]'
+		}, {
+			name: 'newPwd2',
+			display :'确认密码',
+			rules: 'required|matches[newPwd]'
+		}]);
+		if (validator) {
+			var request_date = {},
+				_oldpwd = $('#old_password').val(),
+				_newpwd = $('#password').val();
+
+			global_event.crypto.init();
+			var oldPwd = global_event.crypto.oldPwd(_oldpwd);
+			var newPwd = global_event.crypto.newPwd(_oldpwd, _newpwd);
+			var nonce = global_event.crypto.nonce;
+
+			request_date.oldPwd = oldPwd;
+			request_date.newPwd = newPwd;
+			request_date.nonce = nonce;
+
+			console.log(_oldpwd, _newpwd, oldPwd, newPwd, request_date);
+
+			$('#btnSetPwd').prop('disabled', true).find('span').html('修改中...');
+			//改密码
+			$.ajax({
+				url: this.action,
+				dataType: 'json',
+				timeout: 5000, //3 second timeout
+				type: "POST",
+				data: request_date,
+				success: function(rsp,item){
+					if(rsp.code == 0){
+						$(global_event).trigger('passport:succ');
+					} else {
+						$(global_event).trigger('passport:fail', rsp);
+					}
+					$('#btnSetPwd').prop('disabled', false).find('span').html('确认');
+				}
+			});
+		}
+	});
+});
+
+$(global_event).on('passport:get', function(evt, data){
+	$.getJSON('<%=luci.dispatcher.build_url("api", "xqsystem","router_name")%>',{},function(rsp){
+		if ( rsp.code == 0 ) {
+			router_name = StringH.encode4HtmlValue(rsp.routerName);
+		} else {
+			router_name = StringH.encode4HtmlValue('小强路由器');
+		}
+		$(global_event).trigger('passport:rander', {routerName: router_name});
+	});
+});
+
+$(global_event).on('passport:rander', function(evt, data){
+	$('#inputRouterName').html( StringH.tmpl( $('#tmplRouterName').html(), {"name": data.routerName} ) );
+});
+
+$(function(){
+	// $(global_event).trigger('passport:get');
+	$(global_event).trigger('passport:set');
+});
+
+</script>

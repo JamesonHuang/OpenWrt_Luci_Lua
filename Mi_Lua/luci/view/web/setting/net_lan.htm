@@ -1,0 +1,310 @@
+<%
+--[[
+	Info	lan 口设置
+]]--
+
+local ver = require("xiaoqiang.XQVersion").webVersion
+local request_uri = luci.http.getenv("REQUEST_URI")
+%>
+<%include('web/inc/head')%>
+<title>小米路由器</title>
+<link rel="stylesheet" href="<%=resource%>/web/css/page.set.default.css?v=<%=ver%>" type="text/css"/>
+<style>
+.mod-set-net-dhcp .item-set {
+	display: none;
+}
+</style>
+</head>
+<body>
+<div class="mod-setting-panel">
+	<div class="hd">
+		<h3>内网设置</h3>
+	</div>
+	<div class="bd">
+		<div class="mod-set-ipaddress">
+			<form name="ipaddr" id="ipaddr" action="/" class="form form-horizontal">
+				<input type="hidden" name="old_ip">
+				<div class="item">
+					<label class="k">局域网IP地址：</label>
+					<span class="v"><input type="text" name="ip" class="text input-large" /></span>
+					<em class="t"></em>
+				</div>
+				<div class="item item-control">
+					<button type="submit" id="btnSubmit" class="btn btn-primary"><span>保存</span></button>
+				</div>
+			</form>
+			<div class="hr"></div>
+		</div>
+		<div class="mod-set-net-dhcp">
+			<div class="form form-horizontal">
+				<div class="item">
+					<label class="k">DHCP服务：</label>
+					<span class="v"><a href="#" class="btn-offon btn-off" id="openDHCP"></a></span>
+					<em class="t"></em>
+				</div>
+				<form method="post" name="netDhcp" id="netDhcp" action="<%=luci.dispatcher.build_url("api", "xqnetwork","set_lan_dhcp")%>">
+					<input type="hidden" name="limit">
+					<input type="hidden" name="leasetime"/>
+					<input type="hidden" name="ignore"/>
+					<div class="item item-set">
+						<label class="k">IP分配范围：</label>
+						<span class="v">
+							<span class="ip-split">192.168.1</span>. <input type="text" class="text input-mini" name="start" style="width:30px;"> - <input type="text" class="text input-mini" name="end" style="width:30px;">
+						</span>
+						<em class="t"></em>
+					</div>
+					<div class="item item-set">
+						<label class="k">租用时间：</label>
+						<span class="v">
+							<input type="text" value="12" name="leasetime_num" class="text input-mini" style="width:50px;">
+							<select name="leasetime_unit" class="beautify" style="width:120px">
+								<option value="m">分钟</option>
+								<option value="h">小时</option>
+							</select>
+						</span>
+						<em class="t"></em>
+					</div>
+					<div class="item item-control">
+						<button class="btn btn-primary" type="submit" id="btnSubmit"><span>保存</span></button>
+					</div>
+				</form>
+			</div>
+		</div>
+		</div>
+	</div>
+</div>
+<%include('web/inc/g.js.base')%>
+<script>
+function ipSplit(ip){
+	var ipSplit=[];
+	var strs = ip.split(".");
+	for (var i=0;i<strs.length-1;i++ )
+    {
+		ipSplit.push(strs[i]);
+    }
+    return ipSplit.join('.');
+}
+
+$(global_event).on('dhcp:wait', function(evt, data){
+	$('#netDhcp input, #netDhcp select').prop('disabled' , true);
+	$('#netDhcp #btnSubmit').find('span').text('处理中...').end().prop('disabled' , true);
+});
+
+$(global_event).on('dhcp:done', function(evt, data){
+	$('#netDhcp input, #netDhcp select').prop('disabled' , false);
+	$('#netDhcp #btnSubmit').find('span').text('保存').end().prop('disabled' , false);
+});
+
+$(global_event).on('dhcp:get', function(evt, data){
+
+	$.getJSON('<%=luci.dispatcher.build_url("api", "xqnetwork","lan_dhcp")%>',{},function(rsp){
+		if(rsp.code == 0){
+			var info = rsp.info;
+			var ip = info.lanIp[0].ip;
+			var dhcp_ignore = info.ignore;
+			var end = parseInt(info.start)+parseInt(info.limit)-1;
+			$('.ip-split').html(ipSplit(ip));
+			$("input[name='start']").val(info.start);
+			$("input[name='limit']").val(info.limit);
+			$("input[name='end']").val(end);
+
+			$("input[name='leasetime_num']").val(info.leasetimeNum);
+			$("select[name='leasetime_unit']").val(info.leasetimeUnit);
+			$("input[name='leasetime']").val(info.leasetime);
+			$("input[name=ignore]").val(dhcp_ignore);
+
+			global_event.dhcpoldval = $("#netDhcp").serialize();
+
+			if (dhcp_ignore == "1"){
+				//close
+				$(global_event).trigger('dhcp:switch', {'cmd': 'close'});
+			} else {
+				$(global_event).trigger('dhcp:switch', {'cmd': 'open'});
+			}
+
+			window.setTimeout(function(){
+				var leasetime_unit = $("select[name='leasetime_unit']")[0];
+				var sltIdx = leasetime_unit.selectedIndex;
+				$(leasetime_unit).next('.dummy').val(leasetime_unit.options[sltIdx].text);
+			}, 50);
+
+		}else{
+			window.top.art.dialog({title:false,content:rsp.msg}).lock().time(4*1000);
+		}
+	});
+});
+
+$(global_event).on('dhcp:switch', function(evt, data){
+
+	var btnClass = data.cmd == 'open' ? 'btn-on' : 'btn-off';
+	var $ignore = $('input[name=ignore]');
+	$('#openDHCP')[0].className = 'btn-offon ' + btnClass;
+	if (data.cmd == 'open') {
+		$ignore.val(0);
+		$('#netDhcp .item-set').fadeIn();
+	}else{
+		$('#netDhcp .item-set').fadeOut();
+		$ignore.val(1);
+	}
+
+});
+
+$(global_event).on('dhcp:initEvent', function(evt, data){
+
+	$('#openDHCP').click(function(e){
+		e.preventDefault();
+		var cmd = $(this).hasClass('btn-on') ? 'close' : 'open';
+		$(global_event).trigger('dhcp:switch', {'cmd': cmd});
+	});
+
+	$('#netDhcp').submit(function(e){
+		e.preventDefault();
+		var formName = this.name;
+		var action = this.action;
+		var validator = FormValidator.checkAll(formName, [
+			{
+				name: 'start',
+				display :'分配范围起始值',
+				rules: 'required|is_natural|greater_than[1]|less_than[255]'
+			},
+			{
+				name: 'end',
+				display :'分配范围结束值',
+				rules: 'required|is_natural|greater_than_el[start]'
+			},
+			{
+				name: 'leasetime_num',
+				display :'租用时间',
+				rules: 'required|is_natural_no_zero'
+			}
+		]);
+
+		if ($('input[name=ignore]').val() == '1') {
+			validator = true;
+		}
+
+		if (validator) {
+			var leasetime_num = $("input[name='leasetime_num']").val();
+			var leasetime_unit = $("select[name='leasetime_unit']").val();
+			var leasetime = leasetime_num + leasetime_unit;
+			var end = parseInt($("input[name='end']").val(), 10);
+			var start = parseInt($("input[name='start']").val(), 10);
+			var limit = end - start + 1;
+			$("input[name='leasetime']").val(leasetime)
+			$("input[name='limit']").val(limit);
+			var request_date =  $("#netDhcp").serialize();
+			console.log(request_date, global_event.dhcpoldval);
+			var ischange = request_date == global_event.dhcpoldval;
+			if (ischange) {
+				$.lightalert().setContent('你都没改变，提交什么啊？').show();
+				return;
+			}
+			$(global_event).trigger('dhcp:wait');
+			$(global_event).trigger('dhcp:set', {request_date : request_date});
+		}
+	});
+
+});
+
+$(global_event).on('dhcp:set', function(evt, data){
+	var request_date = data.request_date;
+	$.post('<%=luci.dispatcher.build_url("api", "xqnetwork","set_lan_dhcp")%>',request_date,function(rsp){
+		var rsp = $.parseJSON(rsp);
+		if (rsp.code == 0) {
+			window.top.art.dialog({
+				title:false,
+				content:'设置成功'
+			}).lock().time(1.5*1000);
+			setTimeout(function(){
+				window.top.location.reload(1);
+			}, 1.5 * 1000);
+		}else{
+			window.top.art.dialog({
+				title:false,
+				content:'设置失败，' + rsp.msg
+			}).lock().time(1.5*1000);
+		}
+		$(global_event).trigger('dhcp:done');
+	})
+});
+
+$(global_event).on('ipaddr:get', function(evt, data){
+	$.getJSON('<%=luci.dispatcher.build_url("api", "xqnetwork","lan_info")%>', {}, function(rsp){
+		if(rsp.code == 0){
+			var ip = rsp.info.ipv4[0]['ip'];
+			$("input[name='ip']").val(ip);
+			$("input[name='old_ip']").val(ip);
+		}else{
+			window.parent.art.dialog({title:false,content:rsp.msg}).lock().time(4*1000);
+		}
+	});
+});
+
+$(global_event).on('ipaddr:wait', function(evt, data){
+	var root = data.root;
+	$('#ipaddr input', root).prop('disabled' , true);
+	$('#btnSubmit', root).find('span').text('处理中...').end().prop('disabled' , true);
+});
+
+$(global_event).on('ipaddr:done', function(evt, data){
+	var root = data.root;
+	$('#ipaddr input', root).prop('disabled' , false);
+	$('#btnSubmit', root).find('span').text('保存').end().prop('disabled' , false);
+});
+
+$(global_event).on('ipaddr:initEvent', function(evt, data){
+
+	$('#ipaddr').on('submit', function(e){
+		e.preventDefault();
+		var formName = this.name;
+		var validator = FormValidator.checkAll(formName, [
+		{
+			name: 'ip',
+			display :'IP地址',
+			rules: 'required|valid_ip|callback_no_change'
+		}]);
+
+		if ( validator ) {
+			var old_ip = $.trim($('input[name=old_ip]').val());
+			var ip = $.trim($('input[name=ip]').val());
+
+			if (ip != old_ip) {
+				var request_date = $(this).serializeArray();
+				$(global_event).trigger('ipaddr:wait', {root: $('#ipaddr')});
+				$(global_event).trigger('ipaddr:set', {'request_date':request_date});
+			}else{
+				window.parent.art.dialog({title:false,content:'IP地址未发生改变，请重新输入。'}).lock().time(4*1000);
+				setTimeout(function(){
+					$('input[name=ip]').focus();
+				}, 4*1000);
+			}
+		}
+	});
+});
+
+$(global_event).on('ipaddr:set', function(evt, data){
+	var request_date = data.request_date;
+	$.getJSON('<%=luci.dispatcher.build_url("api", "xqnetwork","set_lan_ip")%>',request_date,function(rsp){
+		if(rsp.code == 0){
+			var ip = $("input[name='ip']").val();
+			$(global_event).trigger('reboot:wait', {
+				action:'修改 LAN 口参数成功！重启路由器',
+				lanIp: ip,
+				refresh : true
+			});
+		} else {
+			window.parent.art.dialog({title:false,content:rsp.msg}).lock().time(4*1000);
+		}
+		$(global_event).trigger('ipaddr:done',{root: $('#ipaddr')});
+	})
+});
+
+$(function(){
+	$(global_event).trigger('ipaddr:get');
+	$(global_event).trigger('ipaddr:initEvent');
+	$(global_event).trigger('dhcp:get');
+	$(global_event).trigger('dhcp:initEvent');
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,409 @@
+<%
+--[[
+	Info	DDNS
+]]--
+
+local ver = require("xiaoqiang.XQVersion").webVersion
+local request_uri = luci.http.getenv("REQUEST_URI")
+%>
+<%include('web/inc/head')%>
+<title>小米路由器</title>
+<link rel="stylesheet" href="<%=resource%>/web/css/page.set.ddns.css?v=<%=ver%>"/>
+</head>
+<body>
+<!-- upgread -->
+<div class="mod-setting-panel">
+	<div class="hd">
+		<h3>DDNS</h3>
+		<a href="#" class="btn-offon btn-off" id="btnddns"></a>
+	</div>
+	<div class="bd">
+		<div class="mod-set-ddns">
+			<div class="section" style="display:none;">
+				<form action="<%=luci.dispatcher.build_url("api", "xqnetwork", "add_server")%>" class="form form-horizontal" method="post" name="ddns" id="ddns">
+					<div class="item">
+						<label for="ddnsservice" class="k">服务提供商：</label>
+						<span class="v">
+							<select id="ddnsservice" name="ddnsservice" class="beautify vpntype" style="width:185px;">
+								<option value="2" selected="selected">花生壳（oray.com）</option>
+								<option value="3">公云（3322.org）</option>
+								<option value="4">Dyndns.com</option>
+								<option value="1">No-ip.com</option>
+							</select>
+						</span>
+						<em class="t"></em>
+					</div>
+					<div class="item">
+						<label for="username" class="k">用户名：</label>
+						<span class="v"><input type="text" name="username" id="username" class="text input-large"></span>
+						<em class="t"></em>
+					</div>
+					<div class="item">
+						<label for="password" class="k">密码：</label>
+						<span class="v"><input type="text" name="password" id="password" class="text input-large"></span>
+						<em class="t"></em>
+					</div>
+					<div class="item">
+						<label for="domain" class="k">主机名称：</label>
+						<span class="v"><input type="text" name="domain" id="domain" class="text input-large"></span>
+						<em class="t"></em>
+					</div>
+					<div class="item">
+						<label for="statuscheck" class="k">状态检查：</label>
+						<span class="v"><input type="text" name="statuscheck" id="statuscheck" class="text input-large"></span>
+						<em class="t" id="tipminute">分钟</em>
+					</div>
+					<div class="item">
+						<label for="forceupdate" class="k">强制更新：</label>
+						<span class="v"><input type="text" name="forceupdate" id="forceupdate" class="text input-large"></span>
+						<em class="t" id="tiphour">小时</em>
+					</div>
+					<div class="item item-control">
+						<button type="submit" id="btnAdd" class="btn btn-primary btn-large"><span>添加</span></button>
+					</div>
+				</form>
+			</div>
+			<div class="section" style="display:none;">
+				<h4>服务列表：</h4>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>主机名称</th>
+							<th width="128">最近更新</th>
+							<th width="46">状态</th>
+							<th width="150">操作</th>
+						</tr>
+					</thead>
+					<tbody id="serviceTbody">
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+<%include('web/inc/g.js.base')%>
+<script type="tmpl/html" id="tmplService">
+<tr data-service-id="{$id}" {if($enabled == 1)}data-enabled = "1"{/if}>
+	<td>{$domain}</td>
+	<td class="con">{$lastupdate}</td>
+	<td class="con">{if($enabled == 1)}已启用{else}未启用{/if}</td>
+	<td>{if($enabled == 1)}<a href="#" class="close">关闭</a>{else}<a href="#" class="open">启用</a>{/if}<a href="#" class="forceupdate">强制更新</a><a href="#" class="del">删除</a></td>
+</tr>
+</script>
+<script>
+var modelDDNS = (function(){
+	function ddnsSwitch(){
+		var btnddns = $('#btnddns');
+		btnddns.on('click', function(e){
+			e.preventDefault();
+			var st = $(this).hasClass('btn-on');
+			var self = this;
+			if( st ){
+				//close
+				$.ajax({
+					url: '<%=luci.dispatcher.build_url("api", "xqnetwork", "ddns_switch")%>',
+					type: 'GET',
+					dataType: 'json',
+					data: {
+						on: 0
+					},
+					success: function(res){
+						if(res.code == 0){
+							self.className = 'btn-offon btn-off';
+							// disableUI();
+							$('.mod-set-ddns .section').hide();
+						}else{
+							window.top.$.dialog({
+								'title': false,
+								'content': res.msg,
+								'fixed': true
+							}).time(3 * 1000);
+						}
+					}
+				});
+			}else{
+				//open
+				$.ajax({
+					url: '<%=luci.dispatcher.build_url("api", "xqnetwork", "ddns_switch")%>',
+					type: 'GET',
+					dataType: 'json',
+					data: {
+						on: 1
+					},
+					success: function(res){
+						if(res.code == 0){
+							self.className = 'btn-offon btn-on';
+							// enableUI();
+							$('.mod-set-ddns .section').show();
+						}else{
+							window.top.$.dialog({
+								'title': false,
+								'content': res.msg,
+								'fixed': true
+							}).time(3 * 1000);
+						}
+					}
+				});
+			}
+		});
+	}
+	function addDdns(e){
+		e.preventDefault();
+		if( $('#btnAdd').hasClass('btn-danger') ){
+			return;
+		}
+		var formName = 'ddns';
+		var validator = FormValidator.checkAll(formName, [
+			{
+				name: 'username',
+				display: '用户名',
+				rules: 'required'
+			},{
+				name: 'password',
+				display: '密码',
+				rules: 'required'
+			},{
+				name: 'domain',
+				display: '主机名称',
+				rules: 'required'
+			},{
+				name: 'statuscheck',
+				display: '状态检查的时间间隔',
+				rules: 'required|is_natural_no_zero'
+			},{
+				name: 'forceupdate',
+				display: '强制更新的时间间隔',
+				rules: 'required|is_natural_no_zero'
+			}
+		]);
+		if( validator ){
+			//
+			$('#btnAdd').removeClass('btn-primary').prop('disabled', true).find('span').text('保存中...');
+			var usernamevalue = $('#username').val(),
+				passwordvalue = $('#password').val(),
+				checkintervalvalue = $('#statuscheck').val(),
+				forceintervalvalue = $('#forceupdate').val(),
+				domainvalue = $('#domain').val(),
+				idvalue = $('#ddnsservice').val();
+			$.ajax({
+				url: $('#'+formName).attr('action'),
+				type: 'GET',
+				data: {username: usernamevalue, password: passwordvalue, checkinterval: checkintervalvalue, forceinterval: forceintervalvalue, domain: domainvalue, enable: 1, id: idvalue},
+				dataType: 'json',
+				success: function(res){
+					var msg;
+					if(res.code == 0){
+						msg = '添加成功';
+						$('#tipminute').html('分钟').show();
+						$('#tiphour').html('小时').show();
+						$('#ddns .item input.text').val('');
+						//成功后去掉验证表单插件添加的blur事件，点击提交时会自动再次绑定
+						$('#ddns').find('input:not(".dummy")').off('blur');
+						getDDNS();
+					}else{
+						msg = res.msg;
+					}
+					window.top.$.dialog({
+						'title': false,
+						'content': msg,
+						'fixed': true
+					}).time(3 * 1000);
+					$('#btnAdd').addClass('btn-primary').prop('disabled', false).find('span').text('添加');
+				}
+			});
+		}
+	}
+	function doClose(e){
+		e.preventDefault();
+		var tr = $(this).closest('tr');
+		var id = tr.attr('data-service-id');
+		$.ajax({
+			url: '<%=luci.dispatcher.build_url("api", "xqnetwork", "server_switch")%>',
+			type: 'GET',
+			dataType: 'json',
+			data: {
+				id: id,
+				on: 0
+			},
+			success: function(res){
+				if(res.code == 0){
+					window.top.$.dialog({
+						'title': false,
+						'content': '关闭成功',
+						'fixed': true
+					}).time(3 * 1000);
+					getDDNS();
+				}else{
+					window.top.$.dialog({
+						'title': false,
+						'content': res.msg,
+						'fixed': true
+					}).time(3 * 1000);
+				}
+			}
+		});
+	}
+	function doOpen(e){
+		e.preventDefault();
+		var tr = $(this).closest('tr');
+		var id = tr.attr('data-service-id');
+		$.ajax({
+			url: '<%=luci.dispatcher.build_url("api", "xqnetwork", "server_switch")%>',
+			type: 'GET',
+			dataType: 'json',
+			data: {
+				id: id,
+				on: 1
+			},
+			success: function(res){
+				if(res.code == 0){
+					window.top.$.dialog({
+						'title': false,
+						'content': '启用成功',
+						'fixed': true
+					}).time(3 * 1000);
+					setTimeout(function(){
+						getDDNS();
+					}, 1000);
+				}else{
+					window.top.$.dialog({
+						'title': false,
+						'content': res.msg,
+						'fixed': true
+					}).time(3 * 1000);
+				}
+			}
+		});
+	}
+	function doForceUpdate(e){
+		e.preventDefault();
+		var tr = $(this).closest('tr');
+		if( tr.attr('data-enabled') == 1 ){
+			$.ajax({
+				url: '<%=luci.dispatcher.build_url("api", "xqnetwork", "ddns_reload")%>',
+				type: 'GET',
+				dataType: 'json',
+				success: function(res){
+					if(res.code == 0){
+						window.top.$.dialog({
+							'title': false,
+							'content': '更新成功',
+							'fixed': true
+						}).time(3 * 1000);
+						getDDNS();
+					}else{
+						window.top.$.dialog({
+							'title': false,
+							'content': res.msg,
+							'fixed': true
+						}).time(3 * 1000);
+					}
+				}
+			});
+		}else{
+			window.top.$.dialog({
+				'title': false,
+				'content': '未启动无法强制更新',
+				'fixed': true
+			}).time(3 * 1000);
+		}
+	}
+	function doDel(e){
+		e.preventDefault();
+		var tr = $(this).closest('tr');
+		var id = tr.attr('data-service-id');
+		$.ajax({
+			url: '<%=luci.dispatcher.build_url("api", "xqnetwork", "del_server")%>',
+			type: 'GET',
+			dataType: 'json',
+			data: {id: id},
+			success: function(res){
+				if(res.code == 0){
+					getDDNS();
+					// tr.remove();
+				}else{
+					window.top.$.dialog({
+						'title': false,
+						'content': res.msg,
+						'fixed': true
+					}).time(3 * 1000);
+				}
+			}
+		});
+	}
+	// 20140618150929 ==> 06/18/2014&nbsp;&nbsp;15:09
+	function formatTime(str){
+        if(!str){
+            return '暂无更新';
+        }
+		var format = "";
+		var year = str.substr(0, 4);
+		var month = str.substr(4, 2);
+		var date = str.substr(6, 2);
+		var hour = str.substr(8, 2);
+		var minute = str.substr(10, 2);
+		var second = str.substr(12, 2);
+		format = month + '/' + date + '/' + year + '&nbsp;&nbsp;' + hour + ':' + minute;
+		return format;
+	}
+	// function disableUI(){
+	// 	$('#btnAdd').removeClass('btn-primary').addClass('btn-danger');
+	// }
+	// function enableUI(){
+	// 	$('#btnAdd').removeClass('btn-danger').addClass('btn-primary');
+	// }
+	function getDDNS(){
+		$.ajax({
+			url: '<%=luci.dispatcher.build_url("api", "xqnetwork", "ddns")%>',
+			type: 'GET',
+			dataType: 'json',
+			success: function(res){
+				console.log(res);
+				var tpl = $('#tmplService').html();
+				if(res.code == 0){
+					var list = res.list;
+					var trarr = [];
+					if($.isArray(list) && list.length > 0){
+						for(var i = 0, len = list.length; i < len; i++){
+							var tr = StringH.tmpl(tpl, {
+								domain:StringH.encode4Html(list[i].domain),
+								enabled: list[i].enabled,
+								id: list[i].id,
+								lastupdate: formatTime(list[i].lastupdate)
+							});
+							trarr.push(tr);
+						}
+						$('#serviceTbody').html(trarr.join(''));
+					}else{
+						$('#serviceTbody').html('<tr><td colspan="4">还没有服务添加进来</td></tr>');
+					}
+				}
+				if(res.on == 0){
+					$('#btnddns')[0].className = 'btn-offon btn-off';
+					$('.mod-set-ddns .section').hide();
+				}
+				if(res.on == 1){
+					$('#btnddns')[0].className = 'btn-offon btn-on';
+					$('.mod-set-ddns .section').show();
+				}
+			}
+		});
+	}
+	return {
+		init:function(){
+			getDDNS();
+			ddnsSwitch();
+
+			$('#btnAdd').on('click', addDdns);
+			$('#ddns').on('submit', addDdns);
+			$('body').delegate('.close', 'click', doClose);
+			$('body').delegate('.open', 'click', doOpen);
+			$('body').delegate('.forceupdate', 'click', doForceUpdate);
+			$('body').delegate('.del', 'click', doDel);
+		}
+	};
+})();
+$(function(){
+	modelDDNS.init();
+});
+</script>

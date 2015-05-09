@@ -1,0 +1,161 @@
+<%
+    local XQVersion = require("xiaoqiang.XQVersion")
+    local XQSysUtil = require ("xiaoqiang.util.XQSysUtil")
+    local XQLanWanUtil = require("xiaoqiang.util.XQLanWanUtil")
+    local router_name = XQSysUtil.getRouterName() or "小米路由器"
+    local isBinded = (XQSysUtil.getPassportBindInfo() and 'true') or 'false'
+%>
+<script type="tmpl/html" id="tmplLogin">
+<ul>
+    <li>
+        <img class="img-circle" src="{$icon}" alt="{$nickname}"><span id="router_name">{$nickname}</span>&nbsp;&nbsp;
+    </li>
+    <li><a class="logout" href="<%=luci.dispatcher.build_url("web","logout")%>">退出</a></li>
+    <li class="div-line">|</li>
+    <li><a id="downloadclient" href="#downloadclient">下载客户端</a></li>
+    <li class="div-line">|</li>
+    <li><b><a target="_blank" href="http://www1.miwifi.com">访问官网</a></b></li>
+</ul>
+</script>
+<script>
+//是否绑定全局变量
+global_event.isBinded = <%=isBinded%>;
+$(global_event).on('getLogininfo', function(evt, data){
+    var psp = global_event.pspGet();
+    console.log(psp);
+    var uuid = psp.uuid;
+    var token = psp.token;
+    var logtype = psp.logtype;
+    var tplDb;
+    var router_name = '<%=router_name%>';
+    var showLoginbar = function(tplDb){
+        var tpl = $('#tmplLogin').html();
+        var randerRes = StringH.tmpl(tpl, tplDb);
+        $('.mod-user-nav').html(randerRes);
+    };
+    router_name = StringH.encode4Html(router_name);
+    if (logtype == 1 && global_event.isBinded) {
+        $.getJSON('<%=luci.dispatcher.build_url("api", "xqpassport", "binded")%>', {} ,function(rsp){
+            if (rsp.code == 0 && rsp.bind == 1) {
+                var face = '<%=resource%>/web/img/tmp/face.png';
+                tplDb = {
+                    'icon' : rsp.info.miliaoIcon == '' ? face : rsp.info.miliaoIcon,
+                    'nickname' : rsp.info.aliasNick == '' ? rsp.info.userId : StringH.encode4Html(rsp.info.aliasNick),
+                    'logouttype' : "1"
+                };
+                showLoginbar(tplDb);
+            }
+        });
+    }else{
+        tplDb = {
+            'icon' : '<%=resource%>/web/img/tmp/face_rt_m.png',
+            'nickname' : router_name,
+            'logouttype' : "2"
+        };
+        showLoginbar(tplDb);
+    }
+});
+
+$(global_event).on('init:bindxiaomi', function(evt, data){
+    var mustbind = data.mustbind,
+        dlgContent = $('#xiaomibind').html();
+    art.dialog({
+        title : '绑定小米账号',
+        content : dlgContent,
+        beforeunload: function () {
+            var dialog = this;
+            if (mustbind) {
+                window.location.href = '<%=luci.dispatcher.build_url("web", "home")%>';
+            }
+        }
+    }).lock();
+
+    $('body').delegate('#xiaomipsp', 'submit', function(e){
+        e.preventDefault();
+        var frm = this.name;
+        var url = '<%=luci.dispatcher.build_url("api", "xqpassport","login")%>';
+        var btnText = $('#btnBindXiaomi span').html();
+        var validator = FormValidator.checkAll(frm, [{
+                name: 'uuid',
+                display :'小米账号',
+                rules: 'required'
+            },{
+                name: 'password',
+                display :'密码',
+                rules: 'required'
+            }]);
+        if (validator) {
+
+            var pwd = $.trim($('#xmpassword').val()),
+                data = {
+                'uuid': $.trim($('#xmuuid').val()),
+                'password': hex_md5(pwd),
+                'encrypt': Base64.encode(pwd)
+            };
+            $('#btnBindXiaomi').prop('disabled', true).find('span').html('登录中...');
+            $.ajax({
+                type:'post',
+                url: url,
+                data:data,
+                dataType : 'json',
+                success : function(rsp){
+                    if (rsp.code == 0) {
+                        $('#btnBindXiaomi').find('span').html('绑定中...');
+                        $.getJSON('<%=luci.dispatcher.build_url("api", "xqpassport", "rigister")%>',{uuid:rsp.uuid}, function(rsp){
+                            if (rsp.code == 0) {
+                                $('#btnBindXiaomi').find('span').html('绑定成功');
+                                window.location.reload();
+                            }else{
+                                $('#btnBindXiaomi').prop('disabled', false).find('span').html(btnText);
+                                window.top.art.dialog({
+                                    'title':'绑定小米账号',
+                                    'content':'绑定失败，系统繁忙，请重试。'
+                                }).lock().time(1.5*1000);
+                            }
+                        });
+                    }else{
+                        $('#btnBindXiaomi').prop('disabled', false).find('span').html(btnText);
+                        window.top.art.dialog({
+                            'title':'绑定小米账号',
+                            'content':'账号绑定失败，请检查用户名和密码是否正确。'
+                        }).lock().time(1.5*1000);
+                    }
+                }
+            });
+        }
+    });
+});
+$(global_event).on('init:needbind', function(evt, data){
+    var mustbind = global_event.mustBind || false;
+    if (global_event.isBinded === false) {
+        if (mustbind) {
+            $(global_event).trigger('init:bindxiaomi', {mustbind:mustbind});
+        }
+    }
+});
+
+$(function(){
+    //检测绑定状态
+    // $(global_event).trigger('init:needbind');
+    //延迟显示用户信息
+    window.setTimeout(function(){
+        $(global_event).trigger('getLogininfo');
+    }, 800);
+
+    $('body').delegate('#feedback', 'mousedown', function(e){
+        console.log('feedback');
+        setTimeout(function(){
+        var request_date = {};
+            $.getJSON('<%=luci.dispatcher.build_url("api", "xqsystem","upload_log")%>',request_date,function(rsp)
+            {
+                console.log('upload_log',rsp);
+            });
+        }, 40);
+    });
+    //nav
+    if (typeof(navCurrent) !== "undefined") {
+        $('#nav li').removeClass('active');
+        $('#nav').find(navCurrent).addClass('active');
+    }
+});
+</script>

@@ -1,0 +1,324 @@
+<%
+--[[
+	Info	wifi 基本设置
+]]--
+local ver = require("xiaoqiang.XQVersion").webVersion
+local wifiUtil = require("xiaoqiang.util.XQWifiUtil")
+local wifiIndex = tonumber(luci.http.formvalue("wifi_device"))
+if not wifiIndex then
+    wifiIndex = 1
+end
+local wifi_status = wifiUtil.getWifiStatus(wifiIndex).up
+%>
+<%include('web/inc/head')%>
+<title>小米路由器</title>
+<link rel="stylesheet" href="<%=resource%>/web/css/panel.wifi.css?v=<%=ver%>" type="text/css"/>
+</head>
+<body>
+<div class="panel-wifi">
+	<div class="hd">
+		<p id="noti_box" class="alert alert-info">开启关闭WIFI，设置WIFI名称，密码等</p>
+	</div>
+	<div class="bd">
+		<div class="form form-horizontal">
+			<div class="item">
+				<label class="k">WIFI开关：</label>
+				<span class="v"><a href="#" class="btn-offon btn-off" id="openWifi"></a></span>
+				<em class="t"></em>
+			</div>
+			<div id="form"></div>
+		</div>
+	</div>
+</div>
+<%include('web/inc/g.js.base')%>
+<script type="tmpl/text" id="tmplForm">
+<form action="/" name="wifiSet" id="wifiSet">
+	<input type="hidden" name="device" value="{$device}">
+	<input type="hidden" name="wifiIndex" value="{$wifiIndex}">
+	<input type="hidden" name="encryption" value="{$encryption}">
+	<input type="hidden" name="hidden" value="0">
+	<div class="item item-setting">
+		<label class="k">WIFI名称：</label>
+		<span class="v"><input type="text" name="ssid" value="{$ssid}" class="text input-large" autocomplete="off"></span>
+		<em class="t"></em>
+	</div>
+	<div class="item item-setting">
+		<label class="k">WIFI密码：</label>
+		<span class="v">
+			<input type="password" name="pwd" id="input_password1" value="{$password}" class="text input-large">
+			<input type="text" name="pwd_show" id="input_password2" value="{$password}" class="text input-large" style="display:none;">
+		</span>
+		<em class="t"></em>
+	</div>
+	<div class="item item-controls item-setting">
+		<input type="checkbox" id="pwdshow" value="true" class="checkbox"><label for="pwdshow">显示密码</label>
+	</div>
+	<div class="item item-controls item-setting">
+		<button type="submit" class="btn btn-primary" id="submit_btn"><span>保存</span></button><button id="close_box" class="btn"><span>取消</span></button>
+	</div>
+</form>
+</script>
+<script>
+$(global_event).on('wifi:init', function(evt, data){
+	var wifiIndex = '<%=wifiIndex%>';
+	var wifi_status = '<%=wifi_status%>';
+	var switch_b = $("#openWifi");
+
+	var wifiInfo = {
+		wifiIndex : wifiIndex,
+		wifi_status : wifi_status,
+		switch_b : switch_b
+	};
+
+	global_event.wifi = wifiInfo;
+
+	if(wifi_status=='1'){
+		//wifi已开启
+		$(global_event).trigger('wifi:statusGet',{wifiIndex: wifiIndex});
+	} else {
+		//wifi未开启
+		$("#noti_box").html('无线网络未启动');
+		switch_b[0].className = 'btn-offon btn-off';
+	}
+
+});
+
+$(global_event).on('wifi:statusGet', function(evt, data){
+	var request_date = {"wifiIndex": data.wifiIndex};
+	var wifiIndex = data.wifiIndex;
+	var switch_b = global_event.wifi.switch_b;
+	$.getJSON('<%=luci.dispatcher.build_url("api", "xqnetwork","wifi_detail")%>', request_date ,function(rsp) {
+		if(rsp.code == 0){
+			var info = rsp.info;
+			var encryption = info.encryption;
+			var password = info.password;
+			if(info.encryption == "mixed-psk+aes" || info.encryption == "mixed-psk"){
+				encryption = "mixed-psk";
+			}else{
+				password = '';
+			}
+			var tmpl = $('#tmplForm').html();
+			var domForm = StringH.tmpl(tmpl, {
+				ssid: info.ssid,
+				password : password,
+				device : info.device,
+				encryption : "mixed-psk",
+				// hidden : info.hidden,
+				wifiIndex : wifiIndex
+			});
+			console.log(domForm);
+			$('#form').html(domForm);
+
+			$('select[name="encryption"]').change(function(e){
+				if(this.value == 'none'){
+					$('#password_box').hide();
+				}else{
+					$('#password_box').show();
+				}
+			});
+			$('#input_password2').blur(function(){
+				$("#input_password1").val($("#input_password2").val());
+			});
+
+			switch_b[0].className = 'btn-offon btn-on';
+			if (info.password == "" || !info.password){
+				$("#noti_box")[0].className = 'alert';
+				$("#noti_box").html('无线网络未设置密码，有被他人盗用的风险，请设置密码。');
+			}
+		}  else {
+			$("#noti_box").html(rsp.msg);
+		}
+	});
+});
+
+$(global_event).on('wifi:bindEvent', function(evt, data){
+
+	$('body').delegate('.btn-on', 'click', function(e){
+		e.preventDefault();
+		$(global_event).trigger('wifi:close');
+	});
+
+	$('body').delegate('.btn-off', 'click', function(e){
+		e.preventDefault();
+		$(global_event).trigger('wifi:open');
+	});
+
+	$('body').delegate('#wifiSet', 'submit', function(e){
+		var frm = this.name;
+		var validator = FormValidator.checkAll(frm, [{
+			    name: 'pwd',
+			    display :'WIFI密码',
+			    rules: 'required|alpha_dash|min_length[8]|max_length[63]'
+			},
+			{
+			    name: 'ssid',
+			    display :'WIFI名称',
+			    rules: 'required|alpha_dash|max_length[32]'
+			}]);
+		if (!validator) {
+			return false;
+		}else{
+			var request_date =  $(this).serialize();
+			global_event.request_date = request_date;
+			$(global_event).trigger('wifi:modify');
+			return false;
+		}
+	});
+
+	$('body').delegate('#close_box', 'click', function(){
+		window.parent.art.dialog.list['func_box'].close();
+	});
+
+	$('body').delegate('#pwdshow', 'click', function(){
+		if($(this).attr('checked')){
+			$("#input_password2").val($("#input_password1").val());
+			$("#input_password1").hide();
+			$("#input_password2").show();
+		}else{
+			$("#input_password1").val($("#input_password2").val());
+			$("#input_password1").show();
+			$("#input_password2").hide();
+		}
+	});
+});
+
+$(global_event).on('wifi:open', function(evt, data){
+	function open(){
+		var request_date = {"wifiIndex": global_event.wifi.wifiIndex};
+		$.getJSON('<%=luci.dispatcher.build_url("api", "xqnetwork","wifi_up")%>',request_date,function(rsp) {
+			if (rsp.code == 0) {
+				document.getElementById('openWifi').className = 'btn-offon btn-on';
+				window.parent.art.dialog({
+					title : false,
+					content : '设置已经生效，等待30秒后刷新页面。',
+					beforeunload : function(){
+						window.location.reload();
+					}
+				}).lock().time(30*1000);
+				window.parent.art.dialog.list['func_box'].close();
+			}else{
+				window.parent.art.dialog({
+					title : false,
+					content : '设置出现异常，请刷新重试。'
+				}).lock();
+			}
+		});
+	}
+	$(global_event).trigger('wifi:confirm',{
+		ok : open
+	});
+
+});
+
+$(global_event).on('wifi:close', function(evt, data){
+	function shutdown (){
+		var request_date = {"wifiIndex":global_event.wifi.wifiIndex};
+		$.getJSON('<%=luci.dispatcher.build_url("api", "xqnetwork","wifi_down")%>',request_date,function(rsp){
+			if (rsp.code == 0) {
+				document.getElementById('openWifi').className = 'btn-offon btn-off';
+				window.parent.art.dialog({
+					title : false,
+					content : '设置已经生效，等待30秒后刷新页面。',
+					beforeunload : function(){
+						window.location.reload();
+					}
+				}).lock().time(30*1000);
+				window.parent.art.dialog.list['func_box'].close();
+			}else{
+				window.parent.art.dialog({
+					title : false,
+					content : '设置出现异常，请刷新重试。'
+				}).lock();
+			}
+		});
+	}
+	$(global_event).trigger('wifi:confirm', {
+		ok : shutdown
+	});
+});
+
+$(global_event).on('wifi:confirm', function(evt, data){
+	var ok = data.ok || function(){},
+		cancel = data.cancel || function(){};
+
+	art.dialog({
+		id : "confirm",
+		width : 300,
+		title : "操作确认",
+		content : '是否确认对WiFi进行修改？如果点击确认，WiFi将会重启，网络需要10秒钟才能恢复正常。',
+		okValue: '确认',
+		ok: function(){
+			ok();
+			this.close();
+			console.log('confirm ok');
+		},
+		cancelValue: '取消',
+		cancel: function () {
+			cancel();
+			this.close();
+			console.log('confirm cancel');
+		}
+	});
+});
+
+$(global_event).on('wifi:modify', function(evt, data){
+	function wait(){
+		$("#submit_btn").attr("disabled",true).find('span').text('处理中...');
+		$("input,select").attr("readonly",true);
+	}
+
+	function done(){
+		$("#submit_btn").attr("disabled",false).find('span').text('保存');;
+		$("input,select").attr("readonly",false);
+	}
+	function modify (){
+
+		wait();
+		var request_date =  global_event.request_date;
+		console.log(request_date);
+		$.ajax({
+			url: '<%=luci.dispatcher.build_url("api", "xqnetwork","set_wifi")%>',
+			dataType: 'json',
+			timeout: 5000,
+			type: "POST",
+			data: request_date,
+			success: function(rsp,item) {
+				var msg = rsp.msg = StringH.encode4Html(rsp.msg);
+				if(rsp.code == 0){
+					window.parent.art.dialog({
+						title : false,
+						content : '设置已经生效，等待30秒后刷新页面。',
+						beforeunload : function(){
+							window.location.reload();
+						}
+					}).lock().time(30*1000);
+				} else {
+					window.parent.art.dialog({
+						title : false,
+						content : '设置出现异常，请刷新重试。'
+					}).lock().time(30*1000);
+				}
+				done();
+			},
+			error: function() {
+				done();
+				window.parent.art.dialog({
+					title : false,
+					content : '网络异常，请检查是否联网'
+				}).lock().time(30*1000);
+			}
+		});
+	}
+	$(global_event).trigger('wifi:confirm', {
+		ok : modify
+	});
+
+});
+
+$(function(){
+	$(global_event).trigger('wifi:init');
+	$(global_event).trigger('wifi:bindEvent');
+});
+</script>
+</body>
+</html>

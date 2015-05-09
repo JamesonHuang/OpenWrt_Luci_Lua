@@ -1,0 +1,210 @@
+<%
+	local ver = require("xiaoqiang.XQVersion").webVersion
+%>
+<%include ("web/inc/head")%>
+<title>路由设置 - 小米路由器</title>
+<link rel="stylesheet" href="<%=resource%>/web/css/page.setting.css?v=<%=ver%>">
+</head>
+<body>
+<div id="doc" class="hidden">
+	<%include ("web/inc/header")%>
+	<!--  -->
+	<div id="nav">
+	<script>
+	var navCurrent = '.plugin';
+	</script>
+	<%include ("web/inc/nav")%>
+	</div>
+	<!--  -->
+	<div id="bd" class="dft">
+		<!-- <div id="bd-hd">在这里，你可以对小强路由器进行重新设置。</div> -->
+		<div class="set-bd">
+			<div class="grid-2 clearfix">
+				<div class="article">
+					<iframe name="setting" id="setting" style="width:100%;border:0;background:none;" src="about:blank" frameborder="0" scrolling="no"></iframe>
+				</div>
+				<div class="aside">
+					<div class="mod-setting-nav">
+						<ul class="nav-list clearfix">
+							<li class="nav-item">
+								<h3 class="nav-hd"><a target="setting" href="#!wifi"><span>WiFi设置</span></a></h3>
+							</li>
+							<li class="nav-item">
+								<h3 class="nav-hd"><a target="setting" href="#!net_wan"><span>外网设置</span></a></h3>
+							</li>
+							<li class="nav-item">
+								<h3 class="nav-hd"><a target="setting" href="#!net_lan"><span>内网设置</span></a></h3>
+							</li>
+							<li class="nav-item">
+								<h3 class="nav-hd"><a target="setting" href="#!mac"><span>MAC地址克隆</span></a></h3>
+							</li>
+							<li class="nav-item">
+								<h3 class="nav-hd"><a target="setting" href="#!pro/wifi_set"><span>无线信道与强度</span></a></h3>
+							</li>
+							<li class="nav-item">
+								<h3 class="nav-hd"><a target="setting" href="#!pro/wifi_filter"><span>无线访问控制</span></a></h3>
+							</li>
+							<li class="nav-item">
+								<h3 class="nav-hd"><a target="setting" href="#!pro/ipmacband"><span>DHCP静态IP分配</span></a></h3>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--  -->
+		</div>
+		<!--  -->
+	</div>
+	<%include ("web/inc/footer")%>
+</div>
+<%include ("web/inc/g.js.base")%>
+<%include ("web/inc/g.js")%>
+<script type="text/javascript">
+$(global_event).on('set:map', function(evt, data){
+	var urlMap = {
+		'net_wan':'<%=luci.dispatcher.build_url("web","netset","net_wan")%>',
+		'wifi':'<%=luci.dispatcher.build_url("web", "netset","wifi")%>',
+		'net_lan':'<%=luci.dispatcher.build_url("web","netset", "net_lan")%>',
+		'mac':'<%=luci.dispatcher.build_url("web","netset", "mac")%>',
+		'pro/wifi_set':'<%=luci.dispatcher.build_url("web", "netset","wifi_pro")%>',
+		'pro/wifi_txpwr':'<%=luci.dispatcher.build_url("web", "netset","wifi_txpwr")%>',
+		'pro/wifi_filter': '<%=luci.dispatcher.build_url("web", "netset","wifi_filter")%>',
+		'pro/ipmacband' : '<%=luci.dispatcher.build_url("web","netset","ipmacband")%>'
+	};
+	global_event.set = {
+		'urlMap' : urlMap
+	};
+	$('.nav-item a[target="setting"]').on('click', function(e){
+		e.preventDefault();
+		var hash = $(this).attr('href');
+		var key = hash.replace('#!','');
+		window.location.hash = hash;
+		if (typeof(urlMap[key]) !== 'undefined') {
+			$(global_event).trigger('set:loadIframe',{url : urlMap[key]});
+		}else{
+			return;
+		}
+	});
+	// $('.nav-item a[target=setting]').on('click', function(e){
+	// 	$('.nav-item li').removeClass('active');
+	// 	$(this.parentNode).addClass('active');
+	// });
+});
+
+$(global_event).on('set:loadIframe', function(evt, data){
+	var url = data.url,
+		iframe = document.getElementById('setting');
+		iframe.src  = url;
+	function reinitIframe(){
+		var iframe = document.getElementById('setting');
+	    try{
+	    	var bHeight = iframe.contentWindow.document.body.scrollHeight;
+	    	var dHeight = iframe.contentWindow.document.documentElement.scrollHeight;
+	    	var height = Math.max(bHeight, dHeight);
+	    	height =  Math.max(height, 1000);
+	    	iframe.height =  height;
+	    	$('.mod-setting-nav').height(height);
+	    }catch (ex){}
+    }
+    window.reinitIframe = reinitIframe;
+	$('#setting').load(function() {
+		window.setInterval(function(){
+			window.reinitIframe();
+		}, 200);
+	});
+});
+
+$(global_event).on('set:pageLoad', function(evt, data){
+	var key = window.location.hash.replace('#!','');
+	var map = global_event.set.urlMap;
+	if (typeof(map[key]) !== 'undefined') {
+		$(global_event).trigger('set:loadIframe',{url : map[key]});
+		$('.nav-item li').removeClass('active');
+		$('.nav-item li a').each(function(){
+			if ($(this).attr('href') == '#!' + key) {
+				$(this.parentNode).addClass('active');
+				var $ul = $(this).parents('ul');
+				var $item = $(this).parents('.nav-item');
+				if ($ul[0].style.display == 'none') {
+					$ul.show();
+					$item.find('.bt-onoff').removeClass('bt-off').addClass('bt-on');
+				}
+			}
+		});
+	}else{
+		$(global_event).trigger('set:loadIframe',{url : map['wifi']});
+	}
+});
+
+$(global_event).on('set:navAnimate', function(evt, data){
+	var timer;
+	$('.nav-item .nav-hd').on('click', function(e){
+		e.preventDefault();
+		var list = $('ul', this.parentNode);
+		var status = $('.bt-onoff', this.parentNode);
+		var isopen = list.hasClass('isopen');
+		if (isopen) {
+			list.hide();
+			list.removeClass('isopen');
+			if ( status[0] ) {
+				status[0].className = 'bt-onoff bt-off';
+			}
+		}else{
+			list.show();
+			list.addClass('isopen');
+			if ( status[0] ) {
+				status[0].className = 'bt-onoff bt-on';
+			}
+		}
+	});
+/*
+	$('.nav-item')
+	.on('mouseenter', function(e){
+		var root = $('.nav-list');
+		var listIsOpen = $('ul.isopen', root);
+		var list = $('ul', this);
+		var listHieght = list.find('li').length * 40;
+		var statusAll = $('.bt-onoff', root);
+		var status = $('.bt-onoff', this);
+		if($('ul',this).hasClass('isopen')){
+			console.log('is open');
+			return;
+		}
+		window.clearTimeout(timer);
+		timer = window.setTimeout(function(){
+			if (list.length > 0) {
+				listIsOpen.stop(1,1).animate({
+					'height' : 0,
+					'padding-top' : 0,
+					'padding-bottom' : 0,
+					'overflow' : 'hidden'
+				},400).removeClass('isopen');
+				list.stop(1,1).animate({
+					'height' : listHieght,
+					'padding-top' : 4,
+					'padding-bottom' : 4,
+					'overflow' : 'hidden'
+				},400);
+				list.addClass('isopen');
+
+				statusAll.each(function(){
+					this.className = 'bt-onoff bt-on';
+				});
+				status[0].className = 'bt-onoff bt-off';
+			}
+		}, 400);
+	});
+*/
+});
+
+
+$(function(){
+	$(global_event).trigger('set:map');
+	$(global_event).trigger('set:pageLoad');
+	$(global_event).trigger('set:navAnimate');
+	$(global_event).trigger('psp:initEvent');
+});
+
+</script>
+</body>
+</html>

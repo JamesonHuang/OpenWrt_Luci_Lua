@@ -1,0 +1,114 @@
+openwrt配置命令：
+
+sudo minicom -D /dev/ttyUSB0
+la /dev/ttyUSB0
+
+
+cd /etc/config/
+cat wireless
+/etc/init.d/network reload
+cat /etc/config/wireless
+router_reset
+ifconfig
+
+r13: http://192.168.232.1
+
+r10: http://192.168.233.1
+
+亮哥邮箱：  zhengkl@meizu.com
+
+ssh root@192.168.232.1
+
+局域网地址：10.2.64.20
+
+--------------------------------------------------------
+
+
+git配置命令：
+
+
+git branch -a
+
+git checkout 切换分支
+
+git log
+
+git head 
+
+git diff 
+
+----------------------------------------------------------
+gvim字体设置：
+DejaVu Sans Mono 12
+
+中继器配置：
+cd /usr/bin/apcli_connect.sh
+
+---------------------------------------------------------
+
+
+如何通过Luci界面找到相应函数代码并修改？
+（1）浏览器找到相关函数名
+（2）在luci/controller/admin/network.lua中找到相应函数
+（3）看懂，修改
+（4）移植到r13的api/index.lua或meizu目录的相应lua文件中
+（5）./build.sh
+
+修改 / 编译：
+/usr/lib/lua/meizu/build.sh
+logread -f 查看日志
+-----------------------------------------------------------
+
+小米luci代码路径：
+
+/home/rh/my_code/miwifi_package_rom/usr/lib/lua/luci
+
+
+小米功能基础库路径：
+/home/rh/my_code/miwifi_package_rom/usr/lib/lua/xiaoqiang
+
+
+
+定时wifi开关（智能开关）路径：
+
+/home/rh/my_code/miwifi_package_rom/usr/lib/lua/luci/controller/api/xqsystem.lua    --line 1517
+
+/home/rh/my_code/miwifi_package_rom/usr/lib/lua/xiaoqiang/common/XQFunction.lua    --line 89 & 29
+
+
+
+------------------------------------------------------------
+grep:
+grep -F "bind_router" ./* -Rn			--查找正文中含有bind_router的关键字
+-F	匹配字符串
+-R	递归匹配
+-n	显示行号
+
+
+ctags：
+
+使用ctags：	ctags -R ./*
+
+ctrl + ] 查找具体函数
+ctrl + t 返回调用函数处
+
+taglist：
+：Tlist		打开Taglist
+
+------------------------------------------------------------
+传文件到U盘：/media
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+

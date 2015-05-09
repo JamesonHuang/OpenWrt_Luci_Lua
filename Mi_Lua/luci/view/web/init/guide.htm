@@ -1,0 +1,442 @@
+<%
+local ver = require("xiaoqiang.XQVersion").webVersion
+local wifiUtil = require("xiaoqiang.util.XQWifiUtil")
+local fun = require("xiaoqiang.common.XQFunction")
+local XQLanWanUtil = require("xiaoqiang.util.XQLanWanUtil")
+local sys = require("xiaoqiang.util.XQSysUtil")
+if sys.getInitInfo() then
+    luci.http.redirect(luci.dispatcher.build_url("web", "home"))
+end
+local wifiInfo = wifiUtil.getAllWifiInfo()
+local ssid = ""
+local wanType = 2
+local AutoWanType = XQLanWanUtil.getAutoWanType()
+if AutoWanType then
+    wanType = AutoWanType
+end
+if wifiInfo[1] then
+    ssid = wifiInfo[1]['ssid']
+end
+local remote_addr = luci.http.getenv("REMOTE_ADDR")
+local mac = luci.sys.net.ip4mac(remote_addr)
+local lanType = wifiUtil.getDeviceWifiIndex(mac)
+%>
+<%include ("web/inc/head")%>
+<title>初始化引导 - 小米路由器</title>
+<link rel="stylesheet" href="<%=resource%>/web/css/page.init.css?v=<%=ver%>">
+</head>
+<body id="page-guide">
+<div id="doc">
+    <%include ("web/inc/header")%>
+    <div id="bd">
+        <div class="mod-guide clearfix">
+            <div class="guide-image">
+                <img src="<%=resource%>/web/img/v2/bg_login.png">
+                <img src="<%=resource%>/web/img/v2/bg_login.png">
+                <img src="<%=resource%>/web/img/v2/bg_login.png">
+                <img src="<%=resource%>/web/img/v2/bg_login.png">
+                <img src="<%=resource%>/web/img/v2/bg_login.png">
+                <img style="margin:70px 0 0 70px" src="<%=resource%>/web/img/v2/guide_wifi.gif">
+            </div>
+            <div class="formbox mojo">
+                <span class="x1"><span class="x1a"></span></span>
+                <span class="x2"><span class="x2a"></span></span>
+                <div class="mojo-content">
+                    <!--  -->
+                    <div class="mod-guide-pppoe js-step js-step-1" style="display:none;">
+                        <div class="hd">
+                            <h2>请输入运营商提供的宽带账号信息</h2>
+                        </div>
+                        <div class="bd">
+                            <form action="/" class="form-login" method="post" id="ppoelogin" name="ppoelogin" autocomplete="off">
+                                <div class="item">
+                                    <span class="k">宽带账号：</span>
+                                    <span class="v"><input type="text" class="text" id="ppoename" name="ppoename" autocomplete="off"></span>
+                                    <div class="t"><i class="dur"></i></div>
+                                </div>
+                                <div class="item">
+                                    <span class="k">宽带密码：</span>
+                                    <span class="v">
+                                        <input type="password" class="text" id="ppoepwd" name="ppoepwd" autocomplete="off">
+                                        <input type="text" class="text" id="ppoepwdshow" name="ppoepwdshow" style="display:none;" autocomplete="off">
+                                    </span>
+                                    <div class="t"><i class="dur"></i></div>
+                                </div>
+                                <div class="item item-control">
+                                    <label class="js-checkbox" id="showpppoepwd"><span class="input-checkbox"><input type="checkbox"></span> 显示密码</label>
+                                </div>
+                                <div class="item item-control">
+                                    <button type="submit" class="btn btn-primary"><span>下一步</span></button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="ft">
+                            <p><a class="tosetpwd" href="#">无需拨号</a></p>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="mod-guide-dhcp js-step js-step-2" style="display:none;">
+                        <div class="bd">
+                            <i class="ico ico-internet-v2"></i>
+                            <p class="p1">经小米路由器智能检测，你的网络<br>无需拨号</p>
+                            <a href="#" class="btn btn-primary tosetpwd"><span>下一步</span></a>
+                        </div>
+                        <div class="ft">
+                            <p><a class="tosetnet" href="#">宽带拨号</a></p>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="mod-guide-pwd js-step js-step-3" style="display:none;">
+                        <div class="hd">
+                            <h2>设置WiFi名称、密码与路由器管理密码</h2>
+                        </div>
+                        <div class="bd">
+                            <form action="/" class="form-login" method="post" name="routepwd" id="routepwd" autocomplete="off">
+                                <div class="item">
+                                    <span class="k">WiFi名称：</span>
+                                    <span class="v"><input type="text" name="ssid" class="text" value="<%=ssid%>" autocomplete="off"></span>
+                                    <div class="t"><i class="dur"></i></div>
+                                </div>
+                                <div class="item">
+                                    <span class="k">WiFi密码：</span>
+                                    <span class="v"><input type="password" class="text" id="wifipwd" name="wifipwd" autocomplete="off" placeholder="WiFi密码至少8位"><input type="text" class="text" id="wifipwdshow" name="wifipwdshow" style="display:none;" autocomplete="off"></span>
+                                    <div class="t"><i class="dur"></i></div>
+                                </div>
+                                <div class="item item-control item-control-pwdshow">
+                                    <label class="js-checkbox" id="showwifipwd"><span class="input-checkbox"><input type="checkbox"></span> 显示密码</label>
+                                </div>
+                                <div class="item">
+                                    <span class="k">管理密码：</span>
+                                    <span class="v"><input type="password" class="text" id="rtpwd" name="rtpwd" autocomplete="off" placeholder="管理密码至少8位"><input type="text" class="text" id="rtpwdshow" name="rtpwdshow" style="display:none;" autocomplete="off"></span>
+                                    <div class="t"><i class="dur"></i></div>
+                                </div>
+                                <div class="item item-control item-control-pwdshow">
+                                    <label class="js-checkbox" id="showrtpwd"><span class="input-checkbox"><input type="checkbox"></span> 显示密码</label>
+                                </div>
+                                <div class="item item-control">
+                                    <button id="initSet" type="submit" class="btn btn-primary"><span>下一步</span></button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="ft">
+                            <p><a class="tosetnet" href="#">需要拨号</a></p>
+                        </div>
+                    </div>
+                    <div class="mod-guide-rtsucc js-step js-step-4" style="display:none;">
+                        <div class="hd">
+                            <h2>当前网络连接方式： 网线</h2>
+                        </div>
+                        <div class="bd">
+                            <i class="ico ico-succ-b"></i>
+                            <h3>设置完成</h3>
+                            <a href="#" class="btn btn-primary js-init-done"><span>立即体验</span></a>
+                        </div>
+                    </div>
+                    <div class="mod-guide-rtsucc js-step js-step-5" style="display:none;">
+                        <div class="hd">
+                            <h2>当前网络连接方式： WiFi</h2>
+                        </div>
+                        <div class="bd">
+                            <i class="downcount"><span class="num">15</span></i>
+                            <h3>设置完成</h3>
+                            <p>小米路由器 WiFi 需要重启，请稍候...</p>
+                        </div>
+                    </div>
+                    <div class="mod-guide-rtsucc js-step js-step-6" style="display:none;">
+                        <div class="hd">
+                            <h2>当前网络连接方式： WiFi</h2>
+                        </div>
+                        <div class="bd">
+                            <img class="vab" src="<%=resource%>/web/img/v2/loading_wifi.gif">
+                            <h3>WiFi 重启完成</h3>
+                            <p>请手动选择连接到 WiFi 网络</p>
+                            <p class="select-ssid" id="connSsid"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%include ("web/inc/footermini")%>
+</div>
+<%include ("web/inc/g.js.base")%>
+<script>
+var global_wantype = <%=wanType%>;
+var global_lantype = <%=lanType%>;
+global_event.stepimg = $('.guide-image img');
+$(global_event).on('init:getWanType', function(evt, data){
+    var request_date = {};
+    global_event.init  = {};
+    if (global_wantype == 1){
+        $(global_event).trigger('init:toStep', {step: 1});
+    }else{
+        global_event.init.wanType = "dhcp";
+        $(global_event).trigger('init:toStep', {step: 2});
+    }
+});
+$(global_event).on('init:toStep', function(evt, data){
+    var toIdx = data.step;
+    $('.js-step').hide();
+    $('.js-step-' + toIdx).show();
+    $('.guide-image img').hide().eq(toIdx - 1).show();
+});
+$(global_event).on('init:done', function(evt, data){
+    window.location = '<%=luci.dispatcher.build_url("web", "home")%>';
+});
+
+$(global_event).on('init:eventInit', function(evt, data){
+    //POEE登陆
+    $('#ppoelogin').on('submit',function(e){
+        e.preventDefault();
+        var frm = this.name;
+        if ( $('[name=ppoepwd]')[0].style.display == 'none') {
+            $('[name=ppoepwd]')[0].value = $('[name=ppoepwdshow]')[0].value;
+        }
+        var validator = FormValidator.checkAll(frm, [{
+            name: 'ppoename',
+            display :'账户',
+            rules: 'required'
+        }, {
+            name: 'ppoepwd',
+            display :'密码',
+            rules: 'required|haschina'
+        }]);
+        if (validator) {
+            global_event.init.wanType = "pppoe";
+            global_event.init.pppoeName = $.trim(this.elements['ppoename'].value);
+            global_event.init.pppoePwd = $.trim(this.elements['ppoepwd'].value);
+            $('.js-step-3 .ft').hide();
+            $(global_event).trigger('init:toStep', {step: 3});
+        }
+    });
+    var timerShowpwd = null;
+    $('#showpppoepwd').on('click', function(e){
+        var that = this;
+        clearTimeout(timerShowpwd);
+        timerShowpwd = setTimeout(function(){
+            var input = $('input',that),
+                pwd;
+            if (input[0].checked) {
+                pwd = $('#ppoepwd').val();
+                $('#ppoepwd').hide();
+                $('#ppoepwdshow').val(pwd).show();
+                $('#ppoepwdshow').on('blur', function(e){
+                    $('#ppoepwd').val(this.value);
+                });
+            }else{
+                pwd = $('#ppoepwdshow').val();
+                $('#ppoepwdshow').hide();
+                $('#ppoepwd').val(pwd).show();
+            }
+        }, 40);
+    });
+
+    var timerShowWifipwd = null;
+    $('#showwifipwd').on('click', function(e){
+        var that = this;
+        clearTimeout(timerShowWifipwd);
+        timerShowWifipwd = setTimeout(function(){
+            var input = $('input',that),
+                pwd;
+            if (input[0].checked) {
+                pwd = $('#wifipwd').val();
+                $('#wifipwd').hide();
+                $('#wifipwdshow').val(pwd).show();
+                $('#wifipwdshow').on('blur', function(e){
+                    $('#wifipwd').val(this.value);
+                });
+                // hide placeholder
+                $('span', document.getElementById('wifipwd').parentNode).hide();
+            }else{
+                pwd = $('#wifipwdshow').val();
+                $('#wifipwdshow').hide();
+                $('#wifipwd').val(pwd).show();
+            }
+        }, 40);
+    });
+
+    var timerShowRtpwd = null;
+    $('#showrtpwd').on('click', function(e){
+        var that = this;
+        clearTimeout(timerShowRtpwd);
+        timerShowRtpwd = setTimeout(function(){
+            var input = $('input',that),
+                pwd;
+            if (input[0].checked) {
+                pwd = $('#rtpwd').val();
+                $('#rtpwd').hide();
+                $('#rtpwdshow').val(pwd).show();
+                $('#rtpwdshow').on('blur', function(e){
+                    $('#rtpwd').val(this.value);
+                });
+                // hide placeholder
+                $('span', document.getElementById('rtpwd').parentNode).hide();
+            }else{
+                pwd = $('#rtpwdshow').val();
+                $('#rtpwdshow').hide();
+                $('#rtpwd').val(pwd).show();
+            }
+
+        }, 40);
+    });
+
+    $('.tosetpwd').on('click', function(e){
+        e.preventDefault();
+        global_event.init.wanType = "dhcp";
+        $(global_event).trigger('init:toStep', {step: 3});
+    });
+
+    $('.tosetnet').on('click', function(e){
+        e.preventDefault();
+        $(global_event).trigger('init:toStep', {step: 1});
+    });
+
+    $('#routepwd').on('submit', function(e){
+        e.preventDefault();
+        var frm = this.name;
+        if ( $('[name=wifipwd]')[0].style.display == 'none') {
+            $('[name=wifipwd]')[0].value = $('[name=wifipwdshow]')[0].value;
+        }
+        if ( $('[name=rtpwd]')[0].style.display == 'none') {
+            $('[name=rtpwd]')[0].value = $('[name=rtpwdshow]')[0].value;
+        }
+        var validator = FormValidator.checkAll(frm, [
+            {
+                name: 'ssid',
+                display :'WiFi名称',
+                rules: 'required|max_length[28]|valid_ssid',
+                msg: {
+                    'max_length': '名字过长，请使用短一些的名字'
+                }
+            },
+            {
+                name: 'wifipwd',
+                display :'WiFi密码',
+                rules: 'required|min_length[8]|max_length[63]|haschina',
+                msg: {
+                    'max_length': '密码过长，请使用短一些的密码'
+                }
+            },
+            {
+                name: 'rtpwd',
+                display :'管理密码',
+                rules: 'required|min_length[8]|max_length[63]|haschina',
+                msg: {
+                    'max_length': '密码过长，请使用短一些的密码'
+                }
+            }
+        ]);
+        if (validator) {
+            $('#initSet').prop('disabled', true).find('span').text('处理中...');
+            var wifipwd = $.trim(this.elements['wifipwd'].value),
+                rtpwd = $.trim(this.elements['rtpwd'].value),
+                ssid = $.trim(this.elements['ssid'].value);
+            // crypto string
+            global_event.crypto.init();
+            var oldPwd = global_event.crypto.oldPwd('admin');
+            var newPwd = global_event.crypto.newPwd('admin', rtpwd);
+            var nonce = global_event.crypto.nonce;
+
+            global_event.init.wifi24Ssid = ssid;
+            global_event.init.wifi50Ssid = ssid+'_5G';
+            global_event.init.newPwd = rtpwd;
+            global_event.init.wifiPwd = wifipwd;
+            var request_date = {
+                "nonce": nonce,
+                "routerName": ssid,
+                "wanType": global_event.init.wanType,
+                "wifi24Ssid": global_event.init.wifi24Ssid,
+                "wifi50Ssid": global_event.init.wifi50Ssid,
+                "newPwd": newPwd,
+                "oldPwd": oldPwd,
+                "wifiPwd": global_event.init.wifiPwd
+            };
+            if ( global_event.init.pppoeName != "" && global_event.init.pppoePwd != "" ) {
+                request_date["pppoeName"] = global_event.init.pppoeName;
+                request_date["pppoePwd"] = global_event.init.pppoePwd;
+            }
+
+            var isinitDone = false,
+                initDone = function(){
+                    if (isinitDone) {
+                        return;
+                    }
+                    $('.js-step').hide();
+                    if (global_lantype == 0) {
+                        $(global_event).trigger('init:toStep', {step: 4});
+                    }else{
+                        $(global_event).trigger('init:toStep', {step: 5});
+                        $(global_event).trigger('init:wifiSetdone');
+                    }
+            };
+
+            var routerInit = $.getJSON('<%=luci.dispatcher.build_url("api", "xqsystem","router_init")%>',request_date,function(rsp){
+                var setInit = $.getJSON('<%=luci.dispatcher.build_url("api", "xqsystem","set_inited")%>',{"client":"other"},function(rsp){
+                    initDone();
+                });
+                setInit.error(function(xhr, type) {
+                    console.log('setInit error', xhr, type);
+                    initDone();
+                });
+                // if (rsp.code != 0) {
+                //     TODO:lightalert
+                // }
+                // $('#initSet').prop('disabled', false).find('span').text('处理完毕');
+            });
+            routerInit.error(function(xhr, type){
+                console.log('routerInit error', xhr, type);
+                initDone();
+            });
+        }
+    });
+
+    $('.js-init-done').on('click', function(e){
+        e.preventDefault();
+        $(global_event).trigger('init:done');
+    });
+});
+
+$(global_event).on('init:wifiSetdone', function(evt, data){
+    var ssid = '<b>'+global_event.init.wifi24Ssid +'</b><br>或<br><b>'+ global_event.init.wifi24Ssid + '_5G</b>';
+    var downcountTotal = 15;
+    $('#connSsid').html(ssid);
+    $('.downcount .num').text(downcountTotal);
+    var timer = null;
+    timer = window.setInterval(function(){
+        downcountTotal -= 1;
+        console.log(downcountTotal);
+        $('.downcount .num').text(downcountTotal);
+        if (downcountTotal == 0) {
+            window.clearInterval(timer);
+            $(global_event).trigger('init:toStep', {step: 6});
+            $(global_event).trigger('init:wifiReboot');
+        }
+    }, 1000);
+});
+
+$(global_event).on('init:wifiReboot', function(evt, data){
+    var timer = null,
+        imgUrl = '<%=resource%>/web/img/logo.png',
+        done = function(){
+            window.clearInterval(timer);
+            $(global_event).trigger('init:done');
+        },
+        loadImg = function(onload){
+            var img = new Image();
+            img.onload = onload;
+            img.src = imgUrl+'?' + (+new Date());
+        },
+        timer = window.setInterval(function() {
+            loadImg(function(){
+                done();
+            });
+        }, 3000);
+});
+
+$(function(){
+    $(global_event).trigger('init:eventInit');
+    $(global_event).trigger('init:getWanType');
+});
+</script>
+</body>
+</html>

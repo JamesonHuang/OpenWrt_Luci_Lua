@@ -1,0 +1,70 @@
+<%
+--[[
+	Info	格式化小强盘
+]]--
+
+local ver = require("xiaoqiang.XQVersion").webVersion
+local request_uri = luci.http.getenv("REQUEST_URI")
+%>
+<%include('web/inc/head')%>
+<title>小米路由器</title>
+<link rel="stylesheet" href="<%=resource%>/web/css/page.set.default.css?v=<%=ver%>" type="text/css"/>
+</head>
+<body>
+<div class="mod-setting-panel">
+	<div class="hd">
+		<h3>格式化硬盘</h3>
+	</div>
+	<div class="bd">
+		<div class="mod-set-formatdisk">
+			<div class="info">
+				<h3>格式化硬盘</h3>
+				<p>执行该任务硬盘里所有的数据将被清空，格式化前确保数据已备份。</p>
+			</div>
+			<div class="btn-box">
+				<button id="btnFormatdisk" class="btn btn-primary" type="button"><span>立即格式化</span></button>
+			</div>
+		</div>
+	</div>
+</div>
+<%include('web/inc/g.js.base')%>
+<script>
+$(function(){
+	$.confirm  = function (content, ok, cancel) {
+		return window.top.art.dialog({
+			id: 'Confirm',
+			fixed: true,
+			lock: false,
+			width: 400,
+			title: '格式化硬盘',
+			content: content,
+			ok: ok,
+			cancel: cancel
+		}).lock();
+	};
+	$('#btnFormatdisk').on('click', function(e){
+		e.preventDefault();
+		$.confirm(
+			'是否立即开始格式化硬盘?',
+			function(){
+				$.getJSON(
+					'<%=luci.dispatcher.build_url("api", "xqdatacenter","request")%>',
+					{payload:'{"api":28}'},
+					function(rsp){
+						if (rsp.code == 0) {
+							$.lightalert().setContent('格式化成功').show();
+						}else{
+							$.lightalert().setContent('格式化失败，请重试。').show();
+						}
+					}
+				);
+			},
+			function(){
+				console.log('cancel');
+			}
+		)
+	});
+});
+</script>
+</body>
+</html>

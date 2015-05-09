@@ -1,0 +1,104 @@
+<%
+--[[
+	Info	路由器重启恢复
+]]--
+
+local ver = require("xiaoqiang.XQVersion").webVersion
+local request_uri = luci.http.getenv("REQUEST_URI")
+%>
+<%include('web/inc/head')%>
+<title>小米路由器</title>
+<link rel="stylesheet" href="<%=resource%>/web/css/page.set.reboot.css?v=<%=ver%>"/>
+</head>
+<body>
+<!-- upgread -->
+<div class="mod-setting-panel">
+	<div class="hd">
+		<h3>关闭NGINX</h3>
+	</div>
+	<div class="bd">
+
+		<div class="mod-set-reboot">
+			<div class="info">
+				<h3>关闭NGINX</h3>
+				<p>关闭NGINX，可以禁止路由器预加载功能，专供专业人士使用。</p>
+			</div>
+			<div class="btn-box">
+				<div class="loading">NGINX状态检测中...</div>
+				<button style="display:none;" class="btn btn-primary" id="btnKillNg"><span>关闭NGINX</span></button>
+			</div>
+		</div>
+	</div>
+</div>
+<%include('web/inc/g.js.base')%>
+<script>
+var modelNginx = (function(){
+	function ngStatus(){
+		$.getJSON('<%=luci.dispatcher.build_url("api", "xqsystem", "nginx")%>', {}, function(rsp){
+			if (rsp.code == 0) {
+				if (rsp.status == 0) {
+					$('#btnKillNg').attr('data-status', rsp.status).find('span').text('开启NGINX');
+				}else{
+					$('#btnKillNg').attr('data-status', rsp.status).find('span').text('关闭NGINX');
+				}
+				$('.mod-set-reboot .loading').fadeOut(function(){
+					$('.mod-set-reboot .btn').fadeIn();
+				});
+			}
+		});
+	}
+	function doNginx(){
+		var btnText = $('#btnKillNg').find('span').html();
+		var status = $('#btnKillNg').attr('data-status');
+		var callback = function(rsp){
+			if (rsp.code == 0) {
+				window.top.art.dialog({
+					title: false,
+					content: '操作已经成功'
+				}).time(2 * 1000);
+				window.setTimeout(function(){
+					self.location.reload(true);
+				}, 2000);
+			}else{
+				window.top.art.dialog({
+					title: false,
+					content: '操作失败，请重试'
+				});
+			}
+			$('#btnKillNg').prop('disabled', false).find('span').html(btnText);
+		}
+
+		$('#btnKillNg').prop('disabled', true).find('span').html('处理中...');
+		if (status == '1') {
+			$.getJSON('<%=luci.dispatcher.build_url("api", "xqsystem","stop_nginx")%>', {}, callback);
+		}else{
+			$.getJSON('<%=luci.dispatcher.build_url("api", "xqsystem","start_nginx")%>', {}, callback);
+		}
+	}
+
+	return {
+		doNginx : doNginx,
+		ngStatus: ngStatus
+	}
+}());
+$(function(){
+	modelNginx.ngStatus();
+
+	$("#btnKillNg").click(function(){
+		if ($(this).attr('data-status') == '0') {
+			modelNginx.doNginx();
+		}else{
+			window.top.art.dialog({
+				title: '确认关闭NGINX',
+				content: '关闭NGINX将影响路由器的正常使用，你确认关闭',
+				okValue: '确认',
+				ok: modelNginx.doNginx,
+				cancelValue: '取消',
+				cancel: function(){
+					this.close();
+				}
+			});
+		}
+	});
+});
+</script>

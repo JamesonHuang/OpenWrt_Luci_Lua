@@ -1,0 +1,88 @@
+<%
+	local ver = require("xiaoqiang.XQVersion").webVersion
+%>
+<%include ("web/inc/head")%>
+<title>小米路由器</title>
+<link rel="stylesheet" href="<%=resource%>/web/css/page.urldet.css?v=<%=ver%>">
+</head>
+<body>
+<div id="doc2">
+	<div class="detect-header">
+		<div class="inner">
+			<h1>高级诊断</h1>
+		</div>
+	</div>
+	<div class="detect-body">
+		<div class="mod-search">
+			<form class="form form-inline clearfix" action="/" method="post" name="httpdet" id="httpdet">
+				<input type="hidden" name="simple" value="0">
+				<div class="item input-url">
+					<span class="v">
+						<input name="target" type="text" class="text input-xlarge" placeholder="请输入您要诊断的网址">
+					</span>
+					<em class="t"></em>
+				</div>
+				<div class="item item-control">
+					<button type="submit" id="btnDet" class="btn btn-primary"><span>检测</span></button>
+				</div>
+			</form>
+		</div>
+		<div class="mod-result" style="display:none;"></div>
+	</div>
+<!-- 	<div class="detect-footer">
+		<a href="#" class="btn-det-1">上传日志</a>
+	</div> -->
+</div>
+<script type="text/tmpl" id="tmplret">
+<ul>
+	<li>Wanprotocal（上网连接类型）：{$wantype}</li>
+	<li>Wanlink（Wan连接状态）：{$wanstatus}</li>
+	<li>IP（域名解析到的IP地址）：{$domainip}</li>
+	<li>GW（连接默认网关的丢包率）：{$gw}%</li>
+	<li>DNS（解析域名）：{$dns}</li>
+	<li>TCP（目标端口连通性）：{$tcp}</li>
+	<li>Tracer（全连路连通性）：{$tracer}</li>
+	<li>HTTP（域名状态码）：{$http}</li>
+</ul>
+</script>
+<%include ("web/inc/g.js.base")%>
+<script>
+$(function(){
+	$('#httpdet').on('submit', function(e){
+		e.preventDefault();
+		var formName = this.name;
+		var validator = FormValidator.checkAll(formName, [{
+		    name: 'target',
+		    display :'网址',
+		    rules: 'required|valid_url'
+		}]);
+		if (validator) {
+			var request_data =  $(this).serialize();
+			$('#btnDet').prop('disabled', true).find('span').text('检测中...');
+			$('#httpdet input').prop('disabled', true);
+			$('.mod-result').html('努力诊断中，大概需要2分钟，请耐心等待...').fadeIn(400);
+			$.post('<%=luci.dispatcher.build_url("api", "xqnetdetect","detect")%>', request_data, function(rsp){
+				var rsp = $.parseJSON(rsp);
+				if (rsp.code != 0) {
+					$('.mod-result').html(rsp.msg).show();
+				}else{
+					var tpl = $('#tmplret').html();
+					var tplData = {
+						'wantype': rsp.wanType.toUpperCase(),
+						'wanstatus': rsp.link.status == 0 ? '不正常' : '正常',
+						'domainip': rsp.ip,
+						'gw': rsp.gw,
+						'dns': rsp.dns == 0 ? '失败' : '成功',
+						'tcp': rsp.tcp,
+						'tracer': rsp.tracer == 0 ? '不正常' : '正常',
+						'http': rsp.http
+					};
+					$('.mod-result').html(StringH.tmpl(tpl, tplData)).show();
+				}
+				$('#btnDet').prop('disabled', false).find('span').text('检测');
+				$('#httpdet input').prop('disabled', false);
+			});
+		}
+	});
+});
+</script>

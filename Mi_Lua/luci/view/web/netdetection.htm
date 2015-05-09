@@ -1,0 +1,251 @@
+<%
+	local ver = require("xiaoqiang.XQVersion").webVersion
+%>
+<%include ("web/inc/head")%>
+<title>网络检测 - 小米路由器</title>
+<link rel="stylesheet" href="<%=resource%>/web/css/page.netdet.css?v=<%=ver%>">
+</head>
+<body>
+<div id="doc2">
+	<div class="detect-header detect-level-0">
+		<div class="inner">
+			<h1>诊断完成: 网络很差</h1>
+			<p></p>
+		</div>
+	</div>
+	<div class="detect-body">
+		<div class="det-item">
+			<div class="status status-0">
+				<i class="ico ico-st"></i>
+				<span class="title">网络连接状态</span>
+				<span class="result">正在检测中...</span>
+			</div>
+			<div class="detail" style="display:none"></div>
+		</div>
+		<div class="det-item">
+			<div class="status status-0">
+				<i class="ico ico-st"></i>
+				<span class="title">外网连接状态</span>
+				<span class="result">正在检测中...</span>
+			</div>
+			<div class="detail" style="display:none"></div>
+		</div>
+		<div class="det-item">
+			<div class="status status-0">
+				<i class="ico ico-st"></i>
+				<span class="title">路由硬件状态</span>
+				<span class="result">正在检测中...</span>
+			</div>
+			<div class="detail" style="display:none"></div>
+		</div>
+		<div class="det-item">
+			<div class="status status-0">
+				<i class="ico ico-st"></i>
+				<span class="title">连接速度状态</span>
+				<span class="result">正在检测中...</span>
+			</div>
+			<div class="detail" style="display:none"></div>
+		</div>
+<!-- 		<div class="det-item">
+			<div class="status status-0">
+				<i class="ico ico-st"></i>
+				<span class="title">系统状态</span>
+				<span class="result">正在检测中...</span>
+			</div>
+			<div class="detail" style="display:none"></div>
+		</div> -->
+	</div>
+
+	<div class="detect-footer">
+		<a href="<%=luci.dispatcher.build_url("web", "detecte_pro")%>" class="btn-det-1">高级诊断</a>
+		<a href="<%=luci.dispatcher.build_url("web", "detecte")%>" class="btn-det-2">重新诊断</a>
+	</div>
+</div>
+<%include ("web/inc/g.js.base")%>
+<script>
+$(global_event).on('netcheck:status', function(evt, data){
+	var status = data.status;
+	var count = data.count;
+	var header = $('.detect-header');
+	if (status == 0) {
+		header[0].className = 'detect-header detect-level-1';
+		header.find('p').html('恭喜，没有检测出问题');
+	}
+	if (status == 1) {
+		header[0].className = 'detect-header detect-level-2';
+		header.find('p').html('检测发现  <b>'+ count +'</b> 个问题需要处理');
+	}
+	if (status == 2) {
+		header[0].className = 'detect-header detect-level-3';
+		header.find('p').html('检测发现  <b>'+ count +'</b> 个问题需要处理');
+	}
+});
+
+$(global_event).on('netcheck:result', function(evt, data){
+	var order = data.order,
+		status = data.status,
+		msg = data.msg;
+	//doing
+	$('.det-item')
+		.eq(order)
+		.find('.status').removeClass('status-0').addClass('status-1');
+	setTimeout(function(){
+		if (status == 1) {
+			//ok
+			$('.det-item').eq(order)
+				.find('.status').removeClass('status-1').addClass('status-3')
+				.end()
+				.find('.result').html('正常');
+		}else{
+			//err
+			$('.det-item').eq(order)
+				.find('.status').removeClass('status-1').addClass('status-2')
+				.end()
+				.find('.result').html('异常')
+				.end()
+				.find('.detail').html(msg).show();
+		}
+	}, 1000);
+});
+//wan口连接检测
+$(global_event).on('netcheck:wanlink', function(evt, data){
+	var order = data.order;
+	var status = 1;
+	var msg = '';
+	var rsp = data.rsp;
+	var wanlink = rsp.wanLink;
+	if (wanlink != 1) {
+		status = 0;
+		msg = 'WAN口线未连接，请检查网线正常并接到路由器上';
+	}
+	$(global_event).trigger('netcheck:result', {
+		order: order,
+		status: status,
+		msg: msg
+	});
+});
+//外网连通检测
+$(global_event).on('netcheck:ping', function(evt, data){
+	var order = data.order;
+	var status = 1;
+	var msg = '';
+	var rsp = data.rsp;
+	var ping = rsp.ping.status;
+	var wanType = rsp.wanType;
+	if (ping != 1) {
+		status = 0;
+		if (wanType == 'pppoe') {
+			msg = '拨号连接不成功，请检查上网账号密码是否正确， <a href="<%=luci.dispatcher.build_url("web","netset")%>#!net_wan" target="_blank">立即修复</a>';
+		}else{
+			msg = '外网连接不成功，请检查外网连接类型是否正确， <a href="<%=luci.dispatcher.build_url("web","netset")%>#!net_wan" target="_blank">立即修复</a>';
+		}
+	}
+	$(global_event).trigger('netcheck:result', {
+		order: order,
+		status: status,
+		msg: msg
+	});
+});
+
+//硬件检测
+$(global_event).on('netcheck:hardware', function(evt, data){
+	var order = data.order;
+	var status = 1;
+	var msg = '';
+	var rsp = data.rsp;
+	var cpuavg = rsp.cpuavg.status;
+	var memoryuse = rsp.memoryuse.status;
+	var disk = rsp.disk;
+	var diskuse = (function(){
+		var used = parseFloat( disk.Used.replace('G','') ),
+			available = parseFloat( disk.Available.replace('G','') ),
+			percent = available / (used + available) * 100,
+			status = (percent > 20) ? 1 : 0;
+		return status;
+	}());
+	var cputemp = rsp.cputemp.status;
+	if ( cpuavg != 1 || memoryuse != 1 || cputemp != 1 || diskuse !=1 ) {
+		status = 0;
+		msg += cpuavg != 1 ? '<p>CPU负载较大，响应会变慢，请耐心等候</p>' : '';
+		msg += cputemp != 1 ? '<p>CPU温度过高，请把路由器放置通风较好的位置</p>' : '';
+		msg += memoryuse != 1 ? '<p>内存占用过高，请停用不需要的服务</p>' : '';
+		msg += diskuse != 1 ? '<p>存储空间不足，请释放足够的空间</p>' : '';
+	}
+	$(global_event).trigger('netcheck:result', {
+		order: order,
+		status: status,
+		msg: msg
+	});
+});
+
+//网速检测
+$(global_event).on('netcheck:netspeed', function(evt, data){
+	var order = data.order;
+	var status = 1;
+	var msg = '';
+	var rsp = data.rsp;
+	var dns = rsp.dnsstatus.status;
+	var gw = rsp.gw;
+	var ping = rsp.ping.status;
+	var ip = (function(){
+		var st = rsp.ip == '' ? 0 : 1;
+		return st;
+	}());
+	var gateway = rsp.gateway.status;
+	if ( dns != 1 || gateway != 1) {
+		status = 0;
+		msg += gateway != 1 ? ( '<p>默认网关丢包率' + gw + '%，网络质量较差，建议换根网线试试</p>' ) : '';
+		msg += dns != 1 ? '<p>域名解析失败，建议重启路由器试试</p>' : '';
+		msg += ping != 1 ? '<p>端口连通失败，建议重启路由器试试</p>' : '';
+	}
+	$(global_event).trigger('netcheck:result', {
+		order: order,
+		status: status,
+		msg: msg
+	});
+});
+
+
+$(global_event).on('netcheck:init', function(evt, data){
+	$.getJSON('<%=luci.dispatcher.build_url("api", "xqnetdetect","detect")%>', {simple: 2}, function(rsp){
+		if (rsp.code == 0) {
+			var step1 = function(){
+					$(global_event).trigger('netcheck:wanlink', {rsp: rsp, order: 0})
+				},
+				step2 = function(){
+					$(global_event).trigger('netcheck:ping', {rsp: rsp, order: 1});
+				},
+				step3 = function(){
+					$(global_event).trigger('netcheck:hardware', {rsp: rsp, order: 2});
+				},
+				step4 = function(){
+					$(global_event).trigger('netcheck:netspeed', {rsp: rsp, order: 3});
+				},
+				step5 = function(){
+					$(global_event).trigger('netcheck:status', {status: rsp.status, count: rsp.count});
+				};
+			setTimeout(function(){
+				step1();
+				setTimeout(function(){
+					step2();
+					setTimeout(function(){
+						step3();
+						setTimeout(function(){
+							step4();
+								setTimeout(function(){
+									step5();
+								}, 800);
+						}, 800);
+					}, 800);
+				}, 800);
+			}, 10);
+
+		}else{
+			$('.detect-body').html('<center>'+ rsp.msg +'</center>')
+		}
+	});
+});
+$(function(){
+	$(global_event).trigger('netcheck:init');
+});
+</script>

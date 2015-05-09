@@ -1,0 +1,576 @@
+<%
+--[[
+	Info	网络连接设置
+]]--
+local ver = require("xiaoqiang.XQVersion").webVersion
+local XQLanWanUtil = require("xiaoqiang.util.XQLanWanUtil")
+local is_conn = XQLanWanUtil.getWanMonitorStat().WANLINKSTAT == "UP"
+local autotype = luci.http.formvalue("mini")
+local wanType = 2
+local getWanType = XQLanWanUtil.getAutoWanType()
+if getWanType then
+	wanType = getWanType
+end
+local wan = XQLanWanUtil.getLanWanInfo("wan")
+%>
+<%include('web/inc/head')%>
+<title>小米路由器</title>
+<link rel="stylesheet" href="<%=resource%>/web/css/page.set.net.css?v=<%=ver%>" type="text/css"/>
+<%if autotype ~= nil then%>
+<style>
+html,body {
+	overflow: hidden;
+}
+.mod-setting-panel {
+	width: 500px;
+}
+.mod-setting-panel .hd {
+	display: none;
+}
+</style>
+<%end%>
+</head>
+<body>
+<div class="mod-setting-panel">
+	<div class="hd">
+		<h3>外网设置</h3>
+	</div>
+	<div class="bd">
+		<div class="mod-set-net">
+			<!-- base set -->
+			<div class="base-set">
+				<div class="wantype form form-horizontal clearfix">
+					<div class="item">
+						<p id="checktype"></p>
+					</div>
+					<div class="item">
+						<label class="k">配置联网类型：</label>
+						<span class="v">
+							<select name="wanType" id="wanType" class="beautify">
+								<option value="pppoe">使用PPPoE</option>
+								<option value="dhcp">使用DHCP</option>
+								<option value="static">使用静态IP</option>
+							</select>
+						</span>
+					</div>
+				</div>
+
+				<div class="clearfix">
+					<form action="/" name="pppoe" id="pppoe" class="form form-horizontal form-pppoe" style="display:none;" autocomplete="off">
+						<input type="hidden" name="wanType" value="pppoe">
+						<div class="item">
+							<label class="k">账号：</label>
+							<span class="v"><input type="text" name="pppoeName" class="text input-large" autocomplete="off"></span>
+							<em class="t"></em>
+						</div>
+						<div class="item">
+							<label class="k">密码：</label>
+							<span class="v">
+								<input type="text" name="pppoePwd" class="text input-large" autocomplete="off">
+							</span>
+							<em class="t"></em>
+						</div>
+						<div class="item">
+							<label class="k">数据包MTU：</label>
+							<span class="v">
+								<input type="text" name="mtu" class="text input-large" autocomplete="off" value="1480">
+							</span>
+							<em class="t">字节（网络正常情况下不建议修改）</em>
+						</div>
+						<div class="item">
+							<label class="k">服务名：</label>
+							<span class="v">
+								<input type="text" name="service" class="text input-large" autocomplete="off">
+							</span>
+							<em class="t"></em>
+						</div>
+						<div class="item">
+							<label class="k">DNS1：</label>
+							<span class="v">
+								<input type="text" name="dns1" class="text input-large" autocomplete="off">
+							</span>
+							<em class="t">可选</em>
+						</div>
+						<div class="item">
+							<label class="k">DNS2：</label>
+							<span class="v">
+								<input type="text" name="dns2" class="text input-large" autocomplete="off">
+							</span>
+							<em class="t">可选</em>
+						</div>
+						<div class="item item-control">
+							<button type="submit" class="btn btn-primary"><span>确定</span></button>
+						</div>
+					</form>
+
+					<form action="/" name="typeDhcp" id="typeDhcp" class="form form-horizontal form-static" autocomplete="off" style="display:none;">
+						<input type="hidden" name="wanType" value="dhcp">
+						<div class="item">
+							<label class="k">DNS1：</label>
+							<span class="v">
+								<input type="text" name="dns1" class="text input-large" autocomplete="off">
+							</span>
+							<em class="t">可选</em>
+						</div>
+						<div class="item">
+							<label class="k">DNS2：</label>
+							<span class="v">
+								<input type="text" name="dns2" class="text input-large" autocomplete="off">
+							</span>
+							<em class="t">可选</em>
+						</div>
+						<div class="item item-control">
+							<button type="submit" class="btn btn-primary" id="btnSetDhcp"><span>确定</span></button>
+						</div>
+					</form>
+
+					<form action="/" name="static" id="static" class="form form-horizontal form-static" style="display:none;" autocomplete="off">
+						<input type="hidden" name="wanType" value="static">
+						<div class="item">
+							<label class="k">IP地址：</label>
+							<span class="v">
+								<input type="text" name="staticIp" class="text input-large" autocomplete="off">
+							</span>
+							<em class="t"></em>
+						</div>
+						<div class="item">
+							<label class="k">子网掩码：</label>
+							<span class="v">
+								<input type="text" name="staticMask" class="text input-large" autocomplete="off">
+							</span>
+							<em class="t"></em>
+						</div>
+						<div class="item">
+							<label class="k">网关：</label>
+							<span class="v">
+								<input type="text" name="staticGateway" class="text input-large" autocomplete="off">
+							</span>
+							<em class="t"></em>
+						</div>
+						<div class="item">
+							<label class="k">DNS1：</label>
+							<span class="v">
+								<input type="text" name="dns1" class="text input-large" autocomplete="off">
+							</span>
+							<em class="t"></em>
+						</div>
+						<div class="item">
+							<label class="k">DNS2：</label>
+							<span class="v">
+								<input type="text" name="dns2" class="text input-large" autocomplete="off">
+							</span>
+							<em class="t">可选</em>
+						</div>
+						<div class="item item-control">
+							<button type="submit" class="btn btn-primary"><span>确定</span></button>
+						</div>
+					</form>
+				</div>
+				<div id="typeDhcp" class="form form-horizontal" style="display:none;">
+					<div class="item">
+						<span class="k"></span>
+						<span class="v">使用DHCP上网？</span>
+					</div>
+					<div class="item item-control">
+						<button type="submit" class="btn btn-primary" id="btnSetDhcp"><span>确定</span></button>
+					</div>
+				</div>
+			</div>
+			<div class="base-info">
+				<div class="form pppoe-info" style="display:none" id="pppoe-info">
+					<div class="item">
+						<label class="k">外网状态：</label>
+						<span class="status" id="pppoe-status">未连接</span>
+					</div>
+					<div class="item">
+						<label class="k">连接类型：</label>
+						<span class="status" id="wan-type">PPPoE</span>
+					</div>
+					<div class="item">
+						<label class="k">IP 地址：</label>
+						<span class="status" id="wan-address">-.-.-.-</span>
+					</div>
+					<div class="item">
+						<label class="k">子网掩码：</label>
+						<span class="status" id="wan-mask">-.-.-.-</span>
+					</div>
+					<div class="item">
+						<label class="k">默认网关：</label>
+						<span class="status" id="wan-gateway">-.-.-.-</span>
+					</div>
+					<div class="item item-control">
+						<button style="display:none" type="submit" id="pppoe-stop" class="btn btn-primary"><span>断开</span></button>
+						<button style="display:none" type="submit" id="pppoe-connect" class="btn btn-primary"><span>连接</span></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<%include('web/inc/g.js.base')%>
+<script>
+//检测网络类型
+$(global_event).on('net:getWanType', function(evt, data){
+	var rsp = {
+		wanType: <%=wanType%>
+	};
+	var checkRes = '';
+	if ( rsp.wanType == 2) {
+
+		checkRes = '经过检测建议你使用联网类型为DHCP';
+	} else if ( rsp.wanType == 1) {
+		checkRes = '经过检测建议你使用联网类型为PPPoE';
+	}else if (rsp.wanType == 3) {
+		checkRes = '经过检测建议你使用联网类型为静态IP';
+	}else if(rsp.wanType == 99){
+		checkRes = '路由器没插网线，请检查并连接网线。';
+	}else{
+		checkRes = '未能检测到您的上网类型，请手动选择';
+	}
+	$('#checktype').html(checkRes);
+	$(global_event).trigger('net:formFill');
+});
+
+//PPPoE数据填入
+$(global_event).on('net:formFill', function(evt, data){
+	var request_data = {};
+	$.getJSON('<%=luci.dispatcher.build_url("api", "xqnetwork","wan_info")%>',request_data,function(rsp){
+		if(rsp.code == 0){
+			if(rsp.status == 0){
+				return;
+			}
+			if (rsp.info.details.wanType == 'pppoe'){
+				$('#pppoe').show();
+				$('#typeDhcp').hide();
+				$('#static').hide();
+				$('#wanType').val('pppoe');
+				$("input[name='pppoeName']").val(rsp.info.details.username);
+				$("input[name='pppoePwd']").val(rsp.info.details.password);
+				if(rsp.info.details.special == '1'){
+					$("input[name='special_dial']")[0].checked = true;
+				}
+				if ( rsp.info.details.service ) {
+					$("input[name='service']").val(rsp.info.details.service);
+				}
+				$(global_event).trigger('net:pppoeStatus');
+			}
+			if (rsp.info.details.wanType == 'static'){
+				$('#pppoe').hide();
+				$('#typeDhcp').hide();
+				$('#static').show();
+				$('#wanType').val('static');
+				$("input[name='staticIp']").val(rsp.info.details.ipaddr);
+				$("input[name='staticMask']").val(rsp.info.details.netmask);
+				$("input[name='staticGateway']").val(rsp.info.details.gateway);
+			}
+			if (rsp.info.details.wanType == 'dhcp') {
+				$('#pppoe').hide();
+				$('#typeDhcp').show();
+				$('#static').hide();
+				$('#wanType').val('dhcp');
+			}
+
+			if (rsp.info.details.dns && $.isArray(rsp.info.details.dns)) {
+				for (var i = 0; i < rsp.info.details.dns.length; i++) {
+					$("input[name='dns"+ (i+1) +"']").val(rsp.info.details.dns[i]);
+				}
+			}
+
+			$("input[name='mtu']").val(rsp.info.mtu);
+
+			window.setTimeout(function(){
+				var sltIdx = $('#wanType')[0].selectedIndex;
+				$('#wanType').next('.dummy').val($('#wanType')[0].options[sltIdx].text);
+			}, 50);
+
+		}else{
+			return;
+		}
+	});
+});
+
+
+//PPPoE checkstatus
+$(global_event).on('net:pppoeStatus', function(evt, data){
+	time = data ? data.time : 0;
+	clearTimeout(this.timer);
+	function ask(){
+		$.ajax({
+			url: '<%=luci.dispatcher.build_url("api", "xqnetwork","pppoe_status")%>',
+			type: "GET",
+			dataType: "json",
+			success : function(rsp){
+				var msg;
+				if(rsp.status != 0){
+					$('#pppoe-info').show();
+					switch(rsp.status){
+						case 1 :
+							msg = '正在拨号';
+							this.timer = setTimeout(ask, 2000);
+							break;
+						case 2 :
+							msg = '拨号成功';
+							break;
+						case 3 :
+							msg = rsp.msg || '拨号错误,正在重试...';
+							this.timer = setTimeout(ask, 2000);
+							break;
+						case 4 :
+							msg = '已断开';
+							break;
+						default:
+							break;
+					}
+					$('#pppoe-status').text(msg);
+					$('#pppoe-stop').removeClass('disable_btn').show();
+					$('#pppoe-connect').hide();
+					if(rsp.status == 2){
+						$('#wan-mask').text(rsp.ip['mask']);
+						$('#wan-address').text(rsp.ip['address']);
+						$('#wan-gateway').text(rsp.gw);
+					}else {
+						if(rsp.status == 4){
+							$('#pppoe-stop').hide();
+							$('#pppoe-connect').removeClass('disable_btn').show();
+						}
+						$('#wan-mask').text('-.-.-.-');
+						$('#wan-address').text('-.-.-.-');
+						$('#wan-gateway').text('-.-.-.-');
+					}
+				}else{
+					$('#pppoe-info').hide();
+				}
+			}
+		});
+	}
+	setTimeout(ask, time);
+});
+
+//PPPoE Stop
+$(global_event).on('net:pppoeStop', function(){
+	$.ajax({
+		url: '<%=luci.dispatcher.build_url("api", "xqnetwork","pppoe_stop")%>',
+		type: "GET",
+		dataType: "json",
+		success : function(rsp){
+			$(global_event).trigger('net:pppoeStatus', {time : 500});
+		}
+	});
+});
+
+//PPPoE Connect
+$(global_event).on('net:pppoeConnect', function(){
+	this.reconnect = true;
+
+	if(!this.connectlock){
+		this.connectlock = true;
+		$('#pppoe').submit();
+	}
+});
+
+//设置PPPoE表单事件
+$(global_event).on('net:pppoeEvent', function(evt, data){
+	$('#pppoe').on('submit', function(e){
+		e.preventDefault();
+		var formName = this.name;
+		var validator = FormValidator.checkAll(formName, [{
+		    name: 'pppoeName',
+		    display :'账户',
+		    rules: 'required'
+		}, {
+		    name: 'pppoePwd',
+		    display :'密码',
+		    rules: 'required'
+		}, {
+		    name: 'mtu',
+		    display :'数据包MTU',
+		    rules: 'is_natural|greater_than[575]|less_than[1499]'
+		}, {
+		    name: 'dns1',
+		    display :'网关',
+		    rules: 'valid_ip'
+		}, {
+		    name: 'dns2',
+		    display :'网关',
+		    rules: 'valid_ip'
+		}]);
+		if (validator) {
+			var request_data = $(this).serializeArray();
+			$(global_event).trigger('net:pppoeSet', {request_data: request_data});
+		}
+	});
+});
+
+//设置PPPoE
+$(global_event).on('net:pppoeSet', function(evt, data){
+	var self = this;
+	var request_data = data.request_data;
+	var request = $.ajax({
+		url: '<%=luci.dispatcher.build_url("api", "xqnetwork","set_wan")%>',
+		type: "POST",
+		data: request_data,
+		dataType: "json",
+		success : function(rsp){
+			if(!self.reconnect){
+				if(rsp.code == 0){
+					window.parent.art.dialog({
+						title : false,
+						content : '设置成功'
+					}).lock().time(4*1000);
+				}else{
+					window.parent.art.dialog({
+						title: false,
+						content: rsp.msg
+					}).lock().time(4*1000);
+				}
+				$(global_event).trigger('net:pppoeStatus', {time : 1000});
+			}else{
+				$(global_event).trigger('net:pppoeStatus', {time : 0});
+			}
+
+			self.connectlock = false;
+			self.reconnect = false;
+		}
+	});
+});
+
+//设置静态IP
+$(global_event).on('net:staticEvent', function(evt, data){
+	$('#static').on('submit', function(e){
+		e.preventDefault();
+		var formName = this.name;
+		var validator = FormValidator.checkAll(formName, [{
+		    name: 'staticIp',
+		    display :'IP地址',
+		    rules: 'required|valid_ip'
+		}, {
+		    name: 'staticMask',
+		    display :'子网掩码',
+		    rules: 'required|valid_ip'
+		}, {
+		    name: 'staticGateway',
+		    display :'网关',
+		    rules: 'required|valid_ip'
+		}, {
+		    name: 'dns1',
+		    display :'网关',
+		    rules: 'required|valid_ip'
+		}, {
+		    name: 'dns2',
+		    display :'网关',
+		    rules: 'valid_ip'
+		}]);
+		if (validator) {
+			var request_data = $(this).serializeArray();
+			$(global_event).trigger('net:staticSet', {request_data: request_data});
+		}
+
+	});
+});
+
+$(global_event).on('net:staticSet', function(evt, data){
+	var request_data = data.request_data;
+	var request = $.ajax({
+		url: '<%=luci.dispatcher.build_url("api", "xqnetwork","set_wan")%>',
+		type: "POST",
+		data: request_data,
+		dataType: "json",
+		success : function(rsp){
+			if(rsp.code == 0){
+				window.parent.art.dialog({
+					title : false,
+					content : '设置成功'
+				}).lock().time(4*1000);
+			}else{
+				window.parent.art.dialog({
+					title: false,
+					content: rsp.msg
+				}).lock().time(4*1000);
+			}
+		}
+	});
+});
+
+$(global_event).on('net:dhcpEvent', function(evt, data){
+	$('#typeDhcp').on('submit', function(e){
+		e.preventDefault();
+		var formName = this.name;
+		var validator = FormValidator.checkAll(formName, [{
+		    name: 'dns1',
+		    display :'网关',
+		    rules: 'valid_ip'
+		}, {
+		    name: 'dns2',
+		    display :'网关',
+		    rules: 'valid_ip'
+		}]);
+		if (validator) {
+			var request_data = $(this).serializeArray();
+			$.ajax({
+				url: '<%=luci.dispatcher.build_url("api", "xqnetwork","set_wan")%>',
+				type: "POST",
+				data: request_data,
+				dataType: "json",
+				success : function(rsp){
+					if(rsp.code == 0){
+						window.parent.art.dialog({
+							title : false,
+							content : '设置成功'
+						}).lock().time(4*1000);
+					}else{
+						window.parent.art.dialog({
+							title: false,
+							content: rsp.msg
+						}).lock().time(4*1000);
+					}
+				}
+			});
+		}
+	});
+});
+//TODO:无线中继各种接口
+
+
+$(function(){
+	$(global_event).trigger('net:pppoeEvent');
+	$(global_event).trigger('net:staticEvent');
+	$(global_event).trigger('net:getWanType');
+	$(global_event).trigger('net:dhcpEvent');
+	$('#wanType').on('change', function(e){
+		var val = $(this).val();
+		if (val == 'pppoe') {
+			$('#pppoe').show();
+			$('#typeDhcp').hide();
+			$('#static').hide();
+
+			$(global_event).trigger('net:pppoeStatus');
+		}
+		if (val == 'dhcp') {
+			$('#pppoe').hide();
+			$('#typeDhcp').show();
+			$('#static').hide();
+
+			$('#pppoe-info').hide();
+		}
+		if (val == 'static') {
+			$('#pppoe').hide();
+			$('#typeDhcp').hide();
+			$('#static').show();
+
+			$('#pppoe-info').hide();
+		}
+	});
+
+	$('#pppoe-connect').on('click', function(){
+		$('#pppoe-connect').addClass('disable_btn');
+		$(global_event).trigger('net:pppoeConnect');
+	});
+
+	$('#pppoe-stop').on('click', function(){
+		$('#pppoe-stop').addClass('disable_btn');
+		$(global_event).trigger('net:pppoeStop');
+	});
+});
+</script>
+</body>
+</html>

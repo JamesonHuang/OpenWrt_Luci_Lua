@@ -1,0 +1,40 @@
+<%
+--[[
+	Info	路由器恢复出厂设置
+]]--
+
+local ver = require("xiaoqiang.XQVersion").webVersion
+local request_uri = luci.http.getenv("REQUEST_URI")
+%>
+<%include('web/inc/head')%>
+<title>小米路由器</title>
+<link rel="stylesheet" href="<%=resource%>/web/css/page.set.reboot.css?v=<%=ver%>"/>
+</head>
+<body>
+<!-- upgread -->
+<div class="mod-setting-panel">
+	<div class="hd">
+		<h3>恢复出厂设置</h3>
+	</div>
+	<div class="bd">
+		<div class="mod-set-reset">
+			<div class="info">
+				<h3>恢复出厂设置</h3>
+				<p class="p1">清除路由器上所有的设置项目，包括绑定的小米账号，恢复到出厂状态。</p>
+				<p><label class="l js-checkbox"><span class="input-checkbox"><input name="format" id="format" type="checkbox"></span> 格式化整个硬盘 <i class="mute">( 硬盘里所有数据将被清空)</i></label></p>
+			</div>
+			<div class="btn-box">
+				<button class="btn btn-primary" id="btnReset"><span>恢复出厂设置</span></button>
+			</div>
+		</div>
+	</div>
+</div>
+<%include('web/inc/g.js.base')%>
+<script>
+$(function(){
+	$("#btnReset").click(function(){
+		var format = $('[name=format]').prop('checked');
+		window.parent.reset_window(format);
+	});
+});
+</script>

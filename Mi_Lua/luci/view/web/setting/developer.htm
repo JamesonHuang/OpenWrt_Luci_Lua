@@ -1,0 +1,165 @@
+<%
+--[[
+    Info    Developer
+]]--
+local ver = require("xiaoqiang.XQVersion").webVersion
+%>
+<%include('web/inc/head')%>
+<title>小米路由器</title>
+<link rel="stylesheet" href="<%=resource%>/web/css/page.set.default.css?v=<%=ver%>"/>
+</head>
+<body>
+<!-- upgread -->
+<div class="mod-setting-panel">
+    <div class="hd">
+        <h3>开发者选项</h3>
+    </div>
+    <div class="bd">
+        <div class="mod-set-developer form form-horizontal">
+            <div class="item">
+                <label for="pwd" class="k">插件开发环境：</label>
+                <span class="v"><a href="#" data-order="1" class="btn-offon btn-off" id="btndeveloper"></a></span>
+                <em class="t"></em>
+            </div>
+            <form action="<%=luci.dispatcher.build_url("api", "xqdatacenter", "plugin_ssh")%>" class="form form-horizontal" method="post" name="developer" id="developer" hidden='hidden'>
+                <div class="item">
+                    <label for="pwd" class="k">插件ID：</label>
+                    <span class="v"><input type="text" name="pluginID" id="pluginID" class="text input-large"></span>
+                    <em class="t"></em>
+                </div>
+                <div class="item item-control" id="capabilitylist">
+                </div>
+                <div class="item item-control">
+                    <button type="submit" id="btnSave" class="btn btn-primary btn-large"><span>保存</span></button>
+                </div>
+            </form>
+            <div class="info">
+                <p>通过SSH工具，输入ssh plugin@miwifi.com -p 2222 登录路由器，默认登录密码admin(登录后可通过passwd修改密码)</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="tmpl/html" id="capability">
+<div class="item item-check-control">
+<label class="js-checkbox">
+    <span class="input-checkbox {if($enable == 1)}input-checkbox-checked{/if}">
+        <input name="capabilityitem" value={$key} type="checkbox" {if($enable == 1)}checked{/if} >
+    </span> {$description}
+</label>
+</div>
+</script>
+<%include('web/inc/g.js.base')%>
+<script>
+var modelDeveloper = (function(){
+    function developerInfo(){
+        $.getJSON('<%=luci.dispatcher.build_url("api", "xqdatacenter", "plugin_ssh_status")%>', {}, function(rsp){
+            var btndeveloper = $('#btndeveloper')[0],
+                developer = $('#developer');
+            if (rsp.code == 0) {
+                if (rsp.enable == 0) {
+                    btndeveloper.className = 'btn-offon btn-off';
+                    developer.hide();
+                }else{
+                    btndeveloper.className = 'btn-offon btn-on';
+                    $('#pluginID').val(rsp.pluginID);
+                    developer.show();
+                }
+                var tpl = $('#capability').html(),
+                    capabilitys = rsp.capability,
+                    capabilityarray = [],
+                    tbody = $('#capabilitylist');
+                for (var i = 0; i < capabilitys.length; i++) {
+                    var tpldata = {
+                        key : capabilitys[i].key,
+                        enable : capabilitys[i].enable,
+                        description : capabilitys[i].description
+                    };
+                    capabilityarray.push( tpl.tmpl(tpldata) );
+                }
+                tbody.html( capabilityarray.join('') );
+            } else {
+                btndeveloper.className = 'btn-offon btn-off';
+                developer.hide();
+                $.lightalert().setContent(rsp.msg).show();
+            }
+        });
+    }
+    function developerSwitch(){
+        var btndeveloper = $('#btndeveloper');
+        var developer = $('#developer');
+        btndeveloper.on('click', function(e){
+            e.preventDefault();
+            var st = $(this).hasClass('btn-on') ? 0 : 1,
+                btn = this;
+            if (st == 0) {
+                $.getJSON('<%=luci.dispatcher.build_url("api", "xqdatacenter", "plugin_ssh")%>', {'open': 0}, function(rsp){
+                    if (rsp.code == 0) {
+                        btndeveloper[0].className = 'btn-offon btn-off';
+                        developer.hide();
+                        window.location.reload();
+                    } else {
+                        $.lightalert().setContent(rsp.msg).show();
+                    }
+                });
+            } else {
+                btndeveloper[0].className = 'btn-offon btn-on';
+                developer.show();
+            }
+        });
+    }
+    function developerSet(){
+        $('#developer').on('submit', function(e){
+            e.preventDefault();
+            var capabilityarray = [],
+                capabilitystr;
+            $('input[name=capabilityitem]').each(function(){
+                if (this.checked) {
+                    capabilityarray.push(this.value);
+                }
+            });
+            capabilitystr = capabilityarray.join(',');
+            var url = this.action,
+                method = this.method,
+                param = $(this).serialize(),
+                formName = this.name,
+                validator = FormValidator.checkAll(formName, [{
+                    name: 'pluginID',
+                    display :'插件ID:',
+                    rules: 'required',
+                }]);
+            if (validator) {
+                var btndeveloper = $('#btndeveloper');
+                var st = btndeveloper.hasClass('btn-on') ? 1 : 0;
+                $('#btnSave').prop('disabled', true).find('span').text('保存中...');
+                param = param + '&capability=' + capabilitystr + '&open=' + st;
+                $.ajax({
+                    url: url,
+                    type: method,
+                    data: param,
+                    dataType: 'json',
+                    success: function(rsp){
+                        var msg;
+                        if (rsp.code == 0) {
+                            msg = '设置成功。';
+                        }else{
+                            msg = rsp.msg;
+                        }
+                        $.lightalert().setContent(msg).show();
+                        $('#btnSave').prop('disabled', false).find('span').text('保存');
+                    }
+                });
+            }
+        });
+    }
+    return {
+        init : function(){
+            developerInfo();
+            developerSwitch();
+            developerSet();
+        }
+    }
+}());
+$(function(){
+    modelDeveloper.init();
+});
+</script>
