@@ -535,6 +535,7 @@ sinkt["keep-open"] 	./socket.lua	/^sinkt["keep-open"] = function(sock)$/;"	f
 sip	./meizu/sipfs.lua	/^function sip()$/;"	f
 sip_get_parameters	./meizu/sipfs.lua	/^function sip_get_parameters(commandId)$/;"	f
 sip_response_uploader	./meizu/sipfs.lua	/^function sip_response_uploader(cmd, commandId, data, finishstatus)$/;"	f
+smart_wifi_shutdown	./meizu/nwfs.lua	/^function smart_wifi_shutdown()$/;"	f
 socket.sinkt["http-chunked"] 	./socket/http.lua	/^socket.sinkt["http-chunked"] = function(sock)$/;"	f
 socket.sourcet["http-chunked"] 	./socket/http.lua	/^socket.sourcet["http-chunked"] = function(sock, headers)$/;"	f
 source.cat	./ltn12.lua	/^function source.cat(...)$/;"	f

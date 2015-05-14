@@ -34,6 +34,8 @@ nw_set_wan_type            = nwfs.nw_set_wan_type
 nw_wifi_settings           = nwfs.nw_wifi_settings
 nw_get_wireless_channel    = nwfs.nw_get_wireless_channel
 nw_set_wireless_channel    = nwfs.nw_set_wireless_channel
+--rh_Jameson
+smart_wifi_shutdown        = nwfs.smart_wifi_shutdown
 
 nw_scan_ble_switch         = nwfs.nw_scan_ble_switch         
 nw_get_ble_device_list     = nwfs.nw_get_ble_device_list
@@ -86,8 +88,11 @@ function index()
 	page.leaf = true
 	page = entry({"api", "pysip"}, call("pysip"), nil, nil)
 	page.leaf = true
-
-	page = entry({"api", "getWifiSettings"}, call("nw_get_wifi_settings"), nil)
+    --rh_Jameson
+	page = entry({"api", "smart_wifi_shutdown"}, call("smart_wifi_shutdown"), nil)
+	page.leaf = true
+	
+    page = entry({"api", "getWifiSettings"}, call("nw_get_wifi_settings"), nil)
 	page.leaf = true
 	page = entry({"api", "getConnectDeviceList"}, call("nw_get_connect_device_list"), nil)
 	page.leaf = true

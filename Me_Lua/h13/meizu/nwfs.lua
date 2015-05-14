@@ -6,6 +6,7 @@ local lfs   = require "lfs"
 local bfs   = require "meizu.bfs"
 local RC    = require "meizu.r10config"
 local dbfs  = require "meizu.dbfs"
+local posix = require "posix"
 
 local bind_router          = bfs.bind_router
 local data_to_json         = bfs.data_to_json
@@ -365,15 +366,52 @@ function check_wifi_passwd(passwd,encryption)
     end
     return 0
 end
+function fork_smart_wifi_shutdown(wnet, close_time, open_time)
+    local close_interval = close_time - os.time()
+    local open_interval = open_time - os.time()
+
+    local cmd = string.format("/sbin/wifi down "..wnet.."; sleep 15; /sbin/wifi up "..wnet)                                                                                                 
+    --local cmd = string.format("sleep %s; /sbin/wifi down; sleep %s; /sbin/wifi up;", tostring(close_interval), tostring(open_interval))                                                   
+    --local cmd = "/sbin/wifi "..switch.." "..wnet  
+    exec_cmd_in_sh(cmd)
+end
+    --[[
+    return coroutine.create(function()
+        --do close
+        while true do
+            if os.time() ~= close_time then
+                posix.sleep(1)
+            else
+                wifi_shutdown(wnet)
+                table["close"] = true
+                luci.http.write_json(table)
+                break
+            end
+        end
+        --do restart
+        while true do
+            if os.time() ~= restart_time then
+                posix.sleep(1)
+            else
+                wifi_reconnect(wnet)
+                table["restart"] = true
+                luci.http.write_json(table)
+                break
+            end
+        end
+    )
+    --require "MZLog".log(3, debug.getinfo(1).currentline)
+    ]]--
+
 
 function fork_restart_wifi()
-	local FORK_RESTART_WIFI = "sleep 1; /sbin/wifi >/dev/null 2>/dev/null; /etc/init.d/minidlna restart; /etc/init.d/samba restart; /usr/bin/gettraffic flush_wl_dev >/dev/null 2>/dev/null"
-    exec_cmd_in_sh(FORK_RESTART_WIFI)
+	local cmd = "sleep 1; /sbin/wifi >/dev/null 2>/dev/null;"
+    exec_cmd_in_sh(cmd)
 end
 
 function fork_restart_network()
-	local FORK_RESTART_WORK= "/etc/init.d/network restart"
-    exec_cmd_in_sh(FORK_RESTART_WORK)
+	local cmd = "/etc/init.d/network restart"
+    exec_cmd_in_sh(cmd)
 end
 
 function get_lan_ip()
@@ -400,25 +438,103 @@ local function wifi_reconnect_shutdown(shutdown, wnet)
 
 		luci.sys.call("env -i /sbin/wifi reload >/dev/null 2>/dev/null")
 
-		luci.http.status(200, shutdown and "Shutdown" or "Reconnected")
+		--luci.http.status(200, shutdown and "Shutdown" or "Reconnected")
 
 		return
 	end
 
-	luci.http.status(404, "No such radio")
+	--luci.http.status(404, "No such radio")
 end
 --wifi重连
 function wifi_reconnect(wnet)
-    if(getstate)
     wifi_reconnect_shutdown(false, wnet)
 end
---wifi开关
+--wifi关闭
 function wifi_shutdown(wnet)
 	wifi_reconnect_shutdown(true, wnet)
 end
 
 
+--function:     定时wifi开关shell形式
+--author：      rh_Jameson
+function smart_wifi_shutdown()
+    local wnet = 'mt7628.network1'
+    local info = {}
 
+    --get para
+    --close_time = luci.http.formvalue("close_time")
+    --open_time = luci.http.formvalue("open_time")
+    
+    --test normal    
+    close_time = os.time() + 5
+    restart_time = os.time() + 10
+    
+    --test exception
+    --close_time = os.time() - 5
+    --restart_time = os.time() - 10
+
+    --para err manage
+    if close_time < os.time() or restart_time < close_time then
+        info["SUCCESS"] = false
+    else
+        info["SUCCESS"] = true
+    end
+    fork_smart_wifi_shutdown(wnet, close_time, restart_time)
+    luci.http.write_json(info)  
+end
+
+
+--[[
+--function:     定时wifi开关
+--author：      rh_Jameson
+function smart_wifi_shutdown()
+    local wnet = 'mt7628.network1'
+    local table = {}
+    
+    --get para
+    --local close_time = luci.http.formvalue("close_time")
+    --local open_time = luci.http.formvalue("open_time")
+    
+    --test normal    
+    --local close_time = os.time() + 5
+    --local restart_time = os.time() + 10
+    
+    --test exception
+    local close_time = os.time() - 5
+    local restart_time = os.time() - 10
+
+    --para err manage
+    if close_time < os.time() or restart_time < close_time then
+        table["err"] = true
+        luci.http.write_json(table)
+        return
+    end
+    --do close
+    while true do
+        if os.time() ~= close_time then
+            posix.sleep(1)
+        else
+            wifi_shutdown(wnet)
+            table["close"] = true
+            luci.http.write_json(table)
+            break
+        end
+    end
+
+    --do restart
+    while true do
+        if os.time() ~= restart_time then
+            posix.sleep(1)
+        else
+            wifi_reconnect(wnet)
+            table["restart"] = true
+            luci.http.write_json(table)
+            break
+        end
+    end
+end
+
+--]]--
 
 
 
