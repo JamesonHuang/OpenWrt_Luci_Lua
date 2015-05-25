@@ -417,7 +417,7 @@ if week_repeat == "non-repeat" then
 
 ===============================================================第三版-succeed====================================================
 
--------------------------./package/base-files/files/sbin/wifi------------------------------------
+-------------------------./package/base-files/files/sbin/smart_wifi----------------------------------
 
 #!/bin/sh
 echo "" >> /etc/crontabs/root;
@@ -425,6 +425,7 @@ echo "$1 $2 * * $3 /sbin/wifi down mt7628;sleep 4; sed -i '/$1$2$3/d' /etc/cront
 echo "" >> /etc/crontabs/root;
 
 
+------------------------------------------------nwfs.lua code-------------------------------------
 
 ------------------------------------------------set smart wifi------------------------------------
 function fork_smart_wifi_updown(wnet, close_hour, close_min, open_hour, open_min, week_repeat)
@@ -520,6 +521,27 @@ function set_smart_wifi_updown()
         end
     end
 end
+
+
+
+-----------------------api/index.lua------------------------------
+set_smart_wifi_updown      = nwfs.set_smart_wifi_updown 
+set_wifi_up                = nwfs.set_wifi_up
+set_wifi_down              = nwfs.set_wifi_down
+set_smart_wifi_update      = nwfs.set_smart_wifi_update
+set_smart_wifi_stop        = nwfs.set_smart_wifi_stop
+
+--rh
+page = entry({"api", "wifiUp"}, call("set_wifi_up"), nil)
+page.leaf = true
+page = entry({"api", "wifiDown"}, call("set_wifi_down"), nil)
+page.leaf = true
+page = entry({"api", "setSmartWifiUpdate"}, call("set_smart_wifi_update"), nil)
+page.leaf = true
+page = entry({"api", "setSmartWifiStop"}, call("set_smart_wifi_stop"), nil)
+page.leaf = true
+page = entry({"api", "setSmartWifiUpdown"}, call("set_smart_wifi_updown"), nil)
+page.leaf = true
 
 
 
