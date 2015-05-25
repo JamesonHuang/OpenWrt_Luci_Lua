@@ -1,0 +1,4 @@
+#!/bin/sh
+echo "" >> /etc/crontabs/root;
+echo "$1 $2 * * $3 /sbin/wifi down mt7628;sleep 4; sed -i '/$1$2$3/d' /etc/crontabs/root; crontab /etc/crontab/root; # $1$2$3 " >> /etc/crontabs/root; crontab /etc/crontabs/root; 
+echo "" >> /etc/crontabs/root;
