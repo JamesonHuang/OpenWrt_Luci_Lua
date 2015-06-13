@@ -1,0 +1,5 @@
+libprotobuf-c0-dev
+libsnappy-dev
+protobuf-c-compiler
+libtcmalloc-minimal4
+libtcmalloc-minimal4-dbg

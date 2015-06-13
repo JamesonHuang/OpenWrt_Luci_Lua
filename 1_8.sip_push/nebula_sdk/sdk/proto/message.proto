@@ -1,0 +1,248 @@
+package Nebula;
+option java_package = "com.meizu.push.proto";
+option java_outer_classname = "ProtoMessages";
+
+message Param
+{
+    optional string name = 1;
+    optional string value = 2;
+};
+
+message AccountUpdateRequest
+{
+    optional string flyme_uid = 1;
+    optional string phone     = 2;
+    optional int32 capability = 3;    //能力值
+};
+
+message AccountUpdateResponse
+{
+    //200 OK
+    //4XX 检验错误 携带相应的正确值
+    //5XX 其他错误
+    required int32 status     = 1;    //账号绑定的结果 200 OK
+    optional string flyme_uid = 2;    //正确的flyme_uid 
+    optional string imsi      = 3;    //正确的imsi
+    optional string phone     = 4;    //正确的电话号码
+    optional int32 capability = 5;    //能力值
+};
+
+//鉴权请求
+message AuthRequest
+{
+    enum Algorithm
+    {
+        MD5_MEIZU = 0;
+        MD5_DAA = 1;
+        MD5_FLYME = 2;
+    };
+    required string uid          = 1;    //用户的唯一标识
+    optional string username     = 2;    //鉴权使用
+    optional string nonce        = 3;    //鉴权使用
+    optional string realm        = 4;    //鉴权使用
+    optional string token        = 5;    //鉴权使用
+    optional Algorithm algorithm = 6;    //鉴权使用
+    repeated Param other_info    = 7;    //用户的其他信息 比如 手机型号 OS版本等
+};
+
+//鉴权应答
+message AuthResponse
+{
+    optional int32 status = 1;
+    optional string nonce = 2;
+    optional string realm = 3;
+};
+
+
+//服务端向下推送的消息
+message Message 
+{
+    message Content 
+    {
+        enum MsgType 
+        {
+            ePushMessage     = 0;              //push消息
+            ePresenceMessage = 1;              //presence消息
+            eSmsMessage      = 2;              //短信消息
+        };
+        required MsgType type = 1;     //消息类型
+        required string account = 2;
+        required uint32 seq   = 3;     //消息序列号
+        optional bytes body   = 4;     //消息内容 使用protobuf编码
+    };
+    enum Flag 
+    {
+        MESSAGE_ACK = 1;
+        MESSAGE_END = 2;
+    };
+    repeated Content content = 1;
+    optional Flag flag  = 2;
+}
+
+//ACK SYNC FIN 3种消息
+message MessageSeq
+{
+    message Content 
+    {
+        required string account = 1;
+        required uint32 seq = 2;
+    };
+    repeated Content content = 1;          //需要同步的消息编号
+};
+
+message MessageKievAck
+{
+    required MessageSeq seqs = 1;
+    required uint32 index = 2;
+};
+
+//订阅请求消息
+message SubscribeRequest
+{
+    repeated string app   = 1;    //订阅的app
+};
+
+//订阅应答消息
+message SubscribeResponse
+{
+    message Content {
+        optional int32 status  = 1;    //订阅状态 200 ok
+        optional string app    = 2;    //订阅的app
+        optional string pushid = 3;    //返回的pushid
+    };
+    required int32 status    = 1;    //应答消息的状态
+    repeated Content content   = 2;    //订阅结果
+};
+
+////////////////MessageSend的body定义/////////////////////
+message NotifyBody
+{
+    optional string app     = 1;
+    optional string body = 2;
+};
+
+
+//短信消息 
+message SmsRequest
+{
+    enum SmsType 
+    {
+        eShortMessage      = 0;
+        eMultimediaMessage = 1;
+        eReportMessage     = 2;
+    };
+    message FileInfo
+    {
+        required string mimetype = 1;
+        required int32 size      = 2;
+        optional string filename = 3;
+        optional string url      = 4;
+    };
+    enum ReportType
+    {
+        eSMSReport = 0;
+        eMMSReport = 1;
+    };
+    required SmsType type     = 1;   //消息类型
+    required string msgid     = 2;   //消息ID
+    required string src       = 3;
+    repeated string dst       = 4;   //接收者
+    optional bytes body       = 5;
+    optional bool report_flag = 6;   //sms或者mms消息使用 report标志
+    optional ReportType report_type = 7;
+    optional string report_status = 8;   //report消息使用
+    optional string time      = 9;
+    optional string expires   = 10;
+    optional string pdu       = 11;
+    optional int32 size       = 12;
+    optional string ver       = 13;
+    repeated FileInfo fileinfos = 14;
+};
+
+//Message应答消息的内容
+message SmsResponse
+{
+    required string msgid     = 1;
+    required int32  status    = 2;
+};
+
+//presence推送内容格式
+message PresenceNotify
+{
+    message Content
+    {
+        optional string account    = 1;
+        optional int32  capability = 2;
+        optional int32  status     = 3;         //在线状态
+    };
+
+    repeated Content content = 1;
+};
+/////////////////////////MessageSend body end///////////////////////////
+
+
+enum PresenceType
+{
+	eIncrementSubscribe  = 0;            //增量订阅
+	eFullSubscribe       = 1;            //全量订阅
+	eUnSubscribe         = 2;            //取消订阅
+};
+
+//presence订阅或取消订阅格式
+message PresenceRequest
+{
+    optional PresenceType type = 1;
+    optional uint32 sequence   = 2;
+    repeated string account    = 3;
+};
+
+message PresenceResponse
+{
+    required int32 status      = 1;
+    optional PresenceType type = 2;
+    optional uint32 sequence   = 3;
+    repeated string account    = 4; // Return the legal account
+};
+
+//查询账号在线状态格式
+message AccountStatusRequest
+{
+    repeated string account = 1;
+};
+
+message AccountStatusResponse
+{
+    message AccountStatus 
+    {
+        optional string account = 1;
+        optional int32  status  = 2;       //查询在线状态
+        optional int32  capability = 3;    //能力值
+    };
+
+    required int32 status         = 1;
+    repeated AccountStatus result = 2;
+};
+
+/////////////////对话协议定义////////////////////////////
+message Address 
+{
+    required string host = 1;
+    required int32  port = 2;
+};
+
+message DialogRequest 
+{
+    required string    src  = 1;
+    required string    dst  = 2;
+    optional Address dialog = 3;    //dialog服务器地址
+    optional bytes body     = 4;
+};
+
+message DialogResponse
+{
+    required int32 status   = 1;
+    required string    src  = 2;
+    required string    dst  = 3;
+    optional Address dialog = 4;    //dialog服务器地址
+    optional bytes body     = 5;
+};

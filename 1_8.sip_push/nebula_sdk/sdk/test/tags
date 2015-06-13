@@ -1,0 +1,20 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CC	Makefile	/^CC=gcc$/;"	m
+CFALGS	Makefile	/^CFALGS=-g$/;"	m
+INCLUDES	Makefile	/^INCLUDES=-I..$/;"	m
+LINK	Makefile	/^LINK=-L.. -lnebula_sdk$/;"	m
+NEBULA_SDK_H	nebula_sdk/nebula_sdk.h	2;"	d
+NebulaMsgCallback	nebula_sdk/nebula_sdk.h	/^    typedef void (*NebulaMsgCallback)(const char* app, const char* msg);$/;"	t
+NebulaMsgType	nebula_sdk/nebula_sdk.h	/^} NebulaMsgType;$/;"	t	typeref:enum:__anon1
+OnPush	test.c	/^void OnPush(const char* app, const char *msg)$/;"	f
+eNebulaMsg_Max	nebula_sdk/nebula_sdk.h	/^    eNebulaMsg_Max,$/;"	e	enum:__anon1
+eNebulaMsg_Mms	nebula_sdk/nebula_sdk.h	/^    eNebulaMsg_Mms,         \/\/\/ 网络彩信$/;"	e	enum:__anon1
+eNebulaMsg_Presence	nebula_sdk/nebula_sdk.h	/^    eNebulaMsg_Presence,    \/\/\/ Presence$/;"	e	enum:__anon1
+eNebulaMsg_Push	nebula_sdk/nebula_sdk.h	/^    eNebulaMsg_Push,        \/\/\/ 推送 (路由器只需关心这一类消息)$/;"	e	enum:__anon1
+eNebulaMsg_Sms	nebula_sdk/nebula_sdk.h	/^    eNebulaMsg_Sms,         \/\/\/ 网络短信$/;"	e	enum:__anon1
+main	test.c	/^int main()$/;"	f
