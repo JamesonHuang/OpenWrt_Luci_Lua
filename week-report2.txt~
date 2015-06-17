@@ -64,9 +64,12 @@
 	阅读twisted dave api详解dave@http://krondo.com/?p=1209 4-5
 	总结twisted常用的类及相关回调函数
 
-
-
-
+6.17
+	getsmartwifiinfo挂了，调试
+	发现传入smart wifi参数格式有问题，亟待与app端沟通
+	调整smart wifi utc时间
+	python实现urllib/urllib2 range/文件IO
+	调试中继转dhcp bug
 
 
 

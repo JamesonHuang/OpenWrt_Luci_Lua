@@ -1,0 +1,144 @@
+5.4-5.8
+
+5.4上午
+组装电脑，安装ubuntu系统及各种开发环境
+
+5.6下午
+办理入职，申请路由器R10和R13，并且对其固件进行，解决各种软硬件错误
+
+5.7
+熟悉luci代码，学会通过串口跟ssh连入路由器，配置vim编辑器
+5.8
+安装虚拟机、win7，学习修改luci框架上的代码，测试其是否生效
+
+
+5.11-5.15
+
+5.11
+将R13配置为中继器，询问android端定时开关的具体需求，查找小米相关功能的代码，并开始进行代码编写
+
+5.12
+操作系统升级导致系统奔溃，重新配置xwindow，并在命令模式上重新升级
+定时wifi开关功能使用while死循环实现，但为了管理方便，决定重新用shell来写
+
+5.13
+测试小米路由器，将定时WiFi开关重新实现，并且在R10上跑通，但R13无法启动wifi
+
+5.14
+调试R13，解决R13无法启动wifi，与阿里那边了解，对接参数
+熟悉sip push，熟悉相关代码
+
+5.15
+实现启动、关闭、修改定时wifi开关等相关函数
+熟悉twisted httpserver的代码
+
+
+
+5.16-5.22
+
+5.16
+ 调试watchcat代码，fix app 丢包问题
+ 分析麦工提到的双开 重启WiFi开关 & 取消定时开关的情况
+ 安装无线网卡linux版本驱动
+
+5.18
+ 调试sip push
+ grub坏掉，修复
+ 添加定时WiFi开关的多种时间段的特殊处理代码
+ 定时wifi对接，发现具体需求有出入，须改写代码
+
+5.19
+ 研究麦工提的crontab方案
+ 熟悉crontab、at命令实现定时任务
+ 研究luci如何将UTC时间字符串解析为时间戳
+
+5.20
+ watchcat代码调试
+ 调试r13中继netgear路由器，中级成功后，app界面没搜到魅族路由器bug
+
+5.21
+ 自己写一个socket客户端测试watchcat，调试bug
+ 解决r13中继netgear路由器，中级成功后，app界面没搜到魅族路由器bug
+测试watchcat代码
+
+5.22
+ 与占勇联调r13中继netgear路由器，bug fix
+整理代码，梳理一周学到的代码 / 命令 
+
+
+
+
+
+
+6.1-6.5
+
+6.1
+	测试 & fix upgrade bug
+
+6.2
+	改进优化smart wifi，使之无tmp文件
+	shell脚本学习，试着将lua函数中用到的shell命令封装进.sh中
+	sed命令学习
+
+6.3
+	了解squid/nginx代理服务器模块
+	测试阿里小智相关api
+
+6.4
+	阅读squid/nginx相关书籍，了解实现原理
+	查找/阅读nginx http模块的proxy代码
+
+6.5
+	网上搜索tiny server/proxy server实现代码
+
+
+
+
+
+
+
+6.8-6.12
+
+6.9
+	了解/调试mongoose代码结构及内部实现api
+
+6.10
+	github上看相关http download的代码，了解其实现原理
+	试着整合http proxy & http download
+
+6.11
+	整合/调试http proxy & http download，调试成功
+
+6.12
+	意识到用c代码实现周期太长，试着用python实现原型
+	回顾python基础语法
+	调试api getdeviceList
+	弄懂twisted connect proxy代码（该代码在twisted的基础上加多了对http connect方法的处理）
+	了解libcurl，运行http demo
+	get到linux terminal的常用快捷键
+
+6.13
+	整理一周所学
+	异步非阻塞I/O模型：twisted & node.js,对比，区别，与多线程模型的对比
+	git回顾
+
+6.14
+	整理一周所学(nginx笔记)
+	twisted factory ==》抽象工厂与工厂模式的对比 ==》 抽象工厂是否过度设计了呢？
+	get python细节语法（pass / raise / with ... as ...）
+
+
+6.15-6.20
+
+6.15
+	联调api set/get bandwidth
+	了解luci外网访问代码流程
+	阅读twisted dave api详解dave@http://krondo.com/?p=1209
+
+
+
+	
+
+
+	
+	
