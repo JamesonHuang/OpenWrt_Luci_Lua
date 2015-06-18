@@ -71,6 +71,8 @@
 	python实现urllib/urllib2 range/文件IO
 	调试中继转dhcp bug
 
+6.18
+	调试中继转dhcp bug ==》ssid表不存在
 
 
 
