@@ -262,7 +262,6 @@ apt-cache search ssl|grep -i python
 --dd
 dd if=abcdef of=2b bs=1 count=2 skip=1
 
---usb网卡驱动
 sudo apt-get install git
 git clone https://github.com/abperiasamy/rtl8812AU_8821AU_linux.git
 cd rtl8812AU_8821AU_linux
