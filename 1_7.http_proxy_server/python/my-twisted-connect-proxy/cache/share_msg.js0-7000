@@ -1,0 +1,2 @@
+
+NoLoginTip.TipCallback([])

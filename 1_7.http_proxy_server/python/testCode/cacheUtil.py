@@ -28,30 +28,32 @@ class CacheUtils:
         with open("./cache/" + fileName + range, "a+") as fp:
             fp.write(buffer)
 
-    def saveReq(self, url):
+    def saveReq(self, url, range):
 
         # Reading data back
         with open('data.json', 'r') as fp:
             data = json.load(fp)
-        data[url] = 4000
+        data[url] = range
         # Writing JSON data
         with open('data.json', 'w') as fp:
             json.dump(data, fp)
    
     
-    def checkReq(self):
+    def checkReq(self, url):
         # Reading data back
         with open('data.json', 'r') as fp:
             data = json.load(fp)
-        #print(data)
-        #print(data.keys())
-        print(data["www.baidu.com"])
-        if data.get("key"): 
-            print(data["key"])
+        if data.get(url):
+            fileName = url.split('/')[-1]
+            with open('GotIt.txt', 'a+') as fp:
+                if data[url] == "None":
+                    fp.write("./download/" + fileName + "\n")
+                else:
+                    fp.write("./cache/" + fileName + "  " + data[url] + "\n")
+            return True
         else:
-            print("error")
+            return False 
 
-"""
 if __name__ == '__main__':
     cacheUtils = CacheUtils()
     
@@ -63,7 +65,6 @@ if __name__ == '__main__':
     #cacheUtils.cache("https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superplus/img/logo_white_ee663702.png", "0-7000")
     #cacheUtils.cache("https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superplus/img/logo_white_ee663702.png", "7001-14175")
 
-    cacheUtils.saveReq("http://www.sina.com.cn")
+    #cacheUtils.saveReq("http://www.sina.com.cn")
     
     #cacheUtils.loadReq()
-"""

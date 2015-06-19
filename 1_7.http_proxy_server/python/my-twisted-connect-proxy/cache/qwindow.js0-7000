@@ -1,0 +1,201 @@
+var Qwindow = function(params){
+	//default config
+	this.config = {
+		title: '', 
+		size:{ width:320, height:200 },
+		mode: 'normal',
+		posrefer: window,
+		pos:{ top:'middle', left:'center' },
+		content: { type:'html', value: '' },
+		maskstyle: { color: '#545454', opacity: 0.5 },
+		showmask: true,
+		showhandle: true,
+		zindex: 30000,
+		scrolling: false,
+		elements: 'object,embed,select',
+		onshow: function(){}, 
+		onhide: function(){},
+		ondestroy: function(){}
+	}
+	this.config = arguments[0] ? (typeof(arguments[0])=='object' ? this._mergeConfig(this.config, params) : params) : this.config;
+	
+	this.isIE = (document.all) ? true : false;
+	this.isIE6 = this.isIE && !window.XMLHttpRequest;
+	//sogou
+	//var ua = navigator.userAgent.toLowerCase();
+	//ua.indexOf('se 2.x') != -1 ? true : false;
+	this.init();
+}
+Qwindow.prototype = {
+	init: function(){
+		this.status			= 'hide';
+		this.isDestroy		= false;
+		this.dom 			= {};		
+		this.dom.win 		= document.createElement('div');	this.dom.win.className 			= 'qwindow';
+		this.dom.winbox 	= document.createElement('div'); 	this.dom.winbox.className 		= 'winbox';
+		this.dom.winbg 		= document.createElement('div'); 	this.dom.winbg.className 		= 'winbg';
+		
+		this.dom.winhead 	= document.createElement('div');	this.dom.winhead.className 		= 'winhead';
+		this.dom.wintitle	= document.createElement('div');	this.dom.wintitle.className		= 'wintitle';
+		this.dom.winclose	= document.createElement('div');	this.dom.winclose.className		= 'winclose';
+		this.dom.winbody 	= document.createElement('div');	this.dom.winbody.className 		= 'winbody';
+		
+		this.dom.winmask	= document.createElement('div');	this.dom.winmask.className		= 'qwindow_mask';
+		
+		if(this.config.title){ this.setTitle(this.config.title).showTitle(); }
+		if(this.config.size){ this.setSize(this.config.size.width, this.config.size.height); }
+		if(this.config.content){ this.setContent(this.config.content.type, this.config.content.value); }
+		if(this.config.mode == 'fixed'){ this.setMode('fixed'); }
+		if(this.config.showhandle){ this.showHandle(); }
+		
+		this.setMaskstyle(this.config.maskstyle.color, this.config.maskstyle.opacity);
+		this.setElements(this.config.elements);
+		this.setzIndex(this.config.zindex);
+		
+		this.dom.winhead.appendChild(this.dom.wintitle);
+		this.dom.winhead.appendChild(this.dom.winclose);
+		this.dom.winbox.appendChild(this.dom.winhead);
+		this.dom.winbox.appendChild(this.dom.winbody);
+		this.dom.win.appendChild(this.dom.winbox);
+		this.dom.win.appendChild(this.dom.winbg);
+		document.body.appendChild(this.dom.winmask);
+		document.body.appendChild(this.dom.win);
+		
+		this.bind();
+		
+	},
+	destroy: function(){
+		if( this.isDestroy ||
+			!this.dom.win ||
+			!this.dom.winmask ||
+			!this.dom.win.parentNode ||
+			!this.dom.winmask.parentNode){ return false; }
+
+		this.isDestroy = true;
+		if(typeof(this.config.ondestroy) == 'function'){ this.config.ondestroy(); }
+
+		var iframe = this.dom.win.getElementsByTagName('iframe')[0];
+		if(iframe){ iframe.parentNode.removeChild(iframe); }
+		this.dom.win.parentNode.removeChild(this.dom.win);
+		this.dom.winmask.parentNode.removeChild(this.dom.winmask);
+
+		return true;
+	},	
+	bind: function(){
+		var _this = this;
+		this.dom.winclose.onclick = function(){ _this.hide(); }
+		var resetwin = function(){
+			var status = _this.getStatus();
+			if(status == 'show'){
+				_this.rePos().resizeMask();;
+			}
+		}
+		if(window.addEventListener){
+			window.addEventListener('resize',function(){setTimeout(resetwin, 10)}, false);
+		}else if(window.attachEvent){
+			window.attachEvent('onresize',function(){setTimeout(resetwin, 10)});
+		}
+		return this;
+	},
+	_setOpacity: function(element, opacity){
+		if(!element){ return false; }
+		if(!document.all){
+			element.style.opacity = opacity;	
+		}else{
+			element.style.filter = 'alpha(opacity=' + opacity*100 + ')';
+		}
+		return true;
+	},
+	show: function(){
+		var pos = this.getPos();
+		this.setPos(pos.top, pos.left);
+		this.hideElements();
+		if(!this.isIE){
+			this._setOpacity(this.dom.win, 1);
+		}
+		this.dom.win.style.visibility = 'visible';
+		this.status = 'show';
+		if(this.config.showmask){ this.resizeMask(); this.dom.winmask.style.display = 'block'; }
+		if(typeof(this.config.onshow) == 'function'){ this.config.onshow(); }
+		return this;
+	},
+	hide: function(){
+		this.showElements();
+		if(!this.isIE){
+			this._setOpacity(this.dom.win, 0);
+		}
+		this.dom.win.style.visibility = 'hidden';	
+		this.dom.winmask.style.display = 'none';
+		this.status = 'hide';
+		if(typeof(this.config.onhide) == 'function'){ this.config.onhide(); }
+		return this;
+	},
+	getStatus: function(){
+		return this.status;
+	},
+	toggle: function(){
+		var status = this.getStatus();
+		if(status == 'show'){ this.hide();	 }else if(status == 'hide'){ this.show(); }
+		return this;	
+	},
+	reload: function(){},
+	clearContent: function(){
+		var iframe = this.dom.win.getElementsByTagName('iframe')[0];
+		if(iframe){ iframe.parentNode.removeChild(iframe); }
+		this.dom.winbody.innerHTML = '';
+		return this;
+	},
+	setMode: function(mode){
+		var m = 'normal';
+		if(mode == 'fixed'){ m = 'fixed'; }
+		else{ m = 'normal';}
+		if(this.config.posrefer == window && !this.isIE6){
+			this.dom.win.style.position = (m =='fixed') ? 'fixed' : 'absolute';
+			this.config.mode = m;
+			this.rePos();
+		}
+		return this;
+	},
+	setContent: function(type, value){
+		this.config.content.type = type;
+		this.config.content.value = value;
+		this.clearContent();
+		if(type == 'html' || type == 'element'){
+			if(type == 'html'){
+				this.dom.winbody.innerHTML = value;
+			}else{
+				if(!value){ return false; }
+				this.dom.winbody.appendChild(value);
+			}
+			if(this.config.scrolling){ this.dom.winbody.style.overflow = 'auto'; }
+			else{ this.dom.winbody.style.overflow = 'hidden'; }
+		}else if(type == 'iframe'){
+			this.dom.winbody.style.overflow = 'hidden';
+			var iframe = document.createElement('iframe');
+			iframe.frameBorder = '0';
+			iframe.scrolling = this.config.scrolling ? 'auto' : 'no';
+			this.dom.winbody.appendChild(iframe);
+			setTimeout(function() {iframe.src = value}, 10); //for ie6
+		}
+		return this;
+	},
+	setScrolling: function(bool){
+		if(this.config.scrolling != bool){
+			this.config.scrolling = bool;
+			if(this.config.content.type == 'iframe'){
+				iframe = this.dom.winbody.getElementsByTagName('iframe')[0];
+				if(iframe){
+					this.dom.winbody.style.overflow = 'hidden';
+					var iframe_new = document.createElement('iframe');
+					iframe_new.frameBorder = '0';
+					iframe_new.scrolling = bool ? 'auto' : 'no';;
+					iframe_new.src = this.config.content.value;
+					iframe.parentNode.removeChild(iframe);
+					this.dom.winbody.appendChild(iframe_new);
+				}
+			}else{
+				if(bool){ this.dom.winbody.style.overflow = 'auto'; }
+				else{ this.dom.winbody.style.overflow = 'hidden'; }	
+			}
+		}
+		retur

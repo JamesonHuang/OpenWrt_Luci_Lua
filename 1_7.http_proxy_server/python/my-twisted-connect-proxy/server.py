@@ -8,9 +8,11 @@
 from twisted.internet.protocol import Protocol, ClientFactory
 from twisted.web.proxy import Proxy, ProxyRequest
 from twisted.python import log
+from CacheUtils import CacheUtils
 
 import urlparse
 
+cacheUtils = CacheUtils()
 
 class ConnectProxyRequest(ProxyRequest):
     """HTTP ProxyRequest handler (factory) that supports CONNECT"""
@@ -18,6 +20,19 @@ class ConnectProxyRequest(ProxyRequest):
     connectedProtocol = None
 
     def process(self):
+        #download all
+        #fileName = cacheUtils.parseUrl2FileName(self.path)            
+        #cacheUtils.download(self.path, "./download/" + fileName)    
+        
+        #download cache
+        range = "0-7000"
+        cacheUtils.cache(self.path, range)
+        
+        #checkReq & save url & range
+        if False == cacheUtils.checkReq(self.path):
+            cacheUtils.saveReq(self.path, range)
+            #cacheUtils.saveReq(self.path, str(self.getHeader("Range")))
+        
         # CONNECT另写函数processConnectRequest实现
         if self.method == 'CONNECT':
             self.processConnectRequest()
@@ -25,6 +40,8 @@ class ConnectProxyRequest(ProxyRequest):
             ProxyRequest.process(self)
 
     def fail(self, message, body):
+        cacheUtils.delReq(self.path)
+
         self.setResponseCode(501, message)
         self.responseHeaders.addRawHeader("Content-Type", "text/html")
         self.write(body)
