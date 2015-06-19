@@ -1067,6 +1067,12 @@ function set_smart_wifi_updown()
 end
 
 
+--lua try-catch
+r, msg = pcall(function() db:rows(sqlStr) end)
+if r == false then
+	require "MZLog".log(3, "r false")
+	return result
+end
 
 
 
