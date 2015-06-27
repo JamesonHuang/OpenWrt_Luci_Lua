@@ -95,6 +95,8 @@
 6.27
 	http.lua timeout 问题理解有误，重写测试代码 > 成功实现http.request(url) timeout结果返回
 	如果在*_monitor.sh中使用http.request(url)，代码太过垃圾，于是试着给wget编译进timeout参数  > 失败
+	了解交叉编译/make相关
+	《海归交易法则》概览
 
 
 
