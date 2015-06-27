@@ -82,9 +82,17 @@
 
 
 待看：
-	fseek / curl / dd
+	fseek / curl / dd / netstat
 	pulse audio（ipad & mobile） / dlna mini源码 / python dlna github
 
+
+6.26
+	调试中继转dhcp，ssid变成111 222的bug
+	测试解决http.lua timeout 问题，无法在http.lua中sleep
+
+6.27
+	http.lua timeout 问题理解有误，重写测试代码 > 成功实现http.request(url) timeout结果返回
+	如果在*_monitor.sh中使用http.request(url)，代码太过垃圾，于是试着给wget编译进timeout参数  > 失败
 
 
 
