@@ -1,0 +1,290 @@
+<%
+	local ver = require("xiaoqiang.XQVersion").webVersion
+%>
+<%include ("web/inc/head")%>
+<title>路由设置 - 小米路由器</title>
+<link rel="stylesheet" href="<%=resource%>/web/css/page.setting.css?v=<%=ver%>">
+</head>
+<body>
+<div id="doc" class="hidden">
+	<%include ("web/inc/header")%>
+	<!--  -->
+	<div id="nav">
+	<script>
+	var navCurrent = '.setting';
+	</script>
+	<%include ("web/inc/nav")%>
+	</div>
+	<!--  -->
+	<div id="bd" class="dft">
+		<!-- <div id="bd-hd">在这里，你可以对小强路由器进行重新设置。</div> -->
+		<div class="set-bd">
+			<div class="grid-2 clearfix">
+				<div class="article">
+					<iframe name="setting" id="setting" style="width:100%; height:400px; border:0;background:none;" src="about:blank" frameborder="0" scrolling="no"></iframe>
+				</div>
+				<div class="aside">
+					<div class="mod-setting-nav">
+						<ul class="nav-list clearfix">
+							<li class="nav-item">
+								<h3 class="nav-hd"><span>网络设置</span><a href="#" class="bt-onoff bt-on"></a></h3>
+								<ul class="isopen">
+									<li><a target="setting" href="#!wifi">WiFi设置</a></li>
+									<li><a target="setting" href="#!net_wan"><span>外网设置</span></a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<h3 class="nav-hd"><span>路由器权限</span><a href="#" class="bt-onoff bt-on"></a></h3>
+								<ul class="isopen">
+									<!-- <li><a target="setting" href="#!sys_psp">小米账号</a></li> -->
+									<li><a target="setting" href="#!passport">修改管理密码</a></li>
+
+								</ul>
+							</li>
+							<li class="nav-item">
+								<h3 class="nav-hd"><span>高级功能</span><a href="#" class="bt-onoff bt-off"></a></h3>
+								<ul style="display:none;">
+									<li><a target="setting" href="#!sys_status">系统状态</a></li>
+									<li><a target="setting" href="#!net_lan">路由器高级设置</a></li>
+									<li><a target="setting" href="#!pro/wifi_set">WiFi高级设置</a></li>
+									<!-- <li><a target="setting" href="#!pro/wifi_txpwr">WiFi强度设置</a></li> -->
+									<li><a target="setting" href="#!mac">MAC地址克隆</a></li>
+									<li><a target="setting" href="#!pro/upgrade">路由器手动升级</a></li>
+									<li><a target="setting" href="#!pro/qos">应用限速</a></li>
+									<li><a target="setting" href="#!pro/upnp">UPnP</a></li>
+									<li><a target="setting" href="#!pro/vpn">PPTP/L2TP</a></li>
+									<!-- <li><a target="setting" href="#!pro/nginx">关闭NGINX</a></li> -->
+								</ul>
+							</li>
+							<li class="nav-item">
+								<h3 class="nav-hd"><span>系统功能</span><a href="#" class="bt-onoff bt-on"></a></h3>
+								<ul class="isopen">
+									<li class="active"><a target="setting" href="#!upgrade"><span>系统升级</span></a></li>
+									<!-- <li><a class="upload_log" href="#">上传日志</a></li> -->
+									<li><a target="setting" href="#!log">上传日志</a></li>
+									<!-- <li><a target="setting" href="#!upload_config">上传配置信息</a></li> -->
+									<!-- <li><a class="download_config" href="#">恢复配置数据</a></li> -->
+									<li><a target="setting" href="#!reboot">关机 & 重启</a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<h3 class="nav-hd"><span>重置与恢复</span><a href="#" class="bt-onoff bt-on"></a></h3>
+								<ul class="isopen">
+									<li><a href="#!diskformat" target="setting">格式化硬盘</a></li>
+									<li><a target="setting" href="#!reset"><span>恢复出厂设置</span></a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--  -->
+		</div>
+		<!--  -->
+	</div>
+	<%include ("web/inc/footer")%>
+</div>
+<%include ("web/inc/g.js.base")%>
+<%include ("web/inc/g.js")%>
+<%include ("web/inc/reboot.js")%>
+<script type="text/javascript">
+$(global_event).on('set:map', function(evt, data){
+	var urlMap = {
+		'upgrade' : '<%=luci.dispatcher.build_url("web", "setting","upgrade")%>',
+		'net_wan':'<%=luci.dispatcher.build_url("web","setting","net_wan")%>',
+		'wifi':'<%=luci.dispatcher.build_url("web", "setting","wifi")%>',
+		'passport':'<%=luci.dispatcher.build_url("web", "setting","passport")%>',
+		'reboot': '<%=luci.dispatcher.build_url("web", "setting","reboot")%>',
+		'reset':'<%=luci.dispatcher.build_url("web", "setting","reset")%>',
+		'net_lan':'<%=luci.dispatcher.build_url("web","setting", "net_lan")%>',
+		'mac':'<%=luci.dispatcher.build_url("web","setting", "mac")%>',
+		'pro/wifi_set':'<%=luci.dispatcher.build_url("web", "setting","wifi_pro")%>',
+		'pro/wifi_txpwr':'<%=luci.dispatcher.build_url("web", "setting","wifi_txpwr")%>',
+		'pro/upgrade' : '<%=luci.dispatcher.build_url("web", "setting","upgrade_manual")%>',
+		// 'upload_config':'<%=luci.dispatcher.build_url("web","setting","upload_config")%>',
+		'log':'<%=luci.dispatcher.build_url("web","setting","log")%>',
+		'sys_psp' : '<%=luci.dispatcher.build_url("web","setting","sys_psp")%>',
+		'sys_status' : '<%=luci.dispatcher.build_url("web", "setting", "sys_status")%>',
+		'diskformat' : '<%=luci.dispatcher.build_url("web", "setting", "diskformat")%>',
+		// 'pro/nginx' : '<%=luci.dispatcher.build_url("web", "setting", "nginx")%>',
+		'pro/lamp' : '<%=luci.dispatcher.build_url("web", "setting", "lamp")%>',
+		'pro/upnp' : '<%=luci.dispatcher.build_url("web", "setting", "upnp")%>',
+		'pro/vpn' : '<%=luci.dispatcher.build_url("web", "setting", "vpn")%>',
+		'pro/qos': '<%=luci.dispatcher.build_url("web", "setting", "qos")%>'
+	};
+	global_event.set = {
+		'urlMap' : urlMap
+	};
+	$('.nav-item a[target="setting"]').on('click', function(e){
+		e.preventDefault();
+		var hash = $(this).attr('href');
+		var key = hash.replace('#!','');
+		window.location.hash = hash;
+		if (typeof(urlMap[key]) !== 'undefined') {
+			$(global_event).trigger('set:loadIframe',{url : urlMap[key]});
+		}else{
+			return;
+		}
+	});
+	$('.nav-item li a').on('click', function(e){
+		$('.nav-item li').removeClass('active');
+		$(this.parentNode).addClass('active');
+	});
+});
+
+$(global_event).on('set:loadIframe', function(evt, data){
+	var url = data.url,
+		iframe = document.getElementById('setting');
+	iframe.src  = url;
+
+	$(iframe).load(function() {
+		setTimeout(function(){
+			var ifrheight = iframe.contentWindow.document.body.offsetHeight;
+			var ht =  (ifrheight < 1000) ? '1000px' : ifrheight+'px';
+			iframe.style.height = ht;
+			$('.mod-setting-nav').height(ht);
+
+		}, 300);
+	});
+});
+
+$(global_event).on('set:pageLoad', function(evt, data){
+	var key = window.location.hash.replace('#!','');
+	var map = global_event.set.urlMap;
+	if (typeof(map[key]) !== 'undefined') {
+		$(global_event).trigger('set:loadIframe',{url : map[key]});
+		$('.nav-item li').removeClass('active');
+		$('.nav-item li a').each(function(){
+			if ($(this).attr('href') == '#!' + key) {
+				$(this.parentNode).addClass('active');
+				var $ul = $(this).parents('ul');
+				var $item = $(this).parents('.nav-item');
+				if ($ul[0].style.display == 'none') {
+					$ul.show();
+					$item.find('.bt-onoff').removeClass('bt-off').addClass('bt-on');
+				}
+			}
+		});
+	}else{
+		$(global_event).trigger('set:loadIframe',{url : map['upgrade']});
+	}
+});
+
+$(global_event).on('set:navAnimate', function(evt, data){
+	var timer;
+	$('.nav-item .nav-hd').on('click', function(e){
+		e.preventDefault();
+		var list = $('ul', this.parentNode);
+		var status = $('.bt-onoff', this.parentNode);
+		var isopen = list.hasClass('isopen');
+		if (isopen) {
+			list.hide();
+			list.removeClass('isopen');
+			status[0].className = 'bt-onoff bt-off';
+		}else{
+			list.show();
+			list.addClass('isopen');
+			status[0].className = 'bt-onoff bt-on';
+		}
+	});
+/*
+	$('.nav-item')
+	.on('mouseenter', function(e){
+		var root = $('.nav-list');
+		var listIsOpen = $('ul.isopen', root);
+		var list = $('ul', this);
+		var listHieght = list.find('li').length * 40;
+		var statusAll = $('.bt-onoff', root);
+		var status = $('.bt-onoff', this);
+		if($('ul',this).hasClass('isopen')){
+			console.log('is open');
+			return;
+		}
+		window.clearTimeout(timer);
+		timer = window.setTimeout(function(){
+			if (list.length > 0) {
+				listIsOpen.stop(1,1).animate({
+					'height' : 0,
+					'padding-top' : 0,
+					'padding-bottom' : 0,
+					'overflow' : 'hidden'
+				},400).removeClass('isopen');
+				list.stop(1,1).animate({
+					'height' : listHieght,
+					'padding-top' : 4,
+					'padding-bottom' : 4,
+					'overflow' : 'hidden'
+				},400);
+				list.addClass('isopen');
+
+				statusAll.each(function(){
+					this.className = 'bt-onoff bt-on';
+				});
+				status[0].className = 'bt-onoff bt-off';
+			}
+		}, 400);
+	});
+*/
+});
+
+$(global_event).on('set:uploadLog', function(evt, data){
+	var request_date = {};
+	$.getJSON('<%=luci.dispatcher.build_url("api", "xqsystem","upload_log")%>',request_date,function(rsp)
+	{
+		if(rsp.code==0){
+			$.lightalert().setContent('日志上传成功').show();
+		} else {
+			$.lightalert().setContent(rsp.msg).show();
+		}
+		global_event.isRequestUplog = false;
+	})
+});
+
+$(global_event).on('set:downloadConfig', function(evt, data){
+	var request_date = {};
+	$.getJSON('<%=luci.dispatcher.build_url("api", "xqsystem","config_recovery")%>',request_date,function(rsp)
+	{
+		if(rsp.code==0){
+			$.lightalert().setContent('成功重启后生效').show();
+		} else {
+			$.lightalert().setContent(rsp.msg).show();
+		}
+	})
+});
+
+
+$(function(){
+	$(global_event).trigger('set:map');
+	$(global_event).trigger('set:pageLoad');
+	$(global_event).trigger('set:navAnimate');
+	$(global_event).trigger('psp:initEvent');
+
+	global_event.isRequestUplog = false;
+	$('.upload_log').on('click', function(e){
+		e.preventDefault();
+		if (global_event.isRequestUplog ) {
+			return;
+		}
+		global_event.isRequestUplog = true;
+		$(global_event).trigger('set:uploadLog');
+	});
+	$('.download_config').on('click', function(e){
+		e.preventDefault();
+		art.dialog({
+			title: '确认恢复配置信息',
+			content: '恢复配置会造成你当前的配置被覆盖不可用，你真的需要恢复配置吗？',
+			width: 400,
+			ok: function(){
+				$(global_event).trigger('set:downloadConfig');
+			},
+			cancel: function(){
+				this.close();
+			}
+		}).lock();
+
+	});
+});
+
+</script>
+</body>
+</html>

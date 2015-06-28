@@ -1,0 +1,227 @@
+var MYYOUKUREC = {
+  // Config
+  MAXHEIGHT: 486,
+  ANONYMOUSMAXHEIGHT: 296,
+  TRYJSONTIMES: 3,
+  SHOWNUMBER: 10,
+  ANONYMOUSRECOMMENDNUMBER: 5,
+  TITLELENGTH: 24,
+  LOGINSTAT: false,
+  RANDOMARRAY: [],
+  REQ_ID: '',
+  ANONYMOUSRECNUMBER: 25,
+  RECNUMBER: 20,
+  REFRESHCOUNT: 0,
+  MAXREFRESHCOUNT: 5,
+
+  UserInfo: null,
+
+  // Timer
+  timer: null,
+  timerData: null,
+  timerAnonymous: null,
+  timeSpan: 800,
+
+  // Data
+  dataList: [],
+  dataRecommend: [],
+  dataShow: [],
+  dataShowInsert: [],
+  dataAnonymous: [],
+
+  // Dom
+  dom: null,
+  domRecommend: null,
+  $domLoading: null,
+
+  // Flag
+  flagRecommend: false,
+
+  // Cookies
+  cookieYsuid: '',
+  cookieUid: '',
+
+  // Lock
+  lockData: true,
+  lockAnonymousRecommend: true,
+
+  // Data interface
+  getRecommendJson: 'http://ykrec.youku.com/personal/packed/list.json?',
+  getUserinfoJson: 'http://nc.youku.com/index/getUserinfo?nu=1&__callback=MYYOUKUREC.getUserinfo&timestamp=',
+  getAnonymousRecommendJson: 'http://ykrec.youku.com/personal/packed/list.json?',
+
+  // URL
+  urlVideo: 'http://v.youku.com/v_show/id_',
+  urlUser: 'http://yikan.youku.com/u/home?from=y1.1-1.0.1',
+  urlOfficial: 'http://i.youku.com/u/official',
+
+  // String
+  strLoading: "<i class='ico-loading-64'></i>",
+
+  // IE Hack
+  isIE: document.all,
+
+  init: function() {
+    var _this = this;
+    // init dom
+    _this.$dom = jQuery('#MYYOUKU-REC');
+    _this.$domRecommend = _this.$dom.find('#MYYOUKU-REC-box');
+    _this.dom = _this.$dom[0];
+    _this.domRecommend = _this.$domRecommend[0];
+    if (!_this.dom || !_this.domRecommend) {
+      return;
+    }
+    jQuery(_this.dom).append(jQuery(_this.strLoading));
+    _this.$domLoading = jQuery(_this.dom).find(".ico-loading-64");
+    // get cookies
+    // 此处获取uid的逻辑请自行实现 start
+    _this.cookieYsuid = _this.cookiesGet('__ysuid');
+    _this.cookieUid = get_username('all').userid;
+    _this.LOGINSTAT = islogin();
+    // 此处获取uid的逻辑请自行实现 end 
+    _this.getRandomNumber();
+
+    _this.REQ_ID = _this.randomStr(3);
+
+    _this.routeBaseUser();
+    _this.bindRecRefresh();
+  },
+
+  // Bind
+  bindRecRefresh: function() {
+    var _this = this;
+    _this.$dom.find("#MYYOUKU-REC-container .yk-rec-refresh").unbind("click").bind("click", function(e) {
+      _this.domRecommend.style.display = "none";
+      _this.showLoading();
+
+      _this.REFRESHCOUNT++;
+      if (_this.REFRESHCOUNT >= _this.MAXREFRESHCOUNT) {
+        _this.REFRESHCOUNT = 0;
+      }
+      _this.refreshDom();
+    });
+  },
+
+  routeBaseUser: function() {
+    var _this = this;
+    // logon
+    if (_this.LOGINSTAT) {
+      _this.getRecommendJson += 'atrEnable=true&apptype=1&pg=8&module=1&pl=' + _this.RECNUMBER + '&uid=' + _this.cookieUid + '&guid=' + _this.cookieYsuid + '&picSize=1&module=1&callback=MYYOUKUREC.getRecommendData&pz=30&req_id=' + _this.REQ_ID + '&timestamp='
+      _this.getJson(_this.getRecommendJson);
+      _this.getJson(_this.getUserinfoJson);
+      _this.timerData = setInterval(function() {
+        if (!_this.lockRecommend) {
+          try {
+          _this.initRecommendDom(_this.dataRecommend, _this.domRecommend, 0, _this.SHOWNUMBER);
+          _this.showContent(_this.MAXHEIGHT);
+          clearInterval(_this.timerData);
+          } catch (e) {}
+          // clearInterval(_this.timerData);
+          _this.lockData = false;
+        }
+      }, _this.timeSpan);
+      _this.dom.parentNode.setAttribute('class', 'MYYOUKUREC-loginAfter');
+    } else {
+      _this.cookieUid = '';
+      _this.getAnonymousRecommendJson += 'atrEnable=true&apptype=1&pg=8&module=3&pl=' + _this.ANONYMOUSRECNUMBER + '&guid=' + _this.cookieYsuid + '&picSize=1&callback=MYYOUKUREC.getAnonymousRecommendData&pz=30&req_id=' + _this.REQ_ID + '&timestamp='
+      _this.getJson(_this.getAnonymousRecommendJson);
+      _this.timerAnonymous = setInterval(function() {
+        if (!_this.lockAnonymousRecommend) {
+          _this.showContent(_this.ANONYMOUSMAXHEIGHT);
+          clearInterval(_this.timerAnonymous);
+        }
+      }, _this.timeSpan);
+      _this.dom.parentNode.setAttribute('class', 'MYYOUKUREC-loginBefore');
+      jQuery(_this.dom).addClass("dragmodule-top");
+    }
+    _this.$dom.attr("inited", true);
+  },
+
+  refreshDom: function() {
+    var _this = this;
+    // logon
+    if (_this.LOGINSTAT) {
+      _this.timerData = setInterval(function() {
+        if (!_this.lockRecommend) {
+          try {
+          _this.initRecommendDom(_this.dataRecommend, _this.domRecommend, _this.REFRESHCOUNT * _this.SHOWNUMBER, (_this.REFRESHCOUNT + 1) * _this.SHOWNUMBER);
+          _this.showContent(_this.MAXHEIGHT);
+          } catch (e) {}
+          clearInterval(_this.timerData);
+          _this.lockData = false;
+        }
+      }, 300);
+      _this.$dom.find("#MYYOUKU-REC-container .yk-rec-refresh").hide();
+      _this.$dom.find("#MYYOUKU-REC-container .yk-rec-relocate").show();
+    } else {
+      _this.timerAnonymous = setInterval(function() {
+        if (!_this.lockAnonymousRecommend) {
+          _this.initRecommendDom(_this.dataAnonymous, _this.domRecommend, _this.REFRESHCOUNT * _this.ANONYMOUSRECOMMENDNUMBER, (_this.REFRESHCOUNT + 1) * _this.ANONYMOUSRECOMMENDNUMBER);
+          _this.showContent(_this.ANONYMOUSMAXHEIGHT);
+          clearInterval(_this.timerAnonymous);
+        }
+      }, 300);
+    }
+  },
+
+  getRecommendData: function(dt) {
+    var data = dt.data;
+    if (typeof data == 'undefined') {
+      return false;
+    }
+    if (data.length < this.SHOWNUMBER) {
+      if (this.CURRENTRECOMMENDSTATUS < this.TRYJSONTIMES) {
+        this.tryRequest(this.getRecommendJson);
+        this.CURRENTRECOMMENDSTATUS++;
+      } else {
+        this.hideDom(this.dom);
+        return false;
+      }
+    } else {
+      this.initData(data, this.dataRecommend);
+      this.lockRecommend = false;
+    }
+
+  },
+
+  getUserinfo: function(data) {
+    if (typeof data == 'undefined') {
+      return false;
+    }
+    this.UserInfo = data;
+  },
+
+  getAnonymousRecommendData: function(dt) {
+    var data = dt.data;
+    var len = 0;
+    if (!!data.length) {
+      len = data.length;
+    }
+    if (len > this.ANONYMOUSRECOMMENDNUMBER) {
+      this.initData(data, this.dataAnonymous);
+      this.initAnonymousRecommendDom(this.dataAnonymous);
+    } else {
+      if (this.GETANONYMOUSDATANUMBER < this.TRYTIMES) {
+        this.getJson(this.getAnonymousComJson + this.randomStr(10));
+        this.GETANONYMOUSDATANUMBER++;
+      }
+    }
+  },
+
+  // 3 Times
+  tryRequest: function(url) {
+    this.getJson(url);
+  },
+
+  // Init Data
+  initData: function(data, o, num) {
+    var dataLen = 0;
+    if (!!data.length) {
+      var dataLen = data.length;
+    }
+    if (!!num && num < dataLen) {
+      len = this.MAXSHOWNUMBER;
+    } else {
+      len = dataLen;
+    }
+    for (var i = 0; i < len; i++) {

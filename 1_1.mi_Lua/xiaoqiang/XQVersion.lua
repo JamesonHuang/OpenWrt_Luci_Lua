@@ -1,0 +1,10 @@
+module "xiaoqiang.XQVersion"
+
+webVersion = "0.0.3"
+webDefaultHost = "192.168.31.1"
+pcClientRouter = "http://bigota.miwifi.com/xiaoqiang/client/xqpc_client.exe"
+pcClientServer = "http://bigota.miwifi.com/xiaoqiang/client/xqpc_client.exe"
+macClientRouter = "http://bigota.miwifi.com/xiaoqiang/client/xqmac_client.dmg"
+macClientServer = "http://bigota.miwifi.com/xiaoqiang/client/xqmac_client.dmg"
+androidClientRouter = "/client/xqapp.apk"
+androidClientServer = "http://bigota.miwifi.com/xiaoqiang/client/xqapp.apk"

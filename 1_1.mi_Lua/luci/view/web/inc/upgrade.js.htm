@@ -1,0 +1,159 @@
+//check offline
+global_event.checkOffline = false;
+$(global_event).on('upgrade:isoffline', function(evt, data){
+    global_event.checkOffline = true;
+    var imgUrl = 'http://'+ location.host +'/xiaoqiang/web/img/logo.png',
+        timer = null,
+        loadImg = function(){
+            console.log(global_event.offline);
+            var img = new Image();
+            img.onload = function(){
+                if (global_event.offline) {
+                    return;
+                }
+                window.clearTimeout(timer);
+                timer = window.setTimeout(function(){
+                    loadImg();
+                }, 1500);
+            };
+            img.onerror = function(){
+                global_event.offline = true;
+            };
+            img.src = imgUrl+'?' + (+new Date());
+        };
+    global_event.offline = false;
+    loadImg();
+});
+//flash ROM V2
+$(global_event).on('upgrade:downAndInstall', function(evt, data){
+    $.getJSON('<%=luci.dispatcher.build_url("api", "xqsystem", "upgrade_rom")%>', {}, function(rsp){
+        if (rsp.code == 0) {
+            //check download percent
+            $(global_event).trigger('upgrade:downloadPercent');
+            //check shell status
+            $(global_event).trigger('upgread:flashCheck');
+        }else{
+            window.top.art.dialog({
+                width: 400,
+                title: '升级失败',
+                content: rsp.msg
+            }).lock().time(3 * 1000);
+            setTimeout('self.location.reload(1)', 3 * 1000);
+        }
+    });
+});
+//check download file percent
+$(global_event).on('upgrade:downloadPercent', function(evt, data){
+    $('#dldProgress').show();
+    $('#btnUpgread').hide();
+});
+
+//check flash status
+$(global_event).on('upgread:flashCheck', function(evt, data){
+    var timer = window.setInterval(function(){
+        $.ajax({
+            url: '<%=luci.dispatcher.build_url("api", "xqsystem","upgrade_status")%>',
+            type: 'GET',
+            dataType: 'json',
+            cache: false
+        })
+        .done(function(rsp){
+            if (rsp.code == 0) {
+                console.log('ajax done',global_event.offline);
+                var status = rsp.status;
+                // 无需升级
+                if (status == 0) {
+                    window.clearInterval(timer);
+                    $(global_event).trigger('upgrade:flashdone');
+                }
+                if (status == 3) {
+                    $("#btnCancel").show();
+                } else {
+                    $("#btnCancel").hide();
+                }
+                if (/(3|5|11|12)/.test(status) && rsp.percent) {
+                    $("#persent").html(rsp.percent);
+                    $("#persentWidth").css("width", rsp.percent+"%");
+                }
+                //flash fail
+                if(/(6|7|8|9|10)/.test(status)){
+                    window.clearInterval(timer);
+                    $(global_event).trigger('upgrade:flashfail', {status: status});
+                }
+                // flash rom ing
+                if (/(5|12)/.test(status)) {
+                    if (!global_event.checkOffline) {
+                        $(global_event).trigger('upgrade:flashstart');
+                        $(global_event).trigger('upgrade:isoffline');
+                    }
+                }
+                // flash success
+                if (status == 11) {
+                    window.clearInterval(timer);
+                    $(global_event).trigger('upgrade:flashdone');
+                }
+            }
+        })
+        .fail(function() {
+            // 和服务器断开连接
+            console.log('ajax fail', global_event.offline);
+            if ( global_event.checkOffline ) {
+                if (global_event.offline) {
+                    window.clearInterval(timer);
+                    $(global_event).trigger('upgrade:flashdone');
+                }
+            } else {
+                $(global_event).trigger('upgrade:isoffline');
+            }
+        });
+    }, 1500);
+});
+//flash start
+$(global_event).on('upgrade:flashstart', function(evt, data){
+    if (global_event.wait) {
+        return;
+    }
+    global_event.wait = window.top.art.dialog({
+        width:400,
+        cancel: false,
+        title:'固件安装中',
+        content :'正在安装固件， <span style="color:red">请不要切断路由器电源</span>'
+    }).lock();
+});
+//flash fail
+$(global_event).on('upgrade:flashfail', function(evt, data){
+    if (global_event.wait) {
+        global_event.wait.close();
+    }
+    var msg = {
+        6: '下载失败',
+        7: '没有磁盘空间',
+        8: '下载失败',
+        9: '升级包校验失败',
+        10: '刷写失败'
+    };
+    var status = data.status;
+    window.top.art.dialog({
+        width: 400,
+        title:'固件安装中',
+        content: msg[status] + ',固件安装失败,请刷新重试'
+    }).lock().time(2 * 1000);
+    window.setTimeout('self.location.reload(1)', 2 * 1000);
+});
+//flash done
+$(global_event).on('upgrade:flashdone', function(evt, data){
+    if (global_event.wait) {
+        global_event.wait.close();
+    }
+    $(global_event).trigger('reboot:wait', {
+        action : '升级路由器固件',
+        refresh : true
+    });
+});
+//绑定事件
+$(global_event).on ('upgrade:initEvent', function(evt, data){
+    $('#btnUpgread').on('click', function(e){
+        e.preventDefault();
+        $(global_event).trigger('upgrade:downAndInstall');
+    });
+});

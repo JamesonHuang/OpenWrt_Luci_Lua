@@ -1,0 +1,10 @@
+移除空白行：
+sed -i '/^$/d' file
+
+在指定行前加#号，注释该行：
+sed -i '/tacb/s/^/#/g' /etc/crontabs/root 
+
+取消#号，取消注释：
+sed -i '/hello/s/^#//' /etc/crontabs/root
+
+cat t.txt|sed -n -e 's/^#\(.*\)/\1/p'

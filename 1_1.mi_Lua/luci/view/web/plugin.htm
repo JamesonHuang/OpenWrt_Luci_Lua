@@ -1,0 +1,661 @@
+<%
+    local ver = require("xiaoqiang.XQVersion").webVersion
+    local cryptoUtil = require("xiaoqiang.util.XQCryptoUtil")
+    local XQSysUtil = require ("xiaoqiang.util.XQSysUtil")
+    local http = require ("luci.http")
+    local secretKey = "Ep9]B28z3!3D66*3CF_18663"
+    local routerName = XQSysUtil.getRouterName() or "miwifi"
+	local XQConfigs = require("xiaoqiang.common.XQConfigs")
+    local cmd = XQConfigs.THRIFT_TO_MQTT_GET_DEVICEID
+	local LuciUtil = require("luci.util")
+    local deviceId = LuciUtil.exec(cmd)
+    local from = "xiaomi_router"
+    local sign = cryptoUtil.md5Str(deviceId .. from .. routerName .. secretKey)
+    local xunleiurl = string.format("http://dynamic.i.xunlei.com/device_binding/entrance.php?deviceId=%s&from=%s&name=%s&sign=%s", http.urlencode(deviceId), http.urlencode(from), http.urlencode(routerName), http.urlencode(sign))
+%>
+<%include ("web/inc/head")%>
+<title>应用管理 - 小米路由器</title>
+<link rel="stylesheet" href="<%=resource%>/web/css/page.plugin.css?v=<%=ver%>">
+</head>
+<body>
+<div id="doc" class="hidden">
+    <%include ("web/inc/header")%>
+    <!--  -->
+    <div id="nav">
+    <script>
+    var navCurrent = '.plugin';
+    </script>
+    <%include ("web/inc/nav")%>
+    </div>
+    <!--  -->
+    <div id="bd" class="dft">
+        <div id="bd-hd">在这里，你可以很便捷的安装一些别出心裁的应用功能。</div>
+        <div class="mod-first-bind" style="display:none">
+            <div class="hd">
+                你现在处于管理密码登录状态，管理应用需要用小米账号绑定路由器并登录，是否登录？
+            </div>
+            <div class="bd">
+
+            </div>
+        </div>
+        <div class="mod-xiaomi-login" style="display:none">
+            <div class="hd">
+                你现在处于管理密码登录状态，管理应用需要用小米账号登录，是否登录？
+            </div>
+            <div class="bd">
+                <form action="/" class="form form-horizontal" method="post" name="xiaomilogin" id="xiaomilogin">
+                    <div class="item">
+                        <label class="k">小米账号：</label>
+                        <span class="v"><input type="text" name="uuid" class="text input-large"></span>
+                        <em class="t"></em>
+                    </div>
+                    <div class="item">
+                        <label class="k">密码：</label>
+                        <span class="v"><input type="password" name="password" class="text input-large" placeholder="请输入密码"></span>
+                        <em class="t"></em>
+                    </div>
+                    <div class="item item-control">
+                        <button type="submit" id="btnXmSubmit" class="btn btn-primary l"><span>登录</span></button>
+                        <a target="_blank" href="https://account.xiaomi.com/pass/forgetPassword" class="r">忘记密码？</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="mod-plugin" style="display:none">
+            <div class="tab-nav">
+                <ul class="clearfix tab-0">
+                    <li class="active">已安装应用</li>
+                    <li>全部应用</li>
+                </ul>
+            </div>
+            <div class="loading">应用努力加载中，请稍候...</div>
+            <div class="tab-content" style="display:none;">
+                <div class="tab-panel active">
+                    <div class="mod-plugin-list">
+                        <ul class="list" id="installed"></ul>
+                    </div>
+                </div>
+                <div class="tab-panel">
+                    <div class="mod-plugin-list">
+                        <ul class="list" id="allplugin"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%include ("web/inc/footer")%>
+</div>
+<div class="panel-plugin-mask"></div>
+<div class="panel-plugin" style="display:none;">
+    <div class="panel-content">
+
+    </div>
+    <span class="close"></span>
+</div>
+<script type="tmpl/html" id="tmplappitem">
+<li class="item" data-id="{$id}" data-installed="{$status}">
+    <div class="icon"><img class="appthumb" src="{$icon}" /></div>
+    <span class="icon-sd"></span>
+    <p class="name">{$name}</p>
+    {$installed}
+</li>
+</script>
+<script type="tmpl/html" id="tmplappdetail">
+    <div class="hd">
+        <img class="appthumbbig" width="100%" src="{$icon_for_detail}">
+    </div>
+    <div class="bd{$bdtype}">
+        <div class="info">
+            <dl class="info-base">
+                <dt>开发者:</dt>
+                <dd>{$developer}</dd>
+                <dt>版本: </dt>
+                <dd>{$version}</dd>
+            </dl>
+            <dl class="info-detail">
+                <dt>功能介绍:</dt>
+                <dd>{$introduction}</dd>
+            </dl>
+        </div>
+        {$extra}
+        {$iframe}
+    </div>
+    {$footer}
+</script>
+<%include ("web/inc/g.js.base")%>
+<script>
+global_event.needBind = true;
+global_event.mustBind = true;
+</script>
+<%include ("web/inc/g.js")%>
+<script>
+$(global_event).on('plugin:init',function(evt, data){
+    $('.mod-plugin').show();
+    $(global_event).trigger('plugin:getlist');
+    var pluginTabView = (function(){
+        var root = $('.mod-plugin')[0],
+            tabNavitem = $('.tab-nav li', root),
+            tabNavlist = $('.tab-nav ul', root),
+            tabConitem = $('.tab-panel', root),
+            switchto = function(id){
+                id = parseInt(id, 10);
+                tabNavitem.removeClass('active');
+                tabNavitem.eq(id).addClass('active');
+                tabNavlist[0].className = 'clearfix tab-' + id;
+                tabConitem.removeClass('active');
+                tabConitem.eq(id).addClass('active');
+            };
+        tabNavitem.on('click', function(e){
+            e.preventDefault();
+            var idx = $(this).index();
+            switchto(idx);
+        });
+        return {
+            switchto: switchto
+        };
+    }());
+    function Pluginpanel(option){
+        option = option || {};
+        this.panel = $('.panel-plugin');
+        this.mask = $('.panel-plugin-mask');
+        this.content = this.panel.find('.panel-content');
+        this.elclose = $('.panel-plugin .close');
+        this.onclose = option.onclose || function(){};
+        this.onopen = option.onopen || function(){};
+        this.init();
+    };
+    Pluginpanel.prototype.updatepos = function() {
+        var fwt = $(window).width(),
+            fht = $(document).height(),
+            panelHeight = this.panel.outerHeight();
+        this.mask.css({height:fht});
+        this.panel.css({'margin-top':(-panelHeight/2)});
+        return this;
+    };
+    Pluginpanel.prototype.open = function(){
+        var that = this;
+        this.mask.show();
+        this.panel.css({
+            visibility:'visible',
+            top:0,
+            opacity: 0
+        }).show();
+        this.panel.animate({
+            opacity: 1,
+            top: "50%"
+        }, 500, function(){
+            that.onopen();
+        });
+    };
+    Pluginpanel.prototype.close = function(){
+        this.panel.hide();
+        this.mask.hide();
+        this.onclose();
+    };
+    Pluginpanel.prototype.bindClose = function(){
+        var self = this;
+        this.elclose.on('click', function(e){
+            e.preventDefault();
+            self.close();
+        });
+        $(document).on('keydown', function(e){
+            if (e.keyCode == 27) {
+                self.close();
+            }
+        });
+    };
+    Pluginpanel.prototype.bindResize = function(){
+        var self = this,
+            timer;
+        $(window).on('resize', function(){
+            window.clearTimeout(timer);
+            window.setTimeout(function(){
+                self.updatepos();
+            },400);
+        });
+    };
+    Pluginpanel.prototype.setContent = function(content){
+        this.content.html(content);
+        return this;
+    };
+    Pluginpanel.prototype.init = function(){
+        this.panel.css({display:'block',visibility:'hidden'});
+        this.updatepos();
+        this.bindClose();
+        this.bindResize();
+        return this;
+    };
+
+    $('.mod-plugin-list').delegate('.item', 'click', function(e){
+        e.preventDefault();
+        var id = $(this).attr('data-id');
+        var status = $(this).attr('data-installed');
+        $(global_event).trigger('plugin:getdetail', {
+            id : id,
+            status : status,
+            cb : function(content, onopen, onclose){
+                onopen = onopen || function(){
+                    console.log('open plugin');
+                };
+                onclose = onclose || function(){
+                    console.log('close plugin');
+                };
+                var panel = new Pluginpanel({
+                    onclose: onclose,
+                    onopen: onopen
+                });
+                panel.setContent(content).updatepos().open();
+                global_event.pluginPanel = panel;
+            }
+        });
+    });
+
+    $('.panel-plugin').delegate('.btn-install', 'click', function(e){
+        e.preventDefault();
+        var id = $(this).attr('data-id');
+        $(global_event).trigger('plugin:enable', {id : id});
+    });
+
+    $('.panel-plugin').delegate('.btn-uninstall', 'click', function(e){
+        e.preventDefault();
+        var id = $(this).attr('data-id');
+        art.dialog({
+            width: 400,
+            title: '卸载应用',
+            content: '你确定要卸载这个应用吗？',
+            ok: function(){
+                $(global_event).trigger('plugin:disable', {id : id});
+            },
+            okValue: '确定',
+            cancel: function(){
+                this.close();
+            },
+            cancelValue: '取消'
+        });
+    });
+});
+
+$(global_event).on('plugin:getlist', function(evt, data){
+    $('.mod-plugin .loading').show();
+    $('.mod-plugin .tab-content').hide();
+    $.getJSON('<%=luci.dispatcher.build_url("api", "xqpassport","plugin_list")%>', function(rsp){
+        var tpl = $('#tmplappitem').html();
+        if (rsp.code == 0) {
+            var installed = rsp.list.installed;
+            var available = rsp.list.available;
+            var domInstalled = [];
+            var domAvailable = [];
+            if ($.isArray(installed) && installed.length > 0) {
+                for (var i = 0; i < installed.length; i++) {
+                    var item = StringH.tmpl(tpl,{
+                        id : installed[i].id,
+                        icon : installed[i].iconForList,
+                        name : installed[i].name,
+                        installed : '<i class="installed"></i>',
+                        status : 1
+                    });
+                    domInstalled.push(item);
+                };
+            }
+            if ($.isArray(available) && available.length > 0) {
+                for (var i = 0; i < available.length; i++) {
+                    var item = StringH.tmpl(tpl,{
+                        id : available[i].id,
+                        icon : available[i].iconForList,
+                        name : available[i].name,
+                        installed : '',
+                        status : 0
+                    });
+                    domAvailable.push(item);
+                };
+            }
+            $('#allplugin').html(domInstalled.join('')+domAvailable.join(''));
+            $('#installed').html(domInstalled.join(''));
+
+            $('.appthumb').on('error', function(){
+                this.src = '<%=resource%>/web/img/v2/plugin_card_loading.png';
+            });
+            $('.mod-plugin .loading').fadeOut(400, function(){
+                $('.mod-plugin .tab-content').show();
+            });
+        }else{
+            $('.mod-plugin .loading').html('网络繁忙，请刷新页面重试。');
+        }
+    });
+});
+
+$(global_event).on('plugin:getdetail', function(evt, data){
+    var installed = data.status == 1;
+    var callback = data.cb;
+    var dlgLoading = art.dialog({
+        title: false,
+        width: 200,
+        content: '<p style="padding:30px;">努力加载中...</p>',
+        cancel: false
+    }).lock();
+    var pluginMap = {
+        '6': '<%=luci.dispatcher.build_url("web", "plugin","kuaipan")%>',
+        '7': '<%=xunleiurl%>',
+        '8': '<%=luci.dispatcher.build_url("web", "plugin", "guest")%>'
+    };
+    var isExtra = function(id){
+        var ret = false;
+        for(k in pluginMap){
+            if (id == k) {
+                ret = true;
+                break;
+            }
+        }
+        return ret;
+    };
+    var buildAppUrl = function(id){
+        var url = pluginMap[id];
+        var dom = '<p class="loadfrm" style="padding:30px; text-align:center;">Loading...</p><iframe style="width:100%; border:0; background:none; display:none;" frameborder="0" scrolling="no" data-src="'+ url +'" src="about:blank"></iframe>';
+        return dom;
+    };
+    $.getJSON('<%=luci.dispatcher.build_url("api", "xqpassport","plugin_detail")%>', {
+        pluginId : data.id
+    }, function(rsp){
+        var tpl = $('#tmplappdetail').html();
+        if (rsp.code == 0) {
+            var action = '<div class="ft"><a href="#" class="btn btn-block btn-install" data-id="'+rsp.detail.id+'"><span>安装应用</span></a></div>';
+            var status = '未启用';
+            if (installed) {
+                action = '<div class="btn-uninstall" data-id="'+rsp.detail.id+'"><a href="#"></a></div>';
+                status = '启用';
+                if ( /(6|7|8)/.test(rsp.detail.id) ) {
+                    action = '';
+                }
+            }
+            //内置插件，WPS快连
+            var extra = '';
+            if (rsp.detail.id == 5 && installed) {
+                extra = '<div class="plugin-wps"><span id="btn-wps">快连</span><p class="ret"></p></div>';
+                $(global_event).trigger('plugin:wpsOpen');
+            }
+            //外接插件，iframe引入。
+            var bdtype = '';
+            var iframe = '';
+            if (isExtra(rsp.detail.id) && installed) {
+                bdtype = ' iframe';
+                iframe = buildAppUrl(rsp.detail.id);
+            }
+            var dom = StringH.tmpl(tpl,{
+                id : rsp.detail.id,
+                name : rsp.detail.name,
+                version : rsp.detail.version,
+                introduction : rsp.detail.introduction,
+                developer : rsp.detail.developer,
+                icon_for_detail : rsp.detail.iconForDetail,
+                status : status,
+                footer : action,
+                extra : extra,
+                bdtype : bdtype,
+                iframe : iframe
+            });
+            $('.appthumbbig').on('error', function(){
+                this.src = '<%=resource%>/web/img/v2/plugin_detail_miui_bg.jpg';
+            });
+            callback(dom, function(){
+                if($(".panel-plugin").has(".iframe").length){
+                    var ifm = $('.panel-plugin .iframe iframe'),
+                        loadding = $('.panel-plugin .iframe .loadfrm');
+                        src = ifm.attr('data-src');
+                    ifm.attr('src', src);
+                    ifm.on('load', function(){
+                        loadding.fadeOut(function(){
+                            ifm.show();
+                        });
+                    });
+                }
+            });
+            dlgLoading.close();
+        }else{
+            dlgLoading.content(rsp.msg).time(1.5 * 1000);
+        }
+    });
+});
+$(global_event).on('plugin:enable', function(evt, data){
+    $('.btn-install').prop('disable', true).html('<span>安装中，请稍候...</span>');
+    $.getJSON('<%=luci.dispatcher.build_url("api", "xqpassport","plugin_enable")%>', {
+        pluginId : data.id
+    }, function(rsp){
+        var tpl = $('#tmplappitem').html();
+        if (rsp.code == 0) {
+            $('.btn-install').prop('disable', false).html('<span>安装应用成功</span>');
+            global_event.pluginPanel.close();
+            setTimeout(function(){
+                $(global_event).trigger('plugin:getlist');
+            }, 300);
+        }else{
+            $('.btn-install').prop('disable', false).html('<span>安装应用失败，请重试</span>');
+        }
+
+    });
+});
+$(global_event).on('plugin:disable', function(evt, data){
+    // $('.btn-uninstall').prop('disable', true).html('卸载中，请稍候...');
+    $.getJSON('<%=luci.dispatcher.build_url("api", "xqpassport","plugin_disable")%>', {
+        pluginId : data.id
+    }, function(rsp){
+        var tpl = $('#tmplappitem').html();
+        if (rsp.code == 0) {
+            // $('.btn-uninstall').prop('disable', false).html('卸载应用成功');
+            global_event.pluginPanel.close();
+            setTimeout(function(){
+                $(global_event).trigger('plugin:getlist');
+            }, 300);
+        }else{
+            // $('.btn-uninstall').prop('disable', false).html('卸载应用失败，请重试');
+        }
+
+    });
+});
+
+$(global_event).on('plugin:wpsOpen', function(evt, data){
+
+    global_event.wpsOpened = false;
+    var wpsTimeout = 2 * 60,
+        timer,
+        wpsStart = function(){
+            var btn = $('#btn-wps'),
+                ret = $('.plugin-wps .ret');
+            btn.html('连接中...');
+            ret.html('正在搜索设备...');
+            btn[0].className = 'disabled';
+            btn.prop('disable', true);
+        },
+        wpsFail = function(){
+            var btn = $('#btn-wps'),
+                ret = $('.plugin-wps .ret');
+            btn.html('重新连接');
+            ret.html('开启时间内没有连接到任何设备');
+            btn[0].className = '';
+            btn.prop('disable', false);
+            global_event.wpsOpened  = false;
+        },
+        wpsDone = function(){
+            var btn = $('#btn-wps'),
+                ret = $('.plugin-wps .ret');
+            btn.html('连接成功');
+
+            btn[0].className = 'success';
+            btn.prop('disable', false);
+            ret.html('已连接到你的设备');
+            global_event.wpsOpened  = false;
+        };
+
+    $('body').delegate('#btn-wps', 'click', function(e){
+        e.preventDefault();
+        //已经开启WPS
+        if (global_event.wpsOpened) {
+            return;
+        }
+        if (/(success|disabled)/.test(this.className)) {
+            return;
+        }
+
+        wpsStart();
+        //open wps
+        $.getJSON('<%=luci.dispatcher.build_url("api", "xqsystem", "wps")%>', {}, function(rsp){
+            if (rsp.code == 0) {
+                global_event.wpsOpened  = true;
+                // get wps status
+                window.clearInterval(timer);
+                timer = window.setInterval(function(){
+                    getStatus();
+                }, 5 * 1000);
+            }else{
+                wpsFail();
+            }
+        });
+    });
+
+    function getStatus(){
+        $.getJSON('<%=luci.dispatcher.build_url("api", "xqsystem", "wps_status")%>', {}, function(rsp){
+            if (rsp.code == 0) {
+                console.log(rsp);
+                //Connected
+                if (rsp.status == 2) {
+                    window.clearInterval(timer);
+                    wpsDone();
+                    return;
+                }
+                // Timeout
+                if ( (rsp.currentTime - rsp.startTime > wpsTimeout) || rsp.status == 4 ) {
+                    window.clearInterval(timer);
+                    wpsFail();
+                    return;
+                }
+            }else{
+                window.clearInterval(timer);
+                $('.plugin-wps .ret').html(rsp.msg);
+                wpsFail();
+            }
+        });
+    }
+});
+
+$(global_event).on('plugin:xmbind', function(){
+    var dlgContent = $('#xiaomibind').html();
+    $('.mod-first-bind .bd').html(dlgContent);
+    $('.mod-first-bind').show();
+    $('body').delegate('#xiaomipsp', 'submit', function(e){
+        e.preventDefault();
+        var that = this;
+        var frm = this.name;
+        var url = '<%=luci.dispatcher.build_url("api", "xqpassport","login")%>';
+        var btnText = $('#btnBindXiaomi span').html();
+        var validator = FormValidator.checkAll(frm, [{
+                name: 'uuid',
+                display :'小米账号',
+                rules: 'required'
+            },{
+                name: 'password',
+                display :'密码',
+                rules: 'required'
+            }]);
+        if (validator) {
+            var pwd = $.trim($('#xmpassword').val()),
+                data = {
+                'uuid': $.trim($('#xmuuid').val()),
+                'password': hex_md5(pwd),
+                'encrypt': Base64.encode(pwd)
+            };
+            $('#btnBindXiaomi').prop('disabled', true).find('span').html('登录中...');
+            $.ajax({
+                type:'post',
+                url: url,
+                data: data,
+                dataType : 'json',
+                success : function(rsp){
+                    if (rsp.code == 0) {
+                        $('#btnBindXiaomi').find('span').html('绑定中...');
+                        $.getJSON('<%=luci.dispatcher.build_url("api", "xqpassport", "rigister")%>',{uuid:rsp.uuid}, function(rsp){
+                            if (rsp.code == 0) {
+                                $('#btnBindXiaomi').find('span').html('绑定成功');
+                                window.location.reload();
+                            }else{
+                                $('#btnBindXiaomi').prop('disabled', false).find('span').html(btnText);
+                                $('.item-rsp-err', that).show().addClass('item-err');
+                                $('.item-rsp-err', that).find('.t').html(rsp.msg).show();
+                            }
+                        });
+                    }else{
+                        $('#btnBindXiaomi').prop('disabled', false).find('span').html(btnText);
+                        $('.item-rsp-err', that).show().addClass('item-err');
+                        $('.item-rsp-err', that).find('.t').html(rsp.msg).show();
+                    }
+                }
+            });
+        }
+    });
+});
+
+$(global_event).on('plugin:xmlogin', function(){
+    $.getJSON('<%=luci.dispatcher.build_url("api", "xqpassport","binded")%>',{},function(rsp){
+        if (rsp.code == 0) {
+            $('.mod-xiaomi-login input[name=uuid]').val(rsp.info.userId).prop('readOnly', true);
+        }
+        $('.mod-xiaomi-login').show();
+    }).fail(function() {
+        $('.mod-xiaomi-login').show();
+    });
+    $('#xiaomilogin').on('submit',function(e){
+        e.preventDefault();
+        var that = this;
+        var frm = this.name;
+        var url = '<%=luci.dispatcher.build_url("api", "xqpassport","login")%>';
+        var validator = FormValidator.checkAll(frm, [{
+                name: 'uuid',
+                display :'账号',
+                rules: 'required'
+            },{
+                name: 'password',
+                display :'密码',
+                rules: 'required'
+            }]);
+        if (validator) {
+            $('#btnXmSubmit').prop('disabled', true).find('span').html('登录中...');
+            var data = {
+                'uuid' : $.trim($('input[name=uuid]').val()),
+                'password' : hex_md5($.trim($('input[name=password]').val()))
+            };
+            $.ajax({
+                type:'post',
+                url: url,
+                data:data,
+                dataType : 'json',
+                success : function(rsp){
+                    if (rsp.code == 0) {
+                        window.location.reload(1);
+                    }else{
+                        var errMsg = '密码错误请检查并重试';
+                        if (rsp.code == 1551) {
+                            errMsg = '网络繁忙，权限查询失败，请重试';
+                        }
+                        $('.item', that).eq(1).addClass('item-err').find('.t').html(errMsg).show();
+                    }
+                    $('#btnXmSubmit').prop('disabled', false).find('span').html('登录');
+                }
+            });
+        }
+    });
+});
+
+$(function(){
+    var psp = global_event.pspGet();
+    var logtype = psp.logtype;
+    if ( global_event.isBinded ) {
+        if (logtype == 1) {
+            $(global_event).trigger('plugin:init');
+        }else{
+            $(global_event).trigger('plugin:xmlogin');
+        }
+    }else{
+        $(global_event).trigger('plugin:xmbind');
+    }
+});
+</script>
+</body>
+</html>

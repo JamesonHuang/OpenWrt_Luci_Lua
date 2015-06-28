@@ -1,0 +1,412 @@
+<%
+	local ver = require("xiaoqiang.XQVersion").webVersion
+	local XQSysUtil = require("xiaoqiang.util.XQSysUtil")
+	local XQLanWanUtil = require("xiaoqiang.util.XQLanWanUtil")
+	local hardwareVersion = XQSysUtil.getHardware()
+	local romVersion = XQSysUtil.getRomVersion()
+	local sysInfo = XQSysUtil.getSysInfo()
+	local router_name = XQSysUtil.getRouterName() or "我"
+	local sysCore = (sysInfo.core == 2 and '双核') or '单核'
+	local sysCpu = sysCore .." ".. sysInfo.hz
+	local sysDisk = XQSysUtil.getDiskSpace()
+	local remote_addr = luci.http.getenv("REMOTE_ADDR")
+	--local mac = string.upper(luci.sys.net.ip4mac(remote_addr))
+	local mac = XQLanWanUtil.getLanWanInfo("wan").mac
+%>
+<%include ("web/inc/head")%>
+<title>路由器状态 - 小米路由器</title>
+<link rel="stylesheet" href="<%=resource%>/web/css/page.index.css?v=<%=ver%>">
+</head>
+<body>
+<div id="doc" class="hidden">
+	<%include ("web/inc/header")%>
+	<!--  -->
+	<div id="nav">
+	<script>
+	var navCurrent = '.home';
+	</script>
+	<%include ("web/inc/nav")%>
+	</div>
+	<!--  -->
+	<div id="bd" class="dft">
+		<div id="netdetecte" class="mod-sect mod-net-check net-check-warn" style="display:none;">
+			<p class="msg"><i class="ico ico-check-tips"></i><span class="con">不正常，请检测。</span></p>
+			<a href="<%=luci.dispatcher.build_url("web", "detecte")%>" class="action" target="_blank">立即检测</a>
+		</div>
+		<div class="mod-sect mod-router-info">
+			<table>
+				<tr>
+					<td width="273">
+						<div class="pic"><img src="<%=resource%>/web/img/v2/pic_rt.png" alt=""></div>
+					</td>
+					<td>
+						<div class="main">
+							<h2><%=router_name%>的小米路由器</h2>
+							<ul class="list">
+								<li>型号：<%=hardwareVersion%></li>
+								<li>版本：<%=romVersion%></li>
+								<li>CPU：<%=sysCpu%></li>
+								<li>存储：<%=sysDisk%></li>
+								<!-- <li>内存：8GB</li> -->
+								<li>运行时长：<span id="upTime"></span></li>
+								<li>连接终端：<span id="devicesNum"></span>台</li>
+								<li class="last">MAC地址：<%=mac%></li>
+							</ul>
+							<div class="disk" style="display:none;">
+								<p><!-- 总空间：<span class="disk-total">1TB</span> &nbsp;&nbsp;&nbsp;&nbsp; -->可用空间：<span class="disk-available">111GB</span></p>
+								<div class="used-bar">
+									<div class="s0"></div>
+									<!-- <div class="s1"></div>
+									<div class="s2"></div>
+									<div class="s3"></div> -->
+								</div>
+								<!-- <ul class="used-type">
+									<li><i class="type type-1"></i>视频：12.3G</li>
+									<li><i class="type type-2"></i>图片：12.3G</li>
+									<li><i class="type type-3"></i>音乐：12.3G</li>
+									<li><i class="type type-4"></i>其他：12.3G</li>
+								</ul> -->
+							</div>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="mod-sect mod-net-status">
+			<div class="hd">
+				<h2>当前网络状态</h2>
+			</div>
+			<div class="bd">
+				<table>
+					<tr>
+						<td>
+							<div class="traffic" id="trafficChart" style="width:570px; height:370px;">
+								<p class="currval">当前下载速度: <b id="downSpeed">2.87KB/S</b></p>
+								<div class="grid">
+									<div class="label-y">
+										<label>10M/S</label>
+									</div>
+								</div>
+								<div class="line canvas"></div>
+							</div>
+						</td>
+						<td width="220">
+							<div class="status">
+								<ul>
+									<li>
+										<div>
+											<i class="ico ico-st-1"></i>
+											<p><b id="averageSpeed">...</b></p>
+											<p class="muted">平均下载</p>
+										</div>
+									</li>
+									<li>
+										<div>
+											<i class="ico ico-st-2"></i>
+											<p><b id="maxSpeed">...</b></p>
+											<p class="muted">最快下载</p>
+										</div>
+									</li>
+									<li>
+										<div>
+											<i class="ico ico-st-3"></i>
+											<p><b id="totalDownload">...</b></p>
+											<p class="muted">总下载量</p>
+										</div>
+									</li>
+									<li class="last">
+										<div>
+											<i class="ico ico-st-4"></i>
+											<p><b id="totalUpload">...</b></p>
+											<p class="muted">总上传量</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<div class="mod-sect mod-devices-status">
+			<div class="hd">
+				<h2>终端流量统计</h2>
+			</div>
+			<div class="bd">
+				<table>
+					<tr>
+						<td>
+							<div class="chart" id="piechart" style="width:334px; height:334px; margin:0 70px 0 26px"></div>
+						</td>
+						<td>
+							<div id="piecharttable" class="charttable"></div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<%include ("web/inc/footer")%>
+</div>
+<%include ("web/inc/g.js.base")%>
+<script src="<%=resource%>/web/js/raphael.js?v=<%=ver%>"></script>
+<script src="<%=resource%>/web/js/class.linechart.js?v=<%=ver%>"></script>
+<script src="<%=resource%>/web/js/class.pie.js?v=<%=ver%>"></script>
+<script>
+global_event.needBind = false;
+global_event.mustBind = false;
+</script>
+<%include ("web/inc/g.js")%>
+<script>
+global_event.lineData = [];
+$(global_event).on('status:get', function(evt, data){
+	$.getJSON('<%=luci.dispatcher.build_url("api", "xqsystem","status")%>', {}, function(rsp){
+		if (rsp.code != 0) {
+			return;
+		}
+		$(global_event).trigger("chart:pie_update", rsp);
+		$(global_event).trigger('status:uploadcount', rsp);
+		$(global_event).trigger('status:downloadcount', rsp);
+		$(global_event).trigger('status:maxSpeed', rsp);
+		$(global_event).trigger('status:downSpeed', rsp);
+		$(global_event).trigger('status:online', rsp);
+		$(global_event).trigger('status:devices', rsp);
+
+		global_event.lineData = (function(){
+			var speedHistory = rsp.wanStatistics.history,
+				arr = [],
+				fill = [],
+				len;
+			if (speedHistory && $.isArray(speedHistory) && speedHistory.length > 0) {
+				for(var i = 0, len = speedHistory.length; i < len; i ++){
+					arr.push(parseInt(speedHistory[i], 10));
+				}
+			}
+			len = arr.length;
+
+			for (var i = 0; i < 30 - len; i++) {
+				fill.push(0);
+			};
+			return fill.concat(arr);
+		})(rsp);
+		console.log(global_event.lineData);
+		$(global_event).trigger('chart:lineUpdate', rsp);
+	});
+});
+//终端流量报表
+$(global_event).on('chart:pie_init', function(evt, data){
+	var pieConfig = {
+		id : 'piechart',
+		wt : 167 * 2,
+		ht : 167 * 2,
+		r : 158,
+		stroke : '#fff',
+		datas: [{value : 1, label : 't1'}],
+		count : {value : 0,label : 'KB'}
+	};
+	global_event.pieChart = new PieChart(pieConfig);
+});
+//更新流量分布图
+$(global_event).on('chart:pie_update', function(evt, data){
+	var colorMap = ['#099ede','#10c7be','#4ec213','#ffcc00','#ff7700','#d24747','#bf5ef0','#7d74e3'];
+	var datas = data.devStatistics;
+	if (datas.length == 0) {
+		return;
+	}
+	var icon_map = [];
+	var conf_datas = [];
+	var count = {};
+	count.value = 0;
+	count.label = 'MB';
+	for (var i = 0; i < datas.length; i++) {
+		var value = parseInt(datas[i].download, 10);
+		var value2 = parseInt(datas[i].downspeed, 10);
+		var item = {
+			value : value,
+			value2 : value2,
+			label : datas[i].devname,
+			color : colorMap[i]
+		};
+		if(value != 0){
+			conf_datas.push(item);
+		}
+		count.value += item.value;
+	};
+
+	var totalCount = (function(val){
+		var ret = byteFormat(val, 10, true);
+		return {
+			value : ret[0],
+			label : ret[1]
+		}
+	})(count.value);
+	global_event.pieChart.update(conf_datas, totalCount);
+});
+$(global_event).on('chart:lineInit',function(evt, data){
+	global_event.chartLine = new Linechart({
+		id: '#trafficChart',
+		maxYval: 10 * 1024 * 1024,
+		maxYnum: 5
+	});
+});
+$(global_event).on('chart:lineUpdate',function(evt, data){
+	var speed = data.wanStatistics.downspeed || 0;
+		speed = parseInt(speed, 10),
+		maxspeed = parseInt(data.wanStatistics.maxdownloadspeed, 10);
+	global_event.lineData.push(speed);
+	var len = global_event.lineData.length;
+	var lineData = global_event.lineData.slice(len - 30);
+	$(global_event).trigger('status:averageSpeed', {lineData: lineData});
+	global_event.chartLine.update(lineData, maxspeed);
+});
+
+//wifi devices count
+$(global_event).on('status:devices', function(evt, data){
+	var devices = data.count;
+	$('#devicesNum').text(devices);
+});
+//在线时长
+$(global_event).on('status:online', function(evt, data){
+	var online = data.upTime;
+	console.log('status:online', online);
+	$('#upTime').html(secondToDate(online, true));
+});
+//当前下载速度
+$(global_event).on('status:downSpeed', function(evt, data){
+	var speed = data.wanStatistics.downspeed || 0;
+	var speedfmt = byteFormat(speed);
+	$('#downSpeed').html(speedfmt+'/S');
+});
+//平均下载速度
+$(global_event).on('status:averageSpeed', function(evt, data){
+	var speed,
+		lineData = data.lineData;
+	console.log(lineData);
+	if (lineData.length > 0) {
+		speed = (function(db){
+			var total = 0;
+			for (var i = 0; i < db.length; i++) {
+				total += parseInt(db[i], 10);
+			};
+			return total / db.length;
+		})(lineData);
+	}else{
+		speed = 0;
+	}
+	var speedfmt = byteFormat(speed);
+	$('#averageSpeed').html(speedfmt+'/S');
+});
+//最快下载速度
+$(global_event).on('status:maxSpeed', function(evt, data){
+	var maxspeed = data.wanStatistics.maxdownloadspeed;
+	var maxspeedfmt = byteFormat(maxspeed);
+	$('#maxSpeed').html(maxspeedfmt+'/S');
+});
+//总上传量
+$(global_event).on('status:uploadcount', function(evt, data){
+	var total = data.wanStatistics.upload;
+	total = byteFormat(total);
+	$('#totalUpload').html(total);
+});
+//总下载量
+$(global_event).on('status:downloadcount', function(evt, data){
+	var total = data.wanStatistics.download;
+	total = byteFormat(total);
+	$('#totalDownload').html(total);
+});
+//硬盘信息
+$(global_event).on('status:disk',function(evt, data){
+	$('.disk').hide();
+	$.ajax({
+		type: "POST",
+		url: '<%=luci.dispatcher.build_url("api", "xqdatacenter","request")%>',
+		data: {payload:'{"api":26}'},
+		dataType: 'json'
+	})
+	.done(function(rsp) {
+		if (rsp.code == 0) {
+			$('.disk-total').text(byteFormat(rsp.capacity));
+			$('.disk-available').text(byteFormat(rsp.free));
+			$('.used-bar .s0').css({width: ((rsp.capacity - rsp.free) / rsp.capacity * 100) + '%'});
+			$('.disk').show();
+		}
+	});
+});
+
+$(global_event).on('netdetecte', function(evt, data){
+	var timer = null;
+	function detecte(){
+		$.getJSON('<%=luci.dispatcher.build_url("api", "xqnetdetect","sys_status")%>', {}, function(rsp){
+			if (rsp.code == 0) {
+				if (rsp.status != 0) {
+					var msg = {
+						'1': '发现有'+ rsp.count +'个问题需要处理',
+						'2': '上网连接失败，请立即处理'
+					};
+					var classname = 'mod-sect mod-net-check ';
+					classname += rsp.status == 1 ? 'net-check-warn' : 'net-check-err';
+					$('#netdetecte')[0].className = classname;
+					$('#netdetecte').find('.con').html(msg[rsp.status]).end().fadeIn(400);
+				}else{
+					$('#netdetecte').hide();
+				}
+			}
+		});
+	}
+	timer = window.setInterval(function(){
+		detecte();
+	}, 5000);
+});
+
+$(function(){
+	$(global_event).trigger('chart:lineInit');
+	$(global_event).trigger('status:get');
+	$(global_event).trigger('status:disk');
+	$(global_event).trigger('chart:pie_init');
+	$(global_event).trigger('netdetecte');
+	var timer = null,
+		getBdWidth = function(){
+			return document.getElementById('bd').offsetWidth;
+		},
+		pageLoad = function(){
+			preWidth = getBdWidth();
+			if (preWidth < 1200) {
+				$('#trafficChart').css({width:360, height:370});
+			}else{
+				$('#trafficChart').css({width:570, height:370});
+			}
+			global_event.chartLine.resize();
+	},
+	isoldie = $('html').hasClass('oldie');
+	console.log('isoldie', isoldie);
+	if ( !isoldie ) {
+		pageLoad();
+		$(window).resize(function(){
+			window.clearTimeout(timer);
+			timer = window.setTimeout(function(){
+				pageLoad();
+			},400);
+		});
+	}
+
+	var timerInterval = null;
+	timerInterval = window.setInterval(function(){
+		$.getJSON('<%=luci.dispatcher.build_url("api", "xqsystem","status")%>', {}, function(rsp){
+			if (rsp.code != 0) {
+				window.clearInterval(timerInterval);
+				return;
+			}
+			$(global_event).trigger('chart:lineUpdate', rsp);
+			$(global_event).trigger('status:uploadcount', rsp);
+			$(global_event).trigger('status:downloadcount', rsp);
+			$(global_event).trigger('status:maxSpeed', rsp);
+			$(global_event).trigger('status:downSpeed', rsp);
+		});
+	} , 6000);
+
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,1972 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+"Failed to execute " .. (type(c.target) 	./luci/dispatcher.lua	/^        "Failed to execute " .. (type(c.target) == "function" and "function" or c.target.type or "unknown") ..$/;"	f
+ADD	./sha1.lua	/^local function ADD(first, ...)$/;"	f
+AND	./sha1.lua	/^local function AND(a, b)$/;"	f
+AbstractSection.__init__	./luci/cbi.lua	/^function AbstractSection.__init__(self, map, sectiontype, ...)$/;"	f
+AbstractSection.add_dynamic	./luci/cbi.lua	/^function AbstractSection.add_dynamic(self, field, optional)$/;"	f
+AbstractSection.cfgvalue	./luci/cbi.lua	/^function AbstractSection.cfgvalue(self, section)$/;"	f
+AbstractSection.create	./luci/cbi.lua	/^function AbstractSection.create(self, section)$/;"	f
+AbstractSection.has_tabs	./luci/cbi.lua	/^function AbstractSection.has_tabs(self)$/;"	f
+AbstractSection.option	./luci/cbi.lua	/^function AbstractSection.option(self, class, option, ...)$/;"	f
+AbstractSection.parse_dynamic	./luci/cbi.lua	/^function AbstractSection.parse_dynamic(self, section)$/;"	f
+AbstractSection.parse_optionals	./luci/cbi.lua	/^function AbstractSection.parse_optionals(self, section)$/;"	f
+AbstractSection.push_events	./luci/cbi.lua	/^function AbstractSection.push_events(self)$/;"	f
+AbstractSection.remove	./luci/cbi.lua	/^function AbstractSection.remove(self, section)$/;"	f
+AbstractSection.render_tab	./luci/cbi.lua	/^function AbstractSection.render_tab(self, tab, ...)$/;"	f
+AbstractSection.tab	./luci/cbi.lua	/^function AbstractSection.tab(self, tab, title, desc)$/;"	f
+AbstractSection.taboption	./luci/cbi.lua	/^function AbstractSection.taboption(self, tab, ...)$/;"	f
+AbstractValue.__init__	./luci/cbi.lua	/^function AbstractValue.__init__(self, map, section, option, ...)$/;"	f
+AbstractValue.add_error	./luci/cbi.lua	/^function AbstractValue.add_error(self, section, type, msg)$/;"	f
+AbstractValue.additional	./luci/cbi.lua	/^function AbstractValue.additional(self, value)$/;"	f
+AbstractValue.cbid	./luci/cbi.lua	/^function AbstractValue.cbid(self, section)$/;"	f
+AbstractValue.cfgvalue	./luci/cbi.lua	/^function AbstractValue.cfgvalue(self, section)$/;"	f
+AbstractValue.depends	./luci/cbi.lua	/^function AbstractValue.depends(self, field, value)$/;"	f
+AbstractValue.formcreated	./luci/cbi.lua	/^function AbstractValue.formcreated(self, section)$/;"	f
+AbstractValue.formvalue	./luci/cbi.lua	/^function AbstractValue.formvalue(self, section)$/;"	f
+AbstractValue.mandatory	./luci/cbi.lua	/^function AbstractValue.mandatory(self, value)$/;"	f
+AbstractValue.parse	./luci/cbi.lua	/^function AbstractValue.parse(self, section, novld)$/;"	f
+AbstractValue.prepare	./luci/cbi.lua	/^function AbstractValue.prepare(self)$/;"	f
+AbstractValue.remove	./luci/cbi.lua	/^function AbstractValue.remove(self, section)$/;"	f
+AbstractValue.render	./luci/cbi.lua	/^function AbstractValue.render(self, s, scope)$/;"	f
+AbstractValue.validate	./luci/cbi.lua	/^function AbstractValue.validate(self, value)$/;"	f
+AbstractValue.write	./luci/cbi.lua	/^function AbstractValue.write(self, section, value)$/;"	f
+ActiveDecoder.__init__	./luci/json.lua	/^function ActiveDecoder.__init__(self, source, customnull)$/;"	f
+ActiveDecoder.fetch	./luci/json.lua	/^function ActiveDecoder.fetch(self)$/;"	f
+ActiveDecoder.get	./luci/json.lua	/^function ActiveDecoder.get(self)$/;"	f
+Button.__init__	./luci/cbi.lua	/^function Button.__init__(self, ...)$/;"	f
+COPY	./sha1.lua	/^local function COPY(old)$/;"	f
+Compound.__init__	./luci/cbi.lua	/^function Compound.__init__(self, ...)$/;"	f
+Compound.parse	./luci/cbi.lua	/^function Compound.parse(self, ...)$/;"	f
+Compound.populate_delegator	./luci/cbi.lua	/^function Compound.populate_delegator(self, delegator)$/;"	f
+Cursor._affected	./luci/model/uci.lua	/^function Cursor._affected(self, configlist)$/;"	f
+Cursor.apply	./luci/model/uci.lua	/^function Cursor.apply(self, configlist, command)$/;"	f
+Cursor.delete_all	./luci/model/uci.lua	/^function Cursor.delete_all(self, config, stype, comparator)$/;"	f
+Cursor.get_bool	./luci/model/uci.lua	/^function Cursor.get_bool(self, ...)$/;"	f
+Cursor.get_first	./luci/model/uci.lua	/^function Cursor.get_first(self, conf, stype, opt, def)$/;"	f
+Cursor.get_list	./luci/model/uci.lua	/^function Cursor.get_list(self, config, section, option)$/;"	f
+Cursor.load	./luci/model/uci.lua	/^function Cursor.load(self, ...)$/;"	f
+Cursor.section	./luci/model/uci.lua	/^function Cursor.section(self, config, type, name, values)$/;"	f
+Cursor.set_list	./luci/model/uci.lua	/^function Cursor.set_list(self, config, section, option, value)$/;"	f
+Cursor.substate	./luci/model/uci.lua	/^function Cursor.substate(self)$/;"	f
+Cursor.tset	./luci/model/uci.lua	/^function Cursor.tset(self, config, section, values)$/;"	f
+Cursor.unload	./luci/model/uci.lua	/^function Cursor.unload(self, ...)$/;"	f
+Decoder.__init__	./luci/json.lua	/^function Decoder.__init__(self, customnull)$/;"	f
+Decoder.dispatch	./luci/json.lua	/^function Decoder.dispatch(self, chunk, src_err, strict)$/;"	f
+Decoder.fetch	./luci/json.lua	/^function Decoder.fetch(self)$/;"	f
+Decoder.fetch_atleast	./luci/json.lua	/^function Decoder.fetch_atleast(self, chunk, bytes)$/;"	f
+Decoder.fetch_until	./luci/json.lua	/^function Decoder.fetch_until(self, chunk, pattern)$/;"	f
+Decoder.get	./luci/json.lua	/^function Decoder.get(self)$/;"	f
+Decoder.parse_array	./luci/json.lua	/^function Decoder.parse_array(self, chunk)$/;"	f
+Decoder.parse_delimiter	./luci/json.lua	/^function Decoder.parse_delimiter(self, chunk, delimiter)$/;"	f
+Decoder.parse_escape	./luci/json.lua	/^function Decoder.parse_escape(self, chunk)$/;"	f
+Decoder.parse_false	./luci/json.lua	/^function Decoder.parse_false(self, chunk)$/;"	f
+Decoder.parse_literal	./luci/json.lua	/^function Decoder.parse_literal(self, chunk, literal, value)$/;"	f
+Decoder.parse_null	./luci/json.lua	/^function Decoder.parse_null(self, chunk)$/;"	f
+Decoder.parse_number	./luci/json.lua	/^function Decoder.parse_number(self, chunk)$/;"	f
+Decoder.parse_object	./luci/json.lua	/^function Decoder.parse_object(self, chunk)$/;"	f
+Decoder.parse_space	./luci/json.lua	/^function Decoder.parse_space(self, chunk)$/;"	f
+Decoder.parse_string	./luci/json.lua	/^function Decoder.parse_string(self, chunk)$/;"	f
+Decoder.parse_true	./luci/json.lua	/^function Decoder.parse_true(self, chunk)$/;"	f
+Decoder.sink	./luci/json.lua	/^function Decoder.sink(self)$/;"	f
+Delegator.__init__	./luci/cbi.lua	/^function Delegator.__init__(self, ...)$/;"	f
+Delegator.add	./luci/cbi.lua	/^function Delegator.add(self, name, node)$/;"	f
+Delegator.get	./luci/cbi.lua	/^function Delegator.get(self, name)$/;"	f
+Delegator.get_active	./luci/cbi.lua	/^function Delegator.get_active(self)$/;"	f
+Delegator.get_chain	./luci/cbi.lua	/^function Delegator.get_chain(self)$/;"	f
+Delegator.get_next	./luci/cbi.lua	/^function Delegator.get_next(self, state)$/;"	f
+Delegator.get_prev	./luci/cbi.lua	/^function Delegator.get_prev(self, state)$/;"	f
+Delegator.insert_after	./luci/cbi.lua	/^function Delegator.insert_after(self, name, after)$/;"	f
+Delegator.parse	./luci/cbi.lua	/^function Delegator.parse(self, ...)$/;"	f
+Delegator.set	./luci/cbi.lua	/^function Delegator.set(self, name, node)$/;"	f
+Delegator.set_route	./luci/cbi.lua	/^function Delegator.set_route(self, ...)$/;"	f
+DoExec	./xiaoqiang/util/XQMitvUtil.lua	/^function DoExec(cmd)$/;"	f
+DummyValue.__init__	./luci/cbi.lua	/^function DummyValue.__init__(self, ...)$/;"	f
+DummyValue.cfgvalue	./luci/cbi.lua	/^function DummyValue.cfgvalue(self, section)$/;"	f
+DummyValue.parse	./luci/cbi.lua	/^function DummyValue.parse(self)$/;"	f
+DynamicList.__init__	./luci/cbi.lua	/^function DynamicList.__init__(self, ...)$/;"	f
+DynamicList.cfgvalue	./luci/cbi.lua	/^function DynamicList.cfgvalue(self, section)$/;"	f
+DynamicList.formvalue	./luci/cbi.lua	/^function DynamicList.formvalue(self, section)$/;"	f
+DynamicList.reset_values	./luci/cbi.lua	/^function DynamicList.reset_values(self)$/;"	f
+DynamicList.value	./luci/cbi.lua	/^function DynamicList.value(self, key, val)$/;"	f
+DynamicList.write	./luci/cbi.lua	/^function DynamicList.write(self, section, value)$/;"	f
+Encoder.__init__	./luci/json.lua	/^function Encoder.__init__(self, data, buffersize, fastescape)$/;"	f
+Encoder.dispatch	./luci/json.lua	/^function Encoder.dispatch(self, data, start)$/;"	f
+Encoder.parse_bool	./luci/json.lua	/^function Encoder.parse_bool(self, obj)$/;"	f
+Encoder.parse_iter	./luci/json.lua	/^function Encoder.parse_iter(self, obj)$/;"	f
+Encoder.parse_nil	./luci/json.lua	/^function Encoder.parse_nil(self)$/;"	f
+Encoder.parse_number	./luci/json.lua	/^function Encoder.parse_number(self, obj)$/;"	f
+Encoder.parse_string	./luci/json.lua	/^function Encoder.parse_string(self, obj)$/;"	f
+Encoder.put	./luci/json.lua	/^function Encoder.put(self, chunk)$/;"	f
+Encoder.source	./luci/json.lua	/^function Encoder.source(self)$/;"	f
+FileBrowser.__init__	./luci/cbi.lua	/^function FileBrowser.__init__(self, ...)$/;"	f
+FileUpload.__init__	./luci/cbi.lua	/^function FileUpload.__init__(self, ...)$/;"	f
+FileUpload.cfgvalue	./luci/cbi.lua	/^function FileUpload.cfgvalue(self, section)$/;"	f
+FileUpload.formcreated	./luci/cbi.lua	/^function FileUpload.formcreated(self, section)$/;"	f
+FileUpload.formvalue	./luci/cbi.lua	/^function FileUpload.formvalue(self, section)$/;"	f
+FileUpload.remove	./luci/cbi.lua	/^function FileUpload.remove(self, section)$/;"	f
+Flag.__init__	./luci/cbi.lua	/^function Flag.__init__(self, ...)$/;"	f
+Flag.cfgvalue	./luci/cbi.lua	/^function Flag.cfgvalue(self, section)$/;"	f
+Flag.parse	./luci/cbi.lua	/^function Flag.parse(self, section)$/;"	f
+Form.__init__	./luci/cbi.lua	/^function Form.__init__(self, ...)$/;"	f
+Hex	./luci/ip.lua	/^function Hex( hex, prefix, family, swap )$/;"	f
+IPv4	./luci/ip.lua	/^function IPv4(address, netmask)$/;"	f
+IPv6	./luci/ip.lua	/^function IPv6(address, netmask)$/;"	f
+IptParser.__init__	./luci/sys/iptparser.lua	/^function IptParser.__init__( self, family )$/;"	f
+IptParser._match_options	./luci/sys/iptparser.lua	/^function IptParser._match_options( self, o1, o2 )$/;"	f
+IptParser._parse_addr	./luci/sys/iptparser.lua	/^function IptParser._parse_addr( self, addr )$/;"	f
+IptParser._parse_rules	./luci/sys/iptparser.lua	/^function IptParser._parse_rules( self )$/;"	f
+IptParser.chain	./luci/sys/iptparser.lua	/^function IptParser.chain( self, table, chain )$/;"	f
+IptParser.chains	./luci/sys/iptparser.lua	/^function IptParser.chains( self, table )$/;"	f
+IptParser.find	./luci/sys/iptparser.lua	/^function IptParser.find( self, args )$/;"	f
+IptParser.is_custom_target	./luci/sys/iptparser.lua	/^function IptParser.is_custom_target( self, target )$/;"	f
+IptParser.resync	./luci/sys/iptparser.lua	/^function IptParser.resync( self )$/;"	f
+IptParser.tables	./luci/sys/iptparser.lua	/^function IptParser.tables( self )$/;"	f
+KEY_FUNC_2G_CHANNEL 	./xiaoqiang/XQLog.lua	/^KEY_FUNC_2G_CHANNEL = "function_channel_2g"$/;"	f
+KEY_FUNC_2G_SIGNAL 	./xiaoqiang/XQLog.lua	/^KEY_FUNC_2G_SIGNAL = "function_channel_2g_signal"$/;"	f
+KEY_FUNC_5G_CHANNEL 	./xiaoqiang/XQLog.lua	/^KEY_FUNC_5G_CHANNEL = "function_channel_5g"$/;"	f
+KEY_FUNC_5G_SIGNAL 	./xiaoqiang/XQLog.lua	/^KEY_FUNC_5G_SIGNAL = "function_channel_5g_signal"$/;"	f
+KEY_FUNC_APPQOS 	./xiaoqiang/XQLog.lua	/^KEY_FUNC_APPQOS = "function_appqos"$/;"	f
+KEY_FUNC_DMZ 	./xiaoqiang/XQLog.lua	/^KEY_FUNC_DMZ = "function_dmz"$/;"	f
+KEY_FUNC_L2TP 	./xiaoqiang/XQLog.lua	/^KEY_FUNC_L2TP = "function_l2tp_web"$/;"	f
+KEY_FUNC_MACCLONE 	./xiaoqiang/XQLog.lua	/^KEY_FUNC_MACCLONE = "function_clone"$/;"	f
+KEY_FUNC_NOFLUSHED 	./xiaoqiang/XQLog.lua	/^KEY_FUNC_NOFLUSHED = "function_hdd_hibernation"$/;"	f
+KEY_FUNC_PLUGIN 	./xiaoqiang/XQLog.lua	/^KEY_FUNC_PLUGIN = "function_plugin"$/;"	f
+KEY_FUNC_PORTENABLE 	./xiaoqiang/XQLog.lua	/^KEY_FUNC_PORTENABLE = "function_port_forwarding_active"$/;"	f
+KEY_FUNC_PORTFADD 	./xiaoqiang/XQLog.lua	/^KEY_FUNC_PORTFADD = "function_port_forwarding_add"$/;"	f
+KEY_FUNC_PPTP 	./xiaoqiang/XQLog.lua	/^KEY_FUNC_PPTP = "function_pptp_web"$/;"	f
+KEY_FUNC_QOS 	./xiaoqiang/XQLog.lua	/^KEY_FUNC_QOS = "function_qos"$/;"	f
+KEY_FUNC_RANGEFADD 	./xiaoqiang/XQLog.lua	/^KEY_FUNC_RANGEFADD = "function_range_forwarding_add"$/;"	f
+KEY_FUNC_UPNP 	./xiaoqiang/XQLog.lua	/^KEY_FUNC_UPNP = "function_upnp"$/;"	f
+KEY_FUNC_WIRELESS_ACCESS 	./xiaoqiang/XQLog.lua	/^KEY_FUNC_WIRELESS_ACCESS = "function_wireless_access"$/;"	f
+KEY_FUNC_WIRELESS_BLACK 	./xiaoqiang/XQLog.lua	/^KEY_FUNC_WIRELESS_BLACK = "function_wireless_access_blacklist"$/;"	f
+KEY_FUNC_WIRELESS_WHITE 	./xiaoqiang/XQLog.lua	/^KEY_FUNC_WIRELESS_WHITE = "function_wireless_access_whitelist"$/;"	f
+LEVEL_FUNCS[i] 	./logging.lua	/^	LEVEL_FUNCS[i] = function(self, ...)$/;"	f
+LOG_MSG	./logging.lua	/^local function LOG_MSG(self, level, fmt, ...)$/;"	f
+ListValue.__init__	./luci/cbi.lua	/^function ListValue.__init__(self, ...)$/;"	f
+ListValue.reset_values	./luci/cbi.lua	/^function ListValue.reset_values(self)$/;"	f
+ListValue.validate	./luci/cbi.lua	/^function ListValue.validate(self, val)$/;"	f
+ListValue.value	./luci/cbi.lua	/^function ListValue.value(self, key, val, ...)$/;"	f
+M.strsplit	./Posix.lua	/^function M.strsplit(str, delim, maxNb)$/;"	f
+M.timeradd 	./Posix.lua	/^function M.timeradd (x,y)$/;"	f
+M.timercmp 	./Posix.lua	/^function M.timercmp (x, y)$/;"	f
+M.timersub 	./Posix.lua	/^function M.timersub (x,y)$/;"	f
+M.timesleep 	./Posix.lua	/^function M.timesleep (x)$/;"	f
+M.var_dump	./Posix.lua	/^function M.var_dump(data, max_level, prefix)$/;"	f
+Map.__init__	./luci/cbi.lua	/^function Map.__init__(self, config, ...)$/;"	f
+Map.add	./luci/cbi.lua	/^function Map.add(self, sectiontype)$/;"	f
+Map.chain	./luci/cbi.lua	/^function Map.chain(self, config)$/;"	f
+Map.del	./luci/cbi.lua	/^function Map.del(self, section, option)$/;"	f
+Map.formvalue	./luci/cbi.lua	/^function Map.formvalue(self, key)$/;"	f
+Map.formvaluetable	./luci/cbi.lua	/^function Map.formvaluetable(self, key)$/;"	f
+Map.get	./luci/cbi.lua	/^function Map.get(self, section, option)$/;"	f
+Map.get_scheme	./luci/cbi.lua	/^function Map.get_scheme(self, sectiontype, option)$/;"	f
+Map.parse	./luci/cbi.lua	/^function Map.parse(self, readinput, ...)$/;"	f
+Map.render	./luci/cbi.lua	/^function Map.render(self, ...)$/;"	f
+Map.section	./luci/cbi.lua	/^function Map.section(self, class, ...)$/;"	f
+Map.set	./luci/cbi.lua	/^function Map.set(self, section, option, value)$/;"	f
+Map.state_handler	./luci/cbi.lua	/^function Map.state_handler(self, state)$/;"	f
+Map.submitstate	./luci/cbi.lua	/^function Map.submitstate(self)$/;"	f
+MultiValue.__init__	./luci/cbi.lua	/^function MultiValue.__init__(self, ...)$/;"	f
+MultiValue.render	./luci/cbi.lua	/^function MultiValue.render(self, ...)$/;"	f
+MultiValue.reset_values	./luci/cbi.lua	/^function MultiValue.reset_values(self)$/;"	f
+MultiValue.validate	./luci/cbi.lua	/^function MultiValue.validate(self, val)$/;"	f
+MultiValue.value	./luci/cbi.lua	/^function MultiValue.value(self, key, val)$/;"	f
+MultiValue.valuelist	./luci/cbi.lua	/^function MultiValue.valuelist(self, section)$/;"	f
+NOT	./sha1.lua	/^local function NOT(a)$/;"	f
+NamedSection.__init__	./luci/cbi.lua	/^function NamedSection.__init__(self, map, section, stype, ...)$/;"	f
+NamedSection.parse	./luci/cbi.lua	/^function NamedSection.parse(self, novld)$/;"	f
+Node.__init__	./luci/cbi.lua	/^function Node.__init__(self, title, description)$/;"	f
+Node._run_hook	./luci/cbi.lua	/^function Node._run_hook(self, hook)$/;"	f
+Node._run_hooks	./luci/cbi.lua	/^function Node._run_hooks(self, ...)$/;"	f
+Node.append	./luci/cbi.lua	/^function Node.append(self, obj)$/;"	f
+Node.parse	./luci/cbi.lua	/^function Node.parse(self, ...)$/;"	f
+Node.prepare	./luci/cbi.lua	/^function Node.prepare(self, ...)$/;"	f
+Node.render	./luci/cbi.lua	/^function Node.render(self, scope)$/;"	f
+Node.render_children	./luci/cbi.lua	/^function Node.render_children(self, ...)$/;"	f
+OR	./sha1.lua	/^local function OR(a, b)$/;"	f
+OR3	./sha1.lua	/^local function OR3(a, b, c)$/;"	f
+Page.parse    	./luci/cbi.lua	/^Page.parse    = function() end$/;"	f
+Pluginpanel	./luci/view/web/plugin.htm	/^    function Pluginpanel(option){$/;"	f
+REMOVE_TAGS 	./xssFilter.lua	/^REMOVE_TAGS = function(self, tag, message, text)$/;"	f
+REPLACE_TAGS 	./xssFilter.lua	/^REPLACE_TAGS = function(self, tag, message, text)$/;"	f
+ROTATE	./sha1.lua	/^local function ROTATE(bits, a)$/;"	f
+Request.__init__	./luci/http.lua	/^function Request.__init__(self, env, sourcein, sinkerr)$/;"	f
+Request._parse_input	./luci/http.lua	/^function Request._parse_input(self)$/;"	f
+Request.content	./luci/http.lua	/^function Request.content(self)$/;"	f
+Request.formvalue	./luci/http.lua	/^function Request.formvalue(self, name, noparse)$/;"	f
+Request.formvaluetable	./luci/http.lua	/^function Request.formvaluetable(self, prefix)$/;"	f
+Request.getcookie	./luci/http.lua	/^function Request.getcookie(self, name)$/;"	f
+Request.getenv	./luci/http.lua	/^function Request.getenv(self, name)$/;"	f
+Request.setfilehandler	./luci/http.lua	/^function Request.setfilehandler(self, callback)$/;"	f
+SLAXML:dom	./slaxdom.lua	/^function SLAXML:dom(xml,opts)$/;"	f
+SLAXML:parse	./slaxml.lua	/^function SLAXML:parse(xml,options)$/;"	f
+SLAXML:parser	./slaxml.lua	/^function SLAXML:parser(callbacks)$/;"	f
+ShowPanel	./luci/view/web/plugins/kuaipan.htm	/^		function ShowPanel(panelId) {\/\/控制面板$/;"	f
+SimpleForm.__init__	./luci/cbi.lua	/^function SimpleForm.__init__(self, config, title, description, data)$/;"	f
+SimpleForm.del	./luci/cbi.lua	/^function SimpleForm.del(self, section, option)$/;"	f
+SimpleForm.field	./luci/cbi.lua	/^function SimpleForm.field(self, class, ...)$/;"	f
+SimpleForm.get	./luci/cbi.lua	/^function SimpleForm.get(self, section, option)$/;"	f
+SimpleForm.get_scheme	./luci/cbi.lua	/^function SimpleForm.get_scheme()$/;"	f
+SimpleForm.parse	./luci/cbi.lua	/^function SimpleForm.parse(self, readinput, ...)$/;"	f
+SimpleForm.render	./luci/cbi.lua	/^function SimpleForm.render(self, ...)$/;"	f
+SimpleForm.section	./luci/cbi.lua	/^function SimpleForm.section(self, class, ...)$/;"	f
+SimpleForm.set	./luci/cbi.lua	/^function SimpleForm.set(self, section, option, value)$/;"	f
+SimpleForm.submitstate	./luci/cbi.lua	/^function SimpleForm.submitstate(self)$/;"	f
+SimpleSection.__init__	./luci/cbi.lua	/^function SimpleSection.__init__(self, form, ...)$/;"	f
+StaticList.__init__	./luci/cbi.lua	/^function StaticList.__init__(self, ...)$/;"	f
+StaticList.validate	./luci/cbi.lua	/^function StaticList.validate(self, value)$/;"	f
+Table.__init__	./luci/cbi.lua	/^function Table.__init__(self, form, data, ...)$/;"	f
+Table.cfgsections	./luci/cbi.lua	/^function Table.cfgsections(self)$/;"	f
+Table.parse	./luci/cbi.lua	/^function Table.parse(self, readinput)$/;"	f
+Table.update	./luci/cbi.lua	/^function Table.update(self, data)$/;"	f
+Template.__init__	./luci/cbi.lua	/^function Template.__init__(self, template)$/;"	f
+Template.__init__	./luci/template.lua	/^function Template.__init__(self, name)	$/;"	f
+Template.parse	./luci/cbi.lua	/^function Template.parse(self, readinput)$/;"	f
+Template.render	./luci/cbi.lua	/^function Template.render(self)$/;"	f
+Template.render	./luci/template.lua	/^function Template.render(self, scope)$/;"	f
+TextValue.__init__	./luci/cbi.lua	/^function TextValue.__init__(self, ...)$/;"	f
+TypedSection.__init__	./luci/cbi.lua	/^function TypedSection.__init__(self, map, type, ...)$/;"	f
+TypedSection.cfgsections	./luci/cbi.lua	/^function TypedSection.cfgsections(self)$/;"	f
+TypedSection.checkscope	./luci/cbi.lua	/^function TypedSection.checkscope(self, section)$/;"	f
+TypedSection.depends	./luci/cbi.lua	/^function TypedSection.depends(self, option, value)$/;"	f
+TypedSection.parse	./luci/cbi.lua	/^function TypedSection.parse(self, novld)$/;"	f
+TypedSection.validate	./luci/cbi.lua	/^function TypedSection.validate(self, section)$/;"	f
+Value.__init__	./luci/cbi.lua	/^function Value.__init__(self, ...)$/;"	f
+Value.reset_values	./luci/cbi.lua	/^function Value.reset_values(self)$/;"	f
+Value.value	./luci/cbi.lua	/^function Value.value(self, key, val)$/;"	f
+XOR	./sha1.lua	/^local function XOR(first, ...)$/;"	f
+XSSFilter:call_tags_handler	./xssFilter.lua	/^function XSSFilter:call_tags_handler(tag, message, text)$/;"	f
+XSSFilter:filter	./xssFilter.lua	/^function XSSFilter:filter(html)$/;"	f
+XSSFilter:init	./xssFilter.lua	/^function XSSFilter:init(allowed_tags, generic_attrs)$/;"	f
+ZERO	./sha1.lua	/^local function ZERO()$/;"	f
+['function'] 	./luci/json.lua	/^	['function'] = Encoder.parse_iter$/;"	f
+_	./luci/dispatcher.lua	/^function _(text)$/;"	f
+_M['and'] 	./luci/cbi/datatypes.lua	/^_M['and'] = function(v, ...)$/;"	f
+_M['or'] 	./luci/cbi/datatypes.lua	/^_M['or'] = function(v, ...)$/;"	f
+__appendval	./luci/http/protocol.lua	/^local function __appendval( tbl, key, chunk )$/;"	f
+__array16	./luci/ip.lua	/^local function __array16( x, family )$/;"	f
+__bless	./luci/ip.lua	/^local function __bless(x)$/;"	f
+__call 	./socket.lua	/^        __call = function()$/;"	f
+__call 	./socket.lua	/^        __call = function(self, chunk, err)$/;"	f
+__call 	./socket/http.lua	/^        __call = function()$/;"	f
+__call 	./socket/http.lua	/^        __call = function(self, chunk, err)$/;"	f
+__chrdec	./luci/http/protocol.lua	/^	local function __chrdec( hex )$/;"	f
+__chrenc	./luci/http/protocol.lua	/^	local function __chrenc( chr )$/;"	f
+__finishval	./luci/http/protocol.lua	/^local function __finishval( tbl, key, handler )$/;"	f
+__index 	./luci/config.lua	/^			__index = function(tbl, key)$/;"	f
+__index 	./luci/sys.lua	/^            __index = function(t, k)$/;"	f
+__index 	./luci/sys/zoneinfo.lua	/^	__index = function(t, k)$/;"	f
+__index 	./luci/util.lua	/^    __index = function(self, key)$/;"	f
+__initval	./luci/http/protocol.lua	/^local function __initval( tbl, key )$/;"	f
+__mask16	./luci/ip.lua	/^local function __mask16(bits)$/;"	f
+__maxlen	./luci/ip.lua	/^local function __maxlen(family)$/;"	f
+__newindex 	./luci/util.lua	/^    __newindex = function(self, key, value)$/;"	f
+__not16	./luci/ip.lua	/^local function __not16(bits)$/;"	f
+__sublen	./luci/ip.lua	/^local function __sublen(family)$/;"	f
+_action	./luci/model/ipkg.lua	/^local function _action(cmd, ...)$/;"	f
+_add	./luci/sys.lua	/^    local function _add(i, ...)$/;"	f
+_appSpeedlimit	./xiaoqiang/util/XQQoSUtil.lua	/^function _appSpeedlimit(app, maxdownload, maxupload)$/;"	f
+_append	./luci/model/network.lua	/^function _append(c, s, o, a)$/;"	f
+_application	./xiaoqiang/util/XQQoSUtil.lua	/^function _application()$/;"	f
+_apply	./xiaoqiang/util/XQQoSUtil.lua	/^function _apply()$/;"	f
+_arcombine	./luci/dispatcher.lua	/^local function _arcombine(self, ...)$/;"	f
+_bitFormat	./xiaoqiang/util/XQQoSUtil.lua	/^function _bitFormat(bits)$/;"	f
+_bitTotal	./xiaoqiang/util/XQSecureUtil.lua	/^function _bitTotal(num)$/;"	f
+_call	./luci/dispatcher.lua	/^local function _call(self, ...)$/;"	f
+_cancelWgetDownload	./xiaoqiang/util/XQDownloadUtil.lua	/^function _cancelWgetDownload(downloadId)$/;"	f
+_cancelXunleiDownload	./xiaoqiang/util/XQDownloadUtil.lua	/^function _cancelXunleiDownload(downloadId)$/;"	f
+_channelFix	./xiaoqiang/util/XQWifiUtil.lua	/^function _channelFix(channel)$/;"	f
+_charMode	./xiaoqiang/util/XQSecureUtil.lua	/^function _charMode(char)$/;"	f
+_checkConnection	./luci/controller/api/xqsystem.lua	/^function _checkConnection(mac, try)$/;"	f
+_checkGuestWifi	./xiaoqiang/module/XQGuestWifi.lua	/^function _checkGuestWifi()$/;"	f
+_checkIP	./xiaoqiang/util/XQLanWanUtil.lua	/^function _checkIP(ip)$/;"	f
+_checkMac	./xiaoqiang/util/XQLanWanUtil.lua	/^function _checkMac(mac)$/;"	f
+_checkResource	./xiaoqiang/util/XQDownloadUtil.lua	/^function _checkResource(downloadUrl)$/;"	f
+_checkid	./luci/sauth.lua	/^local function _checkid(id)$/;"	f
+_create_node	./luci/dispatcher.lua	/^function _create_node(path)$/;"	f
+_ddnsRestart	./xiaoqiang/module/XQDDNS.lua	/^function _ddnsRestart()$/;"	f
+_ddnsServerSwitch	./xiaoqiang/module/XQDDNS.lua	/^function _ddnsServerSwitch(server, enable)$/;"	f
+_deldhcp	./xiaoqiang/module/XQGuestWifi.lua	/^function _deldhcp()$/;"	f
+_deleteDownload	./xiaoqiang/util/XQDownloadUtil.lua	/^function _deleteDownload(ids)$/;"	f
+_delfirewall	./xiaoqiang/module/XQGuestWifi.lua	/^function _delfirewall()$/;"	f
+_delnetwork	./xiaoqiang/module/XQGuestWifi.lua	/^function _delnetwork()$/;"	f
+_doPush	./xiaoqiang/XQPushHelper.lua	/^function _doPush(payload, title, description, ptype)$/;"	f
+_encode_filename	./luci/ccache.lua	/^	local function _encode_filename(name)$/;"	f
+_filter	./luci/model/network.lua	/^function _filter(c, s, o, r)$/;"	f
+_firstchild	./luci/dispatcher.lua	/^function _firstchild()$/;"	f
+_formatMac	./xiaoqiang/util/XQSDKUtil.lua	/^function _formatMac(mac)$/;"	f
+_formatStr	./xiaoqiang/XQPushHelper.lua	/^function _formatStr(str)$/;"	f
+_get	./luci/model/firewall.lua	/^function _get(c, s, o)$/;"	f
+_get	./luci/model/network.lua	/^function _get(c, s, o)$/;"	f
+_hookADFilterEvent	./xiaoqiang/XQPushHelper.lua	/^function _hookADFilterEvent(page, all)$/;"	f
+_hookAllDownloadFinished	./xiaoqiang/XQPushHelper.lua	/^function _hookAllDownloadFinished()$/;"	f
+_hookCachecenterEvent	./xiaoqiang/XQPushHelper.lua	/^function _hookCachecenterEvent(hitcount, timesaver)$/;"	f
+_hookDefault	./xiaoqiang/XQPushHelper.lua	/^function _hookDefault(data)$/;"	f
+_hookDetectFinished	./xiaoqiang/XQPushHelper.lua	/^function _hookDetectFinished(lan, wan)$/;"	f
+_hookDownloadEvent	./xiaoqiang/XQPushHelper.lua	/^function _hookDownloadEvent(count)$/;"	f
+_hookIntelligentScene	./xiaoqiang/XQPushHelper.lua	/^function _hookIntelligentScene(name,actions)$/;"	f
+_hookNewRomVersionDetected	./xiaoqiang/XQPushHelper.lua	/^function _hookNewRomVersionDetected(version)$/;"	f
+_hookSysUpgraded	./xiaoqiang/XQPushHelper.lua	/^function _hookSysUpgraded()$/;"	f
+_hookUploadEvent	./xiaoqiang/XQPushHelper.lua	/^function _hookUploadEvent(count)$/;"	f
+_hookWifiConnect	./xiaoqiang/XQPushHelper.lua	/^function _hookWifiConnect(mac)$/;"	f
+_hookWifiDisconnect	./xiaoqiang/XQPushHelper.lua	/^function _hookWifiDisconnect(mac)$/;"	f
+_iface_ignore	./luci/model/network.lua	/^function _iface_ignore(x)$/;"	f
+_iface_virtual	./luci/model/network.lua	/^function _iface_virtual(x)$/;"	f
+_ifattr	./luci/dispatcher.lua	/^        local function _ifattr(cond, key, val)$/;"	f
+_instantiate	./luci/util.lua	/^local function _instantiate(class, ...)$/;"	f
+_keyWordsFilter	./xiaoqiang/util/XQSecureUtil.lua	/^function _keyWordsFilter(value)$/;"	f
+_levelHelper	./xiaoqiang/util/XQQoSUtil.lua	/^function _levelHelper(weight)$/;"	f
+_list	./luci/model/ipkg.lua	/^function _list(action, pat, cb)$/;"	f
+_load_sane	./luci/ccache.lua	/^	local function _load_sane(file)$/;"	f
+_lookup	./luci/model/ipkg.lua	/^local function _lookup(act, pkg)$/;"	f
+_nethints	./luci/sys.lua	/^local function _nethints(what, callback)$/;"	f
+_noauthAccessAllowed	./luci/dispatcher.lua	/^function _noauthAccessAllowed(flag)$/;"	f
+_noinitAccessAllowed	./luci/dispatcher.lua	/^function _noinitAccessAllowed(flag)$/;"	f
+_parse	./xiaoqiang/common/XQFunction.lua	/^function _parse(hex, pre)$/;"	f
+_parseDhcpLeases	./xiaoqiang/util/XQLanWanUtil.lua	/^function _parseDhcpLeases()$/;"	f
+_parseEncryption	./xiaoqiang/util/XQWifiUtil.lua	/^function _parseEncryption(encryption)$/;"	f
+_parseMac	./xiaoqiang/util/XQLanWanUtil.lua	/^function _parseMac(mac)$/;"	f
+_parse_mixed_record	./luci/sys.lua	/^function _parse_mixed_record(cnt, delimiter)$/;"	f
+_parselist	./luci/model/ipkg.lua	/^local function _parselist(rawdata)$/;"	f
+_parserFlag	./xiaoqiang/XQPushHelper.lua	/^function _parserFlag(flag)$/;"	f
+_parserPushType	./xiaoqiang/XQPushHelper.lua	/^function _parserPushType(ptype)$/;"	f
+_pauseChannel	./xiaoqiang/util/XQWifiUtil.lua	/^function _pauseChannel(channel)$/;"	f
+_pauseDownload	./xiaoqiang/util/XQDownloadUtil.lua	/^function _pauseDownload(ids)$/;"	f
+_permissionFilter	./xiaoqiang/util/XQSDKUtil.lua	/^function _permissionFilter(mac)$/;"	f
+_portCheck	./xiaoqiang/module/XQPortForward.lua	/^function _portCheck(port)$/;"	f
+_portConflictCheck	./xiaoqiang/module/XQPortForward.lua	/^function _portConflictCheck(port)$/;"	f
+_portRangeOverlap	./xiaoqiang/module/XQPortForward.lua	/^function _portRangeOverlap(port1, port2)$/;"	f
+_pppoeErrorCodeHelper	./xiaoqiang/util/XQLanWanUtil.lua	/^function _pppoeErrorCodeHelper(code)$/;"	f
+_pppoeStatusCheck	./xiaoqiang/util/XQLanWanUtil.lua	/^function _pppoeStatusCheck()$/;"	f
+_prepare	./luci/controller/api/xqsystem.lua	/^function _prepare()$/;"	f
+_protoHelper	./xiaoqiang/module/XQPortForward.lua	/^function _protoHelper(proto)$/;"	f
+_read	./luci/sauth.lua	/^local function _read(id)$/;"	f
+_recurse	./nixio/fs.lua	/^local function _recurse(cb, src, dest)$/;"	f
+_remoteAccessForbidden	./luci/dispatcher.lua	/^function _remoteAccessForbidden(flag)$/;"	f
+_resolve_deps	./luci/model/uci.lua	/^	local function _resolve_deps(name)$/;"	f
+_resumeDownload	./xiaoqiang/util/XQDownloadUtil.lua	/^function _resumeDownload(ids)$/;"	f
+_sane	./luci/controller/api/xqsystem.lua	/^function _sane()$/;"	f
+_saveConfig	./xiaoqiang/module/XQDDNS.lua	/^function _saveConfig(server, enable, username, password, checkinterval, forceinterval, domain)$/;"	f
+_savePassword	./luci/controller/api/xqsystem.lua	/^function _savePassword(nonce, oldpwd, newpwd)$/;"	f
+_sdkFilter	./luci/dispatcher.lua	/^function _sdkFilter(flag)$/;"	f
+_serialize_data	./luci/util.lua	/^function _serialize_data(val)$/;"	f
+_serialize_table	./luci/util.lua	/^function _serialize_table(t)$/;"	f
+_serverId	./xiaoqiang/module/XQDDNS.lua	/^function _serverId(server)$/;"	f
+_set	./luci/model/firewall.lua	/^function _set(c, s, o, v)$/;"	f
+_set	./luci/model/network.lua	/^function _set(c, s, o, v)$/;"	f
+_set	./xiaoqiang/util/XQQoSUtil.lua	/^function _set(section, option, value)$/;"	f
+_setComplexDMZ	./xiaoqiang/module/XQDMZModule.lua	/^function _setComplexDMZ(destip, destmac)$/;"	f
+_setSimpleDMZ	./xiaoqiang/module/XQDMZModule.lua	/^function _setSimpleDMZ(destip, destmac)$/;"	f
+_setdhcp	./xiaoqiang/module/XQGuestWifi.lua	/^function _setdhcp()$/;"	f
+_setfirewall	./xiaoqiang/module/XQGuestWifi.lua	/^function _setfirewall()$/;"	f
+_setnetwork	./xiaoqiang/module/XQGuestWifi.lua	/^function _setnetwork()$/;"	f
+_sortiter	./luci/util.lua	/^function _sortiter( t, f )$/;"	f
+_stror	./luci/model/network.lua	/^function _stror(s1, s2)$/;"	f
+_syslockAccessAllowed	./luci/dispatcher.lua	/^function _syslockAccessAllowed(flag)$/;"	f
+_test 	./xssFilter.lua	/^      _test = function(tag)$/;"	f
+_valid_id	./luci/model/firewall.lua	/^function _valid_id(x)$/;"	f
+_vpnErrorCodeHelper	./luci/controller/api/xqsystem.lua	/^function _vpnErrorCodeHelper(code)$/;"	f
+_weightHelper	./xiaoqiang/util/XQQoSUtil.lua	/^function _weightHelper(level)$/;"	f
+_wgetDownload	./xiaoqiang/util/XQDownloadUtil.lua	/^function _wgetDownload(downloadUrl)$/;"	f
+_wgetDownloadPercent	./xiaoqiang/util/XQDownloadUtil.lua	/^function _wgetDownloadPercent(downloadId)$/;"	f
+_wifiNameForIndex	./xiaoqiang/util/XQWifiUtil.lua	/^function _wifiNameForIndex(index)$/;"	f
+_wifi_iface	./luci/model/network.lua	/^function _wifi_iface(x)$/;"	f
+_wifi_lookup	./luci/model/network.lua	/^function _wifi_lookup(ifn)$/;"	f
+_write	./luci/sauth.lua	/^local function _write(id, data)$/;"	f
+_write_sane	./luci/ccache.lua	/^	local function _write_sane(file, func)$/;"	f
+_xunleiDownload	./xiaoqiang/util/XQDownloadUtil.lua	/^function _xunleiDownload(downloadUrl, priority)$/;"	f
+_xunleiDownloadPercent	./xiaoqiang/util/XQDownloadUtil.lua	/^function _xunleiDownloadPercent(downloadId)$/;"	f
+a, b) return tonumber	./luci/controller/api/xqsystem.lua	/^        table.sort(statList, function(a, b) return tonumber(a.download) > tonumber(b.download) end)$/;"	f
+absolute	./socket/url.lua	/^function absolute(base_url, relative_url)$/;"	f
+absolute_path	./socket/url.lua	/^local function absolute_path(base_path, relative_path)$/;"	f
+actionLogin	./luci/controller/api/xqsystem.lua	/^function actionLogin()$/;"	f
+action_logout	./luci/controller/mobile/index.lua	/^function action_logout()$/;"	f
+action_logout	./luci/controller/web/index.lua	/^function action_logout()$/;"	f
+action_safeurl	./luci/controller/web/index.lua	/^function action_safeurl()$/;"	f
+addBind	./xiaoqiang/util/XQLanWanUtil.lua	/^function addBind(mac, ip)$/;"	f
+addDdns	./luci/view/web/setting/ddns.htm	/^	function addDdns(e){$/;"	f
+addEvent	./luci/view/web/setting/qos_pro.htm	/^	function addEvent(){$/;"	f
+addRangeRedirect	./luci/controller/api/xqnetwork.lua	/^function addRangeRedirect()$/;"	f
+addRedirect	./luci/controller/api/xqnetwork.lua	/^function addRedirect()$/;"	f
+addServer	./luci/controller/api/xqnetwork.lua	/^function addServer()$/;"	f
+add_network	./luci/model/network.lua	/^function add_network(self, n, options)$/;"	f
+add_wifinet	./luci/model/network.lua	/^function add_wifinet(self, net, options)$/;"	f
+add_zone	./luci/model/firewall.lua	/^function add_zone(self, n)$/;"	f
+adjust_headers	./socket/smtp.lua	/^local function adjust_headers(mesgt)$/;"	f
+adjustheaders	./socket/http.lua	/^local function adjustheaders(reqt)$/;"	f
+adjustproxy	./socket/http.lua	/^local function adjustproxy(reqt)$/;"	f
+adjustrequest	./socket/http.lua	/^local function adjustrequest(reqt)$/;"	f
+adjusturi	./socket/http.lua	/^local function adjusturi(reqt)$/;"	f
+alias	./luci/dispatcher.lua	/^function alias(...)$/;"	f
+appInfo	./xiaoqiang/util/XQQoSUtil.lua	/^function appInfo()$/;"	f
+appLimit	./luci/controller/api/xqsystem.lua	/^function appLimit()$/;"	f
+appLimitSwitch	./luci/controller/api/xqsystem.lua	/^function appLimitSwitch()$/;"	f
+appSpeedlimitSwitch	./xiaoqiang/util/XQQoSUtil.lua	/^function appSpeedlimitSwitch(enable)$/;"	f
+append	./luci/util.lua	/^function append(src, ...)$/;"	f
+append_yeelink_list	./xiaoqiang/util/XQZigbeeUtil.lua	/^function append_yeelink_list(list)$/;"	f
+arcombine	./luci/dispatcher.lua	/^function arcombine(trg1, trg2)$/;"	f
+areThingsMounted	./luci/controller/api/xqsystem.lua	/^function areThingsMounted()$/;"	f
+areThingsMounted	./luci/view/web/setting/lamp.htm	/^	function areThingsMounted(){$/;"	f
+asHEX	./sha1.lua	/^function asHEX(a)$/;"	f
+ask	./luci/view/web/setting/net_wan.htm	/^	function ask(){$/;"	f
+assert	./logging.lua	/^local function assert(exp, ...)$/;"	f
+assert(type(func) 	./luci/dispatcher.lua	/^    assert(type(func) == "function",$/;"	f
+assert(type(idx) 	./luci/dispatcher.lua	/^        assert(type(idx) == "function",$/;"	f
+assign	./luci/dispatcher.lua	/^function assign(path, clone, title, order, flag)$/;"	f
+attr        	./luci/dispatcher.lua	/^            attr        = function(...) return _ifattr(true, ...) end;$/;"	f
+attribute 	./slaxdom.lua	/^        attribute = function(name,value,nsURI)$/;"	f
+attribute 	./slaxml.lua	/^        attribute = function(name,value,nsURI)$/;"	f
+authen 	./luci/dispatcher.lua	/^                authen = function() return eu end$/;"	f
+authenticator.htmlauth	./luci/dispatcher.lua	/^function authenticator.htmlauth(validator, accs, default)$/;"	f
+authenticator.htmlauth_moblie	./luci/dispatcher.lua	/^function authenticator.htmlauth_moblie(validator, accs, default)$/;"	f
+authenticator.jsonauth	./luci/dispatcher.lua	/^function authenticator.jsonauth(validator, accs, default)$/;"	f
+available	./luci/sauth.lua	/^function available()$/;"	f
+base64filter	./luci/controller/api/xqtunnel.lua	/^local function base64filter(input)$/;"	f
+bigendian	./luci/util.lua	/^function bigendian()$/;"	f
+binToHex	./xiaoqiang/util/XQCryptoUtil.lua	/^function binToHex(s)$/;"	f
+binaryBase64Dec	./xiaoqiang/util/XQCryptoUtil.lua	/^function binaryBase64Dec(data)$/;"	f
+binaryBase64Enc	./xiaoqiang/util/XQCryptoUtil.lua	/^function binaryBase64Enc(data)$/;"	f
+bind	./socket.lua	/^function bind(host, port, backlog)$/;"	f
+bool	./luci/cbi/datatypes.lua	/^function bool(val)$/;"	f
+build	./socket/url.lua	/^function build(parsed)$/;"	f
+buildUrl	./luci/view/mobile/init/hello.htm	/^	function buildUrl(token, path){$/;"	f
+buildUrl	./luci/view/web/xmaccount.htm	/^function buildUrl(token, path){$/;"	f
+build_path	./socket/url.lua	/^function build_path(parsed, unsafe)$/;"	f
+build_querystring	./luci/http.lua	/^function build_querystring(q)$/;"	f
+build_url	./luci/dispatcher.lua	/^function build_url(...)$/;"	f
+byteFormat	./xiaoqiang/common/XQFunction.lua	/^function byteFormat(byte)$/;"	f
+byte_format	./luci/tools/webadmin.lua	/^function byte_format(byte)$/;"	f
+bytes2GB	./luci/view/web/plugins/kuaipan.htm	/^		function bytes2GB(bytes) {$/;"	f
+c) return string.format 	./luci/controller/service/datacenter.lua	/^            function(c) return string.format ("%%%02X", string.byte(c)) end)$/;"	f
+cache_enable	./luci/ccache.lua	/^function cache_enable(cachepath, mode)$/;"	f
+cache_ondemand	./luci/ccache.lua	/^function cache_ondemand(...)$/;"	f
+call	./luci/dispatcher.lua	/^function call(name, ...)$/;"	f
+call	./luci/sys.lua	/^function call(...)$/;"	f
+cancelDownload	./xiaoqiang/util/XQDownloadUtil.lua	/^function cancelDownload(downloadUrl)$/;"	f
+cancelUpgrade	./luci/controller/api/xqsystem.lua	/^function cancelUpgrade()$/;"	f
+cancelUpgrade	./xiaoqiang/util/XQSysUtil.lua	/^function cancelUpgrade()$/;"	f
+castMitvResult	./xiaoqiang/util/XQMitvUtil.lua	/^function castMitvResult(str)$/;"	f
+cbi_add_knownips	./luci/tools/webadmin.lua	/^function cbi_add_knownips(field)$/;"	f
+cbi_add_networks	./luci/tools/webadmin.lua	/^function cbi_add_networks(field)$/;"	f
+channelFormat	./xiaoqiang/util/XQWifiUtil.lua	/^function channelFormat(wifiIndex, channel, bandwidth)$/;"	f
+channelHelper	./xiaoqiang/util/XQWifiUtil.lua	/^function channelHelper(channel)$/;"	f
+check	./xiaoqiang/XQLog.lua	/^function check(ctype, key, value)$/;"	f
+checkBeenUpgraded	./xiaoqiang/util/XQSysUtil.lua	/^function checkBeenUpgraded()$/;"	f
+checkDiskSpace	./xiaoqiang/util/XQSysUtil.lua	/^function checkDiskSpace(byte)$/;"	f
+checkExecStatus	./xiaoqiang/util/XQSysUtil.lua	/^function checkExecStatus(checkCmd)$/;"	f
+checkFileExist	./luci/controller/api/xqdatacenter.lua	/^function checkFileExist()$/;"	f
+checkLanIp	./xiaoqiang/util/XQLanWanUtil.lua	/^function checkLanIp(ip)$/;"	f
+checkMTU	./xiaoqiang/util/XQLanWanUtil.lua	/^function checkMTU(value)$/;"	f
+checkMask	./xiaoqiang/common/XQFunction.lua	/^function checkMask(mask)$/;"	f
+checkNonce	./xiaoqiang/util/XQSecureUtil.lua	/^function checkNonce(nonce, mac)$/;"	f
+checkPermission	./xiaoqiang/util/XQSDKUtil.lua	/^function checkPermission(mac)$/;"	f
+checkPlaintextPwd	./xiaoqiang/util/XQSecureUtil.lua	/^function checkPlaintextPwd(user, plaintext)$/;"	f
+checkRedirectKey	./xiaoqiang/util/XQSecureUtil.lua	/^function checkRedirectKey(key)$/;"	f
+checkRomUpdate	./luci/controller/api/xqsystem.lua	/^function checkRomUpdate()$/;"	f
+checkRouterNamePending	./luci/controller/api/xqsystem.lua	/^function checkRouterNamePending()$/;"	f
+checkSSID	./xiaoqiang/common/XQFunction.lua	/^function checkSSID(ssid)$/;"	f
+checkSSID	./xiaoqiang/util/XQWifiUtil.lua	/^function checkSSID(ssid,length)$/;"	f
+checkStrong	./xiaoqiang/util/XQSecureUtil.lua	/^function checkStrong(pwd)$/;"	f
+checkSysPassword	./xiaoqiang/util/XQSysUtil.lua	/^function checkSysPassword(oldPassword)$/;"	f
+checkSystemStatus	./xiaoqiang/util/XQSysUtil.lua	/^function checkSystemStatus()$/;"	f
+checkTmpSpace	./xiaoqiang/util/XQSysUtil.lua	/^function checkTmpSpace(byte)$/;"	f
+checkUpgrade	./xiaoqiang/util/XQNetUtil.lua	/^function checkUpgrade()$/;"	f
+checkUpgradeStatus	./xiaoqiang/util/XQSysUtil.lua	/^function checkUpgradeStatus()$/;"	f
+checkUser	./xiaoqiang/util/XQSecureUtil.lua	/^function checkUser(user, nonce, encStr)$/;"	f
+checkWanIp	./xiaoqiang/util/XQLanWanUtil.lua	/^function checkWanIp(ip)$/;"	f
+checkWifiPasswd	./xiaoqiang/util/XQWifiUtil.lua	/^function checkWifiPasswd(passwd,encryption)$/;"	f
+check_show_syslock	./luci/dispatcher.lua	/^function check_show_syslock(sysauth)$/;"	f
+checkid	./xiaoqiang/util/XQSecureUtil.lua	/^function checkid(id)$/;"	f
+chmod777	./xiaoqiang/util/XQCameraUtil.lua	/^function chmod777()$/;"	f
+choose	./mime.lua	/^local function choose(table)$/;"	f
+choose	./socket.lua	/^function choose(table)$/;"	f
+cidr.add	./luci/ip.lua	/^function cidr.add( self, amount, inplace )$/;"	f
+cidr.broadcast	./luci/ip.lua	/^function cidr.broadcast( self )$/;"	f
+cidr.contains	./luci/ip.lua	/^function cidr.contains( self, addr )$/;"	f
+cidr.equal	./luci/ip.lua	/^function cidr.equal( self, addr )$/;"	f
+cidr.higher	./luci/ip.lua	/^function cidr.higher( self, addr )$/;"	f
+cidr.host	./luci/ip.lua	/^function cidr.host( self )$/;"	f
+cidr.is4	./luci/ip.lua	/^function cidr.is4( self )$/;"	f
+cidr.is4linklocal	./luci/ip.lua	/^function cidr.is4linklocal( self )$/;"	f
+cidr.is4rfc1918	./luci/ip.lua	/^function cidr.is4rfc1918( self )$/;"	f
+cidr.is6	./luci/ip.lua	/^function cidr.is6( self )$/;"	f
+cidr.is6linklocal	./luci/ip.lua	/^function cidr.is6linklocal( self )$/;"	f
+cidr.lower	./luci/ip.lua	/^function cidr.lower( self, addr )$/;"	f
+cidr.mask	./luci/ip.lua	/^function cidr.mask( self, bits )$/;"	f
+cidr.maxhost	./luci/ip.lua	/^function cidr.maxhost( self )$/;"	f
+cidr.minhost	./luci/ip.lua	/^function cidr.minhost( self )$/;"	f
+cidr.network	./luci/ip.lua	/^function cidr.network( self, bits )$/;"	f
+cidr.prefix	./luci/ip.lua	/^function cidr.prefix( self, mask )$/;"	f
+cidr.string	./luci/ip.lua	/^function cidr.string( self )$/;"	f
+cidr.sub	./luci/ip.lua	/^function cidr.sub( self, amount, inplace )$/;"	f
+cipher	./rc4.lua	/^local function cipher(sMessage, state)$/;"	f
+ciphertextFormat	./xiaoqiang/util/XQSecureUtil.lua	/^function ciphertextFormat(ciphertext)$/;"	f
+class	./luci/util.lua	/^function class(base)$/;"	f
+clear	./luci/i18n.lua	/^function clear()$/;"	f
+clearCookies	./luci/view/web/inc/reboot.js.htm	/^		function clearCookies(){$/;"	f
+clearRouterNamePending	./luci/controller/api/xqsystem.lua	/^function clearRouterNamePending()$/;"	f
+clone	./luci/util.lua	/^function clone(object, deep)$/;"	f
+close	./luci/http.lua	/^function close()$/;"	f
+closeDMZ	./luci/controller/api/xqnetwork.lua	/^function closeDMZ()$/;"	f
+closeElement	./slaxml.lua	/^    local function closeElement()$/;"	f
+closeElement 	./slaxdom.lua	/^        closeElement = function(name)$/;"	f
+closeElement 	./slaxml.lua	/^        closeElement = function(name,nsURI)$/;"	f
+closeWebInitRDR	./xiaoqiang/common/XQFunction.lua	/^function closeWebInitRDR()$/;"	f
+cmatch	./luci/util.lua	/^function cmatch(str, pat)$/;"	f
+cmd	./sysapi/miqos.lua	/^function cmd(action)$/;"	f
+cmdSafeCheck	./xiaoqiang/util/XQSecureUtil.lua	/^function cmdSafeCheck(url)$/;"	f
+code:sub	./luci/util.lua	/^    return code:sub(1,12) .. strip_function(code:sub(13,-1))$/;"	f
+combine	./luci/util.lua	/^function combine(...)$/;"	f
+command 	./socket/ftp.lua	/^command = socket.protect(function(cmdt)$/;"	f
+comment 	./slaxdom.lua	/^        comment = function(value)$/;"	f
+comment 	./slaxml.lua	/^        comment = function(content)$/;"	f
+commit	./luci/model/firewall.lua	/^function commit(self, ...)$/;"	f
+commit	./luci/model/network.lua	/^function commit(self, ...)$/;"	f
+comparator 	./luci/model/uci.lua	/^		comparator = function(section)$/;"	f
+compare	./luci/http/protocol/date.lua	/^function compare(d1, d2)$/;"	f
+compile_datatype	./luci/cbi.lua	/^function compile_datatype(code)$/;"	f
+configRecovery	./luci/controller/api/xqsystem.lua	/^function configRecovery()$/;"	f
+conn:connect	./ssl/https.lua	/^      function conn:connect(host, port)$/;"	f
+conn:settimeout	./ssl/https.lua	/^      function conn:settimeout(...)$/;"	f
+conn[name] 	./ssl/https.lua	/^         conn[name] = function (self, ...)$/;"	f
+connect	./socket.lua	/^function connect(address, port, laddress, lport)$/;"	f
+connect	./socket/tp.lua	/^function connect(host, port, timeout, create)$/;"	f
+connectedDevice	./luci/controller/service/datacenter.lua	/^function connectedDevice()$/;"	f
+consume	./nixio/util.lua	/^function consume(iter, append)$/;"	f
+contains	./luci/util.lua	/^function contains(table, value)$/;"	f
+content	./luci/http.lua	/^function content()$/;"	f
+content	./luci/view/error404.htm	/^<h2><a id="content" name="content">404 <%:Not Found%><\/a><\/h2>$/;"	a
+content	./luci/view/error500.htm	/^<h2><a id="content" name="content">500 <%:Internal Server Error%><\/a><\/h2>$/;"	a
+control	./xiaoqiang/util/XQMitvUtil.lua	/^function control(ip,keycode)$/;"	f
+controlPlugin	./luci/controller/service/datacenter.lua	/^function controlPlugin()$/;"	f
+controlSync	./luci/view/web/plugins/kuaipan.htm	/^		function controlSync(action) {$/;"	f
+copcall	./luci/util.lua	/^function copcall(f, ...)$/;"	f
+copcall_id	./luci/util.lua	/^local function copcall_id(trace, ...)$/;"	f
+copy	./nixio/fs.lua	/^function copy(src, dest)$/;"	f
+copyr	./nixio/fs.lua	/^function copyr(src, dest)$/;"	f
+coxpcall	./luci/util.lua	/^function coxpcall(f, err, ...)$/;"	f
+createKeySchedule	./rc4.lua	/^local function createKeySchedule(sKey)$/;"	f
+createSandbox	./luci/controller/api/xqsystem.lua	/^function createSandbox()$/;"	f
+createSandbox	./luci/view/web/setting/lamp.htm	/^	function createSandbox(){$/;"	f
+createindex	./luci/dispatcher.lua	/^function createindex()$/;"	f
+createindex_fastindex	./luci/dispatcher.lua	/^function createindex_fastindex(path, suffixes)$/;"	f
+createindex_plain	./luci/dispatcher.lua	/^function createindex_plain(path, suffixes)$/;"	f
+createtree	./luci/dispatcher.lua	/^function createtree()$/;"	f
+cryptUrl	./xiaoqiang/util/XQNetUtil.lua	/^function cryptUrl(serverUrl, subUrl, params, salt)$/;"	f
+cursor_state	./luci/model/uci.lua	/^function cursor_state()$/;"	f
+cutImage	./xiaoqiang/util/XQSysUtil.lua	/^function cutImage(filePath)$/;"	f
+datacopy	./nixio/fs.lua	/^function datacopy(src, dest, size)$/;"	f
+datasource.del	./luci/cbi.lua	/^	function datasource.del(...)$/;"	f
+datasource.get	./luci/cbi.lua	/^	function datasource.get(self, section, option)$/;"	f
+datasource.get_scheme	./luci/cbi.lua	/^	function datasource.get_scheme()$/;"	f
+datasource.submitstate	./luci/cbi.lua	/^	function datasource.submitstate(self)$/;"	f
+date_format	./luci/tools/webadmin.lua	/^function date_format(secs)$/;"	f
+ddnsEdit	./luci/controller/api/xqnetwork.lua	/^function ddnsEdit()$/;"	f
+ddnsInfo	./xiaoqiang/module/XQDDNS.lua	/^function ddnsInfo()$/;"	f
+ddnsReload	./luci/controller/api/xqnetwork.lua	/^function ddnsReload()$/;"	f
+ddnsServerSwitch	./xiaoqiang/module/XQDDNS.lua	/^function ddnsServerSwitch(id, on)$/;"	f
+ddnsStatus	./luci/controller/api/xqnetwork.lua	/^function ddnsStatus()$/;"	f
+ddnsSwitch	./luci/controller/api/xqnetwork.lua	/^function ddnsSwitch()$/;"	f
+ddnsSwitch	./luci/view/web/setting/ddns.htm	/^	function ddnsSwitch(){$/;"	f
+ddnsSwitch	./xiaoqiang/module/XQDDNS.lua	/^function ddnsSwitch(on)$/;"	f
+decCiphertext	./xiaoqiang/util/XQSecureUtil.lua	/^function decCiphertext(user, ciphertext)$/;"	f
+decode	./json.lua	/^function decode(s, startPos)$/;"	f
+decode	./luci/json.lua	/^function decode(json, ...)$/;"	f
+decode_scanArray	./json.lua	/^function decode_scanArray(s,startPos)$/;"	f
+decode_scanComment	./json.lua	/^function decode_scanComment(s, startPos)$/;"	f
+decode_scanConstant	./json.lua	/^function decode_scanConstant(s, startPos)$/;"	f
+decode_scanNumber	./json.lua	/^function decode_scanNumber(s,startPos)$/;"	f
+decode_scanObject	./json.lua	/^function decode_scanObject(s,startPos)$/;"	f
+decode_scanString	./json.lua	/^function decode_scanString(s,startPos)$/;"	f
+decode_scanWhitespace	./json.lua	/^function decode_scanWhitespace(s,startPos)$/;"	f
+decodet['base64'] 	./mime.lua	/^decodet['base64'] = function()$/;"	f
+decodet['quoted-printable'] 	./mime.lua	/^decodet['quoted-printable'] = function()$/;"	f
+default_https_port	./ssl/https.lua	/^local function default_https_port(u)$/;"	f
+defaults.__init__	./luci/model/firewall.lua	/^function defaults.__init__(self)$/;"	f
+defaults.drop_invalid	./luci/model/firewall.lua	/^function defaults.drop_invalid(self)$/;"	f
+defaults.forward	./luci/model/firewall.lua	/^function defaults.forward(self)$/;"	f
+defaults.get	./luci/model/firewall.lua	/^function defaults.get(self, opt)$/;"	f
+defaults.input	./luci/model/firewall.lua	/^function defaults.input(self)$/;"	f
+defaults.output	./luci/model/firewall.lua	/^function defaults.output(self)$/;"	f
+defaults.set	./luci/model/firewall.lua	/^function defaults.set(self, opt, val)$/;"	f
+defaults.syn_flood	./luci/model/firewall.lua	/^function defaults.syn_flood(self)$/;"	f
+delGuestWifi	./xiaoqiang/module/XQGuestWifi.lua	/^function delGuestWifi(wifiIndex)$/;"	f
+delGuestWifi	./xiaoqiang/util/XQWifiUtil.lua	/^function delGuestWifi(wifiIndex)$/;"	f
+del_network	./luci/model/firewall.lua	/^function del_network(self, net)$/;"	f
+del_network	./luci/model/network.lua	/^function del_network(self, n)$/;"	f
+del_wifinet	./luci/model/network.lua	/^function del_wifinet(self, net)$/;"	f
+del_zone	./luci/model/firewall.lua	/^function del_zone(self, n)$/;"	f
+deleteAllPortForward	./xiaoqiang/module/XQPortForward.lua	/^function deleteAllPortForward()$/;"	f
+deleteDdns	./xiaoqiang/module/XQDDNS.lua	/^function deleteDdns(id)$/;"	f
+deleteDeviceInfo	./xiaoqiang/util/XQDBUtil.lua	/^function deleteDeviceInfo(mac)$/;"	f
+deleteDownload	./luci/controller/service/datacenter.lua	/^function deleteDownload()$/;"	f
+deletePassport	./xiaoqiang/util/XQDBUtil.lua	/^function deletePassport(uuid)$/;"	f
+deletePortForward	./xiaoqiang/module/XQPortForward.lua	/^function deletePortForward(port)$/;"	f
+deleteRedirect	./luci/controller/api/xqnetwork.lua	/^function deleteRedirect()$/;"	f
+deleteServer	./luci/controller/api/xqnetwork.lua	/^function deleteServer()$/;"	f
+deleteUserInfo	./xiaoqiang/util/XQDBUtil.lua	/^function deleteUserInfo(uuid)$/;"	f
+dest.cfgvalue	./luci/model/cbi/firewall/forwards.lua	/^function dest.cfgvalue(self, s)$/;"	f
+detecte	./luci/view/web/index.htm	/^	function detecte(){$/;"	f
+developerInfo	./luci/view/web/setting/developer.htm	/^    function developerInfo(){$/;"	f
+developerSet	./luci/view/web/setting/developer.htm	/^    function developerSet(){$/;"	f
+developerSwitch	./luci/view/web/setting/developer.htm	/^    function developerSwitch(){$/;"	f
+device	./luci/cbi/datatypes.lua	/^function device( val, seen )$/;"	f
+dhcp6_leases	./luci/tools/status.lua	/^function dhcp6_leases()$/;"	f
+dhcp_leases	./luci/tools/status.lua	/^function dhcp_leases()$/;"	f
+dhcp_leases_common	./luci/tools/status.lua	/^local function dhcp_leases_common(family)$/;"	f
+dir	./luci/fs.lua	/^function dir(...)$/;"	f
+directory	./luci/cbi/datatypes.lua	/^function directory( val, seen )$/;"	f
+dirty 	./socket.lua	/^        dirty = function() return sock:dirty() end$/;"	f
+dirty 	./socket/http.lua	/^        dirty = function() return sock:dirty() end$/;"	f
+disableLanAP	./xiaoqiang/module/XQAPModule.lua	/^function disableLanAP()$/;"	f
+disablePlugin 	./luci/controller/service/datacenter.lua	/^function disablePlugin ()$/;"	f
+disable_level	./logging.lua	/^local function disable_level() end$/;"	f
+dismissAccount	./xiaoqiang/util/XQNetUtil.lua	/^function dismissAccount(uuid,account)$/;"	f
+dispatch	./luci/dispatcher.lua	/^function dispatch(request)$/;"	f
+dmesg	./luci/sys.lua	/^function dmesg()$/;"	f
+dmzReload	./xiaoqiang/module/XQDMZModule.lua	/^function dmzReload(mode)$/;"	f
+dmzStatus	./luci/view/web/setting/dmz.htm	/^	function dmzStatus(){$/;"	f
+dmzSwitch	./luci/view/web/setting/dmz.htm	/^	function dmzSwitch(){$/;"	f
+dmzedit	./luci/view/web/setting/dmz.htm	/^	function dmzedit() {$/;"	f
+dmzset	./luci/view/web/setting/dmz.htm	/^	function dmzset(){$/;"	f
+dnsmsqRestart	./xiaoqiang/util/XQLanWanUtil.lua	/^function dnsmsqRestart()$/;"	f
+doClose	./luci/view/web/setting/ddns.htm	/^	function doClose(e){$/;"	f
+doDel	./luci/view/web/setting/ddns.htm	/^	function doDel(e){$/;"	f
+doDelete	./xiaoqiang/util/XQCameraUtil.lua	/^function doDelete(localfiles,afterDay)$/;"	f
+doDownload	./xiaoqiang/util/XQCameraUtil.lua	/^function doDownload(f)$/;"	f
+doForceUpdate	./luci/view/web/setting/ddns.htm	/^	function doForceUpdate(e){$/;"	f
+doNginx	./luci/view/web/setting/nginx.htm	/^	function doNginx(){$/;"	f
+doOpen	./luci/view/web/setting/ddns.htm	/^	function doOpen(e){$/;"	f
+doPrint	./xiaoqiang/common/XQFunction.lua	/^function doPrint(content)$/;"	f
+doRequest	./xiaoqiang/util/XQNetUtil.lua	/^function doRequest(method,url,param,uuid)$/;"	f
+done	./luci/view/web/setting/wifi_set_mini.htm	/^	function done(){$/;"	f
+done	./luci/view/web/setting/wifi_set_pro.htm	/^	function done(){$/;"	f
+download	./luci/controller/api/xqdatacenter.lua	/^function download()$/;"	f
+downloadFile	./luci/controller/service/datacenter.lua	/^function downloadFile()$/;"	f
+downloadPercent	./xiaoqiang/util/XQDownloadUtil.lua	/^function downloadPercent(downloadId)$/;"	f
+downloadSpeedTest	./xiaoqiang/module/XQNetworkSpeedTest.lua	/^function downloadSpeedTest()$/;"	f
+dtable	./luci/util.lua	/^function dtable()$/;"	f
+dummy_test	./xssFilter.lua	/^local function dummy_test()$/;"	f
+dumptable	./luci/util.lua	/^function dumptable(t, maxdepth, i, seen)$/;"	f
+editDdns	./xiaoqiang/module/XQDDNS.lua	/^function editDdns(id, enable, username, password, checkinterval, forceinterval, domain)$/;"	f
+editDevice	./luci/controller/api/xqnetwork.lua	/^function editDevice()$/;"	f
+editWiFiMacfilterList	./xiaoqiang/util/XQWifiUtil.lua	/^function editWiFiMacfilterList(model, mac, option)$/;"	f
+elseif base.type(mesgt.body) 	./socket/smtp.lua	/^    elseif base.type(mesgt.body) == "function" then send_source(mesgt)$/;"	f
+elseif f_type 	./logging.lua	/^	elseif f_type == 'function' then$/;"	f
+elseif type(datatypes[label]) 	./luci/cbi.lua	/^					elseif type(datatypes[label]) == "function" then$/;"	f
+elseif type(val) 	./luci/util.lua	/^    elseif type(val) == "function" then$/;"	f
+empower	./luci/dispatcher.lua	/^function empower(lan,wan,admin)$/;"	f
+empty	./ltn12.lua	/^local function empty()$/;"	f
+empty	./luci/ltn12.lua	/^local function empty()$/;"	f
+enableLanAP	./xiaoqiang/module/XQAPModule.lua	/^function enableLanAP()$/;"	f
+enablePlugin	./luci/controller/service/datacenter.lua	/^function enablePlugin()$/;"	f
+encode	./luci/json.lua	/^function encode(obj, ...)$/;"	f
+encode 	./json.lua	/^function encode (v)$/;"	f
+encodeString	./json.lua	/^function encodeString(s)$/;"	f
+encodet['base64'] 	./mime.lua	/^encodet['base64'] = function()$/;"	f
+encodet['quoted-printable'] 	./mime.lua	/^encodet['quoted-printable'] = function(mode)$/;"	f
+entry	./luci/dispatcher.lua	/^function entry(path, target, title, order, flag)$/;"	f
+error404	./luci/dispatcher.lua	/^function error404(message)$/;"	f
+error500	./luci/dispatcher.lua	/^function error500(message)$/;"	f
+escape	./luci/view/web/setting/wifi_set.htm	/^function escape(str)$/;"	f
+escape	./socket/url.lua	/^function escape(s)$/;"	f
+exec	./luci/util.lua	/^function exec(command)$/;"	f
+execi	./luci/util.lua	/^function execi(command)$/;"	f
+execl	./luci/util.lua	/^function execl(command)$/;"	f
+execl	./xiaoqiang/module/XQNetworkSpeedTest.lua	/^function execl(command, times)$/;"	f
+export      	./luci/dispatcher.lua	/^            export      = function(k, v) if tpl.context.viewns[k] == nil then tpl.context.viewns[k] = v end end;$/;"	f
+f.try 	./socket/ftp.lua	/^    f.try = socket.newtry(function() f:close() end)$/;"	f
+facInfo	./xiaoqiang/util/XQSysUtil.lua	/^function facInfo()$/;"	f
+fetchAllDeviceInfo	./xiaoqiang/util/XQDBUtil.lua	/^function fetchAllDeviceInfo()$/;"	f
+fetchAllPassport	./xiaoqiang/util/XQDBUtil.lua	/^function fetchAllPassport()$/;"	f
+fetchAllUserInfo	./xiaoqiang/util/XQDBUtil.lua	/^function fetchAllUserInfo()$/;"	f
+fetchDeviceInfo	./xiaoqiang/util/XQDBUtil.lua	/^function fetchDeviceInfo(mac)$/;"	f
+fetchPassport	./xiaoqiang/util/XQDBUtil.lua	/^function fetchPassport(uuid)$/;"	f
+fetchUserInfo	./xiaoqiang/util/XQDBUtil.lua	/^function fetchUserInfo(uuid)$/;"	f
+file	./luci/cbi/datatypes.lua	/^function file( val, seen )$/;"	f
+filter.chain	./ltn12.lua	/^function filter.chain(...)$/;"	f
+filter.chain	./luci/ltn12.lua	/^function filter.chain(...)$/;"	f
+filter.cycle	./ltn12.lua	/^function filter.cycle(low, ctx, extra)$/;"	f
+filter.cycle	./luci/ltn12.lua	/^function filter.cycle(low, ctx, extra)$/;"	f
+find	./luci/model/ipkg.lua	/^function find(pat, cb)$/;"	f
+findAttribute	./slaxml.lua	/^    local function findAttribute()$/;"	f
+findCDATA	./slaxml.lua	/^    local function findCDATA()$/;"	f
+findComment	./slaxml.lua	/^    local function findComment()$/;"	f
+findElementClose	./slaxml.lua	/^    local function findElementClose()$/;"	f
+findPI	./slaxml.lua	/^    local function findPI()$/;"	f
+find_match	./xssFilter.lua	/^local function find_match(value, patterns)$/;"	f
+finishText	./slaxml.lua	/^    local function finishText()$/;"	f
+firewall_find_zone	./luci/tools/webadmin.lua	/^function firewall_find_zone(name)$/;"	f
+firstchild	./luci/dispatcher.lua	/^function firstchild()$/;"	f
+flashRom	./luci/controller/api/xqsystem.lua	/^function flashRom()$/;"	f
+flashStatus	./luci/controller/api/xqsystem.lua	/^function flashStatus()$/;"	f
+float	./luci/cbi/datatypes.lua	/^function float(val)$/;"	f
+fmt_icmp_type	./luci/tools/firewall.lua	/^function fmt_icmp_type(x)$/;"	f
+fmt_ip	./luci/tools/firewall.lua	/^function fmt_ip(x, d)$/;"	f
+fmt_limit	./luci/tools/firewall.lua	/^function fmt_limit(limit, burst)$/;"	f
+fmt_mac	./luci/tools/firewall.lua	/^function fmt_mac(x)$/;"	f
+fmt_neg	./luci/tools/firewall.lua	/^function fmt_neg(x)$/;"	f
+fmt_port	./luci/tools/firewall.lua	/^function fmt_port(x, d)$/;"	f
+fmt_proto	./luci/tools/firewall.lua	/^function fmt_proto(x, icmp_types)$/;"	f
+fmt_target	./luci/tools/firewall.lua	/^function fmt_target(x, dest)$/;"	f
+fmt_zone	./luci/tools/firewall.lua	/^function fmt_zone(x, d)$/;"	f
+forkExec	./xiaoqiang/common/XQFunction.lua	/^function forkExec(command)$/;"	f
+forkFlashRomFile	./xiaoqiang/common/XQFunction.lua	/^function forkFlashRomFile(filePath)$/;"	f
+forkReboot	./xiaoqiang/common/XQFunction.lua	/^function forkReboot()$/;"	f
+forkResetAll	./xiaoqiang/common/XQFunction.lua	/^function forkResetAll()$/;"	f
+forkRestartDnsmasq	./xiaoqiang/common/XQFunction.lua	/^function forkRestartDnsmasq()$/;"	f
+forkRestartWifi	./xiaoqiang/common/XQFunction.lua	/^function forkRestartWifi()$/;"	f
+forkShutdown	./xiaoqiang/common/XQFunction.lua	/^function forkShutdown()$/;"	f
+forkShutdownAndRebootWithDelay	./xiaoqiang/common/XQFunction.lua	/^function forkShutdownAndRebootWithDelay(m1, m2)$/;"	f
+format	./mime.lua	/^local function format(chunk)$/;"	f
+formatTime	./luci/view/web/setting/ddns.htm	/^	function formatTime(str){$/;"	f
+formvalue	./luci/http.lua	/^function formvalue(name, noparse)$/;"	f
+formvaluetable	./luci/http.lua	/^function formvaluetable(prefix)$/;"	f
+forward_proto_txt	./luci/model/cbi/firewall/forwards.lua	/^local function forward_proto_txt(self, s)$/;"	f
+forward_src_txt	./luci/model/cbi/firewall/forwards.lua	/^local function forward_src_txt(self, s)$/;"	f
+forward_via_txt	./luci/model/cbi/firewall/forwards.lua	/^local function forward_via_txt(self, s)$/;"	f
+forwarding.__init__	./luci/model/firewall.lua	/^function forwarding.__init__(self, f)$/;"	f
+forwarding.dest	./luci/model/firewall.lua	/^function forwarding.dest(self)$/;"	f
+forwarding.dest_zone	./luci/model/firewall.lua	/^function forwarding.dest_zone(self)$/;"	f
+forwarding.src	./luci/model/firewall.lua	/^function forwarding.src(self)$/;"	f
+forwarding.src_zone	./luci/model/firewall.lua	/^function forwarding.src_zone(self)$/;"	f
+from_hex	./sha1.lua	/^local function from_hex(hex)$/;"	f
+function(p) parsed.password 	./socket/url.lua	/^        function(p) parsed.password = p; return "" end)$/;"	f
+function(p) parsed.port 	./socket/url.lua	/^        function(p) parsed.port = p; return "" end)$/;"	f
+function(s) parsed.scheme 	./socket/url.lua	/^        function(s) parsed.scheme = s; return "" end)$/;"	f
+function(s) return (s.interface 	./luci/model/network.lua	/^            function(s) return (s.interface == n) end)$/;"	f
+function(s) wfd[#wfd+1] 	./luci/model/network.lua	/^        function(s) wfd[#wfd+1] = s['.name'] end)$/;"	f
+function(u) parsed.userinfo 	./socket/url.lua	/^        function(u) parsed.userinfo = u; return "" end)$/;"	f
+generateDns	./xiaoqiang/util/XQLanWanUtil.lua	/^function generateDns(dns1, dns2, peerdns)$/;"	f
+generateMixed	./luci/view/web/setting/wifi_set.htm	/^	function generateMixed(n) {$/;"	f
+generateOrigIconUrl	./xiaoqiang/util/XQNetUtil.lua	/^function generateOrigIconUrl(iconUrl)$/;"	f
+generateRedirectKey	./xiaoqiang/util/XQSecureUtil.lua	/^function generateRedirectKey(type)$/;"	f
+generateResponseFromCode	./luci/controller/service/datacenter.lua	/^function generateResponseFromCode(code)$/;"	f
+generateSignature	./xiaoqiang/util/XQNetUtil.lua	/^function generateSignature(method,url,params,security)$/;"	f
+generateUrlFromPath	./luci/controller/service/datacenter.lua	/^function generateUrlFromPath(path)$/;"	f
+get	./luci/dispatcher.lua	/^function get(...)$/;"	f
+get	./xiaoqiang/XQPreference.lua	/^function get(key, defaultValue, config) $/;"	f
+get 	./socket/ftp.lua	/^get = socket.protect(function(gett)$/;"	f
+getAdminList	./xiaoqiang/util/XQNetUtil.lua	/^function getAdminList(uuid)$/;"	f
+getAll	./xiaoqiang/util/XQCameraUtil.lua	/^function getAll(did)$/;"	f
+getAllInfo	./luci/controller/api/xqsystem.lua	/^function getAllInfo()$/;"	f
+getAllWifiConnetDeviceDict	./xiaoqiang/util/XQWifiUtil.lua	/^function getAllWifiConnetDeviceDict()$/;"	f
+getAllWifiConnetDeviceList	./xiaoqiang/util/XQWifiUtil.lua	/^function getAllWifiConnetDeviceList()$/;"	f
+getAllWifiInfo	./luci/controller/api/xqnetwork.lua	/^function getAllWifiInfo()$/;"	f
+getAllWifiInfo	./xiaoqiang/util/XQWifiUtil.lua	/^function getAllWifiInfo()$/;"	f
+getAntsCams	./xiaoqiang/util/XQCameraUtil.lua	/^function getAntsCams()$/;"	f
+getAutoWanType	./luci/controller/api/xqnetwork.lua	/^function getAutoWanType()$/;"	f
+getAutoWanType	./xiaoqiang/util/XQLanWanUtil.lua	/^function getAutoWanType()$/;"	f
+getAvailableDisk	./xiaoqiang/util/XQSysUtil.lua	/^function getAvailableDisk()$/;"	f
+getAvailableMemery	./xiaoqiang/util/XQSysUtil.lua	/^function getAvailableMemery()$/;"	f
+getBandList	./xiaoqiang/util/XQWifiUtil.lua	/^function getBandList(channel)$/;"	f
+getBandwidth	./luci/view/web/setting/qos_pro.htm	/^	function getBandwidth( type ){$/;"	f
+getBatchDownloadInfo	./luci/controller/service/datacenter.lua	/^function getBatchDownloadInfo()$/;"	f
+getBindInfo	./luci/controller/api/xqpassport.lua	/^function getBindInfo()$/;"	f
+getBindUUID	./xiaoqiang/util/XQSysUtil.lua	/^function getBindUUID()$/;"	f
+getBindUserInfo	./xiaoqiang/util/XQSysUtil.lua	/^function getBindUserInfo()$/;"	f
+getCFEVersion	./xiaoqiang/util/XQSysUtil.lua	/^function getCFEVersion()$/;"	f
+getCache	./xiaoqiang/util/XQCacheUtil.lua	/^function getCache(key)$/;"	f
+getChangeLog	./xiaoqiang/util/XQSysUtil.lua	/^function getChangeLog()$/;"	f
+getChannel	./xiaoqiang/util/XQSysUtil.lua	/^function getChannel()$/;"	f
+getChannels	./luci/controller/api/xqnetwork.lua	/^function getChannels()$/;"	f
+getChannels	./xiaoqiang/util/XQWifiUtil.lua	/^function getChannels(wifiIndex)$/;"	f
+getConDevCount	./luci/controller/api/xqsystem.lua	/^function getConDevCount()$/;"	f
+getConDevices	./xiaoqiang/util/XQDeviceUtil.lua	/^function getConDevices(withbrlan)$/;"	f
+getConfig	./xiaoqiang/util/XQCameraUtil.lua	/^function getConfig(did)$/;"	f
+getConfigFile	./xiaoqiang/util/XQNetUtil.lua	/^function getConfigFile(configfile)$/;"	f
+getConfigInfo	./luci/controller/service/datacenter.lua	/^function getConfigInfo()$/;"	f
+getConfigInfo	./xiaoqiang/util/XQSysUtil.lua	/^function getConfigInfo()$/;"	f
+getConnectDeviceCount	./xiaoqiang/util/XQDeviceUtil.lua	/^function getConnectDeviceCount()$/;"	f
+getConnectDeviceList	./xiaoqiang/util/XQDeviceUtil.lua	/^function getConnectDeviceList()$/;"	f
+getCountryCodeList	./xiaoqiang/XQCountryCode.lua	/^function getCountryCodeList()$/;"	f
+getCpuTemperature	./xiaoqiang/util/XQSysUtil.lua	/^function getCpuTemperature()$/;"	f
+getCurrentCountryCode	./xiaoqiang/XQCountryCode.lua	/^function getCurrentCountryCode()$/;"	f
+getCurrentDisk	./xiaoqiang/util/XQCameraUtil.lua	/^function getCurrentDisk()$/;"	f
+getCurrentPID	./xiaoqiang/util/XQCameraUtil.lua	/^function getCurrentPID()$/;"	f
+getDDNS	./luci/view/web/setting/ddns.htm	/^	function getDDNS(){$/;"	f
+getDHCPDict	./xiaoqiang/util/XQDeviceUtil.lua	/^function getDHCPDict()$/;"	f
+getDHCPIpDict	./xiaoqiang/util/XQDeviceUtil.lua	/^function getDHCPIpDict()$/;"	f
+getDHCPList	./xiaoqiang/util/XQDeviceUtil.lua	/^function getDHCPList()$/;"	f
+getDMZInfo	./luci/controller/api/xqnetwork.lua	/^function getDMZInfo()$/;"	f
+getDMZInfo	./xiaoqiang/module/XQDMZModule.lua	/^function getDMZInfo()$/;"	f
+getDay	./xiaoqiang/util/XQCameraUtil.lua	/^function getDay(days)$/;"	f
+getDdns	./xiaoqiang/module/XQDDNS.lua	/^function getDdns(id)$/;"	f
+getDefaultMacAddress	./xiaoqiang/util/XQLanWanUtil.lua	/^function getDefaultMacAddress()$/;"	f
+getDefaultWifiChannels	./xiaoqiang/util/XQWifiUtil.lua	/^function getDefaultWifiChannels(wifiIndex)$/;"	f
+getDetectionTimestamp	./luci/controller/api/xqsystem.lua	/^function getDetectionTimestamp()$/;"	f
+getDetectionTimestamp	./xiaoqiang/util/XQSysUtil.lua	/^function getDetectionTimestamp()$/;"	f
+getDevNetStatisticsDict	./xiaoqiang/util/XQDeviceUtil.lua	/^function getDevNetStatisticsDict()$/;"	f
+getDevNetStatisticsList	./xiaoqiang/util/XQDeviceUtil.lua	/^function getDevNetStatisticsList()$/;"	f
+getDevStatistics	./luci/controller/api/xqnetwork.lua	/^function getDevStatistics()$/;"	f
+getDeviceCompany	./xiaoqiang/util/XQDeviceUtil.lua	/^function getDeviceCompany(mac)$/;"	f
+getDeviceID	./luci/controller/service/datacenter.lua	/^function getDeviceID()$/;"	f
+getDeviceId	./luci/controller/api/xqdatacenter.lua	/^function getDeviceId()$/;"	f
+getDeviceId	./xiaoqiang/util/XQNetUtil.lua	/^function getDeviceId()$/;"	f
+getDeviceInfoFromDB	./xiaoqiang/util/XQDeviceUtil.lua	/^function getDeviceInfoFromDB()$/;"	f
+getDeviceList	./luci/controller/api/xqsystem.lua	/^function getDeviceList()$/;"	f
+getDeviceListZigbee	./luci/controller/api/xqsystem.lua	/^function getDeviceListZigbee()$/;"	f
+getDeviceMacaddr	./luci/controller/api/xqsystem.lua	/^function getDeviceMacaddr()$/;"	f
+getDeviceWifiIndex	./xiaoqiang/util/XQWifiUtil.lua	/^function getDeviceWifiIndex(mac)$/;"	f
+getDevsStatistics	./luci/controller/api/xqnetwork.lua	/^function getDevsStatistics()$/;"	f
+getDiskSpace	./xiaoqiang/util/XQSysUtil.lua	/^function getDiskSpace()$/;"	f
+getDownloadInfo	./luci/controller/service/datacenter.lua	/^function getDownloadInfo()$/;"	f
+getErrorMessage	./service/util/ServiceErrorUtil.lua	/^function getErrorMessage(errorCode)$/;"	f
+getErrorMessage	./xiaoqiang/util/XQErrorUtil.lua	/^function getErrorMessage(errorCode)$/;"	f
+getFacInfo	./luci/controller/api/xqsystem.lua	/^function getFacInfo()$/;"	f
+getFilesOnCam	./xiaoqiang/util/XQCameraUtil.lua	/^function getFilesOnCam(item,afterDay)$/;"	f
+getFilesOnRouter	./xiaoqiang/util/XQCameraUtil.lua	/^function getFilesOnRouter()$/;"	f
+getFlashStatus	./xiaoqiang/util/XQSysUtil.lua	/^function getFlashStatus()$/;"	f
+getGpioValue	./xiaoqiang/common/XQFunction.lua	/^function getGpioValue(digit)$/;"	f
+getGuestWifi	./xiaoqiang/util/XQWifiUtil.lua	/^function getGuestWifi(wifiIndex)$/;"	f
+getHardware	./xiaoqiang/util/XQSysUtil.lua	/^function getHardware()$/;"	f
+getHardwareGPIO	./xiaoqiang/util/XQSysUtil.lua	/^function getHardwareGPIO()$/;"	f
+getHardwareVersion	./xiaoqiang/util/XQSysUtil.lua	/^function getHardwareVersion()$/;"	f
+getIPv6Addrs	./xiaoqiang/util/XQLanWanUtil.lua	/^function getIPv6Addrs()$/;"	f
+getInitInfo	./luci/controller/api/xqsystem.lua	/^function getInitInfo()$/;"	f
+getInitInfo	./xiaoqiang/util/XQSysUtil.lua	/^function getInitInfo()$/;"	f
+getKPLoginedUserInfo	./luci/view/web/plugins/kuaipan.htm	/^		function getKPLoginedUserInfo() {$/;"	f
+getKPStatus	./luci/view/web/plugins/kuaipan.htm	/^		function getKPStatus() {$/;"	f
+getKernelVersion	./xiaoqiang/util/XQSysUtil.lua	/^function getKernelVersion()$/;"	f
+getLanDHCPService	./xiaoqiang/util/XQLanWanUtil.lua	/^function getLanDHCPService()$/;"	f
+getLanDhcp	./luci/controller/api/xqnetwork.lua	/^function getLanDhcp()$/;"	f
+getLanInfo	./luci/controller/api/xqnetwork.lua	/^function getLanInfo()$/;"	f
+getLanIp	./xiaoqiang/util/XQLanWanUtil.lua	/^function getLanIp()$/;"	f
+getLanLinkList	./xiaoqiang/util/XQLanWanUtil.lua	/^function getLanLinkList()$/;"	f
+getLanWanInfo	./xiaoqiang/util/XQLanWanUtil.lua	/^function getLanWanInfo(interface)$/;"	f
+getLanWanIp	./xiaoqiang/util/XQLanWanUtil.lua	/^function getLanWanIp(interface)$/;"	f
+getLanWanSta	./luci/controller/api/xqsystem.lua	/^function getLanWanSta()$/;"	f
+getLang	./xiaoqiang/util/XQSysUtil.lua	/^function getLang()$/;"	f
+getLangList	./luci/controller/api/xqsystem.lua	/^function getLangList()$/;"	f
+getLangList	./xiaoqiang/util/XQSysUtil.lua	/^function getLangList()$/;"	f
+getMac	./luci/controller/service/datacenter.lua	/^function getMac()$/;"	f
+getMacAddr	./xiaoqiang/util/XQNetUtil.lua	/^function getMacAddr()$/;"	f
+getMacBindInfo	./luci/controller/api/xqnetwork.lua	/^function getMacBindInfo()$/;"	f
+getMacfilterInfoDict	./xiaoqiang/util/XQDeviceUtil.lua	/^function getMacfilterInfoDict()$/;"	f
+getMacfilterInfoList	./xiaoqiang/util/XQDeviceUtil.lua	/^function getMacfilterInfoList()$/;"	f
+getMacfilterMode	./luci/controller/api/xqsystem.lua	/^function getMacfilterMode()$/;"	f
+getMacfilterMode	./xiaoqiang/util/XQSysUtil.lua	/^function getMacfilterMode(filter)$/;"	f
+getMainLang	./luci/controller/api/xqsystem.lua	/^function getMainLang()$/;"	f
+getMiscHardwareInfo	./xiaoqiang/util/XQSysUtil.lua	/^function getMiscHardwareInfo()$/;"	f
+getModel	./xiaoqiang/util/XQCameraUtil.lua	/^function getModel()$/;"	f
+getModulesList	./xiaoqiang/util/XQSysUtil.lua	/^function getModulesList()$/;"	f
+getNetMode	./xiaoqiang/common/XQFunction.lua	/^function getNetMode()$/;"	f
+getNetworkDetectInfo	./xiaoqiang/util/XQSysUtil.lua	/^function getNetworkDetectInfo(simple,target)$/;"	f
+getNextKpStatus	./luci/view/web/plugins/kuaipan.htm	/^		function getNextKpStatus() {$/;"	f
+getNofStatus	./luci/controller/api/xqsystem.lua	/^function getNofStatus()$/;"	f
+getNvramConfigs	./xiaoqiang/util/XQSysUtil.lua	/^function getNvramConfigs()$/;"	f
+getOperateDeviceID	./luci/controller/service/datacenter.lua	/^function getOperateDeviceID()$/;"	f
+getPPPoEStatus	./xiaoqiang/util/XQLanWanUtil.lua	/^function getPPPoEStatus()$/;"	f
+getPassport	./xiaoqiang/util/XQNetUtil.lua	/^function getPassport(uuid)$/;"	f
+getPassportBindInfo	./luci/controller/api/xqsystem.lua	/^function getPassportBindInfo()$/;"	f
+getPassportBindInfo	./xiaoqiang/util/XQSysUtil.lua	/^function getPassportBindInfo()$/;"	f
+getQosInfo	./luci/controller/api/xqnetwork.lua	/^function getQosInfo()$/;"	f
+getRamFsVersion	./xiaoqiang/util/XQSysUtil.lua	/^function getRamFsVersion()$/;"	f
+getRomVersion	./xiaoqiang/util/XQSysUtil.lua	/^function getRomVersion()$/;"	f
+getRootFsVersion	./xiaoqiang/util/XQSysUtil.lua	/^function getRootFsVersion()$/;"	f
+getRouterInfo	./luci/controller/service/datacenter.lua	/^function getRouterInfo()$/;"	f
+getRouterName	./luci/controller/api/xqsystem.lua	/^function getRouterName()$/;"	f
+getRouterName	./xiaoqiang/util/XQSysUtil.lua	/^function getRouterName()$/;"	f
+getRouterNamePending	./xiaoqiang/util/XQSysUtil.lua	/^function getRouterNamePending()$/;"	f
+getSN	./xiaoqiang/util/XQNetUtil.lua	/^function getSN()$/;"	f
+getServer	./luci/controller/api/xqnetwork.lua	/^function getServer()$/;"	f
+getSqaFsVersion	./xiaoqiang/util/XQSysUtil.lua	/^function getSqaFsVersion()$/;"	f
+getStatus	./luci/view/web/plugin.htm	/^    function getStatus(){$/;"	f
+getStatusInfo	./luci/controller/api/xqsystem.lua	/^function getStatusInfo()$/;"	f
+getSysAvgLoad	./luci/controller/api/xqsystem.lua	/^function getSysAvgLoad()$/;"	f
+getSysInfo	./luci/controller/api/xqnetdetect.lua	/^function getSysInfo()$/;"	f
+getSysInfo	./luci/controller/api/xqsystem.lua	/^function getSysInfo()$/;"	f
+getSysInfo	./xiaoqiang/util/XQSysUtil.lua	/^function getSysInfo()$/;"	f
+getSysUptime	./xiaoqiang/util/XQSysUtil.lua	/^function getSysUptime()$/;"	f
+getThumb	./luci/controller/api/xqdatacenter.lua	/^function getThumb()$/;"	f
+getTime	./xiaoqiang/common/XQFunction.lua	/^function getTime()$/;"	f
+getToken	./luci/controller/api/xqsystem.lua	/^function getToken()$/;"	f
+getToken	./luci/view/mobile/init/hello.htm	/^	function getToken( url ) {$/;"	f
+getToken	./xiaoqiang/util/XQNetUtil.lua	/^function getToken()$/;"	f
+getUPnPList	./xiaoqiang/util/XQUPnPUtil.lua	/^function getUPnPList()$/;"	f
+getUPnPStatus	./xiaoqiang/util/XQUPnPUtil.lua	/^function getUPnPStatus()$/;"	f
+getUid	./xiaoqiang/util/XQCameraUtil.lua	/^function getUid(did)$/;"	f
+getUpgradeStatus	./xiaoqiang/util/XQSysUtil.lua	/^function getUpgradeStatus()$/;"	f
+getUserAgent	./xiaoqiang/util/XQNetUtil.lua	/^function getUserAgent()$/;"	f
+getUserDeviceList	./xiaoqiang/util/XQNetUtil.lua	/^function getUserDeviceList(uuid)$/;"	f
+getUserInfo	./luci/controller/api/xqpassport.lua	/^function getUserInfo()$/;"	f
+getUserInfo	./xiaoqiang/util/XQNetUtil.lua	/^function getUserInfo(uuid)$/;"	f
+getVPNInfo	./xiaoqiang/util/XQVPNUtil.lua	/^function getVPNInfo(interface)$/;"	f
+getWanDetails	./xiaoqiang/util/XQLanWanUtil.lua	/^function getWanDetails()$/;"	f
+getWanEth	./xiaoqiang/util/XQLanWanUtil.lua	/^function getWanEth()$/;"	f
+getWanInfo	./luci/controller/api/xqnetwork.lua	/^function getWanInfo()$/;"	f
+getWanLanNetworkStatistics	./xiaoqiang/util/XQDeviceUtil.lua	/^function getWanLanNetworkStatistics(devName)$/;"	f
+getWanMac	./xiaoqiang/util/XQLanWanUtil.lua	/^function getWanMac()$/;"	f
+getWanMonitorStat	./xiaoqiang/util/XQLanWanUtil.lua	/^function getWanMonitorStat()$/;"	f
+getWanStatistics	./luci/controller/api/xqnetwork.lua	/^function getWanStatistics()$/;"	f
+getWanStatus	./luci/controller/api/xqnetdetect.lua	/^function getWanStatus()$/;"	f
+getWiFiMacfilterInfo	./xiaoqiang/util/XQWifiUtil.lua	/^function getWiFiMacfilterInfo(model)$/;"	f
+getWiFiMacfilterList	./xiaoqiang/util/XQWifiUtil.lua	/^function getWiFiMacfilterList(model)$/;"	f
+getWifiBridgedClient	./xiaoqiang/util/XQWifiUtil.lua	/^function getWifiBridgedClient(wifiIndex)$/;"	f
+getWifiChTx	./luci/controller/api/xqnetwork.lua	/^function getWifiChTx()$/;"	f
+getWifiChannel	./xiaoqiang/util/XQWifiUtil.lua	/^function getWifiChannel(wifiIndex)$/;"	f
+getWifiChannelList	./xiaoqiang/util/XQWifiUtil.lua	/^function getWifiChannelList()$/;"	f
+getWifiChannelTxpwrList	./xiaoqiang/util/XQWifiUtil.lua	/^function getWifiChannelTxpwrList()$/;"	f
+getWifiConDev	./luci/controller/api/xqnetwork.lua	/^function getWifiConDev()$/;"	f
+getWifiConnectDeviceDict	./xiaoqiang/util/XQWifiUtil.lua	/^function getWifiConnectDeviceDict(wifiIndex)$/;"	f
+getWifiConnectDeviceList	./xiaoqiang/util/XQWifiUtil.lua	/^function getWifiConnectDeviceList(wifiIndex)$/;"	f
+getWifiDeviceSignalDict	./xiaoqiang/util/XQWifiUtil.lua	/^function getWifiDeviceSignalDict(wifiIndex)$/;"	f
+getWifiInfo	./luci/controller/api/xqnetwork.lua	/^function getWifiInfo()$/;"	f
+getWifiLog	./luci/controller/api/xqsystem.lua	/^function getWifiLog()$/;"	f
+getWifiLog	./xiaoqiang/util/XQSysUtil.lua	/^function getWifiLog()$/;"	f
+getWifiMacfilterInfo	./luci/controller/api/xqnetwork.lua	/^function getWifiMacfilterInfo()$/;"	f
+getWifiNames	./xiaoqiang/util/XQWifiUtil.lua	/^function getWifiNames()$/;"	f
+getWifiScanList	./xiaoqiang/util/XQWifiUtil.lua	/^function getWifiScanList()$/;"	f
+getWifiStatus	./luci/controller/api/xqnetwork.lua	/^function getWifiStatus()$/;"	f
+getWifiStatus	./xiaoqiang/util/XQWifiUtil.lua	/^function getWifiStatus(wifiIndex)$/;"	f
+getWifiTxpwr	./xiaoqiang/util/XQWifiUtil.lua	/^function getWifiTxpwr(wifiIndex)$/;"	f
+getWifiTxpwrList	./xiaoqiang/util/XQWifiUtil.lua	/^function getWifiTxpwrList()$/;"	f
+getWifiWorkChannel	./xiaoqiang/util/XQWifiUtil.lua	/^function getWifiWorkChannel(wifiIndex)$/;"	f
+getWifiWpsStatus	./xiaoqiang/util/XQWifiUtil.lua	/^function getWifiWpsStatus()$/;"	f
+getWpsConDevMac	./xiaoqiang/util/XQWifiUtil.lua	/^function getWpsConDevMac()$/;"	f
+getWpsStatus	./luci/controller/api/xqsystem.lua	/^function getWpsStatus()$/;"	f
+get_bytecode	./luci/util.lua	/^function get_bytecode(val)$/;"	f
+get_defaults	./luci/model/firewall.lua	/^function get_defaults()$/;"	f
+get_hostname	./traffic.lua	/^function get_hostname(mac)$/;"	f
+get_hostname_init	./traffic.lua	/^function get_hostname_init()$/;"	f
+get_interface	./luci/model/network.lua	/^function get_interface(self, i)$/;"	f
+get_interfaces	./luci/model/network.lua	/^function get_interfaces(self)$/;"	f
+get_lan_dev_name	./traffic.lua	/^function get_lan_dev_name()$/;"	f
+get_network	./luci/model/network.lua	/^function get_network(self, n)$/;"	f
+get_networks	./luci/model/network.lua	/^function get_networks(self)$/;"	f
+get_protocol	./luci/model/network.lua	/^function get_protocol(self, protoname, netname)$/;"	f
+get_protocols	./luci/model/network.lua	/^function get_protocols(self)$/;"	f
+get_reply	./socket/tp.lua	/^local function get_reply(c)$/;"	f
+get_status_by_address	./luci/model/network.lua	/^function get_status_by_address(self, addr)$/;"	f
+get_status_by_route	./luci/model/network.lua	/^function get_status_by_route(self, addr, mask)$/;"	f
+get_wan6dev	./luci/model/network.lua	/^function get_wan6dev(self)$/;"	f
+get_wan6net	./luci/model/network.lua	/^function get_wan6net(self)$/;"	f
+get_wan_dev_name	./traffic.lua	/^function get_wan_dev_name()$/;"	f
+get_wandev	./luci/model/network.lua	/^function get_wandev(self)$/;"	f
+get_wannet	./luci/model/network.lua	/^function get_wannet(self)$/;"	f
+get_wifidev	./luci/model/network.lua	/^function get_wifidev(self, dev)$/;"	f
+get_wifidevs	./luci/model/network.lua	/^function get_wifidevs(self)$/;"	f
+get_wifinet	./luci/model/network.lua	/^function get_wifinet(self, net)$/;"	f
+get_zigbee_count	./xiaoqiang/util/XQZigbeeUtil.lua	/^function get_zigbee_count()$/;"	f
+get_zone	./luci/model/firewall.lua	/^function get_zone(self, n)$/;"	f
+get_zone_by_network	./luci/model/firewall.lua	/^function get_zone_by_network(self, net)$/;"	f
+get_zones	./luci/model/firewall.lua	/^function get_zones(self)$/;"	f
+getcookie	./luci/http.lua	/^function getcookie(name)$/;"	f
+getenv	./luci/http.lua	/^function getenv(name)$/;"	f
+getfd 	./socket.lua	/^        getfd = function() return sock:getfd() end,$/;"	f
+getfd 	./socket/http.lua	/^        getfd = function() return sock:getfd() end,$/;"	f
+getmetatable("").__mod 	./luci/util.lua	/^getmetatable("").__mod = function(a, b)$/;"	f
+getremotemac	./luci/dispatcher.lua	/^function getremotemac()$/;"	f
+glob	./luci/fs.lua	/^function glob(...)$/;"	f
+h.try 	./socket/http.lua	/^    h.try = socket.newtry(function() h:close() end)$/;"	f
+handleReturnValue	./luci/util.lua	/^function handleReturnValue(err, co, status, ...)$/;"	f
+handle_request	./luci/sgi/uhttpd.lua	/^function handle_request(env)$/;"	f
+hasFile	./xiaoqiang/util/XQCameraUtil.lua	/^function hasFile(f,fileList)$/;"	f
+hasR	./luci/util.lua	/^function hasR(t, seen)$/;"	f
+hasRecursion	./luci/util.lua	/^function hasRecursion(t)$/;"	f
+has_ipv6	./luci/model/network.lua	/^function has_ipv6(self)$/;"	f
+hash4SHA1	./xiaoqiang/util/XQCryptoUtil.lua	/^function hash4SHA1(str)$/;"	f
+header	./luci/http.lua	/^function header(key, value)$/;"	f
+header_source	./luci/http/protocol.lua	/^function header_source( sock )$/;"	f
+helper 	./luci/model/uci.lua	/^	local function helper (section)$/;"	f
+hex_to_binary	./sha1.lua	/^local function hex_to_binary(hex)$/;"	f
+hextobin	./xiaoqiang/util/XQCryptoUtil.lua	/^function hextobin(s)$/;"	f
+hmac_sha1	./sha1.lua	/^function hmac_sha1(key, text)$/;"	f
+hmac_sha1_binary	./sha1.lua	/^function hmac_sha1_binary(key, text)$/;"	f
+hookLanIPChangeEvent	./xiaoqiang/module/XQDMZModule.lua	/^function hookLanIPChangeEvent(ip)$/;"	f
+hookLanIPChangeEvent	./xiaoqiang/module/XQPortForward.lua	/^function hookLanIPChangeEvent(ip)$/;"	f
+hookLanIPChangeEvent	./xiaoqiang/util/XQLanWanUtil.lua	/^function hookLanIPChangeEvent(ip)$/;"	f
+host	./luci/cbi/datatypes.lua	/^function host(val)$/;"	f
+hostname	./luci/cbi/datatypes.lua	/^function hostname(val)$/;"	f
+hostname	./luci/sys.lua	/^function hostname(newname)$/;"	f
+htonl	./luci/ip.lua	/^function htonl(x)$/;"	f
+htons	./luci/ip.lua	/^function htons(x)$/;"	f
+httpGetRequest	./xiaoqiang/util/XQHttpUtil.lua	/^function httpGetRequest(url, paramStr, cookies)$/;"	f
+httpPostRequest	./xiaoqiang/util/XQHttpUtil.lua	/^function httpPostRequest(url, paramStr, cookies)$/;"	f
+http_request_log	./luci/dispatcher.lua	/^function http_request_log(request, tag)$/;"	f
+httpdispatch	./luci/dispatcher.lua	/^function httpdispatch(request, prefix)$/;"	f
+httpget	./luci/sys.lua	/^function httpget(url, stream, target)$/;"	f
+hzFormat	./xiaoqiang/common/XQFunction.lua	/^function hzFormat(hertz)$/;"	f
+i,v) table.insert	./xiaoqiang/util/XQDownloadUtil.lua	/^            table.foreach(uncompletedList, function(i,v) table.insert(completedList, v) end)$/;"	f
+i,v) table.insert	./xiaoqiang/util/XQDownloadUtil.lua	/^        table.foreach(uncompletedList, function(i,v) table.insert(completedList, v) end)$/;"	f
+identifyDevice	./luci/controller/api/xqdatacenter.lua	/^function identifyDevice()$/;"	f
+identifyDevice	./xiaoqiang/XQEquipment.lua	/^function identifyDevice(mac, dhcpname)$/;"	f
+if base.type(ok) ~	./socket/tp.lua	/^    if base.type(ok) ~= "function" then$/;"	f
+if c and (c.index or type(target) 	./luci/dispatcher.lua	/^    if c and (c.index or type(target) == "function") then$/;"	f
+if c and type(c[1]) 	./luci/cbi.lua	/^			if c and type(c[1]) == "function" then$/;"	f
+if params.connectionfactory 	./logging/sql.lua	/^	if params.connectionfactory == nil or type(params.connectionfactory) ~= "function" then$/;"	f
+if type(append) ~	./logging.lua	/^	if type(append) ~= "function" then$/;"	f
+if type(c.target) 	./luci/dispatcher.lua	/^        if type(c.target) == "function" then$/;"	f
+if type(f) ~	./luci/cbi/datatypes.lua	/^		if type(f) ~= "function" then$/;"	f
+if type(filecb) 	./luci/http/protocol.lua	/^		if type(filecb) == "function" then$/;"	f
+if type(method) 	./ssl/https.lua	/^      if type(method) == "function" then$/;"	f
+if type(modcons) 	./luci/ccache.lua	/^		if type(modcons) == "function" then$/;"	f
+if type(rawdata) ~	./luci/model/ipkg.lua	/^	if type(rawdata) ~= "function" then$/;"	f
+if type(self.active) ~	./luci/cbi.lua	/^		if type(self.active) ~= "function" then$/;"	f
+if type(self.active) ~	./luci/cbi.lua	/^	if type(self.active) ~= "function" then$/;"	f
+if type(self.commit_handler) 	./luci/cbi.lua	/^		if type(self.commit_handler) == "function" then$/;"	f
+if type(self.value) 	./luci/cbi.lua	/^		if type(self.value) == "function" then$/;"	f
+if type(self[f]) 	./luci/cbi.lua	/^		if type(self[f]) == "function" then$/;"	f
+if type(self[hook]) 	./luci/cbi.lua	/^	if type(self[hook]) == "function" then$/;"	f
+if type(stack[#stack-1]) ~	./luci/cbi.lua	/^				if type(stack[#stack-1]) ~= "function" then$/;"	f
+if type(subvalidator) ~	./luci/cbi/datatypes.lua	/^	if type(subvalidator) ~= "function" then$/;"	f
+if type(target) 	./luci/dispatcher.lua	/^    if type(target) == "function" then$/;"	f
+if type(val) 	./luci/util.lua	/^    if type(val) == "function" then$/;"	f
+if vtype	./json.lua	/^  if vtype=='function' and v==null then$/;"	f
+if_match	./luci/http/protocol/conditionals.lua	/^function if_match( req, stat )$/;"	f
+if_modified_since	./luci/http/protocol/conditionals.lua	/^function if_modified_since( req, stat )$/;"	f
+if_none_match	./luci/http/protocol/conditionals.lua	/^function if_none_match( req, stat )$/;"	f
+if_range	./luci/http/protocol/conditionals.lua	/^function if_range( req, stat )$/;"	f
+if_unmodified_since	./luci/http/protocol/conditionals.lua	/^function if_unmodified_since( req, stat )$/;"	f
+iface_get_network	./luci/tools/webadmin.lua	/^function iface_get_network(iface)$/;"	f
+ifattr      	./luci/dispatcher.lua	/^            ifattr      = function(...) return _ifattr(...) end;$/;"	f
+ifnameof	./luci/model/network.lua	/^function ifnameof(self, x)$/;"	f
+ignore_interface	./luci/model/network.lua	/^function ignore_interface(self, x)$/;"	f
+imatch	./luci/util.lua	/^function imatch(v)$/;"	f
+include     	./luci/dispatcher.lua	/^            include     = function(name) tpl.Template(name):render(getfenv(2)) end;$/;"	f
+index	./luci/controller/api/index.lua	/^function index()$/;"	f
+index	./luci/controller/api/xqdatacenter.lua	/^function index()$/;"	f
+index	./luci/controller/api/xqnetdetect.lua	/^function index()$/;"	f
+index	./luci/controller/api/xqnetwork.lua	/^function index()$/;"	f
+index	./luci/controller/api/xqpassport.lua	/^function index()$/;"	f
+index	./luci/controller/api/xqsmarthome.lua	/^function index()$/;"	f
+index	./luci/controller/api/xqsystem.lua	/^function index()$/;"	f
+index	./luci/controller/api/xqtunnel.lua	/^function index()$/;"	f
+index	./luci/controller/dispatch/index.lua	/^function index()$/;"	f
+index	./luci/controller/firewall.lua	/^function index()$/;"	f
+index	./luci/controller/mobile/index.lua	/^function index()$/;"	f
+index	./luci/controller/service/datacenter.lua	/^function index()$/;"	f
+index	./luci/controller/service/index.lua	/^function index()$/;"	f
+index	./luci/controller/web/index.lua	/^function index()$/;"	f
+info	./luci/model/ipkg.lua	/^function info(pkg)$/;"	f
+init	./luci/model/firewall.lua	/^function init(cursor)$/;"	f
+init	./luci/model/network.lua	/^function init(cursor)$/;"	f
+init.disable	./luci/sys.lua	/^function init.disable(name)$/;"	f
+init.enable	./luci/sys.lua	/^function init.enable(name)$/;"	f
+init.enabled	./luci/sys.lua	/^function init.enabled(name)$/;"	f
+init.index	./luci/sys.lua	/^function init.index(name)$/;"	f
+init.names	./luci/sys.lua	/^function init.names()$/;"	f
+init.start	./luci/sys.lua	/^function init.start(name)$/;"	f
+init.stop	./luci/sys.lua	/^function init.stop(name)$/;"	f
+init_action	./luci/sys.lua	/^local function init_action(action, name)$/;"	f
+inp.cfgvalue	./luci/model/cbi/firewall/zone-details.lua	/^function inp.cfgvalue(self, section)$/;"	f
+inp.formvalue	./luci/model/cbi/firewall/zone-details.lua	/^function inp.formvalue(self, section)$/;"	f
+inp.write	./luci/model/cbi/firewall/zone-details.lua	/^function inp.write(self, section, value)$/;"	f
+install	./luci/model/ipkg.lua	/^function install(...)$/;"	f
+installed	./luci/model/ipkg.lua	/^function installed(pkg)$/;"	f
+instanceof	./luci/util.lua	/^function instanceof(object, class)$/;"	f
+integer	./luci/cbi/datatypes.lua	/^function integer(val)$/;"	f
+interface.__init__	./luci/model/network.lua	/^function interface.__init__(self, ifname, network)$/;"	f
+interface._ubus	./luci/model/network.lua	/^function interface._ubus(self, field)$/;"	f
+interface.adminlink	./luci/model/network.lua	/^function interface.adminlink(self)$/;"	f
+interface.bridge_id	./luci/model/network.lua	/^function interface.bridge_id(self)$/;"	f
+interface.bridge_stp	./luci/model/network.lua	/^function interface.bridge_stp(self)$/;"	f
+interface.get_i18n	./luci/model/network.lua	/^function interface.get_i18n(self)$/;"	f
+interface.get_network	./luci/model/network.lua	/^function interface.get_network(self)$/;"	f
+interface.get_networks	./luci/model/network.lua	/^function interface.get_networks(self)$/;"	f
+interface.get_type_i18n	./luci/model/network.lua	/^function interface.get_type_i18n(self)$/;"	f
+interface.get_wifinet	./luci/model/network.lua	/^function interface.get_wifinet(self)$/;"	f
+interface.ip6addrs	./luci/model/network.lua	/^function interface.ip6addrs(self)$/;"	f
+interface.ipaddrs	./luci/model/network.lua	/^function interface.ipaddrs(self)$/;"	f
+interface.is_bridge	./luci/model/network.lua	/^function interface.is_bridge(self)$/;"	f
+interface.is_bridgeport	./luci/model/network.lua	/^function interface.is_bridgeport(self)$/;"	f
+interface.is_up	./luci/model/network.lua	/^function interface.is_up(self)$/;"	f
+interface.mac	./luci/model/network.lua	/^function interface.mac(self)$/;"	f
+interface.name	./luci/model/network.lua	/^function interface.name(self)$/;"	f
+interface.ports	./luci/model/network.lua	/^function interface.ports(self)$/;"	f
+interface.rx_bytes	./luci/model/network.lua	/^function interface.rx_bytes(self)$/;"	f
+interface.rx_packets	./luci/model/network.lua	/^function interface.rx_packets(self)$/;"	f
+interface.shortname	./luci/model/network.lua	/^function interface.shortname(self)$/;"	f
+interface.tx_bytes	./luci/model/network.lua	/^function interface.tx_bytes(self)$/;"	f
+interface.tx_packets	./luci/model/network.lua	/^function interface.tx_packets(self)$/;"	f
+interface.type	./luci/model/network.lua	/^function interface.type(self)$/;"	f
+ip4addr	./luci/cbi/datatypes.lua	/^function ip4addr(val)$/;"	f
+ip4prefix	./luci/cbi/datatypes.lua	/^function ip4prefix(val)$/;"	f
+ip6addr	./luci/cbi/datatypes.lua	/^function ip6addr(val)$/;"	f
+ip6prefix	./luci/cbi/datatypes.lua	/^function ip6prefix(val)$/;"	f
+ipSplit	./luci/view/web/setting/net_lan.htm	/^function ipSplit(ip){$/;"	f
+ipaddr	./luci/cbi/datatypes.lua	/^function ipaddr(val)$/;"	f
+ipnot 	./luci/ip.lua	/^function ipnot ( ip )$/;"	f
+iptonl	./luci/ip.lua	/^function iptonl( ip )$/;"	f
+isArray	./json.lua	/^function isArray(t)$/;"	f
+isChange	./luci/view/web/setting/wifi_set_pro.htm	/^	function isChange(name){$/;"	f
+isDeviceWifiConnect	./xiaoqiang/util/XQWifiUtil.lua	/^function isDeviceWifiConnect(mac,wifiIndex)$/;"	f
+isDropbearStarted	./luci/controller/api/xqsystem.lua	/^function isDropbearStarted()$/;"	f
+isDropbearStarted	./luci/view/web/setting/lamp.htm	/^	function isDropbearStarted(){$/;"	f
+isEncodable	./json.lua	/^function isEncodable(o)$/;"	f
+isInternetConnect	./luci/controller/api/xqsystem.lua	/^function isInternetConnect()$/;"	f
+isRunning	./xiaoqiang/util/XQCameraUtil.lua	/^function isRunning()$/;"	f
+isSandboxCreated	./luci/controller/api/xqsystem.lua	/^function isSandboxCreated()$/;"	f
+isSandboxCreated	./luci/view/web/setting/lamp.htm	/^	function isSandboxCreated(){$/;"	f
+isStrNil	./xiaoqiang/common/XQFunction.lua	/^function isStrNil(str)$/;"	f
+isUpgrading	./xiaoqiang/util/XQSysUtil.lua	/^function isUpgrading()$/;"	f
+isalive	./xiaoqiang/util/XQMitvUtil.lua	/^function isalive(ip)$/;"	f
+isdirectory	./luci/fs.lua	/^function isdirectory(dirname)$/;"	f
+isfile	./luci/fs.lua	/^function isfile(filename)$/;"	f
+keepalive_failure.cfgvalue	./luci/model/cbi/admin_network/proto_ppp.lua	/^function keepalive_failure.cfgvalue(self, section)$/;"	f
+keepalive_failure.cfgvalue	./luci/model/cbi/admin_network/proto_pppoa.lua	/^function keepalive_failure.cfgvalue(self, section)$/;"	f
+keepalive_failure.cfgvalue	./luci/model/cbi/admin_network/proto_pppoe.lua	/^function keepalive_failure.cfgvalue(self, section)$/;"	f
+keepalive_failure.cfgvalue	./luci/model/cbi/admin_network/proto_pptp.lua	/^function keepalive_failure.cfgvalue(self, section)$/;"	f
+keepalive_failure.remove	./luci/model/cbi/admin_network/proto_ppp.lua	/^function keepalive_failure.remove() end$/;"	f
+keepalive_failure.remove	./luci/model/cbi/admin_network/proto_pppoa.lua	/^function keepalive_failure.remove() end$/;"	f
+keepalive_failure.remove	./luci/model/cbi/admin_network/proto_pppoe.lua	/^function keepalive_failure.remove() end$/;"	f
+keepalive_failure.remove	./luci/model/cbi/admin_network/proto_pptp.lua	/^function keepalive_failure.remove() end$/;"	f
+keepalive_failure.write	./luci/model/cbi/admin_network/proto_ppp.lua	/^function keepalive_failure.write() end$/;"	f
+keepalive_failure.write	./luci/model/cbi/admin_network/proto_pppoa.lua	/^function keepalive_failure.write() end$/;"	f
+keepalive_failure.write	./luci/model/cbi/admin_network/proto_pppoe.lua	/^function keepalive_failure.write() end$/;"	f
+keepalive_failure.write	./luci/model/cbi/admin_network/proto_pptp.lua	/^function keepalive_failure.write() end$/;"	f
+keepalive_interval.cfgvalue	./luci/model/cbi/admin_network/proto_ppp.lua	/^function keepalive_interval.cfgvalue(self, section)$/;"	f
+keepalive_interval.cfgvalue	./luci/model/cbi/admin_network/proto_pppoa.lua	/^function keepalive_interval.cfgvalue(self, section)$/;"	f
+keepalive_interval.cfgvalue	./luci/model/cbi/admin_network/proto_pppoe.lua	/^function keepalive_interval.cfgvalue(self, section)$/;"	f
+keepalive_interval.cfgvalue	./luci/model/cbi/admin_network/proto_pptp.lua	/^function keepalive_interval.cfgvalue(self, section)$/;"	f
+keepalive_interval.write	./luci/model/cbi/admin_network/proto_ppp.lua	/^function keepalive_interval.write(self, section, value)$/;"	f
+keepalive_interval.write	./luci/model/cbi/admin_network/proto_pppoa.lua	/^function keepalive_interval.write(self, section, value)$/;"	f
+keepalive_interval.write	./luci/model/cbi/admin_network/proto_pppoe.lua	/^function keepalive_interval.write(self, section, value)$/;"	f
+keepalive_interval.write	./luci/model/cbi/admin_network/proto_pptp.lua	/^function keepalive_interval.write(self, section, value)$/;"	f
+keyGeneration	./rc4.lua	/^local function keyGeneration(state, nCount)$/;"	f
+keys	./luci/util.lua	/^function keys(t)$/;"	f
+kill	./luci/sauth.lua	/^function kill(id)$/;"	f
+kspairs	./luci/util.lua	/^function kspairs(t)$/;"	f
+lanIPChange	./xiaoqiang/XQEvent.lua	/^function lanIPChange(ip)$/;"	f
+ledFlashAlert	./xiaoqiang/common/XQFunction.lua	/^function ledFlashAlert(enable)$/;"	f
+libpath	./luci/util.lua	/^function libpath()$/;"	f
+limitsource	./luci/sgi/cgi.lua	/^local function limitsource(handle, limit)$/;"	f
+link	./luci/fs.lua	/^function link(src, dest, sym)$/;"	f
+list	./luci/cbi/datatypes.lua	/^function list(v, subvalidator, subargs)$/;"	f
+list_all	./luci/model/ipkg.lua	/^function list_all(pat, cb)$/;"	f
+list_installed	./luci/model/ipkg.lua	/^function list_installed(pat, cb)$/;"	f
+listenStatus	./luci/view/web/setting/vpn.htm	/^	function listenStatus(){$/;"	f
+listlocaldir	./xiaoqiang/util/XQCameraUtil.lua	/^function listlocaldir(path)$/;"	f
+load	./luci/cbi.lua	/^function load(cbimap, ...)$/;"	f
+load	./luci/i18n.lua	/^function load(file, lang, force)$/;"	f
+loadavg	./luci/sys.lua	/^function loadavg()$/;"	f
+loadc	./luci/i18n.lua	/^function loadc(file, force)$/;"	f
+local _template 	./luci/dispatcher.lua	/^local _template = function(self, ...)$/;"	f
+local a 	./luci/json.lua	/^	local a = ActiveDecoder(function() return nil end, ...)$/;"	f
+local authen 	./luci/dispatcher.lua	/^        local authen = type(track.sysauth_authenticator) == "function"$/;"	f
+local checkstep 	./socket/ftp.lua	/^    local checkstep = function(src, snk)$/;"	f
+local co 	./socket/smtp.lua	/^    local co = coroutine.create(function() send_message(mesgt) end)$/;"	f
+local entitySwap 	./slaxml.lua	/^    local entitySwap = function(orig,n,s) return entityMap[s] or n=="#" and char(s) or orig end$/;"	f
+local f 	./ltn12.lua	/^    local f = function(chunk, err)$/;"	f
+local f 	./luci/ltn12.lua	/^    local f = function(chunk, err)$/;"	f
+local newf 	./luci/util.lua	/^        local newf = function() return f(unpack(params)) end$/;"	f
+local openFileLogger 	./logging/file.lua	/^local openFileLogger = function (filename, datePattern)$/;"	f
+local openRollingFileLogger 	./logging/rolling_file.lua	/^local openRollingFileLogger = function (self)$/;"	f
+local proto, off 	./luci/util.lua	/^            local proto, off = strip_function(code:sub(offset, -1))$/;"	f
+local rollOver 	./logging/rolling_file.lua	/^local rollOver = function (self)$/;"	f
+local stat, err 	./luci/dispatcher.lua	/^    local stat, err = util.coxpcall(function()$/;"	f
+log	./xiaoqiang/XQLog.lua	/^function log(...)$/;"	f
+logCollection	./luci/view/web/setting/log.htm	/^    function logCollection() {$/;"	f
+logger	./sysapi/miqos.lua	/^function logger(loglevel,msg)$/;"	f
+logger.log 	./logging.lua	/^	logger.log = function (self, level, ...)$/;"	f
+logger.setLevel 	./logging.lua	/^	logger.setLevel = function (self, level)$/;"	f
+logging.console	./logging/console.lua	/^function logging.console(logPattern)$/;"	f
+logging.email	./logging/email.lua	/^function logging.email(params)$/;"	f
+logging.file	./logging/file.lua	/^function logging.file(filename, datePattern, logPattern)$/;"	f
+logging.new	./logging.lua	/^function logging.new(append)$/;"	f
+logging.prepareLogMsg	./logging.lua	/^function logging.prepareLogMsg(pattern, dt, level, message)$/;"	f
+logging.rolling_file	./logging/rolling_file.lua	/^function logging.rolling_file(filename, maxFileSize, maxBackupIndex, logPattern)$/;"	f
+logging.socket	./logging/socket.lua	/^function logging.socket(address, port, logPattern)$/;"	f
+logging.sql	./logging/sql.lua	/^function logging.sql(params)$/;"	f
+logout	./luci/view/web/plugins/kuaipan.htm	/^		function logout() {$/;"	f
+lower_headers	./socket/smtp.lua	/^local function lower_headers(headers)$/;"	f
+m.on_commit 	./luci/model/cbi/firewall/zone-details.lua	/^m.on_commit = function(map)$/;"	f
+macBind	./luci/controller/api/xqnetwork.lua	/^function macBind()$/;"	f
+macBindInfo	./xiaoqiang/util/XQLanWanUtil.lua	/^function macBindInfo()$/;"	f
+macFormat	./xiaoqiang/common/XQFunction.lua	/^function macFormat(mac)$/;"	f
+macUnbind	./luci/controller/api/xqnetwork.lua	/^function macUnbind()$/;"	f
+macaddr	./luci/cbi/datatypes.lua	/^function macaddr(val)$/;"	f
+main	./sysapi/miqos.lua	/^function main()$/;"	f
+mainStatusForApp	./luci/controller/api/xqsystem.lua	/^function mainStatusForApp()$/;"	f
+make_set	./socket/url.lua	/^local function make_set(t)$/;"	f
+match.cfgvalue	./luci/model/cbi/firewall/forwards.lua	/^function match.cfgvalue(self, s)$/;"	f
+match.cfgvalue	./luci/model/cbi/firewall/rules.lua	/^function match.cfgvalue(self, s)$/;"	f
+max	./luci/cbi/datatypes.lua	/^function max(val, max)$/;"	f
+maxlength	./luci/cbi/datatypes.lua	/^function maxlength(val, max)$/;"	f
+md5Base64Str	./xiaoqiang/util/XQCryptoUtil.lua	/^function md5Base64Str(str)$/;"	f
+md5File	./xiaoqiang/util/XQCryptoUtil.lua	/^function md5File(file)$/;"	f
+md5Str	./xiaoqiang/util/XQCryptoUtil.lua	/^function md5Str(str)$/;"	f
+mergeFiles	./xiaoqiang/util/XQCameraUtil.lua	/^function mergeFiles(remotefiles,localfiles)$/;"	f
+message	./socket/smtp.lua	/^function message(mesgt)$/;"	f
+meta.blocksource	./nixio/util.lua	/^function meta.blocksource(self, bs, limit)$/;"	f
+meta.copy	./nixio/util.lua	/^function meta.copy(self, fdout, size)$/;"	f
+meta.copyz	./nixio/util.lua	/^function meta.copyz(self, fd, size)$/;"	f
+meta.is_file	./nixio/util.lua	/^function meta.is_file(self)$/;"	f
+meta.is_socket	./nixio/util.lua	/^function meta.is_socket(self)$/;"	f
+meta.is_tls_socket	./nixio/util.lua	/^function meta.is_tls_socket(self)$/;"	f
+meta.linesource	./nixio/util.lua	/^function meta.linesource(self, limit)$/;"	f
+meta.readall	./nixio/util.lua	/^function meta.readall(self, len)$/;"	f
+meta.sink	./nixio/util.lua	/^function meta.sink(self, close)$/;"	f
+meta.writeall	./nixio/util.lua	/^function meta.writeall(self, data)$/;"	f
+metat.__index:auth	./socket/smtp.lua	/^function metat.__index:auth(user, password, ext)$/;"	f
+metat.__index:check	./socket/tp.lua	/^function metat.__index:check(ok)$/;"	f
+metat.__index:close	./socket/ftp.lua	/^function metat.__index:close()$/;"	f
+metat.__index:close	./socket/http.lua	/^function metat.__index:close()$/;"	f
+metat.__index:close	./socket/smtp.lua	/^function metat.__index:close()$/;"	f
+metat.__index:close	./socket/tp.lua	/^function metat.__index:close()$/;"	f
+metat.__index:command	./socket/tp.lua	/^function metat.__index:command(cmd, arg)$/;"	f
+metat.__index:cwd	./socket/ftp.lua	/^function metat.__index:cwd(dir)$/;"	f
+metat.__index:data	./socket/smtp.lua	/^function metat.__index:data(src, step)$/;"	f
+metat.__index:dirty	./socket/tp.lua	/^function metat.__index:dirty()$/;"	f
+metat.__index:getcontrol	./socket/tp.lua	/^function metat.__index:getcontrol()$/;"	f
+metat.__index:getfd	./socket/tp.lua	/^function metat.__index:getfd()$/;"	f
+metat.__index:greet	./socket/ftp.lua	/^function metat.__index:greet()$/;"	f
+metat.__index:greet	./socket/smtp.lua	/^function metat.__index:greet(domain)$/;"	f
+metat.__index:login	./socket/ftp.lua	/^function metat.__index:login(user, password)$/;"	f
+metat.__index:login	./socket/smtp.lua	/^function metat.__index:login(user, password)$/;"	f
+metat.__index:mail	./socket/smtp.lua	/^function metat.__index:mail(from)$/;"	f
+metat.__index:pasv	./socket/ftp.lua	/^function metat.__index:pasv()$/;"	f
+metat.__index:pasvconnect	./socket/ftp.lua	/^function metat.__index:pasvconnect()$/;"	f
+metat.__index:plain	./socket/smtp.lua	/^function metat.__index:plain(user, password)$/;"	f
+metat.__index:port	./socket/ftp.lua	/^function metat.__index:port(ip, port)$/;"	f
+metat.__index:portconnect	./socket/ftp.lua	/^function metat.__index:portconnect()$/;"	f
+metat.__index:quit	./socket/ftp.lua	/^function metat.__index:quit()$/;"	f
+metat.__index:quit	./socket/smtp.lua	/^function metat.__index:quit()$/;"	f
+metat.__index:rcpt	./socket/smtp.lua	/^function metat.__index:rcpt(to)$/;"	f
+metat.__index:receive	./socket/ftp.lua	/^function metat.__index:receive(recvt)$/;"	f
+metat.__index:receive	./socket/tp.lua	/^function metat.__index:receive(pat)$/;"	f
+metat.__index:receive09body	./socket/http.lua	/^function metat.__index:receive09body(status, sink, step)$/;"	f
+metat.__index:receivebody	./socket/http.lua	/^function metat.__index:receivebody(headers, sink, step)$/;"	f
+metat.__index:receiveheaders	./socket/http.lua	/^function metat.__index:receiveheaders()$/;"	f
+metat.__index:receivestatusline	./socket/http.lua	/^function metat.__index:receivestatusline()$/;"	f
+metat.__index:send	./socket/ftp.lua	/^function metat.__index:send(sendt)$/;"	f
+metat.__index:send	./socket/smtp.lua	/^function metat.__index:send(mailt)$/;"	f
+metat.__index:send	./socket/tp.lua	/^function metat.__index:send(data)$/;"	f
+metat.__index:sendbody	./socket/http.lua	/^function metat.__index:sendbody(headers, source, step)$/;"	f
+metat.__index:sendheaders	./socket/http.lua	/^function metat.__index:sendheaders(headers)$/;"	f
+metat.__index:sendrequestline	./socket/http.lua	/^function metat.__index:sendrequestline(method, uri)$/;"	f
+metat.__index:sink	./socket/tp.lua	/^function metat.__index:sink(snk, pat)$/;"	f
+metat.__index:source	./socket/tp.lua	/^function metat.__index:source(source, step)$/;"	f
+metat.__index:type	./socket/ftp.lua	/^function metat.__index:type(type)$/;"	f
+mimedecode_message_body	./luci/http/protocol.lua	/^function mimedecode_message_body( src, msg, filecb )$/;"	f
+min	./luci/cbi/datatypes.lua	/^function min(val, min)$/;"	f
+minlength	./luci/cbi/datatypes.lua	/^function minlength(val, min)$/;"	f
+mk_etag	./luci/http/protocol/conditionals.lua	/^function mk_etag( stat )$/;"	f
+mkdir	./luci/fs.lua	/^function mkdir(path, recursive)$/;"	f
+mkdirr	./nixio/fs.lua	/^function mkdirr(dest, mode)$/;"	f
+modifier	./luci/dispatcher.lua	/^function modifier(func, order)$/;"	f
+modify	./luci/view/web/setting/wifi_set_mini.htm	/^	function modify (){$/;"	f
+modify	./luci/view/web/setting/wifi_set_pro.htm	/^	function modify (){$/;"	f
+modisort	./luci/dispatcher.lua	/^    local function modisort(a,b)$/;"	f
+module ("nixio.fs", function(m) setmetatable(m, {__index 	./nixio/fs.lua	/^module ("nixio.fs", function(m) setmetatable(m, {__index = nixio.fs}) end)$/;"	f
+moduleOn	./xiaoqiang/module/XQDMZModule.lua	/^function moduleOn()$/;"	f
+moduleOn	./xiaoqiang/module/XQPortForward.lua	/^function moduleOn()$/;"	f
+mountThings	./luci/controller/api/xqsystem.lua	/^function mountThings()$/;"	f
+mountThings	./luci/view/web/setting/lamp.htm	/^	function mountThings(){$/;"	f
+mounts	./luci/sys.lua	/^function mounts()$/;"	f
+move	./nixio/fs.lua	/^function move(src, dest)$/;"	f
+mover	./nixio/fs.lua	/^function mover(src, dest)$/;"	f
+mtime	./luci/fs.lua	/^function mtime(path)$/;"	f
+name.write	./luci/model/cbi/firewall/zone-details.lua	/^function name.write(self, section, value)$/;"	f
+navigation	./luci/view/themes/openwrt.org/header.htm	/^<h2 class="navigation"><a id="navigation" name="navigation"><%:Navigation%><\/a><\/h2>$/;"	a
+neg	./luci/cbi/datatypes.lua	/^function neg(v, ...)$/;"	f
+net.arptable	./luci/sys.lua	/^function net.arptable(callback)$/;"	f
+net.cfgvalue	./luci/model/cbi/firewall/zone-details.lua	/^function net.cfgvalue(self, section)$/;"	f
+net.conntrack	./luci/sys.lua	/^function net.conntrack(callback)$/;"	f
+net.defaultroute	./luci/sys.lua	/^function net.defaultroute()$/;"	f
+net.defaultroute6	./luci/sys.lua	/^function net.defaultroute6()$/;"	f
+net.deviceinfo	./luci/sys.lua	/^function net.deviceinfo()$/;"	f
+net.devices	./luci/sys.lua	/^function net.devices()$/;"	f
+net.formvalue	./luci/model/cbi/firewall/zone-details.lua	/^function net.formvalue(self, section)$/;"	f
+net.ip4mac	./luci/sys.lua	/^function net.ip4mac(ip)$/;"	f
+net.ipv4_hints	./luci/sys.lua	/^function net.ipv4_hints(callback)$/;"	f
+net.ipv6_hints	./luci/sys.lua	/^function net.ipv6_hints(callback)$/;"	f
+net.mac_hints	./luci/sys.lua	/^function net.mac_hints(callback)$/;"	f
+net.pingtest	./luci/sys.lua	/^function net.pingtest(host)$/;"	f
+net.routes	./luci/sys.lua	/^function net.routes(callback)$/;"	f
+net.routes6	./luci/sys.lua	/^function net.routes6(callback)$/;"	f
+net.write	./luci/model/cbi/firewall/zone-details.lua	/^function net.write(self, section, value)$/;"	f
+netspeed	./luci/controller/api/xqnetdetect.lua	/^function netspeed()$/;"	f
+network	./luci/cbi/datatypes.lua	/^function network(val)$/;"	f
+network	./luci/model/network.lua	/^function network(name, proto)$/;"	f
+network_get_addresses	./luci/tools/webadmin.lua	/^function network_get_addresses(net)$/;"	f
+network_get_zones	./luci/tools/webadmin.lua	/^function network_get_zones(net)$/;"	f
+new	./rc4.lua	/^function new(sKey, bEncryption)$/;"	f
+new	./xssFilter.lua	/^function new(allowed_tags, generic_attrs, tags_handler)$/;"	f
+new_zone	./luci/model/firewall.lua	/^function new_zone(self)$/;"	f
+newboundary	./socket/smtp.lua	/^local function newboundary()$/;"	f
+newcontext	./ssl.lua	/^function newcontext(cfg)$/;"	f
+ngStatus	./luci/view/web/setting/nginx.htm	/^	function ngStatus(){$/;"	f
+nginxCacheStatus	./luci/controller/api/xqsystem.lua	/^function nginxCacheStatus()$/;"	f
+node	./luci/dispatcher.lua	/^function node(...)$/;"	f
+node_childs	./luci/dispatcher.lua	/^function node_childs(node)$/;"	f
+node_visible	./luci/dispatcher.lua	/^function node_visible(node)$/;"	f
+nofSwitch	./luci/controller/api/xqsystem.lua	/^function nofSwitch()$/;"	f
+noflushdStatus	./luci/view/web/setting/noflushd.htm	/^    function noflushdStatus(){$/;"	f
+noflushdStatus	./xiaoqiang/util/XQSysUtil.lua	/^function noflushdStatus()$/;"	f
+noflushdSwitch	./luci/view/web/setting/noflushd.htm	/^    function noflushdSwitch(){$/;"	f
+noflushdSwitch	./xiaoqiang/util/XQSysUtil.lua	/^function noflushdSwitch(on)$/;"	f
+normalize	./mime.lua	/^function normalize(marker)$/;"	f
+nsForPrefix	./slaxml.lua	/^    local function nsForPrefix(prefix)$/;"	f
+null	./json.lua	/^function null()$/;"	f
+null	./ltn12.lua	/^local function null()$/;"	f
+null	./luci/json.lua	/^function null()$/;"	f
+null	./luci/ltn12.lua	/^local function null()$/;"	f
+nvramCommit	./xiaoqiang/common/XQFunction.lua	/^function nvramCommit()$/;"	f
+nvramGet	./xiaoqiang/common/XQFunction.lua	/^function nvramGet(key, default)$/;"	f
+nvramSet	./xiaoqiang/common/XQFunction.lua	/^function nvramSet(key, value)$/;"	f
+o.cfgvalue	./luci/model/cbi/firewall/custom.lua	/^function o.cfgvalue(self, section)$/;"	f
+o.cfgvalue	./luci/model/cbi/firewall/forward-details.lua	/^function o.cfgvalue(...)$/;"	f
+o.cfgvalue	./luci/model/cbi/firewall/rule-details.lua	/^	function o.cfgvalue(...)$/;"	f
+o.cfgvalue	./luci/tools/firewall.lua	/^	function o.cfgvalue(self, section)$/;"	f
+o.cfgvalue	./luci/tools/proto.lua	/^	function o.cfgvalue(self, section)$/;"	f
+o.cfgvalue 	./luci/model/cbi/firewall/forward-details.lua	/^o.cfgvalue = function(...)$/;"	f
+o.cfgvalue 	./luci/model/cbi/firewall/zones.lua	/^o.cfgvalue = function(self, section)$/;"	f
+o.remove	./luci/tools/firewall.lua	/^	function o.remove(self, section)$/;"	f
+o.remove	./luci/tools/proto.lua	/^	function o.remove(self, section)$/;"	f
+o.render	./luci/tools/firewall.lua	/^		function o.render(self, section)$/;"	f
+o.write	./luci/model/cbi/firewall/custom.lua	/^function o.write(self, section, value)$/;"	f
+o.write	./luci/tools/firewall.lua	/^		function o.write(self, section, value)$/;"	f
+o.write	./luci/tools/firewall.lua	/^	function o.write(self, section, value)$/;"	f
+o.write	./luci/tools/proto.lua	/^	function o.write(self, section, value)$/;"	f
+open	./luci/view/web/setting/wifi_set_mini.htm	/^	function open(){$/;"	f
+open	./socket/ftp.lua	/^function open(server, port, create)$/;"	f
+open	./socket/http.lua	/^function open(host, port, create)$/;"	f
+open	./socket/smtp.lua	/^function open(server, port, create)$/;"	f
+openFile	./logging/rolling_file.lua	/^local function openFile(self)$/;"	f
+openWifiWps	./xiaoqiang/util/XQWifiUtil.lua	/^function openWifiWps()$/;"	f
+openWps	./luci/controller/api/xqsystem.lua	/^function openWps()$/;"	f
+opt_enabled	./luci/tools/firewall.lua	/^function opt_enabled(s, t, ...)$/;"	f
+opt_macaddr	./luci/tools/proto.lua	/^function opt_macaddr(s, ifc, ...)$/;"	f
+opt_name	./luci/tools/firewall.lua	/^function opt_name(s, t, ...)$/;"	f
+optexec	./ssl.lua	/^local function optexec(func, param, ctx)$/;"	f
+or (scope and type(scope[key]) ~	./luci/dispatcher.lua	/^                or (scope and type(scope[key]) ~= "function" and scope[key])$/;"	f
+or (type(env[key]) ~	./luci/dispatcher.lua	/^                or (type(env[key]) ~= "function" and env[key])$/;"	f
+out.cfgvalue	./luci/model/cbi/firewall/zone-details.lua	/^function out.cfgvalue(self, section)$/;"	f
+out.formvalue	./luci/model/cbi/firewall/zone-details.lua	/^function out.formvalue(self, section)$/;"	f
+out.write	./luci/model/cbi/firewall/zone-details.lua	/^function out.write(self, section, value)$/;"	f
+overlay_root	./luci/model/ipkg.lua	/^function overlay_root()$/;"	f
+override	./socket/ftp.lua	/^local function override(t)$/;"	f
+package.loaders[2] 	./luci/ccache.lua	/^	package.loaders[2] = function(mod)$/;"	f
+parse	./socket/ftp.lua	/^local function parse(u)$/;"	f
+parse	./socket/url.lua	/^function parse(url, default)$/;"	f
+parseEnter2br	./xiaoqiang/common/XQFunction.lua	/^function parseEnter2br(str)$/;"	f
+parse_attributes	./xssFilter.lua	/^   local function parse_attributes(s)$/;"	f
+parse_headers	./luci/http/protocol.lua	/^	local function parse_headers( chunk, field )$/;"	f
+parse_message_body	./luci/http/protocol.lua	/^function parse_message_body( src, msg, filecb )$/;"	f
+parse_message_header	./luci/http/protocol.lua	/^function parse_message_header( src )$/;"	f
+parse_path	./socket/url.lua	/^function parse_path(path)$/;"	f
+parse_units	./luci/util.lua	/^function parse_units(ustr)$/;"	f
+parse_xml	./xssFilter.lua	/^local function parse_xml(s)$/;"	f
+passportLogin	./luci/controller/api/xqpassport.lua	/^function passportLogin()$/;"	f
+passportLoginUrl	./xiaoqiang/util/XQSecureUtil.lua	/^function passportLoginUrl()$/;"	f
+passportLogoutUrl	./xiaoqiang/util/XQSecureUtil.lua	/^function passportLogoutUrl()$/;"	f
+path 	./socket/url.lua	/^        path = string.gsub(reduced, "([^\/]*\/%.%.\/)", function (s)$/;"	f
+path 	./socket/url.lua	/^    path = string.gsub(path, "([^\/]*%.\/)", function (s)$/;"	f
+path 	./socket/url.lua	/^    path = string.gsub(reduced, "([^\/]*\/%.%.)$", function (s)$/;"	f
+pcdata	./luci/util.lua	/^function pcdata(value)$/;"	f
+performResume	./luci/util.lua	/^function performResume(err, co, ...)$/;"	f
+perror	./luci/util.lua	/^function perror(obj)$/;"	f
+phonedigit	./luci/cbi/datatypes.lua	/^function phonedigit(val)$/;"	f
+pi 	./slaxdom.lua	/^        pi = function(name,value)$/;"	f
+pi 	./slaxml.lua	/^        pi = function(target,content)$/;"	f
+pingTest	./luci/controller/api/xqnetdetect.lua	/^function pingTest()$/;"	f
+playMusicByUrl	./xiaoqiang/util/XQMitvUtil.lua	/^function playMusicByUrl(ip,url)$/;"	f
+playPhotoByUrl	./xiaoqiang/util/XQMitvUtil.lua	/^function playPhotoByUrl(ip,url)$/;"	f
+playVideoByMediaid	./xiaoqiang/util/XQMitvUtil.lua	/^function playVideoByMediaid(ip,mediaid,ci)$/;"	f
+playVideoByUrl	./xiaoqiang/util/XQMitvUtil.lua	/^function playVideoByUrl(ip,url)$/;"	f
+pluginDetail	./luci/controller/api/xqpassport.lua	/^function pluginDetail()$/;"	f
+pluginDetail	./xiaoqiang/util/XQNetUtil.lua	/^function pluginDetail(uuid,pluginId)$/;"	f
+pluginDisable	./luci/controller/api/xqpassport.lua	/^function pluginDisable()$/;"	f
+pluginDisable	./xiaoqiang/util/XQNetUtil.lua	/^function pluginDisable(uuid,pluginId)$/;"	f
+pluginDownloadInfo	./luci/controller/service/datacenter.lua	/^function pluginDownloadInfo()$/;"	f
+pluginEnable	./luci/controller/api/xqpassport.lua	/^function pluginEnable()$/;"	f
+pluginEnable	./xiaoqiang/util/XQNetUtil.lua	/^function pluginEnable(uuid,pluginId)$/;"	f
+pluginList	./luci/controller/api/xqpassport.lua	/^function pluginList()$/;"	f
+pluginList	./xiaoqiang/util/XQNetUtil.lua	/^function pluginList(uuid)$/;"	f
+pluginSSH	./luci/controller/api/xqdatacenter.lua	/^function pluginSSH()$/;"	f
+pluginSSHStatus	./luci/controller/api/xqdatacenter.lua	/^function pluginSSHStatus()$/;"	f
+pluginStatus	./luci/controller/service/datacenter.lua	/^function pluginStatus()$/;"	f
+port	./luci/cbi/datatypes.lua	/^function port(val)$/;"	f
+portForward	./luci/controller/api/xqnetwork.lua	/^function portForward()$/;"	f
+portForwardInfo	./xiaoqiang/module/XQPortForward.lua	/^function portForwardInfo()$/;"	f
+portForwards	./xiaoqiang/module/XQPortForward.lua	/^function portForwards(ftype)$/;"	f
+portrange	./luci/cbi/datatypes.lua	/^function portrange(val)$/;"	f
+pppoeStart	./luci/controller/api/xqnetwork.lua	/^function pppoeStart()$/;"	f
+pppoeStart	./xiaoqiang/util/XQLanWanUtil.lua	/^function pppoeStart()$/;"	f
+pppoeStatus	./luci/controller/api/xqnetwork.lua	/^function pppoeStatus()$/;"	f
+pppoeStop	./luci/controller/api/xqnetwork.lua	/^function pppoeStop()$/;"	f
+pppoeStop	./xiaoqiang/util/XQLanWanUtil.lua	/^function pppoeStop()$/;"	f
+predownloadInfo	./luci/controller/api/xqsystem.lua	/^function predownloadInfo()$/;"	f
+predownloadInfo	./xiaoqiang/module/XQPredownload.lua	/^function predownloadInfo()$/;"	f
+predownloadStatus	./luci/view/web/setting/predownload.htm	/^    function predownloadStatus(){$/;"	f
+predownloadSwitch	./luci/controller/api/xqsystem.lua	/^function predownloadSwitch()$/;"	f
+predownloadSwitch	./luci/view/web/setting/predownload.htm	/^    function predownloadSwitch(){$/;"	f
+prepare	./luci/sauth.lua	/^function prepare()$/;"	f
+prepare	./xiaoqiang/util/XQSecureUtil.lua	/^function prepare()$/;"	f
+prepare_content	./luci/http.lua	/^function prepare_content(mime)$/;"	f
+print_r	./sysapi/miqos.lua	/^function print_r(root,ind)$/;"	f
+process.info	./luci/sys.lua	/^function process.info(key)$/;"	f
+process.list	./luci/sys.lua	/^function process.list()$/;"	f
+process.setgroup	./luci/sys.lua	/^function process.setgroup(gid)$/;"	f
+process.setuser	./luci/sys.lua	/^function process.setuser(uid)$/;"	f
+process_states['headers'] 	./luci/http/protocol.lua	/^process_states['headers'] = function( msg, chunk )$/;"	f
+process_states['magic'] 	./luci/http/protocol.lua	/^process_states['magic'] = function( msg, chunk, err )$/;"	f
+promoteAccount	./xiaoqiang/util/XQNetUtil.lua	/^function promoteAccount(uuid,account)$/;"	f
+protect_segment	./socket/url.lua	/^local function protect_segment(s)$/;"	f
+proto.__init__	./luci/model/network.lua	/^    function proto.__init__(self, name)$/;"	f
+proto.contains_interface	./luci/model/network/proto_ppp.lua	/^	function proto.contains_interface(self, ifc)$/;"	f
+proto.get_i18n	./luci/model/network/proto_ppp.lua	/^	function proto.get_i18n(self)$/;"	f
+proto.get_interfaces	./luci/model/network/proto_ppp.lua	/^	function proto.get_interfaces(self)$/;"	f
+proto.ifname	./luci/model/network/proto_ppp.lua	/^	function proto.ifname(self)$/;"	f
+proto.is_floating	./luci/model/network/proto_ppp.lua	/^	function proto.is_floating(self)$/;"	f
+proto.is_installed	./luci/model/network/proto_ppp.lua	/^	function proto.is_installed(self)$/;"	f
+proto.is_virtual	./luci/model/network/proto_ppp.lua	/^	function proto.is_virtual(self)$/;"	f
+proto.opkg_package	./luci/model/network/proto_ppp.lua	/^	function proto.opkg_package(self)$/;"	f
+proto.proto	./luci/model/network.lua	/^    function proto.proto(self)$/;"	f
+protocol.__init__	./luci/model/network.lua	/^function protocol.__init__(self, name)$/;"	f
+protocol._get	./luci/model/network.lua	/^function protocol._get(self, opt)$/;"	f
+protocol._ubus	./luci/model/network.lua	/^function protocol._ubus(self, field)$/;"	f
+protocol.add_interface	./luci/model/network.lua	/^function protocol.add_interface(self, ifname)$/;"	f
+protocol.adminlink	./luci/model/network.lua	/^function protocol.adminlink(self)$/;"	f
+protocol.contains_interface	./luci/model/network.lua	/^function protocol.contains_interface(self, ifname)$/;"	f
+protocol.del_interface	./luci/model/network.lua	/^function protocol.del_interface(self, ifname)$/;"	f
+protocol.dns6addrs	./luci/model/network.lua	/^function protocol.dns6addrs(self)$/;"	f
+protocol.dnsaddrs	./luci/model/network.lua	/^function protocol.dnsaddrs(self)$/;"	f
+protocol.expires	./luci/model/network.lua	/^function protocol.expires(self)$/;"	f
+protocol.get	./luci/model/network.lua	/^function protocol.get(self, opt)$/;"	f
+protocol.get_i18n	./luci/model/network.lua	/^function protocol.get_i18n(self)$/;"	f
+protocol.get_interface	./luci/model/network.lua	/^function protocol.get_interface(self)$/;"	f
+protocol.get_interfaces	./luci/model/network.lua	/^function protocol.get_interfaces(self)$/;"	f
+protocol.get_option_value	./luci/model/network.lua	/^function protocol.get_option_value(self,name)$/;"	f
+protocol.gw6addr	./luci/model/network.lua	/^function protocol.gw6addr(self)$/;"	f
+protocol.gwaddr	./luci/model/network.lua	/^function protocol.gwaddr(self)$/;"	f
+protocol.ifname	./luci/model/network.lua	/^function protocol.ifname(self)$/;"	f
+protocol.ip6addr	./luci/model/network.lua	/^function protocol.ip6addr(self)$/;"	f
+protocol.ipaddr	./luci/model/network.lua	/^function protocol.ipaddr(self)$/;"	f
+protocol.is_bridge	./luci/model/network.lua	/^function protocol.is_bridge(self)$/;"	f
+protocol.is_empty	./luci/model/network.lua	/^function protocol.is_empty(self)$/;"	f
+protocol.is_floating	./luci/model/network.lua	/^function protocol.is_floating(self)$/;"	f
+protocol.is_installed	./luci/model/network.lua	/^function protocol.is_installed(self)$/;"	f
+protocol.is_virtual	./luci/model/network.lua	/^function protocol.is_virtual(self)$/;"	f
+protocol.metric	./luci/model/network.lua	/^function protocol.metric(self)$/;"	f
+protocol.name	./luci/model/network.lua	/^function protocol.name(self)$/;"	f
+protocol.netmask	./luci/model/network.lua	/^function protocol.netmask(self)$/;"	f
+protocol.opkg_package	./luci/model/network.lua	/^function protocol.opkg_package(self)$/;"	f
+protocol.proto	./luci/model/network.lua	/^function protocol.proto(self)$/;"	f
+protocol.set	./luci/model/network.lua	/^function protocol.set(self, opt, val)$/;"	f
+protocol.status	./luci/model/network.lua	/^function protocol.status(self)$/;"	f
+protocol.type	./luci/model/network.lua	/^function protocol.type(self)$/;"	f
+protocol.uptime	./luci/model/network.lua	/^function protocol.uptime(self)$/;"	f
+pump.all	./ltn12.lua	/^function pump.all(src, snk, step)$/;"	f
+pump.all	./luci/ltn12.lua	/^function pump.all(src, snk, step)$/;"	f
+pump.step	./ltn12.lua	/^function pump.step(src, snk)$/;"	f
+pump.step	./luci/ltn12.lua	/^function pump.step(src, snk)$/;"	f
+push_request	./xiaoqiang/XQPushHelper.lua	/^function push_request(payload)$/;"	f
+push_request_lua	./xiaoqiang/XQPushHelper.lua	/^function push_request_lua(payload)$/;"	f
+put 	./socket/ftp.lua	/^put = socket.protect(function(putt, body)$/;"	f
+qosBand	./xiaoqiang/util/XQQoSUtil.lua	/^function qosBand()$/;"	f
+qosLimit	./luci/controller/api/xqnetwork.lua	/^function qosLimit()$/;"	f
+qosList	./xiaoqiang/util/XQQoSUtil.lua	/^function qosList()$/;"	f
+qosMode	./luci/controller/api/xqnetwork.lua	/^function qosMode()$/;"	f
+qosModeSwitch	./xiaoqiang/util/XQQoSUtil.lua	/^function qosModeSwitch(auto)$/;"	f
+qosOffLimit	./luci/controller/api/xqnetwork.lua	/^function qosOffLimit()$/;"	f
+qosOffLimit	./xiaoqiang/util/XQQoSUtil.lua	/^function qosOffLimit(mac)$/;"	f
+qosOnLimit	./xiaoqiang/util/XQQoSUtil.lua	/^function qosOnLimit(mac, maxup, maxdown, upweight, downweight)$/;"	f
+qosRestart	./xiaoqiang/util/XQQoSUtil.lua	/^function qosRestart()$/;"	f
+qosStatus	./luci/view/web/setting/qos.htm	/^	function qosStatus(){$/;"	f
+qosStatus	./luci/view/web/setting/qos_pro.htm	/^	function qosStatus(){$/;"	f
+qosStatus	./xiaoqiang/util/XQQoSUtil.lua	/^function qosStatus()$/;"	f
+qosSwitch	./luci/controller/api/xqnetwork.lua	/^function qosSwitch()$/;"	f
+qosSwitch	./luci/view/web/setting/qos.htm	/^	function qosSwitch(){$/;"	f
+qosSwitch	./luci/view/web/setting/qos_pro.htm	/^	function qosSwitch(){$/;"	f
+qosSwitch	./xiaoqiang/util/XQQoSUtil.lua	/^function qosSwitch(on)$/;"	f
+qosset	./luci/view/web/setting/qos.htm	/^	function qosset(){$/;"	f
+randerDevlist	./luci/view/web/setting/qos_pro.htm	/^	function randerDevlist( rsp, type ){$/;"	f
+range	./luci/cbi/datatypes.lua	/^function range(val, min, max)$/;"	f
+rangelength	./luci/cbi/datatypes.lua	/^function rangelength(val, min, max)$/;"	f
+read	./luci/sauth.lua	/^function read(id)$/;"	f
+readNonce	./xiaoqiang/util/XQSecureUtil.lua	/^function readNonce(id)$/;"	f
+readfile	./nixio/fs.lua	/^function readfile(path, limit)$/;"	f
+reap	./luci/sauth.lua	/^function reap()$/;"	f
+reboot	./luci/controller/api/xqsystem.lua	/^function reboot()$/;"	f
+reboot	./luci/sys.lua	/^function reboot()$/;"	f
+reboot_window	./luci/view/web/inc/reboot.js.htm	/^function reboot_window(){$/;"	f
+receiveheaders	./socket/http.lua	/^local function receiveheaders(sock, headers)$/;"	f
+recv	./luci/sgi/uhttpd.lua	/^	local function recv()$/;"	f
+redirect	./luci/http.lua	/^function redirect(url)$/;"	f
+redirect.__init__	./luci/model/firewall.lua	/^function redirect.__init__(self, f)$/;"	f
+redirect.dest	./luci/model/firewall.lua	/^function redirect.dest(self)$/;"	f
+redirect.dest_zone	./luci/model/firewall.lua	/^function redirect.dest_zone(self)$/;"	f
+redirect.get	./luci/model/firewall.lua	/^function redirect.get(self, opt)$/;"	f
+redirect.set	./luci/model/firewall.lua	/^function redirect.set(self, opt, val)$/;"	f
+redirect.src	./luci/model/firewall.lua	/^function redirect.src(self)$/;"	f
+redirect.src_zone	./luci/model/firewall.lua	/^function redirect.src_zone(self)$/;"	f
+redirectApply	./luci/controller/api/xqnetwork.lua	/^function redirectApply()$/;"	f
+redirectUrl	./luci/controller/api/xqsystem.lua	/^function redirectUrl()$/;"	f
+reg	./ssl/https.lua	/^local function reg(conn)$/;"	f
+register_pattern_virtual	./luci/model/network.lua	/^function register_pattern_virtual(self, pat)$/;"	f
+register_protocol	./luci/model/network.lua	/^function register_protocol(self, protoname)$/;"	f
+reinitIframe	./luci/view/web/netset.htm	/^	function reinitIframe(){$/;"	f
+reinitIframe	./luci/view/web/sysset.htm	/^	function reinitIframe(){$/;"	f
+reload	./xiaoqiang/module/XQDDNS.lua	/^function reload()$/;"	f
+reload	./xiaoqiang/module/XQPredownload.lua	/^function reload()$/;"	f
+reload	./xiaoqiang/util/XQQoSUtil.lua	/^function reload()$/;"	f
+reloadDMZ	./luci/controller/api/xqnetwork.lua	/^function reloadDMZ()$/;"	f
+remove	./luci/model/ipkg.lua	/^function remove(...)$/;"	f
+removeBind	./xiaoqiang/util/XQLanWanUtil.lua	/^function removeBind(mac)$/;"	f
+removePassportBindInfo	./luci/controller/api/xqsystem.lua	/^function removePassportBindInfo()$/;"	f
+remover	./nixio/fs.lua	/^function remover(src)$/;"	f
+rename_network	./luci/model/network.lua	/^function rename_network(self, old, new)$/;"	f
+rename_zone	./luci/model/firewall.lua	/^function rename_zone(self, old, new)$/;"	f
+render	./luci/template.lua	/^function render(name, scope)$/;"	f
+renewToken	./luci/controller/api/xqsystem.lua	/^function renewToken()$/;"	f
+request	./ssl/https.lua	/^function request(url, body)$/;"	f
+request	./xiaoqiang/util/XQCameraUtil.lua	/^function request(payload)$/;"	f
+request	./xiaoqiang/util/XQMitvUtil.lua	/^function  request(payload)$/;"	f
+request 	./socket/http.lua	/^request = socket.protect(function(reqt, body)$/;"	f
+requestCamera	./luci/controller/api/xqsmarthome.lua	/^function requestCamera()$/;"	f
+requestDatacenter	./luci/controller/service/datacenter.lua	/^function requestDatacenter(payload)$/;"	f
+requestMitv	./luci/controller/api/xqsmarthome.lua	/^function requestMitv()$/;"	f
+request_yeelink	./xiaoqiang/util/XQZigbeeUtil.lua	/^function request_yeelink(payload)$/;"	f
+reset	./luci/controller/api/xqsystem.lua	/^function reset()$/;"	f
+resetPanel	./luci/view/web/plugins/kuaipan.htm	/^		function resetPanel() {$/;"	f
+reset_window	./luci/view/web/inc/reboot.js.htm	/^function reset_window(format){$/;"	f
+restart	./xiaoqiang/module/XQPortForward.lua	/^function restart()$/;"	f
+restore_data	./luci/util.lua	/^function restore_data(str)$/;"	f
+return (t	./json.lua	/^  return (t=='string' or t=='boolean' or t=='number' or t=='nil' or t=='table') or (t=='function' and o==null) $/;"	f
+return string.byte(string.dump(function() end), 7) 	./luci/util.lua	/^    return string.byte(string.dump(function() end), 7) == 0$/;"	f
+rewrite	./luci/dispatcher.lua	/^function rewrite(n, ...)$/;"	f
+routerAdminList	./luci/controller/api/xqpassport.lua	/^function routerAdminList()$/;"	f
+routerRegister	./luci/controller/api/xqpassport.lua	/^function routerRegister()$/;"	f
+routerRegister	./xiaoqiang/util/XQNetUtil.lua	/^function routerRegister(uuid)$/;"	f
+rule.__init__	./luci/model/firewall.lua	/^function rule.__init__(self, f)$/;"	f
+rule.dest	./luci/model/firewall.lua	/^function rule.dest(self)$/;"	f
+rule.dest_zone	./luci/model/firewall.lua	/^function rule.dest_zone(self)$/;"	f
+rule.get	./luci/model/firewall.lua	/^function rule.get(self, opt)$/;"	f
+rule.set	./luci/model/firewall.lua	/^function rule.set(self, opt, val)$/;"	f
+rule.src	./luci/model/firewall.lua	/^function rule.src(self)$/;"	f
+rule.src_zone	./luci/model/firewall.lua	/^function rule.src_zone(self)$/;"	f
+rule_dest_txt	./luci/model/cbi/firewall/rules.lua	/^local function rule_dest_txt(self, s)$/;"	f
+rule_proto_txt	./luci/model/cbi/firewall/rules.lua	/^local function rule_proto_txt(self, s)$/;"	f
+rule_src_txt	./luci/model/cbi/firewall/rules.lua	/^local function rule_src_txt(self, s)$/;"	f
+run	./luci/sgi/cgi.lua	/^function run()$/;"	f
+runNow	./xiaoqiang/util/XQCameraUtil.lua	/^function runNow()$/;"	f
+s.create	./luci/model/cbi/firewall/forwards.lua	/^function s.create(self, section)$/;"	f
+s.create	./luci/model/cbi/firewall/rules.lua	/^function s.create(self, section)$/;"	f
+s.create	./luci/model/cbi/firewall/zones.lua	/^function s.create(self)$/;"	f
+s.filter	./luci/model/cbi/firewall/forwards.lua	/^function s.filter(self, sid)$/;"	f
+s.filter	./luci/model/cbi/firewall/rules.lua	/^function s.filter(self, sid)$/;"	f
+s.parse	./luci/model/cbi/firewall/forwards.lua	/^function s.parse(self, ...)$/;"	f
+s.parse	./luci/model/cbi/firewall/rules.lua	/^function s.parse(self, ...)$/;"	f
+s.remove	./luci/model/cbi/firewall/zones.lua	/^function s.remove(self, section)$/;"	f
+s.try 	./socket/smtp.lua	/^    s.try = socket.newtry(function()$/;"	f
+safe_continue	./luci/view/web/safeurl.htm	/^            function safe_continue (){$/;"	f
+sane	./luci/sauth.lua	/^function sane(file)$/;"	f
+sane	./xiaoqiang/util/XQSecureUtil.lua	/^function sane(file)$/;"	f
+save	./luci/model/firewall.lua	/^function save(self, ...)$/;"	f
+save	./luci/model/network.lua	/^function save(self, ...)$/;"	f
+saveBind	./luci/controller/api/xqnetwork.lua	/^function saveBind()$/;"	f
+saveBindInfo	./xiaoqiang/util/XQLanWanUtil.lua	/^function saveBindInfo()$/;"	f
+saveCache	./xiaoqiang/util/XQCacheUtil.lua	/^function saveCache(key, data, expire)$/;"	f
+saveCiphertextPwd	./xiaoqiang/util/XQSecureUtil.lua	/^function saveCiphertextPwd(user, ciphertext)$/;"	f
+saveDeviceInfo	./xiaoqiang/util/XQDBUtil.lua	/^function saveDeviceInfo(mac,oName,nickname,company,ownnerId)$/;"	f
+saveDeviceName	./xiaoqiang/util/XQDeviceUtil.lua	/^function saveDeviceName(mac,name)$/;"	f
+savePassport	./xiaoqiang/util/XQDBUtil.lua	/^function savePassport(uuid,token,stoken,sid,ssecurity)$/;"	f
+savePlaintextPwd	./xiaoqiang/util/XQSecureUtil.lua	/^function savePlaintextPwd(user, plaintext)$/;"	f
+saveUserInfo	./xiaoqiang/util/XQDBUtil.lua	/^function saveUserInfo(uuid,name,iconUrl)$/;"	f
+self.filehandler 	./luci/http.lua	/^    self.filehandler = function() end$/;"	f
+send	./luci/sgi/uhttpd.lua	/^	local function send(...)$/;"	f
+send 	./socket/smtp.lua	/^send = socket.protect(function(mailt)$/;"	f
+send_headers	./socket/smtp.lua	/^local function send_headers(headers)$/;"	f
+send_message	./socket/smtp.lua	/^function send_message(mesgt)$/;"	f
+send_multipart	./socket/smtp.lua	/^local function send_multipart(mesgt)$/;"	f
+send_source	./socket/smtp.lua	/^local function send_source(mesgt)$/;"	f
+send_string	./socket/smtp.lua	/^local function send_string(mesgt)$/;"	f
+sendc	./luci/sgi/uhttpd.lua	/^	local function sendc(...)$/;"	f
+serialize_data	./luci/util.lua	/^function serialize_data(val) $/;"	f
+serverSwitch	./luci/controller/api/xqnetwork.lua	/^function serverSwitch()$/;"	f
+set	./xiaoqiang/XQPreference.lua	/^function set(key, value, config)$/;"	f
+setAllConfig	./xiaoqiang/util/XQCameraUtil.lua	/^function setAllConfig(did,cfg)$/;"	f
+setAllWifi	./luci/controller/api/xqnetwork.lua	/^function setAllWifi()$/;"	f
+setAppLimit	./luci/controller/api/xqsystem.lua	/^function setAppLimit()$/;"	f
+setBand	./luci/controller/api/xqnetwork.lua	/^function setBand()$/;"	f
+setBandWidth	./luci/view/web/setting/qos_pro.htm	/^	function setBandWidth( e ){$/;"	f
+setBindUUID	./xiaoqiang/util/XQSysUtil.lua	/^function setBindUUID(uuid)$/;"	f
+setBindUserInfo	./xiaoqiang/util/XQSysUtil.lua	/^function setBindUserInfo(userInfo)$/;"	f
+setConfig	./xiaoqiang/util/XQCameraUtil.lua	/^function setConfig(did,config)$/;"	f
+setConfigInfo	./luci/controller/service/datacenter.lua	/^function setConfigInfo()$/;"	f
+setCurrentCountryCode	./xiaoqiang/XQCountryCode.lua	/^function setCurrentCountryCode()$/;"	f
+setDMZ	./luci/controller/api/xqnetwork.lua	/^function setDMZ()$/;"	f
+setDMZ	./xiaoqiang/module/XQDMZModule.lua	/^function setDMZ(mode, destip, destmac)$/;"	f
+setDdns	./xiaoqiang/module/XQDDNS.lua	/^function setDdns(id, enable, username, password, checkinterval, forceinterval, domain)$/;"	f
+setDetectionTimestamp	./xiaoqiang/util/XQSysUtil.lua	/^function setDetectionTimestamp()$/;"	f
+setDeviceNickName	./luci/controller/api/xqsystem.lua	/^function setDeviceNickName()$/;"	f
+setGuestWifi	./xiaoqiang/module/XQGuestWifi.lua	/^function setGuestWifi(wifiIndex, ssid, encryption, key, enabled, open)$/;"	f
+setGuestWifi	./xiaoqiang/util/XQWifiUtil.lua	/^function setGuestWifi(wifiIndex, ssid, encryption, key, enabled, open)$/;"	f
+setInited	./luci/controller/api/xqsystem.lua	/^function setInited()$/;"	f
+setInited	./xiaoqiang/util/XQSysUtil.lua	/^function setInited()$/;"	f
+setKuaipan	./xiaoqiang/util/XQQoSUtil.lua	/^function setKuaipan(maxdownload, maxupload)$/;"	f
+setLanDHCPService	./xiaoqiang/util/XQLanWanUtil.lua	/^function setLanDHCPService(startReq,endReq,leasetime,ignore)$/;"	f
+setLanDhcp	./luci/controller/api/xqnetwork.lua	/^function setLanDhcp()$/;"	f
+setLanIp	./luci/controller/api/xqnetwork.lua	/^function setLanIp()$/;"	f
+setLanIp	./xiaoqiang/util/XQLanWanUtil.lua	/^function setLanIp(ip,mask)$/;"	f
+setLang	./luci/controller/api/xqsystem.lua	/^function setLang()$/;"	f
+setLang	./xiaoqiang/util/XQSysUtil.lua	/^function setLang(lang)$/;"	f
+setMacFilter	./luci/controller/api/xqsystem.lua	/^function setMacFilter()$/;"	f
+setMacFilter	./xiaoqiang/util/XQSysUtil.lua	/^function setMacFilter(mac,lan,wan,admin,pridisk)$/;"	f
+setMacfilterMode	./luci/controller/api/xqsystem.lua	/^function setMacfilterMode()$/;"	f
+setMacfilterMode	./xiaoqiang/util/XQSysUtil.lua	/^function setMacfilterMode(filter,mode)$/;"	f
+setNetMode	./xiaoqiang/common/XQFunction.lua	/^function setNetMode(mode)$/;"	f
+setPassportBound	./luci/controller/api/xqsystem.lua	/^function setPassportBound()$/;"	f
+setPassportBound	./xiaoqiang/util/XQSysUtil.lua	/^function setPassportBound(bind,uuid)$/;"	f
+setPassword	./luci/controller/api/xqsystem.lua	/^function setPassword()$/;"	f
+setPermission	./xiaoqiang/util/XQSDKUtil.lua	/^function setPermission(mac, permission)$/;"	f
+setPortForward	./xiaoqiang/module/XQPortForward.lua	/^function setPortForward(name, ip, sport, dport, proto)$/;"	f
+setPriority	./xiaoqiang/module/XQPredownload.lua	/^function setPriority(priority)$/;"	f
+setQosBand	./xiaoqiang/util/XQQoSUtil.lua	/^function setQosBand(upload, download)$/;"	f
+setRangePortForward	./xiaoqiang/module/XQPortForward.lua	/^function setRangePortForward(name, ip, fport, tport, proto)$/;"	f
+setRouter	./luci/controller/api/xqsystem.lua	/^function setRouter()$/;"	f
+setRouterName	./luci/controller/api/xqsystem.lua	/^function setRouterName()$/;"	f
+setRouterName	./xiaoqiang/util/XQSysUtil.lua	/^function setRouterName(routerName)$/;"	f
+setRouterNamePending	./xiaoqiang/util/XQSysUtil.lua	/^function setRouterNamePending(pending)$/;"	f
+setSPwd	./xiaoqiang/util/XQSysUtil.lua	/^function setSPwd()$/;"	f
+setSysPassword	./xiaoqiang/util/XQSysUtil.lua	/^function setSysPassword(newPassword)$/;"	f
+setSysPasswordDefault	./xiaoqiang/util/XQSysUtil.lua	/^function setSysPasswordDefault()$/;"	f
+setTxpwr	./luci/view/web/setting/wifi_txpwr.htm	/^	function setTxpwr(root, data){$/;"	f
+setVpn	./luci/controller/api/xqsystem.lua	/^function setVpn()$/;"	f
+setVpn	./xiaoqiang/util/XQVPNUtil.lua	/^function setVpn(interface, server, username, password, proto, auto)$/;"	f
+setWan	./luci/controller/api/xqnetwork.lua	/^function setWan()$/;"	f
+setWanAccess	./luci/controller/service/datacenter.lua	/^function setWanAccess()$/;"	f
+setWanMac	./luci/controller/api/xqnetwork.lua	/^function setWanMac()$/;"	f
+setWanMac	./xiaoqiang/util/XQLanWanUtil.lua	/^function setWanMac(mac)$/;"	f
+setWanPPPoE	./xiaoqiang/util/XQLanWanUtil.lua	/^function setWanPPPoE(name, password, dns1, dns2, peerdns, mtu, service)$/;"	f
+setWanStaticOrDHCP	./xiaoqiang/util/XQLanWanUtil.lua	/^function setWanStaticOrDHCP(ipType, ip, mask, gw, dns1, dns2, peerdns, mtu)$/;"	f
+setWiFiMacfilterModel	./xiaoqiang/util/XQWifiUtil.lua	/^function setWiFiMacfilterModel(enable, model)$/;"	f
+setWifi	./luci/controller/api/xqnetwork.lua	/^function setWifi()$/;"	f
+setWifiBasicInfo	./xiaoqiang/util/XQWifiUtil.lua	/^function setWifiBasicInfo(wifiIndex, ssid, password, encryption, channel, txpwr, hidden, on, bandwidth)$/;"	f
+setWifiBridge	./xiaoqiang/util/XQWifiUtil.lua	/^function setWifiBridge(wifiIndex, ssid, password, encryption)$/;"	f
+setWifiBridgedClient	./xiaoqiang/util/XQWifiUtil.lua	/^function setWifiBridgedClient(wifiIndex,ssid,encryption,key,channel)$/;"	f
+setWifiChTx	./luci/controller/api/xqnetwork.lua	/^function setWifiChTx()$/;"	f
+setWifiChannelTxpwr	./xiaoqiang/util/XQWifiUtil.lua	/^function setWifiChannelTxpwr(channel1,txpwr1,channel2,txpwr2)$/;"	f
+setWifiMacfilter	./luci/controller/api/xqnetwork.lua	/^function setWifiMacfilter()$/;"	f
+setWifiTxpwr	./luci/controller/api/xqnetwork.lua	/^function setWifiTxpwr()$/;"	f
+setWifiTxpwr	./xiaoqiang/util/XQWifiUtil.lua	/^function setWifiTxpwr(txpwr)$/;"	f
+setXunlei	./xiaoqiang/util/XQQoSUtil.lua	/^function setXunlei(maxdownload, maxupload)$/;"	f
+setfilehandler	./luci/http.lua	/^function setfilehandler(callback)$/;"	f
+setlanguage	./luci/i18n.lua	/^function setlanguage(lang)$/;"	f
+sget	./socket/ftp.lua	/^local function sget(u)$/;"	f
+sha1	./sha1.lua	/^function sha1(msg)$/;"	f
+sha1	./xiaoqiang/util/XQCryptoUtil.lua	/^function sha1(message)$/;"	f
+sha1Binary	./xiaoqiang/util/XQCryptoUtil.lua	/^function sha1Binary(message)$/;"	f
+sha1_binary	./sha1.lua	/^function sha1_binary(msg)$/;"	f
+sha256Str	./xiaoqiang/util/XQCryptoUtil.lua	/^function sha256Str(str)$/;"	f
+shouldreceivebody	./socket/http.lua	/^local function shouldreceivebody(reqt, code)$/;"	f
+shouldredirect	./socket/http.lua	/^local function shouldredirect(reqt, code, headers)$/;"	f
+showLogindInfo	./luci/view/web/plugins/kuaipan.htm	/^		function showLogindInfo(data) {$/;"	f
+showUserSpace	./luci/view/web/plugins/kuaipan.htm	/^		function  showUserSpace() {$/;"	f
+shutDownWifi	./luci/controller/api/xqnetwork.lua	/^function shutDownWifi()$/;"	f
+shutdown	./luci/controller/api/xqsystem.lua	/^function shutdown()$/;"	f
+shutdown	./luci/view/web/setting/wifi_set_mini.htm	/^	function shutdown (){$/;"	f
+shutdown_window	./luci/view/web/inc/reboot.js.htm	/^function shutdown_window(){$/;"	f
+sink 	./luci/http/protocol.lua	/^			sink = function( chunk, err )$/;"	f
+sink.chain	./ltn12.lua	/^function sink.chain(f, snk)$/;"	f
+sink.chain	./luci/ltn12.lua	/^function sink.chain(f, snk)$/;"	f
+sink.error	./ltn12.lua	/^function sink.error(err)$/;"	f
+sink.error	./luci/ltn12.lua	/^function sink.error(err)$/;"	f
+sink.file	./ltn12.lua	/^function sink.file(handle, io_err)$/;"	f
+sink.file	./luci/ltn12.lua	/^function sink.file(handle, io_err)$/;"	f
+sink.null	./ltn12.lua	/^function sink.null()$/;"	f
+sink.null	./luci/ltn12.lua	/^function sink.null()$/;"	f
+sink.simplify	./ltn12.lua	/^function sink.simplify(snk)$/;"	f
+sink.simplify	./luci/ltn12.lua	/^function sink.simplify(snk)$/;"	f
+sink.table	./ltn12.lua	/^function sink.table(t)$/;"	f
+sink.table	./luci/ltn12.lua	/^function sink.table(t)$/;"	f
+sinkt["close-when-done"] 	./socket.lua	/^sinkt["close-when-done"] = function(sock)$/;"	f
+sinkt["keep-open"] 	./socket.lua	/^sinkt["keep-open"] = function(sock)$/;"	f
+smartShutdown	./luci/controller/api/xqsystem.lua	/^function smartShutdown()$/;"	f
+snat.cfgvalue	./luci/model/cbi/firewall/rules.lua	/^function snat.cfgvalue(self, s)$/;"	f
+snat_dest_txt	./luci/model/cbi/firewall/rules.lua	/^local function snat_dest_txt(self, s)$/;"	f
+snk	./luci/http/protocol.lua	/^	local function snk( chunk )$/;"	f
+socket.sinkt["http-chunked"] 	./socket/http.lua	/^socket.sinkt["http-chunked"] = function(sock)$/;"	f
+socket.sourcet["http-chunked"] 	./socket/http.lua	/^socket.sourcet["http-chunked"] = function(sock, headers)$/;"	f
+source	./luci/http.lua	/^function source()$/;"	f
+source.cat	./ltn12.lua	/^function source.cat(...)$/;"	f
+source.cat	./luci/ltn12.lua	/^function source.cat(...)$/;"	f
+source.chain	./ltn12.lua	/^function source.chain(src, f)$/;"	f
+source.chain	./luci/ltn12.lua	/^function source.chain(src, f)$/;"	f
+source.empty	./ltn12.lua	/^function source.empty()$/;"	f
+source.empty	./luci/ltn12.lua	/^function source.empty()$/;"	f
+source.error	./ltn12.lua	/^function source.error(err)$/;"	f
+source.error	./luci/ltn12.lua	/^function source.error(err)$/;"	f
+source.file	./ltn12.lua	/^function source.file(handle, io_err)$/;"	f
+source.file	./luci/ltn12.lua	/^function source.file(handle, io_err)$/;"	f
+source.rewind	./ltn12.lua	/^function source.rewind(src)$/;"	f
+source.rewind	./luci/ltn12.lua	/^function source.rewind(src)$/;"	f
+source.simplify	./ltn12.lua	/^function source.simplify(src)$/;"	f
+source.simplify	./luci/ltn12.lua	/^function source.simplify(src)$/;"	f
+source.string	./ltn12.lua	/^function source.string(s)$/;"	f
+source.string	./luci/ltn12.lua	/^function source.string(s)$/;"	f
+sourcet["by-length"] 	./socket.lua	/^sourcet["by-length"] = function(sock, length)$/;"	f
+sourcet["until-closed"] 	./socket.lua	/^sourcet["until-closed"] = function(sock)$/;"	f
+spairs	./luci/util.lua	/^function spairs(t,f)$/;"	f
+splice	./luci/http.lua	/^function splice(fd, size)$/;"	f
+split	./luci/util.lua	/^function split(str, pat, max, regex)$/;"	f
+sput	./socket/ftp.lua	/^local function sput(u, body)$/;"	f
+srequest	./socket/http.lua	/^local function srequest(u, b)$/;"	f
+startDropbear	./luci/controller/api/xqsystem.lua	/^function startDropbear()$/;"	f
+startDropbear	./luci/view/web/setting/lamp.htm	/^	function startDropbear(){$/;"	f
+startElement	./slaxml.lua	/^    local function startElement()$/;"	f
+startElement 	./slaxdom.lua	/^        startElement = function(name,nsURI)$/;"	f
+startElement 	./slaxml.lua	/^        startElement = function(name,nsURI)$/;"	f
+startNginx	./luci/controller/api/xqsystem.lua	/^function startNginx()$/;"	f
+stat	./luci/fs.lua	/^function stat(path, key)$/;"	f
+status	./luci/http.lua	/^function status(code, message)$/;"	f
+status	./luci/model/ipkg.lua	/^function status(pkg)$/;"	f
+stopDropbear	./luci/controller/api/xqsystem.lua	/^function stopDropbear()$/;"	f
+stopDropbear	./luci/view/web/setting/lamp.htm	/^	function stopDropbear(){$/;"	f
+stopListenStatus	./luci/view/web/setting/vpn.htm	/^	function stopListenStatus(){$/;"	f
+stopNginx	./luci/controller/api/xqsystem.lua	/^function stopNginx()$/;"	f
+stopWps	./luci/controller/api/xqsystem.lua	/^function stopWps()$/;"	f
+stopWps	./xiaoqiang/util/XQWifiUtil.lua	/^function stopWps()$/;"	f
+store 	./luci/http/protocol.lua	/^				store = function( hdr, buf, eof )$/;"	f
+string	./luci/cbi/datatypes.lua	/^function string(val)$/;"	f
+string	./luci/i18n.lua	/^function string(key)$/;"	f
+string.gsub(s, "(%w+)	./xssFilter.lua	/^         string.gsub(s, "(%w+)=([\\"'])(.-)%2", function (w, _, a)$/;"	f
+stringf	./luci/i18n.lua	/^function stringf(key, ...)$/;"	f
+strip_bytecode	./luci/util.lua	/^function strip_bytecode(code)$/;"	f
+strip_function	./luci/util.lua	/^    local function strip_function(code)$/;"	f
+striptags	./luci/util.lua	/^function striptags(value)$/;"	f
+stuff	./mime.lua	/^function stuff()$/;"	f
+subint 	./luci/util.lua	/^        subint = function(code, i, l)$/;"	f
+swapIndicies	./rc4.lua	/^local function swapIndicies(sch, i, j)$/;"	f
+swapStateIndicies	./rc4.lua	/^local function swapStateIndicies(state)$/;"	f
+switch	./xiaoqiang/module/XQPredownload.lua	/^function switch(on)$/;"	f
+switchUPnP	./xiaoqiang/util/XQUPnPUtil.lua	/^function switchUPnP(enable)$/;"	f
+switch_status	./luci/tools/status.lua	/^function switch_status(devs)$/;"	f
+syncDownload	./xiaoqiang/util/XQDownloadUtil.lua	/^function syncDownload(downloadUrl, priority, smart)$/;"	f
+syncRestartMacFilter	./xiaoqiang/common/XQFunction.lua	/^function syncRestartMacFilter()$/;"	f
+sysLock	./xiaoqiang/common/XQFunction.lua	/^function sysLock()$/;"	f
+sysLockStatus	./xiaoqiang/common/XQFunction.lua	/^function sysLockStatus()$/;"	f
+sysRecovery	./luci/controller/api/xqsystem.lua	/^function sysRecovery()$/;"	f
+sysUnlock	./xiaoqiang/common/XQFunction.lua	/^function sysUnlock()$/;"	f
+sysinfo	./luci/sys.lua	/^function sysinfo()$/;"	f
+syslog	./luci/sys.lua	/^function syslog()$/;"	f
+systemDiagnostics	./luci/controller/api/xqnetdetect.lua	/^function systemDiagnostics()$/;"	f
+systemStatus	./luci/controller/api/xqnetdetect.lua	/^function systemStatus()$/;"	f
+tSession[sFuncName] 	./rc4.lua	/^    tSession[sFuncName] = function(sMessage)$/;"	f
+table.foreach(params, function(k, v) data 	./xiaoqiang/util/XQNetUtil.lua	/^    table.foreach(params, function(k, v) data = data..v[1].."="..v[2].."&" end)$/;"	f
+table.foreach(params, function(k, v) query[v[1]] 	./xiaoqiang/util/XQNetUtil.lua	/^    table.foreach(params, function(k, v) query[v[1]] = v[2] end)$/;"	f
+table.foreach(params, function(k, v) str 	./xiaoqiang/util/XQNetUtil.lua	/^        table.foreach(params, function(k, v) str = str..v[1].."="..v[2].."&" end)$/;"	f
+table.foreach(params, function(k, v) str 	./xiaoqiang/util/XQNetUtil.lua	/^    table.foreach(params, function(k, v) str = str..v[1].."="..v[2].."&" end)$/;"	f
+target.cfgvalue	./luci/model/cbi/firewall/rules.lua	/^function target.cfgvalue(self, s)$/;"	f
+tcp	./ssl/https.lua	/^local function tcp(params)$/;"	f
+template	./luci/dispatcher.lua	/^function template(name)$/;"	f
+text 	./slaxdom.lua	/^        text = function(value)$/;"	f
+text 	./slaxml.lua	/^        text = function(text)$/;"	f
+tget	./socket/ftp.lua	/^local function tget(gett)$/;"	f
+threadlocal	./luci/util.lua	/^function threadlocal(tbl)$/;"	f
+thrift_to_mqtt_get_deviceid	./xiaoqiang/common/XQFunction.lua	/^function thrift_to_mqtt_get_deviceid()$/;"	f
+thrift_to_mqtt_get_sn	./xiaoqiang/common/XQFunction.lua	/^function thrift_to_mqtt_get_sn()$/;"	f
+thrift_to_mqtt_identify_device	./xiaoqiang/common/XQFunction.lua	/^function thrift_to_mqtt_identify_device()$/;"	f
+thrift_tunnel_to_datacenter	./xiaoqiang/common/XQFunction.lua	/^function thrift_tunnel_to_datacenter(payload)$/;"	f
+thrift_tunnel_to_smarthome_controller	./xiaoqiang/common/XQFunction.lua	/^function thrift_tunnel_to_smarthome_controller(payload)$/;"	f
+tls_socket.close	./nixio/util.lua	/^	function tls_socket.close(self)$/;"	f
+tls_socket.getpeername	./nixio/util.lua	/^	function tls_socket.getpeername(self)$/;"	f
+tls_socket.getsockname	./nixio/util.lua	/^	function tls_socket.getsockname(self)$/;"	f
+tls_socket.getsockopt	./nixio/util.lua	/^	function tls_socket.getsockopt(self, ...)$/;"	f
+tls_socket.setsockopt	./nixio/util.lua	/^	function tls_socket.setsockopt(self, ...)$/;"	f
+to_ext	./luci/http/protocol/mime.lua	/^function to_ext(mimetype)$/;"	f
+to_http	./luci/http/protocol/date.lua	/^function to_http(time)$/;"	f
+to_mime	./luci/http/protocol/mime.lua	/^function to_mime(filename)$/;"	f
+to_unix	./luci/http/protocol/date.lua	/^function to_unix(date)$/;"	f
+tostring	./logging.lua	/^local function tostring(value)$/;"	f
+tput	./socket/ftp.lua	/^local function tput(putt)$/;"	f
+tr	./luci/tools/firewall.lua	/^local function tr(...)$/;"	f
+trafficd_lua_done	./traffic.lua	/^function trafficd_lua_done()$/;"	f
+translate	./luci/i18n.lua	/^function translate(key)$/;"	f
+translatef	./luci/i18n.lua	/^function translatef(key, ...)$/;"	f
+trap	./luci/debug.lua	/^	local function trap(what, line)$/;"	f
+trap_memtrace	./luci/debug.lua	/^function trap_memtrace(flags, dest)$/;"	f
+tredirect	./socket/http.lua	/^function tredirect(reqt, location)$/;"	f
+trequest	./socket/http.lua	/^function trequest(reqt)$/;"	f
+trim	./luci/util.lua	/^function trim(str)$/;"	f
+tunnelMiioRequest	./luci/controller/api/xqsmarthome.lua	/^function tunnelMiioRequest()$/;"	f
+tunnelRequest	./luci/controller/api/xqdatacenter.lua	/^function tunnelRequest()$/;"	f
+tunnelRequest	./luci/controller/api/xqtunnel.lua	/^function tunnelRequest()$/;"	f
+tunnelRequestDatacenter	./luci/controller/service/datacenter.lua	/^function tunnelRequestDatacenter(payload)$/;"	f
+tunnelSmartControllerRequest	./luci/controller/api/xqsmarthome.lua	/^function tunnelSmartControllerRequest()$/;"	f
+tunnelSmartHomeRequest	./luci/controller/api/xqsmarthome.lua	/^function tunnelSmartHomeRequest()$/;"	f
+tunnelYeelink	./luci/controller/api/xqsmarthome.lua	/^function tunnelYeelink()$/;"	f
+turnOnWifi	./luci/controller/api/xqnetwork.lua	/^function turnOnWifi()$/;"	f
+turnWifiOff	./xiaoqiang/util/XQWifiUtil.lua	/^function turnWifiOff(wifiIndex)$/;"	f
+turnWifiOn	./xiaoqiang/util/XQWifiUtil.lua	/^function turnWifiOn(wifiIndex)$/;"	f
+tz_offset	./luci/http/protocol/date.lua	/^function tz_offset(tz)$/;"	f
+ubusWanStatus	./xiaoqiang/util/XQLanWanUtil.lua	/^function ubusWanStatus()$/;"	f
+uciname	./luci/cbi/datatypes.lua	/^function uciname(val)$/;"	f
+ufloat	./luci/cbi/datatypes.lua	/^function ufloat(val)$/;"	f
+uinteger	./luci/cbi/datatypes.lua	/^function uinteger(val)$/;"	f
+umountThings	./luci/controller/api/xqsystem.lua	/^function umountThings()$/;"	f
+unbind	./luci/view/web/setting/sys_psp.htm	/^		function unbind(){$/;"	f
+unbindAll	./luci/controller/api/xqnetwork.lua	/^function unbindAll()$/;"	f
+unbindAll	./xiaoqiang/util/XQLanWanUtil.lua	/^function unbindAll()$/;"	f
+unbindallmac	./luci/view/web/setting/net_ipmacband.htm	/^        function unbindallmac(){$/;"	f
+unboundRouter	./luci/controller/api/xqpassport.lua	/^function unboundRouter()$/;"	f
+unescape	./slaxml.lua	/^    local function unescape(str) return gsub( str, '(&(#?)([%d%a]+);)', entitySwap ) end$/;"	f
+unescape	./socket/url.lua	/^function unescape(s)$/;"	f
+uniqueid	./luci/sys.lua	/^function uniqueid(bytes)$/;"	f
+unsetDMZ	./xiaoqiang/module/XQDMZModule.lua	/^function unsetDMZ(mode)$/;"	f
+update	./luci/model/ipkg.lua	/^function update()$/;"	f
+update	./luci/util.lua	/^function update(t, updates)$/;"	f
+updateDeviceCompany	./xiaoqiang/util/XQDBUtil.lua	/^function updateDeviceCompany(mac,company)$/;"	f
+updateDeviceName	./xiaoqiang/util/XQNetUtil.lua	/^function updateDeviceName(uuid,deviceName)$/;"	f
+updateDeviceNickname	./xiaoqiang/util/XQDBUtil.lua	/^function updateDeviceNickname(mac,nickname)$/;"	f
+updateDeviceOwnnerId	./xiaoqiang/util/XQDBUtil.lua	/^function updateDeviceOwnnerId(mac,ownnerId)$/;"	f
+updateUpgradeStatus	./xiaoqiang/util/XQSysUtil.lua	/^function updateUpgradeStatus(status)$/;"	f
+upgrade	./luci/model/ipkg.lua	/^function upgrade()$/;"	f
+upgradeRom	./luci/controller/api/xqsystem.lua	/^function upgradeRom()$/;"	f
+upgradeStatus	./luci/controller/api/xqsystem.lua	/^function upgradeStatus()$/;"	f
+upload	./luci/controller/api/xqdatacenter.lua	/^function upload()$/;"	f
+uploadConfig	./luci/view/web/setting/upload_config.htm	/^	function uploadConfig() {$/;"	f
+uploadConfigFile	./luci/controller/api/xqsystem.lua	/^function uploadConfigFile()$/;"	f
+uploadConfigFile	./xiaoqiang/util/XQNetUtil.lua	/^function uploadConfigFile(configfile)$/;"	f
+uploadFile	./luci/controller/service/datacenter.lua	/^function uploadFile()$/;"	f
+uploadLog	./luci/view/web/setting/log.htm	/^    function uploadLog() {$/;"	f
+uploadLogFile	./luci/controller/api/xqsystem.lua	/^function uploadLogFile()$/;"	f
+uploadLogFile	./xiaoqiang/util/XQNetUtil.lua	/^function uploadLogFile(logfile,logtype)$/;"	f
+uploadRom	./luci/controller/api/xqsystem.lua	/^function uploadRom()$/;"	f
+uploadSpeed	./luci/controller/api/xqnetdetect.lua	/^function uploadSpeed()$/;"	f
+uploadSpeedTest	./xiaoqiang/module/XQNetworkSpeedTest.lua	/^function uploadSpeedTest()$/;"	f
+upnpList	./luci/controller/api/xqsystem.lua	/^function upnpList()$/;"	f
+upnpStatus	./luci/view/web/setting/upnp.htm	/^	function upnpStatus(){$/;"	f
+upnpSwitch	./luci/controller/api/xqsystem.lua	/^function upnpSwitch()$/;"	f
+upnpSwitch	./luci/view/web/setting/upnp.htm	/^	function upnpSwitch(){$/;"	f
+uptime	./luci/sys.lua	/^function uptime()$/;"	f
+url 	./socket/url.lua	/^    url = string.gsub(url, "#(.*)$", function(f)$/;"	f
+url 	./socket/url.lua	/^    url = string.gsub(url, "%;(.*)", function(p)$/;"	f
+url 	./socket/url.lua	/^    url = string.gsub(url, "%?(.*)", function(q)$/;"	f
+url 	./socket/url.lua	/^    url = string.gsub(url, "^\/\/([^\/]*)", function(n)$/;"	f
+urlEncode	./luci/controller/service/datacenter.lua	/^function urlEncode(url)$/;"	f
+urldecode	./luci/http/protocol.lua	/^function urldecode( str, no_plus )$/;"	f
+urldecode_message_body	./luci/http/protocol.lua	/^function urldecode_message_body( src, msg )$/;"	f
+urldecode_params	./luci/http/protocol.lua	/^function urldecode_params( url, tbl )$/;"	f
+urlencode	./luci/http/protocol.lua	/^function urlencode( str )$/;"	f
+urlencode	./xiaoqiang/util/XQMitvUtil.lua	/^function urlencode(str)$/;"	f
+urlencode_params	./luci/http/protocol.lua	/^function urlencode_params( tbl )$/;"	f
+urlstring_totable	./ssl/https.lua	/^local function urlstring_totable(url, body, result_table)$/;"	f
+user.checkpasswd	./luci/sys.lua	/^function user.checkpasswd(username, pass)$/;"	f
+user.getpasswd	./luci/sys.lua	/^function user.getpasswd(username)$/;"	f
+user.setpasswd	./luci/sys.lua	/^function user.setpasswd(username, password)$/;"	f
+utime	./luci/fs.lua	/^function utime(path, mtime, atime)$/;"	f
+verifyImage	./xiaoqiang/util/XQSysUtil.lua	/^function verifyImage(filePath)$/;"	f
+verify_datatype	./luci/cbi.lua	/^function verify_datatype(dt, value)$/;"	f
+vpnInfo	./luci/controller/api/xqsystem.lua	/^function vpnInfo()$/;"	f
+vpnInfo	./luci/view/web/setting/vpn.htm	/^	function vpnInfo(){$/;"	f
+vpnStatus	./luci/controller/api/xqsystem.lua	/^function vpnStatus()$/;"	f
+vpnStatus	./luci/view/web/setting/vpn.htm	/^	function vpnStatus(){$/;"	f
+vpnStatus	./xiaoqiang/util/XQVPNUtil.lua	/^function vpnStatus()$/;"	f
+vpnSwitch	./luci/controller/api/xqsystem.lua	/^function vpnSwitch()$/;"	f
+vpnSwitch	./luci/view/web/setting/vpn.htm	/^	function vpnSwitch(){$/;"	f
+vpnSwitch	./xiaoqiang/util/XQVPNUtil.lua	/^function vpnSwitch(enable)$/;"	f
+vpnset	./luci/view/web/setting/vpn.htm	/^	function vpnset(){$/;"	f
+vspairs	./luci/util.lua	/^function vspairs(t)$/;"	f
+wait	./luci/view/web/inc/reboot.js.htm	/^		function wait(){$/;"	f
+wait	./luci/view/web/setting/wifi_set_mini.htm	/^	function wait(){$/;"	f
+wait	./luci/view/web/setting/wifi_set_pro.htm	/^	function wait(){$/;"	f
+wanDown	./luci/controller/api/xqnetwork.lua	/^function wanDown()$/;"	f
+wanDown	./xiaoqiang/util/XQLanWanUtil.lua	/^function wanDown()$/;"	f
+wanRestart	./xiaoqiang/util/XQLanWanUtil.lua	/^function wanRestart()$/;"	f
+wanUp	./luci/controller/api/xqnetwork.lua	/^function wanUp()$/;"	f
+wepkey	./luci/cbi/datatypes.lua	/^function wepkey(val)$/;"	f
+wgetCheckDownloadFilesize	./xiaoqiang/util/XQDownloadUtil.lua	/^function wgetCheckDownloadFilesize(url)$/;"	f
+wifi.getiwinfo	./luci/sys.lua	/^function wifi.getiwinfo(ifname)$/;"	f
+wifiBridgedClientId	./xiaoqiang/util/XQWifiUtil.lua	/^function wifiBridgedClientId()$/;"	f
+wifiNetwork	./xiaoqiang/util/XQWifiUtil.lua	/^function wifiNetwork(wifiDeviceName)$/;"	f
+wifiNetworks	./xiaoqiang/util/XQWifiUtil.lua	/^function wifiNetworks()$/;"	f
+wifiScanList	./xiaoqiang/util/XQWifiUtil.lua	/^function wifiScanList(wifiIndex)$/;"	f
+wifi_network	./luci/tools/status.lua	/^function wifi_network(id)$/;"	f
+wifi_networks	./luci/tools/status.lua	/^function wifi_networks()$/;"	f
+wifidev.__init__	./luci/model/network.lua	/^function wifidev.__init__(self, dev)$/;"	f
+wifidev.add_wifinet	./luci/model/network.lua	/^function wifidev.add_wifinet(self, options)$/;"	f
+wifidev.del_wifinet	./luci/model/network.lua	/^function wifidev.del_wifinet(self, net)$/;"	f
+wifidev.get	./luci/model/network.lua	/^function wifidev.get(self, opt)$/;"	f
+wifidev.get_i18n	./luci/model/network.lua	/^function wifidev.get_i18n(self)$/;"	f
+wifidev.get_wifinet	./luci/model/network.lua	/^function wifidev.get_wifinet(self, net)$/;"	f
+wifidev.get_wifinets	./luci/model/network.lua	/^function wifidev.get_wifinets(self)$/;"	f
+wifidev.hwmodes	./luci/model/network.lua	/^function wifidev.hwmodes(self)$/;"	f
+wifidev.is_up	./luci/model/network.lua	/^function wifidev.is_up(self)$/;"	f
+wifidev.name	./luci/model/network.lua	/^function wifidev.name(self)$/;"	f
+wifidev.set	./luci/model/network.lua	/^function wifidev.set(self, opt, val)$/;"	f
+wifinet.__init__	./luci/model/network.lua	/^function wifinet.__init__(self, net, data)$/;"	f
+wifinet.active_bssid	./luci/model/network.lua	/^function wifinet.active_bssid(self)$/;"	f
+wifinet.active_encryption	./luci/model/network.lua	/^function wifinet.active_encryption(self)$/;"	f
+wifinet.active_mode	./luci/model/network.lua	/^function wifinet.active_mode(self)$/;"	f
+wifinet.active_mode_i18n	./luci/model/network.lua	/^function wifinet.active_mode_i18n(self)$/;"	f
+wifinet.active_ssid	./luci/model/network.lua	/^function wifinet.active_ssid(self)$/;"	f
+wifinet.adminlink	./luci/model/network.lua	/^function wifinet.adminlink(self)$/;"	f
+wifinet.assoclist	./luci/model/network.lua	/^function wifinet.assoclist(self)$/;"	f
+wifinet.bitrate	./luci/model/network.lua	/^function wifinet.bitrate(self)$/;"	f
+wifinet.bssid	./luci/model/network.lua	/^function wifinet.bssid(self)$/;"	f
+wifinet.bw	./luci/model/network.lua	/^function wifinet.bw(self)$/;"	f
+wifinet.channel	./luci/model/network.lua	/^function wifinet.channel(self)$/;"	f
+wifinet.confbw	./luci/model/network.lua	/^function wifinet.confbw(self)$/;"	f
+wifinet.confchannel	./luci/model/network.lua	/^function wifinet.confchannel(self)$/;"	f
+wifinet.country	./luci/model/network.lua	/^function wifinet.country(self)$/;"	f
+wifinet.frequency	./luci/model/network.lua	/^function wifinet.frequency(self)$/;"	f
+wifinet.get	./luci/model/network.lua	/^function wifinet.get(self, opt)$/;"	f
+wifinet.get_device	./luci/model/network.lua	/^function wifinet.get_device(self)$/;"	f
+wifinet.get_i18n	./luci/model/network.lua	/^function wifinet.get_i18n(self)$/;"	f
+wifinet.get_interface	./luci/model/network.lua	/^function wifinet.get_interface(self)$/;"	f
+wifinet.get_network	./luci/model/network.lua	/^function wifinet.get_network(self)$/;"	f
+wifinet.get_networks	./luci/model/network.lua	/^function wifinet.get_networks(self)$/;"	f
+wifinet.id	./luci/model/network.lua	/^function wifinet.id(self)$/;"	f
+wifinet.ifname	./luci/model/network.lua	/^function wifinet.ifname(self)$/;"	f
+wifinet.is_up	./luci/model/network.lua	/^function wifinet.is_up(self)$/;"	f
+wifinet.mode	./luci/model/network.lua	/^function wifinet.mode(self)$/;"	f
+wifinet.name	./luci/model/network.lua	/^function wifinet.name(self)$/;"	f
+wifinet.network	./luci/model/network.lua	/^function wifinet.network(self)$/;"	f
+wifinet.noise	./luci/model/network.lua	/^function wifinet.noise(self)$/;"	f
+wifinet.set	./luci/model/network.lua	/^function wifinet.set(self, opt, val)$/;"	f
+wifinet.set_list	./luci/model/network.lua	/^function wifinet.set_list(self, opt, val)$/;"	f
+wifinet.shortname	./luci/model/network.lua	/^function wifinet.shortname(self)$/;"	f
+wifinet.signal	./luci/model/network.lua	/^function wifinet.signal(self)$/;"	f
+wifinet.signal_level	./luci/model/network.lua	/^function wifinet.signal_level(self, s, n)$/;"	f
+wifinet.signal_percent	./luci/model/network.lua	/^function wifinet.signal_percent(self)$/;"	f
+wifinet.ssid	./luci/model/network.lua	/^function wifinet.ssid(self)$/;"	f
+wifinet.txpower	./luci/model/network.lua	/^function wifinet.txpower(self)$/;"	f
+wifinet.txpower_offset	./luci/model/network.lua	/^function wifinet.txpower_offset(self)$/;"	f
+wifinet.txpwr	./luci/model/network.lua	/^function wifinet.txpwr(self)$/;"	f
+wpakey	./luci/cbi/datatypes.lua	/^function wpakey(val)$/;"	f
+wrap	./ssl.lua	/^function wrap(sock, cfg)$/;"	f
+wrapt['quoted-printable'] 	./mime.lua	/^wrapt['quoted-printable'] = function()$/;"	f
+wrapt['text'] 	./mime.lua	/^wrapt['text'] = function(length)$/;"	f
+write	./luci/http.lua	/^function write(content, src_err)$/;"	f
+write	./luci/sauth.lua	/^function write(id, data)$/;"	f
+writeJsonNoLog	./luci/http.lua	/^function writeJsonNoLog(x)$/;"	f
+writeNonce	./xiaoqiang/util/XQSecureUtil.lua	/^function writeNonce(id, data)$/;"	f
+writePID	./xiaoqiang/util/XQCameraUtil.lua	/^function writePID()$/;"	f
+write_json	./luci/http.lua	/^function write_json(x)$/;"	f
+writefile	./nixio/fs.lua	/^function writefile(path, data)$/;"	f
+xiaomiLogin	./xiaoqiang/util/XQNetUtil.lua	/^function xiaomiLogin(username,password)$/;"	f
+xml2string	./xssFilter.lua	/^   function xml2string(t)$/;"	f
+xq_urlencode_params	./luci/http/protocol.lua	/^function xq_urlencode_params( tbl )$/;"	f
+xqformvalue	./luci/http.lua	/^function xqformvalue(name, noparse)$/;"	f
+xqurlencode	./luci/http/protocol.lua	/^function xqurlencode(str)$/;"	f
+xssCheck	./xiaoqiang/util/XQSecureUtil.lua	/^function xssCheck(value)$/;"	f
+xunleiNotify	./luci/controller/service/datacenter.lua	/^function xunleiNotify()$/;"	f
+zone.__init__	./luci/model/firewall.lua	/^function zone.__init__(self, z)$/;"	f
+zone.add_forwarding_from	./luci/model/firewall.lua	/^function zone.add_forwarding_from(self, src)$/;"	f
+zone.add_forwarding_to	./luci/model/firewall.lua	/^function zone.add_forwarding_to(self, dest)$/;"	f
+zone.add_network	./luci/model/firewall.lua	/^function zone.add_network(self, net)$/;"	f
+zone.add_redirect	./luci/model/firewall.lua	/^function zone.add_redirect(self, options)$/;"	f
+zone.add_rule	./luci/model/firewall.lua	/^function zone.add_rule(self, options)$/;"	f
+zone.clear_networks	./luci/model/firewall.lua	/^function zone.clear_networks(self)$/;"	f
+zone.del_forwardings_by	./luci/model/firewall.lua	/^function zone.del_forwardings_by(self, what)$/;"	f
+zone.del_network	./luci/model/firewall.lua	/^function zone.del_network(self, net)$/;"	f
+zone.forward	./luci/model/firewall.lua	/^function zone.forward(self)$/;"	f
+zone.get	./luci/model/firewall.lua	/^function zone.get(self, opt)$/;"	f
+zone.get_color	./luci/model/firewall.lua	/^function zone.get_color(self)$/;"	f
+zone.get_forwardings_by	./luci/model/firewall.lua	/^function zone.get_forwardings_by(self, what)$/;"	f
+zone.get_networks	./luci/model/firewall.lua	/^function zone.get_networks(self)$/;"	f
+zone.input	./luci/model/firewall.lua	/^function zone.input(self)$/;"	f
+zone.masq	./luci/model/firewall.lua	/^function zone.masq(self)$/;"	f
+zone.name	./luci/model/firewall.lua	/^function zone.name(self)$/;"	f
+zone.network	./luci/model/firewall.lua	/^function zone.network(self)$/;"	f
+zone.output	./luci/model/firewall.lua	/^function zone.output(self)$/;"	f
+zone.set	./luci/model/firewall.lua	/^function zone.set(self, opt, val)$/;"	f
+}, {__index	./luci/dispatcher.lua	/^        }, {__index=function(table, key)$/;"	f

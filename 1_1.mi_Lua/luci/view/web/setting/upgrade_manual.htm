@@ -1,0 +1,139 @@
+<%
+local ver = require("xiaoqiang.XQVersion").webVersion
+local request_uri = luci.http.getenv("REQUEST_URI")
+%>
+<%include('web/inc/head')%>
+<title>小米路由器</title>
+<link rel="stylesheet" href="<%=resource%>/web/css/page.set.default.css?v=<%=ver%>" type="text/css"/>
+</head>
+<body>
+<div class="mod-setting-panel">
+	<div class="hd">
+		<h3>路由器固件手动升级</h3>
+	</div>
+	<div class="bd">
+		<div class="mod-set-upgread-manual">
+			<div class="info">
+				<p>如因故无法进行系统OTA升级，或者您需要将路由器软件降级到前一版本时，您可以使用手工方式上传并安装固件。</p>
+				<p>注意：升级过程中<em class="em">请勿断开路由器电源</em>，否则将导致路由器损坏而无法使用；升级完成后，路由器将会自动重新启动。</p>
+			</div>
+			<form class="form form-vertical" name="uploadForm" id="uploadForm" method="post" enctype="multipart/form-data" >
+				<div class="item">
+					<label class="k">请选择固件:</label>
+					<span class="v">
+						<input type="file" name="image" id="image" />
+					</span>
+					<em class="t"></em>
+				</div>
+				<div class="item item-control">
+					<button type="button" class="btn btn-primary" id="uploadFormBtn"><span>上传并安装固件</span></button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<%include('web/inc/g.js.base')%>
+<script>
+<%include("web/inc/upgrade.js")%>
+$.fn.ajaxUpload = function(options){
+	var d = new Date().getTime(),
+		iframeName = 'iframeUpload' + d,
+		iframeContents,
+		iframe = $('<iframe name="'+iframeName+'" id="'+iframeName+'" style="display: none" />');
+	$("body").append(iframe);
+
+	var form = $(this);
+	form.attr("action", options.url);
+	form.attr("method", "post");
+	form.attr("enctype", "multipart/form-data");
+	form.attr("encoding", "multipart/form-data");
+	form.attr("target", iframeName);
+	form.submit();
+
+	$(document.getElementById(iframeName))
+		.load(function () {
+			iframeContents = document.getElementById(iframeName).contentWindow.document.body.innerHTML;
+			var rsp = iframeContents.match(/^\{.*?\}/);
+			rsp = $.parseJSON(rsp[0]);
+			options.success(rsp);
+		})
+		.error(function(){
+			options.error();
+		});
+	return false;
+};
+
+$(global_event).on('start_up', function(){
+	var dlgFlashStart = window.parent.art.dialog({width: 400,title:'升级固件',content:'路由器固件升级中，请耐心等待...'}).lock();
+	var request_date = {
+		custom: 1
+	};
+	$.getJSON('<%=luci.dispatcher.build_url("api","xqsystem","flash_rom")%>',request_date,function(rsp){
+		if(rsp.code == 0){
+			$(global_event).trigger('upgread:flashCheck');
+			dlgFlashStart.close();
+		} else {
+			setTimeout("window.top.location.reload();", 3000);
+			dlgFlashStart.content(rsp.msg).time(1.5*1000);
+		}
+		$(global_event).trigger('done');
+	});
+});
+
+$(global_event).on('wait', function(evt, data){
+	$('#uploadFormBtn').prop('disabled', true).find('span').html('文件上传中...');
+	$('#image').prop('disabled', true);
+});
+$(global_event).on('done', function(evt, data){
+	$('#uploadFormBtn').prop('disabled', false).find('span').html('上传并安装固件');
+	$('#image').prop('disabled', false);
+});
+
+$('#uploadFormBtn').click(function(){
+	var image = $('#image');
+	var err = $('#uploadForm .t');
+	var item = $('#uploadForm .item').eq(0);
+	if (image.val() == '') {
+		err.html('你未选择文件，请重新选择').show();
+		item.addClass('item-err');
+		return false;
+	}
+	var val = image.val();
+	var ext = val.substring(val.lastIndexOf('.') + 1);
+	ext = $.trim(ext);
+	var validExt = ext == 'bin' || ext == 'BIN';
+	if (!validExt) {
+		err.html('文件格式错误，请重新选择').show();
+		item.addClass('item-err');
+		return false;
+	}
+	err.hide();
+	item.removeClass('item-err');
+	var options = {
+		type: 'post',
+		dataType:"json",
+		url: '<%=luci.dispatcher.build_url("api", "xqsystem","upload_rom")%>',
+		success: function(rsp) {
+			if (rsp.code == 0) {
+				$(global_event).trigger('start_up');
+			}else{
+				if (rsp.code == 403) {
+					window.top.location.reload(true);
+					return;
+				}
+				$(global_event).trigger('done');
+				$.lightalert().setContent(rsp.msg).show();
+			}
+		},
+		error: function() {
+			$(global_event).trigger('done');
+			$.lightalert().setContent('系统错误，请重试。').show();
+		}
+	};
+	$('#uploadForm').ajaxUpload(options);
+	$(global_event).trigger('wait');
+	return false;
+});
+</script>
+</body>
+</html>

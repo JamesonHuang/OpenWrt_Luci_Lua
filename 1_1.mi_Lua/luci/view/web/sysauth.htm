@@ -1,0 +1,309 @@
+<%
+    local ver = require("xiaoqiang.XQVersion").webVersion
+    local XQSysUtil = require "xiaoqiang.util.XQSysUtil"
+    -- local XQSecureUtil = require "xiaoqiang.util.XQSecureUtil"
+    if not XQSysUtil.getInitInfo() then
+        luci.http.redirect(luci.dispatcher.build_url("web", "init","hello"))
+    end
+
+    local router_name = XQSysUtil.getRouterName() or "小米路由器"
+    local isBinded = (XQSysUtil.getPassportBindInfo() and 'true') or 'false'
+    local logType = 1
+    if logtype then
+        logType = tonumber(logtype) or 1
+    end
+
+    local remote_addr = luci.http.getenv("REMOTE_ADDR")
+    local mac = luci.sys.net.ip4mac(remote_addr)
+    -- local xmLoginUrl = XQSecureUtil.passportLoginUrl()
+%>
+<%include ("web/inc/head")%>
+<title>登录 - 小米路由器</title>
+<link rel="stylesheet" href="<%=resource%>/web/css/page.login.css?v=<%=ver%>">
+<script>
+if (window.self != window.top) {
+    window.top.location.reload(true);
+}
+</script>
+</head>
+<body id="page-login">
+<div id="doc">
+    <div id="hd">
+        <div class="inner clearfix">
+            <h1 id="logo"><a href="/" title="小米路由器">小米路由器</a></h1>
+            <div class="mod-user-nav">
+                <ul>
+                    <li><a id="downloadclient" href="#downloadclient">下载客户端</a></li>
+                    <li class="div-line">|</li>
+                    <li><b><a target="_blank" href="http://www1.miwifi.com">访问官网</a></b></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="bd">
+        <div class="mod-login clearfix">
+            <div class="login-form">
+                <div class="hd tab-router">
+                    <ul class="tab-nav">
+                        <li class="disabled" data-target="tab-xiaomi">小米账号登录</li>
+                        <li data-target="tab-router">管理密码登录</li>
+                    </ul>
+                </div>
+                <div class="bd">
+                    <div class="tab-content">
+                        <div class="tab-panel">
+                            <div class="userface" style="visibility:hidden;">
+                                <img class="face img-circle">
+                                <p class="name">未知</p>
+                            </div>
+                            <form id="xmloginform" name="xmloginform" method="post" action="<%=luci.dispatcher.build_url("api", "xqpassport","login")%>" class="form-login">
+                                <div class="item">
+                                    <span class="v"><input autocomplete="off" class="text input-large" type="text" name="uuid" id="xmuuid"/></span>
+                                    <div class="t"><span class="text"></span><i class="dur"></i></div>
+                                </div>
+                                <div class="item">
+                                    <span class="v"><input autocomplete="off" placeholder="小米账号密码" class="text input-large" type="password" name="password" id="xmpassword" value="" autocomplete="off" /></span>
+                                    <div class="t"><span class="text"></span><i class="dur"></i></div>
+                                </div>
+                                <div class="item item-control">
+                                    <label class="l js-checkbox"><span class="input-checkbox"><input name="remember" id="remember" type="checkbox"></span> 两周内自动登录</label>
+                                    <span class="r"><a target="_blank" href="https://account.xiaomi.com/pass/forgetPassword">忘记密码？</a></span>
+                                </div>
+                                <div class="item item-control">
+                                    <button type="submit" id="btnXmSubmit" class="btn btn-primary btn-block" disabled="disabled"><span>登录</span></button>
+                                </div>
+                            </form>
+                            <!-- <a href="<%=xmLoginUrl%>" class="btn btn-primary btn-block"><span>用小米帐号登录</span></a> -->
+                        </div>
+                        <div class="tab-panel tab-panel-active">
+                            <div class="userface">
+                                <img src="<%=resource%>/web/img/tmp/face_rt.png" alt="" class="face img-circle">
+                                <p class="name" id="routername"></p>
+                            </div>
+                            <form id="rtloginform" name="rtloginform" method="post" action="<%=luci.dispatcher.build_url("api", "xqsystem", "login")%>" class="form-login">
+                                <input type="hidden" name="username" value="admin" />
+                                <input type="hidden" name="logtype" value="2">
+                                <div class="item">
+                                    <span class="v"><input placeholder="请输入管理密码" class="text input-large" type="password" name="password" id="rtpassword" value=""/></span>
+                                    <div class="t"> <span class="text"></span><i class="dur"></i></div>
+                                </div>
+                                <div class="item item-control">
+                                    <button type="submit" id="btnRtSubmit" class="btn btn-primary btn-block" disabled="disabled"><span>登录</span></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="ft"></div>
+            </div>
+        </div>
+    </div>
+    <%include ("web/inc/footermini")%>
+</div>
+<%include ("web/inc/g.js.base")%>
+<!--
+<script src="<%=resource%>/web/js/jquery.cors.js?v=<%=ver%>"></script>
+-->
+<script>
+$(function(){
+    $('#btnRtSubmit, #btnXmSubmit').prop('disabled', false);
+    $('#routername').html(StringH.encode4Html('<%=router_name%>'));
+    var ModelLogin = (function(){
+        var root = $('.login-form'),
+            tab = $('.tab-nav li', root),
+            hd = $('.hd', root),
+            tabPanel = $('.tab-panel', root),
+            active = 'tab-panel-active',
+            tabActiveClass = ['tab-xiaomi','tab-router'],
+            index,
+            tabActive,
+            isBinded = <%=isBinded%>,
+            logtype = <%=logType%>,
+            tabEvent = function(){
+                tab.removeClass('disabled');
+                tab.on('click', function(e){
+                    index = $(this).index();
+                    tabActive = $(this).attr('data-target');
+                    tabPanel.removeClass(active);
+                    tabPanel.eq(index).addClass(active);
+                    hd[0].className = 'hd '+tabActive;
+                });
+            },
+            switchTo = function(index){
+                tabActive = tabActiveClass[index];
+                tabPanel.removeClass(active);
+                tabPanel.eq(index).addClass(active);
+                hd[0].className = 'hd '+tabActive;
+            },
+            randerXiaomi = function(info){
+                var face = '<%=resource%>/web/img/tmp/face.png',
+                    uuid = info.userId,
+                    iconUrl = info.miliaoIcon == '' ? face : info.miliaoIconOrig,
+                    nickname = info.aliasNick == '' ? uuid : StringH.encode4Html(info.aliasNick),
+                    elFace = $('.userface img',tabPanel[0]),
+                    elName = $('.userface .name',tabPanel[0]),
+                    formUuid = $('#xmuuid'),
+                    formPwd = $('#xmpassword');
+                elFace.attr('src',iconUrl);
+                elName.html(nickname);
+                formUuid.val(uuid).prop('readOnly',true);
+                $('.userface',tabPanel[0]).css({visibility:'visible'});
+            },
+            hasXiaomi = function(){
+                if (isBinded) {
+                    tabEvent();
+                    $.getJSON('<%=luci.dispatcher.build_url("api", "xqpassport","binded")%>',{"force":1},function(rsp){
+                        if (rsp.code == 0) {
+                            randerXiaomi(rsp.info);
+                        }
+                    });
+                    switchTo(parseInt(logtype, 10) - 1);
+                }
+            },
+            formEvent = function(){
+                //路由器登录
+                $('#rtloginform').on('submit',function(e){
+                    e.preventDefault();
+                    var frm = this.name,
+                        that = this;
+                    var validator = FormValidator.checkAll(frm, [{
+                            name: 'password',
+                            display :'密码',
+                            rules: 'required'
+                        }]);
+                    if (validator) {
+                        $('#btnRtSubmit').prop('disabled', true).find('span').html('登录中...');
+                        var param = $(this).serializeArray();
+                        var pwd = $('#rtpassword').val();
+
+                        global_event.crypto.init();
+                        var oldPwd = global_event.crypto.oldPwd(pwd);
+                        var nonce = global_event.crypto.nonce;
+
+                        var _param = $.map(param,function(val){
+                                var tmp = val;
+                                if (val.name == 'password') {
+                                    tmp.value = oldPwd
+                                }
+                                return tmp;
+                            }
+                        );
+                        _param.push({name: 'nonce', value: nonce});
+                        $.post('<%=luci.dispatcher.build_url("api", "xqsystem", "login")%>', _param, function(rsp){
+                            var rsp = $.parseJSON(rsp);
+                            if (rsp.code == 0) {
+                                window.location.href = rsp.url;
+                            } else if (rsp.code == 403) {
+                                window.location.reload();
+                            } else{
+                                $('.item', that).addClass('item-err');
+                                $('.item .t', that).html('密码错误，请重试或者尝试"admin"登录<i class="dur"></i>').show();
+                                setTimeout(function(){
+                                    $('#btnRtSubmit').prop('disabled', false).find('span').html('登录');
+                                }, 200);
+                            }
+                        });
+                    }
+                    return false;
+                });
+                //小米登录
+                $('#xmloginform').on('submit',function(e){
+                    var frm = this.name;
+                    var url = this.action;
+                    var remember = $('#remember', this).prop('checked');
+                    var validator = FormValidator.checkAll(frm, [{
+                            name: 'uuid',
+                            display :'账号',
+                            rules: 'required'
+                        },{
+                            name: 'password',
+                            display :'密码',
+                            rules: 'required'
+                        }]);
+                    if (validator) {
+                        $('#btnXmSubmit').prop('disabled', true).find('span').html('登录中...');
+                        var pwd = $.trim($('#xmpassword').val());
+                        var data = {
+                            'uuid': $.trim($('#xmuuid').val()),
+                            'password': hex_md5(pwd),
+                            'encrypt': Base64.encode(pwd)
+                        };
+                        $.ajax({
+                            type:'post',
+                            url: url,
+                            data:data,
+                            dataType : 'json',
+                            success : function(rsp){
+                                if (rsp.code == 0) {
+                                    if (remember) {
+                                        var expires = 7;
+                                        $.cookie('autologin_v2', rsp.uuid + '|||' + rsp.token, { expires: expires, path: '/' });
+                                    }
+                                    var requestData = {
+                                        uuid: rsp.uuid,
+                                        token: rsp.token,
+                                        logtype: 1
+                                    };
+                                    $.post('<%=luci.dispatcher.build_url("api", "xqsystem", "login")%>', requestData, function(rsp){
+                                        var rsp = $.parseJSON(rsp);
+                                        if (rsp.code == 0) {
+                                            window.location.href = rsp.url;
+                                        }else{
+                                            alert(rsp.msg);
+                                        }
+                                    });
+                                }else{
+                                    var errMsg = rsp.msg;
+                                    if (rsp.code == 403) {
+                                        errMsg = '系统正在升级请稍等'
+                                    }
+                                    var itempwd = $('#xmpassword').parents('.item');
+                                    itempwd.find('.t').html(errMsg+'<i class="dur"></i>').show();
+                                    itempwd.addClass('item-err');
+                                    $('#btnXmSubmit').prop('disabled', false).find('span').html('登录');
+                                }
+                            }
+                        });
+                    }
+                    e.preventDefault();
+                    return false;
+                });
+            },
+            forgetrtpwd = function(){
+                $('.forgetrtpwd').on('click', function(e){
+                    e.preventDefault();
+                    var el = this;
+                    $.lightalert({follow: el, width: 320}).setContent('如果你忘记了路由器密码，请恢复出厂设置，重新设置密码').show();
+                });
+            };
+        return {
+            domReady : function(){
+                // hasXiaomi();
+                formEvent();
+                // forgetrtpwd();
+            }
+        };
+    }());
+
+    ModelLogin.domReady();
+
+    // if (/\?userId=\d+/.test(document.URL)) {
+    //     var miid = StringH.queryUrl(document.URL, 'userId');
+    //     alert(miid);
+    //     $.ajax({
+    //         type: 'get',
+    //         url: 'https://www.staging.gorouter.info/w/admin/deviceList',
+    //         data: {userId: miid},
+    //         dataType: 'json',
+    //         xhrFields: {
+    //           withCredentials: true
+    //         },
+    //         success: function(rsp){
+    //             console.log(rsp);
+    //         }
+    //     });
+    // }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<%
+    local home = luci.dispatcher.build_url("web", "home")
+%>
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="ie6 oldie" lang="zh"><![endif]-->
+<!--[if IE 7]><html class="ie7 oldie" lang="zh"><![endif]-->
+<!--[if IE 8]><html class="ie8 oldie" lang="zh"><![endif]-->
+<!--[if gt IE 8]><!--> <html lang="zh"> <!--<![endif]-->
+<head>
+<meta http-equiv="x-ua-compatible" content="IE=9" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>小米路由器</title>
+<noscript>
+<meta http-equiv="refresh" content="0; url=/cgi-bin/luci/web" />
+</noscript>
+</head>
+<body>
+<script>
+    window.location.href = '<%=home%>';
+</script>
+</body>
+</html>

@@ -1,0 +1,521 @@
+<%
+--[[
+	Info	快盘插件
+]]--
+
+local ver = require("xiaoqiang.XQVersion").webVersion
+%>
+<%include('web/inc/head')%>
+<title>路由器云备份</title>
+<!-- 插件样式 -->
+<link rel="stylesheet" href="<%=resource%>/web/css/page.plugin.kuaipan.css?v=<%=ver%>" type="text/css">
+</head>
+<body>
+<!--
+插件内容区
+ -->
+<div class="tpanbox dn" id="panel-account-choose">
+	<!--content start-->
+	<div class="tpanbox_content account-choose">
+		<button type="submit" id="btnCreateAccount" class="btn  btn-block">
+			<span>备份到我的路由器云空间</span>
+		</button>
+		<button type="submit" id="btnLoginAccount" class="btn  btn-block">
+			<span>登录小米&nbsp;/&nbsp;快盘&nbsp;/&nbsp;手机账号</span>
+		</button>
+	</div>
+	<!--content end-->
+</div>
+
+
+<div class="tpanbox dn" id="panel-account-login">
+	<!--content start-->
+	<div id="account-login" class="tpanbox_content showxiaomi">
+		<div class="account-tab">
+			<a href="javascript:;" data-tab="showxiaomi" hidefocus="true" class="tab activetab"><span class="arrow"></span>小米账号</a>
+			<span class="vertical-line"></span>
+			<a href="javascript:;" data-tab="showkuaipan" hidefocus="true" class="tab"><span class="arrow"></span>快盘/手机账号</a>
+		</div>
+
+		<div class="xiaomi-account">
+			<form id="xmloginform" name="xmloginform" method="post" action="/cgi-bin/luci/api/xqpassport/login" class="form-login">
+	            <div class="item">
+	                <span class="v"><input autocomplete="off" class="text input-large" type="text" name="uuid" id="xmuuid" placeholder="邮箱 / 手机号 / 小米ID"></span>
+	                <div class="t"><span class="text"></span><i class="dur"></i></div>
+	            </div>
+	            <div class="item">
+	                <span class="v"><input autocomplete="off" placeholder="密码" class="text input-large" type="password" name="password" id="xmpassword" value=""></span>
+	                <div class="t"><span class="text"></span><i class="dur"></i></div>
+	            </div>
+	            <div class="item item-control">
+	                <button type="submit" id="btnXmSubmit" class="btn btn-primary btn-block"><span>登录</span></button>
+	                <div class="t"><span class="text"></span><i class="dur"></i></div>
+	            </div>
+	        </form>
+		</div>
+		<div class="kuaipan-account">
+			<form id="kploginform" name="kploginform" method="post" action="/cgi-bin/luci/api/xqpassport/login" class="form-login">
+	            <div class="item">
+	                <span class="v"><input autocomplete="off" class="text input-large" type="text" name="uuid" id="kpuuid" placeholder="邮箱 / 手机号"></span>
+	                <div class="t"><span class="text"></span><i class="dur"></i></div>
+	            </div>
+	            <div class="item">
+	                <span class="v"><input autocomplete="off" placeholder="密码" class="text input-large" type="password" name="password" id="kppassword" value=""></span>
+	                <div class="t"><span class="text"></span><i class="dur"></i></div>
+	            </div>
+	            <div class="item item-control">
+	                <button type="submit" id="btnkpSubmit" class="btn btn-primary btn-block"><span>登录</span></button>
+	                <div class="t"><span class="text"></span><i class="dur"></i></div>
+	            </div>
+	        </form>
+		</div>
+	</div>
+	<!--content end-->
+</div>
+
+
+<div class="tpanbox dn" id="panel-account-info">
+	<!--content start-->
+	<div class="tpanbox_content account-info">
+		<div class="clearfix space-waring" id="space-waring"><a class="viewdetail" href="javascript:;">了解详情</a><span class="warnning-text">云端空间不足</span></div>
+		<div class="info-detail">
+			<p><span class="plabel">账号：</span><span id="logineduser">--</span></p>
+			<p><span class="plabel">云端：</span><span id="spacewrap">--</span></p>
+			<p><span class="plabel">手机：</span><span id="mobilewrap">--</span></p>
+			<p class="info-status"><span class="plabel">状态：</span><span id="kpstatus" class="">--</span><span class="control-sync"><a href="javascript:;"  class="controlA" title="暂停备份">暂停</a><a href="javascript:;"  title="恢复备份" class="controlB">恢复</a></span></p>
+			<div class="info-btn-wrap">
+				<button type="submit" id="btnViewCloudFile" class="btn  btn-block">
+					<span>查看云端文件</span>
+				</button>
+				<button type="submit" id="btnLogoutKp" class="btn  btn_red btn-block">
+					<span>退出登录</span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<!--content end-->
+</div>
+ <!--
+公共JS
+  -->
+<%include('web/inc/g.js.base')%>
+<script>
+	var SERVER = '<%=luci.dispatcher.build_url("api", "xqdatacenter","request")%>';
+	var isPopLogoutWindow = false;
+	var MSG ={"1025":"账号或密码错误","1026":"路由器空间过小，不能开通备份功能","1027":"遇到问题请重试(1027)","1028":"遇到问题请重试(1028)","1029":"遇到问题请重试(1029)","1053":"遇到问题请重试(1053)","1054":"遇到网络问题"};
+
+	var KP_PLUGIN = (function($) {
+		var UID = "";
+		var logouting = false;
+		var curPanel = "";
+
+		function ShowPanel(panelId) {//控制面板
+			var panelList = ['panel-account-choose','panel-account-login','panel-account-info'];
+			var item;
+			for (var i=0, len=panelList.length;i<len;i++) {
+				item = panelList[i];
+				if (item!=panelId) {
+					$("#"+item).hide();
+				} else {
+					curPanel = item;
+					$("#"+item).removeClass('dn').show();
+				}
+			}
+		}
+
+		//显示用户信息
+		function showLogindInfo(data) {
+			if('deviceAccount' == data.accountType) {
+				$("#logineduser").html('我的路由器云空间');
+			} else {
+				$("#logineduser").html(data.username);
+			}
+			if(''!=data.mobile) {
+				$("#mobilewrap").html(data.mobile);
+			}
+		}
+
+		function bytes2GB(bytes) {
+			var GBValue =  (bytes / (1073741824)).toFixed(1);
+			if(/^\d+\.?0$/.test(GBValue)){
+				return parseInt(GBValue);
+			} else {
+				return GBValue;
+			}
+		}
+
+		//查询快盘空间
+		function  showUserSpace() {
+			var spaceUrl = SERVER+'?payload={"api": 25, "uid": "'+UID+'"}';
+			$.getJSON(spaceUrl,function(res){
+				if(res && 0 == res.code) {
+					var GB = bytes2GB(res.totalSpace)+'GB';
+					var freeText = ['<span class="freespace">(',((res.totalSpace*1 - res.usedSpace*1)*1/(res.totalSpace*1)*100).toFixed(1),'%空闲)</span>'].join('');
+					$("#spacewrap").html(GB+freeText);
+				}
+			})
+
+		}
+
+		//获取登陆的快盘信息
+		function getKPLoginedUserInfo() {
+			var userinfoUrl = SERVER+'?payload={"api":33}';
+			$.getJSON(userinfoUrl, function(res) {
+				if (res && 0 == res.code) {//选择
+					UID = res.uid;
+					showUserSpace();
+					showLogindInfo(res);
+					getKPStatus();
+					KP_PLUGIN.showPanel('panel-account-info');
+				} else {
+					//if(1004 == res.code || 1039 == res.code) {//没有登录
+						KP_PLUGIN.showPanel('panel-account-choose');
+					//}
+				}
+			})
+		}
+
+		//重新获取快盘状态
+		function getNextKpStatus() {
+			if(""!=UID) {
+				window.setTimeout(function(){
+					getKPStatus();
+				},10000);
+			}
+		}
+
+		//恢复和暂停同步
+		function controlSync(action) {
+			if(logouting) {
+				return false;
+			}
+			var postData;
+			var controlDom = $(".control-sync");
+			var kpstatusDom = $("#kpstatus");
+			if ('pause' == action) {
+				postData = {"payload":'{"api":42}'};
+				kpstatusDom.html('暂停');
+				kpstatusDom[0].className = 'paused';
+				controlDom.removeClass('showA').addClass('showB');
+			} else {
+				postData = {"payload":'{"api":43}'};
+				kpstatusDom.html('准备备份...');
+				kpstatusDom[0].className = 'syncing';
+				controlDom.removeClass('showB').addClass('showA');
+			}
+			$.post(SERVER,postData,function(res){
+
+			})
+		}
+
+		//获取快盘状态
+		function getKPStatus() {
+			var postData = {"payload":'{"api": 21, "uid": "'+UID+'"}'};
+			var kpstatusDom = $("#kpstatus");
+			var controlSync = $(".control-sync");
+			$.post(SERVER,postData,function(res) {
+				getNextKpStatus();
+				if (res && 0 == res.code){//正常
+					var status = res.globalStatus;
+					$("#panel-account-info .account-info").removeClass('show-space-waring');
+					switch(status) {
+						case "syncComplete":
+							kpstatusDom.html('备份完成');
+							controlSync.removeClass('showB').addClass('showA');
+							kpstatusDom[0].className = 'syncComplete';
+							$('.control-sync').hide();
+							break;
+						case "scanning":
+							kpstatusDom.html('准备备份...');
+							controlSync.removeClass('showB').addClass('showA');
+							kpstatusDom[0].className = 'syncing';
+							break;
+						case "syncing":
+							kpstatusDom.html('正在备份...');
+							controlSync.removeClass('showB').addClass('showA');
+							kpstatusDom[0].className = 'syncing';
+							break;
+						case "syncError":
+							kpstatusDom.html('正在重试备份...');
+							controlSync.removeClass('showB').addClass('showA');
+							kpstatusDom[0].className = 'syncing';
+							break;
+
+						case "paused":
+							kpstatusDom.html('暂停');
+							controlSync.removeClass('showA').addClass('showB');
+							kpstatusDom[0].className = 'paused';
+							break;
+						case "remoteOutSpace":
+							controlSync.removeClass('showB').addClass('showA');
+							kpstatusDom.html('云端空间不足');
+							kpstatusDom[0].className = 'syncwaring';
+							var spaceWaringObj = $("#space-waring");
+							spaceWaringObj.find('.viewdetail').attr('href','http://help.kuaipan.cn/index.php/app_q_nomorespace/');
+							spaceWaringObj.find('.warnning-text').html('云端空间不足');
+							$("#panel-account-info .account-info").addClass('show-space-waring');
+							break;
+						case "localOutSpace":
+							controlSync.removeClass('showB').addClass('showA');
+							kpstatusDom.html('路由器上空间不足');
+							kpstatusDom[0].className = 'syncwaring';
+							var spaceWaringObj = $("#space-waring");
+							spaceWaringObj.find('.viewdetail').attr('href','http://help.kuaipan.cn/index.php/app_q_diskfull/');
+							spaceWaringObj.find('.warnning-text').html('路由器上空间不足');
+							$("#panel-account-info .account-info").addClass('show-space-waring');
+							break;
+						case "tokenInvalid":
+							if('panel-account-info' == curPanel) {
+								resetPanel();
+								KP_PLUGIN.showPanel('panel-account-choose');
+							}
+							//controlSync.removeClass('showB').addClass('showA');
+							//kpstatusDom.html('请重新登录');
+							//kpstatusDom[0].className = 'syncwaring';
+							break;
+					}
+				} else {//异常
+					if(res && (1039 == res.code) && ('panel-account-info' == curPanel)) {
+						resetPanel();
+						KP_PLUGIN.showPanel('panel-account-choose');
+					} else {
+						kpstatusDom.html('--');
+						kpstatusDom[0].className = '';
+					}
+				}
+			},'json')
+		}
+
+		//重置面板
+		function resetPanel() {
+			isPopLogoutWindow = false;
+			UID ="";//清空uid
+			$("#logineduser").html('--');
+			$("#spacewrap").html('--');
+			$("#mobilewrap").html('--');
+			$("#panel-account-info .account-info").removeClass('show-space-waring');
+			var kpstatusDom = $("#kpstatus");
+			kpstatusDom.html('--');
+			kpstatusDom[0].className = '';
+		}
+
+		//退出账号
+		function logout() {
+			if(!logouting) {
+				var postData ={"payload":'{"api": 20, "uid": "'+UID+'"}'};
+				$("#btnLogoutKp span").html('正在退出…');
+				logouting = true;
+				$("#btnLogoutKp").prop('disabled', true);
+				$.post(SERVER,postData,function(res){
+					logouting = true;
+					resetPanel();
+					$("#btnLogoutKp span").html('退出账号');
+					$("#btnLogoutKp").prop('disabled', false);
+					if(res && 0 == res.code) {
+						KP_PLUGIN.showPanel('panel-account-choose');
+						self.location.reload(true);
+					}
+				},'json');
+				UID ="";//清空uid
+			}
+		}
+
+		return {
+			showPanel:ShowPanel,
+			getInfo:getKPLoginedUserInfo,
+			getStatus:getKPStatus,
+			controlSync:controlSync,
+			logout:logout
+		}
+
+	})($);
+
+	$(function() {
+		var createAccounting = false;
+
+		//显示账号信息
+		KP_PLUGIN.getInfo();
+		//开通一个账号
+		$('#btnCreateAccount').click(function(){
+			if(createAccounting) {
+				return false;
+			}
+			createAccounting = true;
+			//创建一个设备账号
+			$("#btnCreateAccount span").html('登录路由器云空间…');
+			var postData = {"payload":'{"api":32}'};
+			$.post(SERVER, postData, function(res) {
+				createAccounting = false;
+				if(res && 0 == res.code) {
+					KP_PLUGIN.getInfo();
+				} else {
+					var message = MSG[res.code]||"遇到问题请稍后重试";
+					window.top.art.dialog({
+						title: '提示',
+						content: message
+					}).lock();
+				}
+				$("#btnCreateAccount span").html('备份到我的路由器云空间');
+			},'json');
+		});
+
+		//用快盘账号登录
+		$("#btnLoginAccount").click(function(){
+			if(createAccounting) {
+				return false;
+			}
+			KP_PLUGIN.showPanel('panel-account-login');
+		});
+
+
+		var xmLogining = false;
+		var kpLogining = false;
+
+		//切换tab
+		$("#panel-account-login .tab").click(function(){
+			var tabV = $(this).attr('data-tab');
+			if(('showkuaipan' == tabV && xmLogining) || ('showxiaomi'== tabV && kpLogining)) {
+				return false;
+			}
+			$("#panel-account-login .tab").removeClass('activetab');
+			$(this).addClass('activetab');
+			$("#account-login")[0].className = 'tpanbox_content '+tabV;
+		})
+
+
+		//小米账号登陆
+		$("#xmloginform").submit(function(){
+			if(xmLogining) {//防止重复点击
+				return false;
+			}
+			var xmNameObj = $("#xmuuid");
+			var xmPwdObj = $("#xmpassword");
+			var btnXmSubmit = $("#btnXmSubmit");
+			var xmName = xmNameObj.val();
+			var xmPwd = xmPwdObj.val();
+			var btnParentObj = btnXmSubmit.closest('.item');
+			var btnChildObj = btnXmSubmit.find('span');
+			if(''==xmName) {
+				btnParentObj.addClass('item-err').find('.t .text').html('请输入小米账号');
+				xmNameObj.focus();
+				return false;
+			} else {
+				btnParentObj.removeClass('item-err');
+			}
+			if(''==xmPwd) {
+				btnParentObj.addClass('item-err').find('.t .text').html('请输入密码');
+				xmPwdObj.focus();
+				return false;
+			}
+			xmPwd = Base64.encode(xmPwd);
+			var postData = {"payload":'{"api":34,"username":"'+xmName+'", "password":"'+xmPwd+'"}'};
+			btnChildObj.html('登录中…');
+			xmNameObj.attr('disabled',true);
+			xmPwdObj.attr('disabled',true);
+			xmLogining = true;
+			$.post(SERVER, postData,function(res) {
+				if (res && 0 == res.code) {
+					$.post(SERVER,{"payload":'{"api":35,"username":"'+xmName+'"}'},function(loginRes){
+						if(loginRes && 0 == loginRes.code) {
+							KP_PLUGIN.getInfo();
+						} else {
+							var message = MSG[loginRes.code]||"登录失败";
+							btnParentObj.addClass('item-err').find('.t .text').html(message);
+						}
+						xmPwdObj.val('');//清空密码输入框
+						btnChildObj.html('登录');
+						xmNameObj.attr('disabled',false);
+						xmPwdObj.attr('disabled',false);
+					},'json');
+				} else {
+					var message = MSG[res.code]||"登录失败";
+					btnParentObj.addClass('item-err').find('.t .text').html(message);
+					//提示失败
+					xmLogining = false;
+					btnChildObj.html('登录');
+					xmNameObj.attr('disabled',false);
+					xmPwdObj.attr('disabled',false);
+				}
+			},'json');
+			return false;
+		});
+
+		//登录
+		$("#kploginform").submit(function(){
+			if(kpLogining) {
+				return false;
+			}
+			var kpnameObj = $('#kpuuid');
+			var kpPwdObj = $('#kppassword');
+			var btnkpSubmit = $("#btnkpSubmit");
+			var kpname = kpnameObj.val();
+			var kppwd = kpPwdObj.val();
+			var btnParentObj = btnkpSubmit.closest('.item');
+			var btnChildObj = btnkpSubmit.find('span');
+			if(''==kpname) {
+				btnParentObj.addClass('item-err').find('.t .text').html('请输入快盘账号');
+				kpnameObj.focus();
+				return false;
+			} else {
+				btnParentObj.removeClass('item-err');
+			}
+			if(''==kppwd) {
+				btnParentObj.addClass('item-err').find('.t .text').html('请输入密码');
+				kpPwdObj.focus();
+				return false;
+			} else {
+				btnParentObj.removeClass('item-err');
+			}
+			kppwd = Base64.encode(kppwd);
+			var postData = {"payload":'{"api": 18, "username": "'+kpname+'", "password":"'+kppwd+'"}'};
+			btnChildObj.html('登录中…');
+			kpnameObj.attr('disabled',true);
+			kpPwdObj.attr('disabled',true);
+			kpLogining = true;
+			$.post(SERVER, postData,function(res) {
+				if (res && 0 == res.code) {
+					KP_PLUGIN.getInfo();
+					kpPwdObj.val('');//清空密码输入框
+				} else {
+					var message = MSG[res.code]||"登录失败";
+					btnParentObj.addClass('item-err').find('.t .text').html(message);
+					//提示失败
+				}
+				kpLogining = false;
+				kpnameObj.attr('disabled',false);
+				kpPwdObj.attr('disabled',false);
+				btnChildObj.html('登录');
+			},'json');
+			return false;
+		});
+
+
+		$(".control-sync a").click(function(){
+			if($(this).hasClass('controlA')) {
+				KP_PLUGIN.controlSync('pause');
+			} else {
+				KP_PLUGIN.controlSync('recove');
+			}
+		});
+
+
+		//退出登录
+		$("#btnLogoutKp").click(function(){
+			if (this.disabled) {
+				return;
+			}
+			window.top.art.dialog({
+				title: '退出账号',
+				content: '退出后，我就不备份喽！',
+				okValue: '确认',
+				ok: KP_PLUGIN.logout,
+				cancelValue: '取消',
+				cancel: function(){
+					this.close();
+				}
+			}).lock();
+		});
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,1000 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ACCESS_CONTROL_LIST	mongoose.c	/^  ACCESS_CONTROL_LIST,$/;"	e	enum:__anon2	file:
+ACCESS_LOG_FILE	mongoose.c	/^  ACCESS_LOG_FILE,$/;"	e	enum:__anon2	file:
+ARRAY_SIZE	examples/websocket_ssl_proxy/net_skeleton.h	119;"	d
+ARRAY_SIZE	mongoose.c	166;"	d	file:
+ASSERT	test/unit_test.c	19;"	d	file:
+AUTH_DOMAIN	mongoose.c	/^  AUTH_DOMAIN,$/;"	e	enum:__anon2	file:
+BOUNDARY	test/unit_test.c	420;"	d	file:
+C1_PEM	examples/websocket_ssl_proxy/ws_ssl.c	19;"	d	file:
+C2_PEM	examples/websocket_ssl_proxy/ws_ssl.c	22;"	d	file:
+CA1_PEM	examples/websocket_ssl_proxy/ws_ssl.c	20;"	d	file:
+CA2_PEM	examples/websocket_ssl_proxy/ws_ssl.c	23;"	d	file:
+CFLAGS	examples/array_vars/Makefile	/^CFLAGS = -W -Wall -I..\/.. -pthread -g -O0 $(CFLAGS_EXTRA)$/;"	m
+CFLAGS	examples/big_upload/Makefile	/^CFLAGS = -W -Wall -pthread -I..\/.. -g -O0 $(CFLAGS_EXTRA)$/;"	m
+CFLAGS	examples/cookie_authentication/Makefile	/^CFLAGS = -W -Wall -I..\/.. -pthread -g -O0 $(CFLAGS_EXTRA)$/;"	m
+CFLAGS	examples/digest_authentication/Makefile	/^CFLAGS = -W -Wall -I..\/.. -pthread -g -O0 $(CFLAGS_EXTRA)$/;"	m
+CFLAGS	examples/file_upload/Makefile	/^CFLAGS = -W -Wall -I..\/.. -pthread -g -O0 $(CFLAGS_EXTRA)$/;"	m
+CFLAGS	examples/form_submit/Makefile	/^CFLAGS = -W -Wall -I..\/.. -pthread -g -O0 $(CFLAGS_EXTRA)$/;"	m
+CFLAGS	examples/hello_world/Makefile	/^CFLAGS = -W -Wall -I..\/.. -pthread -g -O0 $(CFLAGS_EXTRA)$/;"	m
+CFLAGS	examples/http_client/Makefile	/^CFLAGS = -W -Wall -I..\/.. -pthread -g -O0 $(CFLAGS_EXTRA)$/;"	m
+CFLAGS	examples/mjpg_streamer/Makefile	/^CFLAGS = -W -Wall -I..\/.. -pthread -g -O0 $(CFLAGS_EXTRA)$/;"	m
+CFLAGS	examples/multi_threaded_server/Makefile	/^CFLAGS = -W -Wall -I..\/.. -pthread -g -O0 -DMONGOOSE_ENABLE_THREADS $(CFLAGS_EXTRA)$/;"	m
+CFLAGS	examples/proxy_server/Makefile	/^CFLAGS = -W -Wall -g -O0 -pthread  -lssl -DMONGOOSE_ENABLE_THREADS $(FLAGS) $(CFLAGS_EXTRA)$/;"	m
+CFLAGS	examples/restful_api/Makefile	/^CFLAGS = -W -Wall -I..\/.. -pthread -g -O0 $(CFLAGS_EXTRA)$/;"	m
+CFLAGS	examples/send_file/Makefile	/^CFLAGS = -W -Wall -I..\/.. -pthread -g -O0 $(CFLAGS_EXTRA)$/;"	m
+CFLAGS	examples/web_server/Makefile	/^CFLAGS = -W -Wall -I..\/.. -g -O0  $(CFLAGS_EXTRA)$/;"	m
+CFLAGS	examples/websocket_chat/Makefile	/^CFLAGS = -W -Wall -I..\/.. -pthread -g -O0 $(CFLAGS_EXTRA)$/;"	m
+CFLAGS	examples/websocket_echo_server/Makefile	/^CFLAGS = -W -Wall -I..\/.. -pthread -g -O0 $(CFLAGS_EXTRA)$/;"	m
+CFLAGS	examples/websocket_ssl_proxy/Makefile	/^CFLAGS = -W -Wall -I..\/.. -I. -pthread -g -O0 -DMONGOOSE_ENABLE_THREADS -DNS_ENABLE_SSL -DSSL_WRAPPER_USE_AS_LIBRARY $(CFLAGS_EXTRA)$/;"	m
+CFLAGS	test/Makefile	/^CFLAGS = -W -Wall -pthread -I.. $(PROF_FLAGS) $(CFLAGS_EXTRA)$/;"	m
+CFLAGS_POLAR	examples/web_server/Makefile	/^CFLAGS_POLAR = $(CFLAGS) $(INCDIR_POLAR) -DNS_ENABLE_SSL$/;"	m
+CFLAGS_POLAR	examples/websocket_ssl_proxy/Makefile	/^CFLAGS_POLAR = $(CFLAGS) $(INCDIR_POLAR)$/;"	m
+CGI_ENVIRONMENT_SIZE	mongoose.c	1368;"	d	file:
+CGI_INTERPRETER	mongoose.c	/^  CGI_INTERPRETER,$/;"	e	enum:__anon2	file:
+CGI_PATTERN	mongoose.c	/^  CGI_PATTERN,$/;"	e	enum:__anon2	file:
+CONFIG_FILE	examples/web_server/web_server.c	82;"	d	file:
+CRLF	test/unit_test.c	419;"	d	file:
+Close	TcpSocket.h	/^    int Close()$/;"	f	class:TcpSocket
+Connect	TcpSocket.h	/^    int Connect(const char* host, unsigned short port)$/;"	f	class:TcpSocket
+Critical	Log.h	/^    int Critical(const char* fmt, ...)$/;"	f	class:Log
+DAV_AUTH_FILE	mongoose.c	/^  DAV_AUTH_FILE,$/;"	e	enum:__anon2	file:
+DAV_ROOT	mongoose.c	/^  DAV_ROOT,$/;"	e	enum:__anon2	file:
+DBG	examples/websocket_ssl_proxy/net_skeleton.h	112;"	d
+DBG	examples/websocket_ssl_proxy/net_skeleton.h	115;"	d
+DBG	mongoose.c	159;"	d	file:
+DBG	mongoose.c	162;"	d	file:
+DEFAULT_CGI_PATTERN	mongoose.c	1367;"	d	file:
+DIR	mongoose.c	/^typedef struct DIR {$/;"	s	file:
+DIR	mongoose.c	/^} DIR;$/;"	t	typeref:struct:DIR	file:
+DIRSEP	examples/web_server/web_server.c	40;"	d	file:
+DIRSEP	examples/web_server/web_server.c	59;"	d	file:
+DISP	test/unit_test.c	418;"	d	file:
+DOCUMENT_ROOT	mongoose.c	/^  DOCUMENT_ROOT,$/;"	e	enum:__anon2	file:
+DownloadTask	DownloadTask.h	/^    DownloadTask() : socket(0)$/;"	f	class:DownloadTask
+DownloadTask	DownloadTask.h	/^class DownloadTask$/;"	c
+EINPROGRESS	examples/websocket_ssl_proxy/net_skeleton.h	64;"	d
+EINPROGRESS	mongoose.c	106;"	d	file:
+ENABLE_DIRECTORY_LISTING	mongoose.c	/^  ENABLE_DIRECTORY_LISTING,$/;"	e	enum:__anon2	file:
+ENABLE_PROXY	mongoose.c	/^  ENABLE_PROXY,$/;"	e	enum:__anon2	file:
+ENV_EXPORT_TO_CGI	mongoose.c	1370;"	d	file:
+EP_CGI	mongoose.c	/^ EP_NONE, EP_FILE, EP_CGI, EP_USER, EP_PUT, EP_CLIENT, EP_PROXY$/;"	e	enum:endpoint_type	file:
+EP_CLIENT	mongoose.c	/^ EP_NONE, EP_FILE, EP_CGI, EP_USER, EP_PUT, EP_CLIENT, EP_PROXY$/;"	e	enum:endpoint_type	file:
+EP_FILE	mongoose.c	/^ EP_NONE, EP_FILE, EP_CGI, EP_USER, EP_PUT, EP_CLIENT, EP_PROXY$/;"	e	enum:endpoint_type	file:
+EP_NONE	mongoose.c	/^ EP_NONE, EP_FILE, EP_CGI, EP_USER, EP_PUT, EP_CLIENT, EP_PROXY$/;"	e	enum:endpoint_type	file:
+EP_PROXY	mongoose.c	/^ EP_NONE, EP_FILE, EP_CGI, EP_USER, EP_PUT, EP_CLIENT, EP_PROXY$/;"	e	enum:endpoint_type	file:
+EP_PUT	mongoose.c	/^ EP_NONE, EP_FILE, EP_CGI, EP_USER, EP_PUT, EP_CLIENT, EP_PROXY$/;"	e	enum:endpoint_type	file:
+EP_USER	mongoose.c	/^ EP_NONE, EP_FILE, EP_CGI, EP_USER, EP_PUT, EP_CLIENT, EP_PROXY$/;"	e	enum:endpoint_type	file:
+EV_HANDLER	examples/web_server/web_server.c	144;"	d	file:
+EWOULDBLOCK	examples/websocket_ssl_proxy/net_skeleton.h	67;"	d
+EWOULDBLOCK	mongoose.c	109;"	d	file:
+EXTRA_MIME_TYPES	mongoose.c	/^  EXTRA_MIME_TYPES,$/;"	e	enum:__anon2	file:
+Error	Log.h	/^    int Error(const char* fmt, ...)$/;"	f	class:Log
+EventHandler	examples/csharp/example.cs	/^  static private int EventHandler(IntPtr conn_ptr, int ev) {$/;"	m	class:Program	file:
+F1	mongoose.c	3978;"	d	file:
+F2	mongoose.c	3979;"	d	file:
+F3	mongoose.c	3980;"	d	file:
+F4	mongoose.c	3981;"	d	file:
+FAIL	test/unit_test.c	14;"	d	file:
+FD_SETSIZE	mongoose.c	99;"	d	file:
+FLAGS	examples/proxy_server/Makefile	/^FLAGS = -I..\/..  -DNS_ENABLE_SSL$/;"	m
+FormatedTime	Log.h	/^    const char* FormatedTime()$/;"	f	class:Log
+GLOBAL_AUTH_FILE	mongoose.c	/^  GLOBAL_AUTH_FILE,$/;"	e	enum:__anon2	file:
+GetSocket	TcpSocket.h	/^    int GetSocket()$/;"	f	class:TcpSocket
+HEXDUMP_FILE	mongoose.c	/^  HEXDUMP_FILE,$/;"	e	enum:__anon2	file:
+HEXTOI	mongoose.c	2489;"	d	file:
+HIDE_FILES_PATTERN	mongoose.c	/^  HIDE_FILES_PATTERN,$/;"	e	enum:__anon2	file:
+HS_FAIL	HttpUtils.h	/^    HS_FAIL,$/;"	e	enum:HttpState
+HS_REDIR	HttpUtils.h	/^    HS_REDIR,$/;"	e	enum:HttpState
+HS_RETRY	HttpUtils.h	/^    HS_RETRY,$/;"	e	enum:HttpState
+HS_SUCC	HttpUtils.h	/^    HS_SUCC,$/;"	e	enum:HttpState
+HTTP_PORT	test/unit_test.c	27;"	d	file:
+HttpHead	HttpUtils.h	/^struct HttpHead$/;"	s
+HttpState	HttpUtils.h	/^enum HttpState$/;"	g
+HttpUrl	HttpUtils.h	/^struct HttpUrl$/;"	s
+HttpUtils	HttpUtils.h	/^class HttpUtils$/;"	c
+INCDIR_POLAR	examples/web_server/Makefile	/^INCDIR_POLAR = -I$(POLARSSLCOMPAT_PATH) -I$(POLARSSL_PATH)\/include$/;"	m
+INCDIR_POLAR	examples/websocket_ssl_proxy/Makefile	/^INCDIR_POLAR = -I$(POLARSSLCOMPAT_PATH) -I$(POLARSSL_PATH)\/include$/;"	m
+INDEX_FILES	mongoose.c	/^  INDEX_FILES,$/;"	e	enum:__anon2	file:
+INT64_FMT	mongoose.c	1337;"	d	file:
+INT64_FMT	mongoose.c	1357;"	d	file:
+INVALID_SOCKET	examples/websocket_ssl_proxy/net_skeleton.h	105;"	d
+INVALID_SOCKET	mongoose.c	152;"	d	file:
+IOBUF_SIZE	mongoose.c	1365;"	d	file:
+Instance	Log.h	/^    static Log* Instance()$/;"	f	class:Log
+LDFLAGS	examples/websocket_ssl_proxy/Makefile	/^LDFLAGS = -lssl$/;"	m
+LDFLAGS_POLAR	examples/web_server/Makefile	/^LDFLAGS_POLAR = -L$(POLARSSL_PATH)\/lib -lmbedtls$/;"	m
+LDFLAGS_POLAR	examples/websocket_ssl_proxy/Makefile	/^LDFLAGS_POLAR = -L$(POLARSSL_PATH)\/lib -lmbedtls$/;"	m
+LISTENING_ADDR	test/unit_test.c	28;"	d	file:
+LISTENING_PORT	mongoose.c	/^  LISTENING_PORT,$/;"	e	enum:__anon2	file:
+LOCAL_CFLAGS	jni/Android.mk	/^LOCAL_CFLAGS    := -std=c99 -O2 -W -Wall -pthread -pipe $(COPT)$/;"	m
+LOCAL_MODULE	jni/Android.mk	/^LOCAL_MODULE    := mongoose$/;"	m
+LOCAL_PATH	jni/Android.mk	/^LOCAL_PATH := $(call my-dir)\/..$/;"	m
+LOCAL_SRC_FILES	jni/Android.mk	/^LOCAL_SRC_FILES := examples\/web_server\/web_server.c mongoose.c$/;"	m
+LOGPATH	Log.h	25;"	d
+Log	Log.h	/^    Log() : handle(0)$/;"	f	class:Log
+Log	Log.h	/^class Log$/;"	c
+LogCritical	Log.h	20;"	d
+LogError	Log.h	21;"	d
+LogPrompt	Log.h	23;"	d
+LogWarn	Log.h	22;"	d
+MAP_FAILED	mongoose.c	1612;"	d	file:
+MAP_FAILED	mongoose.c	1643;"	d	file:
+MAP_PRIVATE	mongoose.c	1613;"	d	file:
+MAP_PRIVATE	mongoose.c	1644;"	d	file:
+MAXBUFFERSIZE	DownloadTask.h	16;"	d
+MAXURLLENGTH	HttpUtils.h	13;"	d
+MAX_CGI_ENVIR_VARS	mongoose.c	1369;"	d	file:
+MAX_CONF_FILE_LINE_SIZE	examples/web_server/web_server.c	65;"	d	file:
+MAX_OPTIONS	examples/web_server/web_server.c	64;"	d	file:
+MAX_PATH_SIZE	mongoose.c	1366;"	d	file:
+MAX_REQUEST_SIZE	mongoose.c	1364;"	d	file:
+MD5Context	mongoose.c	/^typedef struct MD5Context {$/;"	s	file:
+MD5Final	mongoose.c	/^static void MD5Final(unsigned char digest[16], MD5_CTX *ctx) {$/;"	f	file:
+MD5Init	mongoose.c	/^static void MD5Init(MD5_CTX *ctx) {$/;"	f	file:
+MD5STEP	mongoose.c	3983;"	d	file:
+MD5Transform	mongoose.c	/^static void MD5Transform(uint32_t buf[4], uint32_t const in[16]) {$/;"	f	file:
+MD5Update	mongoose.c	/^static void MD5Update(MD5_CTX *ctx, unsigned char const *buf, unsigned len) {$/;"	f	file:
+MD5_CTX	mongoose.c	/^} MD5_CTX;$/;"	t	typeref:struct:MD5Context	file:
+MG_AUTH	mongoose.h	/^  MG_AUTH,        \/\/ If callback returns MG_FALSE, authentication fails$/;"	e	enum:mg_event
+MG_CGI_CONN	mongoose.c	1516;"	d	file:
+MG_CLOSE	mongoose.h	/^  MG_CLOSE,       \/\/ Connection is closed, callback return value is ignored$/;"	e	enum:mg_event
+MG_CONNECT	mongoose.h	/^  MG_CONNECT,     \/\/ If callback returns MG_FALSE, connect fails$/;"	e	enum:mg_event
+MG_CONN_2_CONN	mongoose.c	1533;"	d	file:
+MG_FALSE	mongoose.h	/^enum mg_result { MG_FALSE, MG_TRUE, MG_MORE };$/;"	e	enum:mg_result
+MG_HEADERS_SENT	mongoose.c	1514;"	d	file:
+MG_HTTP_ERROR	mongoose.h	/^  MG_HTTP_ERROR   \/\/ If callback returns MG_FALSE, Mongoose continues with err$/;"	e	enum:mg_event
+MG_MORE	mongoose.h	/^enum mg_result { MG_FALSE, MG_TRUE, MG_MORE };$/;"	e	enum:mg_result
+MG_POLL	mongoose.h	/^  MG_POLL = 100,  \/\/ If callback returns MG_TRUE connection closes$/;"	e	enum:mg_event
+MG_PROXY_CONN	mongoose.c	1517;"	d	file:
+MG_PROXY_DONT_PARSE	mongoose.c	1518;"	d	file:
+MG_RECV	mongoose.h	/^  MG_RECV,        \/\/ Mongoose has received POST data chunk.$/;"	e	enum:mg_event
+MG_REPLY	mongoose.h	/^  MG_REPLY,       \/\/ If callback returns MG_FALSE, Mongoose closes connection$/;"	e	enum:mg_event
+MG_REQUEST	mongoose.h	/^  MG_REQUEST,     \/\/ If callback returns MG_FALSE, Mongoose continues with req$/;"	e	enum:mg_event
+MG_TRUE	mongoose.h	/^enum mg_result { MG_FALSE, MG_TRUE, MG_MORE };$/;"	e	enum:mg_result
+MG_USING_CHUNKED_API	mongoose.c	1515;"	d	file:
+MG_WS_CONNECT	mongoose.h	/^  MG_WS_CONNECT,  \/\/ New websocket connection established$/;"	e	enum:mg_event
+MG_WS_HANDSHAKE	mongoose.h	/^  MG_WS_HANDSHAKE,  \/\/ New websocket connection, handshake request$/;"	e	enum:mg_event
+MONGOOSE_ENABLE_THREADS	mongoose.c	67;"	d	file:
+MONGOOSE_HEADER_INCLUDED	mongoose.h	19;"	d
+MONGOOSE_IDLE_TIMEOUT_SECONDS	mongoose.c	1387;"	d	file:
+MONGOOSE_NO_AUTH	mongoose.c	1395;"	d	file:
+MONGOOSE_NO_CGI	mongoose.c	1391;"	d	file:
+MONGOOSE_NO_CGI	mongoose.c	1397;"	d	file:
+MONGOOSE_NO_DAV	mongoose.c	1399;"	d	file:
+MONGOOSE_NO_DIRECTORY_LISTING	mongoose.c	1400;"	d	file:
+MONGOOSE_NO_DL	mongoose.c	1403;"	d	file:
+MONGOOSE_NO_LOGGING	mongoose.c	1401;"	d	file:
+MONGOOSE_NO_SSI	mongoose.c	1402;"	d	file:
+MONGOOSE_POST_SIZE_LIMIT	mongoose.c	1383;"	d	file:
+MONGOOSE_POST_SIZE_LIMIT	test/unit_test.c	9;"	d	file:
+MONGOOSE_USE_EXTRA_HTTP_HEADERS	mongoose.c	1379;"	d	file:
+MONGOOSE_USE_WEBSOCKET_PING_INTERVAL	mongoose.c	1374;"	d	file:
+MONGOOSE_VERSION	mongoose.h	21;"	d
+MVER	examples/web_server/web_server.c	68;"	d	file:
+Main	examples/csharp/example.cs	/^  static void Main() {$/;"	m	class:Program	file:
+Mongoose	examples/csharp/mongoose.cs	/^  public Mongoose(string document_root,$/;"	m	class:Mongoose
+Mongoose	examples/csharp/mongoose.cs	/^public class Mongoose {$/;"	c
+MongooseConnection	examples/csharp/mongoose.cs	/^[StructLayout(LayoutKind.Sequential)] public struct MongooseConnection {$/;"	s
+MongooseEventHandler	examples/csharp/mongoose.cs	/^public delegate int MongooseEventHandler(IntPtr c, int ev);$/;"	m
+MongooseHeader	examples/csharp/mongoose.cs	/^[StructLayout(LayoutKind.Sequential)] public struct MongooseHeader {$/;"	s
+NSF_BUFFER_BUT_DONT_SEND	examples/websocket_ssl_proxy/net_skeleton.h	205;"	d
+NSF_BUFFER_BUT_DONT_SEND	mongoose.c	253;"	d	file:
+NSF_CLOSE_IMMEDIATELY	examples/websocket_ssl_proxy/net_skeleton.h	208;"	d
+NSF_CLOSE_IMMEDIATELY	mongoose.c	256;"	d	file:
+NSF_CONNECTING	examples/websocket_ssl_proxy/net_skeleton.h	207;"	d
+NSF_CONNECTING	mongoose.c	255;"	d	file:
+NSF_FINISHED_SENDING_DATA	examples/websocket_ssl_proxy/net_skeleton.h	204;"	d
+NSF_FINISHED_SENDING_DATA	mongoose.c	252;"	d	file:
+NSF_LISTENING	examples/websocket_ssl_proxy/net_skeleton.h	211;"	d
+NSF_LISTENING	mongoose.c	259;"	d	file:
+NSF_SSL_HANDSHAKE_DONE	examples/websocket_ssl_proxy/net_skeleton.h	206;"	d
+NSF_SSL_HANDSHAKE_DONE	mongoose.c	254;"	d	file:
+NSF_UDP	examples/websocket_ssl_proxy/net_skeleton.h	212;"	d
+NSF_UDP	mongoose.c	260;"	d	file:
+NSF_USER_1	examples/websocket_ssl_proxy/net_skeleton.h	214;"	d
+NSF_USER_1	mongoose.c	262;"	d	file:
+NSF_USER_2	examples/websocket_ssl_proxy/net_skeleton.h	215;"	d
+NSF_USER_2	mongoose.c	263;"	d	file:
+NSF_USER_3	examples/websocket_ssl_proxy/net_skeleton.h	216;"	d
+NSF_USER_3	mongoose.c	264;"	d	file:
+NSF_USER_4	examples/websocket_ssl_proxy/net_skeleton.h	217;"	d
+NSF_USER_4	mongoose.c	265;"	d	file:
+NSF_USER_5	examples/websocket_ssl_proxy/net_skeleton.h	218;"	d
+NSF_USER_5	mongoose.c	266;"	d	file:
+NSF_USER_6	examples/websocket_ssl_proxy/net_skeleton.h	219;"	d
+NSF_USER_6	mongoose.c	267;"	d	file:
+NSF_WANT_READ	examples/websocket_ssl_proxy/net_skeleton.h	209;"	d
+NSF_WANT_READ	mongoose.c	257;"	d	file:
+NSF_WANT_WRITE	examples/websocket_ssl_proxy/net_skeleton.h	210;"	d
+NSF_WANT_WRITE	mongoose.c	258;"	d	file:
+NS_ACCEPT	examples/websocket_ssl_proxy/net_skeleton.h	172;"	d
+NS_ACCEPT	mongoose.c	219;"	d	file:
+NS_CALLOC	mongoose.c	334;"	d	file:
+NS_CLOSE	examples/websocket_ssl_proxy/net_skeleton.h	176;"	d
+NS_CLOSE	mongoose.c	223;"	d	file:
+NS_CONNECT	examples/websocket_ssl_proxy/net_skeleton.h	173;"	d
+NS_CONNECT	mongoose.c	220;"	d	file:
+NS_CTL_MSG_MESSAGE_SIZE	mongoose.c	338;"	d	file:
+NS_DISABLE_THREADS	mongoose.c	71;"	d	file:
+NS_ENABLE_IPV6	test/unit_test.c	6;"	d	file:
+NS_ENABLE_SSL	test/unit_test.c	7;"	d	file:
+NS_FREE	mongoose.c	330;"	d	file:
+NS_MALLOC	mongoose.c	322;"	d	file:
+NS_MAX_SOCKETPAIR_ATTEMPTS	mongoose.c	337;"	d	file:
+NS_POLL	examples/websocket_ssl_proxy/net_skeleton.h	171;"	d
+NS_POLL	mongoose.c	218;"	d	file:
+NS_READ_BUFFER_SIZE	mongoose.c	339;"	d	file:
+NS_REALLOC	mongoose.c	326;"	d	file:
+NS_RECV	examples/websocket_ssl_proxy/net_skeleton.h	174;"	d
+NS_RECV	mongoose.c	221;"	d	file:
+NS_SEND	examples/websocket_ssl_proxy/net_skeleton.h	175;"	d
+NS_SEND	mongoose.c	222;"	d	file:
+NS_SKELETON_HEADER_INCLUDED	examples/websocket_ssl_proxy/net_skeleton.h	20;"	d
+NS_SKELETON_HEADER_INCLUDED	mongoose.c	39;"	d	file:
+NS_SKELETON_VERSION	examples/websocket_ssl_proxy/net_skeleton.h	22;"	d
+NS_SKELETON_VERSION	mongoose.c	41;"	d	file:
+NS_UDP_RECEIVE_BUFFER_SIZE	mongoose.c	340;"	d	file:
+NS_VPRINTF_BUFFER_SIZE	mongoose.c	341;"	d	file:
+NUM_OPTIONS	mongoose.c	/^  NUM_OPTIONS$/;"	e	enum:__anon2	file:
+OPENSSL_FLAGS	examples/web_server/Makefile	/^OPENSSL_FLAGS = -DNS_ENABLE_SSL -lssl$/;"	m
+O_BINARY	mongoose.c	1355;"	d	file:
+Open	TcpSocket.h	/^    int Open()$/;"	f	class:TcpSocket
+PASSWORDS_FILE_NAME	mongoose.c	1371;"	d	file:
+PATH_MAX	examples/web_server/web_server.c	33;"	d	file:
+POLARSSLCOMPAT_PATH	examples/web_server/Makefile	/^POLARSSLCOMPAT_PATH = .\/..\/..\/..\/polar$/;"	m
+POLARSSLCOMPAT_PATH	examples/websocket_ssl_proxy/Makefile	/^POLARSSLCOMPAT_PATH = .\/..\/..\/..\/polar$/;"	m
+POLARSSL_PATH	examples/web_server/Makefile	/^POLARSSL_PATH = \/usr\/local$/;"	m
+POLARSSL_PATH	examples/websocket_ssl_proxy/Makefile	/^POLARSSL_PATH = \/usr\/local$/;"	m
+PROF_FLAGS	test/Makefile	/^PROF_FLAGS = -fprofile-arcs -ftest-coverage -g -O0 -DGUI$/;"	m
+PROG	examples/array_vars/Makefile	/^PROG = array_vars$/;"	m
+PROG	examples/big_upload/Makefile	/^PROG = big_upload$/;"	m
+PROG	examples/cookie_authentication/Makefile	/^PROG = cookie_auth$/;"	m
+PROG	examples/digest_authentication/Makefile	/^PROG = digest_auth$/;"	m
+PROG	examples/file_upload/Makefile	/^PROG = file_upload$/;"	m
+PROG	examples/form_submit/Makefile	/^PROG = form_submit$/;"	m
+PROG	examples/hello_world/Makefile	/^PROG = hello_world$/;"	m
+PROG	examples/http_client/Makefile	/^PROG = http_client$/;"	m
+PROG	examples/mjpg_streamer/Makefile	/^PROG = mjpg_streamer$/;"	m
+PROG	examples/multi_threaded_server/Makefile	/^PROG = multi_threaded_server$/;"	m
+PROG	examples/proxy_server/Makefile	/^PROG = proxy_server$/;"	m
+PROG	examples/restful_api/Makefile	/^PROG = restful_api$/;"	m
+PROG	examples/send_file/Makefile	/^PROG = send_file$/;"	m
+PROG	examples/web_server/Makefile	/^PROG = web_server$/;"	m
+PROG	examples/websocket_chat/Makefile	/^PROG = websocket_chat$/;"	m
+PROG	examples/websocket_echo_server/Makefile	/^PROG = websocket_echo_server$/;"	m
+PROG	examples/websocket_ssl_proxy/Makefile	/^PROG = ws_ssl$/;"	m
+PROG	test/Makefile	/^PROG = unit_test$/;"	m
+PROT_READ	mongoose.c	1614;"	d	file:
+PROT_READ	mongoose.c	1645;"	d	file:
+ParseHead	HttpUtils.h	/^    static HttpHead ParseHead(const char* buffer, unsigned int length)$/;"	f	class:HttpUtils
+ParseUrl	HttpUtils.h	/^    static HttpUrl ParseUrl(const char* url)$/;"	f	class:HttpUtils
+Program	examples/csharp/example.cs	/^public class Program {$/;"	c
+Prompt	Log.h	/^    int Prompt(const char* fmt, ...)$/;"	f	class:Log
+R0	mongoose.c	2875;"	d	file:
+R0	mongoose.c	2883;"	d	file:
+R1	mongoose.c	2876;"	d	file:
+R1	mongoose.c	2884;"	d	file:
+R2	mongoose.c	2877;"	d	file:
+R2	mongoose.c	2885;"	d	file:
+R3	mongoose.c	2878;"	d	file:
+R3	mongoose.c	2886;"	d	file:
+R4	mongoose.c	2879;"	d	file:
+R4	mongoose.c	2887;"	d	file:
+RUN_AS_USER	mongoose.c	/^  RUN_AS_USER,$/;"	e	enum:__anon2	file:
+RUN_TEST	test/unit_test.c	24;"	d	file:
+Recv	TcpSocket.h	/^    int Recv(char* buffer, unsigned int length)$/;"	f	class:TcpSocket
+S1_PEM	examples/websocket_ssl_proxy/ws_ssl.c	18;"	d	file:
+S2_PEM	examples/websocket_ssl_proxy/ws_ssl.c	21;"	d	file:
+SHA1Final	mongoose.c	/^static void SHA1Final(unsigned char digest[20], SHA1_CTX *context) {$/;"	f	file:
+SHA1HANDSOFF	mongoose.c	2855;"	d	file:
+SHA1Init	mongoose.c	/^static void SHA1Init(SHA1_CTX *context) {$/;"	f	file:
+SHA1Transform	mongoose.c	/^static void SHA1Transform(uint32_t state[5], const unsigned char buffer[64]) {$/;"	f	file:
+SHA1Update	mongoose.c	/^static void SHA1Update(SHA1_CTX *context, const unsigned char *data,$/;"	f	file:
+SHA1_CTX	mongoose.c	/^} SHA1_CTX;$/;"	t	typeref:struct:__anon4	file:
+SIGCHLD	examples/web_server/web_server.c	47;"	d	file:
+SOURCES	examples/array_vars/Makefile	/^SOURCES = $(PROG).c ..\/..\/mongoose.c$/;"	m
+SOURCES	examples/big_upload/Makefile	/^SOURCES = $(PROG).c ..\/..\/mongoose.c$/;"	m
+SOURCES	examples/cookie_authentication/Makefile	/^SOURCES = $(PROG).c ..\/..\/mongoose.c$/;"	m
+SOURCES	examples/digest_authentication/Makefile	/^SOURCES = $(PROG).c ..\/..\/mongoose.c$/;"	m
+SOURCES	examples/file_upload/Makefile	/^SOURCES = $(PROG).c ..\/..\/mongoose.c$/;"	m
+SOURCES	examples/form_submit/Makefile	/^SOURCES = $(PROG).c ..\/..\/mongoose.c$/;"	m
+SOURCES	examples/hello_world/Makefile	/^SOURCES = $(PROG).c ..\/..\/mongoose.c$/;"	m
+SOURCES	examples/http_client/Makefile	/^SOURCES = $(PROG).c ..\/..\/mongoose.c$/;"	m
+SOURCES	examples/mjpg_streamer/Makefile	/^SOURCES = $(PROG).c ..\/..\/mongoose.c$/;"	m
+SOURCES	examples/multi_threaded_server/Makefile	/^SOURCES = $(PROG).c ..\/..\/mongoose.c$/;"	m
+SOURCES	examples/proxy_server/Makefile	/^SOURCES = $(PROG).c ..\/..\/mongoose.c$/;"	m
+SOURCES	examples/restful_api/Makefile	/^SOURCES = $(PROG).c ..\/..\/mongoose.c$/;"	m
+SOURCES	examples/send_file/Makefile	/^SOURCES = $(PROG).c ..\/..\/mongoose.c$/;"	m
+SOURCES	examples/web_server/Makefile	/^SOURCES = $(PROG).c ..\/..\/mongoose.c$/;"	m
+SOURCES	examples/websocket_chat/Makefile	/^SOURCES = $(PROG).c ..\/..\/mongoose.c$/;"	m
+SOURCES	examples/websocket_echo_server/Makefile	/^SOURCES = $(PROG).c ..\/..\/mongoose.c$/;"	m
+SOURCES	examples/websocket_ssl_proxy/Makefile	/^SOURCES = ws_ssl.c ..\/..\/mongoose.c ssl_wrapper.c$/;"	m
+SOURCES	test/Makefile	/^SOURCES = $(PROG).c$/;"	m
+SOURCES_POLAR	examples/web_server/Makefile	/^SOURCES_POLAR = $(SOURCES) $(POLARSSLCOMPAT_PATH)\/polarssl_compat.c$/;"	m
+SOURCES_POLAR	examples/websocket_ssl_proxy/Makefile	/^SOURCES_POLAR = $(SOURCES) $(POLARSSLCOMPAT_PATH)\/polarssl_compat.c$/;"	m
+SSE_CONNECTION	examples/proxy_server/proxy_server.c	35;"	d	file:
+SSI_PATTERN	mongoose.c	/^  SSI_PATTERN,$/;"	e	enum:__anon2	file:
+SSL	examples/websocket_ssl_proxy/net_skeleton.h	/^typedef void *SSL;$/;"	t
+SSL	mongoose.c	/^typedef void *SSL;$/;"	t	file:
+SSL_CTX	examples/websocket_ssl_proxy/net_skeleton.h	/^typedef void *SSL_CTX;$/;"	t
+SSL_CTX	mongoose.c	/^typedef void *SSL_CTX;$/;"	t	file:
+SSL_WRAPPER_HEADER_INCLUDED	examples/websocket_ssl_proxy/ssl_wrapper.h	20;"	d
+STR	examples/websocket_ssl_proxy/net_skeleton.h	71;"	d
+STR	mongoose.c	113;"	d	file:
+STR	mongoose.c	1334;"	d	file:
+STRX	examples/websocket_ssl_proxy/net_skeleton.h	70;"	d
+STRX	mongoose.c	112;"	d	file:
+STRX	mongoose.c	1333;"	d	file:
+SUBDIRS	examples/Makefile	/^SUBDIRS = $(sort $(filter-out csharp\/, $(dir $(wildcard *\/))))$/;"	m
+S_ISDIR	examples/web_server/web_server.c	37;"	d	file:
+S_ISDIR	examples/websocket_ssl_proxy/net_skeleton.h	90;"	d
+S_ISDIR	mongoose.c	1305;"	d	file:
+S_ISDIR	mongoose.c	132;"	d	file:
+Send	TcpSocket.h	/^    int Send(const char* buffer, unsigned int length)$/;"	f	class:TcpSocket
+Start	DownloadTask.h	/^    int Start(const char* url, char** buffer, unsigned int* length)$/;"	f	class:DownloadTask
+TcpSocket	TcpSocket.h	/^    TcpSocket() : sockfd(-1)$/;"	f	class:TcpSocket
+TcpSocket	TcpSocket.h	/^class TcpSocket$/;"	c
+UNICODE	examples/web_server/web_server.c	4;"	d	file:
+UNICODE	examples/websocket_ssl_proxy/net_skeleton.h	24;"	d
+UNICODE	mongoose.c	43;"	d	file:
+URL_REWRITES	mongoose.c	/^  URL_REWRITES,$/;"	e	enum:__anon2	file:
+WEBSOCKET_OPCODE_BINARY	mongoose.h	/^  WEBSOCKET_OPCODE_BINARY = 0x2,$/;"	e	enum:__anon1
+WEBSOCKET_OPCODE_CONNECTION_CLOSE	mongoose.h	/^  WEBSOCKET_OPCODE_CONNECTION_CLOSE = 0x8,$/;"	e	enum:__anon1
+WEBSOCKET_OPCODE_CONTINUATION	mongoose.h	/^  WEBSOCKET_OPCODE_CONTINUATION = 0x0,$/;"	e	enum:__anon1
+WEBSOCKET_OPCODE_PING	mongoose.h	/^  WEBSOCKET_OPCODE_PING = 0x9,$/;"	e	enum:__anon1
+WEBSOCKET_OPCODE_PONG	mongoose.h	/^  WEBSOCKET_OPCODE_PONG = 0xa$/;"	e	enum:__anon1
+WEBSOCKET_OPCODE_TEXT	mongoose.h	/^  WEBSOCKET_OPCODE_TEXT = 0x1,$/;"	e	enum:__anon1
+WIN32_LEAN_AND_MEAN	examples/web_server/web_server.c	10;"	d	file:
+WIN32_LEAN_AND_MEAN	examples/websocket_ssl_proxy/net_skeleton.h	29;"	d
+WIN32_LEAN_AND_MEAN	mongoose.c	50;"	d	file:
+Warn	Log.h	/^    int Warn(const char* fmt, ...)$/;"	f	class:Log
+X	examples/Makefile	/^X = $(SUBDIRS)$/;"	m
+_CRT_SECURE_NO_WARNINGS	examples/web_server/web_server.c	8;"	d	file:
+_CRT_SECURE_NO_WARNINGS	examples/websocket_ssl_proxy/net_skeleton.h	28;"	d
+_CRT_SECURE_NO_WARNINGS	mongoose.c	48;"	d	file:
+_DOWNLOADTASK_H_	DownloadTask.h	11;"	d
+_FILE_OFFSET_BITS	examples/websocket_ssl_proxy/net_skeleton.h	36;"	d
+_FILE_OFFSET_BITS	mongoose.c	59;"	d	file:
+_HTTPUTILS_H_	HttpUtils.h	11;"	d
+_INTEGRAL_MAX_BITS	examples/websocket_ssl_proxy/net_skeleton.h	27;"	d
+_INTEGRAL_MAX_BITS	mongoose.c	46;"	d	file:
+_LARGEFILE_SOURCE	examples/websocket_ssl_proxy/net_skeleton.h	34;"	d
+_LARGEFILE_SOURCE	mongoose.c	57;"	d	file:
+_LOG_H_	Log.h	11;"	d
+_MBCS	examples/web_server/web_server.c	6;"	d	file:
+_MBCS	examples/websocket_ssl_proxy/net_skeleton.h	26;"	d
+_MBCS	mongoose.c	45;"	d	file:
+_MMAP_DECLARED	mongoose.c	75;"	d	file:
+_TCPSOCKET_H_	TcpSocket.h	11;"	d
+_UNICODE	examples/web_server/web_server.c	5;"	d	file:
+_UNICODE	examples/websocket_ssl_proxy/net_skeleton.h	25;"	d
+_UNICODE	mongoose.c	44;"	d	file:
+_WIN32_WINNT	examples/web_server/web_server.c	7;"	d	file:
+_XOPEN_SOURCE	examples/web_server/web_server.c	9;"	d	file:
+_XOPEN_SOURCE	examples/websocket_ssl_proxy/net_skeleton.h	30;"	d
+_XOPEN_SOURCE	mongoose.c	52;"	d	file:
+__STDC_FORMAT_MACROS	examples/websocket_ssl_proxy/net_skeleton.h	31;"	d
+__STDC_FORMAT_MACROS	mongoose.c	54;"	d	file:
+__STDC_LIMIT_MACROS	examples/websocket_ssl_proxy/net_skeleton.h	32;"	d
+__STDC_LIMIT_MACROS	mongoose.c	55;"	d	file:
+__cdecl	examples/web_server/web_server.c	60;"	d	file:
+__cdecl	examples/websocket_ssl_proxy/net_skeleton.h	104;"	d
+__cdecl	mongoose.c	147;"	d	file:
+__func__	examples/websocket_ssl_proxy/net_skeleton.h	72;"	d
+__func__	mongoose.c	114;"	d	file:
+__func__	mongoose.c	1335;"	d	file:
+abs_path	examples/web_server/web_server.c	46;"	d	file:
+abs_path	examples/web_server/web_server.c	61;"	d	file:
+abs_path	mongoose.c	/^static void abs_path(const char *utf8_path, char *abs_path, size_t len) {$/;"	f	file:
+accept_conn	mongoose.c	/^static struct ns_connection *accept_conn(struct ns_connection *ls) {$/;"	f	file:
+active_connections	examples/websocket_ssl_proxy/net_skeleton.h	/^  struct ns_connection *active_connections;$/;"	m	struct:ns_mgr	typeref:struct:ns_mgr::ns_connection
+active_connections	mongoose.c	/^  struct ns_connection *active_connections;$/;"	m	struct:ns_mgr	typeref:struct:ns_mgr::ns_connection	file:
+addenv	mongoose.c	/^static char *addenv(struct cgi_env_block *block, const char *fmt, ...) {$/;"	f	file:
+addenv2	mongoose.c	/^static void addenv2(struct cgi_env_block *blk, const char *name) {$/;"	f	file:
+base64_encode	mongoose.c	/^static void base64_encode(const unsigned char *src, int src_len, char *dst) {$/;"	f	file:
+bin2str	mongoose.c	/^static void bin2str(char *to, const unsigned char *p, size_t len) {$/;"	f	file:
+bits	mongoose.c	/^  uint32_t bits[2];$/;"	m	struct:MD5Context	file:
+blk	mongoose.c	2874;"	d	file:
+blk	mongoose.c	2881;"	d	file:
+blk0	mongoose.c	/^static uint32_t blk0(union char64long16 *block, int i) {$/;"	f	file:
+buf	examples/websocket_ssl_proxy/net_skeleton.h	/^  char *buf;$/;"	m	struct:iobuf
+buf	mongoose.c	/^  char *buf;$/;"	m	struct:iobuf	file:
+buf	mongoose.c	/^  char buf[CGI_ENVIRONMENT_SIZE];       \/\/ Environment buffer$/;"	m	struct:cgi_env_block	file:
+buf	mongoose.c	/^  uint32_t buf[4];$/;"	m	struct:MD5Context	file:
+buffer	mongoose.c	/^    unsigned char buffer[64];$/;"	m	struct:__anon4	file:
+byteReverse	mongoose.c	/^static void byteReverse(unsigned char *buf, unsigned longs) {$/;"	f	file:
+c	mongoose.c	/^union char64long16 { unsigned char c[64]; uint32_t l[16]; };$/;"	m	union:char64long16	file:
+call_http_client_handler	mongoose.c	/^static void call_http_client_handler(struct connection *conn) {$/;"	f	file:
+call_request_handler	mongoose.c	/^static int call_request_handler(struct connection *conn) {$/;"	f	file:
+call_request_handler_if_data_is_buffered	mongoose.c	/^static void call_request_handler_if_data_is_buffered(struct connection *conn) {$/;"	f	file:
+call_user	mongoose.c	/^static int call_user(struct connection *conn, enum mg_event ev) {$/;"	f	file:
+callback	examples/websocket_ssl_proxy/net_skeleton.h	/^  ns_callback_t callback;     \/\/ Event handler function$/;"	m	struct:ns_connection
+callback	mongoose.c	/^  ns_callback_t callback;     \/\/ Event handler function$/;"	m	struct:ns_connection	file:
+callback	mongoose.c	/^  ns_callback_t callback;$/;"	m	struct:ctl_msg	file:
+callback_param	mongoose.h	/^  void *callback_param;$/;"	m	struct:mg_connection
+cgi_env_block	mongoose.c	/^struct cgi_env_block {$/;"	s	file:
+cgi_status	mongoose.c	/^static const char cgi_status[] = "HTTP\/1.1 200 OK\\r\\n";$/;"	v	file:
+char64long16	mongoose.c	/^union char64long16 { unsigned char c[64]; uint32_t l[16]; };$/;"	u	file:
+check_acl	mongoose.c	/^static int check_acl(const char *acl, uint32_t remote_ip) {$/;"	f	file:
+check_auth	examples/cookie_authentication/cookie_auth.c	/^static int check_auth(struct mg_connection *conn) {$/;"	f	file:
+check_login_form_submission	examples/cookie_authentication/cookie_auth.c	/^static int check_login_form_submission(struct mg_connection *conn) {$/;"	f	file:
+check_password	mongoose.c	/^static int check_password(const char *method, const char *ha1, const char *uri,$/;"	f	file:
+cl	mongoose.c	/^  int64_t cl;             \/\/ Reply content length, for Range support$/;"	m	struct:connection	file:
+close	mongoose.c	1322;"	d	file:
+close_local_endpoint	mongoose.c	/^static void close_local_endpoint(struct connection *conn) {$/;"	f	file:
+closedir	mongoose.c	/^static int closedir(DIR *dir) {$/;"	f	file:
+closesocket	examples/websocket_ssl_proxy/net_skeleton.h	103;"	d
+closesocket	mongoose.c	145;"	d	file:
+compare_dir_entries	mongoose.c	/^static int __cdecl compare_dir_entries(const void *p1, const void *p2) {$/;"	f	file:
+config	examples/websocket_ssl_proxy/ws_ssl.c	/^struct config {$/;"	s	file:
+config_options	mongoose.c	/^  char *config_options[NUM_OPTIONS];$/;"	m	struct:mg_server	file:
+conn	mongoose.c	/^  struct connection *conn;$/;"	m	struct:dir_entry	typeref:struct:dir_entry::connection	file:
+conn	mongoose.c	/^  struct mg_connection *conn;$/;"	m	struct:cgi_env_block	typeref:struct:cgi_env_block::mg_connection	file:
+conn_data	examples/websocket_chat/websocket_chat.c	/^struct conn_data {$/;"	s	file:
+conn_state	examples/mjpg_streamer/mjpg_streamer.c	/^struct conn_state {$/;"	s	file:
+connection	mongoose.c	/^struct connection {$/;"	s	file:
+connection_param	mongoose.h	/^  void *connection_param;     \/\/ Placeholder for connection-specific data$/;"	m	struct:mg_connection
+construct_etag	mongoose.c	/^static void construct_etag(char *buf, size_t buf_len, const file_stat_t *st) {$/;"	f	file:
+content	examples/csharp/mongoose.cs	/^	[MarshalAs(UnmanagedType.LPTStr)] public IntPtr content;$/;"	f	struct:MongooseConnection
+content	mongoose.h	/^  char *content;              \/\/ POST (or websocket message) data, or NULL$/;"	m	struct:mg_connection
+contentLength	HttpUtils.h	/^    unsigned int contentLength; \/\/ content length$/;"	m	struct:HttpHead
+content_len	examples/csharp/mongoose.cs	/^	[MarshalAs(UnmanagedType.SysInt)] public int content_len;$/;"	f	struct:MongooseConnection
+content_len	mongoose.h	/^  size_t content_len;         \/\/ Data length$/;"	m	struct:mg_connection
+convert_uri_to_file_name	mongoose.c	/^static int convert_uri_to_file_name(struct connection *conn, char *buf,$/;"	f	file:
+count	mongoose.c	/^    uint32_t count[2];$/;"	m	struct:__anon4	file:
+ctl	examples/websocket_ssl_proxy/net_skeleton.h	/^  sock_t ctl[2];                    \/\/ Socketpair for mg_wakeup()$/;"	m	struct:ns_mgr
+ctl	mongoose.c	/^  sock_t ctl[2];                    \/\/ Socketpair for mg_wakeup()$/;"	m	struct:ns_mgr	file:
+ctl_msg	mongoose.c	/^struct ctl_msg {$/;"	s	file:
+d_name	mongoose.c	/^  char d_name[MAX_PATH_SIZE];$/;"	m	struct:dirent	file:
+deliver_websocket_frame	mongoose.c	/^static size_t deliver_websocket_frame(struct connection *conn) {$/;"	f	file:
+die	examples/web_server/web_server.c	/^static void die(const char *fmt, ...) {$/;"	f	file:
+dir_entry	mongoose.c	/^struct dir_entry {$/;"	s	file:
+dirent	mongoose.c	/^struct dirent {$/;"	s	file:
+dll_	examples/csharp/mongoose.cs	/^  public const string dll_ = "mongoose";$/;"	f	class:Mongoose
+do_proxy	mongoose.c	/^static void do_proxy(struct connection *conn) {$/;"	f	file:
+do_ssi_exec	mongoose.c	/^static void do_ssi_exec(struct mg_connection *conn, char *tag) {$/;"	f	file:
+do_ssi_include	mongoose.c	/^static void do_ssi_include(struct mg_connection *conn, const char *ssi,$/;"	f	file:
+elog	examples/proxy_server/proxy_server.c	/^static void elog(int do_exit, const char *fmt, ...) {$/;"	f	file:
+endpoint	mongoose.c	/^  union endpoint endpoint;$/;"	m	struct:connection	typeref:union:connection::endpoint	file:
+endpoint	mongoose.c	/^union endpoint {$/;"	u	file:
+endpoint_type	mongoose.c	/^  enum endpoint_type endpoint_type;$/;"	m	struct:connection	typeref:enum:connection::endpoint_type	file:
+endpoint_type	mongoose.c	/^enum endpoint_type {$/;"	g	file:
+ev_handler	examples/array_vars/array_vars.c	/^static int ev_handler(struct mg_connection *conn, enum mg_event ev) {$/;"	f	file:
+ev_handler	examples/big_upload/big_upload.c	/^static int ev_handler(struct mg_connection *conn, enum mg_event ev) {$/;"	f	file:
+ev_handler	examples/cookie_authentication/cookie_auth.c	/^static int ev_handler(struct mg_connection *conn, enum mg_event ev) {$/;"	f	file:
+ev_handler	examples/digest_authentication/digest_auth.c	/^static int ev_handler(struct mg_connection *conn, enum mg_event ev) {$/;"	f	file:
+ev_handler	examples/file_upload/file_upload.c	/^static int ev_handler(struct mg_connection *conn, enum mg_event ev) {$/;"	f	file:
+ev_handler	examples/form_submit/form_submit.c	/^static int ev_handler(struct mg_connection *conn, enum mg_event ev) {$/;"	f	file:
+ev_handler	examples/hello_world/hello_world.c	/^static int ev_handler(struct mg_connection *conn, enum mg_event ev) {$/;"	f	file:
+ev_handler	examples/http_client/http_client.c	/^static int ev_handler(struct mg_connection *conn, enum mg_event ev) {$/;"	f	file:
+ev_handler	examples/mjpg_streamer/mjpg_streamer.c	/^static int ev_handler(struct mg_connection *conn, enum mg_event ev) {$/;"	f	file:
+ev_handler	examples/multi_threaded_server/multi_threaded_server.c	/^static int ev_handler(struct mg_connection *conn, enum mg_event ev) {$/;"	f	file:
+ev_handler	examples/restful_api/restful_api.c	/^static int ev_handler(struct mg_connection *conn, enum mg_event ev) {$/;"	f	file:
+ev_handler	examples/send_file/send_file.c	/^static int ev_handler(struct mg_connection *conn, enum mg_event ev) {$/;"	f	file:
+ev_handler	examples/websocket_chat/websocket_chat.c	/^static int ev_handler(struct mg_connection *conn, enum mg_event ev) {$/;"	f	file:
+ev_handler	examples/websocket_echo_server/websocket_echo_server.c	/^static int ev_handler(struct mg_connection *conn, enum mg_event ev) {$/;"	f	file:
+ev_handler	examples/websocket_ssl_proxy/ssl_wrapper.c	/^static void ev_handler(struct ns_connection *nc, int ev, void *p) {$/;"	f	file:
+ev_handler	examples/websocket_ssl_proxy/ws_ssl.c	/^static int ev_handler(struct mg_connection *conn, enum mg_event ev) {$/;"	f	file:
+event_handler	mongoose.c	/^  mg_handler_t event_handler;$/;"	m	struct:mg_server	file:
+evh1	test/unit_test.c	/^static int evh1(struct mg_connection *conn, enum mg_event ev) {$/;"	f	file:
+evh2	test/unit_test.c	/^static int evh2(struct mg_connection *conn, enum mg_event ev) {$/;"	f	file:
+exists	examples/proxy_server/proxy_server.c	/^static int exists(const char *path) {$/;"	f	file:
+exit_flag	examples/web_server/web_server.c	/^static int exit_flag;$/;"	v	file:
+ext_len	mongoose.c	/^  size_t ext_len;$/;"	m	struct:__anon3	file:
+extension	mongoose.c	/^  const char *extension;$/;"	m	struct:__anon3	file:
+fd	mongoose.c	/^  int fd;                     \/\/ Opened regular local file$/;"	m	union:endpoint	file:
+file	HttpUtils.h	/^    char file[MAXURLLENGTH];    \/\/ file$/;"	m	struct:HttpUrl
+file_index	examples/mjpg_streamer/mjpg_streamer.c	/^  int file_index;$/;"	m	struct:conn_state	file:
+file_name	mongoose.c	/^  char *file_name;$/;"	m	struct:dir_entry	file:
+file_stat_t	examples/web_server/web_server.c	/^typedef struct _stat file_stat_t;$/;"	t	typeref:struct:_stat	file:
+file_stat_t	examples/web_server/web_server.c	/^typedef struct stat file_stat_t;$/;"	t	typeref:struct:stat	file:
+file_stat_t	mongoose.c	/^typedef struct _stati64 file_stat_t;$/;"	t	typeref:struct:_stati64	file:
+file_stat_t	mongoose.c	/^typedef struct stat file_stat_t;$/;"	t	typeref:struct:stat	file:
+fileno	mongoose.c	1323;"	d	file:
+find_index_file	mongoose.c	/^static int find_index_file(struct connection *conn, char *path,$/;"	f	file:
+flags	examples/websocket_ssl_proxy/net_skeleton.h	/^  unsigned int flags;$/;"	m	struct:ns_connection
+flags	mongoose.c	/^  unsigned int flags;$/;"	m	struct:ns_connection	file:
+flockfile	mongoose.c	1338;"	d	file:
+fopen	mongoose.c	1320;"	d	file:
+forward_put_data	mongoose.c	/^static void forward_put_data(struct connection *conn) {$/;"	f	file:
+funlockfile	mongoose.c	1339;"	d	file:
+generate_ssid	examples/cookie_authentication/cookie_auth.c	/^static void generate_ssid(const char *user_name, const char *expiration_date,$/;"	f	file:
+get_line_len	mongoose.c	/^static int get_line_len(const char *buf, int buf_len) {$/;"	f	file:
+get_mime_type	mongoose.c	/^static void get_mime_type(const struct mg_server *server, const char *path,$/;"	f	file:
+get_month_index	mongoose.c	/^static int get_month_index(const char *s) {$/;"	f	file:
+get_option	examples/web_server/web_server.c	/^static char *get_option(char **options, const char *option_name) {$/;"	f	file:
+get_option_index	mongoose.c	/^static int get_option_index(const char *name) {$/;"	f	file:
+get_request_len	mongoose.c	/^static int get_request_len(const char *s, size_t buf_len) {$/;"	f	file:
+get_var	mongoose.c	/^static int get_var(const char *data, size_t data_len, const char *name,$/;"	f	file:
+gmt_time_string	mongoose.c	/^static void gmt_time_string(char *buf, size_t buf_len, time_t *t) {$/;"	f	file:
+hPipe	mongoose.c	/^  HANDLE hPipe;$/;"	m	struct:threadparam	file:
+handle	Log.h	/^    FILE* handle;$/;"	m	class:Log
+handle	mongoose.c	/^  HANDLE   handle;$/;"	m	struct:DIR	file:
+handle_close	examples/big_upload/big_upload.c	/^static int handle_close(struct mg_connection *conn) {$/;"	f	file:
+handle_delete	mongoose.c	/^static void handle_delete(struct connection *conn, const char *path) {$/;"	f	file:
+handle_mkcol	mongoose.c	/^static void handle_mkcol(struct connection *conn, const char *path) {$/;"	f	file:
+handle_propfind	mongoose.c	/^static void handle_propfind(struct connection *conn, const char *path,$/;"	f	file:
+handle_put	mongoose.c	/^static void handle_put(struct connection *conn, const char *path) {$/;"	f	file:
+handle_recv	examples/big_upload/big_upload.c	/^static int handle_recv(struct mg_connection *conn) {$/;"	f	file:
+handle_request	examples/big_upload/big_upload.c	/^static int handle_request(struct mg_connection *conn) {$/;"	f	file:
+handle_restful_call	examples/restful_api/restful_api.c	/^static void handle_restful_call(struct mg_connection *conn) {$/;"	f	file:
+handle_ssi_request	mongoose.c	/^static void handle_ssi_request(struct connection *conn, const char *path) {$/;"	f	file:
+handle_websocket_message	examples/websocket_chat/websocket_chat.c	/^static void handle_websocket_message(struct mg_connection *conn) {$/;"	f	file:
+handler	mongoose.h	/^  void (*handler)(struct mg_connection *);$/;"	m	struct:mg_expansion
+headLength	HttpUtils.h	/^    unsigned int headLength;    \/\/ head length$/;"	m	struct:HttpHead
+hexdump	mongoose.c	/^static void hexdump(struct ns_connection *nc, const char *path,$/;"	f	file:
+hexdump_file	examples/websocket_ssl_proxy/net_skeleton.h	/^  const char *hexdump_file;         \/\/ Debug hexdump file path$/;"	m	struct:ns_mgr
+hexdump_file	mongoose.c	/^  const char *hexdump_file;         \/\/ Debug hexdump file path$/;"	m	struct:ns_mgr	file:
+host	HttpUtils.h	/^    char host[MAXURLLENGTH];    \/\/ host$/;"	m	struct:HttpUrl
+html_form	examples/form_submit/form_submit.c	/^static const char *html_form =$/;"	v	file:
+httpCode	HttpUtils.h	/^    unsigned int httpCode;      \/\/ http code$/;"	m	struct:HttpHead
+httpState	HttpUtils.h	/^    HttpState httpState;        \/\/ state$/;"	m	struct:HttpHead
+http_headers	examples/csharp/mongoose.cs	/^    public MongooseHeader[] http_headers;$/;"	f	struct:MongooseConnection
+http_headers	mongoose.h	/^  } http_headers[30];$/;"	m	struct:mg_connection	typeref:struct:mg_connection::mg_header
+http_version	examples/csharp/mongoose.cs	/^  [MarshalAs(UnmanagedType.LPTStr)] public string http_version;$/;"	f	struct:MongooseConnection
+http_version	mongoose.h	/^  const char *http_version;   \/\/ E.g. "1.0", "1.1"$/;"	m	struct:mg_connection
+in	mongoose.c	/^  unsigned char in[64];$/;"	m	struct:MD5Context	file:
+info	mongoose.c	/^  WIN32_FIND_DATAW info;$/;"	m	struct:DIR	file:
+init_server_name	examples/web_server/web_server.c	/^static void init_server_name(void) {$/;"	f	file:
+int64_t	examples/websocket_ssl_proxy/net_skeleton.h	/^typedef __int64   int64_t;$/;"	t
+int64_t	mongoose.c	/^typedef __int64   int64_t;$/;"	t	file:
+iobuf	examples/websocket_ssl_proxy/net_skeleton.h	/^struct iobuf {$/;"	s
+iobuf	mongoose.c	/^struct iobuf {$/;"	s	file:
+iobuf_append	mongoose.c	/^size_t iobuf_append(struct iobuf *io, const void *buf, size_t len) {$/;"	f
+iobuf_free	mongoose.c	/^void iobuf_free(struct iobuf *iobuf) {$/;"	f
+iobuf_init	mongoose.c	/^void iobuf_init(struct iobuf *iobuf, size_t initial_size) {$/;"	f
+iobuf_remove	mongoose.c	/^void iobuf_remove(struct iobuf *io, size_t n) {$/;"	f
+iobuf_resize	mongoose.c	/^void iobuf_resize(struct iobuf *io, size_t new_size) {$/;"	f
+is_authorized	mongoose.c	/^static int is_authorized(struct connection *conn, const char *path,$/;"	f	file:
+is_authorized_for_dav	mongoose.c	/^static int is_authorized_for_dav(struct connection *conn) {$/;"	f	file:
+is_big_endian	mongoose.c	/^static int is_big_endian(void) {$/;"	f	file:
+is_dav_request	mongoose.c	/^static int is_dav_request(const struct connection *conn) {$/;"	f	file:
+is_local_file	examples/proxy_server/proxy_server.c	/^static int is_local_file(const char *uri, char *path, size_t path_len) {$/;"	f	file:
+is_not_modified	mongoose.c	/^static int is_not_modified(const struct connection *conn,$/;"	f	file:
+is_path_absolute	examples/web_server/web_server.c	/^static int is_path_absolute(const char *path) {$/;"	f	file:
+is_resource_present_locally	examples/proxy_server/proxy_server.c	/^static int is_resource_present_locally(const char *uri) {$/;"	f	file:
+is_valid_http_method	mongoose.c	/^static int is_valid_http_method(const char *s) {$/;"	f	file:
+is_valid_uri	mongoose.c	/^static int is_valid_uri(const char *uri) {$/;"	f	file:
+is_websocket	examples/csharp/mongoose.cs	/^	[MarshalAs(UnmanagedType.SysInt)] public int is_websocket;$/;"	f	struct:MongooseConnection
+is_websocket	mongoose.h	/^  int is_websocket;           \/\/ Connection is a websocket connection$/;"	m	struct:mg_connection
+isbyte	mongoose.c	/^static int isbyte(int n) {$/;"	f	file:
+iter2	mongoose.c	/^static void iter2(struct ns_connection *nc, int ev, void *param) {$/;"	f	file:
+keyword	mongoose.h	/^  const char *keyword;$/;"	m	struct:mg_expansion
+l	mongoose.c	/^union char64long16 { unsigned char c[64]; uint32_t l[16]; };$/;"	m	union:char64long16	file:
+last_io_time	examples/websocket_ssl_proxy/net_skeleton.h	/^  time_t last_io_time;        \/\/ Timestamp of the last socket IO$/;"	m	struct:ns_connection
+last_io_time	mongoose.c	/^  time_t last_io_time;        \/\/ Timestamp of the last socket IO$/;"	m	struct:ns_connection	file:
+last_poll	examples/mjpg_streamer/mjpg_streamer.c	/^  time_t last_poll;$/;"	m	struct:conn_state	file:
+len	examples/websocket_ssl_proxy/net_skeleton.h	/^  size_t len;$/;"	m	struct:iobuf
+len	examples/websocket_ssl_proxy/net_skeleton.h	/^  size_t len;$/;"	m	struct:ns_str
+len	mongoose.c	/^  int len;                              \/\/ Space taken$/;"	m	struct:cgi_env_block	file:
+len	mongoose.c	/^  size_t len;$/;"	m	struct:iobuf	file:
+len	mongoose.c	/^  size_t len;$/;"	m	struct:ns_str	file:
+len	mongoose.c	/^  size_t len;$/;"	m	struct:vec	file:
+listener	examples/websocket_ssl_proxy/net_skeleton.h	/^  struct ns_connection *listener;     \/\/ Set only for accept()-ed connections$/;"	m	struct:ns_connection	typeref:struct:ns_connection::ns_connection
+listener	mongoose.c	/^  struct ns_connection *listener;     \/\/ Set only for accept()-ed connections$/;"	m	struct:ns_connection	typeref:struct:ns_connection::ns_connection	file:
+local_ip	examples/csharp/mongoose.cs	/^	[MarshalAs(UnmanagedType.LPTStr)] public string local_ip;$/;"	f	struct:MongooseConnection
+local_ip	mongoose.h	/^  char local_ip[48];          \/\/ Local IP address$/;"	m	struct:mg_connection
+local_port	examples/csharp/mongoose.cs	/^	[MarshalAs(UnmanagedType.U2)] public short local_port;$/;"	f	struct:MongooseConnection
+local_port	mongoose.h	/^  unsigned short local_port;  \/\/ Local port number$/;"	m	struct:mg_connection
+location	HttpUtils.h	/^    char location[MAXURLLENGTH];\/\/ redirection$/;"	m	struct:HttpHead
+log_access	mongoose.c	/^static void log_access(const struct connection *conn, const char *path) {$/;"	f	file:
+log_header	mongoose.c	/^static void log_header(const struct mg_connection *conn, const char *header,$/;"	f	file:
+lowercase	mongoose.c	/^static int lowercase(const char *s) {$/;"	f	file:
+lsa	mongoose.c	/^  union socket_address lsa;   \/\/ Listening socket address$/;"	m	struct:mg_server	typeref:union:mg_server::socket_address	file:
+lseek	mongoose.c	1311;"	d	file:
+lseek	mongoose.c	1324;"	d	file:
+main	examples/array_vars/array_vars.c	/^int main(void) {$/;"	f
+main	examples/big_upload/big_upload.c	/^int main(void) {$/;"	f
+main	examples/cookie_authentication/cookie_auth.c	/^int main(void) {$/;"	f
+main	examples/digest_authentication/digest_auth.c	/^int main(void) {$/;"	f
+main	examples/file_upload/file_upload.c	/^int main(void) {$/;"	f
+main	examples/form_submit/form_submit.c	/^int main(void) {$/;"	f
+main	examples/hello_world/hello_world.c	/^int main(void) {$/;"	f
+main	examples/http_client/http_client.c	/^int main(void) {$/;"	f
+main	examples/mjpg_streamer/mjpg_streamer.c	/^int main(int argc, char *argv[]) {$/;"	f
+main	examples/multi_threaded_server/multi_threaded_server.c	/^int main(void) {$/;"	f
+main	examples/proxy_server/proxy_server.c	/^int main(int argc, char *argv[]) {$/;"	f
+main	examples/restful_api/restful_api.c	/^int main(void) {$/;"	f
+main	examples/send_file/send_file.c	/^int main(void) {$/;"	f
+main	examples/web_server/web_server.c	/^int main(int argc, char *argv[]) {$/;"	f
+main	examples/websocket_chat/websocket_chat.c	/^int main(void) {$/;"	f
+main	examples/websocket_echo_server/websocket_echo_server.c	/^int main(void) {$/;"	f
+main	examples/websocket_ssl_proxy/ssl_wrapper.c	/^int main(int argc, char *argv[]) {$/;"	f
+main	examples/websocket_ssl_proxy/ws_ssl.c	/^int main(void) {$/;"	f
+main	test/unit_test.c	/^int __cdecl main(void) {$/;"	f
+message	mongoose.c	/^  char message[NS_CTL_MSG_MESSAGE_SIZE];$/;"	m	struct:ctl_msg	file:
+mg_authorize_digest	mongoose.c	/^int mg_authorize_digest(struct mg_connection *c, FILE *fp) {$/;"	f
+mg_conn	mongoose.c	/^  struct mg_connection mg_conn;$/;"	m	struct:connection	typeref:struct:connection::mg_connection	file:
+mg_connect	mongoose.c	/^struct mg_connection *mg_connect(struct mg_server *server, const char *addr) {$/;"	f
+mg_connection	mongoose.h	/^struct mg_connection {$/;"	s
+mg_copy_listeners	mongoose.c	/^void mg_copy_listeners(struct mg_server *s, struct mg_server *to) {$/;"	f
+mg_create_server	examples/csharp/mongoose.cs	/^		mg_create_server(IntPtr user_data, MongooseEventHandler eh);$/;"	m	class:Mongoose	file:
+mg_create_server	mongoose.c	/^struct mg_server *mg_create_server(void *server_data, mg_handler_t handler) {$/;"	f
+mg_destroy_server	mongoose.c	/^void mg_destroy_server(struct mg_server **server) {$/;"	f
+mg_ev_handler	mongoose.c	/^static void mg_ev_handler(struct ns_connection *nc, int ev, void *p) {$/;"	f	file:
+mg_event	mongoose.h	/^enum mg_event {$/;"	g
+mg_expansion	mongoose.h	/^struct mg_expansion {$/;"	s
+mg_fopen	mongoose.c	/^static FILE *mg_fopen(const char *path, const char *mode) {$/;"	f	file:
+mg_forward	mongoose.c	/^int mg_forward(struct mg_connection *c, const char *addr) {$/;"	f
+mg_get_header	mongoose.c	/^const char *mg_get_header(const struct mg_connection *ri, const char *s) {$/;"	f
+mg_get_mime_type	mongoose.c	/^const char *mg_get_mime_type(const char *path, const char *default_mime_type) {$/;"	f
+mg_get_option	mongoose.c	/^const char *mg_get_option(const struct mg_server *server, const char *name) {$/;"	f
+mg_get_valid_option_names	mongoose.c	/^const char **mg_get_valid_option_names(void) {$/;"	f
+mg_get_var	mongoose.c	/^int mg_get_var(const struct mg_connection *conn, const char *name,$/;"	f
+mg_get_var_n	mongoose.c	/^int mg_get_var_n(const struct mg_connection *conn, const char *name,$/;"	f
+mg_handler_t	mongoose.h	/^typedef int (*mg_handler_t)(struct mg_connection *, enum mg_event);$/;"	t
+mg_header	mongoose.h	/^  struct mg_header {$/;"	s	struct:mg_connection
+mg_match_prefix	mongoose.c	/^int mg_match_prefix(const char *pattern, ssize_t pattern_len, const char *str) {$/;"	f
+mg_md5	mongoose.c	/^char *mg_md5(char buf[33], ...) {$/;"	f
+mg_mmap	mongoose.c	/^void *mg_mmap(FILE *fp, size_t size) {$/;"	f
+mg_munmap	mongoose.c	/^void mg_munmap(void *p, size_t size) {$/;"	f
+mg_next	mongoose.c	/^struct mg_connection *mg_next(struct mg_server *s, struct mg_connection *c) {$/;"	f
+mg_open	mongoose.c	/^static int mg_open(const char *path, int flag, int mode) {$/;"	f	file:
+mg_parse_header	mongoose.c	/^int mg_parse_header(const char *s, const char *var_name, char *buf,$/;"	f
+mg_parse_multipart	mongoose.c	/^int mg_parse_multipart(const char *buf, int buf_len,$/;"	f
+mg_poll_server	examples/csharp/mongoose.cs	/^		mg_poll_server(IntPtr server, int milli);$/;"	m	class:Mongoose	file:
+mg_poll_server	mongoose.c	/^time_t mg_poll_server(struct mg_server *server, int milliseconds) {$/;"	f
+mg_printf	mongoose.c	/^size_t mg_printf(struct mg_connection *conn, const char *fmt, ...) {$/;"	f
+mg_printf_data	mongoose.c	/^size_t mg_printf_data(struct mg_connection *c, const char *fmt, ...) {$/;"	f
+mg_result	mongoose.h	/^enum mg_result { MG_FALSE, MG_TRUE, MG_MORE };$/;"	g
+mg_send_data	examples/csharp/mongoose.cs	/^		mg_send_data(IntPtr conn, string data, int length);	$/;"	m	class:Mongoose	file:
+mg_send_data	mongoose.c	/^size_t mg_send_data(struct mg_connection *c, const void *data, int data_len) {$/;"	f
+mg_send_digest_auth_request	mongoose.c	/^void mg_send_digest_auth_request(struct mg_connection *c) {$/;"	f
+mg_send_file	mongoose.c	/^void mg_send_file(struct mg_connection *c, const char *file_name,$/;"	f
+mg_send_file_data	mongoose.c	/^void mg_send_file_data(struct mg_connection *c, int fd) {$/;"	f
+mg_send_file_internal	mongoose.c	/^void mg_send_file_internal(struct mg_connection *c, const char *file_name,$/;"	f
+mg_send_header	mongoose.c	/^void mg_send_header(struct mg_connection *c, const char *name, const char *v) {$/;"	f
+mg_send_status	mongoose.c	/^void mg_send_status(struct mg_connection *c, int status) {$/;"	f
+mg_server	mongoose.c	/^struct mg_server {$/;"	s	file:
+mg_set_option	examples/csharp/mongoose.cs	/^		mg_set_option(IntPtr server, string name, string value);$/;"	m	class:Mongoose	file:
+mg_set_option	mongoose.c	/^const char *mg_set_option(struct mg_server *server, const char *name,$/;"	f
+mg_snprintf	mongoose.c	/^static int mg_snprintf(char *buf, size_t buflen, const char *fmt, ...) {$/;"	f	file:
+mg_start_thread	mongoose.c	/^void *mg_start_thread(void *(*f)(void *), void *p) {$/;"	f
+mg_stat	mongoose.c	/^static int mg_stat(const char *path, file_stat_t *st) {$/;"	f	file:
+mg_strcasecmp	mongoose.c	/^static int mg_strcasecmp(const char *s1, const char *s2) {$/;"	f	file:
+mg_strdup	mongoose.c	/^static char *mg_strdup(const char *str) {$/;"	f	file:
+mg_strncasecmp	mongoose.c	/^static int mg_strncasecmp(const char *s1, const char *s2, size_t len) {$/;"	f	file:
+mg_template	mongoose.c	/^void mg_template(struct mg_connection *conn, const char *s,$/;"	f
+mg_terminate_ssl	mongoose.c	/^int mg_terminate_ssl(struct mg_connection *c, const char *cert) {$/;"	f
+mg_url_decode	mongoose.c	/^int mg_url_decode(const char *src, size_t src_len, char *dst,$/;"	f
+mg_url_encode	mongoose.c	/^size_t mg_url_encode(const char *src, size_t s_len, char *dst, size_t dst_len) {$/;"	f
+mg_vprintf	mongoose.c	/^size_t mg_vprintf(struct mg_connection *conn, const char *fmt, va_list ap) {$/;"	f
+mg_vprintf_data	mongoose.c	/^size_t mg_vprintf_data(struct mg_connection *c, const char *fmt, va_list ap) {$/;"	f
+mg_vsnprintf	mongoose.c	/^static int mg_vsnprintf(char *buf, size_t buflen, const char *fmt, va_list ap) {$/;"	f	file:
+mg_wakeup_server	mongoose.c	/^void mg_wakeup_server(struct mg_server *server) {$/;"	f
+mg_wakeup_server_ex	mongoose.c	/^void mg_wakeup_server_ex(struct mg_server *server, mg_handler_t cb,$/;"	f
+mg_websocket_printf	mongoose.c	/^size_t mg_websocket_printf(struct mg_connection *conn, int opcode,$/;"	f
+mg_websocket_write	mongoose.c	/^size_t mg_websocket_write(struct mg_connection *conn, int opcode,$/;"	f
+mg_write	mongoose.c	/^size_t mg_write(struct mg_connection *c, const void *buf, size_t len) {$/;"	f
+mgr	examples/websocket_ssl_proxy/net_skeleton.h	/^  struct ns_mgr *mgr;$/;"	m	struct:ns_connection	typeref:struct:ns_connection::ns_mgr
+mgr	mongoose.c	/^  struct ns_mgr *mgr;$/;"	m	struct:ns_connection	typeref:struct:ns_connection::ns_mgr	file:
+mime_type	mongoose.c	/^  const char *mime_type;$/;"	m	struct:__anon3	file:
+mkdir	mongoose.c	1329;"	d	file:
+mmap	mongoose.c	/^static void *mmap(void *addr, int64_t len, int prot, int flags, int fd,$/;"	f	file:
+modify_passwords_file	examples/web_server/web_server.c	/^int modify_passwords_file(const char *fname, const char *domain,$/;"	f
+munmap	mongoose.c	1611;"	d	file:
+munmap	mongoose.c	1642;"	d	file:
+must_hide_file	mongoose.c	/^static int must_hide_file(struct connection *conn, const char *path) {$/;"	f	file:
+name	examples/csharp/mongoose.cs	/^  [MarshalAs(UnmanagedType.LPTStr)] public IntPtr name;$/;"	f	struct:MongooseHeader
+name	mongoose.h	/^    const char *name;         \/\/ HTTP header name$/;"	m	struct:mg_connection::mg_header
+nc	mongoose.c	/^  struct ns_connection *nc;   \/\/ CGI or proxy->target connection$/;"	m	union:endpoint	typeref:struct:endpoint::ns_connection	file:
+next	examples/websocket_ssl_proxy/net_skeleton.h	/^  struct ns_connection *next, *prev;  \/\/ ns_mgr::active_connections linkage$/;"	m	struct:ns_connection	typeref:struct:ns_connection::ns_connection
+next	mongoose.c	/^  struct ns_connection *next, *prev;  \/\/ ns_mgr::active_connections linkage$/;"	m	struct:ns_connection	typeref:struct:ns_connection::ns_connection	file:
+next_option	mongoose.c	/^static const char *next_option(const char *list, struct vec *val,$/;"	f	file:
+notify	examples/web_server/web_server.c	/^static void notify(const char *fmt, ...) {$/;"	f	file:
+ns_add_conn	mongoose.c	/^static void ns_add_conn(struct ns_mgr *mgr, struct ns_connection *c) {$/;"	f	file:
+ns_add_sock	mongoose.c	/^struct ns_connection *ns_add_sock(struct ns_mgr *s, sock_t sock,$/;"	f
+ns_add_to_set	mongoose.c	/^static void ns_add_to_set(sock_t sock, fd_set *set, sock_t *max_fd) {$/;"	f	file:
+ns_avprintf	mongoose.c	/^int ns_avprintf(char **buf, size_t size, const char *fmt, va_list ap) {$/;"	f
+ns_bind	mongoose.c	/^struct ns_connection *ns_bind(struct ns_mgr *srv, const char *str,$/;"	f
+ns_broadcast	mongoose.c	/^void ns_broadcast(struct ns_mgr *mgr, ns_callback_t cb,void *data, size_t len) {$/;"	f
+ns_call	mongoose.c	/^static void ns_call(struct ns_connection *nc, int ev, void *p) {$/;"	f	file:
+ns_callback_t	examples/websocket_ssl_proxy/net_skeleton.h	/^typedef void (*ns_callback_t)(struct ns_connection *, int event_num, void *evp);$/;"	t
+ns_callback_t	mongoose.c	/^typedef void (*ns_callback_t)(struct ns_connection *, int event_num, void *evp);$/;"	t	file:
+ns_close_conn	mongoose.c	/^static void ns_close_conn(struct ns_connection *conn) {$/;"	f	file:
+ns_conn	mongoose.c	/^  struct ns_connection *ns_conn;  \/\/ NOTE(lsm): main.c depends on this order$/;"	m	struct:connection	typeref:struct:connection::ns_connection	file:
+ns_connect	mongoose.c	/^struct ns_connection *ns_connect(struct ns_mgr *mgr, const char *address,$/;"	f
+ns_connection	examples/websocket_ssl_proxy/net_skeleton.h	/^struct ns_connection {$/;"	s
+ns_connection	mongoose.c	/^struct ns_connection {$/;"	s	file:
+ns_destroy_conn	mongoose.c	/^static void ns_destroy_conn(struct ns_connection *conn) {$/;"	f	file:
+ns_forward	mongoose.c	/^static void ns_forward(struct ns_connection *from, struct ns_connection *to) {$/;"	f	file:
+ns_handle_udp	mongoose.c	/^static void ns_handle_udp(struct ns_connection *ls) {$/;"	f	file:
+ns_hexdump	mongoose.c	/^int ns_hexdump(const void *buf, int len, char *dst, int dst_len) {$/;"	f
+ns_is_error	mongoose.c	/^static int ns_is_error(int n) {$/;"	f	file:
+ns_mgr	examples/websocket_ssl_proxy/net_skeleton.h	/^struct ns_mgr {$/;"	s
+ns_mgr	mongoose.c	/^  struct ns_mgr ns_mgr;$/;"	m	struct:mg_server	typeref:struct:mg_server::ns_mgr	file:
+ns_mgr	mongoose.c	/^struct ns_mgr {$/;"	s	file:
+ns_mgr_free	mongoose.c	/^void ns_mgr_free(struct ns_mgr *s) {$/;"	f
+ns_mgr_init	mongoose.c	/^void ns_mgr_init(struct ns_mgr *s, void *user_data) {$/;"	f
+ns_mgr_poll	mongoose.c	/^time_t ns_mgr_poll(struct ns_mgr *mgr, int milli) {$/;"	f
+ns_next	mongoose.c	/^struct ns_connection *ns_next(struct ns_mgr *s, struct ns_connection *conn) {$/;"	f
+ns_open_listening_socket	mongoose.c	/^static sock_t ns_open_listening_socket(union socket_address *sa, int proto) {$/;"	f	file:
+ns_out	mongoose.c	/^static size_t ns_out(struct ns_connection *nc, const void *buf, size_t len) {$/;"	f	file:
+ns_parse_address	mongoose.c	/^static int ns_parse_address(const char *str, union socket_address *sa,$/;"	f	file:
+ns_printf	mongoose.c	/^int ns_printf(struct ns_connection *conn, const char *fmt, ...) {$/;"	f
+ns_read_from_socket	mongoose.c	/^static void ns_read_from_socket(struct ns_connection *conn) {$/;"	f	file:
+ns_remove_conn	mongoose.c	/^static void ns_remove_conn(struct ns_connection *conn) {$/;"	f	file:
+ns_resolve	mongoose.c	/^int ns_resolve(const char *host, char *buf, size_t n) {$/;"	f
+ns_resolve2	mongoose.c	/^static int ns_resolve2(const char *host, struct in_addr *ina) {$/;"	f	file:
+ns_send	mongoose.c	/^int ns_send(struct ns_connection *conn, const void *buf, size_t len) {$/;"	f
+ns_set_close_on_exec	mongoose.c	/^void ns_set_close_on_exec(sock_t sock) {$/;"	f
+ns_set_non_blocking_mode	mongoose.c	/^static void ns_set_non_blocking_mode(sock_t sock) {$/;"	f	file:
+ns_sock_to_str	mongoose.c	/^void ns_sock_to_str(sock_t sock, char *buf, size_t len, int flags) {$/;"	f
+ns_socketpair	mongoose.c	/^int ns_socketpair(sock_t sp[2]) {$/;"	f
+ns_socketpair2	mongoose.c	/^int ns_socketpair2(sock_t sp[2], int sock_type) {$/;"	f
+ns_ssl_err	mongoose.c	/^static int ns_ssl_err(struct ns_connection *conn, int res) {$/;"	f	file:
+ns_start_thread	mongoose.c	/^void *ns_start_thread(void *(*f)(void *), void *p) {$/;"	f
+ns_stat_t	examples/websocket_ssl_proxy/net_skeleton.h	/^typedef struct _stati64 ns_stat_t;$/;"	t	typeref:struct:_stati64
+ns_stat_t	examples/websocket_ssl_proxy/net_skeleton.h	/^typedef struct stat ns_stat_t;$/;"	t	typeref:struct:stat
+ns_stat_t	mongoose.c	/^typedef struct _stati64 ns_stat_t;$/;"	t	typeref:struct:_stati64	file:
+ns_stat_t	mongoose.c	/^typedef struct stat ns_stat_t;$/;"	t	typeref:struct:stat	file:
+ns_str	examples/websocket_ssl_proxy/net_skeleton.h	/^struct ns_str {$/;"	s
+ns_str	mongoose.c	/^struct ns_str {$/;"	s	file:
+ns_use_ca_cert	mongoose.c	/^static int ns_use_ca_cert(SSL_CTX *ctx, const char *cert) {$/;"	f	file:
+ns_use_cert	mongoose.c	/^static int ns_use_cert(SSL_CTX *ctx, const char *pem_file) {$/;"	f	file:
+ns_vprintf	mongoose.c	/^int ns_vprintf(struct ns_connection *nc, const char *fmt, va_list ap) {$/;"	f
+ns_write_to_socket	mongoose.c	/^static void ns_write_to_socket(struct ns_connection *conn) {$/;"	f	file:
+num_bytes_recv	mongoose.c	/^  int64_t num_bytes_recv; \/\/ Total number of bytes received$/;"	m	struct:connection	file:
+num_headers	examples/csharp/mongoose.cs	/^	[MarshalAs(UnmanagedType.SysInt)] public int num_headers;$/;"	f	struct:MongooseConnection
+num_headers	mongoose.h	/^  int num_headers;            \/\/ Number of HTTP headers$/;"	m	struct:mg_connection
+num_leap_years	mongoose.c	/^static int num_leap_years(int year) {$/;"	f	file:
+nvars	mongoose.c	/^  int nvars;                            \/\/ Number of variables in envp[]$/;"	m	struct:cgi_env_block	file:
+on_accept	mongoose.c	/^static void on_accept(struct ns_connection *nc, union socket_address *sa) {$/;"	f	file:
+on_cgi_data	mongoose.c	/^static void on_cgi_data(struct ns_connection *nc) {$/;"	f	file:
+on_recv_data	mongoose.c	/^static void on_recv_data(struct connection *conn) {$/;"	f	file:
+open	mongoose.c	1321;"	d	file:
+open_auth_file	mongoose.c	/^static FILE *open_auth_file(struct connection *conn, const char *path,$/;"	f	file:
+open_cgi_endpoint	mongoose.c	/^static void open_cgi_endpoint(struct connection *conn, const char *prog) {$/;"	f	file:
+open_file_endpoint	mongoose.c	/^static void open_file_endpoint(struct connection *conn, const char *path,$/;"	f	file:
+open_local_endpoint	mongoose.c	/^static void open_local_endpoint(struct connection *conn, int skip_user) {$/;"	f	file:
+opendir	mongoose.c	/^static DIR *opendir(const char *name) {$/;"	f	file:
+p	examples/websocket_ssl_proxy/net_skeleton.h	/^  const char *p;$/;"	m	struct:ns_str
+p	mongoose.c	/^  const char *p;$/;"	m	struct:ns_str	file:
+parse_date_string	mongoose.c	/^static time_t parse_date_string(const char *datetime) {$/;"	f	file:
+parse_header	mongoose.c	/^static int parse_header(const char *str, size_t str_len, const char *var_name,$/;"	f	file:
+parse_http_headers	mongoose.c	/^static void parse_http_headers(char **buf, struct mg_connection *ri) {$/;"	f	file:
+parse_http_message	mongoose.c	/^static size_t parse_http_message(char *buf, size_t len,$/;"	f	file:
+parse_net	mongoose.c	/^static int parse_net(const char *spec, uint32_t *net, uint32_t *mask) {$/;"	f	file:
+parse_range_header	mongoose.c	/^static int parse_range_header(const char *header, int64_t *a, int64_t *b) {$/;"	f	file:
+path_exists	examples/web_server/web_server.c	/^static int path_exists(const char *path, int is_dir) {$/;"	f	file:
+path_info	mongoose.c	/^  char *path_info;$/;"	m	struct:connection	file:
+pclose	mongoose.c	1317;"	d	file:
+pclose	mongoose.c	1328;"	d	file:
+ping_idle_websocket_connection	mongoose.c	/^static void ping_idle_websocket_connection(struct connection *conn, time_t t) {$/;"	f	file:
+ping_idle_websocket_connection	mongoose.c	3177;"	d	file:
+poll	examples/csharp/mongoose.cs	/^	public void poll(int milli) {$/;"	m	class:Mongoose
+popen	mongoose.c	1314;"	d	file:
+popen	mongoose.c	1327;"	d	file:
+port	HttpUtils.h	/^    unsigned short port;        \/\/ port$/;"	m	struct:HttpUrl
+prepare_cgi_environment	mongoose.c	/^static void prepare_cgi_environment(struct connection *conn,$/;"	f	file:
+prev	examples/websocket_ssl_proxy/net_skeleton.h	/^  struct ns_connection *next, *prev;  \/\/ ns_mgr::active_connections linkage$/;"	m	struct:ns_connection	typeref:struct:ns_connection::
+prev	mongoose.c	/^  struct ns_connection *next, *prev;  \/\/ ns_mgr::active_connections linkage$/;"	m	struct:ns_connection	typeref:struct:ns_connection::	file:
+print_dir_entry	mongoose.c	/^static void print_dir_entry(const struct dir_entry *de) {$/;"	f	file:
+print_props	mongoose.c	/^static void print_props(struct connection *conn, const char *uri,$/;"	f	file:
+process_command_line_arguments	examples/web_server/web_server.c	/^static void process_command_line_arguments(char *argv[], char **options) {$/;"	f	file:
+process_id_t	mongoose.c	/^typedef HANDLE process_id_t;$/;"	t	file:
+process_id_t	mongoose.c	/^typedef pid_t process_id_t;$/;"	t	file:
+process_response	mongoose.c	/^static void process_response(struct connection *conn) {$/;"	f	file:
+process_udp	mongoose.c	/^static void process_udp(struct ns_connection *nc) {$/;"	f	file:
+proto_data	examples/websocket_ssl_proxy/net_skeleton.h	/^  void *proto_data;           \/\/ Application protocol-specific data$/;"	m	struct:ns_connection
+proto_data	mongoose.c	/^  void *proto_data;           \/\/ Application protocol-specific data$/;"	m	struct:ns_connection	file:
+proxify_connection	mongoose.c	/^static void proxify_connection(struct connection *conn) {$/;"	f	file:
+proxy_event_handler	examples/proxy_server/proxy_server.c	/^static int proxy_event_handler(struct mg_connection *conn, enum mg_event ev) {$/;"	f	file:
+proxy_request	mongoose.c	/^static void proxy_request(struct ns_connection *pc, struct mg_connection *c) {$/;"	f	file:
+ptr	mongoose.c	/^  const char *ptr;$/;"	m	struct:vec	file:
+pull_from_stdout	mongoose.c	/^static void *pull_from_stdout(void *arg) {$/;"	f	file:
+push_message	examples/websocket_echo_server/websocket_echo_server.c	/^static void push_message(struct mg_server *server, time_t current_time) {$/;"	f	file:
+push_to_stdin	mongoose.c	/^static void *push_to_stdin(void *arg) {$/;"	f	file:
+put_dir	mongoose.c	/^static int put_dir(const char *path) {$/;"	f	file:
+query_string	examples/csharp/mongoose.cs	/^  [MarshalAs(UnmanagedType.LPTStr)] public string query_string;$/;"	f	struct:MongooseConnection
+query_string	mongoose.h	/^  const char *query_string;   \/\/ URL part after '?', not including '?', or NULL$/;"	m	struct:mg_connection
+read	mongoose.c	1325;"	d	file:
+read_file	test/unit_test.c	/^static char *read_file(const char *path, int *size) {$/;"	f	file:
+readdir	mongoose.c	/^static struct dirent *readdir(DIR *dir) {$/;"	f	file:
+recv_iobuf	examples/websocket_ssl_proxy/net_skeleton.h	/^  struct iobuf recv_iobuf;    \/\/ Received data$/;"	m	struct:ns_connection	typeref:struct:ns_connection::iobuf
+recv_iobuf	mongoose.c	/^  struct iobuf recv_iobuf;    \/\/ Received data$/;"	m	struct:ns_connection	typeref:struct:ns_connection::iobuf	file:
+recv_iobuf_limit	mongoose.c	/^  size_t recv_iobuf_limit; \/* Max size of recv buffer *\/$/;"	m	struct:ns_connection	file:
+remote_ip	examples/csharp/mongoose.cs	/^	[MarshalAs(UnmanagedType.ByValArray,SizeConst=48)] public char[] remote_ip;$/;"	f	struct:MongooseConnection
+remote_ip	mongoose.h	/^  char remote_ip[48];         \/\/ Max IPv6 string length is 45 characters$/;"	m	struct:mg_connection
+remote_port	examples/csharp/mongoose.cs	/^	[MarshalAs(UnmanagedType.U2)] public short remote_port;$/;"	f	struct:MongooseConnection
+remote_port	mongoose.h	/^  unsigned short remote_port; \/\/ Client's port$/;"	m	struct:mg_connection
+remove_directory	mongoose.c	/^static int remove_directory(const char *dir) {$/;"	f	file:
+remove_double_dots_and_double_slashes	mongoose.c	/^static void remove_double_dots_and_double_slashes(char *s) {$/;"	f	file:
+request	HttpUtils.h	/^    char request[MAXURLLENGTH]; \/\/ request$/;"	m	struct:HttpUrl
+request	mongoose.c	/^  char *request;$/;"	m	struct:connection	file:
+request_len	mongoose.c	/^  ssize_t request_len;  \/\/ Request length, including last \\r\\n after last header$/;"	m	struct:connection	file:
+request_method	examples/csharp/mongoose.cs	/^  [MarshalAs(UnmanagedType.LPTStr)] public string request_method;$/;"	f	struct:MongooseConnection
+request_method	mongoose.h	/^  const char *request_method; \/\/ "GET", "POST", etc$/;"	m	struct:mg_connection
+result	mongoose.c	/^  struct dirent result;$/;"	m	struct:DIR	typeref:struct:DIR::dirent	file:
+rmdir	mongoose.c	1330;"	d	file:
+rol	mongoose.c	2862;"	d	file:
+room	examples/websocket_chat/websocket_chat.c	/^  int room;$/;"	m	struct:conn_data	file:
+run_all_tests	test/unit_test.c	/^static const char *run_all_tests(void) {$/;"	f	file:
+s	mongoose.c	/^  sock_t s;$/;"	m	struct:threadparam	file:
+s_argv	examples/web_server/web_server.c	/^static char **s_argv = { NULL };$/;"	v	file:
+s_config_file	examples/web_server/web_server.c	/^static char s_config_file[PATH_MAX];  \/\/ Set by process_command_line_arguments$/;"	v	file:
+s_default_document_root	examples/web_server/web_server.c	/^static const char *s_default_document_root = ".";$/;"	v	file:
+s_default_listening_port	examples/web_server/web_server.c	/^static const char *s_default_listening_port = "8080";$/;"	v	file:
+s_login_uri	examples/cookie_authentication/cookie_auth.c	/^static const char *s_login_uri = "\/login.html";$/;"	v	file:
+s_no_cache_header	examples/restful_api/restful_api.c	/^static const char *s_no_cache_header =$/;"	v	file:
+s_received_signal	examples/http_client/http_client.c	/^static int s_received_signal = 0;$/;"	v	file:
+s_received_signal	examples/proxy_server/proxy_server.c	/^static int s_received_signal = 0;$/;"	v	file:
+s_received_signal	examples/websocket_ssl_proxy/ssl_wrapper.c	/^static int s_received_signal = 0;$/;"	v	file:
+s_received_signal	examples/websocket_ssl_proxy/ws_ssl.c	/^static int s_received_signal = 0;$/;"	v	file:
+s_remote_addr	examples/http_client/http_client.c	/^static const char *s_remote_addr = "glosbe.com:80";$/;"	v	file:
+s_secret	examples/cookie_authentication/cookie_auth.c	/^static const char *s_secret = ":-)";  \/\/ Must be known only to server$/;"	v	file:
+s_server	examples/http_client/http_client.c	/^static struct mg_server *s_server = NULL;$/;"	v	typeref:struct:mg_server	file:
+s_server	examples/proxy_server/proxy_server.c	/^static struct mg_server *s_server = NULL;$/;"	v	typeref:struct:mg_server	file:
+s_server	examples/websocket_chat/websocket_chat.c	/^static struct mg_server *s_server = NULL;$/;"	v	typeref:struct:mg_server	file:
+s_signal_received	examples/websocket_chat/websocket_chat.c	/^static int s_signal_received = 0;$/;"	v	file:
+s_wrappers	examples/websocket_ssl_proxy/ws_ssl.c	/^static struct config s_wrappers[] = {$/;"	v	typeref:struct:config	file:
+sa	examples/websocket_ssl_proxy/net_skeleton.h	/^  struct sockaddr sa;$/;"	m	union:socket_address	typeref:struct:socket_address::sockaddr
+sa	examples/websocket_ssl_proxy/net_skeleton.h	/^  union socket_address sa;    \/\/ Peer address$/;"	m	struct:ns_connection	typeref:union:ns_connection::socket_address
+sa	mongoose.c	/^  struct sockaddr sa;$/;"	m	union:socket_address	typeref:struct:socket_address::sockaddr	file:
+sa	mongoose.c	/^  union socket_address sa;    \/\/ Peer address$/;"	m	struct:ns_connection	typeref:union:ns_connection::socket_address	file:
+scan_directory	mongoose.c	/^static int scan_directory(struct connection *conn, const char *dir,$/;"	f	file:
+sdup	examples/web_server/web_server.c	/^static char *sdup(const char *str) {$/;"	f	file:
+send_continue_if_expected	mongoose.c	/^static void send_continue_if_expected(struct connection *conn) {$/;"	f	file:
+send_data	examples/csharp/mongoose.cs	/^  public static int send_data(IntPtr conn, string data) {$/;"	m	class:Mongoose
+send_directory_listing	mongoose.c	/^static void send_directory_listing(struct connection *conn, const char *dir) {$/;"	f	file:
+send_file	examples/mjpg_streamer/mjpg_streamer.c	/^static void send_file(struct mg_connection *conn, const char *path) {$/;"	f	file:
+send_file_data	mongoose.c	/^static void send_file_data(struct mg_connection *conn, FILE *fp) {$/;"	f	file:
+send_http_error	mongoose.c	/^static void send_http_error(struct connection *conn, int code,$/;"	f	file:
+send_index_page	examples/file_upload/file_upload.c	/^static int send_index_page(struct mg_connection *conn) {$/;"	f	file:
+send_iobuf	examples/websocket_ssl_proxy/net_skeleton.h	/^  struct iobuf send_iobuf;    \/\/ Data scheduled for sending$/;"	m	struct:ns_connection	typeref:struct:ns_connection::iobuf
+send_iobuf	mongoose.c	/^  struct iobuf send_iobuf;    \/\/ Data scheduled for sending$/;"	m	struct:ns_connection	typeref:struct:ns_connection::iobuf	file:
+send_ns_event	mongoose.c	/^static void send_ns_event(struct ns_connection *nc, int ev, void *p) {$/;"	f	file:
+send_options	mongoose.c	/^static void send_options(struct connection *conn) {$/;"	f	file:
+send_reply	examples/form_submit/form_submit.c	/^static void send_reply(struct mg_connection *conn) {$/;"	f	file:
+send_reply	examples/websocket_echo_server/websocket_echo_server.c	/^static int send_reply(struct mg_connection *conn) {$/;"	f	file:
+send_ssi_file	mongoose.c	/^static void send_ssi_file(struct mg_connection *conn, const char *path,$/;"	f	file:
+send_websocket_handshake	mongoose.c	/^static void send_websocket_handshake(struct mg_connection *conn,$/;"	f	file:
+send_websocket_handshake_if_requested	mongoose.c	/^static void send_websocket_handshake_if_requested(struct mg_connection *conn) {$/;"	f	file:
+serve	examples/multi_threaded_server/multi_threaded_server.c	/^static void *serve(void *server) {$/;"	f	file:
+serve_request	examples/cookie_authentication/cookie_auth.c	/^static int serve_request(struct mg_connection *conn) {$/;"	f	file:
+serve_thread_func	examples/websocket_ssl_proxy/ws_ssl.c	/^static void *serve_thread_func(void *param) {$/;"	f	file:
+server	examples/web_server/web_server.c	/^static struct mg_server *server;    \/\/ Set by start_mongoose()$/;"	v	typeref:struct:mg_server	file:
+server	mongoose.c	/^  struct mg_server *server;$/;"	m	struct:connection	typeref:struct:connection::mg_server	file:
+server_	examples/csharp/mongoose.cs	/^  private IntPtr server_;$/;"	f	class:Mongoose	file:
+server_name	examples/web_server/web_server.c	/^static char server_name[50];        \/\/ Set by init_server_name()$/;"	v	file:
+server_param	mongoose.h	/^  void *server_param;         \/\/ Parameter passed to mg_create_server()$/;"	m	struct:mg_connection
+serving_thread_func	examples/web_server/web_server.c	/^static void *serving_thread_func(void *param) {$/;"	f	file:
+set_absolute_path	examples/web_server/web_server.c	/^static void set_absolute_path(char *options[], const char *option_name) {$/;"	f	file:
+set_default_option_values	mongoose.c	/^static void set_default_option_values(char **opts) {$/;"	f	file:
+set_ips	mongoose.c	/^static void set_ips(struct ns_connection *nc, int is_rem) {$/;"	f	file:
+set_option	examples/web_server/web_server.c	/^static void set_option(char **options, const char *name, const char *value) {$/;"	f	file:
+set_options	examples/web_server/web_server.c	/^static void set_options(char *argv[]) {$/;"	f	file:
+setopt	examples/proxy_server/proxy_server.c	/^static void setopt(struct mg_server *s, const char *opt, const char *val) {$/;"	f	file:
+should_keep_alive	mongoose.c	/^static int should_keep_alive(const struct mg_connection *conn) {$/;"	f	file:
+show_usage_and_exit	examples/web_server/web_server.c	/^static void show_usage_and_exit(void) {$/;"	f	file:
+show_usage_and_exit	examples/websocket_ssl_proxy/ssl_wrapper.c	/^static void show_usage_and_exit(const char *prog) {$/;"	f	file:
+signal_handler	examples/http_client/http_client.c	/^static void signal_handler(int sig_num) {$/;"	f	file:
+signal_handler	examples/proxy_server/proxy_server.c	/^static void signal_handler(int sig_num) {$/;"	f	file:
+signal_handler	examples/web_server/web_server.c	/^static void __cdecl signal_handler(int sig_num) {$/;"	f	file:
+signal_handler	examples/websocket_chat/websocket_chat.c	/^static void signal_handler(int sig_num) {$/;"	f	file:
+signal_handler	examples/websocket_ssl_proxy/ssl_wrapper.c	/^static void signal_handler(int sig_num) {$/;"	f	file:
+signal_handler	examples/websocket_ssl_proxy/ws_ssl.c	/^static void signal_handler(int sig_num) {$/;"	f	file:
+sin	examples/websocket_ssl_proxy/net_skeleton.h	/^  struct sockaddr_in sin;$/;"	m	union:socket_address	typeref:struct:socket_address::sockaddr_in
+sin	mongoose.c	/^  struct sockaddr_in sin;$/;"	m	union:socket_address	typeref:struct:socket_address::sockaddr_in	file:
+sin6	examples/websocket_ssl_proxy/net_skeleton.h	/^  struct sockaddr sin6;$/;"	m	union:socket_address	typeref:struct:socket_address::sockaddr
+sin6	examples/websocket_ssl_proxy/net_skeleton.h	/^  struct sockaddr_in6 sin6;$/;"	m	union:socket_address	typeref:struct:socket_address::sockaddr_in6
+sin6	mongoose.c	/^  struct sockaddr sin6;$/;"	m	union:socket_address	typeref:struct:socket_address::sockaddr	file:
+sin6	mongoose.c	/^  struct sockaddr_in6 sin6;$/;"	m	union:socket_address	typeref:struct:socket_address::sockaddr_in6	file:
+size	examples/websocket_ssl_proxy/net_skeleton.h	/^  size_t size;$/;"	m	struct:iobuf
+size	mongoose.c	/^  size_t size;$/;"	m	struct:iobuf	file:
+skip	mongoose.c	/^static char *skip(char **buf, const char *delimiters) {$/;"	f	file:
+sleep	examples/proxy_server/proxy_server.c	25;"	d	file:
+sleep	examples/web_server/web_server.c	44;"	d	file:
+sleep	examples/websocket_ssl_proxy/net_skeleton.h	79;"	d
+sleep	mongoose.c	121;"	d	file:
+snprintf	examples/web_server/web_server.c	41;"	d	file:
+snprintf	examples/websocket_ssl_proxy/net_skeleton.h	77;"	d
+snprintf	mongoose.c	119;"	d	file:
+sock	examples/websocket_ssl_proxy/net_skeleton.h	/^  sock_t sock;                \/\/ Socket$/;"	m	struct:ns_connection
+sock	mongoose.c	/^  sock_t sock;                \/\/ Socket$/;"	m	struct:ns_connection	file:
+sock_t	examples/websocket_ssl_proxy/net_skeleton.h	/^typedef SOCKET sock_t;$/;"	t
+sock_t	examples/websocket_ssl_proxy/net_skeleton.h	/^typedef int sock_t;$/;"	t
+sock_t	mongoose.c	/^typedef SOCKET sock_t;$/;"	t	file:
+sock_t	mongoose.c	/^typedef int sock_t;$/;"	t	file:
+socket	DownloadTask.h	/^    TcpSocket* socket;$/;"	m	class:DownloadTask
+socket_address	examples/websocket_ssl_proxy/net_skeleton.h	/^union socket_address {$/;"	u
+socket_address	mongoose.c	/^union socket_address {$/;"	u	file:
+sockfd	TcpSocket.h	/^    int sockfd;$/;"	m	class:TcpSocket
+socklen_t	examples/websocket_ssl_proxy/net_skeleton.h	/^typedef int socklen_t;$/;"	t
+socklen_t	mongoose.c	/^typedef int socklen_t;$/;"	t	file:
+spawn_stdio_thread	mongoose.c	/^static void spawn_stdio_thread(sock_t sock, HANDLE hPipe,$/;"	f	file:
+sse_push	examples/proxy_server/proxy_server.c	/^static int sse_push(struct mg_connection *conn, enum mg_event ev) {$/;"	f	file:
+sse_pusher_thread_func	examples/proxy_server/proxy_server.c	/^static void *sse_pusher_thread_func(void *param) {$/;"	f	file:
+ssize_t	mongoose.c	/^typedef SSIZE_T ssize_t;$/;"	t	file:
+ssl	examples/websocket_ssl_proxy/net_skeleton.h	/^  SSL *ssl;$/;"	m	struct:ns_connection
+ssl	mongoose.c	/^  SSL *ssl;$/;"	m	struct:ns_connection	file:
+ssl_ctx	examples/websocket_ssl_proxy/net_skeleton.h	/^  SSL_CTX *ssl_ctx;$/;"	m	struct:ns_connection
+ssl_ctx	mongoose.c	/^  SSL_CTX *ssl_ctx;$/;"	m	struct:ns_connection	file:
+ssl_wrapper_init	examples/websocket_ssl_proxy/ssl_wrapper.c	/^void *ssl_wrapper_init(const char *local_addr, const char *target_addr,$/;"	f
+ssl_wrapper_serve	examples/websocket_ssl_proxy/ssl_wrapper.c	/^void ssl_wrapper_serve(void *param, volatile int *quit) {$/;"	f
+st	mongoose.c	/^  file_stat_t st;$/;"	m	struct:dir_entry	file:
+start_mongoose	examples/web_server/web_server.c	/^static void start_mongoose(int argc, char *argv[]) {$/;"	f	file:
+start_process	mongoose.c	/^static process_id_t start_process(char *interp, const char *cmd,$/;"	f	file:
+start_process	mongoose.c	/^static process_id_t start_process(const char *interp, const char *cmd,$/;"	f	file:
+stat	examples/web_server/web_server.c	49;"	d	file:
+stat	mongoose.c	1308;"	d	file:
+stat	mongoose.c	1319;"	d	file:
+state	mongoose.c	/^    uint32_t state[5];$/;"	m	struct:__anon4	file:
+static_builtin_mime_types	mongoose.c	/^} static_builtin_mime_types[] = {$/;"	v	typeref:struct:__anon3	file:
+static_config_options	mongoose.c	/^static const char *static_config_options[] = {$/;"	v	file:
+static_num_tests	test/unit_test.c	/^static int static_num_tests = 0;$/;"	v	file:
+status_code	examples/csharp/mongoose.cs	/^	[MarshalAs(UnmanagedType.SysInt)] public int status_code;$/;"	f	struct:MongooseConnection
+status_code	mongoose.h	/^  int status_code;            \/\/ HTTP status code for HTTP error handler$/;"	m	struct:mg_connection
+status_code_to_str	mongoose.c	/^static const char *status_code_to_str(int status_code) {$/;"	f	file:
+strdup	mongoose.c	1331;"	d	file:
+suggest_connection_header	mongoose.c	/^static const char *suggest_connection_header(const struct mg_connection *conn) {$/;"	f	file:
+target_addr	examples/websocket_ssl_proxy/ws_ssl.c	/^  const char *target_addr;$/;"	m	struct:config	file:
+terminate_headers	mongoose.c	/^static void terminate_headers(struct mg_connection *c) {$/;"	f	file:
+test_base64_encode	test/unit_test.c	/^static const char *test_base64_encode(void) {$/;"	f	file:
+test_get_var	test/unit_test.c	/^static const char *test_get_var(void) {$/;"	f	file:
+test_match_prefix	test/unit_test.c	/^static const char *test_match_prefix(void) {$/;"	f	file:
+test_mg_parse_header	test/unit_test.c	/^static const char *test_mg_parse_header(void) {$/;"	f	file:
+test_mg_set_option	test/unit_test.c	/^static const char *test_mg_set_option(void) {$/;"	f	file:
+test_next_option	test/unit_test.c	/^static const char *test_next_option(void) {$/;"	f	file:
+test_parse_http_message	test/unit_test.c	/^static const char *test_parse_http_message() {$/;"	f	file:
+test_parse_multipart	test/unit_test.c	/^static const char *test_parse_multipart(void) {$/;"	f	file:
+test_remove_double_dots	test/unit_test.c	/^static const char *test_remove_double_dots() {$/;"	f	file:
+test_rewrites	test/unit_test.c	/^static const char *test_rewrites(void) {$/;"	f	file:
+test_server	test/unit_test.c	/^static const char *test_server(void) {$/;"	f	file:
+test_should_keep_alive	test/unit_test.c	/^static const char *test_should_keep_alive(void) {$/;"	f	file:
+test_to64	test/unit_test.c	/^static const char *test_to64(void) {$/;"	f	file:
+test_url_decode	test/unit_test.c	/^static const char *test_url_decode(void) {$/;"	f	file:
+test_url_encode	test/unit_test.c	/^static const char *test_url_encode(void) {$/;"	f	file:
+threadparam	mongoose.c	/^struct threadparam {$/;"	s	file:
+to64	examples/websocket_ssl_proxy/net_skeleton.h	106;"	d
+to64	examples/websocket_ssl_proxy/net_skeleton.h	80;"	d
+to64	mongoose.c	122;"	d	file:
+to64	mongoose.c	153;"	d	file:
+to_wchar	mongoose.c	/^static void to_wchar(const char *path, wchar_t *wbuf, size_t wbuf_len) {$/;"	f	file:
+transfer_file_data	mongoose.c	/^static void transfer_file_data(struct connection *conn) {$/;"	f	file:
+try_parse	mongoose.c	/^static void try_parse(struct connection *conn) {$/;"	f	file:
+try_to_serve_locally	examples/proxy_server/proxy_server.c	/^static int try_to_serve_locally(struct mg_connection *conn) {$/;"	f	file:
+uint16_t	examples/websocket_ssl_proxy/net_skeleton.h	/^typedef unsigned short uint16_t;$/;"	t
+uint16_t	mongoose.c	/^typedef unsigned short uint16_t;$/;"	t	file:
+uint32_t	examples/websocket_ssl_proxy/net_skeleton.h	/^typedef unsigned int uint32_t;$/;"	t
+uint32_t	mongoose.c	/^typedef unsigned int uint32_t;$/;"	t	file:
+uint64_t	examples/websocket_ssl_proxy/net_skeleton.h	/^typedef unsigned __int64 uint64_t;$/;"	t
+uint64_t	mongoose.c	/^typedef unsigned __int64 uint64_t;$/;"	t	file:
+uint8_t	examples/websocket_ssl_proxy/net_skeleton.h	/^typedef unsigned char uint8_t;$/;"	t
+uint8_t	mongoose.c	/^typedef unsigned char uint8_t;$/;"	t	file:
+uri	examples/csharp/mongoose.cs	/^  [MarshalAs(UnmanagedType.LPTStr)] public string uri;$/;"	f	struct:MongooseConnection
+uri	examples/websocket_ssl_proxy/ws_ssl.c	/^  const char *uri;$/;"	m	struct:config	file:
+uri	mongoose.h	/^  const char *uri;            \/\/ URL-decoded URI$/;"	m	struct:mg_connection
+user_data	examples/websocket_ssl_proxy/net_skeleton.h	/^  void *user_data;                  \/\/ User data$/;"	m	struct:ns_mgr
+user_data	examples/websocket_ssl_proxy/net_skeleton.h	/^  void *user_data;            \/\/ User-specific data$/;"	m	struct:ns_connection
+user_data	mongoose.c	/^  void *user_data;                  \/\/ User data$/;"	m	struct:ns_mgr	file:
+user_data	mongoose.c	/^  void *user_data;            \/\/ User-specific data$/;"	m	struct:ns_connection	file:
+va_copy	examples/websocket_ssl_proxy/net_skeleton.h	75;"	d
+va_copy	mongoose.c	117;"	d	file:
+value	examples/csharp/mongoose.cs	/^  [MarshalAs(UnmanagedType.LPTStr)] public IntPtr value;$/;"	f	struct:MongooseHeader
+value	mongoose.h	/^    const char *value;        \/\/ HTTP header value$/;"	m	struct:mg_connection::mg_header
+vars	mongoose.c	/^  const char *vars[MAX_CGI_ENVIR_VARS]; \/\/ char *envp[]$/;"	m	struct:cgi_env_block	file:
+vec	mongoose.c	/^struct vec {$/;"	s	file:
+verify_existence	examples/web_server/web_server.c	/^static void verify_existence(char **options, const char *name, int is_dir) {$/;"	f	file:
+vnotify	examples/web_server/web_server.c	/^static void vnotify(const char *fmt, va_list ap, int must_exit) {$/;"	f	file:
+vsnprintf	examples/web_server/web_server.c	42;"	d	file:
+vsnprintf	examples/websocket_ssl_proxy/net_skeleton.h	78;"	d
+vsnprintf	mongoose.c	120;"	d	file:
+wait_until_ready	mongoose.c	/^static int wait_until_ready(sock_t sock, int for_read) {$/;"	f	file:
+wrapper_client_addr	examples/websocket_ssl_proxy/ws_ssl.c	/^  const char *wrapper_client_addr;$/;"	m	struct:config	file:
+wrapper_server_addr	examples/websocket_ssl_proxy/ws_ssl.c	/^  const char *wrapper_server_addr;$/;"	m	struct:config	file:
+wrapper_thread_func	examples/websocket_ssl_proxy/ws_ssl.c	/^static void *wrapper_thread_func(void *param) {$/;"	f	file:
+write	mongoose.c	1326;"	d	file:
+write_chunk	mongoose.c	/^static void write_chunk(struct connection *conn, const char *buf, int len) {$/;"	f	file:
+write_terminating_chunk	mongoose.c	/^static void write_terminating_chunk(struct connection *conn) {$/;"	f	file:
+ws_handler	examples/websocket_ssl_proxy/ws_ssl.c	/^static int ws_handler(struct mg_connection *conn, enum mg_event ev) {$/;"	f	file:
+wsbits	examples/csharp/mongoose.cs	/^	[MarshalAs(UnmanagedType.SysInt)] public int wsbits;$/;"	f	struct:MongooseConnection
+wsbits	mongoose.h	/^  int wsbits;                 \/\/ First byte of the websocket frame$/;"	m	struct:mg_connection
+~DownloadTask	DownloadTask.h	/^    ~DownloadTask()$/;"	f	class:DownloadTask
+~Log	Log.h	/^    ~Log()$/;"	f	class:Log

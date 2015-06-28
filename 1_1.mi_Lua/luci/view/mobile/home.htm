@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<%
+	local XQVersion = require("xiaoqiang.XQVersion")
+	local ver = XQVersion.webVersion
+	local web = luci.dispatcher.build_url("web", "home")
+%>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<title>小米路由器</title>
+	<link href="<%=resource%>/mobile/css/bc.css?v=<%=ver%>" rel="stylesheet">
+</head>
+<body>
+<p style="padding:40px; text-align:center;">页面跳转中...</p>
+<%include("mobile/inc/footer")%>
+<script>
+	window.location.href = '<%=web%>';
+</script>
+</body>
+</html>

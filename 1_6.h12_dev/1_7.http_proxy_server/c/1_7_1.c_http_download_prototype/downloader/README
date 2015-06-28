@@ -1,0 +1,11 @@
+downloader
+
+a simple http protocol download app, for learn linux c and socket program.
+
+make 
+./downloader [http file address]
+
+make debug
+for debuging.
+
+Mark Deng <2010.tpk@gmail.com>

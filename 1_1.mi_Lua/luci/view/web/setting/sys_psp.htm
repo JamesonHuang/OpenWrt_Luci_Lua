@@ -1,0 +1,196 @@
+<%
+--[[
+	Info	绑定小米账号
+]]--
+
+local XQSysUtil = require "xiaoqiang.util.XQSysUtil"
+local ver = require("xiaoqiang.XQVersion").webVersion
+local isBinded = (XQSysUtil.getPassportBindInfo() and 'true') or 'false';
+%>
+<%include('web/inc/head')%>
+<title>小米路由器</title>
+<link rel="stylesheet" href="<%=resource%>/web/css/page.set.psp.css?v=<%=ver%>" type="text/css"/>
+</head>
+<body>
+<div class="mod-setting-panel">
+	<div class="hd">
+		<h3>小米账号管理</h3>
+	</div>
+	<div class="bd">
+		<div class="mod-set-xiaomipsp">
+			<div class="psp-binded" style="display:none;">
+				<div class="psp-binded-info">
+				</div>
+				<div class="psp-binded-btn">
+					<a href="#" id="btnUnbind" class="btn btn-primary"><span>解除绑定</span></a>
+				</div>
+			</div>
+			<div class="psp-bind" id="pspBindForm" style="display:none;"></div>
+		</div>
+	</div>
+</div>
+
+<script type="tmpl/text" id="bindinfo">
+<div class="pic"><img src="{$icon}" width="80"></div>
+<div class="info">
+	<p><span class="k">小米账号：</span><span class="v">{$uuid}</span></p>
+	<p><span class="k">昵称：</span><span class="v">{$nickname}</span></p>
+</div>
+</script>
+<script type="tmpl/text" id="unbindform">
+<div class="mod-unbind-form">
+	<form action="/" class="form form-horizontal from-xiaomibind" method="post" name="unbindxiaomi" id="unbindxiaomi">
+		<div class="item">
+			<label class="k">小米账号：</label>
+			<span class="v"><span class="con">{$uuid}</span></span>
+			<em class="t"></em>
+		</div>
+		<div class="item">
+			<label class="k">密码：</label>
+			<span class="v"><input type="password" name="password" class="text input-large" placeholder="请输入绑定的小米账号密码"></span>
+			<em class="t"></em>
+		</div>
+		<div class="item item-control item-rsp-err" style="display:none;"><em class="t"></em></div>
+		<div class="item item-control">
+			<button type="submit" id="btnUnbindXiaomi" class="btn btn-primary"><span>解除绑定</span></button>
+		</div>
+	</form>
+</div>
+</script>
+<%include('web/inc/g.js.base')%>
+<script>
+$(function(){
+	var isBinded = <%=isBinded%>;
+	var randerBindinfo = function(data){
+		var tpl = $('#bindinfo').html();
+		var html = StringH.tmpl(tpl, data);
+		$('.psp-binded-info').html(html);
+	};
+
+	$('body').delegate('#xiaomipsp', 'submit', function(e){
+		e.preventDefault();
+		var that = this;
+		var frm = this.name;
+		var url = '<%=luci.dispatcher.build_url("api", "xqpassport","login")%>';
+		var validator = FormValidator.checkAll(frm, [{
+				name: 'uuid',
+				display :'小米账号',
+				rules: 'required'
+			},{
+				name: 'password',
+				display :'密码',
+				rules: 'required'
+			}]);
+		if (validator) {
+			var pwd = $.trim($('#xmpassword').val()),
+				data = {
+				'uuid': $.trim($('#xmuuid').val()),
+				'password': hex_md5(pwd),
+				'encrypt': Base64.encode(pwd)
+			};
+			$('#btnBindXiaomi').prop('disabled', true).find('span').html('登录中...');
+			$.ajax({
+				type:'post',
+				url: url,
+				data:data,
+				dataType : 'json',
+				success : function(rsp){
+					if (rsp.code == 0) {
+						$('#btnBindXiaomi').find('span').html('绑定中...');
+						$.getJSON('<%=luci.dispatcher.build_url("api", "xqpassport", "rigister")%>',{uuid:rsp.uuid}, function(rsp){
+							if (rsp.code == 0) {
+								window.top.location.reload(1);
+							}else{
+								$('#btnBindXiaomi').prop('disabled', false).find('span').html('登录并绑定');
+								$('.item-rsp-err', that).show().addClass('item-err');
+								$('.item-rsp-err', that).find('.t').html(rsp.msg).show();
+							}
+						});
+					}else{
+						$('#btnBindXiaomi').prop('disabled', false).find('span').html('登录并绑定');
+						$('.item-rsp-err', that).show().addClass('item-err');
+						$('.item-rsp-err', that).find('.t').html(rsp.msg).show();
+					}
+				}
+			});
+		}
+	});
+
+	$('#btnUnbind').on('click', function(e){
+		e.preventDefault();
+		var uuid = $(this).attr('data-uuid');
+		function unbind(){
+			var unbindform = $('#unbindform').html().tmpl({uuid: uuid});
+			console.log(unbindform);
+			$('body').delegate('#unbindxiaomi', 'submit', function(e){
+				e.preventDefault();
+				var that = this;
+				var frm = this.name;
+				var validator = FormValidator.checkAll(frm, [{
+					name: 'password',
+					display :'密码',
+					rules: 'required'
+				}]);
+				if (!validator) {
+					return;
+				}
+				var password = $('input[name=password]').val();
+				password = hex_md5($.trim(password));
+				$('#btnUnbindXiaomi').prop('disabled', true).find('span').html('解绑中...');
+				$.getJSON(
+					'<%=luci.dispatcher.build_url("api", "xqpassport", "unbound")%>',
+					{password: password},
+					function(rsp){
+						if (rsp.code == 0) {
+							window.top.location.href = '<%=luci.dispatcher.build_url("web", "logout")%>';
+						}else{
+							$('.item-rsp-err', that).show().addClass('item-err');
+							$('.item-rsp-err', that).find('.t').html(rsp.msg).show();
+							$('#btnUnbindXiaomi').prop('disabled', false).find('span').html('解除绑定');
+						}
+					}
+				);
+			});
+			art.dialog({
+				title: '解除绑定，需要验证小米账号',
+				width: 520,
+				content: unbindform
+			});
+		}
+		art.dialog({
+			width: 400,
+			title: '解除绑定',
+			content: '是否要解除小米账号'+uuid+'对路由器的绑定？远程管理、应用等功能将不可用。',
+			ok: function(){
+				unbind();
+			},
+			cancel: function(){
+				this.close();
+			}
+		});
+	});
+
+	if (isBinded) {
+		$('.psp-binded').show();
+		$.getJSON('<%=luci.dispatcher.build_url("api", "xqpassport", "binded")%>', {} ,function(rsp){
+			if (rsp.code == 0 && rsp.bind == 1) {
+				var face = '<%=resource%>/web/img/tmp/face.png';
+				tplDb = {
+					'icon' : rsp.info.miliaoIcon == '' ? face : rsp.info.miliaoIconOrig,
+					'nickname' : rsp.info.aliasNick == '' ? rsp.info.userId : StringH.encode4HtmlValue(rsp.info.aliasNick),
+					'uuid' : rsp.info.userId
+				};
+				randerBindinfo(tplDb);
+				$('#btnUnbind').attr('data-uuid', rsp.info.userId);
+			}
+		});
+	}else{
+		$('.psp-bind').show();
+		var bindform = $('#xiaomibind').html();
+		$('#pspBindForm').html(bindform);
+	}
+});
+</script>
+</script>
+</body>
+</html>

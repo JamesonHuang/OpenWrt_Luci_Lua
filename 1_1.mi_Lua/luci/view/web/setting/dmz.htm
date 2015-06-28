@@ -1,0 +1,236 @@
+<%
+--[[
+	Info	DMZ
+]]--
+
+local ver = require("xiaoqiang.XQVersion").webVersion
+local request_uri = luci.http.getenv("REQUEST_URI")
+
+%>
+<%include('web/inc/head')%>
+<title>小米路由器</title>
+<link rel="stylesheet" href="<%=resource%>/web/css/page.set.default.css?v=<%=ver%>"/>
+</head>
+<body>
+<!-- upgread -->
+<div class="mod-setting-panel">
+	<div class="hd">
+		<h3>DMZ</h3>
+		<a href="#" data-status="0" class="btn-offon btn-off" id="btndmz"></a>
+	</div>
+	<div class="bd">
+
+		<div class="mod-dmz" id="dmzinfo" style="">
+			开启DMZ功能可以将内网某一个设备的IP映射到外网，方便从外网访问到该设备。
+		</div>
+		<div class="mod-dmz" id="appdmz" style="display:none;">
+			<form class="form form-dmz" name="dmzset" id="dmzset">
+				<div class="item">
+					<label class="k">DMZ IP地址：</label>
+					<span class="v vi"><span id="prefix"></span><input name="ipval" id="ipval" type="text" class="text input-mini"></span>
+					<em class="t"></em>
+				</div>
+				<div class="item">
+					<label class="k">DMZ状态：</label>
+					<span class="v vs"><span>未生效</span></span>
+					<em class="t"></em>
+				</div>
+				<div class="item item-control">
+					<a class="btn btn-primary" id="save"><span>确认</span></a>
+					<a class="btn" id="cancel"><span>取消</span></a>
+				</div>
+			</form>
+		</div>
+		<div class="mod-dmz" id="appdmzOK" style="display:none;">
+			<form class="form form-dmz">
+				<div class="item">
+					<label class="k">DMZ IP地址：</label>
+					<span class="v vs"><span id="ipOK"></span></span>
+					<em class="t"></em>
+				</div>
+				<div class="item">
+					<label class="k">DMZ状态：</label>
+					<span class="v vs"><span>已生效</span></span>
+					<em class="t"></em>
+				</div>
+				<div class="item item-control">
+					<a class="btn btn-primary" id="edit"><span>编辑</span></a>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<%include('web/inc/g.js.base')%>
+<script>
+var modelDMZ = (function(){
+
+	function dmzStatus(){
+		$.getJSON('<%=luci.dispatcher.build_url("api", "xqnetwork", "dmz")%>', {}, function(rsp){
+			if (rsp.code == 0) {
+			$('#appdmz').data('lanip', rsp.lanip);
+			$('#appdmz').data('ip', rsp.ip);
+
+
+			var nowip = rsp.lanip.split('.');
+			nowip.pop();
+			$('#prefix').text(nowip.join('.') + '.');
+
+				var btndmz = $('#btndmz')[0],
+					listdmz = $('#appdmz'),
+					dmzOK = $('#appdmzOK');
+				var info = $('#dmzinfo');
+				if (rsp.status == 0 || rsp.status == 2) {
+					btndmz.className = 'btn-offon btn-off';
+					listdmz.hide();
+				}else{ // 开启
+					btndmz.className = 'btn-offon btn-on';
+					//var last = rsp.ip.split('.')[3];
+					//$('[name=ip]').val(last);
+					$('#ipOK').text(rsp.ip);
+					dmzOK.show();
+					info.hide();
+				}
+
+				$('#btndmz').attr('data-status', rsp.status);
+			}
+		});
+	}
+
+	function dmzSwitch(){
+		var btndmz = $('#btndmz'),
+			listdmz = $('#appdmz')
+			dmzOK = $('#appdmzOK');
+		var info = $('#dmzinfo');
+		btndmz.on('click', function(e){
+			e.preventDefault();
+			var st = $(this).hasClass('btn-on'),
+				btn = this,
+				status = $(this).attr('data-status');
+
+			if ( status == '2' ) {
+				window.top.art.dialog({
+					title: 'DMZ',
+					content: '端口转发开启了，不可以设置DMZ',
+					lock: true,
+					time: 1000
+				});
+				return;
+			}
+			if ( st ) {
+				btn.className = 'btn-offon btn-off';
+				listdmz.hide();
+				info.show();
+				dmzOK.hide();
+
+				if ( status == 1 ) {
+					$.getJSON('<%=luci.dispatcher.build_url("api", "xqnetwork", "dmz_off")%>', {}, function(rsp){
+						if (rsp.code == 0) {
+							var dlg = window.top.art.dialog({
+								title: '设置DMZ',
+								content: '关闭成功，生效中，请稍候...',
+								lock: true,
+								time: 10*1000
+							});
+							$('#btndmz').attr('data-status', 0);
+							$('#appdmz').removeData('ip');
+							var urlReload = '<%=luci.dispatcher.build_url("api", "xqnetwork", "dmz_reload")%>';
+							$.get(urlReload, function(rsp) {
+								if (rsp.code === 0) {
+									dlg.close();
+								}
+							});
+						}
+					});
+				}
+			} else {
+				btn.className = 'btn-offon btn-on';
+				//　这里把inpu清空,　因为关闭之后再进来的
+				$('#ipval').val('');
+				listdmz.show();
+				info.hide();
+			}
+		});
+	}
+
+	function dmzedit() {
+		$('#edit').on('click', function(e) {
+			$('#appdmz').show();
+			$('#appdmzOK').hide();
+			var ip = $('#appdmz').data('ip');
+			var last = ip.split('.')[3];
+			$('#ipval').val(last);
+		});
+		$('#cancel').on('click', function(e) {
+			//　这里需要判断，是点编辑之后，还是点击按钮开启之后
+			var ip = $('#appdmz').data('ip');
+			if (ip) {
+				$('#appdmz').hide();
+				$('#appdmzOK').show();
+			} else {
+				$('#dmzinfo').show();
+				$('#appdmz').hide();
+				$('#appdmzOK').hide();
+				$('#btndmz')[0].className = 'btn-offon btn-off';
+			}
+		});
+	}
+
+	function dmzset(){
+		$('#save').on('click', function(e){
+			e.preventDefault();
+			var url = '<%=luci.dispatcher.build_url("api", "xqnetwork", "set_dmz")%>',
+				// checkAll的第一个参数在dom里最好唯一, 不要有同名的id，　否则 ie下会有问题
+				validator = FormValidator.checkAll('dmzset', [{
+					name: 'ipval',
+					display :'IP地址最后一位',
+					rules: 'required|is_natural|less_than[255]|greater_than[1]'
+				}]);
+			var ip = $('#appdmz').data('lanip');
+			var prefix = ip.substr(0, ip.lastIndexOf('.'));
+			var last = $('#ipval').val();
+			var data = prefix + '.' + last;
+			if (validator) {
+				var dlg = window.top.art.dialog({
+					title: '设置DMZ',
+					content: '配置成功，请稍候...',
+					lock: true,
+					time: 12*1000
+				});
+				$.ajax({
+					url: url,
+					type: 'POST',
+					data: 'ip=' + data,
+					dataType: 'json',
+					success: function(rsp){
+						if (rsp.code == 0) {
+							dlg.close();
+							$('#appdmz').hide();
+							$('#appdmzOK').show();
+							$('#ipOK').text(data);
+							$('#appdmz').data('ip', data);
+							$('#btndmz').attr('data-status', 1);
+						}else{
+							window.top.art.dialog({
+								title: '设置DMZ',
+								content: rsp.msg
+							});
+						}
+					}
+				});
+			}
+		});
+	}
+
+	return {
+		init : function(){
+			dmzStatus();
+			dmzSwitch();
+			dmzset();
+			dmzedit();
+		}
+	}
+}());
+$(function(){
+	modelDMZ.init();
+});
+</script>

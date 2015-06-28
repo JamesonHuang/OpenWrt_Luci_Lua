@@ -1,0 +1,42 @@
+<%
+	local ver = require("xiaoqiang.XQVersion").webVersion
+	local XQSysUtil = require "xiaoqiang.util.XQSysUtil"
+	local config = XQSysUtil.getConfigInfo()
+%>
+<%include('web/inc/head')%>
+<title>小米路由器</title>
+<link rel="stylesheet" href="<%=resource%>/web/css/page.set.default.css?v=<%=ver%>" type="text/css"/>
+</head>
+<body>
+<div class="mod-setting-panel">
+	<div class="hd">
+		<h3>上传配置信息</h3>
+	</div>
+	<div class="bd">
+		<div class="mod-set-upconfig">
+			<div class="content">
+<pre><%=config%></pre>
+			</div>
+			<div class="btn-control">
+				<button type="button" onclick="uploadConfig();" class="btn btn-primary"><span>确认上传</span></button>
+			</div>
+
+		</div>
+	</div>
+</div>
+<%include('web/inc/g.js.base')%>
+<script type="text/javascript">
+	function uploadConfig() {
+		var request_date = {};
+		$.getJSON('<%=luci.dispatcher.build_url("api", "xqsystem","backup_config")%>',request_date,function(rsp)
+		{
+			if (rsp.code == 0 ) {
+				window.parent.art.dialog({title:false,content:"成功"}).lock().time(4*1000);
+    		}  else {
+    			window.parent.art.dialog({title:false,content:rsp.msg}).lock().time(1.5*1000);
+    		}
+		})
+	}
+</script>
+</body>
+</html>
