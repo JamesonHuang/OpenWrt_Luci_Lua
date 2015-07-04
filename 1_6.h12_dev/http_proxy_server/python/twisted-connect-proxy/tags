@@ -1,0 +1,66 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ConnectProxy	server.py	/^class ConnectProxy(Proxy):$/;"	c
+ConnectProxyClient	server.py	/^class ConnectProxyClient(Protocol):$/;"	c
+ConnectProxyClientFactory	server.py	/^class ConnectProxyClientFactory(ClientFactory):$/;"	c
+ConnectProxyRequest	server.py	/^class ConnectProxyRequest(ProxyRequest):$/;"	c
+HTTPConnectSetup	client.py	/^class HTTPConnectSetup(http.HTTPClient):$/;"	c
+HTTPConnectTunneler	client.py	/^class HTTPConnectTunneler(protocol.Protocol):$/;"	c
+HTTPProxiedClientFactory	client.py	/^class HTTPProxiedClientFactory(protocol.ClientFactory):$/;"	c
+HTTPProxyConnector	client.py	/^class HTTPProxyConnector(object):$/;"	c
+ProxyConnectError	client.py	/^class ProxyConnectError(ConnectError):$/;"	c
+__init__	client.py	/^    def __init__(self, delegate, dst_host, dst_port):$/;"	m	class:HTTPProxiedClientFactory
+__init__	client.py	/^    def __init__(self, host, port):$/;"	m	class:HTTPConnectSetup
+__init__	client.py	/^    def __init__(self, host, port, orig_addr):$/;"	m	class:HTTPConnectTunneler
+__init__	client.py	/^    def __init__(self, proxy_host, proxy_port,$/;"	m	class:HTTPProxyConnector
+__init__	server.py	/^    def __init__(self, host, port, request):$/;"	m	class:ConnectProxyClientFactory
+agent	client.py	/^    agent = twisted.web.client.Agent(reactor=proxy)$/;"	v
+ap	client.py	/^    ap = argparse.ArgumentParser()$/;"	v
+ap	server.py	/^    ap = argparse.ArgumentParser()$/;"	v
+buildProtocol	client.py	/^    def buildProtocol(self, addr):$/;"	m	class:HTTPProxiedClientFactory
+cb	client.py	/^    def cb(*args, **kwargs):$/;"	f
+clientConnectionFailed	client.py	/^    def clientConnectionFailed(self, connector, reason):$/;"	m	class:HTTPProxiedClientFactory
+clientConnectionFailed	server.py	/^    def clientConnectionFailed(self, connector, reason):$/;"	m	class:ConnectProxyClientFactory
+clientConnectionLost	client.py	/^    def clientConnectionLost(self, connector, reason):$/;"	m	class:HTTPProxiedClientFactory
+connectSSL	client.py	/^    def connectSSL(self, host, port, factory, contextFactory, timeout=30,$/;"	m	class:HTTPProxyConnector
+connectTCP	client.py	/^    def connectTCP(self, host, port, factory, timeout=30, bindAddress=None):$/;"	m	class:HTTPProxyConnector
+connectedClient	server.py	/^    connectedClient = None$/;"	v	class:ConnectProxyClient
+connectedProtocol	server.py	/^    connectedProtocol = None$/;"	v	class:ConnectProxyRequest
+connectedRemote	server.py	/^    connectedRemote = None$/;"	v	class:ConnectProxy
+connectionLost	client.py	/^    def connectionLost(self, reason):$/;"	m	class:HTTPConnectTunneler
+connectionLost	server.py	/^    def connectionLost(self, reason):$/;"	m	class:ConnectProxy
+connectionLost	server.py	/^    def connectionLost(self, reason):$/;"	m	class:ConnectProxyClient
+connectionMade	client.py	/^    def connectionMade(self):$/;"	m	class:HTTPConnectSetup
+connectionMade	client.py	/^    def connectionMade(self):$/;"	m	class:HTTPConnectTunneler
+connectionMade	server.py	/^    def connectionMade(self):$/;"	m	class:ConnectProxyClient
+d	client.py	/^    d = agent.request('CONNECT', 'https:\/\/www.baidu.com')$/;"	v
+dataReceived	client.py	/^    def dataReceived(self, data):$/;"	m	class:HTTPConnectTunneler
+dataReceived	server.py	/^    def dataReceived(self, data):$/;"	m	class:ConnectProxy
+dataReceived	server.py	/^    def dataReceived(self, data):$/;"	m	class:ConnectProxyClient
+factory	server.py	/^    factory = twisted.web.http.HTTPFactory()$/;"	v
+fail	server.py	/^    def fail(self, message, body):$/;"	m	class:ConnectProxyRequest
+handleEndHeaders	client.py	/^    def handleEndHeaders(self):$/;"	m	class:HTTPConnectSetup
+handleHeader	client.py	/^    def handleHeader(self, key, val):$/;"	m	class:HTTPConnectSetup
+handleResponse	client.py	/^    def handleResponse(self, body):$/;"	m	class:HTTPConnectSetup
+handleStatus	client.py	/^    def handleStatus(self, version, status, message):$/;"	m	class:HTTPConnectSetup
+http	client.py	/^    http = None$/;"	v	class:HTTPConnectTunneler
+listenSSL	client.py	/^    def listenSSL(self, port, factory, contextFactory, backlog=50, interface=''):$/;"	m	class:HTTPProxyConnector
+listenTCP	client.py	/^    def listenTCP(port, factory, backlog=50, interface=''):$/;"	m	class:HTTPProxyConnector
+noisy	client.py	/^    noisy = True$/;"	v	class:HTTPConnectSetup
+noisy	client.py	/^    noisy = True$/;"	v	class:HTTPConnectTunneler
+ns	client.py	/^    ns = ap.parse_args()$/;"	v
+ns	server.py	/^    ns = ap.parse_args()$/;"	v
+otherConn	client.py	/^    otherConn = None$/;"	v	class:HTTPConnectTunneler
+process	server.py	/^    def process(self):$/;"	m	class:ConnectProxyRequest
+processConnectRequest	server.py	/^    def processConnectRequest(self):$/;"	m	class:ConnectProxyRequest
+protocol	server.py	/^    protocol = ConnectProxyClient$/;"	v	class:ConnectProxyClientFactory
+proxy	client.py	/^    proxy = HTTPProxyConnector(proxy_host=ns.proxy_host,$/;"	v
+proxyConnected	client.py	/^    def proxyConnected(self):$/;"	m	class:HTTPConnectTunneler
+requestDone	server.py	/^    def requestDone(self, request):$/;"	m	class:ConnectProxy
+requestFactory	server.py	/^    requestFactory = ConnectProxyRequest$/;"	v	class:ConnectProxy
+splitHostPort	server.py	/^    def splitHostPort(self, hostport, default_port):$/;"	m	class:ConnectProxyRequest
+startedConnecting	client.py	/^    def startedConnecting(self, connector):$/;"	m	class:HTTPProxiedClientFactory

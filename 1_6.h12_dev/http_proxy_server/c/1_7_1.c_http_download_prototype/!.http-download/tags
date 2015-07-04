@@ -1,0 +1,61 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Close	TcpSocket.h	/^    int Close()$/;"	f	class:TcpSocket
+Connect	TcpSocket.h	/^    int Connect(const char* host, unsigned short port)$/;"	f	class:TcpSocket
+Critical	Log.h	/^    int Critical(const char* fmt, ...)$/;"	f	class:Log
+DownloadTask	DownloadTask.h	/^    DownloadTask() : socket(0)$/;"	f	class:DownloadTask
+DownloadTask	DownloadTask.h	/^class DownloadTask$/;"	c
+Error	Log.h	/^    int Error(const char* fmt, ...)$/;"	f	class:Log
+FormatedTime	Log.h	/^    const char* FormatedTime()$/;"	f	class:Log
+GetSocket	TcpSocket.h	/^    int GetSocket()$/;"	f	class:TcpSocket
+HS_FAIL	HttpUtils.h	/^    HS_FAIL,$/;"	e	enum:HttpState
+HS_REDIR	HttpUtils.h	/^    HS_REDIR,$/;"	e	enum:HttpState
+HS_RETRY	HttpUtils.h	/^    HS_RETRY,$/;"	e	enum:HttpState
+HS_SUCC	HttpUtils.h	/^    HS_SUCC,$/;"	e	enum:HttpState
+HttpHead	HttpUtils.h	/^struct HttpHead$/;"	s
+HttpState	HttpUtils.h	/^enum HttpState$/;"	g
+HttpUrl	HttpUtils.h	/^struct HttpUrl$/;"	s
+HttpUtils	HttpUtils.h	/^class HttpUtils$/;"	c
+Instance	Log.h	/^    static Log* Instance()$/;"	f	class:Log
+LOGPATH	Log.h	25;"	d
+Log	Log.h	/^    Log() : handle(0)$/;"	f	class:Log
+Log	Log.h	/^class Log$/;"	c
+LogCritical	Log.h	20;"	d
+LogError	Log.h	21;"	d
+LogPrompt	Log.h	23;"	d
+LogWarn	Log.h	22;"	d
+MAXBUFFERSIZE	DownloadTask.h	16;"	d
+MAXURLLENGTH	HttpUtils.h	13;"	d
+Open	TcpSocket.h	/^    int Open()$/;"	f	class:TcpSocket
+ParseHead	HttpUtils.h	/^    static HttpHead ParseHead(const char* buffer, unsigned int length)$/;"	f	class:HttpUtils
+ParseUrl	HttpUtils.h	/^    static HttpUrl ParseUrl(const char* url)$/;"	f	class:HttpUtils
+Prompt	Log.h	/^    int Prompt(const char* fmt, ...)$/;"	f	class:Log
+Recv	TcpSocket.h	/^    int Recv(char* buffer, unsigned int length)$/;"	f	class:TcpSocket
+Send	TcpSocket.h	/^    int Send(const char* buffer, unsigned int length)$/;"	f	class:TcpSocket
+Start	DownloadTask.h	/^    int Start(const char* url, char** buffer, unsigned int* length)$/;"	f	class:DownloadTask
+TcpSocket	TcpSocket.h	/^    TcpSocket() : sockfd(-1)$/;"	f	class:TcpSocket
+TcpSocket	TcpSocket.h	/^class TcpSocket$/;"	c
+Warn	Log.h	/^    int Warn(const char* fmt, ...)$/;"	f	class:Log
+_DOWNLOADTASK_H_	DownloadTask.h	11;"	d
+_HTTPUTILS_H_	HttpUtils.h	11;"	d
+_LOG_H_	Log.h	11;"	d
+_TCPSOCKET_H_	TcpSocket.h	11;"	d
+contentLength	HttpUtils.h	/^    unsigned int contentLength; \/\/ content length$/;"	m	struct:HttpHead
+file	HttpUtils.h	/^    char file[MAXURLLENGTH];    \/\/ file$/;"	m	struct:HttpUrl
+handle	Log.h	/^    FILE* handle;$/;"	m	class:Log
+headLength	HttpUtils.h	/^    unsigned int headLength;    \/\/ head length$/;"	m	struct:HttpHead
+host	HttpUtils.h	/^    char host[MAXURLLENGTH];    \/\/ host$/;"	m	struct:HttpUrl
+httpCode	HttpUtils.h	/^    unsigned int httpCode;      \/\/ http code$/;"	m	struct:HttpHead
+httpState	HttpUtils.h	/^    HttpState httpState;        \/\/ state$/;"	m	struct:HttpHead
+location	HttpUtils.h	/^    char location[MAXURLLENGTH];\/\/ redirection$/;"	m	struct:HttpHead
+main	main.cpp	/^int main()$/;"	f
+port	HttpUtils.h	/^    unsigned short port;        \/\/ port$/;"	m	struct:HttpUrl
+request	HttpUtils.h	/^    char request[MAXURLLENGTH]; \/\/ request$/;"	m	struct:HttpUrl
+socket	DownloadTask.h	/^    TcpSocket* socket;$/;"	m	class:DownloadTask
+sockfd	TcpSocket.h	/^    int sockfd;$/;"	m	class:TcpSocket
+~DownloadTask	DownloadTask.h	/^    ~DownloadTask()$/;"	f	class:DownloadTask
+~Log	Log.h	/^    ~Log()$/;"	f	class:Log

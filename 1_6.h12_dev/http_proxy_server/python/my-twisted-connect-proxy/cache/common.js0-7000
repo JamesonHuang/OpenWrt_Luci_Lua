@@ -1,0 +1,191 @@
+//hack console error
+(function(){
+	if(window['console']){ return; }
+	window['console'] = {
+		 log: function(){}
+		,clear: function(){}
+		,debug: function(){}
+		,error: function(){}
+		,info: function(){}
+		,count: function(){}
+		,time: function(){}
+		,trace: function(){}
+		,warn: function(){}
+	}
+})();
+
+//for script include static
+//global function: cdn_jsurl, cdn_cssurl, cdn_imgurl
+(function(){
+    var url = 'Bad url, watch browser console error.',
+        Local = window.Local,
+        err = function(msg){ if(console && console.error){  console.error('[cdn function error] '+ msg + '.'); } },
+        cdn = function(path, type){
+            //path rule
+            if(path.charAt(0) != '/'){ err('@param path: relative to root start by /'); return url; }
+            //global block
+            if(!Local){ err('@see BETA-18932: template funciton {nova->globaJS}'); return url; }
+            var key = 'RELEASE_TAG', version = Local[key];
+            //version define
+            if(!version){ err('@see local: ' + key + ' not defined'); return url; }
+            //server define
+            key = type.toUpperCase() + 'SERVER', server = Local[key];
+            if(!server){ err('@see local: ' + key + ' not defined.'); return url; }
+            //bad server define
+            if(!server.match(/^(http|https)/)){ err('@see local: ' + key + ' is server, add protocol'); return url; }
+            if(server.match(/\/$/)){ err('@see local: ' + key + ' is server, not ending by \/'); return url; }
+            url = server+ '/' +  version + path;
+            return url;
+        };
+        window.cdn_jsurl = function(path){ return cdn(path, 'js'); };
+        window.cdn_cssurl = function(path){ return cdn(path, 'css'); };
+        window.cdn_imgurl = function(path){ return cdn(path, 'img'); };
+})();
+
+//page load time for log
+var logPageStartTime = (new Date()).getTime();//毫秒
+window.uepflag = 1;//uep统计发送开关
+
+(function(){
+    var scripts = document.getElementsByTagName('script');
+    var currJssrc = scripts[scripts.length-1].src;
+    window.currJs_domain_version = currJssrc.split('/')[2]+ '/'+ currJssrc.split('/')[3];
+})(window)
+
+if((window.location.href.indexOf("www.youku.com") !== -1 || window.location.href.indexOf("v.youku.com") !== -1) && Math.round(Math.random()*1000) > 100) {
+	window.uepflag = 0;//抽样发送
+}
+//用户路径参数
+(function(o){
+	o.nova_init_hook_rpvid = function(){
+		o.Event.observe(document, "mousedown",  function(ev){
+			if(!ev) ev = o.event;
+			var target = ev.target || ev.srcElement;
+			if(!target) {return;}
+			Nova.Cookie.set("rpvid", window.logPvid + "-" + (new Date()).getTime());//记录用户路径
+		});
+		o.Event.observe(document, "touchend",  function(ev){
+			if(!ev) ev = o.event;
+			var target = ev.target || ev.srcElement;
+			if(!target) {return;}
+			Nova.Cookie.set("rpvid", window.logPvid + "-" + (new Date()).getTime());//记录用户路径
+		});
+	}
+})(window);
+
+//监听全站的链接点击事件，检查是否存在data-from属性,并添加from参数至href属性中
+(function(o){
+	if(!o) {return false;}
+	if(!o.Event) {return false;}
+	var checkFromDomain = function(href){
+		var domain = ["youku.com/v_show/","youku.com/show_page/","youku.com/u/U"];
+		for(var i=0,length=domain.length; i<length; i++){
+			if(href.indexOf(domain[i]) !== -1) {
+				return true;
+			}
+		}
+	}
+	o.nova_init_hook_data_from = function(){
+		o.Event.observe(document, "click",  function(ev){
+			if(!ev) ev = o.event;
+			var target = ev.target || ev.srcElement;
+			if(!target) {return;}
+			if(target.tagName != 'A' && target.parentNode) {
+				target = target.parentNode;
+			}
+			if(target.tagName == 'A') {
+				var data_from = target.getAttribute("data-from");
+				var from = data_from || window.pvDataFrom;
+				var href = target.getAttribute("href");
+				if(from && from != '') {
+					if(href && href.indexOf('http') === 0 && href.indexOf('?from') === -1 && href.indexOf('&from') === -1 && checkFromDomain(href)) {
+						from = encodeURIComponent(from);
+						if(href.indexOf('?') !== -1){
+							target.setAttribute("href", href+'&from='+from);
+						}else{
+							target.setAttribute("href", href+'?from='+from);
+						}
+					}
+				}
+			}
+		});
+	}
+ })(window);
+
+
+
+window["nova_init_hook_logpagetime"] = function(){
+	var logPageEndTime = (new Date()).getTime();//毫秒
+	var loadTime = logPageEndTime - window.logPageStartTime;
+	if(loadTime <= 0 || isNaN(loadTime)) {
+		loadTime = -1;
+		var err = 1001;
+	}
+	if(loadTime >= 100 * 1000 || isNaN(loadTime)){
+		loadTime = -1;
+		var err = 1002;
+	}
+	var logParam = "pid="+window.logPvid+"&m=web&st="+window.logPageStartTime+"&s="+loadTime+"&et="+logPageEndTime+"&u="+encodeURIComponent(window.location.href);
+	if(err){
+		logParam += "&e="+err;
+	}
+	var type1 = '';
+	var pagetype1 = '';
+	if(new RegExp('^http:\/\/www.youku.com(\/)?$').test(window.location.href)){
+		if(window.uepflag == 0) return false;
+		type1 = 'homepage';//index
+		pagetype1 = 1;
+	}else if(new RegExp('^http:\/\/v.youku.com/v_show/.*$').test(window.location.href)){
+		if(window.uepflag == 0) return false;//抽样发送
+		type1 = 'playerpage';//video play page
+		pagetype1 = 2;
+		var vid = window.videoId || 0;
+		var ct = window.cateStr || '';
+		var cs = window.subCatId || '';
+		logParam += "&ct="+ct+"&cs="+cs+"&v="+vid;
+	}else if(new RegExp('^http:\/\/i.youku.com/u/home.*$').test(window.location.href)){
+		type1 = 'usercenter';//user center page
+		pagetype1 = 4;
+		var ct = window.cateStr || '';
+		logParam += "&ct="+ct;
+	}else if(!new RegExp('^http:\/\/(www)|(v)|(i).youku.com/.*$').test(window.location.href)){
+		type1 = 'channelpage';//channel
+		pagetype1 = 3;
+		var ct = window.cateStr || '';
+		logParam += "&ct="+ct;
+	}else{
+		type1 = 'channelpage';//channel
+		pagetype1 = 3;
+		var ct = window.cateStr || '';
+		logParam += "&ct="+ct;
+	}
+	logParam += "&t="+type1+"&p="+pagetype1+"&"+Math.random();
+	var img = new Image();
+	img.src = "http://v.l.youku.com/uep?"+logParam;
+};
+
+
+//ucenter APT
+(function(o){
+
+	if(!o || o.QUcenter){ return; }
+
+	var winsub = null;
+	var uidsub = 0;//记录当前请求订阅的uid
+	var handle_fake = null;//定位参考点
+	o.QUcenter = {
+		bindFollow: function(handle, uid, addtion, callback, config){
+			if(!arguments[0] || !arguments[1]){ return this; }
+			var callback = typeof(arguments[3]) == 'function' ?  callback : null;
+			var config_default = { showwin: true };
+			var config = arguments[3] ? arguments[3] : config_default;
+			config.showwin = typeof(config.showwin) != 'undefined' ? Boolean(config.showwin) : config_default.showwin;
+			var _this = this;
+			if(document.domain != 'youku.com'){ document.domain = 'youku.com'; }
+			handle.observe('click', function(e){
+				if(typeof(window['passport'] == 'undefined')){ window.passport = '1'; }
+				if(!window['islogin'] && !window['Qwindow']	){ return; }
+				if(!islogin()){ loginregGuide({from: 'follow', callBack: function(){
+						_this.follow(uid, addtion, function(rs){
+							handle.removeAttribute('lock');
+							if(config.showwin){ _
