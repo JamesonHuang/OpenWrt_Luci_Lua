@@ -1,6 +1,0 @@
-LISTEN 8080 
-#comment
-#DocumentRoot /home/gaurav/Dropbox/Code
-CACHESIZE 20000000
-CACHETIME 60
-IPADDR  10.2.69.8

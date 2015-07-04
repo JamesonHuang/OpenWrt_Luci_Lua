@@ -1,7 +1,0 @@
-find bugs:
-
-3. a nonexitent address whill cause segmentation fault (core dumped)
-
-2. can't parse path like this "hcd-1.imgbox.com/adbdxjtx.png?st=c86KOgBzkJbADDS5XzB_bQ&e=1351172248"
-
-1. HTTP/1.1 302 Found can not reset download path.
