@@ -1,0 +1,26 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CFLAGS	Makefile	/^CFLAGS:=-Wall -O2$/;"	m
+UTC_NTP	client.c	17;"	d	file:
+UTC_NTP	server.c	18;"	d	file:
+client	client.c	/^int client(const char* server)$/;"	f
+die	client.c	/^int die(const char *msg)$/;"	f
+die	server.c	/^int die(const char *msg)$/;"	f
+get_reply	client.c	/^void get_reply(int fd)$/;"	f
+gettime64	client.c	/^void gettime64(uint32_t ts[])$/;"	f
+gettime64	server.c	/^void gettime64(uint32_t ts[])$/;"	f
+log_ntp_event	server.c	/^void log_ntp_event(char *msg)$/;"	f
+log_request_arrive	server.c	/^void log_request_arrive(uint32_t *ntp_time)$/;"	f
+main	client.c	/^int main(int argc, char *argv[], char **env)$/;"	f
+main	server.c	/^int main(int argc, char *argv[], char **env)$/;"	f
+ntp_reply	server.c	/^int ntp_reply($/;"	f
+ntp_server	server.c	/^void ntp_server()$/;"	f
+open_connect	client.c	/^int open_connect(const char* server)$/;"	f
+request	client.c	/^void request(int fd)$/;"	f
+request_process_loop	server.c	/^void request_process_loop(int fd)$/;"	f
+useage	client.c	/^int useage(const char *path)$/;"	f
+wait_wrapper	server.c	/^void wait_wrapper()$/;"	f

@@ -1,0 +1,2 @@
+sudo ./server
+./client <server ip address>
