@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="android" name="Android">
+      <configuration>
+        <option name="GEN_FOLDER_RELATIVE_PATH_APT" value="/../../android-ampd/gen" />
+        <option name="GEN_FOLDER_RELATIVE_PATH_AIDL" value="/../../android-ampd/gen" />
+        <option name="MANIFEST_FILE_RELATIVE_PATH" value="/../../android-ampd/AndroidManifest.xml" />
+        <option name="RES_FOLDER_RELATIVE_PATH" value="/../../android-ampd/res" />
+        <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/../../android-ampd/assets" />
+        <option name="LIBS_FOLDER_RELATIVE_PATH" value="/../../android-ampd/libs" />
+        <option name="PROGUARD_LOGS_FOLDER_RELATIVE_PATH" value="/../../android-ampd/proguard_logs" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$" />
+    <output-test url="file://$MODULE_DIR$" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/gen" isTestSource="false" generated="true" />
+      <excludeFolder url="file://$MODULE_DIR$/.classpath" />
+      <excludeFolder url="file://$MODULE_DIR$/.git" />
+      <excludeFolder url="file://$MODULE_DIR$/.gitignore" />
+      <excludeFolder url="file://$MODULE_DIR$/.gitmodules" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/.project" />
+      <excludeFolder url="file://$MODULE_DIR$/AndroidManifest.xml" />
+      <excludeFolder url="file://$MODULE_DIR$/COPYING" />
+      <excludeFolder url="file://$MODULE_DIR$/INSTALL" />
+      <excludeFolder url="file://$MODULE_DIR$/Makefile" />
+      <excludeFolder url="file://$MODULE_DIR$/README" />
+      <excludeFolder url="file://$MODULE_DIR$/be" />
+      <excludeFolder url="file://$MODULE_DIR$/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/build.xml" />
+      <excludeFolder url="file://$MODULE_DIR$/captures" />
+      <excludeFolder url="file://$MODULE_DIR$/jni" />
+      <excludeFolder url="file://$MODULE_DIR$/libs" />
+      <excludeFolder url="file://$MODULE_DIR$/local.properties" />
+      <excludeFolder url="file://$MODULE_DIR$/log.txt" />
+      <excludeFolder url="file://$MODULE_DIR$/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/proguard-project.txt" />
+      <excludeFolder url="file://$MODULE_DIR$/project.properties" />
+      <excludeFolder url="file://$MODULE_DIR$/res" />
+      <excludeFolder url="file://$MODULE_DIR$/src" />
+    </content>
+    <orderEntry type="jdk" jdkName="Android API 21 Platform" jdkType="Android SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
