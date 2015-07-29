@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, SocketAutoConnectClient!</string>
+    <string name="app_name">UDP Client</string>
+
+</resources>
