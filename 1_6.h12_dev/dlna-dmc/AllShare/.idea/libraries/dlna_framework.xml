@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="dlna_framework">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/dlna_framework.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

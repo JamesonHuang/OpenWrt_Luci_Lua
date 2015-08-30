@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_bg">
+    
+    <RelativeLayout 
+    android:id="@+id/relativelayout"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent">
+                     
+       <SurfaceView android:id="@+id/surfaceView"  
+         android:layout_width="wrap_content"  
+         android:layout_height="wrap_content"  
+         android:layout_centerInParent="true">  
+     	</SurfaceView>  
+        
+    </RelativeLayout>
+	      
+    
+   	<TextView 
+ 	android:id="@+id/tv_content"   
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content"	
+    android:layout_below="@id/relativelayout"
+    android:color="#999999" 	 
+    android:textStyle="bold"
+    android:textSize="14sp"/>
+      
+    <RelativeLayout 
+	    android:id="@+id/miniplayLayout" 
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	   	android:background="@drawable/play_bottom"
+	   	android:padding="5dp"
+	    android:layout_alignParentBottom="true"
+	    android:gravity="center">		
+     
+            <ImageButton 
+	        android:id="@+id/btn_play" 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content"
+	     	android:layout_centerInParent="true"
+			android:layout_marginLeft="25dip"
+			android:layout_marginRight="25dip"
+	        android:background="@drawable/selector_play_btn">
+	        </ImageButton>
+	        
+            <ImageButton 
+	        android:id="@+id/btn_pause" 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content"
+	   		android:layout_centerInParent="true"
+	        android:background="@drawable/selector_pause_btn"
+	        android:visibility="invisible">
+	        </ImageButton>
+        
+	        <ImageButton 
+	        android:id="@+id/btn_playpre" 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content"
+	        android:layout_toLeftOf="@id/btn_play"
+	        android:layout_centerVertical="true"
+	        android:background="@drawable/selector_pre_btn">
+	        </ImageButton>
+	        
+	        <ImageButton 
+	        android:id="@+id/btn_playnext" 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/btn_play"
+	        android:layout_centerVertical="true"
+	        android:background="@drawable/selector_next_btn">
+	        </ImageButton>		
+	               	
+	</RelativeLayout>
+		
+    <RelativeLayout 
+		android:id="@+id/progressLayout" 
+		android:layout_above="@id/miniplayLayout"  
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:gravity="center_vertical"
+		android:background="@drawable/progresslayout_bg">
+	
+	
+	    	<TextView 
+		    android:text="00:00" 
+		    android:id="@+id/tv_curTime" 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="5dp"
+	    	android:layout_marginRight="5dp"
+	    	android:layout_centerVertical="true"    	
+	    	android:textColor="@android:color/white"
+	    	android:textStyle="bold"
+		    android:layout_alignParentLeft="true">
+		    </TextView>
+		    
+		    <TextView 
+		    android:text="00:00" 
+		    android:id="@+id/tv_totalTime" 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+			android:layout_marginLeft="5dp"
+			android:layout_marginRight="5dp"
+			android:layout_centerVertical="true"
+			android:textColor="@android:color/white"
+			android:textStyle="bold"
+		    android:layout_alignParentRight="true">
+		    </TextView>
+				
+		        
+		    <SeekBar android:id="@+id/playback_seeker" 
+		    android:layout_width="fill_parent" 
+	        android:layout_height="wrap_content" 
+	        android:maxHeight="30.0dip" 
+	        android:minHeight="30.0dip" 
+	        android:paddingLeft="9.0dip" 
+	        android:paddingRight="9.0dip"
+	        android:focusable="false" 
+	        android:clickable="true" 
+			android:layout_toLeftOf="@id/tv_totalTime"
+			android:layout_toRightOf="@id/tv_curTime"
+	        android:max="100"
+	        android:progressDrawable="@drawable/playback_seekbar_style" 
+	        android:thumb="@drawable/playback_seekbar_thumb" 
+	        android:thumbOffset="5dip" 
+	        android:layout_centerHorizontal="true" 
+	        style="@android:attr/progressBarStyleHorizontal" />
+				
+
+	</RelativeLayout>
+		
+	
+
+</RelativeLayout>

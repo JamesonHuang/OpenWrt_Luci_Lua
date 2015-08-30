@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/home/rh/my_code/AllShare/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">AllShare</string>
+    <string name="hello">Hello World, AllShareActivity!</string>
+    <string name="load_image_fail">"图片下载失败"</string>
+    <string name="parse_image_fail">"图片解析失败"</string>
+</resources>

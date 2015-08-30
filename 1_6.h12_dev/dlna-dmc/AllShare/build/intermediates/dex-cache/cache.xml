@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/rh/my_code/AllShare/app/libs/dlna_framework.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="ab44bdc343a3f0fd4fa13c0f501614d4cb455938">
+        <dex dex="/home/rh/my_code/AllShare/app/build/intermediates/pre-dexed/debug/dlna_framework-8623f777b6befb1ec641d3222ef305f2fdd87a75.jar" />
+    </item>
+    <item
+        jar="/home/rh/my_code/AllShare/app/libs/dlna_framework.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="ab44bdc343a3f0fd4fa13c0f501614d4cb455938">
+        <dex dex="/home/rh/my_code/AllShare/app/build/intermediates/pre-dexed/debug/dlna_framework-8623f777b6befb1ec641d3222ef305f2fdd87a75.jar" />
+    </item>
+
+</items>
