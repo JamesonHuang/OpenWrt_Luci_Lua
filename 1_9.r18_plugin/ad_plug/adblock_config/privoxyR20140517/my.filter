@@ -1,0 +1,6 @@
+FILTER: css-.dmzj.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.hotrmbox,.tcaricature_new,.header-box {display:none !important}\
+\n</style>@
+

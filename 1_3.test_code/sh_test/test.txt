@@ -1,0 +1,11 @@
+ampd_test.sh
+background_exec.sh
+cfe.sh
+fork_shell.sh
+random.sh
+sh_demo2.sh
+sh_demo.sh
+sh_demo.sh~
+sh_strcmp.sh
+testMemory.sh
+test.txt

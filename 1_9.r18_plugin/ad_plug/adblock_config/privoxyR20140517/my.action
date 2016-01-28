@@ -1,0 +1,37 @@
+####################################
+
+##image
+{+block{Blocked image request.} \
+ +set-image-blocker{blank} \
+}
+.sina.com.cn/d1images/lmt/cls_.*\.gif
+
+####################################
+
+##flash
+{+block{No reason specified.} \
+ +crunch-client-header{X-Whatever:} \
+ +crunch-if-none-match \
+ +crunch-incoming-cookies \
+ +crunch-outgoing-cookies \
+ +crunch-server-header{X-Whatever:} \
+ +filter{html-annoyances} \
+ +filter{content-cookies} \
+ +filter{jumping-windows} \
+ +filter{frameset-borders} \
+ +filter{shockwave-flash} \
+ +handle-as-empty-document \
+}
+pic.zol-img.com.cn/.*/win[0-9]+?.*?\.swf
+
+####################################
+
+##url
+{+block{ adblock rules } \
++server-header-tagger{ab2p-block-s} \
+}
+TAG:^ab2p-block-request$
+.*img2.gamersky.com/d2/link\.asp
+.*xihawan8.com
+
+####################################

@@ -1,0 +1,28 @@
+#!/bin/sh
+#*************************************************************************
+#	> File Name:        testMainArgv.c
+#	> Description:      
+#	> Conclusion:          
+#	> Author:           rh_Jameson
+#	> Created Time:     2016年01月13日 14时51分50秒
+# ************************************************************************/
+
+
+usage() {
+	cat <<EOF
+Usage: $0 [down|detect|reload|status]
+EOF
+	exit 1
+}
+
+start() {
+    ./testMainArgv '123' '321' '123321'
+}
+
+
+case "$1" in
+	#down) wifi_updown "disable" "$2";;
+	start) start "$2" "$3" "$4";;
+	--help|help) usage;;
+	*) ubus call network reload; wifi_updown "enable" "$2";;
+esac

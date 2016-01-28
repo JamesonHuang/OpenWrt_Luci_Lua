@@ -1,0 +1,21 @@
+----- source -----
+Title: ChinaList
+Url: https://raw.githubusercontent.com/wenketel/chinalist/master/adblock.txt
+Last modified: 14 Jan 2016 10:08 UTC
+Expires: 72 hours
+Homepage: http://chinalist.github.io/
+------- end ------
+
+----- options -----
+Privoxy path: /etc/privoxy
+Web path: /var/www/privoxy
+CSS web server domain: www.example.com
+------- end ------
+
+Comments: 433
+Elements hiding rules: 750
+Request block rules for exception: 151
+Request block rules total: 1944
+Request block rules with domain option: 131
+Request block rules with request type options: 131
+Rules with third party option: 511

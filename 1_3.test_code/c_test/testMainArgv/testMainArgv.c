@@ -1,13 +1,12 @@
 /*************************************************************************
-	> File Name:        testMainArgv.c
+	> File Name:        main.c
 	> Description:      
 	> Conclusion:          
 	> Author:           rh_Jameson
-	> Created Time:     2015年07月14日 星期二 12时59分50秒
+	> Created Time:     2016年01月13日 14时51分50秒
  ************************************************************************/
 
 #include <stdio.h>  
-#include <stdlib.h>  
 int main(int argc,char *argv[])  
 {  
     printf("参数个数= %d\n", argc);  

@@ -1,0 +1,2435 @@
+#############
+FILTER: css-17173.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.ad-pn5,.ad-con,.ad-pn7,.ad-pn6,.ad-pn8,.ad-sy-list,.ad-pn10,.ad-pn11,.ad-pn12,.ad-pn13 {display:none !important}\
+\n</style>@
+FILTER: css-gamersky.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+iframe[src^="http://www.gamersky.com/img/baidu"],iframe[src^="http://www.gamersky.com/img/468_down.htm"],iframe[src^="http://www.gamersky.com/pt3/down_adurl2.htm"],[onclick^="openlink()"],.topadna,.topbodr1,.Flash,.act_news_content_bottom {display:none !important}\
+body {background-image:none !important;background-color:\#000000;}\
+\n</style>@
+FILTER: css-.dmzj.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.hotrmbox,.tcaricature_new,.header-box {display:none !important}\
+\n</style>@
+FILTER: css-.163.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+iframe[src*="img1.126.net/channel7/"],\#crossiframe,\#tieArea,span[class="gg590"],iframe[src^="http://g.163.com/r?site="],iframe[src^="http://img1.126.net/channel"],.youdao,.ad.ad-area.ad-h160,.ad.ad-sub.ad-h400,.ad.ad-sub.ad-h150,.ad.ad-sub.ad-h250.mb12,.ad.ad-sub.ad-h250,.ad.ad-main.ad-h100.c-fl,.ad-main.ad-h65.mb12.clearfix,.ad-main.ad-h100.mb12.c-fl.clearfix,.ad-main-con.ad-h100.pb27.interval-dot.clearfix,.w-tab.tab-ad.tab-sub-4,[id="layout-ad-r2"],.gg360,.area.top-gg-area,.news_h123.clearfix.on,.shibada-title,.shibada-bg,[id^="asian163_"],[class^="gg"] {display:none !important}\
+\n</style>@
+FILTER: css-007.mx
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+img[src*="007.mx"] {display:none !important}\
+\n</style>@
+FILTER: css-cbachina.sports.sohu.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+sohuadcode {display:none !important}\
+\n</style>@
+FILTER: css-123du.net
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#float_l,\#float_r {display:none !important}\
+\n</style>@
+FILTER: css-.17k.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[id^="ad0"],.b950 {display:none !important}\
+\n</style>@
+FILTER: css-.2y2r.org
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#hd+.wp.cl {display:none !important}\
+\n</style>@
+FILTER: css-.51nb.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.t_rown[width="875"],.t_rown[width="98%"] {display:none !important}\
+\n</style>@
+FILTER: css-.6.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#palyeradtext,[id^="adtext"] {display:none !important}\
+\n</style>@
+FILTER: css-.766.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#banner_top,.ad2,.banner3,.banner4 {display:none !important}\
+\n</style>@
+FILTER: css-.9553.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+iframe {display:none !important}\
+\n</style>@
+FILTER: css-.autohome.com.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[id^="ad_"] object,.recommend,.banner750_90,.advarticle {display:none !important}\
+\n</style>@
+FILTER: css-.baiwandu.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#header+div[align] {display:none !important}\
+\n</style>@
+FILTER: css-.bcc.com.tw
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+table[width="100%"] tr > td[height="80"] {display:none !important}\
+\n</style>@
+FILTER: css-.bkill.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.ad960 {display:none !important}\
+\n</style>@
+FILTER: css-.booksky.org
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#menu+table {display:none !important}\
+\n</style>@
+FILTER: css-.bxs.cc
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.dingyue,[id="728ad"] {display:none !important}\
+\n</style>@
+FILTER: css-.cbber.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#it_an,.bm.a_c {display:none !important}\
+\n</style>@
+FILTER: css-.cc222.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.banner_01,.advertising {display:none !important}\
+\n</style>@
+FILTER: css-.chiphell.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#diy2 {display:none !important}\
+\n</style>@
+FILTER: css-.cjdby.net
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.page_right_ad,.info_ad {display:none !important}\
+\n</style>@
+FILTER: css-.cngba.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.ad.jz {display:none !important}\
+\n</style>@
+FILTER: css-.cnmo.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[id^="ad"] {display:none !important}\
+\n</style>@
+FILTER: css-.crsky.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.t5 .tr3,.mirror-adr>span:first-child,[id$="_tl"] {display:none !important}\
+\n</style>@
+FILTER: css-.csdn.net
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.banner_top3,.banner_top2,.ad_960,.ad_area_1,\#mainwrapper>div[style],\#header>div:first-child {display:none !important}\
+\n</style>@
+FILTER: css-.dapenti.
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+a[href*="taobao"], td.oblog_t_2 > div[align="center"],.oblog_t_4 > a > img {display:none !important}\
+\n</style>@
+FILTER: css-.dayoo.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[id^="ad"],.advertising,.cn {display:none !important}\
+\n</style>@
+FILTER: css-.2kk.cc|music.baidu.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.ad{display:none !important}\
+\n</style>@
+FILTER: css-.dm5.com|.dm5.hk
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.cl760,.cl970 {display:none !important}\
+\n</style>@
+FILTER: css-.duzheju.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.banner_960,\#contont .list_cont .list_box .showad {display:none !important}\
+\n</style>@
+FILTER: css-.ebay.
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#sunshine_top,\#merchfooter,\#topadtable,.footertextad,.smalladcontainer,\#globalnavigation .alpdbt2px,.yahoobtmad,\#vap_adsense-top,\#vap_adsense-bottom,\#srp_adsense-top {display:none !important}\ \#rtm_html_274,\#rtm_html_688,\#rtm_html_569,\#rtm_html_275,\#rtm_html_441,\#rtm_html_184,.footertextad, div.sdcbox,\#rtm_html_439,.topbannerad,\#rtm_html_270,\#rtm_html_194,\#rtm_html_309,\#rtm_html_271,\#rtm_html_564,\#rtm_html_393,\#rtm_html_391,.rtmstyle,\#rtm_html_444,\#rtm_html_1527,\#o_rtm_d,\#rtm_html_258,\#rtm_html_524,\#rtm_html_255,\#o_rtm_d,.hpa-ad1,\#rtm_html_11575 {display:none !important;}\
+\n</style>@
+FILTER: css-.enorth.com.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.guanggao {display:none !important}\
+\n</style>@
+FILTER: css-.fjsen.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.dl,\#ad2,\#ad3,.conad,[class^="ad"] {display:none !important}\
+\n</style>@
+FILTER: css-.focus.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.ad_fp {display:none !important}\
+\n</style>@
+FILTER: css-.funshion.
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[class^="fs2012-"],iframe[src*="/adpolestar/"],iframe[src*="vas.funshion.com"] {display:none !important}\
+\n</style>@
+FILTER: css-.gg1z.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.content.cols3.part3+a {display:none !important}\
+\n</style>@
+FILTER: css-.google.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#topstuff > \#wmxmsg,a[href^="http://sina.allyes.com/main/adfclick?"] {display:none !important}\
+\n</style>@
+FILTER: css-.gtv.com.cn
+s@(?=<head>)@\\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#duilian,.rightext1,.t6r2,.t8r2,.zs_banner {display:none !important}\
+\n</style>@
+FILTER: css-.gxp.cc
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[class^="ad"],[class*="adx"] {display:none !important}\
+\n</style>@
+FILTER: css-.hao123.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.span-rows.box-adbar a,\#box-inner-adbar a {display:none !important}\
+\n</style>@
+FILTER: css-.hc360.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#endadbanner,[id^="adv"],\#spad1,\#rb_ad {display:none !important}\
+\n</style>@
+FILTER: css-.hdpfans.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.bm.a_c,.a_pb,.a_pt,.boxrightcom,[class^="adimglistbox"] div {display:none !important}\
+.boxleftconm {display:none !important}\
+\n</style>@
+FILTER: css-.hltm.cc
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[class^="ad"] {display:none !important}\
+\n</style>@
+FILTER: css-.hupu.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[class*="sidebar-ad-"],.clearlt.ad720-90,[class*="ad361-"],.hp-ad250-250,\#hcfull *,[class^="ad"] {display:none !important}\
+\n</style>@
+FILTER: css-.ipc.me
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.widget_ad_slot_wrapper + .widget,.widget_ad_slot_wrapper,.post-top-gg,\#crumb_r {display:none !important}\
+\n</style>@
+FILTER: css-.iqilu.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.gg {display:none !important}\
+\n</style>@
+FILTER: css-.jb51.net
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[id^="liad_"] {display:none !important}\
+\n</style>@
+FILTER: css-.jjxw.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[class^="head_ad"],[class$="_ad"] {display:none !important}\
+\n</style>@
+FILTER: css-.jrj.com.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#home_top_id,div[id^="flow-ad-"],div[class="adbox mt"] {display:none !important}\
+\n</style>@
+FILTER: css-.m1905.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#footer img {display:none !important}\
+\n</style>@
+FILTER: css-.mail.yahoo.
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#swads,\#nwad,\#slot_mnw,\#slot_sw1,\#slot_sw2,\#slot_sw3,.cg_ad_slug,\#welcomepageads,\#mnw,\#thead {display:none !important}\
+\#northbanner,\#rec,\#slot_lrec {display:none !important;}\
+\#nwpane,\#swpane {visibility:hidden !important;height:0px !important;}\
+.fullpage \#main {margin-right:0 !important;}.panescroll \#shellcontent {right:0 !important;}\
+\n</style>@
+FILTER: css-.mfxk.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+iframe {display:none !important}\
+\n</style>@
+FILTER: css-.mitbbs.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+img[src*="jiaoyou8.com"],table[width="950"],.newskuang2 {display:none !important}\
+\n</style>@
+FILTER: css-.mobile01.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[class^="ad-"],a[href^="adredir.php"],.admicrobtn {display:none !important}\
+\n</style>@
+FILTER: css-.mop.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.s4.ggp, a[href^="http://trackx.mop.com/"],[class^="adp"],\#addiv,.adl1,.area.adpart,.adarea_top,\#div_ad_ a {display:none !important}\
+\n</style>@
+FILTER: css-xmnn.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#padframe {display:none !important}\
+\n</style>@
+FILTER: css-xuanxuan.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+iframe {display:none !important}\
+\n</style>@
+FILTER: css-xxsy.net
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#banner,\#bigbanner_1 {display:none !important}\
+.rightbanner,\#infoleftad_2 {display:none !important}\
+\n</style>@
+FILTER: css-xzcl.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.m_ads {display:none !important}\
+\n</style>@
+FILTER: css-yahoo.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.fpad,\#ygmapromo,.ads {display:none !important}\
+\n</style>@
+FILTER: css-yesky.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[class^="ad"] {display:none !important}\
+\n</style>@
+FILTER: css-ynet.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#adt01, table.fs12,\#ta03 *,div.fr,[id^="ads_"] {display:none !important}\
+\n</style>@
+FILTER: css-youdao.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#adbottom,\#sp,.sp-h {display:none !important}\
+\n</style>@
+FILTER: css-youxigu.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.con_ad,.ad,.con-ad-top {display:none !important}\
+\n</style>@
+FILTER: css-ys168.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+img[src*="/ys168/"],\#xtxx table,\#idzdy1 div {display:none !important}\
+\n</style>@
+FILTER: css-yxlady.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.head_1,.ot.top_banner,.ot.righttopad {display:none !important}\
+\n</style>@
+FILTER: css-yyets.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#hxhd_taobao,\#floatad_l *,.couplet,\#upad div {display:none !important}\
+\n</style>@
+FILTER: css-zhaishu.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#booktext h2,\#booktext b,\#texts a {display:none !important}\
+\n</style>@
+FILTER: css-zhaozi.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.pic {display:none !important}\
+\n</style>@
+FILTER: css-zhibo8.cc
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[class*="advert"],a[href*="cnrdn.com"] {display:none !important}\
+\n</style>@
+FILTER: css-zol.com.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[id^="bgzy"],\#Bar2848_big,\#Bar2848_small,.adspace,[id^="AD"],.top_bar+.wrapper,\#icast_banner,[id^="ad_"],\#rightaddiv1,.hot_tj,.ad {display:none !important}\
+\n</style>@
+FILTER: css-zxtjd.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#it_an {display:none !important}\
+\n</style>@
+FILTER: css-www.ccb.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+body {background-image:none !important;}\
+\n</style>@
+FILTER: css-www.chdtv.net
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#sitefocus.focus,.bm.a_c {display:none !important}\
+\n</style>@
+FILTER: css-www.enorth.com.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.index2,.index1 {display:none !important}\
+\n</style>@
+FILTER: css-www.gfan.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.banner_468_60,.h200.clear,.banner {display:none !important}\
+\n</style>@
+FILTER: css-www.hexun.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.advp div {display:none !important}\
+\n</style>@
+FILTER: css-www.hoopchina.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#hcfull [src],[class^="ad"] {display:none !important}\
+\n</style>@
+FILTER: css-www.hsw.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+table[width="980"][height="90"],table[width="980"][height="100"] {display:none !important}\
+\n</style>@
+FILTER: css-www.jstv.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#wenzilian+div+div,\#jstvspecial+div+div,\#vplayad,.jadv,.delayadv {display:none !important}\
+\n</style>@
+FILTER: css-www.kankanews.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.bann_ind,\#j-zsb {display:none !important}\
+\n</style>@
+FILTER: css-www.ku6.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.ku6_ad,[class^="a_d0608"][id^="sy"],[class^="a_d0608"] {display:none !important}\
+\n</style>@
+FILTER: css-www.kuaidi100.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#baiduad,\#addivs {display:none !important}\
+\n</style>@
+FILTER: css-www.mop.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.gg03 {display:none !important}\
+\n</style>@
+FILTER: css-www.pcpop.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.w980 .l1,.pop_2_left_2,\#ad_770,.content > .l1:first-child {display:none !important}\
+\n</style>@
+FILTER: css-www.pixnet.net
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#extradiv2,\#extradiv5 {display:none !important}\
+\n</style>@
+FILTER: css-www.qidian.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.rightad,.dh17,[class^="gg"] {display:none !important}\
+\n</style>@
+FILTER: css-www.qq.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.admiddle,\#charge_content,\#proad {display:none !important}\
+\n</style>@
+FILTER: css-www.sina.com.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+img[src*="d2.sina.com.cn/20"],img[src*="d3.sina.com.cn/20"],[class^="txtads"],[class="yleft2blk"],.techbtmads,.societybtmlist,.att_div,\#feibiao140280,.societybtmlist,.partlbtnads4,.cleft,[class^="ad"],\#partg > .rightbox {display:none !important}\
+\n</style>@
+FILTER: css-www.sohu.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#contentc > .columnc,\#ad_top {display:none !important}\
+\n</style>@
+FILTER: css-www.sxrb.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.area1_2_ad1.fl,.area1_2_ad2,\#f_div,.itemfloat,img[height="70"],img[width="650"][height="90"],.ad2 {display:none !important}\
+\n</style>@
+FILTER: css-www.uuu9.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.t_banner {display:none !important}\
+\n</style>@
+FILTER: css-www.xizi.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.consumption_life+.banner_gg,.hot_board.cc+.banner_gg,.favorable_info.cc+.banner_gg  {display:none !important}\
+\#header {height:70px !important;}\
+\n</style>@
+FILTER: css-www.youdao.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#ext {display:none !important}\
+\n</style>@
+FILTER: css-www.zasv.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.a_pt,.a_cn {display:none !important}\
+\n</style>@
+FILTER: css-www.zol.com.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#zolfloat,[id^="bar"],.adwindow {display:none !important}\
+\n</style>@
+FILTER: css-xiazaiba.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.adarea2,.ads_34 {display:none !important}\
+\n</style>@
+FILTER: css-xitek.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[class^="floatvideo"] {display:none !important}\
+\n</style>@
+FILTER: css-xj163.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+iframe[src="http://xj.vnet.cn/tophead.shtml"],\#ad,[class^="ad"] {display:none !important}\
+\n</style>@
+FILTER: css-.yam.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.ad {display:none !important}\
+\n</style>@
+FILTER: css-.yodak.net
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+iframe[src*="html"] {display:none !important}\
+\n</style>@
+FILTER: css-.youku.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#ab_26,.ab240 {display:none !important}\
+.row_index.row_index_1 {height:640px;}\
+\n</style>@
+FILTER: css-.yto56.com.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#backi {display:none !important}\
+\n</style>@
+FILTER: css-.yzz.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.banner,.r-ad,.half-banner {display:none !important}\
+\n</style>@
+FILTER: css-.zerodm.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.syad.border {display:none !important}\
+\n</style>@
+FILTER: css-.zhulang.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[class*="adv"],.coverpageadv01,[id^="adv"] {display:none !important}\
+\n</style>@
+FILTER: css-07073.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.hy_content_right5,.hy_content_right1,.hy_top5,.index_ad.index_marbottom,\#code211 {display:none !important}\
+\n</style>@
+FILTER: css-1000fr.net
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+center {display:none !important}\
+\n</style>@
+FILTER: css-10jqka.com.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.subbanner,.wbanner,[class^="aside_ad"] {display:none !important}\
+\n</style>@
+FILTER: css-115.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[id^="frame_tjj_"],.banner-box,.banner-top {display:none !important}\
+\n</style>@
+FILTER: css-16k.net.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#sidelist {display:none !important}\
+\n</style>@
+FILTER: css-178.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.ad2,.ad4,img[src*="/atcount.php?"],.ad-2-1 {display:none !important}\
+\n</style>@
+FILTER: css-19lou.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.head-ad,.ad {display:none !important}\
+.float-ad,.ad-cycle {display:none !important}\
+\n</style>@
+FILTER: css-2345.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[class^="ivy"],.banner,.banner2,.mzdh_bottom a  {display:none !important}\
+\n</style>@
+FILTER: css-2500sz.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[id^="layer"],.bk1,.tl {display:none !important}\
+\n</style>@
+FILTER: css-360doc.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+iframe[src*=".com/ad/"],\#divadleft {display:none !important}\
+\n</style>@
+FILTER: css-36kr.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+img[src*="/krads-images/"] {display:none !important}\
+\n</style>@
+FILTER: css-3boys2girls.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+iframe {display:none !important}\
+\n</style>@
+FILTER: css-3dmgame.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.banner_2 {display:none !important}\
+\n</style>@
+FILTER: css-3gsc.com.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.area > a[href^="http://wan.3gsc.com.cn"],.header-banner {display:none !important}\
+\n</style>@
+FILTER: css-51caiju.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.l_qq_com,\#hint + .adtop-article-qq {display:none !important}\
+\n</style>@
+FILTER: css-52wubi.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.top960 {display:none !important}\
+\n</style>@
+FILTER: css-55188.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[id^="ggcontarea"],\#ggdistich,[class^="nei"],[class^="gg_head"],[class^="a1_gg jiange"],.a3_gg {display:none !important}\
+\n</style>@
+FILTER: css-5dlinux.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[class^="ggadtext"] {display:none !important}\
+\n</style>@
+FILTER: css-67.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.ad710-120a,.ad275-250,.adcon {display:none !important}\
+\n</style>@
+FILTER: css-6park.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+iframe,table[width="978"]:nth-child(5) {display:none !important}\
+\n</style>@
+FILTER: css-88.hinews.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#hd+div+div {display:none !important}\
+\n</style>@
+FILTER: css-99114.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.ad,.keywordad,.listr_ad,.search_keywordad,.content+.content.p10,.flash,.protj1,.s_banner {display:none !important}\
+\n</style>@
+FILTER: css-9ist.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#diy1ad,.tab_mb[width="100%"] {display:none !important}\
+\n</style>@
+FILTER: css-acfun.tv
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#ad-top.ad,\#ad-comment {display:none !important}\
+\n</style>@
+FILTER: css-adf.ly
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+iframe[src^="/1market.php?"],\#bottom {display:none !important}\
+\n</style>@
+FILTER: css-admin5.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#portal_block_122,.notice {display:none !important}\
+\n</style>@
+FILTER: css-ali213.net
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.newright {display:none !important}\
+\n</style>@
+FILTER: css-appinn.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.ads,.gad {display:none !important}\
+\n</style>@
+FILTER: css-appledaily.com.tw
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#mask_wrapper,.ads {display:none !important}\
+\n</style>@
+FILTER: css-auto.sina.com.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.txtadarea01 {display:none !important}\
+\n</style>@
+FILTER: css-babytree.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.topad_2,.topbanner {display:none !important}\
+\n</style>@
+FILTER: css-baike.baidu.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#mabox {display:none !important}\
+\n</style>@
+FILTER: css-baomihua.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#masker,\#alert1 {display:none !important}\
+\n</style>@
+FILTER: css-bbs.360.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.axd {display:none !important}\
+\n</style>@
+FILTER: css-bbs.dengfeng.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#diy1 {display:none !important}\
+\n</style>@
+FILTER: css-bbs.eyuyan.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[id^="ads_r_"] {display:none !important}\
+\n</style>@
+FILTER: css-bbs.fengniao.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.sing_ad_text {display:none !important}\
+\n</style>@
+FILTER: css-bbs.fobshanghai.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.t_infoline,.maintable > div:nth-child(7) {display:none !important}\
+\n</style>@
+FILTER: css-bbs.gdmm.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.a_pb {display:none !important}\
+\n</style>@
+FILTER: css-bbs.gfan.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#bbs_jxtj,\#wpbbs_gl,.ad {display:none !important}\
+\n</style>@
+FILTER: css-bbs.hdbird.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#header+table a {display:none !important}\
+\n</style>@
+FILTER: css-bbs.ifeng.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#box[style="height: 206px;"] {display:none !important}\
+\n</style>@
+FILTER: css-bbs.imuyang.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#diy1,.a_pt > .cl {display:none !important}\
+\n</style>@
+FILTER: css-bbs.lephone.cc
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.mbn.cl {display:none !important}\
+\n</style>@
+FILTER: css-bbs.macd.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#advlist {display:none !important}\
+\n</style>@
+FILTER: css-bbs.pcbeta.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.a_pb,.a_pt {display:none !important}\
+\n</style>@
+FILTER: css-bbs.pinggu.org
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.a_p,\#my_notify_wrap {display:none !important}\
+\n</style>@
+FILTER: css-bbs.uueasy.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#banner {display:none !important}\
+\n</style>@
+FILTER: css-bbs.weiphone.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[id^="ads_"] {display:none !important}\
+\n</style>@
+FILTER: css-bbs.wuyou.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+tr.t_infoline {display:none !important}\
+\n</style>@
+FILTER: css-bbs.xmfish.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[id^="ads"],.cmp_v {display:none !important}\
+\n</style>@
+FILTER: css-binhuo.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+table[width="950"], table[width="950px"] {display:none !important}\
+\n</style>@
+FILTER: css-bitauto.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[id$="_bottomad"],\#news_ad,.bt_ad,.con_ad {display:none !important}\
+\n</style>@
+FILTER: css-blog.163.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.m-postadlayer {display:none !important}\
+\n</style>@
+FILTER: css-blog.dausos.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.adt,.ad_h,.adr {display:none !important}\
+\n</style>@
+FILTER: css-book.sina.com.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.module_80 {display:none !important}\
+\n</style>@
+FILTER: css-bookgew.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+iframe {display:none !important}\
+\n</style>@
+FILTER: css-bt.ktxp.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.ad {display:none !important}\
+\n</style>@
+FILTER: css-china.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#clm01, iframe[src*="/zh_cn/etc/"],iframe[src*="blog.china.com/u/dvpush/"],.gg950,.headbanner,.gg {display:none !important}\
+\n</style>@
+FILTER: css-chinacaipu.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+iframe {display:none !important}\
+\n</style>@
+FILTER: css-chinadaily.com.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+table[width="130"][height="130"] {display:none !important}\
+\n</style>@
+FILTER: css-chinaiiss.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.nav_r:nth-child(6),\#content_text > span[style] {display:none !important}\
+ .banner_middle {height:0px;}\
+\n</style>@
+FILTER: css-chinanews.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#qizhi_div980,\#adhzh,\#ngg {display:none !important}\
+\n</style>@
+FILTER: css-chinese.engadget.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.post[style] {display:none !important}\
+\n</style>@
+FILTER: css-club.pchome.net
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#shop_promotion {display:none !important}\
+\n</style>@
+FILTER: css-cn.msn.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.advlf,.topnav {display:none !important}\
+\n</style>@
+FILTER: css-cn.reuters.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.ad,\#haomask+div[style] {display:none !important}\
+\n</style>@
+FILTER: css-cn.yahoo.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.p_sider,\#r_expandable {display:none !important}\
+\n</style>@
+FILTER: css-cnbeta.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#fm_r,\#comad,.detail > em {display:none !important}\
+\n</style>@
+FILTER: css-cngold.org
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.list_banner,.soft_goldtd {display:none !important}\
+\n</style>@
+FILTER: css-cngr.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+iframe {display:none !important}\
+\n</style>@
+FILTER: css-cnhubei.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#scrolldiv_1,\#scrolldiv_2,.main.banner_for_4,.main.h62,\#left_couplet,\#shgg {display:none !important}\
+\n</style>@
+FILTER: css-cnzz.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.txt_show {display:none !important}\
+\n</style>@
+FILTER: css-comic.131.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.mh_frbk > dl {display:none !important}\
+\n</style>@
+FILTER: css-coolapk.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.ga200 {display:none !important}\
+\n</style>@
+FILTER: css-cq.qq.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[style^="width:960px;"] {display:none !important}\
+\n</style>@
+FILTER: css-cwyuni.tw
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#box491202,\#box15938,\#box503025,\#box766939,\#box21114,\#box368724,\#box512196,\#box34614,\#box27379,\
+[src*="rakuten-static.com"],a[href*="rakuten.tw"],\#banner > h2 {display:none !important}\
+\n</style>@
+FILTER: css-dabaoku.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+iframe {display:none !important}\
+\n</style>@
+FILTER: css-dailynews.sina.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.topnav + table {display:none !important}\
+\n</style>@
+FILTER: css-dbank.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#filelist_marker {display:none !important}\
+\n</style>@
+FILTER: css-dehua.net
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[id^="imgswitch"],.view_other,.tonglan_right,.pinpai_shangjia,.showdehua,.imgline2,\#business,.xuwei,.mobile,.imgline,.main_pinpai,\
+.other_l,.other_r,.left_all {display:none !important}\
+\n</style>@
+FILTER: css-discuss.com.hk
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[src*="/promo/"],.ad {display:none !important}\
+[src*="/aeiou/"],[src*="/overture/"],a[href^="http://ad"],a[href^="http://b.optimix.asia/"] {display:none !important}\
+\n</style>@
+FILTER: css-disp.cc
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#ads_page_r,\#ads_page_b {display:none !important}\
+\n</style>@
+FILTER: css-down.admin5.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#a2 {display:none !important}\
+\n</style>@
+FILTER: css-down.qiannao.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#pagerigntads {display:none !important}\
+\n</style>@
+FILTER: css-downg.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.content.ad-b950x50 {display:none !important}\
+\n</style>@
+FILTER: css-download.csdn.net
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.ad_area_1 {display:none !important}\
+\n</style>@
+FILTER: css-drivers.mydrivers.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+div[align="center"] {display:none !important}\
+\n</style>@
+FILTER: css-dui.lu
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[id^="j_duilu"] {display:none !important}\
+\n</style>@
+FILTER: css-dy.com.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[class^="ad_"] {display:none !important}\
+\n</style>@
+FILTER: css-dy161.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.mtbanner.clearfix {display:none !important}\
+\n</style>@
+FILTER: css-dzh.mop.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.adarea_top {display:none !important}\
+\n</style>@
+FILTER: css-e0575.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.textmes {display:none !important}\
+\n</style>@
+FILTER: css-e23.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[id*="adv"],.bdgg,.tonglan,.extradiv1,.topads2,.centeradvs2,.centeradvs,\#sogoua {display:none !important}\
+\n</style>@
+FILTER: css-eastmoney.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+div[class="wrap mt6 w_950_90"],div[class="wrap mt8 h60"],div[class="wrap lyad h60"],div[class="wrap h90"],.mainframe.zw.zwh90,.banner,.bannere {display:none !important}\
+\n</style>@
+FILTER: css-enet.com.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[class^="ad"] {display:none !important}\
+\n</style>@
+FILTER: css-ent.qq.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#ent_ad {display:none !important}\
+\n</style>@
+FILTER: css-etf88.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[id^="double_ad"] {display:none !important}\
+\n</style>@
+FILTER: css-ettoday.net
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.customizeline,a[href^="http://ad.ettoday.net/adclick.php?"],\#ticker_3 {display:none !important}\
+\n</style>@
+FILTER: css-faloo.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[class^="ad_"] {display:none !important}\
+\n</style>@
+FILTER: css-fengniao.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[id^="ad"] {display:none !important}\
+\n</style>@
+FILTER: css-finance.caicai98.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.hzhcon {display:none !important}\
+\n</style>@
+FILTER: css-finance.sina.com.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#adsinahouseheadlink {display:none !important}\
+\n</style>@
+FILTER: css-fj007.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.ad_div {display:none !important}\
+\n</style>@
+FILTER: css-freehao123.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.box,\#jieweigg {display:none !important}\
+\n</style>@
+FILTER: css-game.mop.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.area_right > .textcen {display:none !important}\
+\n</style>@
+FILTER: css-gamebase.com.tw
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.wait_gbno1,\#crazy_ad_728,\#ad118_728 {display:none !important}\
+\n</style>@
+FILTER: css-gamefront.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+div[style="width: 300px; height: 250px;"] {display:none !important}\
+\n</style>@
+FILTER: css-gamefy.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.float_bottom_right,.ad68060 {display:none !important}\
+\n</style>@
+FILTER: css-gamer.com.tw
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+iframe[src*="/gamer/"],iframe[src*="/baha/"] {display:none !important}\
+\n</style>@
+FILTER: css-gamme.com.tw
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[class^="sidead_"],\#bd {display:none !important}\
+\n</style>@
+FILTER: css-gxsky.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[class^="topadsbanner"] {display:none !important}\
+\n</style>@
+FILTER: css-haha.mx
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[id^="adv"],\#banner {display:none !important}\
+\n</style>@
+FILTER: css-hao.360.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#bd-middle a {display:none !important}\
+\n</style>@
+FILTER: css-happydown.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+iframe {display:none !important}\
+\n</style>@
+FILTER: css-hb.qq.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+div[style=" width:300px; height:250px; overflow:hidden"],\#wrapper,.tongtext,.ads5,.ads4,[class^="ads360_50"],.ads3,.ads220_60 {display:none !important}\
+\n</style>@
+FILTER: css-hcyy.org
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.bm.a_c,\#snav_mn_forum,\#diy1,.a_pt {display:none !important}\
+\n</style>@
+FILTER: css-hi.people.com.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.ggtu, table[width="290"],img[width="690"][height="80"] {display:none !important}\
+\n</style>@
+FILTER: css-hinews.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[id^="hi_gg_"]>object,\#hi_gg_2331>div,.sp7+table+table {display:none !important}\
+\n</style>@
+FILTER: css-hk.dictionary.yahoo.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#fr-adv {display:none !important}\
+\n</style>@
+FILTER: css-hk.dv.nextmedia.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[id^="ndx_"] {display:none !important}\
+\n</style>@
+FILTER: css-hk.yahoo.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#eu,\#mntl1,\#ysm-ad {display:none !important}\
+\n</style>@
+FILTER: css-hornydragon.blogspot.
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#html13 {display:none !important}\
+\n</style>@
+FILTER: css-hotsk.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#menu+div+table,\#shop+table {display:none !important}\
+\n</style>@
+FILTER: css-house.sina.com.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+object[src*="sinaimg.cn/hs/"],\#topbg,.brand_bg,\#ads_in_custom01_left {display:none !important}\
+\n</style>@
+FILTER: css-huanqiu.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.ad250x250.fleft.marrig10,.conad,.boxad2,.boxad,[id^="ad"],\#banner06,.ads_950x90,\#addt {display:none !important}\
+\n</style>@
+FILTER: css-i.firefoxchina.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#advblock,\#taobao_frame2,\#ad_links1,\#banner_show1 {display:none !important}\
+\n</style>@
+FILTER: css-i8i8i8.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+iframe[src^="http://top.taobao"],a[href$="/623240"] {display:none !important}\
+\n</style>@
+FILTER: css-iciba.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.vad_head,\#dict_right5,div[class="ad_list"] {display:none !important}\
+\n</style>@
+FILTER: css-ifeng.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.ad90.clearfix,[id$="coupletid"],.label_3,.adarea2,.pic640,.ad1000-3,.pic1000,.pic336,.ad852,.ad2,.ad1000,.maidunbox,\
+\#top01,.ad001,\#final_head_ad,.pic660,\#streammediawrap,.adbox,\
+[class^="adlist"],[id^="adlist"],[id^="couplet3_"],[id^="flash_outer_"] {display:none !important}\
+ \#adbest {display:none !important;}\
+\n</style>@
+FILTER: css-ihome99.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.pop-ad {display:none !important}\
+.float-ad,.ad-cycle {display:none !important}\
+\n</style>@
+FILTER: css-imanhua.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[id^="imh-"],\#topmon {display:none !important}\
+\n</style>@
+FILTER: css-infzm.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#article_left_adv div,\#article_right_adv div {display:none !important}\
+\n</style>@
+FILTER: css-iqiyi.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+div[id^='ad-left-t'],[id^="div_theatre"],[src*="/ts.swf"],.first_adv,.seed,\#adflash {display:none !important}\
+\n</style>@
+FILTER: css-it168.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.f_nav,.bor8 .bor9,.gg,div[id^="adv"],div[id^="ADV"],div[id^="WADV"]{display:none !important}\
+\n</style>@
+FILTER: css-ithome.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#bbs_hl,\#pop_notice,.hl_wrap,.side_products {display:none !important}\
+\n</style>@
+FILTER: css-ithome.com.tw
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+table[height="110"] {display:none !important}\
+\n</style>@
+FILTER: css-itopdog.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.xoxo > [id^="text-"],[class^="ad"],[id^="itopdog_ad-"] {display:none !important}\
+\n</style>@
+FILTER: css-iwanc.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.ad_r {display:none !important}\
+\n</style>@
+FILTER: css-jmnews.com.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#msg_win,.marbot5,[id^="couplet_"],\#ad1,\#viewcon > div:first-child {display:none !important}\
+\n</style>@
+FILTER: css-jpwind.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#banner,[id^="showad"] {display:none !important}\
+\n</style>@
+FILTER: css-jznews.com.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+a\#ad {display:none !important}\
+\n</style>@
+FILTER: css-kafan.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.header_gg,.ad {display:none !important}\
+\n</style>@
+FILTER: css-kankan.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[id^="cm"].banner {display:none !important}\
+\n</style>@
+FILTER: css-kdnet.net
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#club_dispbbs_ss_2_1,\#club_dispbbs_l_2 {display:none !important}\
+\n</style>@
+FILTER: css-kekenet.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.topad,.ad {display:none !important}\
+\n</style>@
+FILTER: css-kkkmh.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[class^="mm-"] {display:none !important}\
+\n</style>@
+FILTER: css-kuai.xunlei.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.kc_tips,.adv_area {display:none !important}\
+\n</style>@
+FILTER: css-kugou.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[class^="adv"] {display:none !important}\
+\n</style>@
+FILTER: css-kugz.net
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#portal_block_241 {display:none !important}\
+\n</style>@
+FILTER: css-laishuwu.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#p_ad_b1 {display:none !important}\
+\n</style>@
+FILTER: css-langxi.org
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.bm.a_c,.a_p {display:none !important}\
+\n</style>@
+FILTER: css-letv.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.theatre[style],\#j-adv-play,.theatre {display:none !important}\
+\n</style>@
+FILTER: css-loltw.gamebase.com.tw
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[class^="adsense-"] {display:none !important}\
+\n</style>@
+FILTER: css-lt.cjdby.net
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.bm.a_c {display:none !important}\
+\n</style>@
+FILTER: css-lzstw.org
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.top960,.play960 {display:none !important}\
+\n</style>@
+FILTER: css-mail.qq.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.tipbook-top {display:none !important}\
+\n</style>@
+FILTER: css-map.sogou.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#cboarddlg_1 {display:none !important}\
+\n</style>@
+FILTER: css-maps.baidu.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.citytip_top {display:none !important}\
+\n</style>@
+FILTER: css-maxpda.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.ad,[id^="dp-ads"] {display:none !important}\
+\n</style>@
+FILTER: css-mobile.sina.com.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.zcads {display:none !important}\
+\n</style>@
+FILTER: css-money.msn.com.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#rtad01,\#rtad02 {display:none !important}\
+\n</style>@
+FILTER: css-mp3.baidu.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#adv_daoliu,.area-top-ads,.ecom-ad,.ad {display:none !important}\
+\n</style>@
+FILTER: css-mscbsc.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[src*=".alimama.cn"],.bao1 {display:none !important}\
+\n</style>@
+FILTER: css-my.ku6.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.gg {display:none !important}\
+\n</style>@
+FILTER: css-mydrivers.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#lb_mydrivers * {display:none !important}\
+\n</style>@
+FILTER: css-myfiles.com.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[id^="ad_"] {display:none !important}\
+\n</style>@
+FILTER: css-narutom.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#itatop,[class^="wrap2 vtg"],\#itatop2,\#naruto_desk {display:none !important}\
+\n</style>@
+FILTER: css-needpop.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.altbg2 a,.spaceborder > table[style="background: \#bbe9ff"] {display:none !important}\
+\n</style>@
+FILTER: css-netgamecar.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#tabcontent2 img,\#tabcontent1 * {display:none !important}\
+\n</style>@
+FILTER: css-newhua.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.adr,.adt,.ad_ritht_1,.ad_ritht_2 {display:none !important}\
+\n</style>@
+FILTER: css-news.163.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.ntes-wrapper {height:0px !important;}\#wrapperbgid .wrapperbg {height:180px;}\
+\n</style>@
+FILTER: css-news.21cn.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.banner.area {display:none !important}\
+\n</style>@
+FILTER: css-news.baidu.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#ecomadv,\#ecad {display:none !important}\
+\n</style>@
+FILTER: css-news.cnyes.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.ad_nsrt_cysadp clearfix bgw,.adglodtxt cblue,[class^="ad"] {display:none !important}\
+\n</style>@
+FILTER: css-news.hexun.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.business {display:none !important}\
+\n</style>@
+FILTER: css-news.ifeng.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#demo {display:none !important}\
+\n</style>@
+FILTER: css-news.msn.com.tw
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.three,\#adv_images_l {display:none !important}\
+\n</style>@
+FILTER: css-news.mydrivers.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#main+.hang1,[id^="ad_980_90_"]+div {display:none !important}\
+\n</style>@
+FILTER: css-news.pchome.com.tw
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#ad_bg_div {display:none !important}\
+\n</style>@
+FILTER: css-news.pptv.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.mod_300x90,.mod_660x90 {display:none !important}\
+\n</style>@
+FILTER: css-sports.pptv.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+img[src*="/banner.jpg"]{display:none !important}\
+\n</style>@
+FILTER: css-news.qq.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#f2z,\#f2y,.bzad {display:none !important}\
+\n</style>@
+FILTER: css-news.sina.com.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#blk_xlzttltop_01,\#blk_atoptxtt_01,[class^="atoptxt"],\#top_bar,.topad {display:none !important}\
+\n</style>@
+FILTER: css-news.uuu9.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.ng_banner {display:none !important}\
+\n</style>@
+FILTER: css-news.ynet.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.rc {display:none !important}\
+\n</style>@
+FILTER: css-newsmth.net
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#sogou_banner {display:none !important}\
+.ad.full_ad,.ad.half_ad.mp_right,.ad.half_ad.mp_left {display:none !important}\
+\n</style>@
+FILTER: css-newtalk.tw
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.ind_news_station,\#ad_top_banner {display:none !important}\
+\n</style>@
+FILTER: css-nownews.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#focus_board.block_area block_y2 *,\#focus_area.block_area block_y2 *,\#anypost_topbuy,\#index_headline_box+.page_title {display:none !important}\
+\n</style>@
+FILTER: css-ocucn.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#bad {display:none !important}\
+\n</style>@
+FILTER: css-opda.com.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#fwin_dsu_paulsign {display:none !important}\
+\n</style>@
+FILTER: css-ouyaoxiazai.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+iframe {display:none !important}\
+\n</style>@
+FILTER: css-paoshu8.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#texttitle+br+table,[id^="ad_"] {display:none !important}\
+\n</style>@
+FILTER: css-pc3w.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#title_ad,\#ad_down_title,table[width="925"][height="305"] {display:none !important}\
+\n</style>@
+FILTER: css-pconline.com.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.ivybaidu {display:none !important}\
+\n</style>@
+FILTER: css-pcworld.com.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#floatdiv {display:none !important}\
+\n</style>@
+FILTER: css-people.com.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+img[src*=".gif?"],.topad,.top_ad_list {display:none !important}\
+\n</style>@
+FILTER: css-ph66.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.adtl,[class^="ad_"] {display:none !important}\
+\n</style>@
+FILTER: css-piaohua.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#wl_float_div {display:none !important}\
+\n</style>@
+FILTER: css-pixnet.net
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#pixblogad,.ad {display:none !important}\
+\n</style>@
+FILTER: css-portableappc.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#text-14,\#text-7 {display:none !important}\
+\n</style>@
+FILTER: css-portal.opera.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.alt-ads,.ads {display:none !important}\
+\n</style>@
+FILTER: css-pptv.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.re_980.sp_h90,.mini_player {display:none !important}\
+\n</style>@
+FILTER: css-qingdaonews.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.commonrightad,.surround {display:none !important}\
+\n</style>@
+FILTER: css-qiushibaike.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#topbanner {display:none !important}\
+\n</style>@
+FILTER: css-ranhen.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#box_con > div[align="center"] {display:none !important}\
+\n</style>@
+FILTER: css-readersdigest.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#fixeddiv {display:none !important}\
+\n</style>@
+FILTER: css-ref.so
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#toper_div,\#div_midleft, table[width="300"],[class^="yj84link"] {display:none !important}\
+\n</style>@
+FILTER: css-reg.163.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#showpic,\#adhref {display:none !important}\
+\n</style>@
+FILTER: css-saraba1st.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+img[src*="/images/a/"] {display:none !important}\
+\n</style>@
+FILTER: css-sbsrunningman.5d6d.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#header {display:none !important}\
+\n</style>@
+FILTER: css-search.21cn.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+td[height="35"],td[width="184"][align="left"] {display:none !important}\
+\n</style>@
+FILTER: css-sh.sina.com.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.iframepart1,\#ads {display:none !important}\
+\n</style>@
+FILTER: css-shm.com.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+iframe[src*=".youdao.com"],.surround2 {display:none !important}\
+\n</style>@
+FILTER: css-shushuw.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.bdad {display:none !important}\
+\n</style>@
+FILTER: css-simplecd.me
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[class^="ad-"] {display:none !important}\
+\n</style>@
+FILTER: css-sina.com.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[id^="ad_arti_"],[id^="_adsame"], img[src*="d1.sina.com.cn/20"],.topad,.topads,.top950x90,[id^="flashcontent_"],\
+.leju-ads,.adnone,.ylblkct {display:none !important}\
+\n</style>@
+FILTER: css-sina.com.tw
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+iframe {display:none !important}\
+\n</style>@
+FILTER: css-sogou.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#zhuanqu,.sponsored,\#bdfs0 {display:none !important}\
+\n</style>@
+FILTER: css-sohu.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.poping-blog-follow,.sogouad1,\#adlist,.ada,\#miaozhenad,.adbox,.adb,\#turn-ad {display:none !important}\
+\n</style>@
+FILTER: css-sosaw.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+img[src*="roadrover.cn/images/"],img[src*="taobaocdn.com/imgextra/"] {display:none !important}\
+\n</style>@
+FILTER: css-soso.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[ss_c^="ad_"],\#rads {display:none !important}\
+\n</style>@
+FILTER: css-soufun.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.topbanner,.photo03,.photo02,.adtextlink,[class^="ad_"] {display:none !important}\
+\n</style>@
+FILTER: css-sports.sina.com.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[id^="ads_right"] {display:none !important}\
+\n</style>@
+FILTER: css-steachs.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+img[src*="/banner/"],\#banner {display:none !important}\
+\n</style>@
+FILTER: css-strtv.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+iframe[src*="/ycpiframe.aspx"],body > .container:first-child {display:none !important}\
+\n</style>@
+FILTER: css-subpig.net
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.a_p {display:none !important}\
+\n</style>@
+FILTER: css-sun0769.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#topgg {display:none !important}\
+\n</style>@
+FILTER: css-sznews.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#mymovead,.divad div,.divad table {display:none !important}\
+\n</style>@
+FILTER: css-t56.net
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#ad2,.indexad.clearfix,.absolute+script+div,\#textad {display:none !important}\
+\n</style>@
+FILTER: css-taihe.net
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+script[src="/js/ad.js"] + \#table1 {display:none !important}\
+\n</style>@
+FILTER: css-taoguba.com.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.label2 {display:none !important}\
+\n</style>@
+FILTER: css-tech.qq.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.kjad2 {display:none !important}\
+\n</style>@
+FILTER: css-tianya.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+div[id^="FOCUS_270_80_AD_"],div[id^="FOCUS_670_80_AD_"],iframe[src*="pinpai.tianya.cn"],[id*="_ad_"],[class^="ad_"],\#tb_overlay,\#adsp_list_top_banner,\#adsp_content_top_banner {display:none !important}\
+\n</style>@
+FILTER: css-tianyayidu.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#bdhepg+div, div[style^="width: 728px"], div[style^="width:728px;"] {display:none !important}\
+\n</style>@
+FILTER: css-tieba.baidu.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#frs_banner_ad,[id^="guanggao"],.l_banner {display:none !important}\
+\n</style>@
+FILTER: css-ting.m.sohu.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.toppic {display:none !important}\
+\n</style>@
+FILTER: css-tkgame.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.gg,.top_middle_banner {display:none !important}\
+\n</style>@
+FILTER: css-tom.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.conttopad {display:none !important}\
+\n</style>@
+FILTER: css-tom365.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#t365 {display:none !important}\
+\n</style>@
+FILTER: css-top.qidian.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.gg01 {display:none !important}\
+\n</style>@
+FILTER: css-tt.mop.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#js-sub-body + div[style] {display:none !important}\
+\n</style>@
+FILTER: css-ttmeiju.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+a[href^="http://www.ttmeiju.com/adclick.php?"] {display:none !important}\
+\n</style>@
+FILTER: css-tv.sohu.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.nwbox {display:none !important}\
+\n</style>@
+FILTER: css-tw.msn.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#adgrouponca2,\#promotionlink,\#admomoca2,\#ectabs {display:none !important}\
+\n</style>@
+FILTER: css-tw.news.yahoo.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.gn_sub_blue {display:none !important}\
+\n</style>@
+FILTER: css-tw.yahoo.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#ticker,.admod,.colpadding > .tabmd,.newsad,.pa-banner {display:none !important}\
+\n</style>@
+FILTER: css-txtnovel.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#focus.focus {display:none !important}\
+\n</style>@
+FILTER: css-txzqw.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+img[src*="/img0808/"], img[src*="/gif/"],img[src*="/img/"] {display:none !important}\
+\n</style>@
+FILTER: css-u-car.com.tw
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.contad,.sidead_text,.top {display:none !important}\
+\n</style>@
+FILTER: css-u17.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.sidepic_40,.mylife {display:none !important}\
+\n</style>@
+FILTER: css-ucar.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[class^="adv_"] {display:none !important}\
+\n</style>@
+FILTER: css-uuu9.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#cm1337,.adfocusbox,.adbox,.h_50,[class^="ad_140"] {display:none !important}\
+\n</style>@
+FILTER: css-uwants.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#foruminfo + div[align="center"] {display:none !important}\
+[src*="/aeiou/"],[src*="/overture/"],a[href^="http://ad"],a[href^="http://b.optimix.asia/"] {display:none !important}\
+\n</style>@
+FILTER: css-v.163.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.bg {display:none !important}\
+\n</style>@
+FILTER: css-v.6.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#playerad {display:none !important}\
+\n</style>@
+FILTER: css-v.ifeng.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#adbest,.tit_ad {display:none !important}\
+\n</style>@
+FILTER: css-v.ku6.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.side-rad,[class^="aa_"] {display:none !important}\
+\n</style>@
+FILTER: css-verycd.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#baidu_page_ad_2 {display:none !important}\
+\n</style>@
+FILTER: css-vga.zol.com.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.banner250 {display:none !important}\
+\n</style>@
+FILTER: css-video.baidu.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.brand-ad.clearfix {display:none !important}\
+\n</style>@
+FILTER: css-video.sina.com.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#bgad_div {display:none !important}\
+\n</style>@
+FILTER: css-wanshulou.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.adll,.adrr,\#ad2 {display:none !important}\
+\n</style>@
+FILTER: css-weather.com.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.post_st,.adposter_10,.adposter_7,.adposter_6,.adposter_5,.adposter_4,.adposter_9,.adposter_37,.adposter_8,[class^="adpost"] {display:none !important}\
+\n</style>@
+FILTER: css-webkaka.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#table1 {display:none !important}\
+\n</style>@
+FILTER: css-wenwen.soso.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.ad1 {display:none !important}\
+\n</style>@
+FILTER: css-wjskw.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+img[src*="manhuaba.com/thumb/"],\#titlebottom2,\#flad,\#bdastop td {display:none !important}\
+\n</style>@
+FILTER: css-wpsoso.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#scontent>div:first-child,a[href*="op=register"],\#tips {display:none !important}\
+\n</style>@
+FILTER: css-wretch.cc
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.panelroot,\#ad_word,\#push-down-ad,\#wretchinfo,.admd {display:none !important}\
+\n</style>@
+FILTER: css-www.163.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#g5n1 {display:none !important}\
+\n</style>@
+FILTER: css-www.3dmgame.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.banner_1,[id^="clickbg"] {display:none !important}\
+.beitou {background-image:none !important;}\
+\n</style>@
+FILTER: css-www.alibuybuy.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[class^="ad_"] {display:none !important}\
+\n</style>@
+FILTER: css-.nuoqiu.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.baidu {display:none !important}\
+\n</style>@
+FILTER: css-.nyaa.eu
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+a[href^="http://www.nyaa.eu/ii/?"] {display:none !important}\
+\n</style>@
+FILTER: css-.p5w.net
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[class^="part"]+div[style],.ad1>div:first-child,.advcommon {display:none !important}\
+.ad1 {height:40px;}\
+\n</style>@
+FILTER: css-.plurk.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#plurk_ads,\#sliderads,.adsense {display:none !important}\
+\n</style>@
+FILTER: css-.poco.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.banner768,.banner205,.banner994,\#mypoco_skin {display:none !important}\
+\n</style>@
+FILTER: css-.price.com.hk
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.tb,\#ad0 {display:none !important}\
+\n</style>@
+FILTER: css-.qianpo.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#btb.btb {height:70px !important;}\
+\n</style>@
+FILTER: css-.qidian.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+iframe[src*=".ku6.com"],[class^="show_ggpic_"] {display:none !important}\
+a[href^="http://www.qidian.com/showavd.aspx?"] {display:none !important}\
+\n</style>@
+FILTER: css-.qjwm.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+td[height="90"],\#gggg {display:none !important}\
+\n</style>@
+FILTER: css-.qqkj.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[class^="ad"],.wenad {display:none !important}\
+\n</style>@
+FILTER: css-.qqread.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[id$="ad"],[class$="ad"] {display:none !important}\
+\n</style>@
+FILTER: css-.ranwen.cc
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#contont \#title_cont {height:110px;}\
+\n</style>@
+FILTER: css-.readersdigest.hk
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.advertize .tagimage {display:none !important}\
+\n</style>@
+FILTER: css-.soku.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#ab_282 {display:none !important}\
+\n</style>@
+FILTER: css-.startos.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.ber-240-200,.i-ber {display:none !important}\
+\n</style>@
+FILTER: css-.sz.js.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[id^="lovexin"],\#msg_content {display:none !important}\
+\n</style>@
+FILTER: css-.techweb.com.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.xxbox,.xxbox_news {display:none !important}\
+\n</style>@
+FILTER: css-.tiexue.
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#baidu_bbspostnormalv3contentinfo,.banner2,\#baidu_bbspostnormalv3contentleftad1,\#baidu_adpip2,\
+ \#baidu_posttitletextad,.banner,.banner03,.banner05,\#baidu_www_topad4 {display:none !important}\
+\n</style>@
+FILTER: css-.tiyuba.net
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.gg_info,.bannerhead {display:none !important}\
+\n</style>@
+FILTER: css-.tiyuba.tv
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+img[src*="/large/"],a[onclick^="click_stat"],.floatad {display:none !important}\
+\n</style>@
+FILTER: css-.udn.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#ads {display:none !important}\
+\n</style>@
+FILTER: css-.xcar.com.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.txright_boxb,[id^="xcarwindow_"],[class^="adset"],[class^="adset"] div {display:none !important}\
+\n</style>@
+FILTER: css-.xfastest.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.ad728,.ad800,\#showrightoverflow,.articles-left-olny,\#ad270scupio.block,\#ad270.block,\#ad1000.block {display:none !important}\
+\n</style>@
+FILTER: css-.xiachufang.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.g-ga.g-bg-white {display:none !important}\
+\n</style>@
+FILTER: css-.xici.net
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.msgl_ad,.doc_tl.p9 {display:none !important}\ .w700_def {background:none !important;}\
+\n</style>@
+FILTER: css-.xilu.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.w970,.advtable,.bbs_topad,.pageleft>table,.rbox>.mt_10 {display:none !important}\
+\n</style>@
+FILTER: css-.xizi.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.main_mod.cc,.top_recommend {display:none !important}\
+\n</style>@
+FILTER: css-xinhuanet.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[id^="hhpbn"],\#ad2, iframe[src$="_iframe.htm"] {display:none !important}\
+\#ad3 {height:0px;}\
+\n</style>@
+FILTER: css-news.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[id^="hhpbn"],\#ad2, iframe[src$="_iframe.htm"] {display:none !important}\
+\#ad3 {height:0px;}\
+\n</style>@
+FILTER: css-av199.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+table[height="30"] {display:none !important}\
+\n</style>@
+FILTER: css-hd199.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+table[height="30"] {display:none !important}\
+\n</style>@
+FILTER: css-www.zhulang.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+img[src*="images.zhulang.com/game/upload/"] {display:none !important}\
+\n</style>@
+FILTER: css-book.zhulang.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+img[src*="images.zhulang.com/game/upload/"] {display:none !important}\
+\n</style>@
+FILTER: css-qzwb.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#id_content>p:first-child,\#mymovead, object[src*=".swf"], a[href*=".qzeye.net"],.adv,.area[style^="height: 70px"],\
+.area[style^="height:70px;"] {display:none !important}\
+\n</style>@
+FILTER: css-.qzntv.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#id_content>p:first-child,\#mymovead, object[src*=".swf"], a[href*=".qzeye.net"],.adv,.area[style^="height: 70px"],\
+.area[style^="height:70px;"] {display:none !important}\
+\n</style>@
+FILTER: css-mail.163.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[id^="dvreadadread"],\#dvwelcomead2,\#pwelcomgift,.gy.txt-impt,\#dvreadflashad {display:none !important}\
+\n</style>@
+FILTER: css-mail.126.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[id^="dvreadadread"],\#dvwelcomead2,\#pwelcomgift,.gy.txt-impt,\#dvreadflashad {display:none !important}\
+\n</style>@
+FILTER: css-99comic.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[src*="/aitw/"],.sid,.sic {display:none !important}\
+\n</style>@
+FILTER: css-99manga.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[src*="/aitw/"],.sid,.sic {display:none !important}\
+\n</style>@
+FILTER: css-win7china.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#pop_notice,.site_ad {display:none !important}\
+\n</style>@
+FILTER: css-win8china.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#pop_notice,.site_ad {display:none !important}\
+\n</style>@
+FILTER: css-iknow.baidu.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#right div,\#right,.r,\#advertise,\#ad-brand-down,.ad-fc-down,\#qb-ad-cpro {display:none !important}\
+\n</style>@
+FILTER: css-z.baidu.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#right div,\#right,.r,\#advertise,\#ad-brand-down,.ad-fc-down,\#qb-ad-cpro {display:none !important}\
+\n</style>@
+FILTER: css-zidao.baidu.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#right div,\#right,.r,\#advertise,\#ad-brand-down,.ad-fc-down,\#qb-ad-cpro {display:none !important}\
+\n</style>@
+FILTER: css-zhidao.baidu.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#right div,\#right,.r,\#advertise,\#ad-brand-down,.ad-fc-down,\#qb-ad-cpro {display:none !important}\
+\n</style>@
+FILTER: css-frdic.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.headbar,\#sidebar1 {display:none !important}\
+\n</style>@
+FILTER: css-godic.net
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.headbar,\#sidebar1 {display:none !important}\
+\n</style>@
+FILTER: css-mimikx.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+table\#table1,table\#table8 {display:none !important}\
+\n</style>@
+FILTER: css-maxmaya.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+table\#table1,table\#table8 {display:none !important}\
+\n</style>@
+FILTER: css-bilibili.tv
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.ad-f {display:none !important}\
+\n</style>@
+FILTER: css-bilibili.kankanews.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.ad-f {display:none !important}\
+\n</style>@
+FILTER: css-caicai98.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[class^="gg"] {display:none !important}\
+\n</style>@
+FILTER: css-finance.china.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[class^="gg"] {display:none !important}\
+\n</style>@
+FILTER: css-pchome.net
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[id^="bar"],[class^="ad"],[id^="ad"] {display:none !important}\
+\n</style>@
+FILTER: css-kdslife.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+[id^="bar"],[class^="ad"],[id^="ad"] {display:none !important}\
+\n</style>@
+FILTER: css-.qdmm.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+a[href^="http://www.qidian.com/showavd.aspx?"] {display:none !important}\
+\n</style>@
+FILTER: css-www.baidu.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.ec_bdtg,\#ec_im_container,.ec_ppim,.ec_ppim2,\#ec_im_containe,.ec_pp_f + br,.ec_pp_f,\#ecad {display:none !important}\
+\n</style>@
+FILTER: css-www1.baidu.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.ec_bdtg,\#ec_im_container,.ec_ppim,.ec_ppim2,\#ec_im_containe,.ec_pp_f + br,.ec_pp_f,\#ecad {display:none !important}\
+\n</style>@
+FILTER: css-ipv6.baidu.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.ec_bdtg,\#ec_im_container,.ec_ppim,.ec_ppim2,\#ec_im_containe,.ec_pp_f + br,.ec_pp_f,\#ecad {display:none !important}\
+\n</style>@
+FILTER: css-jpfans.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+img[src*="jpunion.com"],iframe[src*="jpunion.com"],iframe[src*=".alimama."],img[src*="riju.com/pr/"],iframe[src*="riju.com/pr/"] {display:none !important}\
+\n</style>@
+FILTER: css-jpseek.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+img[src*="jpunion.com"],iframe[src*="jpunion.com"],iframe[src*=".alimama."],img[src*="riju.com/pr/"],iframe[src*="riju.com/pr/"] {display:none !important}\
+\n</style>@
+FILTER: css-itiankong.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.a_pt {display:none !important}\
+\n</style>@
+FILTER: css-lkong.net
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.a_pt {display:none !important}\
+.myadvs {display:none !important}\
+\n</style>@
+FILTER: css-bbs.hiapk.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.a_pt {display:none !important}\
+\n</style>@
+FILTER: css-bbs.585.cc
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.a_pt {display:none !important}\
+\n</style>@
+FILTER: css-btvbt.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.tac.mb5 {display:none !important}\
+\n</style>@
+FILTER: css-hxsxw.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.tac.mb5 {display:none !important}\
+\n</style>@
+FILTER: css-bbs.qzss.cn
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.tac.mb5 {display:none !important}\
+\n</style>@
+FILTER: css-ctdisk.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.kk_xshow {display:none !important}\
+\n</style>@
+FILTER: css-400gb.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.kk_xshow {display:none !important}\
+\n</style>@
+FILTER: css-forum.qdwenxue.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+img[src*="cj.qidian.com/picture/"] {display:none !important}\
+\n</style>@
+FILTER: css-forum.qidian.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+img[src*="cj.qidian.com/picture/"] {display:none !important}\
+\n</style>@
+FILTER: css-.youtube.
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.promoted-videos,\#search-pva-content,\#browse-ad-container,\#ad_creative_2,\#homepage-sidebar-ads,\#watch-branded-actions,\
+\#ppv-container {display:none !important}\
+ \#footer {padding-bottom:0 !important;}\
+\n</style>@
+FILTER: css-.bing.
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.sb_adswv2,.sb_adsnv2,.sb_adsw,.sb_adsn,\#bnp_rtc,\#formsponsoredlinks,.partnerlinks,.sponsored,.rspdesc,\#wtb_so {display:none !important}\
+\#article_narrow_ads {display:none !important;}\
+\n</style>@
+FILTER: css-.amazon.
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#navswmslot,\#a9adsoutofstockwidgettop,.advertisingtable,.amazon_sponsored_ad,\#variant_adslazyload,\#variant_ads_above_fold,\ \#a9adsmiddleboxtop,\#related_adslazyload,\#related_ads,.tgcommunityads,\#rightcolbtf2,\#rightcolbtf3,.pa_containerwrapper,\
+\#dacrt,\#daae1,\#sponsoredlinkscustomermediapage {display:none !important}\
+ \#comp_shop_container {display:none !important;}\
+ \#popovertrigger {visibility:hidden;}\
+\n</style>@
+FILTER: css-.msn.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.spadr,\#advertisement,.adtext,.adcontainer,.superbannertvmain,\#divsiteborderleft,.mmadp-lblstyle,\#dapdiv,.adcenter,\ .base_printer_widgets_adbreak,.outbrain,\#spotlight,\#dating,.adslice {display:none !important}\
+\#ovadwrap,.cpcondbanner,.condbanner2 {display:none !important;}\
+ .verticalbannertv {visibility:hidden;}\
+\n</style>@
+FILTER: css-.qq.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.qiye-article-qq,.l_qq_com,.business-article-qq,.adtop-article-qq,.adbox-article-qq {display:none !important}\
+\n</style>@
+FILTER: css-.sina.
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.part_m_1,.rttxtad,.rtad360120,.rtad360300,.rtad360200, a.lnti,.aln,.ad250x230,.topads,.techbtmads,.ads_780x97_01,\
+\#adview_690_90,.ad355125,.ads_120x120_1,.topad,\#dingtong,\#ad1,\#topads,.partart,.pic_728_90,.adbox,.ads,.ad1,\
+ \#addivleft,\#addivright,\#funwrap,.partarb01-2,.partlbtnads,.yleft2blk,.ra_780x90div,.societybtmlist,.adbar01,.adbar02 {display:none !important}\ .adnone,.adframe,\#divresnewsbottom {display:none !important;}\
+\n</style>@
+FILTER: css-.sohu.
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+\#banner_product,\#sohu_content table table,.ads,.bigad,\#sideswfad,.baiad,{display:none !important}\
+.adbar,\#float1,\#float2 {display:none !important;}\
+\n</style>@
+FILTER: css-.yahoo.
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+div\#k.r,.spon,.yshp_ad_o_n,.yshp_ad_o_e,.sponsor,\#sponsorlink,\#yspadwrapper,.tgl,\#ovt-no-border,\#pollobj,\#south-ad-wrapper,\
+.ymhnav.sbg a, iframe\#sky,.spons, span\#yslug,\#marketplace,\#adiv2,\#yschmktg, iframe.lrec,\#news-w1-ad,.yad-mrec,.ysm,.adcn,\
+ \#yreadce1,\#yfiadfm,.yfiadhdr,.yfiad_body,.yfiadmain_tll,\#yfiinshdrad,\#new_car_lrec,.yatadsoembd,\#sponsored,\
+  \#state_farm_sky,\#insurance_spotlight,.admod .bd,\#adlrec,\#darlarequest,.yreadlrec,\#yfncbrobtn,\#yfi_ysm,\
+   .sponsored_by,\#yfi_pf_advertisement,\#yfi_pf_fidelity_article_top,\#yfi_pf_quattro,\#yan-sponsored,\#yh-ysm,\
+    \#nowhiringmodule,\#yfi_pf_ad_mort,\#yfi_pf_cobrand,\#ymap_adbanner,\#ylf-ysm-side,\#ylf-ysm,\#mantlecx,\
+     \#content_match_terespondo,\#sponsoredlist,\#ad_hd,\#ad_bd,\#mobilead,.ymc \#pm1,.ymc \#ps1,.ys \#esp,.ys \#ms5,.ymc \#bi1,\ \#omg-ad-logo,\#omg-lrec,\#omg-mip,\#omg-mrec,\#ymh-ads,.ads,.type_promoads,\#y_provider_promo {display:none !important}\
+.ov-east,.tgl-block,\#ks-ypn-ads,.ovtbg,.ovt,\#lrec_area,.ad_slug,\#lf_ad,.yschbbox,.yschspns,\#yschsec,\#ovt,\
+.ovtnormal,.ovteastmod,\#nt1,\#lrec_loader,\#yh-ovt,\#west.ovt,\#east,\#yh-lrec-wrap,\#ymadbn,.ad_slug_table,.ysptblbdr3,\
+ \#sponseredlinks,\#ygrp-sponsored-links,\#ypersponsoredlinkcontent,\#yfi_pf_ysm,\#sponsorcompany,\#yfs_ad_b,\#ad-lrec,\
+  \#news-sponsor,\#yls-dt-cat-sponsor-s, div.bbox,.ysmlisting,\#sportstore,\#mw-ysm-cm,\#yls-dt-smagic,\#ad-clink,.hd-ad,\
+   \#troughadvert,\#troughtwo,\#networkad,\#yls-dt-ysm,.trough-ad,\#an_lrec_ad,.yschspromo,\#north_banner,\#sponsorresults,\
+    \#yfi_ad_fb2,\#yfi_ad_cl,.cm_branding,.cm_ads,.fpad,.type_miniad_default,\#default-adscontainer,\#ads,.ymb \#fbb,\#if_ad {display:none !important}\ .yschsec,\#adunit,\#adunit2 {visibility:hidden;}.ysmsponsor,\#ysm_hybrid,.yls-rs-paid, div.lrec,.advert,.y7-advertisement,\
+     .sponsored-links,.promo-banner {display:none !important;}\
+\#ymusic_phad,\#ymusic_sponad,\#ymusic_saaad,\#ymusic_lrecad,\#playernotesponsor,\#y708-advertorial-marketplace,\
+.y708-ad-eyebrow,\#y708-ad-partners,\#y708-ad-expedia,\#y708-ad-ysm,.y708-commpartners,.y7-advertisement,.y7n-sponsored-links,\ .y7n-find-car,\#yn-featured,.ad-links,\#northad,.southad,\#yahoopn_cm,.mod-ad-n,.mod-ad-lrec,.mod-ad-cardp,.mod-ad-logo,\
+ .shmod-ysm,.rhs-ebay,.yad-cpa,.miniad,\#storepromo,.dynamic_ad,\#pa_ad,\#ad_cont2,\#ad_container,.darla_ad,\#r-e,\
+  \#ysp-shop-link,.body_copy \#sky,\#ysp-countdown,.admod .hd,.yw-ad,\#yw-sponsoredad,\#themis-ads,\#premiumplacementc,\
+   \#ygrp-sponsor-box,\#ylrec_container,\#sponsor,.yrehllrecout,\#ysp-sponsored-results,.sponsoredresults {display:none !important}\
+    span\#nwssponsor_ctnr,\#darla {display:none !important;}\
+    div\#notecontainer {height:260px !important;}\
+\n</style>@
+FILTER: css-.aipai.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.cover_bd * {display:none !important}\
+\n</style>@
+FILTER: css-.cnn.
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.cnn_adtitle,.cnn_fabcatad,.cnn_adcntr300x100,.cnn_strycrcntrad,.cnn_careerbb11,.cnn_adspc336cntr,\#adbannertable,\#magofie,\
+.cnntowerad,\#moneysponsorbox,\#cnnmarket_sponsor,\#cnnsearchsponsoredlinks,.cnnviewerad,\#adframe1,\#adframe2,\#adframe3,\
+ \#cnnfrontpromo,\#magstoryofie,.cnn_textpromo,.nsadrow,.cnn_sectprtnrbox_grpn325,.cnn_728adbin,.mod-cnnadcnn,\
+  \#ie_column,\#moneysponsors,\#careercenterform {display:none !important}\
+   .advertiselabel234x60 {display:none !important;}\
+\n</style>@
+FILTER: css-.deviantart.
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.sleekadbubble,\#gmi-resourcepagemetapane .subbyclosex,\#overhead-you-know-what {display:none !important}\
+\#gmi-resviewsizer_linkzone {min-height:0px;}\
+\n</style>@
+FILTER: css-.facebook.
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.uistandardframe_sidebarads .ego_section,\#pagelet_side_ads,.fbtimelinesideads,.fbphotosnowboxads,\#twotenad,\
+\#fbphotosnowliftadsside {display:none !important}\
+\#pagelet_ego_pane .ego_column:nth-child(2),\#netego_organic+.ego_column,\
+ .canvasticker+\#pagelet_ego_pane,\#pagelet_ego_pane_w:first-of-type {display:none !important}\
+\n</style>@
+FILTER: css-.google.
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.ra,.topads,.bottomads,.ads,.lads,\#bottomads,\#topads,\#content_ads_content,\#mclip,.rnimc,\
+.ads-300-250,\#adt,\#wia1,\#wia2,\#wia3,.adspanel,.rhs-ads-panel,.gac_t,.gac_f,.gac_bt,.gac_n,\#tpa1,\
+ \#tpa2,\#tpa3,\#tpa4,\#ads-rhs,.item-body iframe,\#ads-top,\#ads-bot,\#np_content_ads_module,\#rhswrapper,\
+  \#tadsb,\#ads-prices,\#lhid_search_ad_unit,\#lhid_searchad,\#tadsto,\#contentads,\#taw .c,\#mbend,\#rhs_block .c {display:none !important}\
+   \#res .slk td,\#res .ts td,\#res \#rso td,.e .j {line-height:normal;}\
+\n</style>@
+FILTER: css-.hulu.
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+<img width="0" height="0" id="sponsorship">\
+.sponsorship,\#toyota_banner_bak,\#toyota_banner_container,\#facebook-connect-popup,.overlay-full {display:none !important}\
+\#player {visibility:visible !important;}\
+\n</style>@
+FILTER: css-.imdb.
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+html {background-color:\#d4d9dd;}body {background-color:white !important;background-image:none !important;}\
+\#video-page div,\#related_video_sponsor div,\#nb15supertab,.falltvpreviewdiv,\#aux-ad-widget-2,\#advertorial_slim,\#site_stripe_final,\ \#amazon-affiliates,\#top_ad_wrapper,.top-rhs,.middle-rhs \#map,.dfp_slot,.injected_slot {display:none !important}\
+ \#adcomponentwrapper {height:1px !important;}\#sidebar {padding:0 0 0 7px;}\
+\n</style>@
+FILTER: css-.jjwxc.net
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+img[src$=".ca"],\#containermmtypea,[id^="adp_"] {display:none !important}\
+\n</style>@
+FILTER: css-.mediafire.
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.ws-ad,.lb-ad,.rockmeltadwrapper {display:none !important;}\
+\n</style>@
+FILTER: css-.myspace.
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.labeled_ad,.medreccontainer,\#adskyscraperlg {display:none !important}\
+\#homepagebanner,.popoutad {display:none !important;}\
+\n</style>@
+FILTER: css-.265g.com
+s@(?=<head>)@\
+<style type="text/css" class="privoxy-add-css00">\n\
+.fmt,.ban01,[class="col03 f_r"],[class^="play_fmt_"] {display:none !important}\
+\#homepagebanner,.popoutad {display:none !important;}\
+\n</style>@
+######
