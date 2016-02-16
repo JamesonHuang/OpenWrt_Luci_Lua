@@ -1,0 +1,239 @@
+--test_ww_sipfs
+local posix = require "Posix"
+local cnt  = 0
+while cnt < 100 do
+        require "meizu.sipfs".sip_cmd_process_action["getwifisettings"]("getwifisettings", 6204)
+        print("count:" .. cnt)
+        cnt = cnt + 1
+        posix.sleep(1)
+end
+
+
+
+--小米smartwifi代码：
+usr/share/smartcontroller/smartcontroller.conf
+
+/usr/lib/lua/luci/controller/api/xqsmarthome.lua
+
+/usr/lib/lua/xiaoqiang/common/xqconfig
+
+
+
+--uci set wifi 
+uci set wireless.mt7628iface.disabled=1
+
+uci set wireless.mt7610eiface.disabled=0
+
+
+
+
+module("meizu.plugfs", package.seeall)
+
+local lue   = require"luci.util".exec
+local cjson = require "cjson"
+local dbfs  = require "meizu.dbfs"
+
+function test_db_plug(json_data)
+    require "MZLog".log(3, dbfs.init_plug_list_table())
+    
+    local res_insert = dbfs.insert_plug("0001", "plug_helloworld", "V0.0.1", "uninstalled",
+    "2c66d7f62569f551567a3c4f8d0e1c07", 2, "1.9K")
+    require "MZLog".log(3, res_insert)
+
+    res_insert = dbfs.insert_plug("0002", "plug_helloworld2", "V0.0.1", "uninstalled",
+    "2c66d7f62569f551567a3c4f8d0e1c07", 1, "1.9K")
+    require "MZLog".log(3, res_insert)
+
+    local res = dbfs.fetch_all_plug()
+    require "MZLog".log(3, res)
+
+    res = dbfs.update_plug_status("0001", "installed")
+    require "MZLog".log(3, res)
+
+    res = dbfs.fetch_plug("0001")
+    require "MZLog".log(3, res)
+
+    res = dbfs.delete_plug_by_plug_code("0001")
+    require "MZLog".log(3, res)
+
+    local res = dbfs.fetch_all_plug()
+    require "MZLog".log(3, res)
+
+    res = dbfs.delete_all_plug()
+    require "MZLog".log(3, res)
+
+    local res = dbfs.fetch_all_plug()
+    require "MZLog".log(3, res)
+        
+end
+
+function get_plug_from_db(plug_code)
+    local res = dbfs.fetch_plug(plug_code)
+    local item = {}
+    for k, v in pairs(res) do
+        item["plug_code"] = v["plug_code"]
+        item["plug_name"] = v["plug_name"]
+        item["plug_version"] = v["plug_version"]
+        item["status"] = v["status"]
+        item["md5"] = v["md5"]
+        item["storagenode"] = v["storagenode"]
+        item["storagespace"] = v["storagespace"]
+    end
+    require "MZLog".log(3, item["plug_name"])
+    require "MZLog".log(3, item["plug_code"])
+    require "MZLog".log(3, item["plug_version"])
+    require "MZLog".log(3, item["status"])
+    require "MZLog".log(3, item["md5"])
+    require "MZLog".log(3, item["storagenode"])
+    require "MZLog".log(3, item["storagespace"])
+    return item
+end
+
+function plug_list_init()
+    dbfs.init_plug_list_table()
+
+    dbfs.insert_plug("0001", "plug_helloworld", "V0.0.1", "uninstalled",
+    "2c66d7f62569f551567a3c4f8d0e1c07", 2, "1.9K")
+
+    dbfs.insert_plug("0002", "plug_helloworld2", "V0.0.1", "uninstalled",
+    "2c66d7f62569f551567a3c4f8d0e1c07", 1, "1.9K")
+end
+
+function plug_opt(json_data)
+    --plug_list_init()
+
+    local opt = "install"
+    local plug_code = "0003"
+    local plug_name = "/usr/sbin/share/plug_helloworld.ipk"
+    local plug_md5 = "2c66d7f62569f551567a3c4f8d0e1c07"
+    --local check_md5_flag = check_md5sum(plug_md5, plug_ipk)
+    --if check_md5_flag == false then
+    --  return false
+    --end
+    
+    local plug = get_plug_from_db(plug_code)
+	if not plug and opt == "install" then
+        return install_plugin(plug_code, plug_md5)
+    end	
+    require "MZLog".log(3, plug["plug_name"])
+
+    if opt == "remove" then
+        remove_plugin(plug["plug_name"])
+	
+    elseif opt == "start" then
+        start_plugin(plug["plug_name"])
+
+	elseif opt == "stop" then
+        stop_plugin(plug["plug_name"])
+	
+    elseif opt == "config" then
+        config_plugin(plug["plug_name"])
+    
+    elseif opt == "plug_list" then
+        res = dbfs.fetch_plug("list")
+        return res
+    
+    elseif opt == "get_plug" then
+        return res
+    end
+    require "MZLog".log(3, res)
+end
+
+function read_json_data(json_data)
+    --require "MZLog".log(3, json_data)
+--[[    local cmd = "echo 'plug_test' >> /tmp/plug_opt"
+    lue(cmd)
+    local plug_list = cjson.decode(json_data)
+    require "MZLog".log(3, v["plug_list"])
+    local plug = ""
+    for k, v in pairs(plug_list) do
+        require "MZLog".log(3, k)
+        require "MZLog".log(3, v)
+        --plug = cjson.decode(v)
+        --plug = cjson.decode(v)
+        require "MZLog".log(3, v.plug_id)
+    end
+    --for k, v in pairs(plug) do
+    --    require "MZLog".log(3, v)
+    --end
+--]]
+end
+
+function get_router_total_size()
+    --local cmd = "du / -d 0|sed 's/\// /'|sed 's/ //'" 
+    local cmd = "du / -d 0|tr -d '/ '" 
+    local size = lue(cmd)
+    --local front, tail = string.find(size, "/")    
+    --string.sub(size, 1, front-1)
+    require "MZLog".log(3, size)
+    return tonumber(size)
+end
+
+function install_plugin(plug_code, plug_md5)
+    --TODO: wget ipk
+
+    local total_size_before = get_router_total_size() 
+    require "MZLog".log(3, total_size_before)
+
+    --local local_path = "/usr/share/"..plug_name..".ipk"
+    local local_path = "/usr/share/plug_helloworld.ipk"
+    cmd = "opkg install "..local_path 
+    lue(cmd)
+
+    local jsr = io.open("/tmp/plug_helloworld.config", "r")
+    local json_data = jsr:read("*a"); -- 读取所有内容
+    local plug_config = cjson.decode(json_data)
+
+    require "MZLog".log(3, plug_config.plug_name)
+    require "MZLog".log(3, plug_config.plug_version)
+
+    local total_size_after = get_router_total_size() 
+    require "MZLog".log(3, total_size_before)
+    local plug_size = tostring(total_size_after - total_size_before).."KB"
+    require "MZLog".log(3, plug_size)
+
+    --dbfs.insert_plug(plug_code, plug_name, "V0.0.1", "installed", plug_md5, 2, plug_size)
+end
+
+function remove_plugin(plug_name)
+    local cmd = "opkg remove "..plug_name 
+    lue(cmd)
+end
+
+function start_plugin(plug_name)
+    local cmd = "/etc/init.d/"..plug_name.." start" 
+    lue(cmd)
+end
+
+function stop_plugin(plug_name)
+    local cmd = "/etc/init.d/"..plug_name.." stop" 
+    lue(cmd)
+end
+
+function config_plugin(plug_name)
+    local cmd = "echo 'plug_config test' >> /tmp/plug_opt"
+    lue(cmd)
+end
+
+
+--local plug_config = io.open("/etc/config/plug.config", "r")
+--local json_data = plug_config:read("*a"); -- 读取所有内容
+
+plug_opt("plug_helloworld")
+--install_plugin("/usr/share/plug_helloworld.ipk")
+--remove_plugin("plug_helloworld")
+--start_plugin("plug_helloworld")
+--stop_plugin("plug_helloworld")
+
+
+lua -e "require 'meizu.plugfs'.print_plug_status()"
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+#启动锐捷：
+sudo my_pro/rjsupplicant/rjsupplicant.sh -u 1106102011 -p 000000 -d 1
+sudo service network-manager start
+
+#启动goagent：
+sudo python ~/my_pro/GoAgent/local/proxy.py
+
+
+#vpn:
+purevpn0s785126
+2fxkpp2j

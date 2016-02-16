@@ -1,0 +1,408 @@
+I/MEIZUMsg( 1235): command_process 3594 current_command: sync 191.982346 1450084492308503
+I/MEIZUMsg( 1235): pc->command == 0 : 0 player_command_locked 108
+I/MEIZUMsg( 1235): unlock state begin player_process_command 614
+I/MEIZUMsg( 1235): unlock state player_wait_for_decoder 274
+I/MEIZUMsg( 1235): sock accepted mz_tcp_recv_cmd 391
+I/MEIZUMsg( 1235): recv msg: {
+I/MEIZUMsg( 1235): 	"slave_cmd":	3,
+I/MEIZUMsg( 1235): 	"arg1":	"250.000000",
+I/MEIZUMsg( 1235): 	"arg2":	"",
+I/MEIZUMsg( 1235): 	"arg3":	""
+I/MEIZUMsg( 1235): }
+I/MEIZUMsg( 1235):  connection_handler 334
+I/MEIZUMsg( 1235): msg: {
+I/MEIZUMsg( 1235): 	"slave_cmd":	3,
+I/MEIZUMsg( 1235): 	"arg1":	"250.000000",
+I/MEIZUMsg( 1235): 	"arg2":	"",
+I/MEIZUMsg( 1235): 	"arg3":	""
+I/MEIZUMsg( 1235): }
+I/MEIZUMsg( 1235):  slave_recv_cmd_handler 186
+I/MEIZUMsg( 1235): 3 slave_recv_cmd_handler 204
+I/MEIZUMsg( 1235): slave_cmd_exec 93
+I/MEIZUMsg( 1235): slave_cmd: 3 slave_cmd_exec 105
+I/MEIZUMsg( 1235): slave_seek 62
+I/MEIZUMsg( 1235): pc->command == 0 : 4 player_command_locked 108
+
+
+=======================================
+#0  0x2ab06048 in tgkill ()
+   from /home/rh/my_code/ampd/app/src/main/obj/local/armeabi/libc.so
+#1  0x2aaf709c in pthread_kill ()
+   from /home/rh/my_code/ampd/app/src/main/obj/local/armeabi/libc.so
+#2  0x2aaf72b0 in raise ()
+   from /home/rh/my_code/ampd/app/src/main/obj/local/armeabi/libc.so
+#3  0x2aaf5fe6 in ?? ()
+   from /home/rh/my_code/ampd/app/src/main/obj/local/armeabi/libc.so
+#4  0x2ab05900 in abort ()
+   from /home/rh/my_code/ampd/app/src/main/obj/local/armeabi/libc.so
+#5  0x2aaf6acc in ?? ()
+   from /home/rh/my_code/ampd/app/src/main/obj/local/armeabi/libc.so
+#6  0x2aaf6044 in __assert2 ()
+   from /home/rh/my_code/ampd/app/src/main/obj/local/armeabi/libc.so
+#7  0x55782e18 in player_command_locked (pc=0x557c3e00 <__func__.12465>, 
+    pc@entry=0x56289f88, cmd=cmd@entry=PLAYER_COMMAND_SEEK)
+    at jni/mpd/src/player_control.c:110
+#8  0x55783d6c in pc_seek (pc=pc@entry=0x56289f88, song=song@entry=0x56e89f40, 
+    seek_time=250) at jni/mpd/src/player_control.c:405
+#9  0x557a289c in slave_seek (
+    ptr_slave_player_args=ptr_slave_player_args@entry=0x56a642e8)
+    at jni/mpd/src/util/SlaveRecvCMDUtil.c:65
+#10 0x557a2bbc in slave_cmd_exec (pram=<optimized out>)
+    at jni/mpd/src/util/SlaveRecvCMDUtil.c:123
+#11 0x2aaf122c in __thread_entry ()
+   from /home/rh/my_code/ampd/app/src/main/obj/local/armeabi/libc.so
+#12 0x2aaf13c4 in pthread_create ()
+   from /home/rh/my_code/ampd/app/src/main/obj/local/armeabi/libc.so
+#13 0x00000000 in ?? ()
+(gdb) 
+
+
+
+
+
+
+
+
+#0  0x4006cc98 in ?? () from /home/rh/my_code/ampd/app/src/main/obj/local/armeabi/libc.so
+#1  0x40079698 in __assert2 () from /home/rh/my_code/ampd/app/src/main/obj/local/armeabi/libc.so
+#2  0x5e27c644 in pc_enqueue_song_locked (pc=pc@entry=0x5a897400, song=song@entry=0x5f16e600)
+    at jni/mpd/src/player_control.c:368
+#3  0x5e27d38c in pc_enqueue_song (pc=0x5a897400, song=0x5f16e600)
+    at jni/mpd/src/player_control.c:380
+#4  0x5e27d998 in playlist_queue_song_order (order=<optimized out>, pc=<optimized out>, 
+    playlist=<optimized out>) at jni/mpd/src/playlist.c:95
+#5  playlist_update_queued_song (playlist=<optimized out>, pc=<optimized out>, 
+    prev=<optimized out>) at jni/mpd/src/playlist.c:181
+#6  0x5e25c2a8 in handle_seekid (client=0x5f1c8640, argc=<optimized out>, argv=<optimized out>)
+    at jni/mpd/src/command.c:1560
+#7  0x5e261104 in command_process (client=client@entry=0x5f1c8640, num=num@entry=0, 
+    line=0x5f1b2bb7 "", line@entry=0x5f1b2ba8 "seekid") at jni/mpd/src/command.c:3692
+#8  0x5e271458 in client_process_line (client=client@entry=0x5f1c8640, 
+    line=line@entry=0x5f1b2ba8 "seekid") at jni/mpd/src/client_process.c:146
+#9  0x5e271608 in client_input_received (bytesRead=<optimized out>, client=0x5f1c8640)
+    at jni/mpd/src/client_read.c:63
+#10 client_read (client=client@entry=0x5f1c8640) at jni/mpd/src/client_read.c:103
+#11 0x5e270418 in client_in_event (source=<optimized out>, condition=G_IO_IN, 
+    data=data@entry=0x5f1c8640) at jni/mpd/src/client_event.c:77
+#12 0x5e1a75ec in g_io_unix_dispatch (source=source@entry=0x5bec7bc0, 
+    callback=0x5e2703cc <client_in_event>, user_data=0x5f1c8640) at jni/glib/glib/giounix.c:162
+#13 0x5e199578 in g_main_dispatch (context=0x5cb27900) at jni/glib/glib/gmain.c:1814
+#14 IA__g_main_context_dispatch (context=context@entry=0x5cb27900) at jni/glib/glib/gmain.c:2367
+#15 0x5e199c60 in g_main_context_iterate (context=0x5cb27900, block=block@entry=1, 
+    dispatch=dispatch@entry=1, self=<optimized out>) at jni/glib/glib/gmain.c:2445
+#16 0x5e19a2d0 in IA__g_main_loop_run (loop=0x5a88fe70) at jni/glib/glib/gmain.c:2653
+#17 0x5e28f714 in libmpd_run (argc=argc@entry=2, argv=argv@entry=0x5e3f4c30)
+    at jni/mpd/src/libmpd.c:625
+#18 0x5e2d11fc in Java_be_deadba_ampd_LibMPD_run (env=0x5cb27860, thiz=<optimized out>, 
+    mpd_conf=0x1d300005) at jni/mpd_jni/mpd_jni.c:71
+#19 0x40891954 in ?? ()
+
+
+[Switching to Thread 7916]
+0x40120446 in strlen () from /home/rh/my_code/ampd/app/src/main/obj/local/armeabi/libc.so
+(gdb) bt
+#0  0x40120446 in strlen () from /home/rh/my_code/ampd/app/src/main/obj/local/armeabi/libc.so
+#1  0x79a19f80 in cJSON_strdup (str=str@entry=0x4c <error: Cannot access memory at address 0x4c>)
+    at jni/mpd/src/util/cJSON.c:54
+#2  0x79a1c78c in cJSON_CreateString (string=0x4c <error: Cannot access memory at address 0x4c>)
+    at jni/mpd/src/util/cJSON.c:697
+#3  0x79a17e14 in master_cmd_send () at jni/mpd/src/util/MPDHandlerUtil.c:202
+#4  0x4010700c in __thread_entry ()
+   from /home/rh/my_code/ampd/app/src/main/obj/local/armeabi/libc.so
+#5  0x00000000 in ?? ()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#0  0x4011f5bc in tgkill () from /home/rh/my_code/ampd/app/src/main/obj/local/armeabi/libc.so
+#1  0x40110c00 in pthread_kill ()
+   from /home/rh/my_code/ampd/app/src/main/obj/local/armeabi/libc.so
+#2  0x40110df8 in raise () from /home/rh/my_code/ampd/app/src/main/obj/local/armeabi/libc.so
+#3  0x4010fb0e in ?? () from /home/rh/my_code/ampd/app/src/main/obj/local/armeabi/libc.so
+#4  0x4011ee70 in abort () from /home/rh/my_code/ampd/app/src/main/obj/local/armeabi/libc.so
+#5  0x4011065e in ?? () from /home/rh/my_code/ampd/app/src/main/obj/local/armeabi/libc.so
+#6  0x4010fb6c in __assert2 () from /home/rh/my_code/ampd/app/src/main/obj/local/armeabi/libc.so
+#7  0x799d85a8 in player_command_locked (pc=0x79a1b7a0 <__func__.12468>, pc@entry=0x7a0f6420, 
+    cmd=cmd@entry=PLAYER_COMMAND_STOP) at jni/mpd/src/player_control.c:111
+#8  0x799d8afc in pc_play (pc=0x7a0f6420, song=0x7ae84590) at jni/mpd/src/player_control.c:150
+#9  0x799f7f74 in slave_play (ptr_slave_player_args=ptr_slave_player_args@entry=0x7a22df28)
+    at jni/mpd/src/util/SlaveRecvCMDUtil.c:33
+#10 0x799f8520 in slave_cmd_exec (pram=<optimized out>) at jni/mpd/src/util/SlaveRecvCMDUtil.c:108
+#11 0x4010700c in __thread_entry ()
+   from /home/rh/my_code/ampd/app/src/main/obj/local/armeabi/libc.so
+#12 0x00000000 in ?? ()
+
+
+
+
+
+shell@hwG750-T00:/ $ netstat|grep 6600                                         
+ tcp       0      6 0.0.0.0:6600           0.0.0.0:*              LISTEN
+ tcp       0      0 192.168.36.163:6600    192.168.36.142:46978   SYN_RECV
+ tcp       0      1 192.168.36.163:6600    192.168.36.142:60037   CLOSE_WAIT
+ tcp       0      1 192.168.36.163:6600    192.168.36.142:38145   CLOSE_WAIT
+ tcp       0     10 192.168.36.163:6600    192.168.36.142:41244   CLOSE_WAIT
+ tcp       0      1 192.168.36.163:6600    192.168.36.142:50577   CLOSE_WAIT
+ tcp       0     10 192.168.36.163:6600    192.168.36.142:39346   CLOSE_WAIT
+ tcp       0      1 192.168.36.163:6600    192.168.36.142:44497   CLOSE_WAIT
+ tcp       0     10 192.168.36.163:6600    192.168.36.142:42487   CLOSE_WAIT
+ tcp       0  33864 192.168.36.163:6600    192.168.36.210:46967   ESTABLISHED
+ tcp       0      1 192.168.36.163:6600    192.168.36.142:59586   CLOSE_WAIT
+ tcp       0      0 192.168.36.163:6600    192.168.36.142:52737   ESTABLISHED
+ tcp       0      1 192.168.36.163:6600    192.168.36.142:36231   CLOSE_WAIT
+ tcp       0     10 192.168.36.163:6600    192.168.36.142:49175   CLOSE_WAIT
+ tcp       0      1 192.168.36.163:6600    192.168.36.142:41666   CLOSE_WAIT
+ tcp       0      1 192.168.36.163:6600    192.168.36.142:45521   CLOSE_WAIT
+ tcp       0      0 192.168.36.163:6600    192.168.36.142:55714   ESTABLISHED
+ tcp       0     10 192.168.36.163:6600    192.168.36.142:41349   CLOSE_WAIT
+ tcp       0      1 192.168.36.163:6600    192.168.36.142:42595   CLOSE_WAIT
+
+
+(gdb) bt
+#0  0x4006cc98 in ?? () from /home/rh/my_code/ampd/app/src/main/obj/local/armeabi/libc.so
+#1  0x40079698 in __assert2 () from /home/rh/my_code/ampd/app/src/main/obj/local/armeabi/libc.so
+#2  0x5e275be8 in music_buffer_free (buffer=0x5bfcb148) at jni/mpd/src/buffer.c:81
+#3  0x5e279338 in player_task (arg=0x5a876080) at jni/mpd/src/player_thread.c:1880
+#4  0x5e1b7e34 in g_thread_create_proxy (data=0x5bfcb118) at jni/glib/glib/gthread.c:635
+#5  0x400564a8 in __thread_entry ()
+   from /home/rh/my_code/ampd/app/src/main/obj/local/armeabi/libc.so
+#6  0x00000000 in ?? ()
+
+
+Proto Recv-Q Send-Q Local Address          Foreign Address        State
+ tcp       0      0 0.0.0.0:6600           0.0.0.0:*              LISTEN
+ tcp       0      0 0.0.0.0:6601           0.0.0.0:*              LISTEN
+ tcp       0      0 0.0.0.0:6666           0.0.0.0:*              LISTEN
+ tcp       0      0 127.0.0.1:5037         0.0.0.0:*              LISTEN
+ tcp       0      0 0.0.0.0:5555           0.0.0.0:*              LISTEN
+ tcp       0     97 192.168.232.205:5555   192.168.232.169:46027  ESTABLISHED
+ udp       0      0 0.0.0.0:6604           0.0.0.0:*              CLOSE
+
+
+
+Error:Execution failed for task ':app:compileDebugNdk'.
+> Error: NDK integration is deprecated in the current plugin.  Consider trying the new experimental plugin.  For details, see http://tools.android.com/tech-docs/new-build-system/gradle-experimental.  Set "android.useDeprecatedNdk=true" in gradle.properties to continue using the current NDK integration.
+
+I/MEIZUMsg(13865): errormsg: curl failed: The requested URL returned error: 403 decoder_input_stream_open 115
+
+
+
+
+
+Error:Execution failed for task ':appClient:processDebugManifest'.
+> Manifest merger failed : uses-sdk:minSdkVersion 1 cannot be smaller than version 7 declared in library [com.android.support:appcompat-v7:23.1.1] /home/rh/my_code/test/EasyDlnaPlayer1/appClient/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/AndroidManifest.xml
+  	Suggestion: use tools:overrideLibrary="android.support.v7.appcompat" to force usage
+
+
+Error:(28, 1) error: RenderPlayer is not abstract and does not override abstract method getAudioSessionId() in MediaPlayerControl
+
+
+
+I/MEIZUMsg(15232): command_process 3508 current_command: cancelmaster
+I/MEIZUMsg(15232): pc->command == 0 : 0 player_command_locked 109
+I/MEIZUMsg(15232): unlock state begin do_play 1669
+I/MEIZUMsg(15232): dc->state != 3: 0 decoder_run_song 758
+I/MEIZUMsg(15232): unlock state begin do_play 1831
+I/MEIZUMsg(15232): unlock state begin player_task 1875
+I/MEIZUMsg(15232): unlock state end player_task 1880
+I/MEIZUMsg(15232): close_audio: player_task 1882
+I/MEIZUMsg(15232): NDEBUG to doplayer_task 1889
+I/MEIZUMsg(15232): NDEBUG to domusic_buffer_free 80
+I/MEIZUMsg(15232): NDEBUG to domusic_buffer_free 82
+I/MEIZUMsg(15232): NDEBUG to domusic_buffer_free 84
+
+
+
+
+
+
+
+
+I/MEIZUMsg( 8714): command_process 3519 current_command: seekid 1 11
+I/MEIZUMsg( 8714): wait_for_slave_response 311
+I/MEIZUMsg( 8714): master sndmsg: {
+I/MEIZUMsg( 8714): 	"slave_cmd":	3,
+I/MEIZUMsg( 8714): 	"arg1":	"11.000000",
+I/MEIZUMsg( 8714): 	"arg2":	"",
+I/MEIZUMsg( 8714): 	"arg3":	""
+I/MEIZUMsg( 8714): } master_cmd_send 246
+I/MEIZUMsg( 8714): socket_id 77 mz_tcp_send_cmd 414
+I/MEIZUMsg( 8714): buf: success mz_tcp_send_cmd 445 recv_msg success
+I/MEIZUMsg( 8714): send cmd success... master_cmd_send 261
+I/MEIZUMsg( 8714): master_cmd_send 221
+I/MEIZUMsg( 8714): !!!wait resp end wait_for_slave_response 388
+I/MEIZUMsg( 8714): pc->command == 0 : 0 player_command_locked 110
+I/MEIZUMsg( 8714): cmd wait signal player_command_wait_locked 99
+I/MEIZUMsg( 8714): unlock state begin player_process_command 619
+I/MEIZUMsg( 8714): dc->state != 1: 2 dc_seek 143
+I/MEIZUMsg( 8714): play signal1 player_command_locked 118
+I/MEIZUMsg( 8714): pc->command == 0 : 0 player_command_locked 110
+I/MEIZUMsg( 8714): cmd wait signal player_command_wait_locked 99
+I/MEIZUMsg( 8714): unlock state end player_process_command 623
+I/MEIZUMsg( 8714): do_play 1692
+I/MEIZUMsg( 8714): do_play 1696
+I/MEIZUMsg( 8714): do_play 1698
+I/MEIZUMsg( 8714): do_play 1700
+I/MEIZUMsg( 8714): play signal1 player_command_locked 118
+I/MEIZUMsg( 8714): do_play 1692
+I/MEIZUMsg( 8714): do_play 1696
+I/MEIZUMsg( 8714): do_play 1698
+I/MEIZUMsg( 8714): do_play 1700
+I/MEIZUMsg( 8714): do_play 1692
+I/MEIZUMsg( 8714): do_play 1696
+I/MEIZUMsg( 8714): do_play 1698
+I/MEIZUMsg( 8714): do_play 1700
+
+
+
+
+
+
+I/MEIZUMsg( 8714): command_process 3519 current_command: seekid 1 104
+I/MEIZUMsg( 8714): wait_for_slave_response 311
+I/MEIZUMsg( 8714): master sndmsg: {
+I/MEIZUMsg( 8714): 	"slave_cmd":	3,
+I/MEIZUMsg( 8714): 	"arg1":	"104.000000",
+I/MEIZUMsg( 8714): 	"arg2":	"",
+I/MEIZUMsg( 8714): 	"arg3":	""
+I/MEIZUMsg( 8714): } master_cmd_send 246
+I/MEIZUMsg( 8714): socket_id 77 mz_tcp_send_cmd 414
+
+
+
+
+I/MEIZUMsg(11104): !!!wait resp end wait_for_slave_response 388
+I/MEIZUMsg(11104): player_lock:mz_player_lock 474
+I/MEIZUMsg(11104): pc->command == 0 : 0 player_command_locked 110
+I/MEIZUMsg(11104): cmd wait signal player_command_wait_locked 99
+I/MEIZUMsg(11104): unlock state begin do_play 1669
+I/MEIZUMsg(11104): dc->state != 3: 0 decoder_run_song 758
+I/MEIZUMsg(11104): unlock state begin do_play 1835
+I/MEIZUMsg(11104): unlock state begin player_task 1879
+I/MEIZUMsg(11104): unlock state end player_task 1884
+I/MEIZUMsg(11104): close_audio: player_task 1886
+I/MEIZUMsg(11104): NDEBUG to doplayer_task 1893
+I/MEIZUMsg(11104): NDEBUG to domusic_buffer_free 80
+I/MEIZUMsg(11104): NDEBUG to domusic_buffer_free 82
+I/MEIZUMsg(11104): NDEBUG to domusic_buffer_free 84
+I/MEIZUMsg(11104): buffer->num_allocated == 0: 6 music_buffer_free 85
+
+
+I/MEIZUMsg(15801): sock accepted mz_tcp_recv_cmd 391
+I/MEIZUMsg(15801): recv msg: {
+I/MEIZUMsg(15801): 	"slave_cmd":	3,
+I/MEIZUMsg(15801): 	"arg1":	"191.000000",
+I/MEIZUMsg(15801): 	"arg2":	"",
+I/MEIZUMsg(15801): 	"arg3":	""
+I/MEIZUMsg(15801): }
+I/MEIZUMsg(15801):  connection_handler 334
+I/MEIZUMsg(15801): slave_recv_cmd_handler 200
+I/MEIZUMsg(15801): slave_cmd_exec 101
+I/MEIZUMsg(15801): save origin pc slave_cmd_exec 104
+I/MEIZUMsg(15801): pc_new success mz_init_pc 446
+I/MEIZUMsg(15801): slave_cmd: 3 slave_cmd_exec 113
+I/MEIZUMsg(15801): slave_seek 65
+I/MEIZUMsg(15801): seek_time: 191.000000 slave_seek 68
+I/MEIZUMsg(15801): slave_seek 70
+I/MEIZUMsg(15844): MPD started: 159
+I/MEIZUMsg(15844): MPD started: 163
+I/MEIZUMsg(15844): MPD started: 178
+I/MEIZUMsg(15844): MPD started: 184
+I/MEIZUMsg(15844): slave_thread_id: 0x5580857c slave_exec_cmd_thread_create 168
+I/MEIZUMsg(15844): creating recv_cmd_from_master_thread mz_recv_cmd_from_master_thread_func 23
+
+
+
+I/MEIZUMsg( 4460): command_process 3519 current_command: cancelmaster
+I/MEIZUMsg( 4460): pc->command == 0 : 0 player_command_locked 110
+I/MEIZUMsg( 4460): cmd wait signal player_command_wait_locked 99
+I/MEIZUMsg( 4460): unlock state begin do_play 1669
+I/MEIZUMsg( 4460): dc->state != 3: 0 decoder_run_song 758
+I/MEIZUMsg( 4460): unlock state begin do_play 1835
+I/MEIZUMsg( 4460): unlock state begin player_task 1879
+I/MEIZUMsg( 4460): unlock state end player_task 1884
+I/MEIZUMsg( 4460): close_audio: player_task 1886
+I/MEIZUMsg( 4460): NDEBUG to doplayer_task 1893
+I/MEIZUMsg( 4460): NDEBUG to domusic_buffer_free 80
+I/MEIZUMsg( 4460): NDEBUG to domusic_buffer_free 82
+I/MEIZUMsg( 4460): NDEBUG to domusic_buffer_free 84
+I/MEIZUMsg( 4460): buffer->num_allocated == 0: 231 music_buffer_free 85
+I/MEIZUMsg( 4505): MPD started: 159
+I/MEIZUMsg( 4505): MPD started: 163
+I/MEIZUMsg( 4505): MPD started: 178
+I/MEIZUMsg( 4505): MPD started: 184
+I/MEIZUMsg( 4505): creating recv_cmd_from_master_thread mz_recv_cmd_from_master_thread_func 234
+I/MEIZUMsg( 4505): slave_thread_id: 0x5582a57c slave_exec_cmd_thread_create 168
+I/MEIZUMsg( 4505): MPD started: 191
+I/MEIZUMsg( 4505): master_cmd_send 221
+E/MEIZUMsg( 4505): "Meizu-R13-47AC"
+I/MEIZUMsg( 4505): MPD started: 210
+I/MEIZUMsg( 4505): COMMAND init first command_init-----------
+
+
+
+
+: command_process 3833 current_command: cancelslave
+I/MEIZUMsg(31205): msc_stop 682
+I/MEIZUMsg(31205): msc_stop 687
+I/MEIZUMsg(31205): msc_recv_thread_work 597
+I/MEIZUMsg(31205): msc_net_monitor_work 572
+I/MEIZUMsg(31205): mz_recv_cmd_from_master_free 301
+I/MEIZUMsg(31205): mz_recv_cmd_from_master_free 306
+I/MEIZUMsg(31205): mz_recv_cmd_from_master_free 318
+I/MEIZUMsg(31205): pc->command == 0 : 0 player_command_locked 110
+I/MEIZUMsg(31205): cmd wait signal player_command_wait_locked 99
+I/MEIZUMsg(31205): unlock state begin player_task 1879
+I/MEIZUMsg(31205): unlock state end player_task 1884
+I/MEIZUMsg(31205): close_audio: player_task 1886
+I/MEIZUMsg(31205): NDEBUG to doplayer_task 1893
+
+
+I/MEIZUMsg(31205): command_process 3833 current_command: cancelmaster
+I/MEIZUMsg(31205): msc_stop 682
+I/MEIZUMsg(31205): msc_stop 687
+I/MEIZUMsg(31205): msc_recv_thread_work 597
+I/MEIZUMsg(31205): master_cmd_send_thread_free 313
+I/MEIZUMsg(31205): master_cmd_send_thread_free 315
+I/MEIZUMsg(31205): master_cmd_send_thread_free 320
+I/MEIZUMsg(31205): master_cmd_send_thread_free 331
+I/MEIZUMsg(31205): command_process 3833 current_command: status
+I/MEIZUMsg(31205): pc->command == 0 : 0 player_command_locked 110
+I/MEIZUMsg(31205): cmd wait signal player_command_wait_locked 99
+I/MEIZUMsg(31205): play signal1 player_command_locked 123
+I/MEIZUMsg(31205): command_process 3833 current_command: status
+I/MEIZUMsg(31205): pc->command == 0 : 0 player_command_locked 110
+I/MEIZUMsg(31205): cmd wait signal player_command_wait_locked 99
+I/MEIZUMsg(31205): play signal1 player_command_locked 123
+I/MEIZUMsg(31205): command_process 3833 current_command: status
+I/MEIZUMsg(31205): pc->command == 0 : 0 player_command_locked 110
+I/MEIZUMsg(31205): cmd wait signal player_command_wait_locked 99
+
+
+
+
+
+
+
+
+
+
+
+
+
+
