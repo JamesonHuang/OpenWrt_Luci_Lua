@@ -1,0 +1,11 @@
+prefix=/home/rh/my_code/OpenWrt_Luci_Lua/1_6.h12_dev/render/libuuid-1.0.3/tmp
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: uuid
+Description: Universally unique id library
+Version: 1.0.3
+Requires:
+Cflags: -I${includedir}/uuid
+Libs: -L${libdir} -luuid

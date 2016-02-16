@@ -1,0 +1,1487 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ACLOCAL	Makefile	/^ACLOCAL = ${SHELL} \/home\/rh\/my_code\/OpenWrt_Luci_Lua\/1_6.h12_dev\/libmpdclient\/build\/missing aclocal-1.14$/;"	m
+ACLOCAL_AMFLAGS	Makefile	/^ACLOCAL_AMFLAGS = -I m4$/;"	m
+ACLOCAL_M4	Makefile	/^ACLOCAL_M4 = $(top_srcdir)\/aclocal.m4$/;"	m
+AMTAR	Makefile	/^AMTAR = $${TAR-tar}$/;"	m
+AM_CFLAGS	Makefile	/^AM_CFLAGS = $/;"	m
+AM_CPPFLAGS	Makefile	/^AM_CPPFLAGS =  -I$(srcdir)\/include -Iinclude$/;"	m
+AM_DEFAULT_VERBOSITY	Makefile	/^AM_DEFAULT_VERBOSITY = 1$/;"	m
+AM_RECURSIVE_TARGETS	Makefile	/^AM_RECURSIVE_TARGETS = cscope check recheck$/;"	m
+AM_V_CC	Makefile	/^AM_V_CC = $(am__v_CC_$(V))$/;"	m
+AM_V_CCLD	Makefile	/^AM_V_CCLD = $(am__v_CCLD_$(V))$/;"	m
+AM_V_GEN	Makefile	/^AM_V_GEN = $(am__v_GEN_$(V))$/;"	m
+AM_V_P	Makefile	/^AM_V_P = $(am__v_P_$(V))$/;"	m
+AM_V_at	Makefile	/^AM_V_at = $(am__v_at_$(V))$/;"	m
+AM_V_lt	Makefile	/^AM_V_lt = $(am__v_lt_$(V))$/;"	m
+AR	Makefile	/^AR = ar$/;"	m
+AS	Makefile	/^AS = as$/;"	m
+AUTOCONF	Makefile	/^AUTOCONF = ${SHELL} \/home\/rh\/my_code\/OpenWrt_Luci_Lua\/1_6.h12_dev\/libmpdclient\/build\/missing autoconf$/;"	m
+AUTOHEADER	Makefile	/^AUTOHEADER = ${SHELL} \/home\/rh\/my_code\/OpenWrt_Luci_Lua\/1_6.h12_dev\/libmpdclient\/build\/missing autoheader$/;"	m
+AUTOMAKE	Makefile	/^AUTOMAKE = ${SHELL} \/home\/rh\/my_code\/OpenWrt_Luci_Lua\/1_6.h12_dev\/libmpdclient\/build\/missing automake-1.14$/;"	m
+AUTOMAKE_OPTIONS	Makefile	/^AUTOMAKE_OPTIONS = foreign 1.11 dist-xz subdir-objects$/;"	m
+AWK	Makefile	/^AWK = gawk$/;"	m
+BG_BLACK	test/main.c	49;"	d	file:
+BRIGHT	test/main.c	45;"	d	file:
+CC	Makefile	/^CC = gcc -std=gnu99$/;"	m
+CCDEPMODE	Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
+CCLD	Makefile	/^CCLD = $(CC)$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -g -O2 -Wall -W -Wextra -Wno-deprecated-declarations -Wmissing-prototypes -Wshadow -Wpointer-arith -Wstrict-prototypes -Wcast-qual -Wwrite-strings$/;"	m
+CHECK_CONNECTION	test/main.c	75;"	d	file:
+COLOR_CODE	test/main.c	50;"	d	file:
+COMPILE	Makefile	/^COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \\$/;"	m
+CONFIG_CLEAN_FILES	Makefile	/^CONFIG_CLEAN_FILES = include\/mpd\/version.h libmpdclient.pc \\$/;"	m
+CONFIG_CLEAN_VPATH_FILES	Makefile	/^CONFIG_CLEAN_VPATH_FILES =$/;"	m
+CONFIG_HEADER	Makefile	/^CONFIG_HEADER = config.h$/;"	m
+CPP	Makefile	/^CPP = gcc -std=gnu99 -E$/;"	m
+CPPFLAGS	Makefile	/^CPPFLAGS = $/;"	m
+CSCOPE	Makefile	/^CSCOPE = cscope$/;"	m
+CTAGS	Makefile	/^CTAGS = ctags$/;"	m
+CYGPATH_W	Makefile	/^CYGPATH_W = echo$/;"	m
+CreateProcess	build/ltmain.sh	/^   CreateProcess().  We must quote the arguments since Win32 CreateProcess()$/;"	f
+CreateProcess	libtool	/^   CreateProcess().  We must quote the arguments since Win32 CreateProcess()$/;"	f
+DATA	Makefile	/^DATA = $(doc_DATA) $(pkgconfig_DATA) $(vapi_DATA)$/;"	m
+DEFAULT_HOST	config.h	5;"	d
+DEFAULT_INCLUDES	Makefile	/^DEFAULT_INCLUDES = -I.$/;"	m
+DEFAULT_PORT	config.h	8;"	d
+DEFAULT_SOCKET	config.h	11;"	d
+DEFS	Makefile	/^DEFS = -DHAVE_CONFIG_H$/;"	m
+DEPDIR	Makefile	/^DEPDIR = .deps$/;"	m
+DISTFILES	Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m
+DIST_ARCHIVES	Makefile	/^DIST_ARCHIVES = $(distdir).tar.gz $(distdir).tar.xz$/;"	m
+DIST_COMMON	Makefile	/^DIST_COMMON = $(srcdir)\/Makefile.in $(srcdir)\/Makefile.am \\$/;"	m
+DIST_SOURCES	Makefile	/^DIST_SOURCES = $(src_libmpdclient_la_SOURCES) $(src_example_SOURCES) \\$/;"	m
+DIST_TARGETS	Makefile	/^DIST_TARGETS = dist-xz dist-gzip$/;"	m
+DLLTOOL	Makefile	/^DLLTOOL = dlltool$/;"	m
+DOXYGEN	Makefile	/^DOXYGEN = $/;"	m
+DSYMUTIL	Makefile	/^DSYMUTIL = $/;"	m
+DUMPBIN	Makefile	/^DUMPBIN = $/;"	m
+ECHO_C	Makefile	/^ECHO_C = $/;"	m
+ECHO_N	Makefile	/^ECHO_N = -n$/;"	m
+ECHO_T	Makefile	/^ECHO_T = $/;"	m
+EGREP	Makefile	/^EGREP = \/bin\/grep -E$/;"	m
+ENABLE_TCP	config.h	14;"	d
+ETAGS	Makefile	/^ETAGS = etags$/;"	m
+EXEEXT	Makefile	/^EXEEXT = $/;"	m
+EXTRA_DIST	Makefile	/^EXTRA_DIST = \\$/;"	m
+FD_UTIL_H	src/fd_util.h	37;"	d
+FGREP	Makefile	/^FGREP = \/bin\/grep -F$/;"	m
+GREEN	test/main.c	47;"	d	file:
+GREP	Makefile	/^GREP = \/bin\/grep$/;"	m
+GZIP_ENV	Makefile	/^GZIP_ENV = --best$/;"	m
+HAVE_DLFCN_H	config.h	17;"	d
+HAVE_GETADDRINFO	config.h	20;"	d
+HAVE_INTTYPES_H	config.h	23;"	d
+HAVE_MEMORY_H	config.h	26;"	d
+HAVE_STDINT_H	config.h	29;"	d
+HAVE_STDLIB_H	config.h	32;"	d
+HAVE_STRINGS_H	config.h	35;"	d
+HAVE_STRING_H	config.h	38;"	d
+HAVE_SYS_STAT_H	config.h	41;"	d
+HAVE_SYS_TYPES_H	config.h	44;"	d
+HAVE_UNISTD_H	config.h	47;"	d
+HEADERS	Makefile	/^HEADERS = $(mpdinclude_HEADERS)$/;"	m
+INSTALL	Makefile	/^INSTALL = \/usr\/bin\/install -c$/;"	m
+INSTALL_DATA	Makefile	/^INSTALL_DATA = ${INSTALL} -m 644$/;"	m
+INSTALL_HEADER	Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m
+INSTALL_PROGRAM	Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
+INSTALL_SCRIPT	Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
+INSTALL_STRIP_PROGRAM	Makefile	/^INSTALL_STRIP_PROGRAM = $(install_sh) -c -s$/;"	m
+INTLEN	src/send.c	/^	INTLEN = (sizeof(int) * CHAR_BIT + 1) \/ 3 + 1,$/;"	e	enum:__anon6	file:
+LD	Makefile	/^LD = \/home\/rh\/my_code\/OpenWrt_Luci_Lua\/1_6.h12_dev\/upmpdcli_demo\/my_android_toolchain\/bin\/ld -m elf_x86_64$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS = $/;"	m
+LIBMPDCLIENT_CHECK_VERSION	include/mpd/version.h	51;"	d
+LIBMPDCLIENT_CHECK_VERSION	tmp/include/mpd/version.h	51;"	d
+LIBMPDCLIENT_LIBTOOL_VERSION	Makefile	/^LIBMPDCLIENT_LIBTOOL_VERSION = 2:11:0$/;"	m
+LIBMPDCLIENT_MAJOR_VERSION	include/mpd/version.h	38;"	d
+LIBMPDCLIENT_MAJOR_VERSION	tmp/include/mpd/version.h	38;"	d
+LIBMPDCLIENT_MINOR_VERSION	include/mpd/version.h	39;"	d
+LIBMPDCLIENT_MINOR_VERSION	tmp/include/mpd/version.h	39;"	d
+LIBMPDCLIENT_PAIR_H	include/mpd/pair.h	36;"	d
+LIBMPDCLIENT_PAIR_H	tmp/include/mpd/pair.h	36;"	d
+LIBMPDCLIENT_PARSER_H	include/mpd/parser.h	30;"	d
+LIBMPDCLIENT_PARSER_H	tmp/include/mpd/parser.h	30;"	d
+LIBMPDCLIENT_PATCH_VERSION	include/mpd/version.h	40;"	d
+LIBMPDCLIENT_PATCH_VERSION	tmp/include/mpd/version.h	40;"	d
+LIBMPDCLIENT_PLAYLIST_H	include/mpd/playlist.h	42;"	d
+LIBMPDCLIENT_PLAYLIST_H	tmp/include/mpd/playlist.h	42;"	d
+LIBMPDCLIENT_RESOLVER_H	src/resolver.h	30;"	d
+LIBMPDCLIENT_SEND_H	include/mpd/send.h	36;"	d
+LIBMPDCLIENT_SEND_H	tmp/include/mpd/send.h	36;"	d
+LIBMPDCLIENT_TAG_H	include/mpd/tag.h	34;"	d
+LIBMPDCLIENT_TAG_H	tmp/include/mpd/tag.h	34;"	d
+LIBOBJS	Makefile	/^LIBOBJS = $/;"	m
+LIBS	Makefile	/^LIBS = $/;"	m
+LIBTOOL	Makefile	/^LIBTOOL = $(SHELL) $(top_builddir)\/libtool$/;"	m
+LINK	Makefile	/^LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \\$/;"	m
+LIPO	Makefile	/^LIPO = $/;"	m
+LN_S	Makefile	/^LN_S = ln -s$/;"	m
+LOG_COMPILE	Makefile	/^LOG_COMPILE = $(LOG_COMPILER) $(AM_LOG_FLAGS) $(LOG_FLAGS)$/;"	m
+LOG_DRIVER	Makefile	/^LOG_DRIVER = $(SHELL) $(top_srcdir)\/build\/test-driver$/;"	m
+LOG_ERROR	test/main.c	59;"	d	file:
+LOG_INFO	test/main.c	52;"	d	file:
+LOG_WARNING	test/main.c	53;"	d	file:
+LONGLONGLEN	src/send.c	/^	LONGLONGLEN = (sizeof(long long) * CHAR_BIT + 1) \/ 3 + 1,$/;"	e	enum:__anon6	file:
+LTCOMPILE	Makefile	/^LTCOMPILE = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \\$/;"	m
+LTLIBOBJS	Makefile	/^LTLIBOBJS = $/;"	m
+LTLIBRARIES	Makefile	/^LTLIBRARIES = $(lib_LTLIBRARIES)$/;"	m
+LT_OBJDIR	config.h	51;"	d
+MAJOR_VERSION	Makefile	/^MAJOR_VERSION = 2$/;"	m
+MAKEINFO	Makefile	/^MAKEINFO = ${SHELL} \/home\/rh\/my_code\/OpenWrt_Luci_Lua\/1_6.h12_dev\/libmpdclient\/build\/missing makeinfo$/;"	m
+MANIFEST_TOOL	Makefile	/^MANIFEST_TOOL = :$/;"	m
+MINOR_VERSION	Makefile	/^MINOR_VERSION = 11$/;"	m
+MKDIR_P	Makefile	/^MKDIR_P = \/bin\/mkdir -p$/;"	m
+MPD_ASYNC_EVENT_ERROR	include/mpd/async.h	/^	MPD_ASYNC_EVENT_ERROR = 8,$/;"	e	enum:mpd_async_event
+MPD_ASYNC_EVENT_ERROR	tmp/include/mpd/async.h	/^	MPD_ASYNC_EVENT_ERROR = 8,$/;"	e	enum:mpd_async_event
+MPD_ASYNC_EVENT_HUP	include/mpd/async.h	/^	MPD_ASYNC_EVENT_HUP = 4,$/;"	e	enum:mpd_async_event
+MPD_ASYNC_EVENT_HUP	tmp/include/mpd/async.h	/^	MPD_ASYNC_EVENT_HUP = 4,$/;"	e	enum:mpd_async_event
+MPD_ASYNC_EVENT_READ	include/mpd/async.h	/^	MPD_ASYNC_EVENT_READ = 1,$/;"	e	enum:mpd_async_event
+MPD_ASYNC_EVENT_READ	tmp/include/mpd/async.h	/^	MPD_ASYNC_EVENT_READ = 1,$/;"	e	enum:mpd_async_event
+MPD_ASYNC_EVENT_WRITE	include/mpd/async.h	/^	MPD_ASYNC_EVENT_WRITE = 2,$/;"	e	enum:mpd_async_event
+MPD_ASYNC_EVENT_WRITE	tmp/include/mpd/async.h	/^	MPD_ASYNC_EVENT_WRITE = 2,$/;"	e	enum:mpd_async_event
+MPD_ASYNC_H	include/mpd/async.h	42;"	d
+MPD_ASYNC_H	tmp/include/mpd/async.h	42;"	d
+MPD_AUDIO_FORMAT_H	include/mpd/audio_format.h	36;"	d
+MPD_AUDIO_FORMAT_H	tmp/include/mpd/audio_format.h	36;"	d
+MPD_BUFFER_H	src/buffer.h	30;"	d
+MPD_CAPABILITIES_H	include/mpd/capabilities.h	36;"	d
+MPD_CAPABILITIES_H	tmp/include/mpd/capabilities.h	36;"	d
+MPD_CLIENT_H	include/mpd/client.h	46;"	d
+MPD_CLIENT_H	tmp/include/mpd/client.h	46;"	d
+MPD_COMPILER_H	include/mpd/compiler.h	38;"	d
+MPD_COMPILER_H	tmp/include/mpd/compiler.h	38;"	d
+MPD_CONNECTION_H	include/mpd/connection.h	40;"	d
+MPD_CONNECTION_H	tmp/include/mpd/connection.h	40;"	d
+MPD_DATABASE_H	include/mpd/database.h	39;"	d
+MPD_DATABASE_H	tmp/include/mpd/database.h	39;"	d
+MPD_DB_H	include/mpd/search.h	42;"	d
+MPD_DB_H	tmp/include/mpd/search.h	42;"	d
+MPD_DIRECTORY_H	include/mpd/directory.h	40;"	d
+MPD_DIRECTORY_H	tmp/include/mpd/directory.h	40;"	d
+MPD_ENTITY_H	include/mpd/entity.h	40;"	d
+MPD_ENTITY_H	tmp/include/mpd/entity.h	40;"	d
+MPD_ENTITY_TYPE_DIRECTORY	include/mpd/entity.h	/^	MPD_ENTITY_TYPE_DIRECTORY,$/;"	e	enum:mpd_entity_type
+MPD_ENTITY_TYPE_DIRECTORY	tmp/include/mpd/entity.h	/^	MPD_ENTITY_TYPE_DIRECTORY,$/;"	e	enum:mpd_entity_type
+MPD_ENTITY_TYPE_PLAYLIST	include/mpd/entity.h	/^	MPD_ENTITY_TYPE_PLAYLIST,$/;"	e	enum:mpd_entity_type
+MPD_ENTITY_TYPE_PLAYLIST	tmp/include/mpd/entity.h	/^	MPD_ENTITY_TYPE_PLAYLIST,$/;"	e	enum:mpd_entity_type
+MPD_ENTITY_TYPE_SONG	include/mpd/entity.h	/^	MPD_ENTITY_TYPE_SONG,$/;"	e	enum:mpd_entity_type
+MPD_ENTITY_TYPE_SONG	tmp/include/mpd/entity.h	/^	MPD_ENTITY_TYPE_SONG,$/;"	e	enum:mpd_entity_type
+MPD_ENTITY_TYPE_UNKNOWN	include/mpd/entity.h	/^	MPD_ENTITY_TYPE_UNKNOWN,$/;"	e	enum:mpd_entity_type
+MPD_ENTITY_TYPE_UNKNOWN	tmp/include/mpd/entity.h	/^	MPD_ENTITY_TYPE_UNKNOWN,$/;"	e	enum:mpd_entity_type
+MPD_ERROR_ARGUMENT	include/mpd/error.h	/^	MPD_ERROR_ARGUMENT,$/;"	e	enum:mpd_error
+MPD_ERROR_ARGUMENT	tmp/include/mpd/error.h	/^	MPD_ERROR_ARGUMENT,$/;"	e	enum:mpd_error
+MPD_ERROR_CLOSED	include/mpd/error.h	/^	MPD_ERROR_CLOSED,$/;"	e	enum:mpd_error
+MPD_ERROR_CLOSED	tmp/include/mpd/error.h	/^	MPD_ERROR_CLOSED,$/;"	e	enum:mpd_error
+MPD_ERROR_H	include/mpd/error.h	37;"	d
+MPD_ERROR_H	tmp/include/mpd/error.h	37;"	d
+MPD_ERROR_MALFORMED	include/mpd/error.h	/^	MPD_ERROR_MALFORMED,$/;"	e	enum:mpd_error
+MPD_ERROR_MALFORMED	tmp/include/mpd/error.h	/^	MPD_ERROR_MALFORMED,$/;"	e	enum:mpd_error
+MPD_ERROR_OOM	include/mpd/error.h	/^	MPD_ERROR_OOM,$/;"	e	enum:mpd_error
+MPD_ERROR_OOM	tmp/include/mpd/error.h	/^	MPD_ERROR_OOM,$/;"	e	enum:mpd_error
+MPD_ERROR_RESOLVER	include/mpd/error.h	/^	MPD_ERROR_RESOLVER,$/;"	e	enum:mpd_error
+MPD_ERROR_RESOLVER	tmp/include/mpd/error.h	/^	MPD_ERROR_RESOLVER,$/;"	e	enum:mpd_error
+MPD_ERROR_SERVER	include/mpd/error.h	/^	MPD_ERROR_SERVER,$/;"	e	enum:mpd_error
+MPD_ERROR_SERVER	tmp/include/mpd/error.h	/^	MPD_ERROR_SERVER,$/;"	e	enum:mpd_error
+MPD_ERROR_STATE	include/mpd/error.h	/^	MPD_ERROR_STATE,$/;"	e	enum:mpd_error
+MPD_ERROR_STATE	tmp/include/mpd/error.h	/^	MPD_ERROR_STATE,$/;"	e	enum:mpd_error
+MPD_ERROR_SUCCESS	include/mpd/error.h	/^	MPD_ERROR_SUCCESS = 0,$/;"	e	enum:mpd_error
+MPD_ERROR_SUCCESS	tmp/include/mpd/error.h	/^	MPD_ERROR_SUCCESS = 0,$/;"	e	enum:mpd_error
+MPD_ERROR_SYSTEM	include/mpd/error.h	/^	MPD_ERROR_SYSTEM,$/;"	e	enum:mpd_error
+MPD_ERROR_SYSTEM	tmp/include/mpd/error.h	/^	MPD_ERROR_SYSTEM,$/;"	e	enum:mpd_error
+MPD_ERROR_TIMEOUT	include/mpd/error.h	/^	MPD_ERROR_TIMEOUT,$/;"	e	enum:mpd_error
+MPD_ERROR_TIMEOUT	tmp/include/mpd/error.h	/^	MPD_ERROR_TIMEOUT,$/;"	e	enum:mpd_error
+MPD_IASYNC_H	src/iasync.h	30;"	d
+MPD_IDLE_DATABASE	include/mpd/idle.h	/^	MPD_IDLE_DATABASE = 0x1,$/;"	e	enum:mpd_idle
+MPD_IDLE_DATABASE	tmp/include/mpd/idle.h	/^	MPD_IDLE_DATABASE = 0x1,$/;"	e	enum:mpd_idle
+MPD_IDLE_H	include/mpd/idle.h	40;"	d
+MPD_IDLE_H	tmp/include/mpd/idle.h	40;"	d
+MPD_IDLE_MESSAGE	include/mpd/idle.h	/^	MPD_IDLE_MESSAGE = 0x400,$/;"	e	enum:mpd_idle
+MPD_IDLE_MESSAGE	tmp/include/mpd/idle.h	/^	MPD_IDLE_MESSAGE = 0x400,$/;"	e	enum:mpd_idle
+MPD_IDLE_MIXER	include/mpd/idle.h	/^	MPD_IDLE_MIXER = 0x10,$/;"	e	enum:mpd_idle
+MPD_IDLE_MIXER	tmp/include/mpd/idle.h	/^	MPD_IDLE_MIXER = 0x10,$/;"	e	enum:mpd_idle
+MPD_IDLE_OPTIONS	include/mpd/idle.h	/^	MPD_IDLE_OPTIONS = 0x40,$/;"	e	enum:mpd_idle
+MPD_IDLE_OPTIONS	tmp/include/mpd/idle.h	/^	MPD_IDLE_OPTIONS = 0x40,$/;"	e	enum:mpd_idle
+MPD_IDLE_OUTPUT	include/mpd/idle.h	/^	MPD_IDLE_OUTPUT = 0x20,$/;"	e	enum:mpd_idle
+MPD_IDLE_OUTPUT	tmp/include/mpd/idle.h	/^	MPD_IDLE_OUTPUT = 0x20,$/;"	e	enum:mpd_idle
+MPD_IDLE_PLAYER	include/mpd/idle.h	/^	MPD_IDLE_PLAYER = 0x8,$/;"	e	enum:mpd_idle
+MPD_IDLE_PLAYER	tmp/include/mpd/idle.h	/^	MPD_IDLE_PLAYER = 0x8,$/;"	e	enum:mpd_idle
+MPD_IDLE_PLAYLIST	include/mpd/idle.h	/^	MPD_IDLE_PLAYLIST = MPD_IDLE_QUEUE,$/;"	e	enum:mpd_idle
+MPD_IDLE_PLAYLIST	tmp/include/mpd/idle.h	/^	MPD_IDLE_PLAYLIST = MPD_IDLE_QUEUE,$/;"	e	enum:mpd_idle
+MPD_IDLE_QUEUE	include/mpd/idle.h	/^	MPD_IDLE_QUEUE = 0x4,$/;"	e	enum:mpd_idle
+MPD_IDLE_QUEUE	tmp/include/mpd/idle.h	/^	MPD_IDLE_QUEUE = 0x4,$/;"	e	enum:mpd_idle
+MPD_IDLE_STICKER	include/mpd/idle.h	/^	MPD_IDLE_STICKER = 0x100,$/;"	e	enum:mpd_idle
+MPD_IDLE_STICKER	tmp/include/mpd/idle.h	/^	MPD_IDLE_STICKER = 0x100,$/;"	e	enum:mpd_idle
+MPD_IDLE_STORED_PLAYLIST	include/mpd/idle.h	/^	MPD_IDLE_STORED_PLAYLIST = 0x2,$/;"	e	enum:mpd_idle
+MPD_IDLE_STORED_PLAYLIST	tmp/include/mpd/idle.h	/^	MPD_IDLE_STORED_PLAYLIST = 0x2,$/;"	e	enum:mpd_idle
+MPD_IDLE_SUBSCRIPTION	include/mpd/idle.h	/^	MPD_IDLE_SUBSCRIPTION = 0x200,$/;"	e	enum:mpd_idle
+MPD_IDLE_SUBSCRIPTION	tmp/include/mpd/idle.h	/^	MPD_IDLE_SUBSCRIPTION = 0x200,$/;"	e	enum:mpd_idle
+MPD_IDLE_UPDATE	include/mpd/idle.h	/^	MPD_IDLE_UPDATE = 0x80,$/;"	e	enum:mpd_idle
+MPD_IDLE_UPDATE	tmp/include/mpd/idle.h	/^	MPD_IDLE_UPDATE = 0x80,$/;"	e	enum:mpd_idle
+MPD_IERROR_H	src/ierror.h	30;"	d
+MPD_INTERNAL_H	src/internal.h	30;"	d
+MPD_ISEND_H	src/isend.h	30;"	d
+MPD_ISO8601_H	src/iso8601.h	30;"	d
+MPD_LIST_H	include/mpd/list.h	42;"	d
+MPD_LIST_H	tmp/include/mpd/list.h	42;"	d
+MPD_MESSAGE_H	include/mpd/message.h	36;"	d
+MPD_MESSAGE_H	tmp/include/mpd/message.h	36;"	d
+MPD_MIXER_H	include/mpd/mixer.h	38;"	d
+MPD_MIXER_H	tmp/include/mpd/mixer.h	38;"	d
+MPD_OPERATOR_DEFAULT	include/mpd/search.h	/^	MPD_OPERATOR_DEFAULT,$/;"	e	enum:mpd_operator
+MPD_OPERATOR_DEFAULT	tmp/include/mpd/search.h	/^	MPD_OPERATOR_DEFAULT,$/;"	e	enum:mpd_operator
+MPD_OUTPUT_H	include/mpd/output.h	40;"	d
+MPD_OUTPUT_H	tmp/include/mpd/output.h	40;"	d
+MPD_PARSER_ERROR	include/mpd/parser.h	/^	MPD_PARSER_ERROR,$/;"	e	enum:mpd_parser_result
+MPD_PARSER_ERROR	tmp/include/mpd/parser.h	/^	MPD_PARSER_ERROR,$/;"	e	enum:mpd_parser_result
+MPD_PARSER_MALFORMED	include/mpd/parser.h	/^	MPD_PARSER_MALFORMED,$/;"	e	enum:mpd_parser_result
+MPD_PARSER_MALFORMED	tmp/include/mpd/parser.h	/^	MPD_PARSER_MALFORMED,$/;"	e	enum:mpd_parser_result
+MPD_PARSER_PAIR	include/mpd/parser.h	/^	MPD_PARSER_PAIR,$/;"	e	enum:mpd_parser_result
+MPD_PARSER_PAIR	tmp/include/mpd/parser.h	/^	MPD_PARSER_PAIR,$/;"	e	enum:mpd_parser_result
+MPD_PARSER_SUCCESS	include/mpd/parser.h	/^	MPD_PARSER_SUCCESS,$/;"	e	enum:mpd_parser_result
+MPD_PARSER_SUCCESS	tmp/include/mpd/parser.h	/^	MPD_PARSER_SUCCESS,$/;"	e	enum:mpd_parser_result
+MPD_PASSWORD_H	include/mpd/password.h	38;"	d
+MPD_PASSWORD_H	tmp/include/mpd/password.h	38;"	d
+MPD_PLAYER_H	include/mpd/player.h	38;"	d
+MPD_PLAYER_H	tmp/include/mpd/player.h	38;"	d
+MPD_PROTOCOL_H	include/mpd/protocol.h	37;"	d
+MPD_PROTOCOL_H	tmp/include/mpd/protocol.h	37;"	d
+MPD_QUEUE_H	include/mpd/queue.h	38;"	d
+MPD_QUEUE_H	tmp/include/mpd/queue.h	38;"	d
+MPD_QUOTE_H	src/quote.h	30;"	d
+MPD_RECV_H	include/mpd/recv.h	38;"	d
+MPD_RECV_H	tmp/include/mpd/recv.h	38;"	d
+MPD_RESPONSE_H	include/mpd/response.h	40;"	d
+MPD_RESPONSE_H	tmp/include/mpd/response.h	40;"	d
+MPD_RUN_H	src/run.h	30;"	d
+MPD_SAMPLE_FORMAT_DSD	include/mpd/audio_format.h	/^	MPD_SAMPLE_FORMAT_DSD = 0xe1,$/;"	e	enum:__anon10
+MPD_SAMPLE_FORMAT_DSD	tmp/include/mpd/audio_format.h	/^	MPD_SAMPLE_FORMAT_DSD = 0xe1,$/;"	e	enum:__anon9
+MPD_SAMPLE_FORMAT_FLOAT	include/mpd/audio_format.h	/^	MPD_SAMPLE_FORMAT_FLOAT = 0xe0,$/;"	e	enum:__anon10
+MPD_SAMPLE_FORMAT_FLOAT	tmp/include/mpd/audio_format.h	/^	MPD_SAMPLE_FORMAT_FLOAT = 0xe0,$/;"	e	enum:__anon9
+MPD_SERVER_ERROR_ARG	include/mpd/protocol.h	/^	MPD_SERVER_ERROR_ARG = 2,$/;"	e	enum:mpd_server_error
+MPD_SERVER_ERROR_ARG	tmp/include/mpd/protocol.h	/^	MPD_SERVER_ERROR_ARG = 2,$/;"	e	enum:mpd_server_error
+MPD_SERVER_ERROR_EXIST	include/mpd/protocol.h	/^	MPD_SERVER_ERROR_EXIST = 56,$/;"	e	enum:mpd_server_error
+MPD_SERVER_ERROR_EXIST	tmp/include/mpd/protocol.h	/^	MPD_SERVER_ERROR_EXIST = 56,$/;"	e	enum:mpd_server_error
+MPD_SERVER_ERROR_NOT_LIST	include/mpd/protocol.h	/^	MPD_SERVER_ERROR_NOT_LIST = 1,$/;"	e	enum:mpd_server_error
+MPD_SERVER_ERROR_NOT_LIST	tmp/include/mpd/protocol.h	/^	MPD_SERVER_ERROR_NOT_LIST = 1,$/;"	e	enum:mpd_server_error
+MPD_SERVER_ERROR_NO_EXIST	include/mpd/protocol.h	/^	MPD_SERVER_ERROR_NO_EXIST = 50,$/;"	e	enum:mpd_server_error
+MPD_SERVER_ERROR_NO_EXIST	tmp/include/mpd/protocol.h	/^	MPD_SERVER_ERROR_NO_EXIST = 50,$/;"	e	enum:mpd_server_error
+MPD_SERVER_ERROR_PASSWORD	include/mpd/protocol.h	/^	MPD_SERVER_ERROR_PASSWORD = 3,$/;"	e	enum:mpd_server_error
+MPD_SERVER_ERROR_PASSWORD	tmp/include/mpd/protocol.h	/^	MPD_SERVER_ERROR_PASSWORD = 3,$/;"	e	enum:mpd_server_error
+MPD_SERVER_ERROR_PERMISSION	include/mpd/protocol.h	/^	MPD_SERVER_ERROR_PERMISSION = 4,$/;"	e	enum:mpd_server_error
+MPD_SERVER_ERROR_PERMISSION	tmp/include/mpd/protocol.h	/^	MPD_SERVER_ERROR_PERMISSION = 4,$/;"	e	enum:mpd_server_error
+MPD_SERVER_ERROR_PLAYER_SYNC	include/mpd/protocol.h	/^	MPD_SERVER_ERROR_PLAYER_SYNC = 55,$/;"	e	enum:mpd_server_error
+MPD_SERVER_ERROR_PLAYER_SYNC	tmp/include/mpd/protocol.h	/^	MPD_SERVER_ERROR_PLAYER_SYNC = 55,$/;"	e	enum:mpd_server_error
+MPD_SERVER_ERROR_PLAYLIST_LOAD	include/mpd/protocol.h	/^	MPD_SERVER_ERROR_PLAYLIST_LOAD = 53,$/;"	e	enum:mpd_server_error
+MPD_SERVER_ERROR_PLAYLIST_LOAD	tmp/include/mpd/protocol.h	/^	MPD_SERVER_ERROR_PLAYLIST_LOAD = 53,$/;"	e	enum:mpd_server_error
+MPD_SERVER_ERROR_PLAYLIST_MAX	include/mpd/protocol.h	/^	MPD_SERVER_ERROR_PLAYLIST_MAX = 51,$/;"	e	enum:mpd_server_error
+MPD_SERVER_ERROR_PLAYLIST_MAX	tmp/include/mpd/protocol.h	/^	MPD_SERVER_ERROR_PLAYLIST_MAX = 51,$/;"	e	enum:mpd_server_error
+MPD_SERVER_ERROR_SYSTEM	include/mpd/protocol.h	/^	MPD_SERVER_ERROR_SYSTEM = 52,$/;"	e	enum:mpd_server_error
+MPD_SERVER_ERROR_SYSTEM	tmp/include/mpd/protocol.h	/^	MPD_SERVER_ERROR_SYSTEM = 52,$/;"	e	enum:mpd_server_error
+MPD_SERVER_ERROR_UNK	include/mpd/protocol.h	/^	MPD_SERVER_ERROR_UNK = -1,$/;"	e	enum:mpd_server_error
+MPD_SERVER_ERROR_UNK	tmp/include/mpd/protocol.h	/^	MPD_SERVER_ERROR_UNK = -1,$/;"	e	enum:mpd_server_error
+MPD_SERVER_ERROR_UNKNOWN_CMD	include/mpd/protocol.h	/^	MPD_SERVER_ERROR_UNKNOWN_CMD = 5,$/;"	e	enum:mpd_server_error
+MPD_SERVER_ERROR_UNKNOWN_CMD	tmp/include/mpd/protocol.h	/^	MPD_SERVER_ERROR_UNKNOWN_CMD = 5,$/;"	e	enum:mpd_server_error
+MPD_SERVER_ERROR_UPDATE_ALREADY	include/mpd/protocol.h	/^	MPD_SERVER_ERROR_UPDATE_ALREADY = 54,$/;"	e	enum:mpd_server_error
+MPD_SERVER_ERROR_UPDATE_ALREADY	tmp/include/mpd/protocol.h	/^	MPD_SERVER_ERROR_UPDATE_ALREADY = 54,$/;"	e	enum:mpd_server_error
+MPD_SETTINGS_H	include/mpd/settings.h	39;"	d
+MPD_SETTINGS_H	tmp/include/mpd/settings.h	39;"	d
+MPD_SOCKET_H	src/socket.h	30;"	d
+MPD_SONG_H	include/mpd/song.h	40;"	d
+MPD_SONG_H	tmp/include/mpd/song.h	40;"	d
+MPD_STATE_PAUSE	include/mpd/status.h	/^	MPD_STATE_PAUSE = 3,$/;"	e	enum:mpd_state
+MPD_STATE_PAUSE	tmp/include/mpd/status.h	/^	MPD_STATE_PAUSE = 3,$/;"	e	enum:mpd_state
+MPD_STATE_PLAY	include/mpd/status.h	/^	MPD_STATE_PLAY = 2,$/;"	e	enum:mpd_state
+MPD_STATE_PLAY	tmp/include/mpd/status.h	/^	MPD_STATE_PLAY = 2,$/;"	e	enum:mpd_state
+MPD_STATE_STOP	include/mpd/status.h	/^	MPD_STATE_STOP = 1,$/;"	e	enum:mpd_state
+MPD_STATE_STOP	tmp/include/mpd/status.h	/^	MPD_STATE_STOP = 1,$/;"	e	enum:mpd_state
+MPD_STATE_UNKNOWN	include/mpd/status.h	/^	MPD_STATE_UNKNOWN = 0,$/;"	e	enum:mpd_state
+MPD_STATE_UNKNOWN	tmp/include/mpd/status.h	/^	MPD_STATE_UNKNOWN = 0,$/;"	e	enum:mpd_state
+MPD_STATS_H	include/mpd/stats.h	40;"	d
+MPD_STATS_H	tmp/include/mpd/stats.h	40;"	d
+MPD_STATUS_H	include/mpd/status.h	40;"	d
+MPD_STATUS_H	tmp/include/mpd/status.h	40;"	d
+MPD_STICKER_H	include/mpd/sticker.h	38;"	d
+MPD_STICKER_H	tmp/include/mpd/sticker.h	38;"	d
+MPD_SYNC_H	src/sync.h	37;"	d
+MPD_TAG_ALBUM	include/mpd/tag.h	/^	MPD_TAG_ALBUM,$/;"	e	enum:mpd_tag_type
+MPD_TAG_ALBUM	tmp/include/mpd/tag.h	/^	MPD_TAG_ALBUM,$/;"	e	enum:mpd_tag_type
+MPD_TAG_ALBUM_ARTIST	include/mpd/tag.h	/^	MPD_TAG_ALBUM_ARTIST,$/;"	e	enum:mpd_tag_type
+MPD_TAG_ALBUM_ARTIST	tmp/include/mpd/tag.h	/^	MPD_TAG_ALBUM_ARTIST,$/;"	e	enum:mpd_tag_type
+MPD_TAG_ALBUM_ARTIST_SORT	include/mpd/tag.h	/^	MPD_TAG_ALBUM_ARTIST_SORT,$/;"	e	enum:mpd_tag_type
+MPD_TAG_ALBUM_ARTIST_SORT	tmp/include/mpd/tag.h	/^	MPD_TAG_ALBUM_ARTIST_SORT,$/;"	e	enum:mpd_tag_type
+MPD_TAG_ARTIST	include/mpd/tag.h	/^	MPD_TAG_ARTIST,$/;"	e	enum:mpd_tag_type
+MPD_TAG_ARTIST	tmp/include/mpd/tag.h	/^	MPD_TAG_ARTIST,$/;"	e	enum:mpd_tag_type
+MPD_TAG_ARTIST_SORT	include/mpd/tag.h	/^	MPD_TAG_ARTIST_SORT,$/;"	e	enum:mpd_tag_type
+MPD_TAG_ARTIST_SORT	tmp/include/mpd/tag.h	/^	MPD_TAG_ARTIST_SORT,$/;"	e	enum:mpd_tag_type
+MPD_TAG_COMMENT	include/mpd/tag.h	/^	MPD_TAG_COMMENT,$/;"	e	enum:mpd_tag_type
+MPD_TAG_COMMENT	tmp/include/mpd/tag.h	/^	MPD_TAG_COMMENT,$/;"	e	enum:mpd_tag_type
+MPD_TAG_COMPOSER	include/mpd/tag.h	/^	MPD_TAG_COMPOSER,$/;"	e	enum:mpd_tag_type
+MPD_TAG_COMPOSER	tmp/include/mpd/tag.h	/^	MPD_TAG_COMPOSER,$/;"	e	enum:mpd_tag_type
+MPD_TAG_COUNT	include/mpd/tag.h	/^	MPD_TAG_COUNT$/;"	e	enum:mpd_tag_type
+MPD_TAG_COUNT	tmp/include/mpd/tag.h	/^	MPD_TAG_COUNT$/;"	e	enum:mpd_tag_type
+MPD_TAG_DATE	include/mpd/tag.h	/^	MPD_TAG_DATE,$/;"	e	enum:mpd_tag_type
+MPD_TAG_DATE	tmp/include/mpd/tag.h	/^	MPD_TAG_DATE,$/;"	e	enum:mpd_tag_type
+MPD_TAG_DISC	include/mpd/tag.h	/^	MPD_TAG_DISC,$/;"	e	enum:mpd_tag_type
+MPD_TAG_DISC	tmp/include/mpd/tag.h	/^	MPD_TAG_DISC,$/;"	e	enum:mpd_tag_type
+MPD_TAG_GENRE	include/mpd/tag.h	/^	MPD_TAG_GENRE,$/;"	e	enum:mpd_tag_type
+MPD_TAG_GENRE	tmp/include/mpd/tag.h	/^	MPD_TAG_GENRE,$/;"	e	enum:mpd_tag_type
+MPD_TAG_MUSICBRAINZ_ALBUMARTISTID	include/mpd/tag.h	/^	MPD_TAG_MUSICBRAINZ_ALBUMARTISTID,$/;"	e	enum:mpd_tag_type
+MPD_TAG_MUSICBRAINZ_ALBUMARTISTID	tmp/include/mpd/tag.h	/^	MPD_TAG_MUSICBRAINZ_ALBUMARTISTID,$/;"	e	enum:mpd_tag_type
+MPD_TAG_MUSICBRAINZ_ALBUMID	include/mpd/tag.h	/^	MPD_TAG_MUSICBRAINZ_ALBUMID,$/;"	e	enum:mpd_tag_type
+MPD_TAG_MUSICBRAINZ_ALBUMID	tmp/include/mpd/tag.h	/^	MPD_TAG_MUSICBRAINZ_ALBUMID,$/;"	e	enum:mpd_tag_type
+MPD_TAG_MUSICBRAINZ_ARTISTID	include/mpd/tag.h	/^	MPD_TAG_MUSICBRAINZ_ARTISTID,$/;"	e	enum:mpd_tag_type
+MPD_TAG_MUSICBRAINZ_ARTISTID	tmp/include/mpd/tag.h	/^	MPD_TAG_MUSICBRAINZ_ARTISTID,$/;"	e	enum:mpd_tag_type
+MPD_TAG_MUSICBRAINZ_RELEASETRACKID	include/mpd/tag.h	/^	MPD_TAG_MUSICBRAINZ_RELEASETRACKID,$/;"	e	enum:mpd_tag_type
+MPD_TAG_MUSICBRAINZ_RELEASETRACKID	tmp/include/mpd/tag.h	/^	MPD_TAG_MUSICBRAINZ_RELEASETRACKID,$/;"	e	enum:mpd_tag_type
+MPD_TAG_MUSICBRAINZ_TRACKID	include/mpd/tag.h	/^	MPD_TAG_MUSICBRAINZ_TRACKID,$/;"	e	enum:mpd_tag_type
+MPD_TAG_MUSICBRAINZ_TRACKID	tmp/include/mpd/tag.h	/^	MPD_TAG_MUSICBRAINZ_TRACKID,$/;"	e	enum:mpd_tag_type
+MPD_TAG_NAME	include/mpd/tag.h	/^	MPD_TAG_NAME,$/;"	e	enum:mpd_tag_type
+MPD_TAG_NAME	tmp/include/mpd/tag.h	/^	MPD_TAG_NAME,$/;"	e	enum:mpd_tag_type
+MPD_TAG_PERFORMER	include/mpd/tag.h	/^	MPD_TAG_PERFORMER,$/;"	e	enum:mpd_tag_type
+MPD_TAG_PERFORMER	tmp/include/mpd/tag.h	/^	MPD_TAG_PERFORMER,$/;"	e	enum:mpd_tag_type
+MPD_TAG_TITLE	include/mpd/tag.h	/^	MPD_TAG_TITLE,$/;"	e	enum:mpd_tag_type
+MPD_TAG_TITLE	tmp/include/mpd/tag.h	/^	MPD_TAG_TITLE,$/;"	e	enum:mpd_tag_type
+MPD_TAG_TRACK	include/mpd/tag.h	/^	MPD_TAG_TRACK,$/;"	e	enum:mpd_tag_type
+MPD_TAG_TRACK	tmp/include/mpd/tag.h	/^	MPD_TAG_TRACK,$/;"	e	enum:mpd_tag_type
+MPD_TAG_UNKNOWN	include/mpd/tag.h	/^	MPD_TAG_UNKNOWN = -1,$/;"	e	enum:mpd_tag_type
+MPD_TAG_UNKNOWN	tmp/include/mpd/tag.h	/^	MPD_TAG_UNKNOWN = -1,$/;"	e	enum:mpd_tag_type
+MPD_URI_H	src/uri.h	30;"	d
+MPD_VERSION_H	include/mpd/version.h	36;"	d
+MPD_VERSION_H	tmp/include/mpd/version.h	36;"	d
+MPD_WELCOME_MESSAGE	src/connection.c	49;"	d	file:
+MSG_DONTWAIT	src/async.c	54;"	d	file:
+MSG_DONTWAIT	src/socket.c	54;"	d	file:
+NM	Makefile	/^NM = \/usr\/bin\/nm -B$/;"	m
+NMEDIT	Makefile	/^NMEDIT = $/;"	m
+NORMAL_INSTALL	Makefile	/^NORMAL_INSTALL = :$/;"	m
+NORMAL_UNINSTALL	Makefile	/^NORMAL_UNINSTALL = :$/;"	m
+OBJDUMP	Makefile	/^OBJDUMP = objdump$/;"	m
+OBJEXT	Makefile	/^OBJEXT = o$/;"	m
+OTOOL	Makefile	/^OTOOL = $/;"	m
+OTOOL64	Makefile	/^OTOOL64 = $/;"	m
+PACKAGE	Makefile	/^PACKAGE = libmpdclient$/;"	m
+PACKAGE	config.h	54;"	d
+PACKAGE_BUGREPORT	Makefile	/^PACKAGE_BUGREPORT = musicpd-dev-team@lists.sourceforge.net$/;"	m
+PACKAGE_BUGREPORT	config.h	57;"	d
+PACKAGE_NAME	Makefile	/^PACKAGE_NAME = libmpdclient$/;"	m
+PACKAGE_NAME	config.h	60;"	d
+PACKAGE_STRING	Makefile	/^PACKAGE_STRING = libmpdclient 2.11$/;"	m
+PACKAGE_STRING	config.h	63;"	d
+PACKAGE_TARNAME	Makefile	/^PACKAGE_TARNAME = libmpdclient$/;"	m
+PACKAGE_TARNAME	config.h	66;"	d
+PACKAGE_URL	Makefile	/^PACKAGE_URL = $/;"	m
+PACKAGE_URL	config.h	69;"	d
+PACKAGE_VERSION	Makefile	/^PACKAGE_VERSION = 2.11$/;"	m
+PACKAGE_VERSION	config.h	72;"	d
+PAIR_STATE_FLOATING	src/internal.h	/^		PAIR_STATE_FLOATING,$/;"	e	enum:mpd_connection::__anon5
+PAIR_STATE_NONE	src/internal.h	/^		PAIR_STATE_NONE,$/;"	e	enum:mpd_connection::__anon5
+PAIR_STATE_NULL	src/internal.h	/^		PAIR_STATE_NULL,$/;"	e	enum:mpd_connection::__anon5
+PAIR_STATE_QUEUED	src/internal.h	/^		PAIR_STATE_QUEUED,$/;"	e	enum:mpd_connection::__anon5
+PATCH_VERSION	Makefile	/^PATCH_VERSION = 0$/;"	m
+PATH_SEPARATOR	Makefile	/^PATH_SEPARATOR = :$/;"	m
+POST_INSTALL	Makefile	/^POST_INSTALL = :$/;"	m
+POST_UNINSTALL	Makefile	/^POST_UNINSTALL = :$/;"	m
+PRE_INSTALL	Makefile	/^PRE_INSTALL = :$/;"	m
+PRE_UNINSTALL	Makefile	/^PRE_UNINSTALL = :$/;"	m
+PROGRAMS	Makefile	/^PROGRAMS = $(noinst_PROGRAMS)$/;"	m
+RANLIB	Makefile	/^RANLIB = ranlib$/;"	m
+RECHECK_LOGS	Makefile	/^RECHECK_LOGS = $(TEST_LOGS)$/;"	m
+RED	test/main.c	46;"	d	file:
+SED	Makefile	/^SED = \/bin\/sed$/;"	m
+SET_MAKE	Makefile	/^SET_MAKE = $/;"	m
+SHELL	Makefile	/^SHELL = \/bin\/bash$/;"	m
+SOURCES	Makefile	/^SOURCES = $(src_libmpdclient_la_SOURCES) $(src_example_SOURCES) \\$/;"	m
+SPARSE	Makefile	/^SPARSE = sparse$/;"	m
+SPARSE_CPPFLAGS	Makefile	/^SPARSE_CPPFLAGS = $(DEFAULT_INCLUDES) \\$/;"	m
+SPARSE_FLAGS	Makefile	/^SPARSE_FLAGS = $/;"	m
+START_TEST	test/main.c	65;"	d	file:
+STDC_HEADERS	config.h	75;"	d
+STRIP	Makefile	/^STRIP = strip$/;"	m
+TESTS	Makefile	/^TESTS = test\/t_iso8601$(EXEEXT)$/;"	m
+TEST_EXTENSIONS	Makefile	/^TEST_EXTENSIONS =  .test$/;"	m
+TEST_LOGS	Makefile	/^TEST_LOGS = $(am__test_logs2:.test.log=.log)$/;"	m
+TEST_LOG_COMPILE	Makefile	/^TEST_LOG_COMPILE = $(TEST_LOG_COMPILER) $(AM_TEST_LOG_FLAGS) \\$/;"	m
+TEST_LOG_DRIVER	Makefile	/^TEST_LOG_DRIVER = $(SHELL) $(top_srcdir)\/build\/test-driver$/;"	m
+TEST_SUITE_LOG	Makefile	/^TEST_SUITE_LOG = test-suite.log$/;"	m
+TYPE_ANY	src/resolver.c	/^		TYPE_ZERO, TYPE_ONE, TYPE_ANY$/;"	e	enum:resolver::__anon8	file:
+TYPE_ONE	src/resolver.c	/^		TYPE_ZERO, TYPE_ONE, TYPE_ANY$/;"	e	enum:resolver::__anon8	file:
+TYPE_ZERO	src/resolver.c	/^		TYPE_ZERO, TYPE_ONE, TYPE_ANY$/;"	e	enum:resolver::__anon8	file:
+UNSIGNEDLEN	src/cplaylist.c	/^	UNSIGNEDLEN = (sizeof(unsigned) * CHAR_BIT + 1) \/ 3 + 1,$/;"	e	enum:__anon7	file:
+VERSION	Makefile	/^VERSION = 2.11$/;"	m
+VERSION	config.h	78;"	d
+YELLOW	test/main.c	48;"	d	file:
+abs_builddir	Makefile	/^abs_builddir = \/home\/rh\/my_code\/OpenWrt_Luci_Lua\/1_6.h12_dev\/libmpdclient$/;"	m
+abs_srcdir	Makefile	/^abs_srcdir = \/home\/rh\/my_code\/OpenWrt_Luci_Lua\/1_6.h12_dev\/libmpdclient$/;"	m
+abs_top_builddir	Makefile	/^abs_top_builddir = \/home\/rh\/my_code\/OpenWrt_Luci_Lua\/1_6.h12_dev\/libmpdclient$/;"	m
+abs_top_srcdir	Makefile	/^abs_top_srcdir = \/home\/rh\/my_code\/OpenWrt_Luci_Lua\/1_6.h12_dev\/libmpdclient$/;"	m
+ac_ct_AR	Makefile	/^ac_ct_AR = ar$/;"	m
+ac_ct_CC	Makefile	/^ac_ct_CC = gcc$/;"	m
+ac_ct_DUMPBIN	Makefile	/^ac_ct_DUMPBIN = $/;"	m
+ac_fn_c_check_func	configure	/^ac_fn_c_check_func ()$/;"	f
+ac_fn_c_check_header_compile	configure	/^ac_fn_c_check_header_compile ()$/;"	f
+ac_fn_c_try_compile	configure	/^ac_fn_c_try_compile ()$/;"	f
+ac_fn_c_try_cpp	configure	/^ac_fn_c_try_cpp ()$/;"	f
+ac_fn_c_try_link	configure	/^ac_fn_c_try_link ()$/;"	f
+ac_fn_c_try_run	configure	/^ac_fn_c_try_run ()$/;"	f
+addr	src/resolver.h	/^	const struct sockaddr *addr;$/;"	m	struct:resolver_address	typeref:struct:resolver_address::sockaddr
+addrlen	src/resolver.h	/^	size_t addrlen;$/;"	m	struct:resolver_address
+ai	src/resolver.c	/^	struct addrinfo *ai;$/;"	m	struct:resolver	typeref:struct:resolver::addrinfo	file:
+aix_post_process_depfile	build/depcomp	/^aix_post_process_depfile ()$/;"	f
+am__CONFIG_DISTCLEAN_FILES	Makefile	/^am__CONFIG_DISTCLEAN_FILES = config.status config.cache config.log \\$/;"	m
+am__EXEEXT_1	Makefile	/^am__EXEEXT_1 = test\/t_iso8601$(EXEEXT)$/;"	m
+am__aclocal_m4_deps	Makefile	/^am__aclocal_m4_deps = $(top_srcdir)\/m4\/ax_check_compiler_flags.m4 \\$/;"	m
+am__append_1	Makefile	/^am__append_1 = -Wl,--version-script=$(srcdir)\/libmpdclient.ld$/;"	m
+am__base_list	Makefile	/^am__base_list = \\$/;"	m
+am__can_run_installinfo	Makefile	/^am__can_run_installinfo = \\$/;"	m
+am__cd	Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
+am__check_pre	Makefile	/^am__check_pre = \\$/;"	m
+am__common_driver_flags	Makefile	/^am__common_driver_flags = \\$/;"	m
+am__configure_deps	Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m
+am__copy_in_global_log_rx	Makefile	/^am__copy_in_global_log_rx = ^[ 	]*:copy-in-global-log:[ 	]*$/;"	m
+am__create_global_log	Makefile	/^am__create_global_log = $(AWK) ' \\$/;"	m
+am__define_uniq_tagged_files	Makefile	/^am__define_uniq_tagged_files = \\$/;"	m
+am__depfiles_maybe	Makefile	/^am__depfiles_maybe = depfiles$/;"	m
+am__dirstamp	Makefile	/^am__dirstamp = $(am__leading_dot)dirstamp$/;"	m
+am__distuninstallcheck_listfiles	Makefile	/^am__distuninstallcheck_listfiles = $(distuninstallcheck_listfiles) \\$/;"	m
+am__global_test_result_rx	Makefile	/^am__global_test_result_rx = ^[ 	]*:global-test-result:[ 	]*$/;"	m
+am__include	Makefile	/^am__include = include$/;"	m
+am__install_max	Makefile	/^am__install_max = 40$/;"	m
+am__installdirs	Makefile	/^am__installdirs = "$(DESTDIR)$(libdir)" "$(DESTDIR)$(docdir)" \\$/;"	m
+am__is_gnu_make	Makefile	/^am__is_gnu_make = test -n '$(MAKEFILE_LIST)' && test -n '$(MAKELEVEL)'$/;"	m
+am__leading_dot	Makefile	/^am__leading_dot = .$/;"	m
+am__list_recheck_tests	Makefile	/^am__list_recheck_tests = $(AWK) '{ \\$/;"	m
+am__make_dryrun	Makefile	/^am__make_dryrun = (target_option=n; $(am__make_running_with_option))$/;"	m
+am__make_keepgoing	Makefile	/^am__make_keepgoing = (target_option=k; $(am__make_running_with_option))$/;"	m
+am__make_running_with_option	Makefile	/^am__make_running_with_option = \\$/;"	m
+am__mv	Makefile	/^am__mv = mv -f$/;"	m
+am__nobase_list	Makefile	/^am__nobase_list = $(am__nobase_strip_setup); \\$/;"	m
+am__nobase_strip	Makefile	/^am__nobase_strip = \\$/;"	m
+am__nobase_strip_setup	Makefile	/^am__nobase_strip_setup = \\$/;"	m
+am__post_remove_distdir	Makefile	/^am__post_remove_distdir = $(am__remove_distdir)$/;"	m
+am__quote	Makefile	/^am__quote = $/;"	m
+am__recheck_rx	Makefile	/^am__recheck_rx = ^[ 	]*:recheck:[ 	]*$/;"	m
+am__remove_distdir	Makefile	/^am__remove_distdir = \\$/;"	m
+am__rst_title	Makefile	/^am__rst_title = { sed 's\/.*\/   &   \/;h;s\/.\/=\/g;p;x;s\/ *$$\/\/;p;g' && echo; }$/;"	m
+am__set_TESTS_bases	Makefile	/^am__set_TESTS_bases = \\$/;"	m
+am__set_b	Makefile	/^am__set_b = \\$/;"	m
+am__sh_e_setup	Makefile	/^am__sh_e_setup = case $$- in *e*) set +e;; esac$/;"	m
+am__strip_dir	Makefile	/^am__strip_dir = f=`echo $$p | sed -e 's|^.*\/||'`;$/;"	m
+am__tagged_files	Makefile	/^am__tagged_files = $(HEADERS) $(SOURCES) $(TAGS_FILES) \\$/;"	m
+am__tar	Makefile	/^am__tar = $${TAR-tar} chof - "$$tardir"$/;"	m
+am__test_logs1	Makefile	/^am__test_logs1 = $(TESTS:=.log)$/;"	m
+am__test_logs2	Makefile	/^am__test_logs2 = $(am__test_logs1:.log=.log)$/;"	m
+am__tty_colors	Makefile	/^am__tty_colors = { \\$/;"	m
+am__tty_colors_dummy	Makefile	/^am__tty_colors_dummy = \\$/;"	m
+am__uninstall_files_from_dir	Makefile	/^am__uninstall_files_from_dir = { \\$/;"	m
+am__uniquify_input	Makefile	/^am__uniquify_input = $(AWK) '\\$/;"	m
+am__untar	Makefile	/^am__untar = $${TAR-tar} xf -$/;"	m
+am__v_CCLD_	Makefile	/^am__v_CCLD_ = $(am__v_CCLD_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_CCLD_0	Makefile	/^am__v_CCLD_0 = @echo "  CCLD    " $@;$/;"	m
+am__v_CCLD_1	Makefile	/^am__v_CCLD_1 = $/;"	m
+am__v_CC_	Makefile	/^am__v_CC_ = $(am__v_CC_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_CC_0	Makefile	/^am__v_CC_0 = @echo "  CC      " $@;$/;"	m
+am__v_CC_1	Makefile	/^am__v_CC_1 = $/;"	m
+am__v_GEN_	Makefile	/^am__v_GEN_ = $(am__v_GEN_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_GEN_0	Makefile	/^am__v_GEN_0 = @echo "  GEN     " $@;$/;"	m
+am__v_GEN_1	Makefile	/^am__v_GEN_1 = $/;"	m
+am__v_P_	Makefile	/^am__v_P_ = $(am__v_P_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_P_0	Makefile	/^am__v_P_0 = false$/;"	m
+am__v_P_1	Makefile	/^am__v_P_1 = :$/;"	m
+am__v_at_	Makefile	/^am__v_at_ = $(am__v_at_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_at_0	Makefile	/^am__v_at_0 = @$/;"	m
+am__v_at_1	Makefile	/^am__v_at_1 = $/;"	m
+am__v_lt_	Makefile	/^am__v_lt_ = $(am__v_lt_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_lt_0	Makefile	/^am__v_lt_0 = --silent$/;"	m
+am__v_lt_1	Makefile	/^am__v_lt_1 = $/;"	m
+am__vpath_adj	Makefile	/^am__vpath_adj = case $$p in \\$/;"	m
+am__vpath_adj_setup	Makefile	/^am__vpath_adj_setup = srcdirstrip=`echo "$(srcdir)" | sed 's|.|.|g'`;$/;"	m
+am_src_example_OBJECTS	Makefile	/^am_src_example_OBJECTS = src\/example.$(OBJEXT)$/;"	m
+am_src_libmpdclient_la_OBJECTS	Makefile	/^am_src_libmpdclient_la_OBJECTS = src\/async.lo src\/ierror.lo \\$/;"	m
+am_test_t_iso8601_OBJECTS	Makefile	/^am_test_t_iso8601_OBJECTS = test\/test_t_iso8601-t_iso8601.$(OBJEXT) \\$/;"	m
+am_test_test_OBJECTS	Makefile	/^am_test_test_OBJECTS = test\/main.$(OBJEXT)$/;"	m
+as_fn_append	config.status	/^  as_fn_append ()$/;"	f
+as_fn_append	configure	/^  as_fn_append ()$/;"	f
+as_fn_arith	config.status	/^  as_fn_arith ()$/;"	f
+as_fn_arith	configure	/^  as_fn_arith ()$/;"	f
+as_fn_error	config.status	/^as_fn_error ()$/;"	f
+as_fn_error	configure	/^as_fn_error ()$/;"	f
+as_fn_executable_p	config.status	/^as_fn_executable_p ()$/;"	f
+as_fn_executable_p	configure	/^as_fn_executable_p ()$/;"	f
+as_fn_exit	config.status	/^as_fn_exit ()$/;"	f
+as_fn_exit	configure	/^as_fn_exit ()$/;"	f
+as_fn_failure	configure	/^as_fn_failure () { as_fn_return 1; }$/;"	f
+as_fn_mkdir_p	config.status	/^as_fn_mkdir_p ()$/;"	f
+as_fn_mkdir_p	configure	/^as_fn_mkdir_p ()$/;"	f
+as_fn_ret_failure	configure	/^as_fn_ret_failure () { return 1; }$/;"	f
+as_fn_ret_success	configure	/^as_fn_ret_success () { return 0; }$/;"	f
+as_fn_set_status	config.status	/^as_fn_set_status ()$/;"	f
+as_fn_set_status	configure	/^as_fn_set_status ()$/;"	f
+as_fn_success	configure	/^as_fn_success () { as_fn_return 0; }$/;"	f
+as_fn_unset	config.status	/^as_fn_unset ()$/;"	f
+as_fn_unset	configure	/^as_fn_unset ()$/;"	f
+async	src/internal.h	/^	struct mpd_async *async;$/;"	m	struct:mpd_connection	typeref:struct:mpd_connection::mpd_async
+at	src/ierror.h	/^	int at;$/;"	m	struct:mpd_error_info
+at	src/parser.c	/^			unsigned at;$/;"	m	struct:mpd_parser::__anon2::__anon3	file:
+audio_format	src/status.c	/^	struct mpd_audio_format audio_format;$/;"	m	struct:mpd_status	typeref:struct:mpd_status::mpd_audio_format	file:
+bindir	Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m
+bits	include/mpd/audio_format.h	/^	uint8_t bits;$/;"	m	struct:mpd_audio_format
+bits	tmp/include/mpd/audio_format.h	/^	uint8_t bits;$/;"	m	struct:mpd_audio_format
+build	Makefile	/^build = x86_64-pc-linux-gnu$/;"	m
+build_alias	Makefile	/^build_alias = $/;"	m
+build_cpu	Makefile	/^build_cpu = x86_64$/;"	m
+build_os	Makefile	/^build_os = linux-gnu$/;"	m
+build_triplet	Makefile	/^build_triplet = x86_64-pc-linux-gnu$/;"	m
+build_vendor	Makefile	/^build_vendor = pc$/;"	m
+builddir	Makefile	/^builddir = .$/;"	m
+channel	src/message.c	/^	char *channel;$/;"	m	struct:mpd_message	file:
+channels	include/mpd/audio_format.h	/^	uint8_t channels;$/;"	m	struct:mpd_audio_format
+channels	tmp/include/mpd/audio_format.h	/^	uint8_t channels;$/;"	m	struct:mpd_audio_format
+check_PROGRAMS	Makefile	/^check_PROGRAMS = $(am__EXEEXT_1)$/;"	m
+closesocket	src/async.c	/^closesocket(int fd)$/;"	f	file:
+code	src/ierror.h	/^	enum mpd_error code;$/;"	m	struct:mpd_error_info	typeref:enum:mpd_error_info::mpd_error
+command_list_remaining	src/internal.h	/^	int command_list_remaining;$/;"	m	struct:mpd_connection
+consume	src/status.c	/^	bool consume;$/;"	m	struct:mpd_status	file:
+crossfade	src/status.c	/^	unsigned crossfade;$/;"	m	struct:mpd_status	file:
+current	src/resolver.c	/^	struct resolver_address current;$/;"	m	struct:resolver	typeref:struct:resolver::resolver_address	file:
+data	src/buffer.h	/^	unsigned char data[4096];$/;"	m	struct:mpd_buffer
+datadir	Makefile	/^datadir = ${datarootdir}$/;"	m
+datarootdir	Makefile	/^datarootdir = ${prefix}\/share$/;"	m
+db_play_time	src/stats.c	/^	unsigned long db_play_time;$/;"	m	struct:mpd_stats	file:
+db_update_time	src/stats.c	/^	unsigned long db_update_time;$/;"	m	struct:mpd_stats	file:
+depcomp	Makefile	/^depcomp = $(SHELL) $(top_srcdir)\/build\/depcomp$/;"	m
+directory	src/entity.c	/^		struct mpd_directory *directory;$/;"	m	union:mpd_entity::__anon1	typeref:struct:mpd_entity::__anon1::mpd_directory	file:
+discrete	src/parser.c	/^		bool discrete;$/;"	m	union:mpd_parser::__anon2	file:
+discrete_finished	src/internal.h	/^	bool discrete_finished;$/;"	m	struct:mpd_connection
+distcleancheck_listfiles	Makefile	/^distcleancheck_listfiles = find . -type f -print$/;"	m
+distdir	Makefile	/^distdir = $(PACKAGE)-$(VERSION)$/;"	m
+distuninstallcheck_listfiles	Makefile	/^distuninstallcheck_listfiles = find . -type f -print$/;"	m
+doc_DATA	Makefile	/^doc_DATA = README COPYING NEWS$/;"	m
+docdir	Makefile	/^docdir = ${datarootdir}\/doc\/${PACKAGE_TARNAME}$/;"	m
+duration	src/song.c	/^	unsigned duration;$/;"	m	struct:mpd_song	file:
+duration_ms	src/song.c	/^	unsigned duration_ms;$/;"	m	struct:mpd_song	file:
+dvidir	Makefile	/^dvidir = ${docdir}$/;"	m
+elapsed_ms	src/status.c	/^	unsigned elapsed_ms;$/;"	m	struct:mpd_status	file:
+elapsed_time	src/status.c	/^	unsigned elapsed_time;$/;"	m	struct:mpd_status	file:
+enabled	src/output.c	/^	bool enabled;$/;"	m	struct:mpd_output	file:
+end	src/song.c	/^	unsigned end;$/;"	m	struct:mpd_song	file:
+error	src/async.c	/^	struct mpd_error_info error;$/;"	m	struct:mpd_async	typeref:struct:mpd_async::mpd_error_info	file:
+error	src/internal.h	/^	struct mpd_error_info error;$/;"	m	struct:mpd_connection	typeref:struct:mpd_connection::mpd_error_info
+error	src/parser.c	/^		} error;$/;"	m	union:mpd_parser::__anon2	typeref:struct:mpd_parser::__anon2::__anon3	file:
+error	src/status.c	/^	char *error;$/;"	m	struct:mpd_status	file:
+escape	src/quote.c	/^escape(char *dest, char *end, const char *value)$/;"	f	file:
+exec_prefix	Makefile	/^exec_prefix = ${prefix}$/;"	m
+family	src/resolver.h	/^	int family;$/;"	m	struct:resolver_address
+fd	src/async.c	/^	int fd;$/;"	m	struct:mpd_async	file:
+fd_mask_flags	src/fd_util.c	/^fd_mask_flags(int fd, int and_mask, int xor_mask)$/;"	f	file:
+fd_set_cloexec	src/fd_util.c	/^fd_set_cloexec(int fd, bool enable)$/;"	f	file:
+fd_set_nonblock	src/fd_util.c	/^fd_set_nonblock(int fd)$/;"	f	file:
+finished	src/song.c	/^	bool finished;$/;"	m	struct:mpd_song	file:
+format_range	src/send.c	/^format_range(char *buffer, size_t size, unsigned start, unsigned end)$/;"	f	file:
+func_append	build/ltmain.sh	/^func_append ()$/;"	f
+func_append	config.status	/^func_append ()\\$/;"	f
+func_append	configure	/^func_append ()\\$/;"	f
+func_append	libtool	/^func_append ()$/;"	f
+func_append_quoted	build/ltmain.sh	/^func_append_quoted ()$/;"	f
+func_append_quoted	config.status	/^func_append_quoted ()\\$/;"	f
+func_append_quoted	configure	/^func_append_quoted ()\\$/;"	f
+func_append_quoted	libtool	/^func_append_quoted ()$/;"	f
+func_arith	build/ltmain.sh	/^func_arith ()$/;"	f
+func_arith	config.status	/^func_arith ()\\$/;"	f
+func_arith	configure	/^func_arith ()\\$/;"	f
+func_arith	libtool	/^func_arith ()$/;"	f
+func_basename	build/ltmain.sh	/^func_basename ()$/;"	f
+func_basename	config.status	/^func_basename ()\\$/;"	f
+func_basename	configure	/^func_basename ()\\$/;"	f
+func_basename	libtool	/^func_basename ()$/;"	f
+func_check_version_match	build/ltmain.sh	/^func_check_version_match ()$/;"	f
+func_check_version_match	libtool	/^func_check_version_match ()$/;"	f
+func_cl_dashL	build/compile	/^func_cl_dashL ()$/;"	f
+func_cl_dashl	build/compile	/^func_cl_dashl ()$/;"	f
+func_cl_wrapper	build/compile	/^func_cl_wrapper ()$/;"	f
+func_config	build/ltmain.sh	/^func_config ()$/;"	f
+func_config	libtool	/^func_config ()$/;"	f
+func_convert_core_file_wine_to_w32	build/ltmain.sh	/^func_convert_core_file_wine_to_w32 ()$/;"	f
+func_convert_core_file_wine_to_w32	libtool	/^func_convert_core_file_wine_to_w32 ()$/;"	f
+func_convert_core_msys_to_w32	build/ltmain.sh	/^func_convert_core_msys_to_w32 ()$/;"	f
+func_convert_core_msys_to_w32	libtool	/^func_convert_core_msys_to_w32 ()$/;"	f
+func_convert_core_path_wine_to_w32	build/ltmain.sh	/^func_convert_core_path_wine_to_w32 ()$/;"	f
+func_convert_core_path_wine_to_w32	libtool	/^func_convert_core_path_wine_to_w32 ()$/;"	f
+func_convert_file_check	build/ltmain.sh	/^func_convert_file_check ()$/;"	f
+func_convert_file_check	libtool	/^func_convert_file_check ()$/;"	f
+func_convert_file_cygwin_to_w32	build/ltmain.sh	/^func_convert_file_cygwin_to_w32 ()$/;"	f
+func_convert_file_cygwin_to_w32	libtool	/^func_convert_file_cygwin_to_w32 ()$/;"	f
+func_convert_file_msys_to_cygwin	build/ltmain.sh	/^func_convert_file_msys_to_cygwin ()$/;"	f
+func_convert_file_msys_to_cygwin	libtool	/^func_convert_file_msys_to_cygwin ()$/;"	f
+func_convert_file_msys_to_w32	build/ltmain.sh	/^func_convert_file_msys_to_w32 ()$/;"	f
+func_convert_file_msys_to_w32	libtool	/^func_convert_file_msys_to_w32 ()$/;"	f
+func_convert_file_nix_to_cygwin	build/ltmain.sh	/^func_convert_file_nix_to_cygwin ()$/;"	f
+func_convert_file_nix_to_cygwin	libtool	/^func_convert_file_nix_to_cygwin ()$/;"	f
+func_convert_file_nix_to_w32	build/ltmain.sh	/^func_convert_file_nix_to_w32 ()$/;"	f
+func_convert_file_nix_to_w32	libtool	/^func_convert_file_nix_to_w32 ()$/;"	f
+func_convert_file_noop	build/ltmain.sh	/^func_convert_file_noop ()$/;"	f
+func_convert_file_noop	libtool	/^func_convert_file_noop ()$/;"	f
+func_convert_path_check	build/ltmain.sh	/^func_convert_path_check ()$/;"	f
+func_convert_path_check	libtool	/^func_convert_path_check ()$/;"	f
+func_convert_path_cygwin_to_w32	build/ltmain.sh	/^func_convert_path_cygwin_to_w32 ()$/;"	f
+func_convert_path_cygwin_to_w32	libtool	/^func_convert_path_cygwin_to_w32 ()$/;"	f
+func_convert_path_front_back_pathsep	build/ltmain.sh	/^func_convert_path_front_back_pathsep ()$/;"	f
+func_convert_path_front_back_pathsep	libtool	/^func_convert_path_front_back_pathsep ()$/;"	f
+func_convert_path_msys_to_cygwin	build/ltmain.sh	/^func_convert_path_msys_to_cygwin ()$/;"	f
+func_convert_path_msys_to_cygwin	libtool	/^func_convert_path_msys_to_cygwin ()$/;"	f
+func_convert_path_msys_to_w32	build/ltmain.sh	/^func_convert_path_msys_to_w32 ()$/;"	f
+func_convert_path_msys_to_w32	libtool	/^func_convert_path_msys_to_w32 ()$/;"	f
+func_convert_path_nix_to_cygwin	build/ltmain.sh	/^func_convert_path_nix_to_cygwin ()$/;"	f
+func_convert_path_nix_to_cygwin	libtool	/^func_convert_path_nix_to_cygwin ()$/;"	f
+func_convert_path_nix_to_w32	build/ltmain.sh	/^func_convert_path_nix_to_w32 ()$/;"	f
+func_convert_path_nix_to_w32	libtool	/^func_convert_path_nix_to_w32 ()$/;"	f
+func_convert_path_noop	build/ltmain.sh	/^func_convert_path_noop ()$/;"	f
+func_convert_path_noop	libtool	/^func_convert_path_noop ()$/;"	f
+func_cygming_dll_for_implib	build/ltmain.sh	/^func_cygming_dll_for_implib ()$/;"	f
+func_cygming_dll_for_implib	libtool	/^func_cygming_dll_for_implib ()$/;"	f
+func_cygming_dll_for_implib_fallback	build/ltmain.sh	/^func_cygming_dll_for_implib_fallback ()$/;"	f
+func_cygming_dll_for_implib_fallback	libtool	/^func_cygming_dll_for_implib_fallback ()$/;"	f
+func_cygming_dll_for_implib_fallback_core	build/ltmain.sh	/^func_cygming_dll_for_implib_fallback_core ()$/;"	f
+func_cygming_dll_for_implib_fallback_core	libtool	/^func_cygming_dll_for_implib_fallback_core ()$/;"	f
+func_cygming_gnu_implib_p	build/ltmain.sh	/^func_cygming_gnu_implib_p ()$/;"	f
+func_cygming_gnu_implib_p	libtool	/^func_cygming_gnu_implib_p ()$/;"	f
+func_cygming_ms_implib_p	build/ltmain.sh	/^func_cygming_ms_implib_p ()$/;"	f
+func_cygming_ms_implib_p	libtool	/^func_cygming_ms_implib_p ()$/;"	f
+func_cygpath	build/ltmain.sh	/^func_cygpath ()$/;"	f
+func_cygpath	libtool	/^func_cygpath ()$/;"	f
+func_dirname	build/ltmain.sh	/^func_dirname ()$/;"	f
+func_dirname	config.status	/^func_dirname ()\\$/;"	f
+func_dirname	configure	/^func_dirname ()\\$/;"	f
+func_dirname	libtool	/^func_dirname ()$/;"	f
+func_dirname_and_basename	build/ltmain.sh	/^func_dirname_and_basename ()$/;"	f
+func_dirname_and_basename	config.status	/^func_dirname_and_basename ()\\$/;"	f
+func_dirname_and_basename	configure	/^func_dirname_and_basename ()\\$/;"	f
+func_dirname_and_basename	libtool	/^func_dirname_and_basename ()$/;"	f
+func_echo	build/ltmain.sh	/^func_echo ()$/;"	f
+func_echo	libtool	/^func_echo ()$/;"	f
+func_echo_all	build/ltmain.sh	/^func_echo_all ()$/;"	f
+func_echo_all	configure	/^func_echo_all ()$/;"	f
+func_echo_all	libtool	/^func_echo_all ()$/;"	f
+func_emit_cwrapperexe_src	build/ltmain.sh	/^func_emit_cwrapperexe_src ()$/;"	f
+func_emit_cwrapperexe_src	libtool	/^func_emit_cwrapperexe_src ()$/;"	f
+func_emit_wrapper	build/ltmain.sh	/^func_emit_wrapper ()$/;"	f
+func_emit_wrapper	libtool	/^func_emit_wrapper ()$/;"	f
+func_enable_tag	build/ltmain.sh	/^func_enable_tag ()$/;"	f
+func_enable_tag	libtool	/^func_enable_tag ()$/;"	f
+func_error	build/ltmain.sh	/^func_error ()$/;"	f
+func_error	libtool	/^func_error ()$/;"	f
+func_exec_program	build/ltmain.sh	/^func_exec_program ()$/;"	f
+func_exec_program	libtool	/^func_exec_program ()$/;"	f
+func_exec_program	src/example	/^func_exec_program ()$/;"	f
+func_exec_program	test/test	/^func_exec_program ()$/;"	f
+func_exec_program_core	build/ltmain.sh	/^func_exec_program_core ()$/;"	f
+func_exec_program_core	libtool	/^func_exec_program_core ()$/;"	f
+func_exec_program_core	src/example	/^func_exec_program_core ()$/;"	f
+func_exec_program_core	test/test	/^func_exec_program_core ()$/;"	f
+func_execute_cmds	build/ltmain.sh	/^func_execute_cmds ()$/;"	f
+func_execute_cmds	libtool	/^func_execute_cmds ()$/;"	f
+func_extract_an_archive	build/ltmain.sh	/^func_extract_an_archive ()$/;"	f
+func_extract_an_archive	libtool	/^func_extract_an_archive ()$/;"	f
+func_extract_archives	build/ltmain.sh	/^func_extract_archives ()$/;"	f
+func_extract_archives	libtool	/^func_extract_archives ()$/;"	f
+func_fallback_echo	build/ltmain.sh	/^func_fallback_echo ()$/;"	f
+func_fallback_echo	config.status	/^func_fallback_echo ()$/;"	f
+func_fallback_echo	configure	/^  func_fallback_echo ()$/;"	f
+func_fallback_echo	configure	/^func_fallback_echo ()$/;"	f
+func_fallback_echo	libtool	/^func_fallback_echo ()$/;"	f
+func_fallback_echo	src/example	/^func_fallback_echo ()$/;"	f
+func_fallback_echo	test/test	/^func_fallback_echo ()$/;"	f
+func_fatal_configuration	build/ltmain.sh	/^func_fatal_configuration ()$/;"	f
+func_fatal_configuration	libtool	/^func_fatal_configuration ()$/;"	f
+func_fatal_error	build/ltmain.sh	/^func_fatal_error ()$/;"	f
+func_fatal_error	libtool	/^func_fatal_error ()$/;"	f
+func_fatal_help	build/ltmain.sh	/^func_fatal_help ()$/;"	f
+func_fatal_help	libtool	/^func_fatal_help ()$/;"	f
+func_features	build/ltmain.sh	/^func_features ()$/;"	f
+func_features	libtool	/^func_features ()$/;"	f
+func_file_conv	build/compile	/^func_file_conv ()$/;"	f
+func_generate_dlsyms	build/ltmain.sh	/^func_generate_dlsyms ()$/;"	f
+func_generate_dlsyms	libtool	/^func_generate_dlsyms ()$/;"	f
+func_grep	build/ltmain.sh	/^func_grep ()$/;"	f
+func_grep	libtool	/^func_grep ()$/;"	f
+func_help	build/ltmain.sh	/^func_help ()$/;"	f
+func_help	libtool	/^func_help ()$/;"	f
+func_infer_tag	build/ltmain.sh	/^func_infer_tag ()$/;"	f
+func_infer_tag	libtool	/^func_infer_tag ()$/;"	f
+func_init_to_host_path_cmd	build/ltmain.sh	/^func_init_to_host_path_cmd ()$/;"	f
+func_init_to_host_path_cmd	libtool	/^func_init_to_host_path_cmd ()$/;"	f
+func_lalib_p	build/ltmain.sh	/^func_lalib_p ()$/;"	f
+func_lalib_p	libtool	/^func_lalib_p ()$/;"	f
+func_lalib_unsafe_p	build/ltmain.sh	/^func_lalib_unsafe_p ()$/;"	f
+func_lalib_unsafe_p	libtool	/^func_lalib_unsafe_p ()$/;"	f
+func_len	build/ltmain.sh	/^func_len ()$/;"	f
+func_len	config.status	/^func_len ()\\$/;"	f
+func_len	configure	/^func_len ()\\$/;"	f
+func_len	libtool	/^func_len ()$/;"	f
+func_lo2o	build/ltmain.sh	/^func_lo2o ()$/;"	f
+func_lo2o	config.status	/^func_lo2o ()\\$/;"	f
+func_lo2o	configure	/^func_lo2o ()\\$/;"	f
+func_lo2o	libtool	/^func_lo2o ()$/;"	f
+func_lt_dump_args	build/ltmain.sh	/^func_lt_dump_args ()$/;"	f
+func_lt_dump_args	libtool	/^func_lt_dump_args ()$/;"	f
+func_lt_dump_args	src/example	/^func_lt_dump_args ()$/;"	f
+func_lt_dump_args	test/test	/^func_lt_dump_args ()$/;"	f
+func_ltwrapper_executable_p	build/ltmain.sh	/^func_ltwrapper_executable_p ()$/;"	f
+func_ltwrapper_executable_p	libtool	/^func_ltwrapper_executable_p ()$/;"	f
+func_ltwrapper_p	build/ltmain.sh	/^func_ltwrapper_p ()$/;"	f
+func_ltwrapper_p	libtool	/^func_ltwrapper_p ()$/;"	f
+func_ltwrapper_script_p	build/ltmain.sh	/^func_ltwrapper_script_p ()$/;"	f
+func_ltwrapper_script_p	libtool	/^func_ltwrapper_script_p ()$/;"	f
+func_ltwrapper_scriptname	build/ltmain.sh	/^func_ltwrapper_scriptname ()$/;"	f
+func_ltwrapper_scriptname	libtool	/^func_ltwrapper_scriptname ()$/;"	f
+func_missing_arg	build/ltmain.sh	/^func_missing_arg ()$/;"	f
+func_missing_arg	libtool	/^func_missing_arg ()$/;"	f
+func_mkdir_p	build/ltmain.sh	/^func_mkdir_p ()$/;"	f
+func_mkdir_p	libtool	/^func_mkdir_p ()$/;"	f
+func_mktempdir	build/ltmain.sh	/^func_mktempdir ()$/;"	f
+func_mktempdir	libtool	/^func_mktempdir ()$/;"	f
+func_mode_compile	build/ltmain.sh	/^func_mode_compile ()$/;"	f
+func_mode_compile	libtool	/^func_mode_compile ()$/;"	f
+func_mode_execute	build/ltmain.sh	/^func_mode_execute ()$/;"	f
+func_mode_execute	libtool	/^func_mode_execute ()$/;"	f
+func_mode_finish	build/ltmain.sh	/^func_mode_finish ()$/;"	f
+func_mode_finish	libtool	/^func_mode_finish ()$/;"	f
+func_mode_help	build/ltmain.sh	/^func_mode_help ()$/;"	f
+func_mode_help	libtool	/^func_mode_help ()$/;"	f
+func_mode_install	build/ltmain.sh	/^func_mode_install ()$/;"	f
+func_mode_install	libtool	/^func_mode_install ()$/;"	f
+func_mode_link	build/ltmain.sh	/^func_mode_link ()$/;"	f
+func_mode_link	libtool	/^func_mode_link ()$/;"	f
+func_mode_uninstall	build/ltmain.sh	/^func_mode_uninstall ()$/;"	f
+func_mode_uninstall	libtool	/^func_mode_uninstall ()$/;"	f
+func_normal_abspath	build/ltmain.sh	/^func_normal_abspath ()$/;"	f
+func_normal_abspath	libtool	/^func_normal_abspath ()$/;"	f
+func_parse_lt_options	build/ltmain.sh	/^func_parse_lt_options ()$/;"	f
+func_parse_lt_options	libtool	/^func_parse_lt_options ()$/;"	f
+func_parse_lt_options	src/example	/^func_parse_lt_options ()$/;"	f
+func_parse_lt_options	test/test	/^func_parse_lt_options ()$/;"	f
+func_quote_for_eval	build/ltmain.sh	/^func_quote_for_eval ()$/;"	f
+func_quote_for_eval	libtool	/^func_quote_for_eval ()$/;"	f
+func_quote_for_expand	build/ltmain.sh	/^func_quote_for_expand ()$/;"	f
+func_quote_for_expand	libtool	/^func_quote_for_expand ()$/;"	f
+func_relative_path	build/ltmain.sh	/^func_relative_path ()$/;"	f
+func_relative_path	libtool	/^func_relative_path ()$/;"	f
+func_replace_sysroot	build/ltmain.sh	/^func_replace_sysroot ()$/;"	f
+func_replace_sysroot	libtool	/^func_replace_sysroot ()$/;"	f
+func_resolve_sysroot	build/ltmain.sh	/^func_resolve_sysroot ()$/;"	f
+func_resolve_sysroot	libtool	/^func_resolve_sysroot ()$/;"	f
+func_show_eval	build/ltmain.sh	/^func_show_eval ()$/;"	f
+func_show_eval	libtool	/^func_show_eval ()$/;"	f
+func_show_eval_locale	build/ltmain.sh	/^func_show_eval_locale ()$/;"	f
+func_show_eval_locale	libtool	/^func_show_eval_locale ()$/;"	f
+func_source	build/ltmain.sh	/^func_source ()$/;"	f
+func_source	libtool	/^func_source ()$/;"	f
+func_split_long_opt	build/ltmain.sh	/^func_split_long_opt ()$/;"	f
+func_split_long_opt	config.status	/^func_split_long_opt ()\\$/;"	f
+func_split_long_opt	configure	/^func_split_long_opt ()\\$/;"	f
+func_split_long_opt	libtool	/^func_split_long_opt ()$/;"	f
+func_split_short_opt	build/ltmain.sh	/^func_split_short_opt ()$/;"	f
+func_split_short_opt	config.status	/^func_split_short_opt ()\\$/;"	f
+func_split_short_opt	configure	/^func_split_short_opt ()\\$/;"	f
+func_split_short_opt	libtool	/^func_split_short_opt ()$/;"	f
+func_stripname	build/ltmain.sh	/^func_stripname ()$/;"	f
+func_stripname	config.status	/^func_stripname ()\\$/;"	f
+func_stripname	configure	/^func_stripname ()\\$/;"	f
+func_stripname	libtool	/^func_stripname ()$/;"	f
+func_to_host_file	build/ltmain.sh	/^func_to_host_file ()$/;"	f
+func_to_host_file	libtool	/^func_to_host_file ()$/;"	f
+func_to_host_path	build/ltmain.sh	/^func_to_host_path ()$/;"	f
+func_to_host_path	libtool	/^func_to_host_path ()$/;"	f
+func_to_tool_file	build/ltmain.sh	/^func_to_tool_file ()$/;"	f
+func_to_tool_file	libtool	/^func_to_tool_file ()$/;"	f
+func_tr_sh	build/ltmain.sh	/^func_tr_sh ()$/;"	f
+func_tr_sh	libtool	/^func_tr_sh ()$/;"	f
+func_usage	build/ltmain.sh	/^func_usage ()$/;"	f
+func_usage	libtool	/^func_usage ()$/;"	f
+func_verbose	build/ltmain.sh	/^func_verbose ()$/;"	f
+func_verbose	libtool	/^func_verbose ()$/;"	f
+func_version	build/ltmain.sh	/^func_version ()$/;"	f
+func_version	libtool	/^func_version ()$/;"	f
+func_warning	build/ltmain.sh	/^func_warning ()$/;"	f
+func_warning	libtool	/^func_warning ()$/;"	f
+func_win32_import_lib_p	build/ltmain.sh	/^func_win32_import_lib_p ()$/;"	f
+func_win32_import_lib_p	libtool	/^func_win32_import_lib_p ()$/;"	f
+func_win32_libid	build/ltmain.sh	/^func_win32_libid ()$/;"	f
+func_win32_libid	libtool	/^func_win32_libid ()$/;"	f
+func_write_libtool_object	build/ltmain.sh	/^func_write_libtool_object ()$/;"	f
+func_write_libtool_object	libtool	/^func_write_libtool_object ()$/;"	f
+func_xform	build/ltmain.sh	/^func_xform ()$/;"	f
+func_xform	config.status	/^func_xform ()\\$/;"	f
+func_xform	configure	/^func_xform ()\\$/;"	f
+func_xform	libtool	/^func_xform ()$/;"	f
+give_advice	build/missing	/^give_advice ()$/;"	f
+gmtime_r	src/iso8601.c	/^gmtime_r(const time_t *timep, struct tm *result)$/;"	f	file:
+handle_error	src/example.c	/^handle_error(struct mpd_connection *c)$/;"	f	file:
+host	Makefile	/^host = x86_64-pc-linux-gnu$/;"	m
+host	src/settings.c	/^	char *host;$/;"	m	struct:mpd_settings	file:
+host_alias	Makefile	/^host_alias = $/;"	m
+host_cpu	Makefile	/^host_cpu = x86_64$/;"	m
+host_os	Makefile	/^host_os = linux-gnu$/;"	m
+host_triplet	Makefile	/^host_triplet = x86_64-pc-linux-gnu$/;"	m
+host_vendor	Makefile	/^host_vendor = pc$/;"	m
+htmldir	Makefile	/^htmldir = ${docdir}$/;"	m
+id	src/output.c	/^	unsigned id;$/;"	m	struct:mpd_output	file:
+id	src/song.c	/^	unsigned id;$/;"	m	struct:mpd_song	file:
+idle_names	src/idle.c	/^static const char *const idle_names[] = {$/;"	v	file:
+ignore_case_char_equals	src/tag.c	/^ignore_case_char_equals(const char a, const char b)$/;"	f	file:
+ignore_case_string_equals	src/tag.c	/^ignore_case_string_equals(const char *a, const char *b)$/;"	f	file:
+ignore_errno	src/async.c	/^ignore_errno(int e)$/;"	f	file:
+ignore_errno	src/socket.c	/^ignore_errno(int e)$/;"	f	file:
+ignore_errno	src/sync.c	/^ignore_errno(int e)$/;"	f	file:
+includedir	Makefile	/^includedir = ${prefix}\/include$/;"	m
+info	src/entity.c	/^	} info;$/;"	m	struct:mpd_entity	typeref:union:mpd_entity::__anon1	file:
+infodir	Makefile	/^infodir = ${datarootdir}\/info$/;"	m
+input	src/async.c	/^	struct mpd_buffer input;$/;"	m	struct:mpd_async	typeref:struct:mpd_async::mpd_buffer	file:
+install_sh	Makefile	/^install_sh = ${SHELL} \/home\/rh\/my_code\/OpenWrt_Luci_Lua\/1_6.h12_dev\/libmpdclient\/build\/install-sh$/;"	m
+install_sh_DATA	Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m
+install_sh_PROGRAM	Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
+install_sh_SCRIPT	Makefile	/^install_sh_SCRIPT = $(install_sh) -c$/;"	m
+iso8601_datetime_format	src/iso8601.c	/^iso8601_datetime_format(char *buffer, size_t size, time_t t)$/;"	f
+iso8601_datetime_parse	src/iso8601.c	/^iso8601_datetime_parse(const char *input)$/;"	f
+kbit_rate	src/status.c	/^	unsigned kbit_rate;$/;"	m	struct:mpd_status	file:
+last_modified	src/directory.c	/^	time_t last_modified;$/;"	m	struct:mpd_directory	file:
+last_modified	src/playlist.c	/^	time_t last_modified;$/;"	m	struct:mpd_playlist	file:
+last_modified	src/song.c	/^	time_t last_modified;$/;"	m	struct:mpd_song	file:
+lib_LTLIBRARIES	Makefile	/^lib_LTLIBRARIES = src\/libmpdclient.la$/;"	m
+libdir	Makefile	/^libdir = ${exec_prefix}\/lib$/;"	m
+libexecdir	Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m
+localedir	Makefile	/^localedir = ${datarootdir}\/locale$/;"	m
+localstatedir	Makefile	/^localstatedir = ${prefix}\/var$/;"	m
+main	build/config.guess	/^		main()$/;"	f
+main	build/config.guess	/^	main ()$/;"	f
+main	src/example.c	/^int main(int argc, char ** argv) {$/;"	f
+main	test/main.c	/^main(int argc, char ** argv)$/;"	f
+main	test/t_iso8601.c	/^int main(mpd_unused int argc, mpd_unused char **argv)$/;"	f
+make_dummy_depfile	build/depcomp	/^make_dummy_depfile ()$/;"	f
+mandir	Makefile	/^mandir = ${datarootdir}\/man$/;"	m
+message	src/ierror.h	/^	char *message;$/;"	m	struct:mpd_error_info
+message	src/parser.c	/^			const char *message;$/;"	m	struct:mpd_parser::__anon2::__anon3	file:
+mixrampdb	src/status.c	/^	float mixrampdb;$/;"	m	struct:mpd_status	file:
+mixrampdelay	src/status.c	/^	float mixrampdelay;$/;"	m	struct:mpd_status	file:
+mkdir_p	Makefile	/^mkdir_p = $(MKDIR_P)$/;"	m
+mkinstalldirs	Makefile	/^mkinstalldirs = $(install_sh) -d$/;"	m
+mpd_async	src/async.c	/^struct mpd_async {$/;"	s	file:
+mpd_async_copy_error	src/async.c	/^mpd_async_copy_error(const struct mpd_async *async,$/;"	f
+mpd_async_event	include/mpd/async.h	/^enum mpd_async_event {$/;"	g
+mpd_async_event	tmp/include/mpd/async.h	/^enum mpd_async_event {$/;"	g
+mpd_async_events	src/async.c	/^mpd_async_events(const struct mpd_async *async)$/;"	f
+mpd_async_free	src/async.c	/^mpd_async_free(struct mpd_async *async)$/;"	f
+mpd_async_get_error	src/async.c	/^mpd_async_get_error(const struct mpd_async *async)$/;"	f
+mpd_async_get_error_message	src/async.c	/^mpd_async_get_error_message(const struct mpd_async *async)$/;"	f
+mpd_async_get_fd	src/async.c	/^mpd_async_get_fd(const struct mpd_async *async)$/;"	f
+mpd_async_get_system_error	src/async.c	/^mpd_async_get_system_error(const struct mpd_async *async)$/;"	f
+mpd_async_io	src/async.c	/^mpd_async_io(struct mpd_async *async, enum mpd_async_event events)$/;"	f
+mpd_async_new	src/async.c	/^mpd_async_new(int fd)$/;"	f
+mpd_async_read	src/async.c	/^mpd_async_read(struct mpd_async *async)$/;"	f	file:
+mpd_async_recv_line	src/async.c	/^mpd_async_recv_line(struct mpd_async *async)$/;"	f
+mpd_async_send_command	src/async.c	/^mpd_async_send_command(struct mpd_async *async, const char *command, ...)$/;"	f
+mpd_async_send_command_v	src/async.c	/^mpd_async_send_command_v(struct mpd_async *async, const char *command,$/;"	f
+mpd_async_set_keepalive	src/async.c	/^mpd_async_set_keepalive(struct mpd_async *async,$/;"	f
+mpd_async_write	src/async.c	/^mpd_async_write(struct mpd_async *async)$/;"	f	file:
+mpd_audio_format	include/mpd/audio_format.h	/^struct mpd_audio_format {$/;"	s
+mpd_audio_format	tmp/include/mpd/audio_format.h	/^struct mpd_audio_format {$/;"	s
+mpd_buffer	src/buffer.h	/^struct mpd_buffer {$/;"	s
+mpd_buffer_consume	src/buffer.h	/^mpd_buffer_consume(struct mpd_buffer *buffer, size_t nbytes)$/;"	f
+mpd_buffer_expand	src/buffer.h	/^mpd_buffer_expand(struct mpd_buffer *buffer, size_t nbytes)$/;"	f
+mpd_buffer_full	src/buffer.h	/^mpd_buffer_full(const struct mpd_buffer *buffer)$/;"	f
+mpd_buffer_init	src/buffer.h	/^mpd_buffer_init(struct mpd_buffer *buffer)$/;"	f
+mpd_buffer_move	src/buffer.h	/^mpd_buffer_move(struct mpd_buffer *buffer)$/;"	f
+mpd_buffer_read	src/buffer.h	/^mpd_buffer_read(struct mpd_buffer *buffer)$/;"	f
+mpd_buffer_room	src/buffer.h	/^mpd_buffer_room(const struct mpd_buffer *buffer)$/;"	f
+mpd_buffer_size	src/buffer.h	/^mpd_buffer_size(const struct mpd_buffer *buffer)$/;"	f
+mpd_buffer_write	src/buffer.h	/^mpd_buffer_write(struct mpd_buffer *buffer)$/;"	f
+mpd_check_host	src/settings.c	/^mpd_check_host(const char *host, char **password_r)$/;"	f	file:
+mpd_check_port	src/settings.c	/^mpd_check_port(unsigned port)$/;"	f	file:
+mpd_command_list_begin	src/list.c	/^mpd_command_list_begin(struct mpd_connection *connection, bool discrete_ok)$/;"	f
+mpd_command_list_end	src/list.c	/^mpd_command_list_end(struct mpd_connection *connection)$/;"	f
+mpd_connection	src/internal.h	/^struct mpd_connection {$/;"	s
+mpd_connection_clear_error	src/error.c	/^mpd_connection_clear_error(struct mpd_connection *connection)$/;"	f
+mpd_connection_cmp_server_version	src/connection.c	/^mpd_connection_cmp_server_version(const struct mpd_connection *connection,$/;"	f
+mpd_connection_free	src/connection.c	/^void mpd_connection_free(struct mpd_connection *connection)$/;"	f
+mpd_connection_get_async	src/connection.c	/^mpd_connection_get_async(struct mpd_connection *connection)$/;"	f
+mpd_connection_get_error	src/error.c	/^mpd_connection_get_error(const struct mpd_connection *connection)$/;"	f
+mpd_connection_get_error_message	src/error.c	/^mpd_connection_get_error_message(const struct mpd_connection *connection)$/;"	f
+mpd_connection_get_fd	src/connection.c	/^mpd_connection_get_fd(const struct mpd_connection *connection)$/;"	f
+mpd_connection_get_server_error	src/error.c	/^mpd_connection_get_server_error(const struct mpd_connection *connection)$/;"	f
+mpd_connection_get_server_error_location	src/error.c	/^mpd_connection_get_server_error_location(const struct mpd_connection *connection)$/;"	f
+mpd_connection_get_server_version	src/connection.c	/^mpd_connection_get_server_version(const struct mpd_connection *connection)$/;"	f
+mpd_connection_get_settings	src/connection.c	/^mpd_connection_get_settings(const struct mpd_connection *connection)$/;"	f
+mpd_connection_get_system_error	src/error.c	/^mpd_connection_get_system_error(const struct mpd_connection *connection)$/;"	f
+mpd_connection_new	src/connection.c	/^mpd_connection_new(const char *host, unsigned port, unsigned timeout_ms)$/;"	f
+mpd_connection_new_async	src/connection.c	/^mpd_connection_new_async(struct mpd_async *async, const char *welcome)$/;"	f
+mpd_connection_set_keepalive	src/connection.c	/^mpd_connection_set_keepalive(struct mpd_connection *connection,$/;"	f
+mpd_connection_set_timeout	src/connection.c	/^mpd_connection_set_timeout(struct mpd_connection *connection,$/;"	f
+mpd_connection_sync_error	src/connection.c	/^mpd_connection_sync_error(struct mpd_connection *connection)$/;"	f
+mpd_connection_timeout	src/internal.h	/^mpd_connection_timeout(const struct mpd_connection *connection)$/;"	f
+mpd_const	include/mpd/compiler.h	47;"	d
+mpd_const	include/mpd/compiler.h	58;"	d
+mpd_const	tmp/include/mpd/compiler.h	47;"	d
+mpd_const	tmp/include/mpd/compiler.h	58;"	d
+mpd_count_db_songs	src/search.c	/^mpd_count_db_songs(struct mpd_connection *connection)$/;"	f
+mpd_default_timeout_ms	src/settings.c	/^mpd_default_timeout_ms(void)$/;"	f	file:
+mpd_directory	src/directory.c	/^struct mpd_directory {$/;"	s	file:
+mpd_directory_begin	src/directory.c	/^mpd_directory_begin(const struct mpd_pair *pair)$/;"	f
+mpd_directory_dup	src/directory.c	/^mpd_directory_dup(const struct mpd_directory *directory)$/;"	f
+mpd_directory_feed	src/directory.c	/^mpd_directory_feed(struct mpd_directory *directory,$/;"	f
+mpd_directory_free	src/directory.c	/^void mpd_directory_free(struct mpd_directory *directory)$/;"	f
+mpd_directory_get_last_modified	src/directory.c	/^mpd_directory_get_last_modified(const struct mpd_directory *directory)$/;"	f
+mpd_directory_get_path	src/directory.c	/^mpd_directory_get_path(const struct mpd_directory *directory)$/;"	f
+mpd_directory_new	src/directory.c	/^mpd_directory_new(const char *path)$/;"	f	file:
+mpd_enqueue_pair	src/recv.c	/^mpd_enqueue_pair(struct mpd_connection *connection, struct mpd_pair *pair)$/;"	f
+mpd_entity	src/entity.c	/^struct mpd_entity {$/;"	s	file:
+mpd_entity_begin	src/entity.c	/^mpd_entity_begin(const struct mpd_pair *pair)$/;"	f
+mpd_entity_feed	src/entity.c	/^mpd_entity_feed(struct mpd_entity *entity, const struct mpd_pair *pair)$/;"	f
+mpd_entity_feed_first	src/entity.c	/^mpd_entity_feed_first(struct mpd_entity *entity, const struct mpd_pair *pair)$/;"	f	file:
+mpd_entity_free	src/entity.c	/^mpd_entity_free(struct mpd_entity *entity) {$/;"	f
+mpd_entity_get_directory	src/entity.c	/^mpd_entity_get_directory(const struct mpd_entity *entity)$/;"	f
+mpd_entity_get_playlist	src/entity.c	/^mpd_entity_get_playlist(const struct mpd_entity *entity)$/;"	f
+mpd_entity_get_song	src/entity.c	/^mpd_entity_get_song(const struct mpd_entity *entity)$/;"	f
+mpd_entity_get_type	src/entity.c	/^mpd_entity_get_type(const struct mpd_entity *entity)$/;"	f
+mpd_entity_type	include/mpd/entity.h	/^enum mpd_entity_type {$/;"	g
+mpd_entity_type	tmp/include/mpd/entity.h	/^enum mpd_entity_type {$/;"	g
+mpd_error	include/mpd/error.h	/^enum mpd_error {$/;"	g
+mpd_error	tmp/include/mpd/error.h	/^enum mpd_error {$/;"	g
+mpd_error_clear	src/ierror.h	/^mpd_error_clear(struct mpd_error_info *error)$/;"	f
+mpd_error_code	src/ierror.h	/^mpd_error_code(struct mpd_error_info *error, enum mpd_error code)$/;"	f
+mpd_error_copy	src/ierror.c	/^mpd_error_copy(struct mpd_error_info *dest, const struct mpd_error_info *src)$/;"	f
+mpd_error_deinit	src/ierror.c	/^mpd_error_deinit(struct mpd_error_info *error)$/;"	f
+mpd_error_entity	src/ierror.c	/^mpd_error_entity(struct mpd_error_info *error)$/;"	f
+mpd_error_errno	src/ierror.c	/^mpd_error_errno(struct mpd_error_info *error)$/;"	f
+mpd_error_get_message	src/ierror.h	/^mpd_error_get_message(const struct mpd_error_info *error)$/;"	f
+mpd_error_info	src/ierror.h	/^struct mpd_error_info {$/;"	s
+mpd_error_init	src/ierror.h	/^mpd_error_init(struct mpd_error_info *error)$/;"	f
+mpd_error_is_defined	src/ierror.h	/^mpd_error_is_defined(const struct mpd_error_info *error)$/;"	f
+mpd_error_is_fatal	src/ierror.h	/^mpd_error_is_fatal(const struct mpd_error_info *error)$/;"	f
+mpd_error_message	src/ierror.c	/^mpd_error_message(struct mpd_error_info *error, const char *message)$/;"	f
+mpd_error_message_n	src/ierror.c	/^mpd_error_message_n(struct mpd_error_info *error,$/;"	f
+mpd_error_printf	src/ierror.c	/^mpd_error_printf(struct mpd_error_info *error, const char *fmt, ...)$/;"	f
+mpd_error_server	src/ierror.h	/^mpd_error_server(struct mpd_error_info *error,$/;"	f
+mpd_error_system	src/ierror.h	/^mpd_error_system(struct mpd_error_info *error, int system_error_code)$/;"	f
+mpd_error_system_message	src/ierror.c	/^mpd_error_system_message(struct mpd_error_info *error, int code)$/;"	f
+mpd_flush	src/send.c	/^mpd_flush(struct mpd_connection *connection)$/;"	f
+mpd_idle	include/mpd/idle.h	/^enum mpd_idle {$/;"	g
+mpd_idle	tmp/include/mpd/idle.h	/^enum mpd_idle {$/;"	g
+mpd_idle_name	src/idle.c	/^mpd_idle_name(enum mpd_idle idle)$/;"	f
+mpd_idle_name_parse	src/idle.c	/^mpd_idle_name_parse(const char *name)$/;"	f
+mpd_idle_parse_pair	src/idle.c	/^mpd_idle_parse_pair(const struct mpd_pair *pair)$/;"	f
+mpd_malloc	include/mpd/compiler.h	45;"	d
+mpd_malloc	include/mpd/compiler.h	56;"	d
+mpd_malloc	tmp/include/mpd/compiler.h	45;"	d
+mpd_malloc	tmp/include/mpd/compiler.h	56;"	d
+mpd_message	src/message.c	/^struct mpd_message {$/;"	s	file:
+mpd_message_begin	src/message.c	/^mpd_message_begin(const struct mpd_pair *pair)$/;"	f
+mpd_message_feed	src/message.c	/^mpd_message_feed(struct mpd_message *output, const struct mpd_pair *pair)$/;"	f
+mpd_message_free	src/message.c	/^mpd_message_free(struct mpd_message *message)$/;"	f
+mpd_message_get_channel	src/message.c	/^mpd_message_get_channel(const struct mpd_message *message)$/;"	f
+mpd_message_get_text	src/message.c	/^mpd_message_get_text(const struct mpd_message *message)$/;"	f
+mpd_operator	include/mpd/search.h	/^enum mpd_operator {$/;"	g
+mpd_operator	tmp/include/mpd/search.h	/^enum mpd_operator {$/;"	g
+mpd_output	src/output.c	/^struct mpd_output {$/;"	s	file:
+mpd_output_begin	src/output.c	/^mpd_output_begin(const struct mpd_pair *pair)$/;"	f
+mpd_output_feed	src/output.c	/^mpd_output_feed(struct mpd_output *output, const struct mpd_pair *pair)$/;"	f
+mpd_output_free	src/output.c	/^mpd_output_free(struct mpd_output *output)$/;"	f
+mpd_output_get_enabled	src/output.c	/^mpd_output_get_enabled(const struct mpd_output *output)$/;"	f
+mpd_output_get_id	src/output.c	/^mpd_output_get_id(const struct mpd_output *output)$/;"	f
+mpd_output_get_name	src/output.c	/^mpd_output_get_name(const struct mpd_output *output)$/;"	f
+mpd_pair	include/mpd/pair.h	/^struct mpd_pair {$/;"	s
+mpd_pair	tmp/include/mpd/pair.h	/^struct mpd_pair {$/;"	s
+mpd_parse_host_password	src/settings.c	/^mpd_parse_host_password(const char *host, char **password_r)$/;"	f	file:
+mpd_parse_sticker	src/sticker.c	/^mpd_parse_sticker(const char *input, size_t *name_length_r)$/;"	f
+mpd_parse_welcome	src/connection.c	/^mpd_parse_welcome(struct mpd_connection *connection, const char *output)$/;"	f	file:
+mpd_parser	src/parser.c	/^struct mpd_parser {$/;"	s	file:
+mpd_parser_feed	src/parser.c	/^mpd_parser_feed(struct mpd_parser *parser, char *line)$/;"	f
+mpd_parser_free	src/parser.c	/^mpd_parser_free(struct mpd_parser *parser)$/;"	f
+mpd_parser_get_at	src/parser.c	/^mpd_parser_get_at(const struct mpd_parser *parser)$/;"	f
+mpd_parser_get_message	src/parser.c	/^mpd_parser_get_message(const struct mpd_parser *parser)$/;"	f
+mpd_parser_get_name	src/parser.c	/^mpd_parser_get_name(const struct mpd_parser *parser)$/;"	f
+mpd_parser_get_server_error	src/parser.c	/^mpd_parser_get_server_error(const struct mpd_parser *parser)$/;"	f
+mpd_parser_get_value	src/parser.c	/^mpd_parser_get_value(const struct mpd_parser *parser)$/;"	f
+mpd_parser_is_discrete	src/parser.c	/^mpd_parser_is_discrete(const struct mpd_parser *parser)$/;"	f
+mpd_parser_new	src/parser.c	/^mpd_parser_new(void)$/;"	f
+mpd_parser_result	include/mpd/parser.h	/^enum mpd_parser_result {$/;"	g
+mpd_parser_result	tmp/include/mpd/parser.h	/^enum mpd_parser_result {$/;"	g
+mpd_playlist	src/playlist.c	/^struct mpd_playlist {$/;"	s	file:
+mpd_playlist_begin	src/playlist.c	/^mpd_playlist_begin(const struct mpd_pair *pair)$/;"	f
+mpd_playlist_dup	src/playlist.c	/^mpd_playlist_dup(const struct mpd_playlist *playlist)$/;"	f
+mpd_playlist_feed	src/playlist.c	/^mpd_playlist_feed(struct mpd_playlist *playlist, const struct mpd_pair *pair)$/;"	f
+mpd_playlist_free	src/playlist.c	/^mpd_playlist_free(struct mpd_playlist *playlist)$/;"	f
+mpd_playlist_get_last_modified	src/playlist.c	/^mpd_playlist_get_last_modified(const struct mpd_playlist *playlist)$/;"	f
+mpd_playlist_get_path	src/playlist.c	/^mpd_playlist_get_path(const struct mpd_playlist *playlist)$/;"	f
+mpd_playlist_new	src/playlist.c	/^mpd_playlist_new(const char *path)$/;"	f	file:
+mpd_printf	include/mpd/compiler.h	49;"	d
+mpd_printf	include/mpd/compiler.h	60;"	d
+mpd_printf	tmp/include/mpd/compiler.h	49;"	d
+mpd_printf	tmp/include/mpd/compiler.h	60;"	d
+mpd_pure	include/mpd/compiler.h	46;"	d
+mpd_pure	include/mpd/compiler.h	57;"	d
+mpd_pure	tmp/include/mpd/compiler.h	46;"	d
+mpd_pure	tmp/include/mpd/compiler.h	57;"	d
+mpd_recv_channel_pair	include/mpd/message.h	/^mpd_recv_channel_pair(struct mpd_connection *connection)$/;"	f
+mpd_recv_channel_pair	tmp/include/mpd/message.h	/^mpd_recv_channel_pair(struct mpd_connection *connection)$/;"	f
+mpd_recv_command_pair	include/mpd/capabilities.h	/^mpd_recv_command_pair(struct mpd_connection *connection)$/;"	f
+mpd_recv_command_pair	tmp/include/mpd/capabilities.h	/^mpd_recv_command_pair(struct mpd_connection *connection)$/;"	f
+mpd_recv_directory	src/rdirectory.c	/^mpd_recv_directory(struct mpd_connection *connection)$/;"	f
+mpd_recv_entity	src/entity.c	/^mpd_recv_entity(struct mpd_connection *connection)$/;"	f
+mpd_recv_idle	src/idle.c	/^mpd_recv_idle(struct mpd_connection *connection, bool disable_timeout)$/;"	f
+mpd_recv_message	src/cmessage.c	/^mpd_recv_message(struct mpd_connection *connection)$/;"	f
+mpd_recv_output	src/coutput.c	/^mpd_recv_output(struct mpd_connection *connection)$/;"	f
+mpd_recv_pair	src/recv.c	/^mpd_recv_pair(struct mpd_connection *connection)$/;"	f
+mpd_recv_pair_named	src/recv.c	/^mpd_recv_pair_named(struct mpd_connection *connection, const char *name)$/;"	f
+mpd_recv_pair_tag	src/search.c	/^mpd_recv_pair_tag(struct mpd_connection *connection, enum mpd_tag_type type)$/;"	f
+mpd_recv_playlist	src/rplaylist.c	/^mpd_recv_playlist(struct mpd_connection *connection)$/;"	f
+mpd_recv_queue_change_brief	src/queue.c	/^mpd_recv_queue_change_brief(struct mpd_connection *connection,$/;"	f
+mpd_recv_song	src/song.c	/^mpd_recv_song(struct mpd_connection *connection)$/;"	f
+mpd_recv_song_id	src/queue.c	/^mpd_recv_song_id(struct mpd_connection *connection)$/;"	f
+mpd_recv_stats	src/cstats.c	/^mpd_recv_stats(struct mpd_connection *connection)$/;"	f
+mpd_recv_status	src/cstatus.c	/^mpd_recv_status(struct mpd_connection * connection)$/;"	f
+mpd_recv_sticker	src/sticker.c	/^mpd_recv_sticker(struct mpd_connection *connection)$/;"	f
+mpd_recv_tag_type_pair	include/mpd/capabilities.h	/^mpd_recv_tag_type_pair(struct mpd_connection *connection)$/;"	f
+mpd_recv_tag_type_pair	tmp/include/mpd/capabilities.h	/^mpd_recv_tag_type_pair(struct mpd_connection *connection)$/;"	f
+mpd_recv_update_id	src/database.c	/^mpd_recv_update_id(struct mpd_connection *connection)$/;"	f
+mpd_recv_url_scheme_pair	include/mpd/capabilities.h	/^mpd_recv_url_scheme_pair(struct mpd_connection *connection)$/;"	f
+mpd_recv_url_scheme_pair	tmp/include/mpd/capabilities.h	/^mpd_recv_url_scheme_pair(struct mpd_connection *connection)$/;"	f
+mpd_response_finish	src/response.c	/^mpd_response_finish(struct mpd_connection *connection)$/;"	f
+mpd_response_next	src/response.c	/^mpd_response_next(struct mpd_connection *connection)$/;"	f
+mpd_return_pair	src/recv.c	/^mpd_return_pair(struct mpd_connection *connection,$/;"	f
+mpd_return_sticker	src/sticker.c	/^mpd_return_sticker(struct mpd_connection *connection, struct mpd_pair *pair)$/;"	f
+mpd_run_add	src/queue.c	/^mpd_run_add(struct mpd_connection *connection, const char *uri)$/;"	f
+mpd_run_add_id	src/queue.c	/^mpd_run_add_id(struct mpd_connection *connection, const char *file)$/;"	f
+mpd_run_add_id_to	src/queue.c	/^mpd_run_add_id_to(struct mpd_connection *connection, const char *uri,$/;"	f
+mpd_run_change_volume	src/mixer.c	/^mpd_run_change_volume(struct mpd_connection *connection, int relative_volume)$/;"	f
+mpd_run_check	src/run.c	/^mpd_run_check(struct mpd_connection *connection)$/;"	f
+mpd_run_clear	src/queue.c	/^mpd_run_clear(struct mpd_connection *connection)$/;"	f
+mpd_run_clearerror	src/player.c	/^mpd_run_clearerror(struct mpd_connection *connection)$/;"	f
+mpd_run_consume	src/player.c	/^mpd_run_consume(struct mpd_connection *connection, bool mode)$/;"	f
+mpd_run_crossfade	src/player.c	/^mpd_run_crossfade(struct mpd_connection *connection, unsigned seconds)$/;"	f
+mpd_run_current_song	src/player.c	/^mpd_run_current_song(struct mpd_connection *connection)$/;"	f
+mpd_run_delete	src/queue.c	/^mpd_run_delete(struct mpd_connection *connection, unsigned pos)$/;"	f
+mpd_run_delete_id	src/queue.c	/^mpd_run_delete_id(struct mpd_connection *connection, unsigned id)$/;"	f
+mpd_run_delete_range	src/queue.c	/^mpd_run_delete_range(struct mpd_connection *connection,$/;"	f
+mpd_run_disable_output	src/coutput.c	/^mpd_run_disable_output(struct mpd_connection *connection, unsigned output_id)$/;"	f
+mpd_run_enable_output	src/coutput.c	/^mpd_run_enable_output(struct mpd_connection *connection, unsigned output_id)$/;"	f
+mpd_run_get_queue_song_id	src/queue.c	/^mpd_run_get_queue_song_id(struct mpd_connection *connection, unsigned id)$/;"	f
+mpd_run_get_queue_song_pos	src/queue.c	/^mpd_run_get_queue_song_pos(struct mpd_connection *connection, unsigned pos)$/;"	f
+mpd_run_idle	src/idle.c	/^mpd_run_idle(struct mpd_connection *connection)$/;"	f
+mpd_run_idle_mask	src/idle.c	/^mpd_run_idle_mask(struct mpd_connection *connection, enum mpd_idle mask)$/;"	f
+mpd_run_load	src/cplaylist.c	/^mpd_run_load(struct mpd_connection *connection, const char *name)$/;"	f
+mpd_run_mixrampdb	src/player.c	/^mpd_run_mixrampdb(struct mpd_connection *connection, float db)$/;"	f
+mpd_run_mixrampdelay	src/player.c	/^mpd_run_mixrampdelay(struct mpd_connection *connection, float seconds)$/;"	f
+mpd_run_move	src/queue.c	/^mpd_run_move(struct mpd_connection *connection, unsigned from, unsigned to)$/;"	f
+mpd_run_move_id	src/queue.c	/^mpd_run_move_id(struct mpd_connection *connection, unsigned from, unsigned to)$/;"	f
+mpd_run_move_range	src/queue.c	/^mpd_run_move_range(struct mpd_connection *connection,$/;"	f
+mpd_run_next	src/player.c	/^mpd_run_next(struct mpd_connection *connection)$/;"	f
+mpd_run_noidle	src/idle.c	/^mpd_run_noidle(struct mpd_connection *connection)$/;"	f
+mpd_run_password	src/password.c	/^mpd_run_password(struct mpd_connection *connection, const char *password)$/;"	f
+mpd_run_pause	src/player.c	/^mpd_run_pause(struct mpd_connection *connection, bool mode)$/;"	f
+mpd_run_play	src/player.c	/^mpd_run_play(struct mpd_connection *connection)$/;"	f
+mpd_run_play_id	src/player.c	/^mpd_run_play_id(struct mpd_connection *connection, unsigned song_id)$/;"	f
+mpd_run_play_pos	src/player.c	/^mpd_run_play_pos(struct mpd_connection *connection, unsigned song_pos)$/;"	f
+mpd_run_playlist_add	src/cplaylist.c	/^mpd_run_playlist_add(struct mpd_connection *connection,$/;"	f
+mpd_run_playlist_clear	src/cplaylist.c	/^mpd_run_playlist_clear(struct mpd_connection *connection, const char *name)$/;"	f
+mpd_run_playlist_delete	src/cplaylist.c	/^mpd_run_playlist_delete(struct mpd_connection *connection,$/;"	f
+mpd_run_previous	src/player.c	/^mpd_run_previous(struct mpd_connection *connection)$/;"	f
+mpd_run_prio	src/queue.c	/^mpd_run_prio(struct mpd_connection *connection, int priority,$/;"	f
+mpd_run_prio_id	src/queue.c	/^mpd_run_prio_id(struct mpd_connection *connection, int priority,$/;"	f
+mpd_run_prio_range	src/queue.c	/^mpd_run_prio_range(struct mpd_connection *connection, int priority,$/;"	f
+mpd_run_random	src/player.c	/^mpd_run_random(struct mpd_connection *connection, bool mode)$/;"	f
+mpd_run_rename	src/cplaylist.c	/^mpd_run_rename(struct mpd_connection *connection,$/;"	f
+mpd_run_repeat	src/player.c	/^mpd_run_repeat(struct mpd_connection *connection, bool mode)$/;"	f
+mpd_run_rescan	src/database.c	/^mpd_run_rescan(struct mpd_connection *connection, const char *path)$/;"	f
+mpd_run_rm	src/cplaylist.c	/^mpd_run_rm(struct mpd_connection *connection, const char *name)$/;"	f
+mpd_run_save	src/cplaylist.c	/^mpd_run_save(struct mpd_connection *connection, const char *name)$/;"	f
+mpd_run_seek_id	src/player.c	/^mpd_run_seek_id(struct mpd_connection *connection,$/;"	f
+mpd_run_seek_pos	src/player.c	/^mpd_run_seek_pos(struct mpd_connection *connection,$/;"	f
+mpd_run_send_message	src/cmessage.c	/^mpd_run_send_message(struct mpd_connection *connection,$/;"	f
+mpd_run_set_volume	src/mixer.c	/^mpd_run_set_volume(struct mpd_connection *connection, unsigned volume)$/;"	f
+mpd_run_shuffle	src/queue.c	/^mpd_run_shuffle(struct mpd_connection *connection)$/;"	f
+mpd_run_shuffle_range	src/queue.c	/^mpd_run_shuffle_range(struct mpd_connection *connection,$/;"	f
+mpd_run_single	src/player.c	/^mpd_run_single(struct mpd_connection *connection, bool mode)$/;"	f
+mpd_run_stats	src/cstats.c	/^mpd_run_stats(struct mpd_connection *connection)$/;"	f
+mpd_run_status	src/cstatus.c	/^mpd_run_status(struct mpd_connection *connection)$/;"	f
+mpd_run_sticker_delete	src/sticker.c	/^mpd_run_sticker_delete(struct mpd_connection *connection, const char *type,$/;"	f
+mpd_run_sticker_set	src/sticker.c	/^mpd_run_sticker_set(struct mpd_connection *connection, const char *type,$/;"	f
+mpd_run_stop	src/player.c	/^mpd_run_stop(struct mpd_connection *connection)$/;"	f
+mpd_run_subscribe	src/cmessage.c	/^mpd_run_subscribe(struct mpd_connection *connection, const char *channel)$/;"	f
+mpd_run_swap	src/queue.c	/^mpd_run_swap(struct mpd_connection *connection, unsigned pos1, unsigned pos2)$/;"	f
+mpd_run_swap_id	src/queue.c	/^mpd_run_swap_id(struct mpd_connection *connection, unsigned id1, unsigned id2)$/;"	f
+mpd_run_toggle_output	src/coutput.c	/^mpd_run_toggle_output(struct mpd_connection *connection, unsigned output_id)$/;"	f
+mpd_run_toggle_pause	src/player.c	/^mpd_run_toggle_pause(struct mpd_connection *connection)$/;"	f
+mpd_run_unsubscribe	src/cmessage.c	/^mpd_run_unsubscribe(struct mpd_connection *connection, const char *channel)$/;"	f
+mpd_run_update	src/database.c	/^mpd_run_update(struct mpd_connection *connection, const char *path)$/;"	f
+mpd_sanitize_arg	src/search.c	/^mpd_sanitize_arg(const char *src)$/;"	f	file:
+mpd_search_add_any_tag_constraint	src/search.c	/^mpd_search_add_any_tag_constraint(struct mpd_connection *connection,$/;"	f
+mpd_search_add_base_constraint	src/search.c	/^mpd_search_add_base_constraint(struct mpd_connection *connection,$/;"	f
+mpd_search_add_constraint	src/search.c	/^mpd_search_add_constraint(struct mpd_connection *connection,$/;"	f	file:
+mpd_search_add_db_songs	src/search.c	/^mpd_search_add_db_songs(struct mpd_connection *connection, bool exact)$/;"	f
+mpd_search_add_modified_since_constraint	src/search.c	/^mpd_search_add_modified_since_constraint(struct mpd_connection *connection,$/;"	f
+mpd_search_add_tag_constraint	src/search.c	/^mpd_search_add_tag_constraint(struct mpd_connection *connection,$/;"	f
+mpd_search_add_uri_constraint	src/search.c	/^mpd_search_add_uri_constraint(struct mpd_connection *connection,$/;"	f
+mpd_search_add_window	src/search.c	/^mpd_search_add_window(struct mpd_connection *connection,$/;"	f
+mpd_search_cancel	src/search.c	/^mpd_search_cancel(struct mpd_connection *connection)$/;"	f
+mpd_search_commit	src/search.c	/^mpd_search_commit(struct mpd_connection *connection)$/;"	f
+mpd_search_db_songs	src/search.c	/^mpd_search_db_songs(struct mpd_connection *connection, bool exact)$/;"	f
+mpd_search_db_tags	src/search.c	/^mpd_search_db_tags(struct mpd_connection *connection, enum mpd_tag_type type)$/;"	f
+mpd_search_init	src/search.c	/^mpd_search_init(struct mpd_connection *connection, const char *cmd)$/;"	f	file:
+mpd_search_prepare_append	src/search.c	/^mpd_search_prepare_append(struct mpd_connection *connection,$/;"	f	file:
+mpd_search_queue_songs	src/search.c	/^mpd_search_queue_songs(struct mpd_connection *connection, bool exact)$/;"	f
+mpd_send_add	src/queue.c	/^mpd_send_add(struct mpd_connection *connection, const char *file)$/;"	f
+mpd_send_add_id	src/queue.c	/^mpd_send_add_id(struct mpd_connection *connection, const char *file)$/;"	f
+mpd_send_add_id_to	src/queue.c	/^mpd_send_add_id_to(struct mpd_connection *connection, const char *uri,$/;"	f
+mpd_send_allowed_commands	src/capabilities.c	/^mpd_send_allowed_commands(struct mpd_connection *connection)$/;"	f
+mpd_send_change_volume	src/mixer.c	/^mpd_send_change_volume(struct mpd_connection *connection, int relative_volume)$/;"	f
+mpd_send_channels	src/cmessage.c	/^mpd_send_channels(struct mpd_connection *connection)$/;"	f
+mpd_send_clear	src/queue.c	/^mpd_send_clear(struct mpd_connection *connection)$/;"	f
+mpd_send_clearerror	src/player.c	/^mpd_send_clearerror(struct mpd_connection *connection)$/;"	f
+mpd_send_command	src/send.c	/^mpd_send_command(struct mpd_connection *connection, const char *command, ...)$/;"	f
+mpd_send_command2	src/send.c	/^mpd_send_command2(struct mpd_connection *connection, const char *command)$/;"	f
+mpd_send_consume	src/player.c	/^mpd_send_consume(struct mpd_connection *connection, bool mode)$/;"	f
+mpd_send_crossfade	src/player.c	/^mpd_send_crossfade(struct mpd_connection *connection, unsigned seconds)$/;"	f
+mpd_send_current_song	src/player.c	/^mpd_send_current_song(struct mpd_connection *connection)$/;"	f
+mpd_send_delete	src/queue.c	/^mpd_send_delete(struct mpd_connection *connection, unsigned pos)$/;"	f
+mpd_send_delete_id	src/queue.c	/^mpd_send_delete_id(struct mpd_connection *connection, unsigned id)$/;"	f
+mpd_send_delete_range	src/queue.c	/^mpd_send_delete_range(struct mpd_connection *connection,$/;"	f
+mpd_send_disable_output	src/coutput.c	/^mpd_send_disable_output(struct mpd_connection *connection, unsigned output_id)$/;"	f
+mpd_send_disallowed_commands	src/capabilities.c	/^mpd_send_disallowed_commands(struct mpd_connection *connection)$/;"	f
+mpd_send_enable_output	src/coutput.c	/^mpd_send_enable_output(struct mpd_connection *connection, unsigned output_id)$/;"	f
+mpd_send_float_command	src/send.c	/^mpd_send_float_command(struct mpd_connection *connection, const char *command,$/;"	f
+mpd_send_get_queue_song_id	src/queue.c	/^mpd_send_get_queue_song_id(struct mpd_connection *connection, unsigned id)$/;"	f
+mpd_send_get_queue_song_pos	src/queue.c	/^mpd_send_get_queue_song_pos(struct mpd_connection *connection, unsigned pos)$/;"	f
+mpd_send_i_range_command	src/send.c	/^mpd_send_i_range_command(struct mpd_connection *connection,$/;"	f
+mpd_send_idle	src/idle.c	/^mpd_send_idle(struct mpd_connection *connection)$/;"	f
+mpd_send_idle_mask	src/idle.c	/^mpd_send_idle_mask(struct mpd_connection *connection, enum mpd_idle mask)$/;"	f
+mpd_send_int2_command	src/send.c	/^mpd_send_int2_command(struct mpd_connection *connection, const char *command,$/;"	f
+mpd_send_int3_command	src/send.c	/^mpd_send_int3_command(struct mpd_connection *connection, const char *command,$/;"	f
+mpd_send_int_command	src/send.c	/^mpd_send_int_command(struct mpd_connection *connection, const char *command,$/;"	f
+mpd_send_list_all	src/database.c	/^mpd_send_list_all(struct mpd_connection *connection, const char *dir)$/;"	f
+mpd_send_list_all_meta	src/database.c	/^mpd_send_list_all_meta(struct mpd_connection *connection, const char *dir)$/;"	f
+mpd_send_list_meta	src/database.c	/^mpd_send_list_meta(struct mpd_connection *connection, const char *dir)$/;"	f
+mpd_send_list_playlist	src/cplaylist.c	/^mpd_send_list_playlist(struct mpd_connection *connection, const char *name)$/;"	f
+mpd_send_list_playlist_meta	src/cplaylist.c	/^mpd_send_list_playlist_meta(struct mpd_connection *connection, const char *name)$/;"	f
+mpd_send_list_playlists	src/cplaylist.c	/^mpd_send_list_playlists(struct mpd_connection *connection)$/;"	f
+mpd_send_list_queue_meta	src/queue.c	/^mpd_send_list_queue_meta(struct mpd_connection *connection)$/;"	f
+mpd_send_list_queue_range_meta	src/queue.c	/^mpd_send_list_queue_range_meta(struct mpd_connection *connection,$/;"	f
+mpd_send_list_tag_types	src/capabilities.c	/^mpd_send_list_tag_types(struct mpd_connection *connection)$/;"	f
+mpd_send_list_url_schemes	src/capabilities.c	/^mpd_send_list_url_schemes(struct mpd_connection *connection)$/;"	f
+mpd_send_ll_command	src/send.c	/^mpd_send_ll_command(struct mpd_connection *connection, const char *command,$/;"	f
+mpd_send_load	src/cplaylist.c	/^mpd_send_load(struct mpd_connection *connection, const char *name)$/;"	f
+mpd_send_mixrampdb	src/player.c	/^mpd_send_mixrampdb(struct mpd_connection *connection, float db)$/;"	f
+mpd_send_mixrampdelay	src/player.c	/^mpd_send_mixrampdelay(struct mpd_connection *connection, float seconds)$/;"	f
+mpd_send_move	src/queue.c	/^mpd_send_move(struct mpd_connection *connection, unsigned from, unsigned to)$/;"	f
+mpd_send_move_id	src/queue.c	/^mpd_send_move_id(struct mpd_connection *connection, unsigned from, unsigned to)$/;"	f
+mpd_send_move_range	src/queue.c	/^mpd_send_move_range(struct mpd_connection *connection,$/;"	f
+mpd_send_next	src/player.c	/^mpd_send_next(struct mpd_connection *connection)$/;"	f
+mpd_send_noidle	src/idle.c	/^mpd_send_noidle(struct mpd_connection *connection)$/;"	f
+mpd_send_outputs	src/coutput.c	/^mpd_send_outputs(struct mpd_connection *connection)$/;"	f
+mpd_send_password	src/password.c	/^mpd_send_password(struct mpd_connection *connection, const char *password)$/;"	f
+mpd_send_pause	src/player.c	/^mpd_send_pause(struct mpd_connection *connection, bool mode)$/;"	f
+mpd_send_play	src/player.c	/^mpd_send_play(struct mpd_connection *connection)$/;"	f
+mpd_send_play_id	src/player.c	/^mpd_send_play_id(struct mpd_connection *connection, unsigned id)$/;"	f
+mpd_send_play_pos	src/player.c	/^mpd_send_play_pos(struct mpd_connection *connection, unsigned song_pos)$/;"	f
+mpd_send_playlist_add	src/cplaylist.c	/^mpd_send_playlist_add(struct mpd_connection *connection, const char *name,$/;"	f
+mpd_send_playlist_clear	src/cplaylist.c	/^mpd_send_playlist_clear(struct mpd_connection *connection, const char *name)$/;"	f
+mpd_send_playlist_delete	src/cplaylist.c	/^mpd_send_playlist_delete(struct mpd_connection *connection, const char *name,$/;"	f
+mpd_send_playlist_move	src/cplaylist.c	/^mpd_send_playlist_move(struct mpd_connection *connection, const char *name,$/;"	f
+mpd_send_previous	src/player.c	/^mpd_send_previous(struct mpd_connection *connection)$/;"	f
+mpd_send_prio	src/queue.c	/^mpd_send_prio(struct mpd_connection *connection, int priority,$/;"	f
+mpd_send_prio_id	src/queue.c	/^mpd_send_prio_id(struct mpd_connection *connection, int priority,$/;"	f
+mpd_send_prio_range	src/queue.c	/^mpd_send_prio_range(struct mpd_connection *connection, int priority,$/;"	f
+mpd_send_queue_changes_brief	src/queue.c	/^mpd_send_queue_changes_brief(struct mpd_connection *connection,$/;"	f
+mpd_send_queue_changes_meta	src/queue.c	/^mpd_send_queue_changes_meta(struct mpd_connection *connection,$/;"	f
+mpd_send_random	src/player.c	/^mpd_send_random(struct mpd_connection *connection, bool mode)$/;"	f
+mpd_send_range_command	src/send.c	/^mpd_send_range_command(struct mpd_connection *connection, const char *command,$/;"	f
+mpd_send_range_u_command	src/send.c	/^mpd_send_range_u_command(struct mpd_connection *connection,$/;"	f
+mpd_send_read_comments	src/database.c	/^mpd_send_read_comments(struct mpd_connection *connection, const char *path)$/;"	f
+mpd_send_read_messages	src/cmessage.c	/^mpd_send_read_messages(struct mpd_connection *connection)$/;"	f
+mpd_send_rename	src/cplaylist.c	/^mpd_send_rename(struct mpd_connection *connection,$/;"	f
+mpd_send_repeat	src/player.c	/^mpd_send_repeat(struct mpd_connection *connection, bool mode)$/;"	f
+mpd_send_rescan	src/database.c	/^mpd_send_rescan(struct mpd_connection *connection, const char *path)$/;"	f
+mpd_send_rm	src/cplaylist.c	/^mpd_send_rm(struct mpd_connection *connection, const char *name)$/;"	f
+mpd_send_s_u_command	src/send.c	/^mpd_send_s_u_command(struct mpd_connection *connection, const char *command,$/;"	f
+mpd_send_save	src/cplaylist.c	/^mpd_send_save(struct mpd_connection *connection, const char *name)$/;"	f
+mpd_send_seek_id	src/player.c	/^mpd_send_seek_id(struct mpd_connection *connection, unsigned id, unsigned t)$/;"	f
+mpd_send_seek_pos	src/player.c	/^mpd_send_seek_pos(struct mpd_connection *connection,$/;"	f
+mpd_send_send_message	src/cmessage.c	/^mpd_send_send_message(struct mpd_connection *connection,$/;"	f
+mpd_send_set_volume	src/mixer.c	/^mpd_send_set_volume(struct mpd_connection *connection, unsigned volume)$/;"	f
+mpd_send_shuffle	src/queue.c	/^mpd_send_shuffle(struct mpd_connection *connection)$/;"	f
+mpd_send_shuffle_range	src/queue.c	/^mpd_send_shuffle_range(struct mpd_connection *connection, unsigned start, unsigned end)$/;"	f
+mpd_send_single	src/player.c	/^mpd_send_single(struct mpd_connection *connection, bool mode)$/;"	f
+mpd_send_stats	src/cstats.c	/^mpd_send_stats(struct mpd_connection *connection)$/;"	f
+mpd_send_status	src/cstatus.c	/^mpd_send_status(struct mpd_connection * connection)$/;"	f
+mpd_send_sticker_delete	src/sticker.c	/^mpd_send_sticker_delete(struct mpd_connection *connection, const char *type,$/;"	f
+mpd_send_sticker_find	src/sticker.c	/^mpd_send_sticker_find(struct mpd_connection *connection, const char *type,$/;"	f
+mpd_send_sticker_get	src/sticker.c	/^mpd_send_sticker_get(struct mpd_connection *connection, const char *type,$/;"	f
+mpd_send_sticker_list	src/sticker.c	/^mpd_send_sticker_list(struct mpd_connection *connection, const char *type, const char *uri)$/;"	f
+mpd_send_sticker_set	src/sticker.c	/^mpd_send_sticker_set(struct mpd_connection *connection, const char *type,$/;"	f
+mpd_send_stop	src/player.c	/^mpd_send_stop(struct mpd_connection *connection)$/;"	f
+mpd_send_subscribe	src/cmessage.c	/^mpd_send_subscribe(struct mpd_connection *connection, const char *channel)$/;"	f
+mpd_send_swap	src/queue.c	/^mpd_send_swap(struct mpd_connection *connection, unsigned pos1, unsigned pos2)$/;"	f
+mpd_send_swap_id	src/queue.c	/^mpd_send_swap_id(struct mpd_connection *connection, unsigned id1, unsigned id2)$/;"	f
+mpd_send_toggle_output	src/coutput.c	/^mpd_send_toggle_output(struct mpd_connection *connection, unsigned output_id)$/;"	f
+mpd_send_toggle_pause	src/player.c	/^mpd_send_toggle_pause(struct mpd_connection *connection)$/;"	f
+mpd_send_unsubscribe	src/cmessage.c	/^mpd_send_unsubscribe(struct mpd_connection *connection, const char *channel)$/;"	f
+mpd_send_update	src/database.c	/^mpd_send_update(struct mpd_connection *connection, const char *path)$/;"	f
+mpd_sentinel	include/mpd/compiler.h	48;"	d
+mpd_sentinel	include/mpd/compiler.h	59;"	d
+mpd_sentinel	tmp/include/mpd/compiler.h	48;"	d
+mpd_sentinel	tmp/include/mpd/compiler.h	59;"	d
+mpd_server_error	include/mpd/protocol.h	/^enum mpd_server_error {$/;"	g
+mpd_server_error	tmp/include/mpd/protocol.h	/^enum mpd_server_error {$/;"	g
+mpd_settings	src/settings.c	/^struct mpd_settings {$/;"	s	file:
+mpd_settings_free	src/settings.c	/^mpd_settings_free(struct mpd_settings *settings)$/;"	f
+mpd_settings_get_host	src/settings.c	/^mpd_settings_get_host(const struct mpd_settings *settings)$/;"	f
+mpd_settings_get_password	src/settings.c	/^mpd_settings_get_password(const struct mpd_settings *settings)$/;"	f
+mpd_settings_get_port	src/settings.c	/^mpd_settings_get_port(const struct mpd_settings *settings)$/;"	f
+mpd_settings_get_timeout_ms	src/settings.c	/^mpd_settings_get_timeout_ms(const struct mpd_settings *settings)$/;"	f
+mpd_settings_new	src/settings.c	/^mpd_settings_new(const char *host, unsigned port, unsigned timeout_ms,$/;"	f
+mpd_socket_close	src/socket.c	/^mpd_socket_close(int fd)$/;"	f
+mpd_socket_connect	src/socket.c	/^mpd_socket_connect(const char *host, unsigned port, const struct timeval *tv0,$/;"	f
+mpd_socket_errno	src/socket.h	/^mpd_socket_errno(void)$/;"	f
+mpd_socket_global_init	src/socket.c	/^mpd_socket_global_init(struct mpd_error_info *error)$/;"	f
+mpd_socket_global_init	src/socket.h	/^mpd_socket_global_init(struct mpd_error_info *error)$/;"	f
+mpd_socket_keepalive	src/socket.c	/^mpd_socket_keepalive(int fd, bool keepalive)$/;"	f
+mpd_socket_wait	src/socket.c	/^mpd_socket_wait(unsigned fd, struct timeval *tv)$/;"	f	file:
+mpd_socket_wait_connected	src/socket.c	/^mpd_socket_wait_connected(int fd, struct timeval *tv)$/;"	f	file:
+mpd_song	src/song.c	/^struct mpd_song {$/;"	s	file:
+mpd_song_add_tag	src/song.c	/^mpd_song_add_tag(struct mpd_song *song,$/;"	f	file:
+mpd_song_begin	src/song.c	/^mpd_song_begin(const struct mpd_pair *pair)$/;"	f
+mpd_song_clear_tag	src/song.c	/^mpd_song_clear_tag(struct mpd_song *song, enum mpd_tag_type type)$/;"	f	file:
+mpd_song_dup	src/song.c	/^mpd_song_dup(const struct mpd_song *song)$/;"	f
+mpd_song_feed	src/song.c	/^mpd_song_feed(struct mpd_song *song, const struct mpd_pair *pair)$/;"	f
+mpd_song_free	src/song.c	/^void mpd_song_free(struct mpd_song *song) {$/;"	f
+mpd_song_get_duration	src/song.c	/^mpd_song_get_duration(const struct mpd_song *song)$/;"	f
+mpd_song_get_duration_ms	src/song.c	/^mpd_song_get_duration_ms(const struct mpd_song *song)$/;"	f
+mpd_song_get_end	src/song.c	/^mpd_song_get_end(const struct mpd_song *song)$/;"	f
+mpd_song_get_id	src/song.c	/^mpd_song_get_id(const struct mpd_song *song)$/;"	f
+mpd_song_get_last_modified	src/song.c	/^mpd_song_get_last_modified(const struct mpd_song *song)$/;"	f
+mpd_song_get_pos	src/song.c	/^mpd_song_get_pos(const struct mpd_song *song)$/;"	f
+mpd_song_get_prio	src/song.c	/^mpd_song_get_prio(const struct mpd_song *song)$/;"	f
+mpd_song_get_start	src/song.c	/^mpd_song_get_start(const struct mpd_song *song)$/;"	f
+mpd_song_get_tag	src/song.c	/^mpd_song_get_tag(const struct mpd_song *song,$/;"	f
+mpd_song_get_uri	src/song.c	/^mpd_song_get_uri(const struct mpd_song *song)$/;"	f
+mpd_song_new	src/song.c	/^mpd_song_new(const char *uri)$/;"	f	file:
+mpd_song_parse_range	src/song.c	/^mpd_song_parse_range(struct mpd_song *song, const char *value)$/;"	f	file:
+mpd_song_set_duration	src/song.c	/^mpd_song_set_duration(struct mpd_song *song, unsigned duration)$/;"	f	file:
+mpd_song_set_duration_ms	src/song.c	/^mpd_song_set_duration_ms(struct mpd_song *song, unsigned duration_ms)$/;"	f	file:
+mpd_song_set_id	src/song.c	/^mpd_song_set_id(struct mpd_song *song, unsigned id)$/;"	f	file:
+mpd_song_set_last_modified	src/song.c	/^mpd_song_set_last_modified(struct mpd_song *song, time_t mtime)$/;"	f	file:
+mpd_song_set_pos	src/song.c	/^mpd_song_set_pos(struct mpd_song *song, unsigned pos)$/;"	f
+mpd_song_set_prio	src/song.c	/^mpd_song_set_prio(struct mpd_song *song, unsigned prio)$/;"	f	file:
+mpd_state	include/mpd/status.h	/^enum mpd_state {$/;"	g
+mpd_state	tmp/include/mpd/status.h	/^enum mpd_state {$/;"	g
+mpd_stats	src/stats.c	/^struct mpd_stats {$/;"	s	file:
+mpd_stats_begin	src/stats.c	/^mpd_stats_begin(void)$/;"	f
+mpd_stats_feed	src/stats.c	/^mpd_stats_feed(struct mpd_stats *stats, const struct mpd_pair *pair)$/;"	f
+mpd_stats_free	src/stats.c	/^void mpd_stats_free(struct mpd_stats * stats) {$/;"	f
+mpd_stats_get_db_play_time	src/stats.c	/^unsigned long mpd_stats_get_db_play_time(const struct mpd_stats * stats)$/;"	f
+mpd_stats_get_db_update_time	src/stats.c	/^unsigned long mpd_stats_get_db_update_time(const struct mpd_stats * stats)$/;"	f
+mpd_stats_get_number_of_albums	src/stats.c	/^mpd_stats_get_number_of_albums(const struct mpd_stats * stats)$/;"	f
+mpd_stats_get_number_of_artists	src/stats.c	/^mpd_stats_get_number_of_artists(const struct mpd_stats * stats)$/;"	f
+mpd_stats_get_number_of_songs	src/stats.c	/^mpd_stats_get_number_of_songs(const struct mpd_stats * stats)$/;"	f
+mpd_stats_get_play_time	src/stats.c	/^unsigned long mpd_stats_get_play_time(const struct mpd_stats * stats)$/;"	f
+mpd_stats_get_uptime	src/stats.c	/^unsigned long mpd_stats_get_uptime(const struct mpd_stats * stats)$/;"	f
+mpd_status	src/status.c	/^struct mpd_status {$/;"	s	file:
+mpd_status_begin	src/status.c	/^mpd_status_begin(void)$/;"	f
+mpd_status_feed	src/status.c	/^mpd_status_feed(struct mpd_status *status, const struct mpd_pair *pair)$/;"	f
+mpd_status_free	src/status.c	/^void mpd_status_free(struct mpd_status * status) {$/;"	f
+mpd_status_get_audio_format	src/status.c	/^mpd_status_get_audio_format(const struct mpd_status *status)$/;"	f
+mpd_status_get_consume	src/status.c	/^mpd_status_get_consume(const struct mpd_status *status)$/;"	f
+mpd_status_get_crossfade	src/status.c	/^mpd_status_get_crossfade(const struct mpd_status *status)$/;"	f
+mpd_status_get_elapsed_ms	src/status.c	/^mpd_status_get_elapsed_ms(const struct mpd_status *status)$/;"	f
+mpd_status_get_elapsed_time	src/status.c	/^mpd_status_get_elapsed_time(const struct mpd_status *status)$/;"	f
+mpd_status_get_error	src/status.c	/^mpd_status_get_error(const struct mpd_status *status)$/;"	f
+mpd_status_get_kbit_rate	src/status.c	/^mpd_status_get_kbit_rate(const struct mpd_status *status)$/;"	f
+mpd_status_get_mixrampdb	src/status.c	/^mpd_status_get_mixrampdb(const struct mpd_status *status)$/;"	f
+mpd_status_get_mixrampdelay	src/status.c	/^mpd_status_get_mixrampdelay(const struct mpd_status *status)$/;"	f
+mpd_status_get_next_song_id	src/status.c	/^mpd_status_get_next_song_id(const struct mpd_status *status)$/;"	f
+mpd_status_get_next_song_pos	src/status.c	/^mpd_status_get_next_song_pos(const struct mpd_status *status)$/;"	f
+mpd_status_get_queue_length	src/status.c	/^mpd_status_get_queue_length(const struct mpd_status *status)$/;"	f
+mpd_status_get_queue_version	src/status.c	/^mpd_status_get_queue_version(const struct mpd_status *status)$/;"	f
+mpd_status_get_random	src/status.c	/^mpd_status_get_random(const struct mpd_status *status)$/;"	f
+mpd_status_get_repeat	src/status.c	/^mpd_status_get_repeat(const struct mpd_status *status)$/;"	f
+mpd_status_get_single	src/status.c	/^mpd_status_get_single(const struct mpd_status *status)$/;"	f
+mpd_status_get_song_id	src/status.c	/^mpd_status_get_song_id(const struct mpd_status *status)$/;"	f
+mpd_status_get_song_pos	src/status.c	/^mpd_status_get_song_pos(const struct mpd_status *status)$/;"	f
+mpd_status_get_state	src/status.c	/^mpd_status_get_state(const struct mpd_status *status)$/;"	f
+mpd_status_get_total_time	src/status.c	/^mpd_status_get_total_time(const struct mpd_status *status)$/;"	f
+mpd_status_get_update_id	src/status.c	/^mpd_status_get_update_id(const struct mpd_status *status)$/;"	f
+mpd_status_get_volume	src/status.c	/^int mpd_status_get_volume(const struct mpd_status *status)$/;"	f
+mpd_sync_flush	src/sync.c	/^mpd_sync_flush(struct mpd_async *async, const struct timeval *tv0)$/;"	f
+mpd_sync_io	src/sync.c	/^mpd_sync_io(struct mpd_async *async, struct timeval *tv)$/;"	f	file:
+mpd_sync_poll	src/sync.c	/^mpd_sync_poll(struct mpd_async *async, struct timeval *tv)$/;"	f	file:
+mpd_sync_recv_line	src/sync.c	/^mpd_sync_recv_line(struct mpd_async *async, const struct timeval *tv0)$/;"	f
+mpd_sync_send_command	src/sync.c	/^mpd_sync_send_command(struct mpd_async *async, const struct timeval *tv,$/;"	f
+mpd_sync_send_command_v	src/sync.c	/^mpd_sync_send_command_v(struct mpd_async *async, const struct timeval *tv0,$/;"	f
+mpd_tag_name	src/tag.c	/^mpd_tag_name(enum mpd_tag_type type)$/;"	f
+mpd_tag_name_iparse	src/tag.c	/^mpd_tag_name_iparse(const char *name)$/;"	f
+mpd_tag_name_parse	src/tag.c	/^mpd_tag_name_parse(const char *name)$/;"	f
+mpd_tag_type	include/mpd/tag.h	/^enum mpd_tag_type$/;"	g
+mpd_tag_type	tmp/include/mpd/tag.h	/^enum mpd_tag_type$/;"	g
+mpd_tag_type_names	src/tag.c	/^static const char *const mpd_tag_type_names[MPD_TAG_COUNT] =$/;"	v	file:
+mpd_tag_value	src/song.c	/^struct mpd_tag_value {$/;"	s	file:
+mpd_unused	include/mpd/compiler.h	44;"	d
+mpd_unused	include/mpd/compiler.h	55;"	d
+mpd_unused	tmp/include/mpd/compiler.h	44;"	d
+mpd_unused	tmp/include/mpd/compiler.h	55;"	d
+mpd_verify_local_uri	src/uri.h	/^mpd_verify_local_uri(const char *uri)$/;"	f
+mpd_verify_uri	src/uri.h	/^mpd_verify_uri(const char *uri)$/;"	f
+mpdinclude_HEADERS	Makefile	/^mpdinclude_HEADERS = \\$/;"	m
+mpdincludedir	Makefile	/^mpdincludedir = $(includedir)\/mpd$/;"	m
+name	include/mpd/pair.h	/^	const char *name;$/;"	m	struct:mpd_pair
+name	src/output.c	/^	char *name;$/;"	m	struct:mpd_output	file:
+name	src/parser.c	/^			const char *name, *value;$/;"	m	struct:mpd_parser::__anon2::__anon4	file:
+name	tmp/include/mpd/pair.h	/^	const char *name;$/;"	m	struct:mpd_pair
+next	src/resolver.c	/^	const struct addrinfo *next;$/;"	m	struct:resolver	typeref:struct:resolver::addrinfo	file:
+next	src/song.c	/^	struct mpd_tag_value *next;$/;"	m	struct:mpd_tag_value	typeref:struct:mpd_tag_value::mpd_tag_value	file:
+next_song_id	src/status.c	/^	int next_song_id;$/;"	m	struct:mpd_status	file:
+next_song_pos	src/status.c	/^	int next_song_pos;$/;"	m	struct:mpd_status	file:
+noinst_PROGRAMS	Makefile	/^noinst_PROGRAMS = src\/example$(EXEEXT) test\/test$(EXEEXT)$/;"	m
+number_of_albums	src/stats.c	/^	unsigned number_of_albums;$/;"	m	struct:mpd_stats	file:
+number_of_artists	src/stats.c	/^	unsigned number_of_artists;$/;"	m	struct:mpd_stats	file:
+number_of_songs	src/stats.c	/^	unsigned number_of_songs;$/;"	m	struct:mpd_stats	file:
+oldincludedir	Makefile	/^oldincludedir = \/usr\/include$/;"	m
+output	src/async.c	/^	struct mpd_buffer output;$/;"	m	struct:mpd_async	typeref:struct:mpd_async::mpd_buffer	file:
+pair	src/internal.h	/^	struct mpd_pair pair;$/;"	m	struct:mpd_connection	typeref:struct:mpd_connection::mpd_pair
+pair	src/parser.c	/^		} pair;$/;"	m	union:mpd_parser::__anon2	typeref:struct:mpd_parser::__anon2::__anon4	file:
+pair_state	src/internal.h	/^	} pair_state;$/;"	m	struct:mpd_connection	typeref:enum:mpd_connection::__anon5
+parse_audio_format	src/status.c	/^parse_audio_format(struct mpd_audio_format *audio_format, const char *p)$/;"	f	file:
+parse_mpd_state	src/status.c	/^parse_mpd_state(const char *p)$/;"	f	file:
+parse_ms	src/status.c	/^parse_ms(const char *p)$/;"	f	file:
+parser	src/internal.h	/^	struct mpd_parser *parser;$/;"	m	struct:mpd_connection	typeref:struct:mpd_connection::mpd_parser
+password	src/settings.c	/^	char *password;$/;"	m	struct:mpd_settings	file:
+path	src/directory.c	/^	char *path;$/;"	m	struct:mpd_directory	file:
+path	src/playlist.c	/^	char *path;$/;"	m	struct:mpd_playlist	file:
+pdfdir	Makefile	/^pdfdir = ${docdir}$/;"	m
+pkgconfig_DATA	Makefile	/^pkgconfig_DATA = libmpdclient.pc$/;"	m
+pkgconfigdir	Makefile	/^pkgconfigdir = $(libdir)\/pkgconfig$/;"	m
+pkgdatadir	Makefile	/^pkgdatadir = $(datadir)\/libmpdclient$/;"	m
+pkgincludedir	Makefile	/^pkgincludedir = $(includedir)\/libmpdclient$/;"	m
+pkglibdir	Makefile	/^pkglibdir = $(libdir)\/libmpdclient$/;"	m
+pkglibexecdir	Makefile	/^pkglibexecdir = $(libexecdir)\/libmpdclient$/;"	m
+play_time	src/stats.c	/^	unsigned long play_time;$/;"	m	struct:mpd_stats	file:
+playlistFile	src/entity.c	/^		struct mpd_playlist *playlistFile;$/;"	m	union:mpd_entity::__anon1	typeref:struct:mpd_entity::__anon1::mpd_playlist	file:
+port	src/settings.c	/^	unsigned port, timeout_ms;$/;"	m	struct:mpd_settings	file:
+pos	src/song.c	/^	unsigned pos;$/;"	m	struct:mpd_song	file:
+prefix	Makefile	/^prefix = \/usr\/local$/;"	m
+print_song	test/main.c	/^print_song(const struct mpd_song *song)$/;"	f	file:
+print_status	test/main.c	/^print_status(struct mpd_status *status)$/;"	f	file:
+print_tag	src/example.c	/^print_tag(const struct mpd_song *song, enum mpd_tag_type type,$/;"	f	file:
+print_tag	test/main.c	/^print_tag(const struct mpd_song *song, enum mpd_tag_type type,$/;"	f	file:
+print_usage	build/test-driver	/^print_usage ()$/;"	f
+prio	src/song.c	/^	unsigned prio;$/;"	m	struct:mpd_song	file:
+program_details	build/missing	/^program_details ()$/;"	f
+program_transform_name	Makefile	/^program_transform_name = s,x,x,$/;"	m
+protocol	src/resolver.h	/^	int protocol;$/;"	m	struct:resolver_address
+prototypes	configure	/^   function prototypes and stuff, but not '\\xHH' hex character constants.$/;"	f
+psdir	Makefile	/^psdir = ${docdir}$/;"	m
+queue_length	src/status.c	/^	unsigned queue_length;$/;"	m	struct:mpd_status	file:
+queue_version	src/status.c	/^	unsigned queue_version;$/;"	m	struct:mpd_status	file:
+quote	src/quote.c	/^quote(char *dest, char *end, const char *value)$/;"	f
+random	src/status.c	/^	bool random;$/;"	m	struct:mpd_status	file:
+read	src/buffer.h	/^	unsigned read;$/;"	m	struct:mpd_buffer
+receiving	src/internal.h	/^	bool receiving;$/;"	m	struct:mpd_connection
+repeat	src/status.c	/^	bool repeat;$/;"	m	struct:mpd_status	file:
+request	src/internal.h	/^	char *request;$/;"	m	struct:mpd_connection
+reserved0	include/mpd/audio_format.h	/^	uint16_t reserved0;$/;"	m	struct:mpd_audio_format
+reserved0	tmp/include/mpd/audio_format.h	/^	uint16_t reserved0;$/;"	m	struct:mpd_audio_format
+reserved1	include/mpd/audio_format.h	/^	uint32_t reserved1;$/;"	m	struct:mpd_audio_format
+reserved1	tmp/include/mpd/audio_format.h	/^	uint32_t reserved1;$/;"	m	struct:mpd_audio_format
+resolver	src/resolver.c	/^struct resolver {$/;"	s	file:
+resolver_address	src/resolver.h	/^struct resolver_address {$/;"	s
+resolver_free	src/resolver.c	/^resolver_free(struct resolver *resolver)$/;"	f
+resolver_new	src/resolver.c	/^resolver_new(const char *host, unsigned port)$/;"	f
+resolver_next	src/resolver.c	/^resolver_next(struct resolver *resolver)$/;"	f
+result	src/parser.c	/^	enum mpd_parser_result result;$/;"	m	struct:mpd_parser	typeref:enum:mpd_parser::mpd_parser_result	file:
+sample_rate	include/mpd/audio_format.h	/^	uint32_t sample_rate;$/;"	m	struct:mpd_audio_format
+sample_rate	tmp/include/mpd/audio_format.h	/^	uint32_t sample_rate;$/;"	m	struct:mpd_audio_format
+saun	src/resolver.c	/^	struct sockaddr_un saun;$/;"	m	struct:resolver	typeref:struct:resolver::sockaddr_un	file:
+sbindir	Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m
+send_check	src/send.c	/^send_check(struct mpd_connection *connection)$/;"	f	file:
+sending_command_list	src/internal.h	/^	bool sending_command_list;$/;"	m	struct:mpd_connection
+sending_command_list_ok	src/internal.h	/^	bool sending_command_list_ok;$/;"	m	struct:mpd_connection
+server	src/ierror.h	/^	enum mpd_server_error server;$/;"	m	struct:mpd_error_info	typeref:enum:mpd_error_info::mpd_server_error
+server	src/parser.c	/^			enum mpd_server_error server;$/;"	m	struct:mpd_parser::__anon2::__anon3	typeref:enum:mpd_parser::__anon2::__anon3::mpd_server_error	file:
+set_base_from	build/depcomp	/^set_base_from ()$/;"	f
+set_dir_from	build/depcomp	/^set_dir_from ()$/;"	f
+set_result	src/parser.c	/^set_result(struct mpd_parser *parser, enum mpd_parser_result result)$/;"	f	file:
+settings	src/internal.h	/^	struct mpd_settings *settings;$/;"	m	struct:mpd_connection	typeref:struct:mpd_connection::mpd_settings
+sharedstatedir	Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m
+sin	src/resolver.c	/^	struct sockaddr_in sin;$/;"	m	struct:resolver	typeref:struct:resolver::sockaddr_in	file:
+single	src/status.c	/^	bool single;$/;"	m	struct:mpd_status	file:
+socket_cloexec_nonblock	src/fd_util.c	/^socket_cloexec_nonblock(int domain, int type, int protocol)$/;"	f
+song	src/entity.c	/^		struct mpd_song *song;$/;"	m	union:mpd_entity::__anon1	typeref:struct:mpd_entity::__anon1::mpd_song	file:
+song_id	src/status.c	/^	int song_id;$/;"	m	struct:mpd_status	file:
+song_pos	src/status.c	/^	int song_pos;$/;"	m	struct:mpd_status	file:
+src_example_DEPENDENCIES	Makefile	/^src_example_DEPENDENCIES = src\/libmpdclient.la$/;"	m
+src_example_LDADD	Makefile	/^src_example_LDADD = src\/libmpdclient.la$/;"	m
+src_example_OBJECTS	Makefile	/^src_example_OBJECTS = $(am_src_example_OBJECTS)$/;"	m
+src_example_SOURCES	Makefile	/^src_example_SOURCES = src\/example.c$/;"	m
+src_libmpdclient_la_LDFLAGS	Makefile	/^src_libmpdclient_la_LDFLAGS = -version-info \\$/;"	m
+src_libmpdclient_la_LIBADD	Makefile	/^src_libmpdclient_la_LIBADD =$/;"	m
+src_libmpdclient_la_LINK	Makefile	/^src_libmpdclient_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC \\$/;"	m
+src_libmpdclient_la_OBJECTS	Makefile	/^src_libmpdclient_la_OBJECTS = $(am_src_libmpdclient_la_OBJECTS)$/;"	m
+src_libmpdclient_la_SOURCES	Makefile	/^src_libmpdclient_la_SOURCES = \\$/;"	m
+srcdir	Makefile	/^srcdir = .$/;"	m
+start	src/song.c	/^	unsigned start;$/;"	m	struct:mpd_song	file:
+state	src/status.c	/^	enum mpd_state state;$/;"	m	struct:mpd_status	typeref:enum:mpd_status::mpd_state	file:
+subdir	Makefile	/^subdir = .$/;"	m
+sysconfdir	Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m
+system	src/ierror.h	/^	int system;$/;"	m	struct:mpd_error_info
+tags	src/song.c	/^	struct mpd_tag_value tags[MPD_TAG_COUNT];$/;"	m	struct:mpd_song	typeref:struct:mpd_song::mpd_tag_value	file:
+tardir	Makefile	/^	tardir=$(distdir) && $(am__tar) | BZIP2=$${BZIP2--9} bzip2 -c >$(distdir).tar.bz2$/;"	m
+tardir	Makefile	/^	tardir=$(distdir) && $(am__tar) | GZIP=$(GZIP_ENV) gzip -c >$(distdir).tar.gz$/;"	m
+tardir	Makefile	/^	tardir=$(distdir) && $(am__tar) | XZ_OPT=$${XZ_OPT--e} xz -c >$(distdir).tar.xz$/;"	m
+tardir	Makefile	/^	tardir=$(distdir) && $(am__tar) | compress -c >$(distdir).tar.Z$/;"	m
+tardir	Makefile	/^	tardir=$(distdir) && $(am__tar) | lzip -c $${LZIP_OPT--9} >$(distdir).tar.lz$/;"	m
+target_alias	Makefile	/^target_alias = $/;"	m
+test_close_connection	test/main.c	/^test_close_connection(struct mpd_connection *conn)$/;"	f	file:
+test_currentsong	test/main.c	/^test_currentsong(struct mpd_connection *conn)$/;"	f	file:
+test_list_artists	test/main.c	/^test_list_artists(struct mpd_connection *conn)$/;"	f	file:
+test_list_status_currentsong	test/main.c	/^test_list_status_currentsong(struct mpd_connection *conn)$/;"	f	file:
+test_lsinfo	test/main.c	/^test_lsinfo(struct mpd_connection *conn, const char *path)$/;"	f	file:
+test_new_connection	test/main.c	/^test_new_connection(struct mpd_connection **conn)$/;"	f	file:
+test_status	test/main.c	/^test_status(struct mpd_connection *conn)$/;"	f	file:
+test_t_iso8601_CPPFLAGS	Makefile	/^test_t_iso8601_CPPFLAGS = -I$(srcdir)\/src $(AM_CPPFLAGS)$/;"	m
+test_t_iso8601_LDADD	Makefile	/^test_t_iso8601_LDADD = $(LDADD)$/;"	m
+test_t_iso8601_OBJECTS	Makefile	/^test_t_iso8601_OBJECTS = $(am_test_t_iso8601_OBJECTS)$/;"	m
+test_t_iso8601_SOURCES	Makefile	/^test_t_iso8601_SOURCES = test\/t_iso8601.c src\/iso8601.c$/;"	m
+test_test_DEPENDENCIES	Makefile	/^test_test_DEPENDENCIES = src\/libmpdclient.la$/;"	m
+test_test_LDADD	Makefile	/^test_test_LDADD = src\/libmpdclient.la$/;"	m
+test_test_OBJECTS	Makefile	/^test_test_OBJECTS = $(am_test_test_OBJECTS)$/;"	m
+test_test_SOURCES	Makefile	/^test_test_SOURCES = test\/main.c$/;"	m
+test_varargs_macros	configure	/^  test_varargs_macros ();$/;"	f
+test_version	test/main.c	/^test_version(struct mpd_connection *conn)$/;"	f	file:
+text	src/message.c	/^	char *text;$/;"	m	struct:mpd_message	file:
+timegm_emulation	src/iso8601.c	/^timegm_emulation(struct tm *tm)$/;"	f	file:
+timeout	src/internal.h	/^	struct timeval timeout;$/;"	m	struct:mpd_connection	typeref:struct:mpd_connection::timeval
+timeout_ms	src/settings.c	/^	unsigned port, timeout_ms;$/;"	m	struct:mpd_settings	file:
+timezone_offset	src/iso8601.c	/^timezone_offset(void)$/;"	f	file:
+top_build_prefix	Makefile	/^top_build_prefix = $/;"	m
+top_builddir	Makefile	/^top_builddir = .$/;"	m
+top_distdir	Makefile	/^top_distdir = $(distdir)$/;"	m
+top_srcdir	Makefile	/^top_srcdir = .$/;"	m
+total_time	src/status.c	/^	unsigned total_time;$/;"	m	struct:mpd_status	file:
+transform	Makefile	/^transform = $(program_transform_name)$/;"	m
+type	src/entity.c	/^	enum mpd_entity_type type;$/;"	m	struct:mpd_entity	typeref:enum:mpd_entity::mpd_entity_type	file:
+type	src/resolver.c	/^	} type;$/;"	m	struct:resolver	typeref:enum:resolver::__anon8	file:
+u	src/parser.c	/^	} u;$/;"	m	struct:mpd_parser	typeref:union:mpd_parser::__anon2	file:
+update_id	src/status.c	/^	unsigned update_id;$/;"	m	struct:mpd_status	file:
+uptime	src/stats.c	/^	unsigned long uptime;$/;"	m	struct:mpd_stats	file:
+uri	src/song.c	/^	char *uri;$/;"	m	struct:mpd_song	file:
+usage_error	build/test-driver	/^usage_error ()$/;"	f
+value	include/mpd/pair.h	/^	const char *value;$/;"	m	struct:mpd_pair
+value	src/parser.c	/^			const char *name, *value;$/;"	m	struct:mpd_parser::__anon2::__anon4	file:
+value	src/song.c	/^	char *value;$/;"	m	struct:mpd_tag_value	file:
+value	tmp/include/mpd/pair.h	/^	const char *value;$/;"	m	struct:mpd_pair
+vapi_DATA	Makefile	/^vapi_DATA = vapi\/libmpdclient.vapi$/;"	m
+vapidir	Makefile	/^vapidir = $(datadir)\/vala\/vapi$/;"	m
+version	src/internal.h	/^	unsigned version[3];$/;"	m	struct:mpd_connection
+volume	src/status.c	/^	int volume;$/;"	m	struct:mpd_status	file:
+write	src/buffer.h	/^	unsigned write;$/;"	m	struct:mpd_buffer

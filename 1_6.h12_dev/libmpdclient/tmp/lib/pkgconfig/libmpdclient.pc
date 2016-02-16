@@ -1,0 +1,10 @@
+prefix=/home/rh/my_code/OpenWrt_Luci_Lua/1_6.h12_dev/libmpdclient/tmp
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libmpdclient
+Description: Music Player Daemon client library
+Version: 2.11
+Libs: -L${libdir} -lmpdclient
+Cflags: -I${includedir}

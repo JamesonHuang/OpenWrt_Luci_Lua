@@ -1,0 +1,20 @@
+----- source -----
+Title: EasyList China
+Url: /home/rh/Music/video222.txt
+Last modified: 29 Jan 2016 16:49 UTC
+Expires: 96 hours
+Version: 201601291453
+License: https://easylist-downloads.adblockplus.org/COPYING
+Homepage: http://abpchina.org/forum/
+------- end ------
+
+----- options -----
+Privoxy path: /etc/privoxy
+Web path: /var/www/privoxy
+CSS web server domain: www.example.com
+------- end ------
+
+Comments: 123
+Elements hiding rules: 49
+Request block rules for exception: 1
+Request block rules total: 12

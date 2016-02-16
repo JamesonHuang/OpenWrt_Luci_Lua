@@ -1,0 +1,3315 @@
+#AbBlock generated actions -- don't edit --
+#----- source -----
+#Title: EasyList China
+#Url: https://easylist-downloads.adblockplus.org/easylistchina.txt
+#Last modified: 29 Jan 2016 15:51 UTC
+#Expires: 96 hours
+#Version: 201601291533
+#License: https://easylist-downloads.adblockplus.org/COPYING
+#Homepage: http://abpchina.org/forum/
+#------- end ------
+
+#ab2p-block-dnt
+{+add-header{DNT: 1} \
+}
+TAG:^ab2p-block-dnt$
+# ||hjfile.cn/analytics/site/TrackEvent.js (easylistchina.txt: 10478)
+.hjfile.cn/analytics/site/TrackEvent\.js
+
+
+
+##############################youku####################################
+
+# ||hudong.pl.youku.com/interact/web/get/timeLinePlugin? (easylistchina+easylist.txt: 3287)
+.hudong.pl.youku.com/interact/web/get/timeLinePlugin\?
+# ||hudong.pl.youku.com/interact/player/get/plugins? (easylistchina+easylist.txt: 3286)
+.hudong.pl.youku.com/interact/player/get/plugins\?
+# ||atm.youku.com^ (easylistchina+easylist.txt: 2123)
+.atm.youku.com
+# ||23youku.com/Runtime/js/ (easylistchina+easylist.txt: 1535)
+.23youku.com/Runtime/js/
+# ||k.youku.com^$domain=flvcd.com (easylistchina+easylist.txt: 3698)
+.k.youku.com
+# ||hudong.pl.youku.com/interact/web/get/timeLinePlugin? (easylistchina+easylist.txt: 3287)
+.hudong.pl.youku.com/interact/web/get/timeLinePlugin\?
+# ||hudong.pl.youku.com/interact/player/get/plugins? (easylistchina+easylist.txt: 3286)
+.hudong.pl.youku.com/interact/player/get/plugins\?
+# ||atm.youku.com^ (easylistchina+easylist.txt: 2123)
+.atm.youku.com
+# ||23youku.com/Runtime/js/ (easylistchina+easylist.txt: 1535)
+.23youku.com/Runtime/js/
+# ||k.youku.com^$domain=flvcd.com (easylistchina+easylist.txt: 3698)
+.k.youku.com
+# ||hudong.pl.youku.com/interact/web/get/timeLinePlugin? (easylistchina+easylist.txt: 3287)
+.hudong.pl.youku.com/interact/web/get/timeLinePlugin\?
+# ||hudong.pl.youku.com/interact/player/get/plugins? (easylistchina+easylist.txt: 3286)
+.hudong.pl.youku.com/interact/player/get/plugins\?
+# ||atm.youku.com^ (easylistchina+easylist.txt: 2123)
+.atm.youku.com
+# ||23youku.com/Runtime/js/ (easylistchina+easylist.txt: 1535)
+.23youku.com/Runtime/js/
+# ||k.youku.com^$domain=flvcd.com (easylistchina+easylist.txt: 3698)
+.k.youku.com
+# @@||youku.com^*^showAd (easylistchina+easylist.txt: 10440)
+.youku.com/.*[^\w%.-]showAd
+# @@||youku.com^*^adshow (easylistchina+easylist.txt: 10439)
+.youku.com/.*[^\w%.-]adshow
+# @@||static.atm.youku.com^*.swf (easylistchina+easylist.txt: 10380)
+.static.atm.youku.com/.*\.swf
+# @@||atm.youku.com/cast/getFlvUrl. (easylistchina+easylist.txt: 10177)
+.atm.youku.com/cast/getFlvUrl\.
+# @@u-ads.adap.tv*youku.com (easylistchina+easylist.txt: 10067)
+/.*u-ads\.adap\.tv.*youku\.com
+.*u-ads.adap.tv*./.*youku\.com
+.*u-ads.adap.tv*youku.com*.
+# @@||a.ads.cn.miaozhen.com^$domain=youku.com (easylistchina+easylist.txt: 10124)
+# @@||youku.com^*^showAd (easylistchina+easylist.txt: 10440)
+.youku.com/.*[^\w%.-]showAd
+# @@||youku.com^*^adshow (easylistchina+easylist.txt: 10439)
+.youku.com/.*[^\w%.-]adshow
+# @@||static.atm.youku.com^*.swf (easylistchina+easylist.txt: 10380)
+.static.atm.youku.com/.*\.swf
+# @@||atm.youku.com/cast/getFlvUrl. (easylistchina+easylist.txt: 10177)
+.atm.youku.com/cast/getFlvUrl\.
+# @@u-ads.adap.tv*youku.com (easylistchina+easylist.txt: 10067)
+/.*u-ads\.adap\.tv.*youku\.com
+.*u-ads.adap.tv*./.*youku\.com
+.*u-ads.adap.tv*youku.com*.
+# @@||a.ads.cn.miaozhen.com^$domain=youku.com (easylistchina+easylist.txt: 10124)
+# @@||youku.com^*^showAd (easylistchina+easylist.txt: 10440)
+.youku.com/.*[^\w%.-]showAd
+# @@||youku.com^*^adshow (easylistchina+easylist.txt: 10439)
+.youku.com/.*[^\w%.-]adshow
+# @@||static.atm.youku.com^*.swf (easylistchina+easylist.txt: 10380)
+.static.atm.youku.com/.*\.swf
+# @@||atm.youku.com/cast/getFlvUrl. (easylistchina+easylist.txt: 10177)
+.atm.youku.com/cast/getFlvUrl\.
+# @@u-ads.adap.tv*youku.com (easylistchina+easylist.txt: 10067)
+/.*u-ads\.adap\.tv.*youku\.com
+.*u-ads.adap.tv*./.*youku\.com
+.*u-ads.adap.tv*youku.com*.
+# @@||a.ads.cn.miaozhen.com^$domain=youku.com (easylistchina+easylist.txt: 10124)
+
+.hudong.pl.youku.com/interact/web/get/timeLinePlugin\?
+# ||hudong.pl.youku.com/interact/player/get/plugins? (easylistchina.txt: 3270)
+.hudong.pl.youku.com/interact/player/get/plugins\?
+# ||atm.youku.com^ (easylistchina.txt: 2113)
+.atm.youku.com
+# ||23youku.com/Runtime/js/ (easylistchina.txt: 1539)
+.23youku.com/Runtime/js/
+# ||k.youku.com^$domain=flvcd.com (easylistchina.txt: 3690)
+.k.youku.com
+# ||hudong.pl.youku.com/interact/web/get/timeLinePlugin? (easylistchina.txt: 3271)
+.hudong.pl.youku.com/interact/web/get/timeLinePlugin\?
+# ||hudong.pl.youku.com/interact/player/get/plugins? (easylistchina.txt: 3270)
+.hudong.pl.youku.com/interact/player/get/plugins\?
+# ||atm.youku.com^ (easylistchina.txt: 2113)
+.atm.youku.com
+# ||23youku.com/Runtime/js/ (easylistchina.txt: 1539)
+.23youku.com/Runtime/js/
+# ||k.youku.com^$domain=flvcd.com (easylistchina.txt: 3690)
+.k.youku.com
+# ||hudong.pl.youku.com/interact/web/get/timeLinePlugin? (easylistchina.txt: 3271)
+.hudong.pl.youku.com/interact/web/get/timeLinePlugin\?
+# ||hudong.pl.youku.com/interact/player/get/plugins? (easylistchina.txt: 3270)
+.hudong.pl.youku.com/interact/player/get/plugins\?
+# ||atm.youku.com^ (easylistchina.txt: 2113)
+.atm.youku.com
+# ||23youku.com/Runtime/js/ (easylistchina.txt: 1539)
+.23youku.com/Runtime/js/
+# ||k.youku.com^$domain=flvcd.com (easylistchina.txt: 3690)
+.k.youku.com
+# @@||youku.com^*^showAd (easylistchina.txt: 10428)
+.youku.com/.*[^\w%.-]showAd
+# @@||youku.com^*^adshow (easylistchina.txt: 10427)
+.youku.com/.*[^\w%.-]adshow
+# @@||static.atm.youku.com^*.swf (easylistchina.txt: 10367)
+.static.atm.youku.com/.*\.swf
+# @@||atm.youku.com/cast/getFlvUrl. (easylistchina.txt: 10160)
+.atm.youku.com/cast/getFlvUrl\.
+# @@u-ads.adap.tv*youku.com (easylistchina.txt: 10049)
+/.*u-ads\.adap\.tv.*youku\.com
+.*u-ads.adap.tv*./.*youku\.com
+.*u-ads.adap.tv*youku.com*.
+# @@||a.ads.cn.miaozhen.com^$domain=youku.com (easylistchina.txt: 10107)
+# @@||youku.com^*^showAd (easylistchina.txt: 10428)
+.youku.com/.*[^\w%.-]showAd
+# @@||youku.com^*^adshow (easylistchina.txt: 10427)
+.youku.com/.*[^\w%.-]adshow
+# @@||static.atm.youku.com^*.swf (easylistchina.txt: 10367)
+.static.atm.youku.com/.*\.swf
+# @@||atm.youku.com/cast/getFlvUrl. (easylistchina.txt: 10160)
+.atm.youku.com/cast/getFlvUrl\.
+# @@u-ads.adap.tv*youku.com (easylistchina.txt: 10049)
+/.*u-ads\.adap\.tv.*youku\.com
+.*u-ads.adap.tv*./.*youku\.com
+.*u-ads.adap.tv*youku.com*.
+# @@||a.ads.cn.miaozhen.com^$domain=youku.com (easylistchina.txt: 10107)
+# @@||youku.com^*^showAd (easylistchina.txt: 10428)
+.youku.com/.*[^\w%.-]showAd
+# @@||youku.com^*^adshow (easylistchina.txt: 10427)
+.youku.com/.*[^\w%.-]adshow
+# @@||static.atm.youku.com^*.swf (easylistchina.txt: 10367)
+.static.atm.youku.com/.*\.swf
+# @@||atm.youku.com/cast/getFlvUrl. (easylistchina.txt: 10160)
+.atm.youku.com/cast/getFlvUrl\.
+# @@u-ads.adap.tv*youku.com (easylistchina.txt: 10049)
+/.*u-ads\.adap\.tv.*youku\.com
+.*u-ads.adap.tv*./.*youku\.com
+.*u-ads.adap.tv*youku.com*.
+# @@||a.ads.cn.miaozhen.com^$domain=youku.com (easylistchina.txt: 10107)
+
+.youku.com/.*/click\.php\?
+# ||youku.com/yplaylog? (easyprivacy.txt: 9932)
+.youku.com/yplaylog\?
+# ||youku.com/ykvvlog? (easyprivacy.txt: 9931)
+.youku.com/ykvvlog\?
+# ||youku.com/compvlog? (easyprivacy.txt: 9930)
+.youku.com/compvlog\?
+# ||atm.youku.com^ (easyprivacy.txt: 9807)
+.atm.youku.com
+# ||youku.com^*/click.php? (easyprivacy.txt: 9933)
+.youku.com/.*/click\.php\?
+# ||youku.com/yplaylog? (easyprivacy.txt: 9932)
+.youku.com/yplaylog\?
+# ||youku.com/ykvvlog? (easyprivacy.txt: 9931)
+.youku.com/ykvvlog\?
+# ||youku.com/compvlog? (easyprivacy.txt: 9930)
+.youku.com/compvlog\?
+# ||atm.youku.com^ (easyprivacy.txt: 9807)
+.atm.youku.com
+# ||youku.com^*/click.php? (easyprivacy.txt: 9933)
+.youku.com/.*/click\.php\?
+# ||youku.com/yplaylog? (easyprivacy.txt: 9932)
+.youku.com/yplaylog\?
+# ||youku.com/ykvvlog? (easyprivacy.txt: 9931)
+.youku.com/ykvvlog\?
+# ||youku.com/compvlog? (easyprivacy.txt: 9930)
+.youku.com/compvlog\?
+# ||atm.youku.com^ (easyprivacy.txt: 9807)
+.atm.youku.com
+
+# ||pl.youku.com/playlist/m3u8?keyframe=0&$f@s@pl.youku.com/playlist/m3u8\?keyframe=0&.*@update.adbyby.com/youku.m3u8@ (lazy222.txt: 5093)
+.pl.youku.com/playlist/m3u8\?keyframe=0&\$f@s@pl\.youku\.com/playlist/m3u8\\\?keyframe=0&\..*@update\.adbyby\.com/youku\.m3u8@
+# |http://valf.atm.youku.com/vf?vip=$s@"RST":"video","AL":15,"BRS":"","SU":[]}],"P":1}@"RST":"video","AL":1,"BRS":"","SU":[]}],"P":0}@ (lazy222.txt: 5040)
+valf.atm.youku.com/vf\?vip=\$s@"RST":"video","AL":15,"BRS":"","SU":\[\]\}\],"P":1\}@"RST":"video","AL":1,"BRS":"","SU":\[\]\}\],"P":0\}@
+# |http://valp.atm.youku.com/vp?vip=0&$s@,"RST":"swf","@,"RST":"jpg","@ (lazy222.txt: 4931)
+valp.atm.youku.com/vp\?vip=0&\$s@,"RST":"swf","@,"RST":"jpg","@
+# |http://v.youku.com/crossdomain.xml$s@<allow-access-from domain="*.youku.com"*</cross-domain-policy>@<allow-access-from domain="*" to-ports="*"/>	</cross-domain-policy>@ (lazy222.txt: 4798)
+v.youku.com/crossdomain\.xml\$s@<allow-access-from domain=".*\.youku\.com".*</cross-domain-policy>@<allow-access-from domain=".*" to-ports=".*"/>	</cross-domain-policy>@
+# ||val*.atm.youku.com/v*?vip=$s@U":"http*"@U":"http://policy.com/"@ (lazy222.txt: 4727)
+.val*./.*\.atm\.youku\.com/v.*\?vip=\$s@U":"http.*"@U":"http://policy\.com/"@
+.val*.atm.youku.com/v.*\?vip=\$s@U":"http.*"@U":"http://policy\.com/"@
+# ||val*.atm.youku.com/v*?vip=$s@"RS":"http*"@"RS":"http://policy.com"@ (lazy222.txt: 4726)
+.val*./.*\.atm\.youku\.com/v.*\?vip=\$s@"RS":"http.*"@"RS":"http://policy\.com"@
+.val*.atm.youku.com/v.*\?vip=\$s@"RS":"http.*"@"RS":"http://policy\.com"@
+# ||val*.atm.youku.com/v*?vip=$s@"http://?.youku.com@"http://policy.com@ (lazy222.txt: 4725)
+.val*./.*\.atm\.youku\.com/v.*\?vip=\$s@"http://\?\.youku\.com@"http://policy\.com@
+.val*.atm.youku.com/v.*\?vip=\$s@"http://\?\.youku\.com@"http://policy\.com@
+# ||val*.atm.youku.com/v*?vip=$s@"SKIP":1,"PS":0,"P":?,"JS":[*,"VAL":[{"@"SKIP":1,"PS":0,"P":0,"JS":[],"VAL":[{"@ (lazy222.txt: 4724)
+.val*./.*\.atm\.youku\.com/v.*\?vip=\$s@"SKIP":1,"PS":0,"P":\?,"JS":\[.*,"VAL":\[\{"@"SKIP":1,"PS":0,"P":0,"JS":\[\],"VAL":\[\{"@
+.val*.atm.youku.com/v.*\?vip=\$s@"SKIP":1,"PS":0,"P":\?,"JS":\[.*,"VAL":\[\{"@"SKIP":1,"PS":0,"P":0,"JS":\[\],"VAL":\[\{"@
+# ||val*.atm.youku.com/v*?vip=$s@"SKIP":1,"P":?,"BAK":[{@"SKIP":1,"P":0,"BAK":[{@ (lazy222.txt: 4722)
+.val*./.*\.atm\.youku\.com/v.*\?vip=\$s@"SKIP":1,"P":\?,"BAK":\[\{@"SKIP":1,"P":0,"BAK":\[\{@
+.val*.atm.youku.com/v.*\?vip=\$s@"SKIP":1,"P":\?,"BAK":\[\{@"SKIP":1,"P":0,"BAK":\[\{@
+# ||val*.atm.youku.com/v*?vip=$s@"P":?,"SKIP":1,@"P":0,"SKIP":1,@ (lazy222.txt: 4721)
+.val*./.*\.atm\.youku\.com/v.*\?vip=\$s@"P":\?,"SKIP":1,@"P":0,"SKIP":1,@
+.val*.atm.youku.com/v.*\?vip=\$s@"P":\?,"SKIP":1,@"P":0,"SKIP":1,@
+# ||val*.atm.youku.com/v*?vip=$s@"http\u003a//?\u002eyouku@"http\u003a//policy@ (lazy222.txt: 4720)
+.val*./.*\.atm\.youku\.com/v.*\?vip=\$s@"http\\u003a//\?\\u002eyouku@"http\\u003a//policy@
+.val*.atm.youku.com/v.*\?vip=\$s@"http\\u003a//\?\\u002eyouku@"http\\u003a//policy@
+# |http://mf.atm.youku.com/mf?site=1&p=$s@adpluginobject.adParseUnited(*)@adpluginobject.adParseUnited()@ (lazy222.txt: 4631)
+mf.atm.youku.com/mf\?site=1&p=\$s@adpluginobject\.adParseUnited\(.*\)@adpluginobject\.adParseUnited\(\)@
+# |http://ad.api.3g.youku.com/adv?dprm=$s@{"P":*,"@{"P":0,"@ (lazy222.txt: 4624)
+ad.api.3g.youku.com/adv\?dprm=\$s@\{"P":.*,"@\{"P":0,"@
+# |http://mf.atm.youku.com/mf?&site= (lazy222.txt: 4618)
+mf.atm.youku.com/mf\?&site=
+# |http://mf.atm.youku.com/mf?site=1&p=$s@adpluginobject.adParse(*)@adpluginobject.adParse()@ (lazy222.txt: 4617)
+mf.atm.youku.com/mf\?site=1&p=\$s@adpluginobject\.adParse\(.*\)@adpluginobject\.adParse\(\)@
+# |http://ad.api.3g.youku.com/adv? (lazy222.txt: 4613)
+ad.api.3g.youku.com/adv\?
+# ||static.arm.youku.com/idea/ (lazy222.txt: 2962)
+.static.arm.youku.com/idea/
+# ||hudong.pl.youku.com^ (lazy222.txt: 2639)
+.hudong.pl.youku.com
+# ||gamex.mobile.youku.com (lazy222.txt: 2589)
+.gamex.mobile.youku.com*.
+# |http://vhtml.atm.youku.com/vhtml?p= (lazy222.txt: 1614)
+vhtml.atm.youku.com/vhtml\?p=
+# |http://v2html.atm.youku.com/vhtml?p=320&ct= (lazy222.txt: 1609)
+v2html.atm.youku.com/vhtml\?p=320&ct=
+# |http://static.youku.com/v1.*/index/js/ikuAdapterNew.js (lazy222.txt: 1544)
+static.youku.com/v1\..*/index/js/ikuAdapterNew\.js
+# |http://static.atm.youku.com/miaozhen/mz_ad_$script (lazy222.txt: 1515)
+static.atm.youku.com/miaozhen/mz_ad_
+# |http://static.atm.youku.com/idea/201*.jpg$image (lazy222.txt: 1514)
+static.atm.youku.com/idea/201.*\.jpg
+# |http://static.atm.youku.com/YouKu2014/201 (lazy222.txt: 1513)
+static.atm.youku.com/YouKu2014/201
+# |http://saaeecom.duapp.com/view/youkuvip/750.png$image (lazy222.txt: 1485)
+saaeecom.duapp.com/view/youkuvip/750\.png
+# |http://hz.youku.com/red/ggnotice.php? (lazy222.txt: 1217)
+hz.youku.com/red/ggnotice\.php\?
+# |http://html.atm.youku.com/html?p= (lazy222.txt: 1214)
+html.atm.youku.com/html\?p=
+# |http://23youku.com/Runtime/js/$script (lazy222.txt: 943)
+23youku.com/Runtime/js/
+# |http://*.com/view/youkuvip/*ad.gif|$image (lazy222.txt: 411)
+/.*\.com/view/youkuvip/.*ad\.gif$
+.*.com/view/youkuvip/.*ad\.gif$
+# ||pl.youku.com/playlist/m3u8?keyframe=0&$f@s@pl.youku.com/playlist/m3u8\?keyframe=0&.*@update.adbyby.com/youku.m3u8@ (lazy222.txt: 5093)
+.pl.youku.com/playlist/m3u8\?keyframe=0&\$f@s@pl\.youku\.com/playlist/m3u8\\\?keyframe=0&\..*@update\.adbyby\.com/youku\.m3u8@
+# |http://valf.atm.youku.com/vf?vip=$s@"RST":"video","AL":15,"BRS":"","SU":[]}],"P":1}@"RST":"video","AL":1,"BRS":"","SU":[]}],"P":0}@ (lazy222.txt: 5040)
+valf.atm.youku.com/vf\?vip=\$s@"RST":"video","AL":15,"BRS":"","SU":\[\]\}\],"P":1\}@"RST":"video","AL":1,"BRS":"","SU":\[\]\}\],"P":0\}@
+# |http://valp.atm.youku.com/vp?vip=0&$s@,"RST":"swf","@,"RST":"jpg","@ (lazy222.txt: 4931)
+valp.atm.youku.com/vp\?vip=0&\$s@,"RST":"swf","@,"RST":"jpg","@
+# |http://v.youku.com/crossdomain.xml$s@<allow-access-from domain="*.youku.com"*</cross-domain-policy>@<allow-access-from domain="*" to-ports="*"/>	</cross-domain-policy>@ (lazy222.txt: 4798)
+v.youku.com/crossdomain\.xml\$s@<allow-access-from domain=".*\.youku\.com".*</cross-domain-policy>@<allow-access-from domain=".*" to-ports=".*"/>	</cross-domain-policy>@
+# ||val*.atm.youku.com/v*?vip=$s@U":"http*"@U":"http://policy.com/"@ (lazy222.txt: 4727)
+.val*./.*\.atm\.youku\.com/v.*\?vip=\$s@U":"http.*"@U":"http://policy\.com/"@
+.val*.atm.youku.com/v.*\?vip=\$s@U":"http.*"@U":"http://policy\.com/"@
+# ||val*.atm.youku.com/v*?vip=$s@"RS":"http*"@"RS":"http://policy.com"@ (lazy222.txt: 4726)
+.val*./.*\.atm\.youku\.com/v.*\?vip=\$s@"RS":"http.*"@"RS":"http://policy\.com"@
+.val*.atm.youku.com/v.*\?vip=\$s@"RS":"http.*"@"RS":"http://policy\.com"@
+# ||val*.atm.youku.com/v*?vip=$s@"http://?.youku.com@"http://policy.com@ (lazy222.txt: 4725)
+.val*./.*\.atm\.youku\.com/v.*\?vip=\$s@"http://\?\.youku\.com@"http://policy\.com@
+.val*.atm.youku.com/v.*\?vip=\$s@"http://\?\.youku\.com@"http://policy\.com@
+# ||val*.atm.youku.com/v*?vip=$s@"SKIP":1,"PS":0,"P":?,"JS":[*,"VAL":[{"@"SKIP":1,"PS":0,"P":0,"JS":[],"VAL":[{"@ (lazy222.txt: 4724)
+.val*./.*\.atm\.youku\.com/v.*\?vip=\$s@"SKIP":1,"PS":0,"P":\?,"JS":\[.*,"VAL":\[\{"@"SKIP":1,"PS":0,"P":0,"JS":\[\],"VAL":\[\{"@
+.val*.atm.youku.com/v.*\?vip=\$s@"SKIP":1,"PS":0,"P":\?,"JS":\[.*,"VAL":\[\{"@"SKIP":1,"PS":0,"P":0,"JS":\[\],"VAL":\[\{"@
+# ||val*.atm.youku.com/v*?vip=$s@"SKIP":1,"P":?,"BAK":[{@"SKIP":1,"P":0,"BAK":[{@ (lazy222.txt: 4722)
+.val*./.*\.atm\.youku\.com/v.*\?vip=\$s@"SKIP":1,"P":\?,"BAK":\[\{@"SKIP":1,"P":0,"BAK":\[\{@
+.val*.atm.youku.com/v.*\?vip=\$s@"SKIP":1,"P":\?,"BAK":\[\{@"SKIP":1,"P":0,"BAK":\[\{@
+# ||val*.atm.youku.com/v*?vip=$s@"P":?,"SKIP":1,@"P":0,"SKIP":1,@ (lazy222.txt: 4721)
+.val*./.*\.atm\.youku\.com/v.*\?vip=\$s@"P":\?,"SKIP":1,@"P":0,"SKIP":1,@
+.val*.atm.youku.com/v.*\?vip=\$s@"P":\?,"SKIP":1,@"P":0,"SKIP":1,@
+# ||val*.atm.youku.com/v*?vip=$s@"http\u003a//?\u002eyouku@"http\u003a//policy@ (lazy222.txt: 4720)
+.val*./.*\.atm\.youku\.com/v.*\?vip=\$s@"http\\u003a//\?\\u002eyouku@"http\\u003a//policy@
+.val*.atm.youku.com/v.*\?vip=\$s@"http\\u003a//\?\\u002eyouku@"http\\u003a//policy@
+# |http://mf.atm.youku.com/mf?site=1&p=$s@adpluginobject.adParseUnited(*)@adpluginobject.adParseUnited()@ (lazy222.txt: 4631)
+mf.atm.youku.com/mf\?site=1&p=\$s@adpluginobject\.adParseUnited\(.*\)@adpluginobject\.adParseUnited\(\)@
+# |http://ad.api.3g.youku.com/adv?dprm=$s@{"P":*,"@{"P":0,"@ (lazy222.txt: 4624)
+ad.api.3g.youku.com/adv\?dprm=\$s@\{"P":.*,"@\{"P":0,"@
+# |http://mf.atm.youku.com/mf?&site= (lazy222.txt: 4618)
+mf.atm.youku.com/mf\?&site=
+# |http://mf.atm.youku.com/mf?site=1&p=$s@adpluginobject.adParse(*)@adpluginobject.adParse()@ (lazy222.txt: 4617)
+mf.atm.youku.com/mf\?site=1&p=\$s@adpluginobject\.adParse\(.*\)@adpluginobject\.adParse\(\)@
+# |http://ad.api.3g.youku.com/adv? (lazy222.txt: 4613)
+ad.api.3g.youku.com/adv\?
+# ||static.arm.youku.com/idea/ (lazy222.txt: 2962)
+.static.arm.youku.com/idea/
+# ||hudong.pl.youku.com^ (lazy222.txt: 2639)
+.hudong.pl.youku.com
+# ||gamex.mobile.youku.com (lazy222.txt: 2589)
+.gamex.mobile.youku.com*.
+# |http://vhtml.atm.youku.com/vhtml?p= (lazy222.txt: 1614)
+vhtml.atm.youku.com/vhtml\?p=
+# |http://v2html.atm.youku.com/vhtml?p=320&ct= (lazy222.txt: 1609)
+v2html.atm.youku.com/vhtml\?p=320&ct=
+# |http://static.youku.com/v1.*/index/js/ikuAdapterNew.js (lazy222.txt: 1544)
+static.youku.com/v1\..*/index/js/ikuAdapterNew\.js
+# |http://static.atm.youku.com/miaozhen/mz_ad_$script (lazy222.txt: 1515)
+static.atm.youku.com/miaozhen/mz_ad_
+# |http://static.atm.youku.com/idea/201*.jpg$image (lazy222.txt: 1514)
+static.atm.youku.com/idea/201.*\.jpg
+# |http://static.atm.youku.com/YouKu2014/201 (lazy222.txt: 1513)
+static.atm.youku.com/YouKu2014/201
+# |http://saaeecom.duapp.com/view/youkuvip/750.png$image (lazy222.txt: 1485)
+saaeecom.duapp.com/view/youkuvip/750\.png
+# |http://hz.youku.com/red/ggnotice.php? (lazy222.txt: 1217)
+hz.youku.com/red/ggnotice\.php\?
+# |http://html.atm.youku.com/html?p= (lazy222.txt: 1214)
+html.atm.youku.com/html\?p=
+# |http://23youku.com/Runtime/js/$script (lazy222.txt: 943)
+23youku.com/Runtime/js/
+# |http://*.com/view/youkuvip/*ad.gif|$image (lazy222.txt: 411)
+/.*\.com/view/youkuvip/.*ad\.gif$
+.*.com/view/youkuvip/.*ad\.gif$
+# ||pl.youku.com/playlist/m3u8?keyframe=0&$f@s@pl.youku.com/playlist/m3u8\?keyframe=0&.*@update.adbyby.com/youku.m3u8@ (lazy222.txt: 5093)
+.pl.youku.com/playlist/m3u8\?keyframe=0&\$f@s@pl\.youku\.com/playlist/m3u8\\\?keyframe=0&\..*@update\.adbyby\.com/youku\.m3u8@
+# |http://valf.atm.youku.com/vf?vip=$s@"RST":"video","AL":15,"BRS":"","SU":[]}],"P":1}@"RST":"video","AL":1,"BRS":"","SU":[]}],"P":0}@ (lazy222.txt: 5040)
+valf.atm.youku.com/vf\?vip=\$s@"RST":"video","AL":15,"BRS":"","SU":\[\]\}\],"P":1\}@"RST":"video","AL":1,"BRS":"","SU":\[\]\}\],"P":0\}@
+# |http://valp.atm.youku.com/vp?vip=0&$s@,"RST":"swf","@,"RST":"jpg","@ (lazy222.txt: 4931)
+valp.atm.youku.com/vp\?vip=0&\$s@,"RST":"swf","@,"RST":"jpg","@
+# |http://v.youku.com/crossdomain.xml$s@<allow-access-from domain="*.youku.com"*</cross-domain-policy>@<allow-access-from domain="*" to-ports="*"/>	</cross-domain-policy>@ (lazy222.txt: 4798)
+v.youku.com/crossdomain\.xml\$s@<allow-access-from domain=".*\.youku\.com".*</cross-domain-policy>@<allow-access-from domain=".*" to-ports=".*"/>	</cross-domain-policy>@
+# ||val*.atm.youku.com/v*?vip=$s@U":"http*"@U":"http://policy.com/"@ (lazy222.txt: 4727)
+.val*./.*\.atm\.youku\.com/v.*\?vip=\$s@U":"http.*"@U":"http://policy\.com/"@
+.val*.atm.youku.com/v.*\?vip=\$s@U":"http.*"@U":"http://policy\.com/"@
+# ||val*.atm.youku.com/v*?vip=$s@"RS":"http*"@"RS":"http://policy.com"@ (lazy222.txt: 4726)
+.val*./.*\.atm\.youku\.com/v.*\?vip=\$s@"RS":"http.*"@"RS":"http://policy\.com"@
+.val*.atm.youku.com/v.*\?vip=\$s@"RS":"http.*"@"RS":"http://policy\.com"@
+# ||val*.atm.youku.com/v*?vip=$s@"http://?.youku.com@"http://policy.com@ (lazy222.txt: 4725)
+.val*./.*\.atm\.youku\.com/v.*\?vip=\$s@"http://\?\.youku\.com@"http://policy\.com@
+.val*.atm.youku.com/v.*\?vip=\$s@"http://\?\.youku\.com@"http://policy\.com@
+# ||val*.atm.youku.com/v*?vip=$s@"SKIP":1,"PS":0,"P":?,"JS":[*,"VAL":[{"@"SKIP":1,"PS":0,"P":0,"JS":[],"VAL":[{"@ (lazy222.txt: 4724)
+.val*./.*\.atm\.youku\.com/v.*\?vip=\$s@"SKIP":1,"PS":0,"P":\?,"JS":\[.*,"VAL":\[\{"@"SKIP":1,"PS":0,"P":0,"JS":\[\],"VAL":\[\{"@
+.val*.atm.youku.com/v.*\?vip=\$s@"SKIP":1,"PS":0,"P":\?,"JS":\[.*,"VAL":\[\{"@"SKIP":1,"PS":0,"P":0,"JS":\[\],"VAL":\[\{"@
+# ||val*.atm.youku.com/v*?vip=$s@"SKIP":1,"P":?,"BAK":[{@"SKIP":1,"P":0,"BAK":[{@ (lazy222.txt: 4722)
+.val*./.*\.atm\.youku\.com/v.*\?vip=\$s@"SKIP":1,"P":\?,"BAK":\[\{@"SKIP":1,"P":0,"BAK":\[\{@
+.val*.atm.youku.com/v.*\?vip=\$s@"SKIP":1,"P":\?,"BAK":\[\{@"SKIP":1,"P":0,"BAK":\[\{@
+# ||val*.atm.youku.com/v*?vip=$s@"P":?,"SKIP":1,@"P":0,"SKIP":1,@ (lazy222.txt: 4721)
+.val*./.*\.atm\.youku\.com/v.*\?vip=\$s@"P":\?,"SKIP":1,@"P":0,"SKIP":1,@
+.val*.atm.youku.com/v.*\?vip=\$s@"P":\?,"SKIP":1,@"P":0,"SKIP":1,@
+# ||val*.atm.youku.com/v*?vip=$s@"http\u003a//?\u002eyouku@"http\u003a//policy@ (lazy222.txt: 4720)
+.val*./.*\.atm\.youku\.com/v.*\?vip=\$s@"http\\u003a//\?\\u002eyouku@"http\\u003a//policy@
+.val*.atm.youku.com/v.*\?vip=\$s@"http\\u003a//\?\\u002eyouku@"http\\u003a//policy@
+# |http://mf.atm.youku.com/mf?site=1&p=$s@adpluginobject.adParseUnited(*)@adpluginobject.adParseUnited()@ (lazy222.txt: 4631)
+mf.atm.youku.com/mf\?site=1&p=\$s@adpluginobject\.adParseUnited\(.*\)@adpluginobject\.adParseUnited\(\)@
+# |http://ad.api.3g.youku.com/adv?dprm=$s@{"P":*,"@{"P":0,"@ (lazy222.txt: 4624)
+ad.api.3g.youku.com/adv\?dprm=\$s@\{"P":.*,"@\{"P":0,"@
+# |http://mf.atm.youku.com/mf?&site= (lazy222.txt: 4618)
+mf.atm.youku.com/mf\?&site=
+# |http://mf.atm.youku.com/mf?site=1&p=$s@adpluginobject.adParse(*)@adpluginobject.adParse()@ (lazy222.txt: 4617)
+mf.atm.youku.com/mf\?site=1&p=\$s@adpluginobject\.adParse\(.*\)@adpluginobject\.adParse\(\)@
+# |http://ad.api.3g.youku.com/adv? (lazy222.txt: 4613)
+ad.api.3g.youku.com/adv\?
+# ||static.arm.youku.com/idea/ (lazy222.txt: 2962)
+.static.arm.youku.com/idea/
+# ||hudong.pl.youku.com^ (lazy222.txt: 2639)
+.hudong.pl.youku.com
+# ||gamex.mobile.youku.com (lazy222.txt: 2589)
+.gamex.mobile.youku.com*.
+# |http://vhtml.atm.youku.com/vhtml?p= (lazy222.txt: 1614)
+vhtml.atm.youku.com/vhtml\?p=
+# |http://v2html.atm.youku.com/vhtml?p=320&ct= (lazy222.txt: 1609)
+v2html.atm.youku.com/vhtml\?p=320&ct=
+# |http://static.youku.com/v1.*/index/js/ikuAdapterNew.js (lazy222.txt: 1544)
+static.youku.com/v1\..*/index/js/ikuAdapterNew\.js
+# |http://static.atm.youku.com/YouKu2014/201 (lazy222.txt: 1513)
+static.atm.youku.com/YouKu2014/201
+# |http://hz.youku.com/red/ggnotice.php? (lazy222.txt: 1217)
+hz.youku.com/red/ggnotice\.php\?
+# |http://html.atm.youku.com/html?p= (lazy222.txt: 1214)
+html.atm.youku.com/html\?p=
+# |http://static.atm.youku.com/idea/201*.jpg$image (lazy222.txt: 1514)
+static.atm.youku.com/idea/201.*\.jpg
+# |http://saaeecom.duapp.com/view/youkuvip/750.png$image (lazy222.txt: 1485)
+saaeecom.duapp.com/view/youkuvip/750\.png
+# |http://*.com/view/youkuvip/*ad.gif|$image (lazy222.txt: 411)
+/.*\.com/view/youkuvip/.*ad\.gif$
+.*.com/view/youkuvip/.*ad\.gif$
+# |http://static.atm.youku.com/miaozhen/mz_ad_$script (lazy222.txt: 1515)
+static.atm.youku.com/miaozhen/mz_ad_
+# |http://23youku.com/Runtime/js/$script (lazy222.txt: 943)
+23youku.com/Runtime/js/
+# @@|http://ad.api.3g.youku.com/adv?dprm=*&device_type= (lazy222.txt: 4622)
+ad.api.3g.youku.com/adv\?dprm=.*&device_type=
+# @@|http://hudong.pl.youku.com/player/getLive?liveid= (lazy222.txt: 158)
+hudong.pl.youku.com/player/getLive\?liveid=
+# @@|http://hudong.pl.youku.com/interact/live/get/live (lazy222.txt: 157)
+hudong.pl.youku.com/interact/live/get/live
+# @@|http://hudong.pl.youku.com/crossdomain.xml (lazy222.txt: 156)
+hudong.pl.youku.com/crossdomain\.xml
+# @@|http://ad.api.3g.youku.com/adv?dprm=*&device_type= (lazy222.txt: 4622)
+ad.api.3g.youku.com/adv\?dprm=.*&device_type=
+# @@|http://hudong.pl.youku.com/player/getLive?liveid= (lazy222.txt: 158)
+hudong.pl.youku.com/player/getLive\?liveid=
+# @@|http://hudong.pl.youku.com/interact/live/get/live (lazy222.txt: 157)
+hudong.pl.youku.com/interact/live/get/live
+# @@|http://hudong.pl.youku.com/crossdomain.xml (lazy222.txt: 156)
+hudong.pl.youku.com/crossdomain\.xml
+# @@|http://ad.api.3g.youku.com/adv?dprm=*&device_type= (lazy222.txt: 4622)
+ad.api.3g.youku.com/adv\?dprm=.*&device_type=
+# @@|http://hudong.pl.youku.com/player/getLive?liveid= (lazy222.txt: 158)
+hudong.pl.youku.com/player/getLive\?liveid=
+# @@|http://hudong.pl.youku.com/interact/live/get/live (lazy222.txt: 157)
+hudong.pl.youku.com/interact/live/get/live
+# @@|http://hudong.pl.youku.com/crossdomain.xml (lazy222.txt: 156)
+hudong.pl.youku.com/crossdomain\.xml
+
+# ||hudong.pl.youku.com/interact/web/get/timeLinePlugin? (easylistchina.txt: 3298)
+.hudong.pl.youku.com/interact/web/get/timeLinePlugin\?
+# ||hudong.pl.youku.com/interact/player/get/plugins? (easylistchina.txt: 3297)
+.hudong.pl.youku.com/interact/player/get/plugins\?
+# ||atm.youku.com^ (easylistchina.txt: 2134)
+.atm.youku.com
+# ||23youku.com/Runtime/js/ (easylistchina.txt: 1568)
+.23youku.com/Runtime/js/
+# ||k.youku.com^$domain=flvcd.com (easylistchina.txt: 3722)
+.k.youku.com
+# ||hudong.pl.youku.com/interact/web/get/timeLinePlugin? (easylistchina.txt: 3298)
+.hudong.pl.youku.com/interact/web/get/timeLinePlugin\?
+# ||hudong.pl.youku.com/interact/player/get/plugins? (easylistchina.txt: 3297)
+.hudong.pl.youku.com/interact/player/get/plugins\?
+# ||atm.youku.com^ (easylistchina.txt: 2134)
+.atm.youku.com
+# ||23youku.com/Runtime/js/ (easylistchina.txt: 1568)
+.23youku.com/Runtime/js/
+# ||k.youku.com^$domain=flvcd.com (easylistchina.txt: 3722)
+.k.youku.com
+# ||hudong.pl.youku.com/interact/web/get/timeLinePlugin? (easylistchina.txt: 3298)
+.hudong.pl.youku.com/interact/web/get/timeLinePlugin\?
+# ||hudong.pl.youku.com/interact/player/get/plugins? (easylistchina.txt: 3297)
+.hudong.pl.youku.com/interact/player/get/plugins\?
+# ||atm.youku.com^ (easylistchina.txt: 2134)
+.atm.youku.com
+# ||23youku.com/Runtime/js/ (easylistchina.txt: 1568)
+.23youku.com/Runtime/js/
+# ||k.youku.com^$domain=flvcd.com (easylistchina.txt: 3722)
+.k.youku.com
+# @@||youku.com^*^showAd (easylistchina.txt: 10468)
+.youku.com/.*[^\w%.-]showAd
+# @@||youku.com^*^adshow (easylistchina.txt: 10467)
+.youku.com/.*[^\w%.-]adshow
+# @@||static.atm.youku.com^*.swf (easylistchina.txt: 10407)
+.static.atm.youku.com/.*\.swf
+# @@||atm.youku.com/cast/getFlvUrl. (easylistchina.txt: 10197)
+.atm.youku.com/cast/getFlvUrl\.
+# @@u-ads.adap.tv*youku.com (easylistchina.txt: 10087)
+/.*u-ads\.adap\.tv.*youku\.com
+.*u-ads.adap.tv*./.*youku\.com
+.*u-ads.adap.tv*youku.com*.
+# @@||a.ads.cn.miaozhen.com^$domain=youku.com (easylistchina.txt: 10144)
+# @@||youku.com^*^showAd (easylistchina.txt: 10468)
+.youku.com/.*[^\w%.-]showAd
+# @@||youku.com^*^adshow (easylistchina.txt: 10467)
+.youku.com/.*[^\w%.-]adshow
+# @@||static.atm.youku.com^*.swf (easylistchina.txt: 10407)
+.static.atm.youku.com/.*\.swf
+# @@||atm.youku.com/cast/getFlvUrl. (easylistchina.txt: 10197)
+.atm.youku.com/cast/getFlvUrl\.
+# @@u-ads.adap.tv*youku.com (easylistchina.txt: 10087)
+/.*u-ads\.adap\.tv.*youku\.com
+.*u-ads.adap.tv*./.*youku\.com
+.*u-ads.adap.tv*youku.com*.
+# @@||a.ads.cn.miaozhen.com^$domain=youku.com (easylistchina.txt: 10144)
+# @@||youku.com^*^showAd (easylistchina.txt: 10468)
+.youku.com/.*[^\w%.-]showAd
+# @@||youku.com^*^adshow (easylistchina.txt: 10467)
+.youku.com/.*[^\w%.-]adshow
+# @@||static.atm.youku.com^*.swf (easylistchina.txt: 10407)
+.static.atm.youku.com/.*\.swf
+# @@||atm.youku.com/cast/getFlvUrl. (easylistchina.txt: 10197)
+.atm.youku.com/cast/getFlvUrl\.
+# @@u-ads.adap.tv*youku.com (easylistchina.txt: 10087)
+/.*u-ads\.adap\.tv.*youku\.com
+.*u-ads.adap.tv*./.*youku\.com
+.*u-ads.adap.tv*youku.com*.
+# @@||a.ads.cn.miaozhen.com^$domain=youku.com (easylistchina.txt: 10144)
+
+
+##############################youku end####################################
+
+##############################iqiyi begin####################################
+# ||iqiyi.com/show2?a=qc_ (easylistchina.txt: 3503)
+.iqiyi.com/show2\?a=qc_
+# ||iqiyi.com/player/cupid/common/flash980100.swf (easylistchina.txt: 3502)
+.iqiyi.com/player/cupid/common/flash980100\.swf
+# ||iqiyi.com/player/cupid/*/pageer.swf (easylistchina.txt: 3501)
+.iqiyi.com/player/cupid/.*/pageer\.swf
+# ||iqiyi.com/player/common/rebull (easylistchina.txt: 3500)
+.iqiyi.com/player/common/rebull
+# ||iqiyi.com/player/common/adflash (easylistchina.txt: 3499)
+.iqiyi.com/player/common/adflash
+# ||iqiyi.com/player/*/bannery.swf (easylistchina.txt: 3498)
+.iqiyi.com/player/.*/bannery\.swf
+# ||iqiyi.com/player/*/a.swf (easylistchina.txt: 3497)
+.iqiyi.com/player/.*/a\.swf
+# ||iqiyi.com/marketing/*/oppo. (easylistchina.txt: 3496)
+.iqiyi.com/marketing/.*/oppo\.
+# ||iqiyi.com/common/flashplayer/*980-100 (easylistchina.txt: 3495)
+.iqiyi.com/common/flashplayer/.*980-100
+# ||iqiyi.com/common/flashplayer/*250%C3%97230.swf (easylistchina.txt: 3494)
+.iqiyi.com/common/flashplayer/.*250%C3%97230\.swf
+# ||iqiyi.com/common/flashplayer/*/pause.swf (easylistchina.txt: 3493)
+.iqiyi.com/common/flashplayer/.*/pause\.swf
+# ||iqiyi.com/common/flashplayer/*/pageer.swf (easylistchina.txt: 3492)
+.iqiyi.com/common/flashplayer/.*/pageer\.swf
+# ||iqiyi.com/common/flashplayer/*/980 (easylistchina.txt: 3491)
+.iqiyi.com/common/flashplayer/.*/980
+# ||iqiyi.com/common/flashplayer/*-banner- (easylistchina.txt: 3490)
+.iqiyi.com/common/flashplayer/.*-banner-
+# ||iqiyi.com/common/flashplayer*_1380x (easylistchina.txt: 3489)
+.iqiyi.com/common/flashplayer.*_1380x
+# ||info.vip.iqiyi.com/promotion/ (easylistchina.txt: 3476)
+.info.vip.iqiyi.com/promotion/
+# ||5vdd.com/iqiyi.jpg (easylistchina.txt: 1759)
+.5vdd.com/iqiyi\.jpg
+# ||iqiyi.com/track$popup (easylistchina.txt: 1090)
+.iqiyi.com/track
+# /^http:\/\/www\.iqiyi\.com\/common\/flashplayer\/[0-9]{8}/[0-9a-z]{32}.swf/$domain=iqiyi.com (easylistchina.txt: 1133)
+/(.*/)?[^\w%.-]http:\\/\\/www\\\.iqiyi\\\.com\\/common\\/flashplayer\\/\[0-9\]\{8\}/\[0-9a-z\]\{32\}\.swf/
+/^http:\/\/www\.iqiyi\.com\/common\/flashplayer\/[0-9]{8}/[0-9a-z]{32}.swf
+# ||miaozhen.com^$popup,domain=iqiyi.com (easylistchina.txt: 1095)
+# ||iqiyi.com/show2?a=qc_ (easylistchina.txt: 3503)
+.iqiyi.com/show2\?a=qc_
+# ||iqiyi.com/player/cupid/common/flash980100.swf (easylistchina.txt: 3502)
+.iqiyi.com/player/cupid/common/flash980100\.swf
+# ||iqiyi.com/player/cupid/*/pageer.swf (easylistchina.txt: 3501)
+.iqiyi.com/player/cupid/.*/pageer\.swf
+# ||iqiyi.com/player/common/rebull (easylistchina.txt: 3500)
+.iqiyi.com/player/common/rebull
+# ||iqiyi.com/player/common/adflash (easylistchina.txt: 3499)
+.iqiyi.com/player/common/adflash
+# ||iqiyi.com/player/*/bannery.swf (easylistchina.txt: 3498)
+.iqiyi.com/player/.*/bannery\.swf
+# ||iqiyi.com/player/*/a.swf (easylistchina.txt: 3497)
+.iqiyi.com/player/.*/a\.swf
+# ||iqiyi.com/marketing/*/oppo. (easylistchina.txt: 3496)
+.iqiyi.com/marketing/.*/oppo\.
+# ||iqiyi.com/common/flashplayer/*980-100 (easylistchina.txt: 3495)
+.iqiyi.com/common/flashplayer/.*980-100
+# ||iqiyi.com/common/flashplayer/*250%C3%97230.swf (easylistchina.txt: 3494)
+.iqiyi.com/common/flashplayer/.*250%C3%97230\.swf
+# ||iqiyi.com/common/flashplayer/*/pause.swf (easylistchina.txt: 3493)
+.iqiyi.com/common/flashplayer/.*/pause\.swf
+# ||iqiyi.com/common/flashplayer/*/pageer.swf (easylistchina.txt: 3492)
+.iqiyi.com/common/flashplayer/.*/pageer\.swf
+# ||iqiyi.com/common/flashplayer/*/980 (easylistchina.txt: 3491)
+.iqiyi.com/common/flashplayer/.*/980
+# ||iqiyi.com/common/flashplayer/*-banner- (easylistchina.txt: 3490)
+.iqiyi.com/common/flashplayer/.*-banner-
+# ||iqiyi.com/common/flashplayer*_1380x (easylistchina.txt: 3489)
+.iqiyi.com/common/flashplayer.*_1380x
+# ||info.vip.iqiyi.com/promotion/ (easylistchina.txt: 3476)
+.info.vip.iqiyi.com/promotion/
+# ||5vdd.com/iqiyi.jpg (easylistchina.txt: 1759)
+.5vdd.com/iqiyi\.jpg
+# ||iqiyi.com/track$popup (easylistchina.txt: 1090)
+.iqiyi.com/track
+# /^http:\/\/www\.iqiyi\.com\/common\/flashplayer\/[0-9]{8}/[0-9a-z]{32}.swf/$domain=iqiyi.com (easylistchina.txt: 1133)
+/(.*/)?[^\w%.-]http:\\/\\/www\\\.iqiyi\\\.com\\/common\\/flashplayer\\/\[0-9\]\{8\}/\[0-9a-z\]\{32\}\.swf/
+/^http:\/\/www\.iqiyi\.com\/common\/flashplayer\/[0-9]{8}/[0-9a-z]{32}.swf
+# ||miaozhen.com^$popup,domain=iqiyi.com (easylistchina.txt: 1095)
+# ||iqiyi.com/show2?a=qc_ (easylistchina.txt: 3503)
+.iqiyi.com/show2\?a=qc_
+# ||iqiyi.com/player/cupid/common/flash980100.swf (easylistchina.txt: 3502)
+.iqiyi.com/player/cupid/common/flash980100\.swf
+# ||iqiyi.com/player/cupid/*/pageer.swf (easylistchina.txt: 3501)
+.iqiyi.com/player/cupid/.*/pageer\.swf
+# ||iqiyi.com/player/common/rebull (easylistchina.txt: 3500)
+.iqiyi.com/player/common/rebull
+# ||iqiyi.com/player/common/adflash (easylistchina.txt: 3499)
+.iqiyi.com/player/common/adflash
+# ||iqiyi.com/player/*/bannery.swf (easylistchina.txt: 3498)
+.iqiyi.com/player/.*/bannery\.swf
+# ||iqiyi.com/player/*/a.swf (easylistchina.txt: 3497)
+.iqiyi.com/player/.*/a\.swf
+# ||iqiyi.com/marketing/*/oppo. (easylistchina.txt: 3496)
+.iqiyi.com/marketing/.*/oppo\.
+# ||iqiyi.com/common/flashplayer/*980-100 (easylistchina.txt: 3495)
+.iqiyi.com/common/flashplayer/.*980-100
+# ||iqiyi.com/common/flashplayer/*250%C3%97230.swf (easylistchina.txt: 3494)
+.iqiyi.com/common/flashplayer/.*250%C3%97230\.swf
+# ||iqiyi.com/common/flashplayer/*/pause.swf (easylistchina.txt: 3493)
+.iqiyi.com/common/flashplayer/.*/pause\.swf
+# ||iqiyi.com/common/flashplayer/*/pageer.swf (easylistchina.txt: 3492)
+.iqiyi.com/common/flashplayer/.*/pageer\.swf
+# ||iqiyi.com/common/flashplayer/*/980 (easylistchina.txt: 3491)
+.iqiyi.com/common/flashplayer/.*/980
+# ||iqiyi.com/common/flashplayer/*-banner- (easylistchina.txt: 3490)
+.iqiyi.com/common/flashplayer/.*-banner-
+# ||iqiyi.com/common/flashplayer*_1380x (easylistchina.txt: 3489)
+.iqiyi.com/common/flashplayer.*_1380x
+# ||info.vip.iqiyi.com/promotion/ (easylistchina.txt: 3476)
+.info.vip.iqiyi.com/promotion/
+# ||5vdd.com/iqiyi.jpg (easylistchina.txt: 1759)
+.5vdd.com/iqiyi\.jpg
+# ||iqiyi.com/track$popup (easylistchina.txt: 1090)
+.iqiyi.com/track
+# /^http:\/\/www\.iqiyi\.com\/common\/flashplayer\/[0-9]{8}/[0-9a-z]{32}.swf/$domain=iqiyi.com (easylistchina.txt: 1133)
+/(.*/)?[^\w%.-]http:\\/\\/www\\\.iqiyi\\\.com\\/common\\/flashplayer\\/\[0-9\]\{8\}/\[0-9a-z\]\{32\}\.swf/
+/^http:\/\/www\.iqiyi\.com\/common\/flashplayer\/[0-9]{8}/[0-9a-z]{32}.swf
+# ||miaozhen.com^$popup,domain=iqiyi.com (easylistchina.txt: 1095)
+# ||iqiyi.com/track$popup (easylistchina.txt: 1090)
+.iqiyi.com/track
+# ||miaozhen.com^$popup,domain=iqiyi.com (easylistchina.txt: 1095)
+
+# |http://www.dmnico.cn/js/qiyi2.js$s@src="http://www.iqiyi.com/common/flashplayer/201*/MainPlayer_5_*.swf"@src="http://update.adbyby.com/swf/iqiyi5.swf"@ (lazy222.txt: 5055)
+www.dmnico.cn/js/qiyi2\.js\$s@src="http://www\.iqiyi\.com/common/flashplayer/201.*/MainPlayer_5_.*\.swf"@src="http://update\.adbyby\.com/swf/iqiyi5\.swf"@
+# |http://www.dmnico.cn/js/qiyi2.js$s@flashP2PCoreUrl=http://www.iqiyi.com/common/flashplayer/201*/300*.swf@flashP2PCoreUrl=http://www.iqiyi.com/common/flashplayer/20151119/3022.swf@ (lazy222.txt: 5054)
+www.dmnico.cn/js/qiyi2\.js\$s@flashP2PCoreUrl=http://www\.iqiyi\.com/common/flashplayer/201.*/300.*\.swf@flashP2PCoreUrl=http://www\.iqiyi\.com/common/flashplayer/20151119/3022\.swf@
+# ||iqiyi.com/$s@&cpnv=1.0@@ (lazy222.txt: 5036)
+.iqiyi.com/\$s@&cpnv=1\.0@@
+# ||iqiyi.com/$s@cid=&@cid=qc_100001_100141&@ (lazy222.txt: 5020)
+.iqiyi.com/\$s@cid=&@cid=qc_100001_100141&@
+# ||iqiyi.com/$s@cid=qc_100001_100???@cid=qc_100001_100141@ (lazy222.txt: 5019)
+.iqiyi.com/\$s@cid=qc_100001_100\?\?\?@cid=qc_100001_100141@
+# ||iqiyi.com$s@Q.PageInfo.adPlayerUrl = "http://static.qiyi.com/js/cupid/20140422/poseidon.js";@Q.PageInfo.adPlayerUrl = "";@ (lazy222.txt: 4991)
+# |http://www.iqiyi.com/crossdomain.xml$s@<allow-access-from domain="?.qiyi.com"/>@<allow-access-from domain="*"/>@ (lazy222.txt: 4827)
+www.iqiyi.com/crossdomain\.xml\$s@<allow-access-from domain="\?\.qiyi\.com"/>@<allow-access-from domain=".*"/>@
+# |http://api.cupid.iqiyi.com/track2 (lazy222.txt: 4630)
+api.cupid.iqiyi.com/track2
+# |http://api.cupid.iqiyi.com/mixer (lazy222.txt: 4629)
+api.cupid.iqiyi.com/mixer
+# |http://cache.m.iqiyi.com/jp/tmts/$s@,"ad":1,@,"ad":0,@ (lazy222.txt: 4621)
+cache.m.iqiyi.com/jp/tmts/\$s@,"ad":1,@,"ad":0,@
+# |http://iface2.iqiyi.com/php/xyz/entry/$s@"ad_str":@"":@ (lazy222.txt: 4607)
+iface2.iqiyi.com/php/xyz/entry/\$s@"ad_str":@"":@
+# ||www.iqiyi.com/player/cupid/common/icon_exclusive.swf (lazy222.txt: 3102)
+.www.iqiyi.com/player/cupid/common/icon_exclusive\.swf
+# ||qiyu.iqiyi.com/crossdomain.xml (lazy222.txt: 2876)
+.qiyu.iqiyi.com/crossdomain\.xml
+# ||api.cupid.iqiyi.com/policy2 (lazy222.txt: 2402)
+.api.cupid.iqiyi.com/policy2
+# |http://www.iqiyi.com/player/cupid/*/pause.swf (lazy222.txt: 1852)
+www.iqiyi.com/player/cupid/.*/pause\.swf
+# |http://www.iqiyi.com/player/cupid/*/pageer.swf? (lazy222.txt: 1851)
+www.iqiyi.com/player/cupid/.*/pageer\.swf\?
+# |http://www.iqiyi.com/player/2013*/theatre*.swf (lazy222.txt: 1850)
+www.iqiyi.com/player/2013.*/theatre.*\.swf
+# |http://www.iqiyi.com/player/201*choujiang*.swf (lazy222.txt: 1849)
+www.iqiyi.com/player/201.*choujiang.*\.swf
+# |http://www.iqiyi.com/common/clientPopLstyle.html (lazy222.txt: 1848)
+www.iqiyi.com/common/clientPopLstyle\.html
+# |http://policy.video.iqiyi.com/qiyi-flash.policy?ran= (lazy222.txt: 1450)
+policy.video.iqiyi.com/qiyi-flash\.policy\?ran=
+# |http://nl.rcd.iqiyi.com/cro (lazy222.txt: 1413)
+nl.rcd.iqiyi.com/cro
+# |http://api.cupid.iqiyi.com/show2?u=*&a=qc_100001_300144 (lazy222.txt: 1021)
+api.cupid.iqiyi.com/show2\?u=.*&a=qc_100001_300144
+# |http://api.cupid.iqiyi.com/show2?a=qc_100001_100329&e= (lazy222.txt: 1020)
+api.cupid.iqiyi.com/show2\?a=qc_100001_100329&e=
+# |http://api.cupid.iqiyi.com/show2?a=qc_100001_100140&e= (lazy222.txt: 1019)
+api.cupid.iqiyi.com/show2\?a=qc_100001_100140&e=
+# |http://api.cupid.iqiyi.com/show2?a=qc_100001_100103&u= (lazy222.txt: 1018)
+api.cupid.iqiyi.com/show2\?a=qc_100001_100103&u=
+# |http://am.cupid.iqiyi.com/am (lazy222.txt: 1014)
+am.cupid.iqiyi.com/am
+# |http://cbjs.$script,domain=~www.colafile.com|~61.iqiyi.com|~61.hz.letv.com|~play.v.61.com|~7958.com|~www.u148.net|~www.redocn.com|~www.narutom.com|~tiexue.net|~xdf.cn (lazy222.txt: 1082)
+# |http://policy.cupid.qiyi.com/policy2?a=qc_100001_$domain=~iqiyi.com|~v.pps.tv (lazy222.txt: 1449)
+# |http://www.dmnico.cn/js/qiyi2.js$s@src="http://www.iqiyi.com/common/flashplayer/201*/MainPlayer_5_*.swf"@src="http://update.adbyby.com/swf/iqiyi5.swf"@ (lazy222.txt: 5055)
+www.dmnico.cn/js/qiyi2\.js\$s@src="http://www\.iqiyi\.com/common/flashplayer/201.*/MainPlayer_5_.*\.swf"@src="http://update\.adbyby\.com/swf/iqiyi5\.swf"@
+# |http://www.dmnico.cn/js/qiyi2.js$s@flashP2PCoreUrl=http://www.iqiyi.com/common/flashplayer/201*/300*.swf@flashP2PCoreUrl=http://www.iqiyi.com/common/flashplayer/20151119/3022.swf@ (lazy222.txt: 5054)
+www.dmnico.cn/js/qiyi2\.js\$s@flashP2PCoreUrl=http://www\.iqiyi\.com/common/flashplayer/201.*/300.*\.swf@flashP2PCoreUrl=http://www\.iqiyi\.com/common/flashplayer/20151119/3022\.swf@
+# ||iqiyi.com/$s@&cpnv=1.0@@ (lazy222.txt: 5036)
+.iqiyi.com/\$s@&cpnv=1\.0@@
+# ||iqiyi.com/$s@cid=&@cid=qc_100001_100141&@ (lazy222.txt: 5020)
+.iqiyi.com/\$s@cid=&@cid=qc_100001_100141&@
+# ||iqiyi.com/$s@cid=qc_100001_100???@cid=qc_100001_100141@ (lazy222.txt: 5019)
+.iqiyi.com/\$s@cid=qc_100001_100\?\?\?@cid=qc_100001_100141@
+# ||iqiyi.com$s@Q.PageInfo.adPlayerUrl = "http://static.qiyi.com/js/cupid/20140422/poseidon.js";@Q.PageInfo.adPlayerUrl = "";@ (lazy222.txt: 4991)
+# |http://www.iqiyi.com/crossdomain.xml$s@<allow-access-from domain="?.qiyi.com"/>@<allow-access-from domain="*"/>@ (lazy222.txt: 4827)
+www.iqiyi.com/crossdomain\.xml\$s@<allow-access-from domain="\?\.qiyi\.com"/>@<allow-access-from domain=".*"/>@
+# |http://api.cupid.iqiyi.com/track2 (lazy222.txt: 4630)
+api.cupid.iqiyi.com/track2
+# |http://api.cupid.iqiyi.com/mixer (lazy222.txt: 4629)
+api.cupid.iqiyi.com/mixer
+# |http://cache.m.iqiyi.com/jp/tmts/$s@,"ad":1,@,"ad":0,@ (lazy222.txt: 4621)
+cache.m.iqiyi.com/jp/tmts/\$s@,"ad":1,@,"ad":0,@
+# |http://iface2.iqiyi.com/php/xyz/entry/$s@"ad_str":@"":@ (lazy222.txt: 4607)
+iface2.iqiyi.com/php/xyz/entry/\$s@"ad_str":@"":@
+# ||www.iqiyi.com/player/cupid/common/icon_exclusive.swf (lazy222.txt: 3102)
+.www.iqiyi.com/player/cupid/common/icon_exclusive\.swf
+# ||qiyu.iqiyi.com/crossdomain.xml (lazy222.txt: 2876)
+.qiyu.iqiyi.com/crossdomain\.xml
+# ||api.cupid.iqiyi.com/policy2 (lazy222.txt: 2402)
+.api.cupid.iqiyi.com/policy2
+# |http://www.iqiyi.com/player/cupid/*/pause.swf (lazy222.txt: 1852)
+www.iqiyi.com/player/cupid/.*/pause\.swf
+# |http://www.iqiyi.com/player/cupid/*/pageer.swf? (lazy222.txt: 1851)
+www.iqiyi.com/player/cupid/.*/pageer\.swf\?
+# |http://www.iqiyi.com/player/2013*/theatre*.swf (lazy222.txt: 1850)
+www.iqiyi.com/player/2013.*/theatre.*\.swf
+# |http://www.iqiyi.com/player/201*choujiang*.swf (lazy222.txt: 1849)
+www.iqiyi.com/player/201.*choujiang.*\.swf
+# |http://www.iqiyi.com/common/clientPopLstyle.html (lazy222.txt: 1848)
+www.iqiyi.com/common/clientPopLstyle\.html
+# |http://policy.video.iqiyi.com/qiyi-flash.policy?ran= (lazy222.txt: 1450)
+policy.video.iqiyi.com/qiyi-flash\.policy\?ran=
+# |http://nl.rcd.iqiyi.com/cro (lazy222.txt: 1413)
+nl.rcd.iqiyi.com/cro
+# |http://api.cupid.iqiyi.com/show2?u=*&a=qc_100001_300144 (lazy222.txt: 1021)
+api.cupid.iqiyi.com/show2\?u=.*&a=qc_100001_300144
+# |http://api.cupid.iqiyi.com/show2?a=qc_100001_100329&e= (lazy222.txt: 1020)
+api.cupid.iqiyi.com/show2\?a=qc_100001_100329&e=
+# |http://api.cupid.iqiyi.com/show2?a=qc_100001_100140&e= (lazy222.txt: 1019)
+api.cupid.iqiyi.com/show2\?a=qc_100001_100140&e=
+# |http://api.cupid.iqiyi.com/show2?a=qc_100001_100103&u= (lazy222.txt: 1018)
+api.cupid.iqiyi.com/show2\?a=qc_100001_100103&u=
+# |http://am.cupid.iqiyi.com/am (lazy222.txt: 1014)
+am.cupid.iqiyi.com/am
+# |http://cbjs.$script,domain=~www.colafile.com|~61.iqiyi.com|~61.hz.letv.com|~play.v.61.com|~7958.com|~www.u148.net|~www.redocn.com|~www.narutom.com|~tiexue.net|~xdf.cn (lazy222.txt: 1082)
+# |http://policy.cupid.qiyi.com/policy2?a=qc_100001_$domain=~iqiyi.com|~v.pps.tv (lazy222.txt: 1449)
+# |http://www.dmnico.cn/js/qiyi2.js$s@src="http://www.iqiyi.com/common/flashplayer/201*/MainPlayer_5_*.swf"@src="http://update.adbyby.com/swf/iqiyi5.swf"@ (lazy222.txt: 5055)
+www.dmnico.cn/js/qiyi2\.js\$s@src="http://www\.iqiyi\.com/common/flashplayer/201.*/MainPlayer_5_.*\.swf"@src="http://update\.adbyby\.com/swf/iqiyi5\.swf"@
+# |http://www.dmnico.cn/js/qiyi2.js$s@flashP2PCoreUrl=http://www.iqiyi.com/common/flashplayer/201*/300*.swf@flashP2PCoreUrl=http://www.iqiyi.com/common/flashplayer/20151119/3022.swf@ (lazy222.txt: 5054)
+www.dmnico.cn/js/qiyi2\.js\$s@flashP2PCoreUrl=http://www\.iqiyi\.com/common/flashplayer/201.*/300.*\.swf@flashP2PCoreUrl=http://www\.iqiyi\.com/common/flashplayer/20151119/3022\.swf@
+# ||iqiyi.com/$s@&cpnv=1.0@@ (lazy222.txt: 5036)
+.iqiyi.com/\$s@&cpnv=1\.0@@
+# ||iqiyi.com/$s@cid=&@cid=qc_100001_100141&@ (lazy222.txt: 5020)
+.iqiyi.com/\$s@cid=&@cid=qc_100001_100141&@
+# ||iqiyi.com/$s@cid=qc_100001_100???@cid=qc_100001_100141@ (lazy222.txt: 5019)
+.iqiyi.com/\$s@cid=qc_100001_100\?\?\?@cid=qc_100001_100141@
+# ||iqiyi.com$s@Q.PageInfo.adPlayerUrl = "http://static.qiyi.com/js/cupid/20140422/poseidon.js";@Q.PageInfo.adPlayerUrl = "";@ (lazy222.txt: 4991)
+# |http://www.iqiyi.com/crossdomain.xml$s@<allow-access-from domain="?.qiyi.com"/>@<allow-access-from domain="*"/>@ (lazy222.txt: 4827)
+www.iqiyi.com/crossdomain\.xml\$s@<allow-access-from domain="\?\.qiyi\.com"/>@<allow-access-from domain=".*"/>@
+# |http://api.cupid.iqiyi.com/track2 (lazy222.txt: 4630)
+api.cupid.iqiyi.com/track2
+# |http://api.cupid.iqiyi.com/mixer (lazy222.txt: 4629)
+api.cupid.iqiyi.com/mixer
+# |http://cache.m.iqiyi.com/jp/tmts/$s@,"ad":1,@,"ad":0,@ (lazy222.txt: 4621)
+cache.m.iqiyi.com/jp/tmts/\$s@,"ad":1,@,"ad":0,@
+# |http://iface2.iqiyi.com/php/xyz/entry/$s@"ad_str":@"":@ (lazy222.txt: 4607)
+iface2.iqiyi.com/php/xyz/entry/\$s@"ad_str":@"":@
+# ||www.iqiyi.com/player/cupid/common/icon_exclusive.swf (lazy222.txt: 3102)
+.www.iqiyi.com/player/cupid/common/icon_exclusive\.swf
+# ||qiyu.iqiyi.com/crossdomain.xml (lazy222.txt: 2876)
+.qiyu.iqiyi.com/crossdomain\.xml
+# ||api.cupid.iqiyi.com/policy2 (lazy222.txt: 2402)
+.api.cupid.iqiyi.com/policy2
+# |http://www.iqiyi.com/player/cupid/*/pause.swf (lazy222.txt: 1852)
+www.iqiyi.com/player/cupid/.*/pause\.swf
+# |http://www.iqiyi.com/player/cupid/*/pageer.swf? (lazy222.txt: 1851)
+www.iqiyi.com/player/cupid/.*/pageer\.swf\?
+# |http://www.iqiyi.com/player/2013*/theatre*.swf (lazy222.txt: 1850)
+www.iqiyi.com/player/2013.*/theatre.*\.swf
+# |http://www.iqiyi.com/player/201*choujiang*.swf (lazy222.txt: 1849)
+www.iqiyi.com/player/201.*choujiang.*\.swf
+# |http://www.iqiyi.com/common/clientPopLstyle.html (lazy222.txt: 1848)
+www.iqiyi.com/common/clientPopLstyle\.html
+# |http://policy.video.iqiyi.com/qiyi-flash.policy?ran= (lazy222.txt: 1450)
+policy.video.iqiyi.com/qiyi-flash\.policy\?ran=
+# |http://nl.rcd.iqiyi.com/cro (lazy222.txt: 1413)
+nl.rcd.iqiyi.com/cro
+# |http://api.cupid.iqiyi.com/show2?u=*&a=qc_100001_300144 (lazy222.txt: 1021)
+api.cupid.iqiyi.com/show2\?u=.*&a=qc_100001_300144
+# |http://api.cupid.iqiyi.com/show2?a=qc_100001_100329&e= (lazy222.txt: 1020)
+api.cupid.iqiyi.com/show2\?a=qc_100001_100329&e=
+# |http://api.cupid.iqiyi.com/show2?a=qc_100001_100140&e= (lazy222.txt: 1019)
+api.cupid.iqiyi.com/show2\?a=qc_100001_100140&e=
+# |http://api.cupid.iqiyi.com/show2?a=qc_100001_100103&u= (lazy222.txt: 1018)
+api.cupid.iqiyi.com/show2\?a=qc_100001_100103&u=
+# |http://am.cupid.iqiyi.com/am (lazy222.txt: 1014)
+am.cupid.iqiyi.com/am
+# |http://cbjs.$script,domain=~www.colafile.com|~61.iqiyi.com|~61.hz.letv.com|~play.v.61.com|~7958.com|~www.u148.net|~www.redocn.com|~www.narutom.com|~tiexue.net|~xdf.cn (lazy222.txt: 1082)
+# |http://policy.cupid.qiyi.com/policy2?a=qc_100001_$domain=~iqiyi.com|~v.pps.tv (lazy222.txt: 1449)
+# @@|http://api.cupid.iqiyi.com/show2?u=*&a=qc_100001_100142 (lazy222.txt: 121)
+api.cupid.iqiyi.com/show2\?u=.*&a=qc_100001_100142
+# @@|http://api.cupid.iqiyi.com/show2?u=*&a=qc_100001_100141 (lazy222.txt: 120)
+api.cupid.iqiyi.com/show2\?u=.*&a=qc_100001_100141
+# @@|http://api.cupid.iqiyi.com/show2?u=*&a=qc_100001_100142 (lazy222.txt: 121)
+api.cupid.iqiyi.com/show2\?u=.*&a=qc_100001_100142
+# @@|http://api.cupid.iqiyi.com/show2?u=*&a=qc_100001_100141 (lazy222.txt: 120)
+api.cupid.iqiyi.com/show2\?u=.*&a=qc_100001_100141
+# @@|http://api.cupid.iqiyi.com/show2?u=*&a=qc_100001_100142 (lazy222.txt: 121)
+api.cupid.iqiyi.com/show2\?u=.*&a=qc_100001_100142
+# @@|http://api.cupid.iqiyi.com/show2?u=*&a=qc_100001_100141 (lazy222.txt: 120)
+api.cupid.iqiyi.com/show2\?u=.*&a=qc_100001_100141
+
+# ||iqiyi.com/show2?a=qc_ (easylistchina+easylist.txt: 3518)
+.iqiyi.com/show2\?a=qc_
+# ||iqiyi.com/player/cupid/common/flash980100.swf (easylistchina+easylist.txt: 3517)
+.iqiyi.com/player/cupid/common/flash980100\.swf
+# ||iqiyi.com/player/cupid/*/pageer.swf (easylistchina+easylist.txt: 3516)
+.iqiyi.com/player/cupid/.*/pageer\.swf
+# ||iqiyi.com/player/common/rebull (easylistchina+easylist.txt: 3515)
+.iqiyi.com/player/common/rebull
+# ||iqiyi.com/player/common/adflash (easylistchina+easylist.txt: 3514)
+.iqiyi.com/player/common/adflash
+# ||iqiyi.com/player/*/bannery.swf (easylistchina+easylist.txt: 3513)
+.iqiyi.com/player/.*/bannery\.swf
+# ||iqiyi.com/player/*/a.swf (easylistchina+easylist.txt: 3512)
+.iqiyi.com/player/.*/a\.swf
+# ||iqiyi.com/marketing/*/oppo. (easylistchina+easylist.txt: 3511)
+.iqiyi.com/marketing/.*/oppo\.
+# ||iqiyi.com/common/flashplayer/*980-100 (easylistchina+easylist.txt: 3510)
+.iqiyi.com/common/flashplayer/.*980-100
+# ||iqiyi.com/common/flashplayer/*250%C3%97230.swf (easylistchina+easylist.txt: 3509)
+.iqiyi.com/common/flashplayer/.*250%C3%97230\.swf
+# ||iqiyi.com/common/flashplayer/*/pause.swf (easylistchina+easylist.txt: 3508)
+.iqiyi.com/common/flashplayer/.*/pause\.swf
+# ||iqiyi.com/common/flashplayer/*/pageer.swf (easylistchina+easylist.txt: 3507)
+.iqiyi.com/common/flashplayer/.*/pageer\.swf
+# ||iqiyi.com/common/flashplayer/*/980 (easylistchina+easylist.txt: 3506)
+.iqiyi.com/common/flashplayer/.*/980
+# ||iqiyi.com/common/flashplayer/*-banner- (easylistchina+easylist.txt: 3505)
+.iqiyi.com/common/flashplayer/.*-banner-
+# ||iqiyi.com/common/flashplayer*_1380x (easylistchina+easylist.txt: 3504)
+.iqiyi.com/common/flashplayer.*_1380x
+# ||info.vip.iqiyi.com/promotion/ (easylistchina+easylist.txt: 3491)
+.info.vip.iqiyi.com/promotion/
+# ||5vdd.com/iqiyi.jpg (easylistchina+easylist.txt: 1768)
+.5vdd.com/iqiyi\.jpg
+# ||iqiyi.com/track$popup (easylistchina+easylist.txt: 1066)
+.iqiyi.com/track
+# /^http:\/\/www\.iqiyi\.com\/common\/flashplayer\/[0-9]{8}/[0-9a-z]{32}.swf/$domain=iqiyi.com (easylistchina+easylist.txt: 1109)
+/(.*/)?[^\w%.-]http:\\/\\/www\\\.iqiyi\\\.com\\/common\\/flashplayer\\/\[0-9\]\{8\}/\[0-9a-z\]\{32\}\.swf/
+/^http:\/\/www\.iqiyi\.com\/common\/flashplayer\/[0-9]{8}/[0-9a-z]{32}.swf
+# ||miaozhen.com^$popup,domain=iqiyi.com (easylistchina+easylist.txt: 1071)
+# ||iqiyi.com/show2?a=qc_ (easylistchina+easylist.txt: 3518)
+.iqiyi.com/show2\?a=qc_
+# ||iqiyi.com/player/cupid/common/flash980100.swf (easylistchina+easylist.txt: 3517)
+.iqiyi.com/player/cupid/common/flash980100\.swf
+# ||iqiyi.com/player/cupid/*/pageer.swf (easylistchina+easylist.txt: 3516)
+.iqiyi.com/player/cupid/.*/pageer\.swf
+# ||iqiyi.com/player/common/rebull (easylistchina+easylist.txt: 3515)
+.iqiyi.com/player/common/rebull
+# ||iqiyi.com/player/common/adflash (easylistchina+easylist.txt: 3514)
+.iqiyi.com/player/common/adflash
+# ||iqiyi.com/player/*/bannery.swf (easylistchina+easylist.txt: 3513)
+.iqiyi.com/player/.*/bannery\.swf
+# ||iqiyi.com/player/*/a.swf (easylistchina+easylist.txt: 3512)
+.iqiyi.com/player/.*/a\.swf
+# ||iqiyi.com/marketing/*/oppo. (easylistchina+easylist.txt: 3511)
+.iqiyi.com/marketing/.*/oppo\.
+# ||iqiyi.com/common/flashplayer/*980-100 (easylistchina+easylist.txt: 3510)
+.iqiyi.com/common/flashplayer/.*980-100
+# ||iqiyi.com/common/flashplayer/*250%C3%97230.swf (easylistchina+easylist.txt: 3509)
+.iqiyi.com/common/flashplayer/.*250%C3%97230\.swf
+# ||iqiyi.com/common/flashplayer/*/pause.swf (easylistchina+easylist.txt: 3508)
+.iqiyi.com/common/flashplayer/.*/pause\.swf
+# ||iqiyi.com/common/flashplayer/*/pageer.swf (easylistchina+easylist.txt: 3507)
+.iqiyi.com/common/flashplayer/.*/pageer\.swf
+# ||iqiyi.com/common/flashplayer/*/980 (easylistchina+easylist.txt: 3506)
+.iqiyi.com/common/flashplayer/.*/980
+# ||iqiyi.com/common/flashplayer/*-banner- (easylistchina+easylist.txt: 3505)
+.iqiyi.com/common/flashplayer/.*-banner-
+# ||iqiyi.com/common/flashplayer*_1380x (easylistchina+easylist.txt: 3504)
+.iqiyi.com/common/flashplayer.*_1380x
+# ||info.vip.iqiyi.com/promotion/ (easylistchina+easylist.txt: 3491)
+.info.vip.iqiyi.com/promotion/
+# ||5vdd.com/iqiyi.jpg (easylistchina+easylist.txt: 1768)
+.5vdd.com/iqiyi\.jpg
+# ||iqiyi.com/track$popup (easylistchina+easylist.txt: 1066)
+.iqiyi.com/track
+# /^http:\/\/www\.iqiyi\.com\/common\/flashplayer\/[0-9]{8}/[0-9a-z]{32}.swf/$domain=iqiyi.com (easylistchina+easylist.txt: 1109)
+/(.*/)?[^\w%.-]http:\\/\\/www\\\.iqiyi\\\.com\\/common\\/flashplayer\\/\[0-9\]\{8\}/\[0-9a-z\]\{32\}\.swf/
+/^http:\/\/www\.iqiyi\.com\/common\/flashplayer\/[0-9]{8}/[0-9a-z]{32}.swf
+# ||miaozhen.com^$popup,domain=iqiyi.com (easylistchina+easylist.txt: 1071)
+# ||iqiyi.com/show2?a=qc_ (easylistchina+easylist.txt: 3518)
+.iqiyi.com/show2\?a=qc_
+# ||iqiyi.com/player/cupid/common/flash980100.swf (easylistchina+easylist.txt: 3517)
+.iqiyi.com/player/cupid/common/flash980100\.swf
+# ||iqiyi.com/player/cupid/*/pageer.swf (easylistchina+easylist.txt: 3516)
+.iqiyi.com/player/cupid/.*/pageer\.swf
+# ||iqiyi.com/player/common/rebull (easylistchina+easylist.txt: 3515)
+.iqiyi.com/player/common/rebull
+# ||iqiyi.com/player/common/adflash (easylistchina+easylist.txt: 3514)
+.iqiyi.com/player/common/adflash
+# ||iqiyi.com/player/*/bannery.swf (easylistchina+easylist.txt: 3513)
+.iqiyi.com/player/.*/bannery\.swf
+# ||iqiyi.com/player/*/a.swf (easylistchina+easylist.txt: 3512)
+.iqiyi.com/player/.*/a\.swf
+# ||iqiyi.com/marketing/*/oppo. (easylistchina+easylist.txt: 3511)
+.iqiyi.com/marketing/.*/oppo\.
+# ||iqiyi.com/common/flashplayer/*980-100 (easylistchina+easylist.txt: 3510)
+.iqiyi.com/common/flashplayer/.*980-100
+# ||iqiyi.com/common/flashplayer/*250%C3%97230.swf (easylistchina+easylist.txt: 3509)
+.iqiyi.com/common/flashplayer/.*250%C3%97230\.swf
+# ||iqiyi.com/common/flashplayer/*/pause.swf (easylistchina+easylist.txt: 3508)
+.iqiyi.com/common/flashplayer/.*/pause\.swf
+# ||iqiyi.com/common/flashplayer/*/pageer.swf (easylistchina+easylist.txt: 3507)
+.iqiyi.com/common/flashplayer/.*/pageer\.swf
+# ||iqiyi.com/common/flashplayer/*/980 (easylistchina+easylist.txt: 3506)
+.iqiyi.com/common/flashplayer/.*/980
+# ||iqiyi.com/common/flashplayer/*-banner- (easylistchina+easylist.txt: 3505)
+.iqiyi.com/common/flashplayer/.*-banner-
+# ||iqiyi.com/common/flashplayer*_1380x (easylistchina+easylist.txt: 3504)
+.iqiyi.com/common/flashplayer.*_1380x
+# ||info.vip.iqiyi.com/promotion/ (easylistchina+easylist.txt: 3491)
+.info.vip.iqiyi.com/promotion/
+# ||5vdd.com/iqiyi.jpg (easylistchina+easylist.txt: 1768)
+.5vdd.com/iqiyi\.jpg
+# ||iqiyi.com/track$popup (easylistchina+easylist.txt: 1066)
+.iqiyi.com/track
+# /^http:\/\/www\.iqiyi\.com\/common\/flashplayer\/[0-9]{8}/[0-9a-z]{32}.swf/$domain=iqiyi.com (easylistchina+easylist.txt: 1109)
+/(.*/)?[^\w%.-]http:\\/\\/www\\\.iqiyi\\\.com\\/common\\/flashplayer\\/\[0-9\]\{8\}/\[0-9a-z\]\{32\}\.swf/
+/^http:\/\/www\.iqiyi\.com\/common\/flashplayer\/[0-9]{8}/[0-9a-z]{32}.swf
+# ||miaozhen.com^$popup,domain=iqiyi.com (easylistchina+easylist.txt: 1071)
+# ||iqiyi.com/track$popup (easylistchina+easylist.txt: 1066)
+.iqiyi.com/track
+# ||miaozhen.com^$popup,domain=iqiyi.com (easylistchina+easylist.txt: 1071)
+
+
+
+
+##############################iqiyi end####################################
+
+##############################qq begin####################################
+# ||yy521.com/qq/qq.js (easylistchina.txt: 5307)
+.yy521.com/qq/qq\.js
+# ||weixin.qqday.com/js/tj.js (easylistchina.txt: 5022)
+.weixin.qqday.com/js/tj\.js
+# ||weixin.qqday.com/js/rb.js (easylistchina.txt: 5021)
+.weixin.qqday.com/js/rb\.js
+# ||voc.com.cn/Frame/qqms_cs.html (easylistchina.txt: 4965)
+.voc.com.cn/Frame/qqms_cs\.html
+# ||tv6080.com/qqt/ (easylistchina.txt: 4858)
+.tv6080.com/qqt/
+# ||tianmu.com/js/qq.js (easylistchina.txt: 4772)
+.tianmu.com/js/qq\.js
+# ||sinaimg.cn/large/005x4Y8Zgw1eqq4k2d5hsj306y06y0ts.jpg (easylistchina.txt: 4567)
+.sinaimg.cn/large/005x4Y8Zgw1eqq4k2d5hsj306y06y0ts\.jpg
+# ||sinaimg.cn/large/005x4Y8Zgw1eqq4gg0a1oj306y06y0ta.jpg (easylistchina.txt: 4566)
+.sinaimg.cn/large/005x4Y8Zgw1eqq4gg0a1oj306y06y0ta\.jpg
+# ||rh.qq.com^ (easylistchina.txt: 4389)
+.rh.qq.com
+# ||qzs.qq.com/qzone/biz/res/v.swf?loc=$object-subrequest (easylistchina.txt: 4358)
+.qzs.qq.com/qzone/biz/res/v\.swf\?loc=
+# ||qqzuqiu.com/?a=check& (easylistchina.txt: 4344)
+.qqzuqiu.com/\?a=check&
+# ||qqyy.com/js/public_end_add.js (easylistchina.txt: 4343)
+.qqyy.com/js/public_end_add\.js
+# ||qqyy.com/js/commAdv (easylistchina.txt: 4342)
+.qqyy.com/js/commAdv
+# ||qqtz.com/ad$subdocument (easylistchina.txt: 4341)
+.qqtz.com/ad
+# ||qqread.com/swf/ (easylistchina.txt: 4340)
+.qqread.com/swf/
+# ||qqread.com/*js/$script (easylistchina.txt: 4339)
+.qqread.com/.*js/
+# ||qqmcc.org/biz/home_top_960x90.html (easylistchina.txt: 4338)
+.qqmcc.org/biz/home_top_960x90\.html
+# ||qqkj.cn/js/qqkjnew/lanmuzhuantitongji.js (easylistchina.txt: 4337)
+.qqkj.cn/js/qqkjnew/lanmuzhuantitongji\.js
+# ||qqjia.com/images/ad (easylistchina.txt: 4336)
+.qqjia.com/images/ad
+# ||qqjia.com/dan.js (easylistchina.txt: 4335)
+.qqjia.com/dan\.js
+# ||qqhjy.com/soft/Upload*.gif (easylistchina.txt: 4334)
+.qqhjy.com/soft/Upload.*\.gif
+# ||qqcyl.net/js/*.html (easylistchina.txt: 4333)
+.qqcyl.net/js/.*\.html
+# ||qqcyl.com/js/*.html (easylistchina.txt: 4332)
+.qqcyl.com/js/.*\.html
+# ||qqcf.com/js/Content_Get.js (easylistchina.txt: 4331)
+.qqcf.com/js/Content_Get\.js
+# ||qq260.com/shout.js (easylistchina.txt: 4330)
+.qq260.com/shout\.js
+# ||qq.com/qzone/biz/gdt/display/positions/waicai/ (easylistchina.txt: 4329)
+.qq.com/qzone/biz/gdt/display/positions/waicai/
+# ||qq.com/playgame/videoweb/ (easylistchina.txt: 4328)
+.qq.com/playgame/videoweb/
+# ||qq.com/PL_adT.htm (easylistchina.txt: 4327)
+.qq.com/PL_adT\.htm
+# ||qq.com/minivideo_v1/vd/res/enttencentvideo.xml (easylistchina.txt: 4326)
+.qq.com/minivideo_v1/vd/res/enttencentvideo\.xml
+# ||qq.com/livemsg? (easylistchina.txt: 4325)
+.qq.com/livemsg\?
+# ||qq.com/Index/getAdsAndHotspot (easylistchina.txt: 4324)
+.qq.com/Index/getAdsAndHotspot
+# ||qq.com/game/footerbar$subdocument (easylistchina.txt: 4323)
+.qq.com/game/footerbar
+# ||qq.com/coral/ADS (easylistchina.txt: 4322)
+.qq.com/coral/ADS
+# ||qq.com/bbs/bbs_topgg.htm (easylistchina.txt: 4320)
+.qq.com/bbs/bbs_topgg\.htm
+# ||qq.com/article_qq/ad_article_qq/ (easylistchina.txt: 4319)
+.qq.com/article_qq/ad_article_qq/
+# ||mail.qq.com/lview? (easylistchina.txt: 3889)
+.mail.qq.com/lview\?
+# ||l.qq.com/lview? (easylistchina.txt: 3748)
+.l.qq.com/lview\?
+# ||jinyici.com/qq.js (easylistchina.txt: 3598)
+.jinyici.com/qq\.js
+# ||gtimg.com/qqlive/ (easylistchina.txt: 3052)
+.gtimg.com/qqlive/
+# ||gdt.qq.com^ (easylistchina.txt: 2965)
+.gdt.qq.com
+# ||freep.cn/lianjie/qqtongji.js (easylistchina.txt: 2906)
+.freep.cn/lianjie/qqtongji\.js
+# ||fmdisk.com/templates/yythems/images/qq (easylistchina.txt: 2894)
+.fmdisk.com/templates/yythems/images/qq
+# ||djwma.com/qq.jpg (easylistchina.txt: 2658)
+.djwma.com/qq\.jpg
+# ||chuangshi.qq.com/upload/cmsv2/Banner/ (easylistchina.txt: 2460)
+.chuangshi.qq.com/upload/cmsv2/Banner/
+# ||anquan.org/static/profile/images/qq-banner.png (easylistchina.txt: 2087)
+.anquan.org/static/profile/images/qq-banner\.png
+# ||anquan.org/static/auth/images/ppb_cert/qq-browser.jpg (easylistchina.txt: 2086)
+.anquan.org/static/auth/images/ppb_cert/qq-browser\.jpg
+# ||admin5.com/bd360qq/action/ (easylistchina.txt: 2012)
+.admin5.com/bd360qq/action/
+# ||ac.tc.qq.com/store_file_download?*&dir_path=/admin/swf/ (easylistchina.txt: 1972)
+.ac.tc.qq.com/store_file_download\?.*&dir_path=/admin/swf/
+# ||855699.com^*qq.js (easylistchina.txt: 1871)
+.855699.com/.*qq\.js
+# ||5ilog.com/qq/js/jsgg.js (easylistchina.txt: 1748)
+.5ilog.com/qq/js/jsgg\.js
+# ||52tian.net/qq/ (easylistchina.txt: 1709)
+.52tian.net/qq/
+# ||3634.com/qq/ (easylistchina.txt: 1597)
+.3634.com/qq/
+# _vmind.qqvideo.tc.qq.com^ (easylistchina.txt: 1265)
+/.*_vmind\.qqvideo\.tc\.qq\.com[^\w%.-]
+# /vmind.qqvideo.tc.qq.com^ (easylistchina.txt: 1240)
+/(.*/)?vmind\.qqvideo\.tc\.qq\.com[^\w%.-]
+vmind.qqvideo.tc.qq.com
+# ||wit.qq.com^$third-party (easylistchina.txt: 1001)
+.wit.qq.com
+# ||qq4g.cn^$third-party (easylistchina.txt: 911)
+.qq4g.cn
+# /qqyouyuead/* (easylistchina.txt: 212)
+/(.*/)?qqyouyuead/.*
+# /qqlive/conf/playerlottery/* (easylistchina.txt: 211)
+/(.*/)?qqlive/conf/playerlottery/.*
+# /qqguojiad/* (easylistchina.txt: 210)
+/(.*/)?qqguojiad/.*
+# ||sinaimg.cn/large/$domain=360-bo.com|chakd.com|kiees.cn|kqiuba.com|lueqiu.com|macappbox.com|pptiyu.com|qqzhibo.net (easylistchina.txt: 4564)
+# ||tietuku.com^$domain=5ydj.com|99ee1.com|99re5.com|99rr6.com|btago.com|btbook.net|btshark.org|cnmkv.com|fulisuo1.com|hdbiger.org|kisssub.org|papa1024.com|potplayer.org|qqhzg.com|qqjishu.net|ruoren.com|souxue8.net|totuwo.com|xiaodao.la|xiaodaoyl.com|yunaw.com (easylistchina.txt: 4793)
+# /?$popup,domain=allanalpass.com|amy.gs|any.gs|cash4files.com|deb.gs|dyo.gs|eafyfsuh.net|filesonthe.net|galleries.bz|goneviral.com|linkbucks.com|megaline.co|miniurls.co|picbucks.com|qqc.co|rqq.co|sasontnwc.net|seriousdeals.net|theseblogs.com|tinylinks.co|tnabucks.com|tubeviral.com|ultrafiles.net|urlbeat.net|whackyvidz.com|yyv.co|zff.co (easylistchina.txt: 1061)
+# ||qq.com/bqq_qfpic/$domain=keywin.org (easylistchina.txt: 4321)
+.qq.com/bqq_qfpic/
+# ||yy521.com/qq/qq.js (easylistchina.txt: 5307)
+.yy521.com/qq/qq\.js
+# ||weixin.qqday.com/js/tj.js (easylistchina.txt: 5022)
+.weixin.qqday.com/js/tj\.js
+# ||weixin.qqday.com/js/rb.js (easylistchina.txt: 5021)
+.weixin.qqday.com/js/rb\.js
+# ||voc.com.cn/Frame/qqms_cs.html (easylistchina.txt: 4965)
+.voc.com.cn/Frame/qqms_cs\.html
+# ||tv6080.com/qqt/ (easylistchina.txt: 4858)
+.tv6080.com/qqt/
+# ||tianmu.com/js/qq.js (easylistchina.txt: 4772)
+.tianmu.com/js/qq\.js
+# ||sinaimg.cn/large/005x4Y8Zgw1eqq4k2d5hsj306y06y0ts.jpg (easylistchina.txt: 4567)
+.sinaimg.cn/large/005x4Y8Zgw1eqq4k2d5hsj306y06y0ts\.jpg
+# ||sinaimg.cn/large/005x4Y8Zgw1eqq4gg0a1oj306y06y0ta.jpg (easylistchina.txt: 4566)
+.sinaimg.cn/large/005x4Y8Zgw1eqq4gg0a1oj306y06y0ta\.jpg
+# ||rh.qq.com^ (easylistchina.txt: 4389)
+.rh.qq.com
+# ||qzs.qq.com/qzone/biz/res/v.swf?loc=$object-subrequest (easylistchina.txt: 4358)
+.qzs.qq.com/qzone/biz/res/v\.swf\?loc=
+# ||qqzuqiu.com/?a=check& (easylistchina.txt: 4344)
+.qqzuqiu.com/\?a=check&
+# ||qqyy.com/js/public_end_add.js (easylistchina.txt: 4343)
+.qqyy.com/js/public_end_add\.js
+# ||qqyy.com/js/commAdv (easylistchina.txt: 4342)
+.qqyy.com/js/commAdv
+# ||qqtz.com/ad$subdocument (easylistchina.txt: 4341)
+.qqtz.com/ad
+# ||qqread.com/swf/ (easylistchina.txt: 4340)
+.qqread.com/swf/
+# ||qqread.com/*js/$script (easylistchina.txt: 4339)
+.qqread.com/.*js/
+# ||qqmcc.org/biz/home_top_960x90.html (easylistchina.txt: 4338)
+.qqmcc.org/biz/home_top_960x90\.html
+# ||qqkj.cn/js/qqkjnew/lanmuzhuantitongji.js (easylistchina.txt: 4337)
+.qqkj.cn/js/qqkjnew/lanmuzhuantitongji\.js
+# ||qqjia.com/images/ad (easylistchina.txt: 4336)
+.qqjia.com/images/ad
+# ||qqjia.com/dan.js (easylistchina.txt: 4335)
+.qqjia.com/dan\.js
+# ||qqhjy.com/soft/Upload*.gif (easylistchina.txt: 4334)
+.qqhjy.com/soft/Upload.*\.gif
+# ||qqcyl.net/js/*.html (easylistchina.txt: 4333)
+.qqcyl.net/js/.*\.html
+# ||qqcyl.com/js/*.html (easylistchina.txt: 4332)
+.qqcyl.com/js/.*\.html
+# ||qqcf.com/js/Content_Get.js (easylistchina.txt: 4331)
+.qqcf.com/js/Content_Get\.js
+# ||qq260.com/shout.js (easylistchina.txt: 4330)
+.qq260.com/shout\.js
+# ||qq.com/qzone/biz/gdt/display/positions/waicai/ (easylistchina.txt: 4329)
+.qq.com/qzone/biz/gdt/display/positions/waicai/
+# ||qq.com/playgame/videoweb/ (easylistchina.txt: 4328)
+.qq.com/playgame/videoweb/
+# ||qq.com/PL_adT.htm (easylistchina.txt: 4327)
+.qq.com/PL_adT\.htm
+# ||qq.com/minivideo_v1/vd/res/enttencentvideo.xml (easylistchina.txt: 4326)
+.qq.com/minivideo_v1/vd/res/enttencentvideo\.xml
+# ||qq.com/livemsg? (easylistchina.txt: 4325)
+.qq.com/livemsg\?
+# ||qq.com/Index/getAdsAndHotspot (easylistchina.txt: 4324)
+.qq.com/Index/getAdsAndHotspot
+# ||qq.com/game/footerbar$subdocument (easylistchina.txt: 4323)
+.qq.com/game/footerbar
+# ||qq.com/coral/ADS (easylistchina.txt: 4322)
+.qq.com/coral/ADS
+# ||qq.com/bbs/bbs_topgg.htm (easylistchina.txt: 4320)
+.qq.com/bbs/bbs_topgg\.htm
+# ||qq.com/article_qq/ad_article_qq/ (easylistchina.txt: 4319)
+.qq.com/article_qq/ad_article_qq/
+# ||mail.qq.com/lview? (easylistchina.txt: 3889)
+.mail.qq.com/lview\?
+# ||l.qq.com/lview? (easylistchina.txt: 3748)
+.l.qq.com/lview\?
+# ||jinyici.com/qq.js (easylistchina.txt: 3598)
+.jinyici.com/qq\.js
+# ||gtimg.com/qqlive/ (easylistchina.txt: 3052)
+.gtimg.com/qqlive/
+# ||gdt.qq.com^ (easylistchina.txt: 2965)
+.gdt.qq.com
+# ||freep.cn/lianjie/qqtongji.js (easylistchina.txt: 2906)
+.freep.cn/lianjie/qqtongji\.js
+# ||fmdisk.com/templates/yythems/images/qq (easylistchina.txt: 2894)
+.fmdisk.com/templates/yythems/images/qq
+# ||djwma.com/qq.jpg (easylistchina.txt: 2658)
+.djwma.com/qq\.jpg
+# ||chuangshi.qq.com/upload/cmsv2/Banner/ (easylistchina.txt: 2460)
+.chuangshi.qq.com/upload/cmsv2/Banner/
+# ||anquan.org/static/profile/images/qq-banner.png (easylistchina.txt: 2087)
+.anquan.org/static/profile/images/qq-banner\.png
+# ||anquan.org/static/auth/images/ppb_cert/qq-browser.jpg (easylistchina.txt: 2086)
+.anquan.org/static/auth/images/ppb_cert/qq-browser\.jpg
+# ||admin5.com/bd360qq/action/ (easylistchina.txt: 2012)
+.admin5.com/bd360qq/action/
+# ||ac.tc.qq.com/store_file_download?*&dir_path=/admin/swf/ (easylistchina.txt: 1972)
+.ac.tc.qq.com/store_file_download\?.*&dir_path=/admin/swf/
+# ||855699.com^*qq.js (easylistchina.txt: 1871)
+.855699.com/.*qq\.js
+# ||5ilog.com/qq/js/jsgg.js (easylistchina.txt: 1748)
+.5ilog.com/qq/js/jsgg\.js
+# ||52tian.net/qq/ (easylistchina.txt: 1709)
+.52tian.net/qq/
+# ||3634.com/qq/ (easylistchina.txt: 1597)
+.3634.com/qq/
+# _vmind.qqvideo.tc.qq.com^ (easylistchina.txt: 1265)
+/.*_vmind\.qqvideo\.tc\.qq\.com[^\w%.-]
+# /vmind.qqvideo.tc.qq.com^ (easylistchina.txt: 1240)
+/(.*/)?vmind\.qqvideo\.tc\.qq\.com[^\w%.-]
+vmind.qqvideo.tc.qq.com
+# ||wit.qq.com^$third-party (easylistchina.txt: 1001)
+.wit.qq.com
+# ||qq4g.cn^$third-party (easylistchina.txt: 911)
+.qq4g.cn
+# /qqyouyuead/* (easylistchina.txt: 212)
+/(.*/)?qqyouyuead/.*
+# /qqlive/conf/playerlottery/* (easylistchina.txt: 211)
+/(.*/)?qqlive/conf/playerlottery/.*
+# /qqguojiad/* (easylistchina.txt: 210)
+/(.*/)?qqguojiad/.*
+# ||sinaimg.cn/large/$domain=360-bo.com|chakd.com|kiees.cn|kqiuba.com|lueqiu.com|macappbox.com|pptiyu.com|qqzhibo.net (easylistchina.txt: 4564)
+# ||tietuku.com^$domain=5ydj.com|99ee1.com|99re5.com|99rr6.com|btago.com|btbook.net|btshark.org|cnmkv.com|fulisuo1.com|hdbiger.org|kisssub.org|papa1024.com|potplayer.org|qqhzg.com|qqjishu.net|ruoren.com|souxue8.net|totuwo.com|xiaodao.la|xiaodaoyl.com|yunaw.com (easylistchina.txt: 4793)
+# /?$popup,domain=allanalpass.com|amy.gs|any.gs|cash4files.com|deb.gs|dyo.gs|eafyfsuh.net|filesonthe.net|galleries.bz|goneviral.com|linkbucks.com|megaline.co|miniurls.co|picbucks.com|qqc.co|rqq.co|sasontnwc.net|seriousdeals.net|theseblogs.com|tinylinks.co|tnabucks.com|tubeviral.com|ultrafiles.net|urlbeat.net|whackyvidz.com|yyv.co|zff.co (easylistchina.txt: 1061)
+# ||qq.com/bqq_qfpic/$domain=keywin.org (easylistchina.txt: 4321)
+.qq.com/bqq_qfpic/
+# ||yy521.com/qq/qq.js (easylistchina.txt: 5307)
+.yy521.com/qq/qq\.js
+# ||weixin.qqday.com/js/tj.js (easylistchina.txt: 5022)
+.weixin.qqday.com/js/tj\.js
+# ||weixin.qqday.com/js/rb.js (easylistchina.txt: 5021)
+.weixin.qqday.com/js/rb\.js
+# ||voc.com.cn/Frame/qqms_cs.html (easylistchina.txt: 4965)
+.voc.com.cn/Frame/qqms_cs\.html
+# ||tv6080.com/qqt/ (easylistchina.txt: 4858)
+.tv6080.com/qqt/
+# ||tianmu.com/js/qq.js (easylistchina.txt: 4772)
+.tianmu.com/js/qq\.js
+# ||sinaimg.cn/large/005x4Y8Zgw1eqq4k2d5hsj306y06y0ts.jpg (easylistchina.txt: 4567)
+.sinaimg.cn/large/005x4Y8Zgw1eqq4k2d5hsj306y06y0ts\.jpg
+# ||sinaimg.cn/large/005x4Y8Zgw1eqq4gg0a1oj306y06y0ta.jpg (easylistchina.txt: 4566)
+.sinaimg.cn/large/005x4Y8Zgw1eqq4gg0a1oj306y06y0ta\.jpg
+# ||rh.qq.com^ (easylistchina.txt: 4389)
+.rh.qq.com
+# ||qqzuqiu.com/?a=check& (easylistchina.txt: 4344)
+.qqzuqiu.com/\?a=check&
+# ||qqyy.com/js/public_end_add.js (easylistchina.txt: 4343)
+.qqyy.com/js/public_end_add\.js
+# ||qqyy.com/js/commAdv (easylistchina.txt: 4342)
+.qqyy.com/js/commAdv
+# ||qqread.com/swf/ (easylistchina.txt: 4340)
+.qqread.com/swf/
+# ||qqmcc.org/biz/home_top_960x90.html (easylistchina.txt: 4338)
+.qqmcc.org/biz/home_top_960x90\.html
+# ||qqkj.cn/js/qqkjnew/lanmuzhuantitongji.js (easylistchina.txt: 4337)
+.qqkj.cn/js/qqkjnew/lanmuzhuantitongji\.js
+# ||qqjia.com/images/ad (easylistchina.txt: 4336)
+.qqjia.com/images/ad
+# ||qqjia.com/dan.js (easylistchina.txt: 4335)
+.qqjia.com/dan\.js
+# ||qqhjy.com/soft/Upload*.gif (easylistchina.txt: 4334)
+.qqhjy.com/soft/Upload.*\.gif
+# ||qqcyl.net/js/*.html (easylistchina.txt: 4333)
+.qqcyl.net/js/.*\.html
+# ||qqcyl.com/js/*.html (easylistchina.txt: 4332)
+.qqcyl.com/js/.*\.html
+# ||qqcf.com/js/Content_Get.js (easylistchina.txt: 4331)
+.qqcf.com/js/Content_Get\.js
+# ||qq260.com/shout.js (easylistchina.txt: 4330)
+.qq260.com/shout\.js
+# ||qq.com/qzone/biz/gdt/display/positions/waicai/ (easylistchina.txt: 4329)
+.qq.com/qzone/biz/gdt/display/positions/waicai/
+# ||qq.com/playgame/videoweb/ (easylistchina.txt: 4328)
+.qq.com/playgame/videoweb/
+# ||qq.com/PL_adT.htm (easylistchina.txt: 4327)
+.qq.com/PL_adT\.htm
+# ||qq.com/minivideo_v1/vd/res/enttencentvideo.xml (easylistchina.txt: 4326)
+.qq.com/minivideo_v1/vd/res/enttencentvideo\.xml
+# ||qq.com/livemsg? (easylistchina.txt: 4325)
+.qq.com/livemsg\?
+# ||qq.com/Index/getAdsAndHotspot (easylistchina.txt: 4324)
+.qq.com/Index/getAdsAndHotspot
+# ||qq.com/coral/ADS (easylistchina.txt: 4322)
+.qq.com/coral/ADS
+# ||qq.com/bbs/bbs_topgg.htm (easylistchina.txt: 4320)
+.qq.com/bbs/bbs_topgg\.htm
+# ||qq.com/article_qq/ad_article_qq/ (easylistchina.txt: 4319)
+.qq.com/article_qq/ad_article_qq/
+# ||mail.qq.com/lview? (easylistchina.txt: 3889)
+.mail.qq.com/lview\?
+# ||l.qq.com/lview? (easylistchina.txt: 3748)
+.l.qq.com/lview\?
+# ||jinyici.com/qq.js (easylistchina.txt: 3598)
+.jinyici.com/qq\.js
+# ||gtimg.com/qqlive/ (easylistchina.txt: 3052)
+.gtimg.com/qqlive/
+# ||gdt.qq.com^ (easylistchina.txt: 2965)
+.gdt.qq.com
+# ||freep.cn/lianjie/qqtongji.js (easylistchina.txt: 2906)
+.freep.cn/lianjie/qqtongji\.js
+# ||fmdisk.com/templates/yythems/images/qq (easylistchina.txt: 2894)
+.fmdisk.com/templates/yythems/images/qq
+# ||djwma.com/qq.jpg (easylistchina.txt: 2658)
+.djwma.com/qq\.jpg
+# ||chuangshi.qq.com/upload/cmsv2/Banner/ (easylistchina.txt: 2460)
+.chuangshi.qq.com/upload/cmsv2/Banner/
+# ||anquan.org/static/profile/images/qq-banner.png (easylistchina.txt: 2087)
+.anquan.org/static/profile/images/qq-banner\.png
+# ||anquan.org/static/auth/images/ppb_cert/qq-browser.jpg (easylistchina.txt: 2086)
+.anquan.org/static/auth/images/ppb_cert/qq-browser\.jpg
+# ||admin5.com/bd360qq/action/ (easylistchina.txt: 2012)
+.admin5.com/bd360qq/action/
+# ||ac.tc.qq.com/store_file_download?*&dir_path=/admin/swf/ (easylistchina.txt: 1972)
+.ac.tc.qq.com/store_file_download\?.*&dir_path=/admin/swf/
+# ||855699.com^*qq.js (easylistchina.txt: 1871)
+.855699.com/.*qq\.js
+# ||5ilog.com/qq/js/jsgg.js (easylistchina.txt: 1748)
+.5ilog.com/qq/js/jsgg\.js
+# ||52tian.net/qq/ (easylistchina.txt: 1709)
+.52tian.net/qq/
+# ||3634.com/qq/ (easylistchina.txt: 1597)
+.3634.com/qq/
+# _vmind.qqvideo.tc.qq.com^ (easylistchina.txt: 1265)
+/.*_vmind\.qqvideo\.tc\.qq\.com[^\w%.-]
+# /vmind.qqvideo.tc.qq.com^ (easylistchina.txt: 1240)
+/(.*/)?vmind\.qqvideo\.tc\.qq\.com[^\w%.-]
+vmind.qqvideo.tc.qq.com
+# /qqyouyuead/* (easylistchina.txt: 212)
+/(.*/)?qqyouyuead/.*
+# /qqlive/conf/playerlottery/* (easylistchina.txt: 211)
+/(.*/)?qqlive/conf/playerlottery/.*
+# /qqguojiad/* (easylistchina.txt: 210)
+/(.*/)?qqguojiad/.*
+# ||qzs.qq.com/qzone/biz/res/v.swf?loc=$object-subrequest (easylistchina.txt: 4358)
+.qzs.qq.com/qzone/biz/res/v\.swf\?loc=
+# ||qqread.com/*js/$script (easylistchina.txt: 4339)
+.qqread.com/.*js/
+# ||wit.qq.com^$third-party (easylistchina.txt: 1001)
+.wit.qq.com
+# ||qq4g.cn^$third-party (easylistchina.txt: 911)
+.qq4g.cn
+# ||sinaimg.cn/large/$domain=360-bo.com|chakd.com|kiees.cn|kqiuba.com|lueqiu.com|macappbox.com|pptiyu.com|qqzhibo.net (easylistchina.txt: 4564)
+# ||tietuku.com^$domain=5ydj.com|99ee1.com|99re5.com|99rr6.com|btago.com|btbook.net|btshark.org|cnmkv.com|fulisuo1.com|hdbiger.org|kisssub.org|papa1024.com|potplayer.org|qqhzg.com|qqjishu.net|ruoren.com|souxue8.net|totuwo.com|xiaodao.la|xiaodaoyl.com|yunaw.com (easylistchina.txt: 4793)
+# /?$popup,domain=allanalpass.com|amy.gs|any.gs|cash4files.com|deb.gs|dyo.gs|eafyfsuh.net|filesonthe.net|galleries.bz|goneviral.com|linkbucks.com|megaline.co|miniurls.co|picbucks.com|qqc.co|rqq.co|sasontnwc.net|seriousdeals.net|theseblogs.com|tinylinks.co|tnabucks.com|tubeviral.com|ultrafiles.net|urlbeat.net|whackyvidz.com|yyv.co|zff.co (easylistchina.txt: 1061)
+# ||qq.com/bqq_qfpic/$domain=keywin.org (easylistchina.txt: 4321)
+.qq.com/bqq_qfpic/
+# ||qqtz.com/ad$subdocument (easylistchina.txt: 4341)
+.qqtz.com/ad
+# ||qq.com/game/footerbar$subdocument (easylistchina.txt: 4323)
+.qq.com/game/footerbar
+# /?$popup,domain=allanalpass.com|amy.gs|any.gs|cash4files.com|deb.gs|dyo.gs|eafyfsuh.net|filesonthe.net|galleries.bz|goneviral.com|linkbucks.com|megaline.co|miniurls.co|picbucks.com|qqc.co|rqq.co|sasontnwc.net|seriousdeals.net|theseblogs.com|tinylinks.co|tnabucks.com|tubeviral.com|ultrafiles.net|urlbeat.net|whackyvidz.com|yyv.co|zff.co (easylistchina.txt: 1061)
+# @@||pingjs.qq.com/ping.js (easylistchina.txt: 10468)
+.pingjs.qq.com/ping\.js
+# @@||qqread.com/swf/qqread_rollpic.swf (easylistchina.txt: 10337)
+.qqread.com/swf/qqread_rollpic\.swf
+# @@||qq.com^*?ADTAG= (easylistchina.txt: 10336)
+.qq.com/.*\?ADTAG=
+# @@||qq.com/server/website/CommWebGameSelect_ad.js (easylistchina.txt: 10335)
+.qq.com/server/website/CommWebGameSelect_ad\.js
+# @@||qq.com/bossweb/jifen/ (easylistchina.txt: 10334)
+.qq.com/bossweb/jifen/
+# @@||l.qq.com/livemsg?ty=web&ad_type= (easylistchina.txt: 10286)
+.l.qq.com/livemsg\?ty=web&ad_type=
+# @@||daoju.qq.com/time/*/js/ad/ (easylistchina.txt: 10205)
+.daoju.qq.com/time/.*/js/ad/
+# @@||cq.qq.com/js/cody/*scroll_ad.js (easylistchina.txt: 10200)
+.cq.qq.com/js/cody/.*scroll_ad\.js
+# @@||l.qq.com/lview?$domain=888.sports.qq.com (easylistchina.txt: 10287)
+.l.qq.com/lview\?
+# @@||j.wit.qq.com/sc/crystal_ad.js?$domain=888.sports.qq.com (easylistchina.txt: 10277)
+.j.wit.qq.com/sc/crystal_ad\.js\?
+# @@/img/ad/*$domain=exp.qq.com (easylistchina.txt: 10026)
+# @@/guanggao/*$domain=icbc.com.cn|igame.qq.com|tuan.duba.com (easylistchina.txt: 10021)
+# @@||pingjs.qq.com/ping_tcss_ied.js$domain=lol.qq.com (easylistchina.txt: 10469)
+.pingjs.qq.com/ping_tcss_ied\.js
+# @@/adsbox.$domain=long7.qq.com (easylistchina.txt: 9996)
+# @@/advert_$domain=pisen.com.cn|wb.qq.com (easylistchina.txt: 10001)
+# @@||tajs.qq.com/stats?$domain=qq.com (easylistchina.txt: 10475)
+.tajs.qq.com/stats\?
+# @@/show_ad_$domain=wb.qq.com (easylistchina.txt: 10037)
+# @@||pingjs.qq.com/ping.js (easylistchina.txt: 10468)
+.pingjs.qq.com/ping\.js
+# @@||qqread.com/swf/qqread_rollpic.swf (easylistchina.txt: 10337)
+.qqread.com/swf/qqread_rollpic\.swf
+# @@||qq.com^*?ADTAG= (easylistchina.txt: 10336)
+.qq.com/.*\?ADTAG=
+# @@||qq.com/server/website/CommWebGameSelect_ad.js (easylistchina.txt: 10335)
+.qq.com/server/website/CommWebGameSelect_ad\.js
+# @@||qq.com/bossweb/jifen/ (easylistchina.txt: 10334)
+.qq.com/bossweb/jifen/
+# @@||l.qq.com/livemsg?ty=web&ad_type= (easylistchina.txt: 10286)
+.l.qq.com/livemsg\?ty=web&ad_type=
+# @@||daoju.qq.com/time/*/js/ad/ (easylistchina.txt: 10205)
+.daoju.qq.com/time/.*/js/ad/
+# @@||cq.qq.com/js/cody/*scroll_ad.js (easylistchina.txt: 10200)
+.cq.qq.com/js/cody/.*scroll_ad\.js
+# @@||l.qq.com/lview?$domain=888.sports.qq.com (easylistchina.txt: 10287)
+.l.qq.com/lview\?
+# @@||j.wit.qq.com/sc/crystal_ad.js?$domain=888.sports.qq.com (easylistchina.txt: 10277)
+.j.wit.qq.com/sc/crystal_ad\.js\?
+# @@/img/ad/*$domain=exp.qq.com (easylistchina.txt: 10026)
+# @@/guanggao/*$domain=icbc.com.cn|igame.qq.com|tuan.duba.com (easylistchina.txt: 10021)
+# @@||pingjs.qq.com/ping_tcss_ied.js$domain=lol.qq.com (easylistchina.txt: 10469)
+.pingjs.qq.com/ping_tcss_ied\.js
+# @@/adsbox.$domain=long7.qq.com (easylistchina.txt: 9996)
+# @@/advert_$domain=pisen.com.cn|wb.qq.com (easylistchina.txt: 10001)
+# @@||tajs.qq.com/stats?$domain=qq.com (easylistchina.txt: 10475)
+.tajs.qq.com/stats\?
+# @@/show_ad_$domain=wb.qq.com (easylistchina.txt: 10037)
+# @@||pingjs.qq.com/ping.js (easylistchina.txt: 10468)
+.pingjs.qq.com/ping\.js
+# @@||qqread.com/swf/qqread_rollpic.swf (easylistchina.txt: 10337)
+.qqread.com/swf/qqread_rollpic\.swf
+# @@||qq.com^*?ADTAG= (easylistchina.txt: 10336)
+.qq.com/.*\?ADTAG=
+# @@||qq.com/server/website/CommWebGameSelect_ad.js (easylistchina.txt: 10335)
+.qq.com/server/website/CommWebGameSelect_ad\.js
+# @@||qq.com/bossweb/jifen/ (easylistchina.txt: 10334)
+.qq.com/bossweb/jifen/
+# @@||l.qq.com/livemsg?ty=web&ad_type= (easylistchina.txt: 10286)
+.l.qq.com/livemsg\?ty=web&ad_type=
+# @@||daoju.qq.com/time/*/js/ad/ (easylistchina.txt: 10205)
+.daoju.qq.com/time/.*/js/ad/
+# @@||cq.qq.com/js/cody/*scroll_ad.js (easylistchina.txt: 10200)
+.cq.qq.com/js/cody/.*scroll_ad\.js
+# @@||l.qq.com/lview?$domain=888.sports.qq.com (easylistchina.txt: 10287)
+.l.qq.com/lview\?
+# @@||j.wit.qq.com/sc/crystal_ad.js?$domain=888.sports.qq.com (easylistchina.txt: 10277)
+.j.wit.qq.com/sc/crystal_ad\.js\?
+# @@/img/ad/*$domain=exp.qq.com (easylistchina.txt: 10026)
+# @@/guanggao/*$domain=icbc.com.cn|igame.qq.com|tuan.duba.com (easylistchina.txt: 10021)
+# @@||pingjs.qq.com/ping_tcss_ied.js$domain=lol.qq.com (easylistchina.txt: 10469)
+.pingjs.qq.com/ping_tcss_ied\.js
+# @@/adsbox.$domain=long7.qq.com (easylistchina.txt: 9996)
+# @@/advert_$domain=pisen.com.cn|wb.qq.com (easylistchina.txt: 10001)
+# @@||tajs.qq.com/stats?$domain=qq.com (easylistchina.txt: 10475)
+.tajs.qq.com/stats\?
+# @@/show_ad_$domain=wb.qq.com (easylistchina.txt: 10037)
+
+# ||statistic.qzone.qq.com^ (easyprivacy.txt: 9906)
+.statistic.qzone.qq.com
+# ||report.qq.com^ (easyprivacy.txt: 9872)
+.report.qq.com
+# ||rcgi.video.qq.com^ (easyprivacy.txt: 9871)
+.rcgi.video.qq.com
+# ||qq.com/p? (easyprivacy.txt: 9869)
+.qq.com/p\?
+# ||pingjs.qq.com^ (easyprivacy.txt: 9868)
+.pingjs.qq.com
+# ||btrace.qq.com^ (easyprivacy.txt: 9813)
+.btrace.qq.com
+# ||analy.qq.com^ (easyprivacy.txt: 9803)
+.analy.qq.com
+# ||trace.qq.com^$third-party (easyprivacy.txt: 6524)
+.trace.qq.com
+# ||qq.com/stats? (easyprivacy.txt: 6269)
+.qq.com/stats\?
+# ||qq.com/ping.js? (easyprivacy.txt: 6268)
+.qq.com/ping\.js\?
+# ||qq.com/heatmap/ (easyprivacy.txt: 6267)
+.qq.com/heatmap/
+# ||hqq.tv/js/counters.js (easyprivacy.txt: 5901)
+.hqq.tv/js/counters\.js
+# ||statistic.qzone.qq.com^ (easyprivacy.txt: 9906)
+.statistic.qzone.qq.com
+# ||report.qq.com^ (easyprivacy.txt: 9872)
+.report.qq.com
+# ||rcgi.video.qq.com^ (easyprivacy.txt: 9871)
+.rcgi.video.qq.com
+# ||qq.com/p? (easyprivacy.txt: 9869)
+.qq.com/p\?
+# ||pingjs.qq.com^ (easyprivacy.txt: 9868)
+.pingjs.qq.com
+# ||btrace.qq.com^ (easyprivacy.txt: 9813)
+.btrace.qq.com
+# ||analy.qq.com^ (easyprivacy.txt: 9803)
+.analy.qq.com
+# ||trace.qq.com^$third-party (easyprivacy.txt: 6524)
+.trace.qq.com
+# ||qq.com/stats? (easyprivacy.txt: 6269)
+.qq.com/stats\?
+# ||qq.com/ping.js? (easyprivacy.txt: 6268)
+.qq.com/ping\.js\?
+# ||qq.com/heatmap/ (easyprivacy.txt: 6267)
+.qq.com/heatmap/
+# ||hqq.tv/js/counters.js (easyprivacy.txt: 5901)
+.hqq.tv/js/counters\.js
+# ||statistic.qzone.qq.com^ (easyprivacy.txt: 9906)
+.statistic.qzone.qq.com
+# ||report.qq.com^ (easyprivacy.txt: 9872)
+.report.qq.com
+# ||rcgi.video.qq.com^ (easyprivacy.txt: 9871)
+.rcgi.video.qq.com
+# ||qq.com/p? (easyprivacy.txt: 9869)
+.qq.com/p\?
+# ||pingjs.qq.com^ (easyprivacy.txt: 9868)
+.pingjs.qq.com
+# ||btrace.qq.com^ (easyprivacy.txt: 9813)
+.btrace.qq.com
+# ||analy.qq.com^ (easyprivacy.txt: 9803)
+.analy.qq.com
+# ||qq.com/stats? (easyprivacy.txt: 6269)
+.qq.com/stats\?
+# ||qq.com/ping.js? (easyprivacy.txt: 6268)
+.qq.com/ping\.js\?
+# ||qq.com/heatmap/ (easyprivacy.txt: 6267)
+.qq.com/heatmap/
+# ||hqq.tv/js/counters.js (easyprivacy.txt: 5901)
+.hqq.tv/js/counters\.js
+# ||trace.qq.com^$third-party (easyprivacy.txt: 6524)
+.trace.qq.com
+# @@||pingjs.qq.com/ping_tcss_ied.js$domain=dnf.qq.com (easyprivacy.txt: 10970)
+.pingjs.qq.com/ping_tcss_ied\.js
+# @@||pingjs.qq.com/ping_tcss_ied.js$domain=dnf.qq.com (easyprivacy.txt: 10970)
+.pingjs.qq.com/ping_tcss_ied\.js
+# @@||pingjs.qq.com/ping_tcss_ied.js$domain=dnf.qq.com (easyprivacy.txt: 10970)
+.pingjs.qq.com/ping_tcss_ied\.js
+
+# |http://msdk.qq.com/auth$s@abcc@abcc@ (lazy222.txt: 5030)
+msdk.qq.com/auth\$s@abcc@abcc@
+# |http://lol.qq.com/v/go.shtml?$s@<span id="jVideoTipsTime">5</span>@<span id="jVideoTipsTime">1</span>@ (lazy222.txt: 5010)
+lol.qq.com/v/go\.shtml\?\$s@<span id="jVideoTipsTime">5</span>@<span id="jVideoTipsTime">1</span>@
+# |http://www.lepan.cc/$s@<script src="http://sina.qq.sohu.baidu-sogou-google.com:1868/page/?s=*"></script>@@ (lazy222.txt: 4908)
+www.lepan.cc/\$s@<script src="http://sina\.qq\.sohu\.baidu-sogou-google\.com:1868/page/\?s=.*"></script>@@
+# |http://www.fmdisk.com/$s@<script src="http://sina.qq.sohu.baidu-sogou-google.com:1868/page/?s=*"></script>@@ (lazy222.txt: 4904)
+www.fmdisk.com/\$s@<script src="http://sina\.qq\.sohu\.baidu-sogou-google\.com:1868/page/\?s=.*"></script>@@
+# ||minisite2012.qq.com$s@<div class="ad_bg">@<div>@ (lazy222.txt: 4874)
+# ||erge.qqbaobao.com/*.html$s@timer20 = 8;//@timer20 = 0;//@ (lazy222.txt: 4819)
+.erge.qqbaobao.com/.*\.html\$s@timer20 = 8;//@timer20 = 0;//@
+# |http://v.html5.qq.com/api/videorecom (lazy222.txt: 4632)
+v.html5.qq.com/api/videorecom
+# ||livew.l.qq.com (lazy222.txt: 4612)
+.livew.l.qq.com*.
+# ||lives.l.qq.com (lazy222.txt: 4611)
+.lives.l.qq.com*.
+# ||livep.l.qq.com (lazy222.txt: 4610)
+.livep.l.qq.com*.
+# ||livem.l.qq.com (lazy222.txt: 4609)
+.livem.l.qq.com*.
+# ||tianmu.com/js/qq (lazy222.txt: 2994)
+.tianmu.com/js/qq
+# ||tcss.qq.com^ (lazy222.txt: 2987)
+.tcss.qq.com
+# ||rh.qq.com^ (lazy222.txt: 2902)
+.rh.qq.com
+# ||qqtz.com/ad$document (lazy222.txt: 2891)
+.qqtz.com/ad
+# ||qqq937.com$third-party (lazy222.txt: 2890)
+.qqq937.com*.
+# ||qq937.com (lazy222.txt: 2889)
+.qq937.com*.
+# ||qq61.com/ (lazy222.txt: 2888)
+.qq61.com
+# ||qq4g.cn (lazy222.txt: 2887)
+.qq4g.cn*.
+# ||qq360abcd.com (lazy222.txt: 2886)
+.qq360abcd.com*.
+# ||qq.com/js/adswf_tl_object.js$script (lazy222.txt: 2885)
+.qq.com/js/adswf_tl_object\.js
+# ||qq.com/bbs/m/p/a/bottom_banner.htm (lazy222.txt: 2884)
+.qq.com/bbs/m/p/a/bottom_banner\.htm
+# ||pc6.com/qq2010/ (lazy222.txt: 2839)
+.pc6.com/qq2010/
+# ||open.show.qq.com/cgi-bin/qqshow_user_gdt_ad?ad (lazy222.txt: 2816)
+.open.show.qq.com/cgi-bin/qqshow_user_gdt_ad\?ad
+# ||isdspeed.qq.com/cgi-bin/ (lazy222.txt: 2680)
+.isdspeed.qq.com/cgi-bin/
+# ||gtimg.com/qqlive/ (lazy222.txt: 2612)
+.gtimg.com/qqlive/
+# ||gdt.qq.com^ (lazy222.txt: 2594)
+.gdt.qq.com
+# |http://www.yy521.com/qq/qq.js$script (lazy222.txt: 2070)
+www.yy521.com/qq/qq\.js
+# |http://www.tvf4.com/qq.htm (lazy222.txt: 1998)
+www.tvf4.com/qq\.htm
+# |http://www.qqzhibo.net/res/zhibo/js/floatad.js?r= (lazy222.txt: 1937)
+www.qqzhibo.net/res/zhibo/js/floatad\.js\?r=
+# |http://www.qqxs.cc/neixiong/js/neirongye300-250.js$script (lazy222.txt: 1936)
+www.qqxs.cc/neixiong/js/neirongye300-250\.js
+# |http://www.qqtn.com/js/$script (lazy222.txt: 1935)
+www.qqtn.com/js/
+# |http://www.qqcyl.net/js/$script (lazy222.txt: 1934)
+www.qqcyl.net/js/
+# |http://www.admin5.com/bd360qq/action/$script (lazy222.txt: 1716)
+www.admin5.com/bd360qq/action/
+# |http://www.52tian.net/qq/index960a.htm?$document (lazy222.txt: 1682)
+www.52tian.net/qq/index960a\.htm\?
+# |http://ww3.sinaimg.cn/large/70917826gw1ea0w307d5jg20qq02smy0.gif$image (lazy222.txt: 1641)
+ww3.sinaimg.cn/large/70917826gw1ea0w307d5jg20qq02smy0\.gif
+# |http://view.news.qq.com/PL_ad$document (lazy222.txt: 1617)
+view.news.qq.com/PL_ad
+# |http://qzs.qq.com/qzone/biz/res/tmpl/vehicle.html (lazy222.txt: 1464)
+qzs.qq.com/qzone/biz/res/tmpl/vehicle\.html
+# |http://ossweb-img.qq.com/images/lol/web201310/lolad0908.jpg$image (lazy222.txt: 1416)
+ossweb-img.qq.com/images/lol/web201310/lolad0908\.jpg
+# |http://music.qq.com/miniframe/static/qmgg/ (lazy222.txt: 1406)
+music.qq.com/miniframe/static/qmgg/
+# |http://livec.l.qq.com/livemsg? (lazy222.txt: 1368)
+livec.l.qq.com/livemsg\?
+# |http://l.qq.com/lview?c=www&loc=hb_xW_Full (lazy222.txt: 1361)
+l.qq.com/lview\?c=www&loc=hb_xW_Full
+# |http://l.qq.com/lview?c=www&loc=AllInOne_15_UpRight (lazy222.txt: 1360)
+l.qq.com/lview\?c=www&loc=AllInOne_15_UpRight
+# |http://games.qq.com/playgame/gamesad/js/swfobject.js$script (lazy222.txt: 1178)
+games.qq.com/playgame/gamesad/js/swfobject\.js
+# |http://dp.gtimg.cn/discuzpic/0/discuz_qqgame_gamebbs_qq_com_forum_ (lazy222.txt: 1142)
+dp.gtimg.cn/discuzpic/0/discuz_qqgame_gamebbs_qq_com_forum_
+# |http://dh.yyhao.com/qq/1377sishen (lazy222.txt: 1131)
+dh.yyhao.com/qq/1377sishen
+# |http://boss.qzone.qq.com/fcg-bin/fcg_get_strategy?board_id= (lazy222.txt: 1072)
+boss.qzone.qq.com/fcg-bin/fcg_get_strategy\?board_id=
+# |http://adsrich.qq.com (lazy222.txt: 1006)
+adsrich.qq.com*.
+# |http://ad.qqfarmer.com.cn/notice.xml (lazy222.txt: 982)
+ad.qqfarmer.com.cn/notice\.xml
+# |http://ad.qqfarmer.com.cn/code.php (lazy222.txt: 981)
+ad.qqfarmer.com.cn/code\.php
+# |http://*/ad_article_qq/ (lazy222.txt: 523)
+/(.*/)?ad_article_qq/
+# ||sinaimg.cn/large/$domain=aknba.com|www.360bo.cc|www.jisutiyu.com|www.51jifenbao.net|52waha.com|www.downmv.com|www.btshare.net|www.360-bo.com|www.jisuzhibo.net|www.qqzhibo.net (lazy222.txt: 2928)
+# ||tietuku.com$image,domain=potplayer.org|cnmkv.com|qqjishu.net|souxue8.net|totuwo.com|xiaodaoyl.com|wangyesifu.com (lazy222.txt: 2997)
+# |http://ra.gtimg.com/sc/vqq/crystal-min.js$domain=v.qq.com (lazy222.txt: 1468)
+ra.gtimg.com/sc/vqq/crystal-min\.js
+# |http://*/gad/$domain=~gad.qq.com (lazy222.txt: 643)
+# |http://tajs.qq.com$domain=~wuxia.qq.com (lazy222.txt: 1566)
+tajs.qq.com*.
+# |http://msdk.qq.com/auth$s@abcc@abcc@ (lazy222.txt: 5030)
+msdk.qq.com/auth\$s@abcc@abcc@
+# |http://lol.qq.com/v/go.shtml?$s@<span id="jVideoTipsTime">5</span>@<span id="jVideoTipsTime">1</span>@ (lazy222.txt: 5010)
+lol.qq.com/v/go\.shtml\?\$s@<span id="jVideoTipsTime">5</span>@<span id="jVideoTipsTime">1</span>@
+# |http://www.lepan.cc/$s@<script src="http://sina.qq.sohu.baidu-sogou-google.com:1868/page/?s=*"></script>@@ (lazy222.txt: 4908)
+www.lepan.cc/\$s@<script src="http://sina\.qq\.sohu\.baidu-sogou-google\.com:1868/page/\?s=.*"></script>@@
+# |http://www.fmdisk.com/$s@<script src="http://sina.qq.sohu.baidu-sogou-google.com:1868/page/?s=*"></script>@@ (lazy222.txt: 4904)
+www.fmdisk.com/\$s@<script src="http://sina\.qq\.sohu\.baidu-sogou-google\.com:1868/page/\?s=.*"></script>@@
+# ||minisite2012.qq.com$s@<div class="ad_bg">@<div>@ (lazy222.txt: 4874)
+# ||erge.qqbaobao.com/*.html$s@timer20 = 8;//@timer20 = 0;//@ (lazy222.txt: 4819)
+.erge.qqbaobao.com/.*\.html\$s@timer20 = 8;//@timer20 = 0;//@
+# |http://v.html5.qq.com/api/videorecom (lazy222.txt: 4632)
+v.html5.qq.com/api/videorecom
+# ||livew.l.qq.com (lazy222.txt: 4612)
+.livew.l.qq.com*.
+# ||lives.l.qq.com (lazy222.txt: 4611)
+.lives.l.qq.com*.
+# ||livep.l.qq.com (lazy222.txt: 4610)
+.livep.l.qq.com*.
+# ||livem.l.qq.com (lazy222.txt: 4609)
+.livem.l.qq.com*.
+# ||tianmu.com/js/qq (lazy222.txt: 2994)
+.tianmu.com/js/qq
+# ||tcss.qq.com^ (lazy222.txt: 2987)
+.tcss.qq.com
+# ||rh.qq.com^ (lazy222.txt: 2902)
+.rh.qq.com
+# ||qqtz.com/ad$document (lazy222.txt: 2891)
+.qqtz.com/ad
+# ||qqq937.com$third-party (lazy222.txt: 2890)
+.qqq937.com*.
+# ||qq937.com (lazy222.txt: 2889)
+.qq937.com*.
+# ||qq61.com/ (lazy222.txt: 2888)
+.qq61.com
+# ||qq4g.cn (lazy222.txt: 2887)
+.qq4g.cn*.
+# ||qq360abcd.com (lazy222.txt: 2886)
+.qq360abcd.com*.
+# ||qq.com/js/adswf_tl_object.js$script (lazy222.txt: 2885)
+.qq.com/js/adswf_tl_object\.js
+# ||qq.com/bbs/m/p/a/bottom_banner.htm (lazy222.txt: 2884)
+.qq.com/bbs/m/p/a/bottom_banner\.htm
+# ||pc6.com/qq2010/ (lazy222.txt: 2839)
+.pc6.com/qq2010/
+# ||open.show.qq.com/cgi-bin/qqshow_user_gdt_ad?ad (lazy222.txt: 2816)
+.open.show.qq.com/cgi-bin/qqshow_user_gdt_ad\?ad
+# ||isdspeed.qq.com/cgi-bin/ (lazy222.txt: 2680)
+.isdspeed.qq.com/cgi-bin/
+# ||gtimg.com/qqlive/ (lazy222.txt: 2612)
+.gtimg.com/qqlive/
+# ||gdt.qq.com^ (lazy222.txt: 2594)
+.gdt.qq.com
+# |http://www.yy521.com/qq/qq.js$script (lazy222.txt: 2070)
+www.yy521.com/qq/qq\.js
+# |http://www.tvf4.com/qq.htm (lazy222.txt: 1998)
+www.tvf4.com/qq\.htm
+# |http://www.qqzhibo.net/res/zhibo/js/floatad.js?r= (lazy222.txt: 1937)
+www.qqzhibo.net/res/zhibo/js/floatad\.js\?r=
+# |http://www.qqxs.cc/neixiong/js/neirongye300-250.js$script (lazy222.txt: 1936)
+www.qqxs.cc/neixiong/js/neirongye300-250\.js
+# |http://www.qqtn.com/js/$script (lazy222.txt: 1935)
+www.qqtn.com/js/
+# |http://www.qqcyl.net/js/$script (lazy222.txt: 1934)
+www.qqcyl.net/js/
+# |http://www.admin5.com/bd360qq/action/$script (lazy222.txt: 1716)
+www.admin5.com/bd360qq/action/
+# |http://www.52tian.net/qq/index960a.htm?$document (lazy222.txt: 1682)
+www.52tian.net/qq/index960a\.htm\?
+# |http://ww3.sinaimg.cn/large/70917826gw1ea0w307d5jg20qq02smy0.gif$image (lazy222.txt: 1641)
+ww3.sinaimg.cn/large/70917826gw1ea0w307d5jg20qq02smy0\.gif
+# |http://view.news.qq.com/PL_ad$document (lazy222.txt: 1617)
+view.news.qq.com/PL_ad
+# |http://qzs.qq.com/qzone/biz/res/tmpl/vehicle.html (lazy222.txt: 1464)
+qzs.qq.com/qzone/biz/res/tmpl/vehicle\.html
+# |http://ossweb-img.qq.com/images/lol/web201310/lolad0908.jpg$image (lazy222.txt: 1416)
+ossweb-img.qq.com/images/lol/web201310/lolad0908\.jpg
+# |http://music.qq.com/miniframe/static/qmgg/ (lazy222.txt: 1406)
+music.qq.com/miniframe/static/qmgg/
+# |http://livec.l.qq.com/livemsg? (lazy222.txt: 1368)
+livec.l.qq.com/livemsg\?
+# |http://l.qq.com/lview?c=www&loc=hb_xW_Full (lazy222.txt: 1361)
+l.qq.com/lview\?c=www&loc=hb_xW_Full
+# |http://l.qq.com/lview?c=www&loc=AllInOne_15_UpRight (lazy222.txt: 1360)
+l.qq.com/lview\?c=www&loc=AllInOne_15_UpRight
+# |http://games.qq.com/playgame/gamesad/js/swfobject.js$script (lazy222.txt: 1178)
+games.qq.com/playgame/gamesad/js/swfobject\.js
+# |http://dp.gtimg.cn/discuzpic/0/discuz_qqgame_gamebbs_qq_com_forum_ (lazy222.txt: 1142)
+dp.gtimg.cn/discuzpic/0/discuz_qqgame_gamebbs_qq_com_forum_
+# |http://dh.yyhao.com/qq/1377sishen (lazy222.txt: 1131)
+dh.yyhao.com/qq/1377sishen
+# |http://boss.qzone.qq.com/fcg-bin/fcg_get_strategy?board_id= (lazy222.txt: 1072)
+boss.qzone.qq.com/fcg-bin/fcg_get_strategy\?board_id=
+# |http://adsrich.qq.com (lazy222.txt: 1006)
+adsrich.qq.com*.
+# |http://ad.qqfarmer.com.cn/notice.xml (lazy222.txt: 982)
+ad.qqfarmer.com.cn/notice\.xml
+# |http://ad.qqfarmer.com.cn/code.php (lazy222.txt: 981)
+ad.qqfarmer.com.cn/code\.php
+# |http://*/ad_article_qq/ (lazy222.txt: 523)
+/(.*/)?ad_article_qq/
+# ||sinaimg.cn/large/$domain=aknba.com|www.360bo.cc|www.jisutiyu.com|www.51jifenbao.net|52waha.com|www.downmv.com|www.btshare.net|www.360-bo.com|www.jisuzhibo.net|www.qqzhibo.net (lazy222.txt: 2928)
+# ||tietuku.com$image,domain=potplayer.org|cnmkv.com|qqjishu.net|souxue8.net|totuwo.com|xiaodaoyl.com|wangyesifu.com (lazy222.txt: 2997)
+# |http://ra.gtimg.com/sc/vqq/crystal-min.js$domain=v.qq.com (lazy222.txt: 1468)
+ra.gtimg.com/sc/vqq/crystal-min\.js
+# |http://*/gad/$domain=~gad.qq.com (lazy222.txt: 643)
+# |http://tajs.qq.com$domain=~wuxia.qq.com (lazy222.txt: 1566)
+tajs.qq.com*.
+# |http://msdk.qq.com/auth$s@abcc@abcc@ (lazy222.txt: 5030)
+msdk.qq.com/auth\$s@abcc@abcc@
+# |http://lol.qq.com/v/go.shtml?$s@<span id="jVideoTipsTime">5</span>@<span id="jVideoTipsTime">1</span>@ (lazy222.txt: 5010)
+lol.qq.com/v/go\.shtml\?\$s@<span id="jVideoTipsTime">5</span>@<span id="jVideoTipsTime">1</span>@
+# |http://www.lepan.cc/$s@<script src="http://sina.qq.sohu.baidu-sogou-google.com:1868/page/?s=*"></script>@@ (lazy222.txt: 4908)
+www.lepan.cc/\$s@<script src="http://sina\.qq\.sohu\.baidu-sogou-google\.com:1868/page/\?s=.*"></script>@@
+# |http://www.fmdisk.com/$s@<script src="http://sina.qq.sohu.baidu-sogou-google.com:1868/page/?s=*"></script>@@ (lazy222.txt: 4904)
+www.fmdisk.com/\$s@<script src="http://sina\.qq\.sohu\.baidu-sogou-google\.com:1868/page/\?s=.*"></script>@@
+# ||minisite2012.qq.com$s@<div class="ad_bg">@<div>@ (lazy222.txt: 4874)
+# ||erge.qqbaobao.com/*.html$s@timer20 = 8;//@timer20 = 0;//@ (lazy222.txt: 4819)
+.erge.qqbaobao.com/.*\.html\$s@timer20 = 8;//@timer20 = 0;//@
+# |http://v.html5.qq.com/api/videorecom (lazy222.txt: 4632)
+v.html5.qq.com/api/videorecom
+# ||livew.l.qq.com (lazy222.txt: 4612)
+.livew.l.qq.com*.
+# ||lives.l.qq.com (lazy222.txt: 4611)
+.lives.l.qq.com*.
+# ||livep.l.qq.com (lazy222.txt: 4610)
+.livep.l.qq.com*.
+# ||livem.l.qq.com (lazy222.txt: 4609)
+.livem.l.qq.com*.
+# ||tianmu.com/js/qq (lazy222.txt: 2994)
+.tianmu.com/js/qq
+# ||tcss.qq.com^ (lazy222.txt: 2987)
+.tcss.qq.com
+# ||rh.qq.com^ (lazy222.txt: 2902)
+.rh.qq.com
+# ||qq937.com (lazy222.txt: 2889)
+.qq937.com*.
+# ||qq61.com/ (lazy222.txt: 2888)
+.qq61.com
+# ||qq4g.cn (lazy222.txt: 2887)
+.qq4g.cn*.
+# ||qq360abcd.com (lazy222.txt: 2886)
+.qq360abcd.com*.
+# ||qq.com/bbs/m/p/a/bottom_banner.htm (lazy222.txt: 2884)
+.qq.com/bbs/m/p/a/bottom_banner\.htm
+# ||pc6.com/qq2010/ (lazy222.txt: 2839)
+.pc6.com/qq2010/
+# ||open.show.qq.com/cgi-bin/qqshow_user_gdt_ad?ad (lazy222.txt: 2816)
+.open.show.qq.com/cgi-bin/qqshow_user_gdt_ad\?ad
+# ||isdspeed.qq.com/cgi-bin/ (lazy222.txt: 2680)
+.isdspeed.qq.com/cgi-bin/
+# ||gtimg.com/qqlive/ (lazy222.txt: 2612)
+.gtimg.com/qqlive/
+# ||gdt.qq.com^ (lazy222.txt: 2594)
+.gdt.qq.com
+# |http://www.tvf4.com/qq.htm (lazy222.txt: 1998)
+www.tvf4.com/qq\.htm
+# |http://www.qqzhibo.net/res/zhibo/js/floatad.js?r= (lazy222.txt: 1937)
+www.qqzhibo.net/res/zhibo/js/floatad\.js\?r=
+# |http://qzs.qq.com/qzone/biz/res/tmpl/vehicle.html (lazy222.txt: 1464)
+qzs.qq.com/qzone/biz/res/tmpl/vehicle\.html
+# |http://music.qq.com/miniframe/static/qmgg/ (lazy222.txt: 1406)
+music.qq.com/miniframe/static/qmgg/
+# |http://livec.l.qq.com/livemsg? (lazy222.txt: 1368)
+livec.l.qq.com/livemsg\?
+# |http://l.qq.com/lview?c=www&loc=hb_xW_Full (lazy222.txt: 1361)
+l.qq.com/lview\?c=www&loc=hb_xW_Full
+# |http://l.qq.com/lview?c=www&loc=AllInOne_15_UpRight (lazy222.txt: 1360)
+l.qq.com/lview\?c=www&loc=AllInOne_15_UpRight
+# |http://dp.gtimg.cn/discuzpic/0/discuz_qqgame_gamebbs_qq_com_forum_ (lazy222.txt: 1142)
+dp.gtimg.cn/discuzpic/0/discuz_qqgame_gamebbs_qq_com_forum_
+# |http://dh.yyhao.com/qq/1377sishen (lazy222.txt: 1131)
+dh.yyhao.com/qq/1377sishen
+# |http://boss.qzone.qq.com/fcg-bin/fcg_get_strategy?board_id= (lazy222.txt: 1072)
+boss.qzone.qq.com/fcg-bin/fcg_get_strategy\?board_id=
+# |http://adsrich.qq.com (lazy222.txt: 1006)
+adsrich.qq.com*.
+# |http://ad.qqfarmer.com.cn/notice.xml (lazy222.txt: 982)
+ad.qqfarmer.com.cn/notice\.xml
+# |http://ad.qqfarmer.com.cn/code.php (lazy222.txt: 981)
+ad.qqfarmer.com.cn/code\.php
+# |http://*/ad_article_qq/ (lazy222.txt: 523)
+/(.*/)?ad_article_qq/
+# ||qqtz.com/ad$document (lazy222.txt: 2891)
+.qqtz.com/ad
+# |http://www.52tian.net/qq/index960a.htm?$document (lazy222.txt: 1682)
+www.52tian.net/qq/index960a\.htm\?
+# |http://view.news.qq.com/PL_ad$document (lazy222.txt: 1617)
+view.news.qq.com/PL_ad
+# |http://ww3.sinaimg.cn/large/70917826gw1ea0w307d5jg20qq02smy0.gif$image (lazy222.txt: 1641)
+ww3.sinaimg.cn/large/70917826gw1ea0w307d5jg20qq02smy0\.gif
+# |http://ossweb-img.qq.com/images/lol/web201310/lolad0908.jpg$image (lazy222.txt: 1416)
+ossweb-img.qq.com/images/lol/web201310/lolad0908\.jpg
+# ||tietuku.com$image,domain=potplayer.org|cnmkv.com|qqjishu.net|souxue8.net|totuwo.com|xiaodaoyl.com|wangyesifu.com (lazy222.txt: 2997)
+# ||qq.com/js/adswf_tl_object.js$script (lazy222.txt: 2885)
+.qq.com/js/adswf_tl_object\.js
+# |http://www.yy521.com/qq/qq.js$script (lazy222.txt: 2070)
+www.yy521.com/qq/qq\.js
+# |http://www.qqxs.cc/neixiong/js/neirongye300-250.js$script (lazy222.txt: 1936)
+www.qqxs.cc/neixiong/js/neirongye300-250\.js
+# |http://www.qqtn.com/js/$script (lazy222.txt: 1935)
+www.qqtn.com/js/
+# |http://www.qqcyl.net/js/$script (lazy222.txt: 1934)
+www.qqcyl.net/js/
+# |http://www.admin5.com/bd360qq/action/$script (lazy222.txt: 1716)
+www.admin5.com/bd360qq/action/
+# |http://games.qq.com/playgame/gamesad/js/swfobject.js$script (lazy222.txt: 1178)
+games.qq.com/playgame/gamesad/js/swfobject\.js
+# ||qqq937.com$third-party (lazy222.txt: 2890)
+.qqq937.com*.
+# ||sinaimg.cn/large/$domain=aknba.com|www.360bo.cc|www.jisutiyu.com|www.51jifenbao.net|52waha.com|www.downmv.com|www.btshare.net|www.360-bo.com|www.jisuzhibo.net|www.qqzhibo.net (lazy222.txt: 2928)
+# |http://ra.gtimg.com/sc/vqq/crystal-min.js$domain=v.qq.com (lazy222.txt: 1468)
+ra.gtimg.com/sc/vqq/crystal-min\.js
+# |http://*/gad/$domain=~gad.qq.com (lazy222.txt: 643)
+# |http://tajs.qq.com$domain=~wuxia.qq.com (lazy222.txt: 1566)
+tajs.qq.com*.
+# @@|http://wvw.9377.com/api/qq.php (lazy222.txt: 196)
+wvw.9377.com/api/qq\.php
+# @@|http://v.gdt.qq.com/gdt_stats.fcg? (lazy222.txt: 194)
+v.gdt.qq.com/gdt_stats\.fcg\?
+# @@|http://tajs.qq.com/stats?sId= (lazy222.txt: 191)
+tajs.qq.com/stats\?sId=
+# @@|http://livew.l.qq.com/crossdomain.xml (lazy222.txt: 172)
+livew.l.qq.com/crossdomain\.xml
+# @@|http://isdspeed.qq.com/cgi-bin/r.cgi?flag1= (lazy222.txt: 164)
+isdspeed.qq.com/cgi-bin/r\.cgi\?flag1=
+# @@|http://imgcache.qq.com/music/photo/ (lazy222.txt: 162)
+imgcache.qq.com/music/photo/
+# @@|http://cq.qq.com/js/cody/scroll_ad.js$script (lazy222.txt: 139)
+cq.qq.com/js/cody/scroll_ad\.js
+# @@|http://cdn.exp.qq.com/img/ (lazy222.txt: 135)
+cdn.exp.qq.com/img/
+# @@|http://c.gdt.qq.com/gdt_click. (lazy222.txt: 124)
+c.gdt.qq.com/gdt_click\.
+# @@|http://dp.gtimg.cn/discuzpic/0/discuz_qqgame_gamebbs_qq_com_forum_$domain=gamebbs.qq.com (lazy222.txt: 144)
+dp.gtimg.cn/discuzpic/0/discuz_qqgame_gamebbs_qq_com_forum_
+# @@|http://$domain=meishichina.com|vip.xunlei.com|lixian.xunlei.com|www.vmall.com|www.1688.com|www.mm111.net|jifen.qq.com (lazy222.txt: 89)
+# @@|http://wvw.9377.com/api/qq.php (lazy222.txt: 196)
+wvw.9377.com/api/qq\.php
+# @@|http://v.gdt.qq.com/gdt_stats.fcg? (lazy222.txt: 194)
+v.gdt.qq.com/gdt_stats\.fcg\?
+# @@|http://tajs.qq.com/stats?sId= (lazy222.txt: 191)
+tajs.qq.com/stats\?sId=
+# @@|http://livew.l.qq.com/crossdomain.xml (lazy222.txt: 172)
+livew.l.qq.com/crossdomain\.xml
+# @@|http://isdspeed.qq.com/cgi-bin/r.cgi?flag1= (lazy222.txt: 164)
+isdspeed.qq.com/cgi-bin/r\.cgi\?flag1=
+# @@|http://imgcache.qq.com/music/photo/ (lazy222.txt: 162)
+imgcache.qq.com/music/photo/
+# @@|http://cq.qq.com/js/cody/scroll_ad.js$script (lazy222.txt: 139)
+cq.qq.com/js/cody/scroll_ad\.js
+# @@|http://cdn.exp.qq.com/img/ (lazy222.txt: 135)
+cdn.exp.qq.com/img/
+# @@|http://c.gdt.qq.com/gdt_click. (lazy222.txt: 124)
+c.gdt.qq.com/gdt_click\.
+# @@|http://dp.gtimg.cn/discuzpic/0/discuz_qqgame_gamebbs_qq_com_forum_$domain=gamebbs.qq.com (lazy222.txt: 144)
+dp.gtimg.cn/discuzpic/0/discuz_qqgame_gamebbs_qq_com_forum_
+# @@|http://$domain=meishichina.com|vip.xunlei.com|lixian.xunlei.com|www.vmall.com|www.1688.com|www.mm111.net|jifen.qq.com (lazy222.txt: 89)
+# @@|http://wvw.9377.com/api/qq.php (lazy222.txt: 196)
+wvw.9377.com/api/qq\.php
+# @@|http://v.gdt.qq.com/gdt_stats.fcg? (lazy222.txt: 194)
+v.gdt.qq.com/gdt_stats\.fcg\?
+# @@|http://tajs.qq.com/stats?sId= (lazy222.txt: 191)
+tajs.qq.com/stats\?sId=
+# @@|http://livew.l.qq.com/crossdomain.xml (lazy222.txt: 172)
+livew.l.qq.com/crossdomain\.xml
+# @@|http://isdspeed.qq.com/cgi-bin/r.cgi?flag1= (lazy222.txt: 164)
+isdspeed.qq.com/cgi-bin/r\.cgi\?flag1=
+# @@|http://imgcache.qq.com/music/photo/ (lazy222.txt: 162)
+imgcache.qq.com/music/photo/
+# @@|http://cdn.exp.qq.com/img/ (lazy222.txt: 135)
+cdn.exp.qq.com/img/
+# @@|http://c.gdt.qq.com/gdt_click. (lazy222.txt: 124)
+c.gdt.qq.com/gdt_click\.
+# @@|http://cq.qq.com/js/cody/scroll_ad.js$script (lazy222.txt: 139)
+cq.qq.com/js/cody/scroll_ad\.js
+# @@|http://dp.gtimg.cn/discuzpic/0/discuz_qqgame_gamebbs_qq_com_forum_$domain=gamebbs.qq.com (lazy222.txt: 144)
+dp.gtimg.cn/discuzpic/0/discuz_qqgame_gamebbs_qq_com_forum_
+# @@|http://$domain=meishichina.com|vip.xunlei.com|lixian.xunlei.com|www.vmall.com|www.1688.com|www.mm111.net|jifen.qq.com (lazy222.txt: 89)
+
+ ||d3m41swuqq4sv5.cloudfront.net^ (easylistchina+easylist.txt: 40092)
+.d3m41swuqq4sv5.cloudfront.net
+# ||d2tgev5wuprbqq.cloudfront.net^ (easylistchina+easylist.txt: 40065)
+.d2tgev5wuprbqq.cloudfront.net
+# ||d26wy0pxd3qqpv.cloudfront.net^ (easylistchina+easylist.txt: 40038)
+.d26wy0pxd3qqpv.cloudfront.net
+# ||d25xkbr68qqtcn.cloudfront.net^ (easylistchina+easylist.txt: 40035)
+.d25xkbr68qqtcn.cloudfront.net
+# ||83nsdjqqo1cau183xz.com^$popup,third-party (easylistchina+easylist.txt: 38361)
+.83nsdjqqo1cau183xz.com
+# ||yy521.com/qq/qq.js (easylistchina+easylist.txt: 5334)
+.yy521.com/qq/qq\.js
+# ||weixin.qqday.com/js/tj.js (easylistchina+easylist.txt: 5045)
+.weixin.qqday.com/js/tj\.js
+# ||weixin.qqday.com/js/rb.js (easylistchina+easylist.txt: 5044)
+.weixin.qqday.com/js/rb\.js
+# ||voc.com.cn/Frame/qqms_cs.html (easylistchina+easylist.txt: 4988)
+.voc.com.cn/Frame/qqms_cs\.html
+# ||tv6080.com/qqt/ (easylistchina+easylist.txt: 4882)
+.tv6080.com/qqt/
+# ||tianmu.com/js/qq.js (easylistchina+easylist.txt: 4794)
+.tianmu.com/js/qq\.js
+# ||sinaimg.cn/large/005x4Y8Zgw1eqq4k2d5hsj306y06y0ts.jpg (easylistchina+easylist.txt: 4583)
+.sinaimg.cn/large/005x4Y8Zgw1eqq4k2d5hsj306y06y0ts\.jpg
+# ||sinaimg.cn/large/005x4Y8Zgw1eqq4gg0a1oj306y06y0ta.jpg (easylistchina+easylist.txt: 4582)
+.sinaimg.cn/large/005x4Y8Zgw1eqq4gg0a1oj306y06y0ta\.jpg
+# ||rh.qq.com^ (easylistchina+easylist.txt: 4399)
+.rh.qq.com
+# ||qzs.qq.com/qzone/biz/res/v.swf?loc=$object-subrequest (easylistchina+easylist.txt: 4368)
+.qzs.qq.com/qzone/biz/res/v\.swf\?loc=
+# ||qqzuqiu.com/?a=check& (easylistchina+easylist.txt: 4354)
+.qqzuqiu.com/\?a=check&
+# ||qqyy.com/js/public_end_add.js (easylistchina+easylist.txt: 4353)
+.qqyy.com/js/public_end_add\.js
+# ||qqyy.com/js/commAdv (easylistchina+easylist.txt: 4352)
+.qqyy.com/js/commAdv
+# ||qqtz.com/ad$subdocument (easylistchina+easylist.txt: 4351)
+.qqtz.com/ad
+# ||qqread.com/swf/ (easylistchina+easylist.txt: 4350)
+.qqread.com/swf/
+# ||qqread.com/*js/$script (easylistchina+easylist.txt: 4349)
+.qqread.com/.*js/
+# ||qqmcc.org/biz/home_top_960x90.html (easylistchina+easylist.txt: 4348)
+.qqmcc.org/biz/home_top_960x90\.html
+# ||qqkj.cn/js/qqkjnew/lanmuzhuantitongji.js (easylistchina+easylist.txt: 4347)
+.qqkj.cn/js/qqkjnew/lanmuzhuantitongji\.js
+# ||qqjia.com/images/ad (easylistchina+easylist.txt: 4346)
+.qqjia.com/images/ad
+# ||qqjia.com/dan.js (easylistchina+easylist.txt: 4345)
+.qqjia.com/dan\.js
+# ||qqhjy.com/soft/Upload*.gif (easylistchina+easylist.txt: 4344)
+.qqhjy.com/soft/Upload.*\.gif
+# ||qqcyl.net/js/*.html (easylistchina+easylist.txt: 4343)
+.qqcyl.net/js/.*\.html
+# ||qqcyl.com/js/*.html (easylistchina+easylist.txt: 4342)
+.qqcyl.com/js/.*\.html
+# ||qqcf.com/js/Content_Get.js (easylistchina+easylist.txt: 4341)
+.qqcf.com/js/Content_Get\.js
+# ||qq260.com/shout.js (easylistchina+easylist.txt: 4340)
+.qq260.com/shout\.js
+# ||qq.com/qzone/biz/gdt/display/positions/waicai/ (easylistchina+easylist.txt: 4339)
+.qq.com/qzone/biz/gdt/display/positions/waicai/
+# ||qq.com/playgame/videoweb/ (easylistchina+easylist.txt: 4338)
+.qq.com/playgame/videoweb/
+# ||qq.com/PL_adT.htm (easylistchina+easylist.txt: 4337)
+.qq.com/PL_adT\.htm
+# ||qq.com/minivideo_v1/vd/res/enttencentvideo.xml (easylistchina+easylist.txt: 4336)
+.qq.com/minivideo_v1/vd/res/enttencentvideo\.xml
+# ||qq.com/livemsg? (easylistchina+easylist.txt: 4335)
+.qq.com/livemsg\?
+# ||qq.com/Index/getAdsAndHotspot (easylistchina+easylist.txt: 4334)
+.qq.com/Index/getAdsAndHotspot
+# ||qq.com/game/footerbar$subdocument (easylistchina+easylist.txt: 4333)
+.qq.com/game/footerbar
+# ||qq.com/coral/ADS (easylistchina+easylist.txt: 4332)
+.qq.com/coral/ADS
+# ||qq.com/bbs/bbs_topgg.htm (easylistchina+easylist.txt: 4330)
+.qq.com/bbs/bbs_topgg\.htm
+# ||qq.com/article_qq/ad_article_qq/ (easylistchina+easylist.txt: 4329)
+.qq.com/article_qq/ad_article_qq/
+# ||mail.qq.com/lview? (easylistchina+easylist.txt: 3899)
+.mail.qq.com/lview\?
+# ||l.qq.com/lview? (easylistchina+easylist.txt: 3757)
+.l.qq.com/lview\?
+# ||jinyici.com/qq.js (easylistchina+easylist.txt: 3611)
+.jinyici.com/qq\.js
+# ||gtimg.com/qqlive/ (easylistchina+easylist.txt: 3070)
+.gtimg.com/qqlive/
+# ||gdt.qq.com^ (easylistchina+easylist.txt: 2983)
+.gdt.qq.com
+# ||freep.cn/lianjie/qqtongji.js (easylistchina+easylist.txt: 2924)
+.freep.cn/lianjie/qqtongji\.js
+# ||fmdisk.com/templates/yythems/images/qq (easylistchina+easylist.txt: 2912)
+.fmdisk.com/templates/yythems/images/qq
+# ||djwma.com/qq.jpg (easylistchina+easylist.txt: 2674)
+.djwma.com/qq\.jpg
+# ||chuangshi.qq.com/upload/cmsv2/Banner/ (easylistchina+easylist.txt: 2473)
+.chuangshi.qq.com/upload/cmsv2/Banner/
+# ||anquan.org/static/profile/images/qq-banner.png (easylistchina+easylist.txt: 2097)
+.anquan.org/static/profile/images/qq-banner\.png
+# ||anquan.org/static/auth/images/ppb_cert/qq-browser.jpg (easylistchina+easylist.txt: 2096)
+.anquan.org/static/auth/images/ppb_cert/qq-browser\.jpg
+# ||admin5.com/bd360qq/action/ (easylistchina+easylist.txt: 2023)
+.admin5.com/bd360qq/action/
+# ||ac.tc.qq.com/store_file_download?*&dir_path=/admin/swf/ (easylistchina+easylist.txt: 1985)
+.ac.tc.qq.com/store_file_download\?.*&dir_path=/admin/swf/
+# ||855699.com^*qq.js (easylistchina+easylist.txt: 1881)
+.855699.com/.*qq\.js
+# ||5ilog.com/qq/js/jsgg.js (easylistchina+easylist.txt: 1757)
+.5ilog.com/qq/js/jsgg\.js
+# ||52tian.net/qq/ (easylistchina+easylist.txt: 1716)
+.52tian.net/qq/
+# ||3634.com/qq/ (easylistchina+easylist.txt: 1597)
+.3634.com/qq/
+# ||327qq.com/images/ (easylistchina+easylist.txt: 1569)
+.327qq.com/images/
+# _vmind.qqvideo.tc.qq.com^ (easylistchina+easylist.txt: 1251)
+/.*_vmind\.qqvideo\.tc\.qq\.com[^\w%.-]
+# /vmind.qqvideo.tc.qq.com^ (easylistchina+easylist.txt: 1226)
+/(.*/)?vmind\.qqvideo\.tc\.qq\.com[^\w%.-]
+vmind.qqvideo.tc.qq.com
+# ||wit.qq.com^$third-party (easylistchina+easylist.txt: 980)
+.wit.qq.com
+# ||qq4g.cn^$third-party (easylistchina+easylist.txt: 892)
+.qq4g.cn
+# /qqyouyuead/* (easylistchina+easylist.txt: 204)
+/(.*/)?qqyouyuead/.*
+# /qqlive/conf/playerlottery/* (easylistchina+easylist.txt: 203)
+/(.*/)?qqlive/conf/playerlottery/.*
+# /qqguojiad/* (easylistchina+easylist.txt: 202)
+/(.*/)?qqguojiad/.*
+# ||sinaimg.cn/large/$domain=360-bo.com|chakd.com|kiees.cn|kqiuba.com|lueqiu.com|macappbox.com|pptiyu.com|qqzhibo.net (easylistchina+easylist.txt: 4576)
+# ||tietuku.com^$domain=5ydj.com|99re.city|99re.net|99re6.com|99re8.com|99rehomes.com|btago.com|btbook.net|btshark.org|cnmkv.com|fulisuo1.com|hdbiger.org|kisssub.org|papa1024.com|potplayer.org|qqhzg.com|qqjishu.net|ruoren.com|souxue8.net|totuwo.com|xiaodao.la|xiaodaoyl.com|yunaw.com (easylistchina+easylist.txt: 4816)
+# /js/alls_$domain=911-sss.com|911semm.com|911semm.info|911seqq.info|913sss.com|kuaisou222.com|ylgbt.info|ylgxxbt.com (easylistchina+easylist.txt: 1178)
+# /?$popup,domain=allanalpass.com|amy.gs|any.gs|cash4files.com|deb.gs|dyo.gs|eafyfsuh.net|filesonthe.net|galleries.bz|goneviral.com|linkbucks.com|megaline.co|miniurls.co|picbucks.com|qqc.co|rqq.co|sasontnwc.net|seriousdeals.net|theseblogs.com|tinylinks.co|tnabucks.com|tubeviral.com|ultrafiles.net|urlbeat.net|whackyvidz.com|yyv.co|zff.co (easylistchina+easylist.txt: 1038)
+# ||qq.com/bqq_qfpic/$domain=keywin.org (easylistchina+easylist.txt: 4331)
+.qq.com/bqq_qfpic/
+# ||d3m41swuqq4sv5.cloudfront.net^ (easylistchina+easylist.txt: 40092)
+.d3m41swuqq4sv5.cloudfront.net
+# ||d2tgev5wuprbqq.cloudfront.net^ (easylistchina+easylist.txt: 40065)
+.d2tgev5wuprbqq.cloudfront.net
+# ||d26wy0pxd3qqpv.cloudfront.net^ (easylistchina+easylist.txt: 40038)
+.d26wy0pxd3qqpv.cloudfront.net
+# ||d25xkbr68qqtcn.cloudfront.net^ (easylistchina+easylist.txt: 40035)
+.d25xkbr68qqtcn.cloudfront.net
+# ||83nsdjqqo1cau183xz.com^$popup,third-party (easylistchina+easylist.txt: 38361)
+.83nsdjqqo1cau183xz.com
+# ||yy521.com/qq/qq.js (easylistchina+easylist.txt: 5334)
+.yy521.com/qq/qq\.js
+# ||weixin.qqday.com/js/tj.js (easylistchina+easylist.txt: 5045)
+.weixin.qqday.com/js/tj\.js
+# ||weixin.qqday.com/js/rb.js (easylistchina+easylist.txt: 5044)
+.weixin.qqday.com/js/rb\.js
+# ||voc.com.cn/Frame/qqms_cs.html (easylistchina+easylist.txt: 4988)
+.voc.com.cn/Frame/qqms_cs\.html
+# ||tv6080.com/qqt/ (easylistchina+easylist.txt: 4882)
+.tv6080.com/qqt/
+# ||tianmu.com/js/qq.js (easylistchina+easylist.txt: 4794)
+.tianmu.com/js/qq\.js
+# ||sinaimg.cn/large/005x4Y8Zgw1eqq4k2d5hsj306y06y0ts.jpg (easylistchina+easylist.txt: 4583)
+.sinaimg.cn/large/005x4Y8Zgw1eqq4k2d5hsj306y06y0ts\.jpg
+# ||sinaimg.cn/large/005x4Y8Zgw1eqq4gg0a1oj306y06y0ta.jpg (easylistchina+easylist.txt: 4582)
+.sinaimg.cn/large/005x4Y8Zgw1eqq4gg0a1oj306y06y0ta\.jpg
+# ||rh.qq.com^ (easylistchina+easylist.txt: 4399)
+.rh.qq.com
+# ||qzs.qq.com/qzone/biz/res/v.swf?loc=$object-subrequest (easylistchina+easylist.txt: 4368)
+.qzs.qq.com/qzone/biz/res/v\.swf\?loc=
+# ||qqzuqiu.com/?a=check& (easylistchina+easylist.txt: 4354)
+.qqzuqiu.com/\?a=check&
+# ||qqyy.com/js/public_end_add.js (easylistchina+easylist.txt: 4353)
+.qqyy.com/js/public_end_add\.js
+# ||qqyy.com/js/commAdv (easylistchina+easylist.txt: 4352)
+.qqyy.com/js/commAdv
+# ||qqtz.com/ad$subdocument (easylistchina+easylist.txt: 4351)
+.qqtz.com/ad
+# ||qqread.com/swf/ (easylistchina+easylist.txt: 4350)
+.qqread.com/swf/
+# ||qqread.com/*js/$script (easylistchina+easylist.txt: 4349)
+.qqread.com/.*js/
+# ||qqmcc.org/biz/home_top_960x90.html (easylistchina+easylist.txt: 4348)
+.qqmcc.org/biz/home_top_960x90\.html
+# ||qqkj.cn/js/qqkjnew/lanmuzhuantitongji.js (easylistchina+easylist.txt: 4347)
+.qqkj.cn/js/qqkjnew/lanmuzhuantitongji\.js
+# ||qqjia.com/images/ad (easylistchina+easylist.txt: 4346)
+.qqjia.com/images/ad
+# ||qqjia.com/dan.js (easylistchina+easylist.txt: 4345)
+.qqjia.com/dan\.js
+# ||qqhjy.com/soft/Upload*.gif (easylistchina+easylist.txt: 4344)
+.qqhjy.com/soft/Upload.*\.gif
+# ||qqcyl.net/js/*.html (easylistchina+easylist.txt: 4343)
+.qqcyl.net/js/.*\.html
+# ||qqcyl.com/js/*.html (easylistchina+easylist.txt: 4342)
+.qqcyl.com/js/.*\.html
+# ||qqcf.com/js/Content_Get.js (easylistchina+easylist.txt: 4341)
+.qqcf.com/js/Content_Get\.js
+# ||qq260.com/shout.js (easylistchina+easylist.txt: 4340)
+.qq260.com/shout\.js
+# ||qq.com/qzone/biz/gdt/display/positions/waicai/ (easylistchina+easylist.txt: 4339)
+.qq.com/qzone/biz/gdt/display/positions/waicai/
+# ||qq.com/playgame/videoweb/ (easylistchina+easylist.txt: 4338)
+.qq.com/playgame/videoweb/
+# ||qq.com/PL_adT.htm (easylistchina+easylist.txt: 4337)
+.qq.com/PL_adT\.htm
+# ||qq.com/minivideo_v1/vd/res/enttencentvideo.xml (easylistchina+easylist.txt: 4336)
+.qq.com/minivideo_v1/vd/res/enttencentvideo\.xml
+# ||qq.com/livemsg? (easylistchina+easylist.txt: 4335)
+.qq.com/livemsg\?
+# ||qq.com/Index/getAdsAndHotspot (easylistchina+easylist.txt: 4334)
+.qq.com/Index/getAdsAndHotspot
+# ||qq.com/game/footerbar$subdocument (easylistchina+easylist.txt: 4333)
+.qq.com/game/footerbar
+# ||qq.com/coral/ADS (easylistchina+easylist.txt: 4332)
+.qq.com/coral/ADS
+# ||qq.com/bbs/bbs_topgg.htm (easylistchina+easylist.txt: 4330)
+.qq.com/bbs/bbs_topgg\.htm
+# ||qq.com/article_qq/ad_article_qq/ (easylistchina+easylist.txt: 4329)
+.qq.com/article_qq/ad_article_qq/
+# ||mail.qq.com/lview? (easylistchina+easylist.txt: 3899)
+.mail.qq.com/lview\?
+# ||l.qq.com/lview? (easylistchina+easylist.txt: 3757)
+.l.qq.com/lview\?
+# ||jinyici.com/qq.js (easylistchina+easylist.txt: 3611)
+.jinyici.com/qq\.js
+# ||gtimg.com/qqlive/ (easylistchina+easylist.txt: 3070)
+.gtimg.com/qqlive/
+# ||gdt.qq.com^ (easylistchina+easylist.txt: 2983)
+.gdt.qq.com
+# ||freep.cn/lianjie/qqtongji.js (easylistchina+easylist.txt: 2924)
+.freep.cn/lianjie/qqtongji\.js
+# ||fmdisk.com/templates/yythems/images/qq (easylistchina+easylist.txt: 2912)
+.fmdisk.com/templates/yythems/images/qq
+# ||djwma.com/qq.jpg (easylistchina+easylist.txt: 2674)
+.djwma.com/qq\.jpg
+# ||chuangshi.qq.com/upload/cmsv2/Banner/ (easylistchina+easylist.txt: 2473)
+.chuangshi.qq.com/upload/cmsv2/Banner/
+# ||anquan.org/static/profile/images/qq-banner.png (easylistchina+easylist.txt: 2097)
+.anquan.org/static/profile/images/qq-banner\.png
+# ||anquan.org/static/auth/images/ppb_cert/qq-browser.jpg (easylistchina+easylist.txt: 2096)
+.anquan.org/static/auth/images/ppb_cert/qq-browser\.jpg
+# ||admin5.com/bd360qq/action/ (easylistchina+easylist.txt: 2023)
+.admin5.com/bd360qq/action/
+# ||ac.tc.qq.com/store_file_download?*&dir_path=/admin/swf/ (easylistchina+easylist.txt: 1985)
+.ac.tc.qq.com/store_file_download\?.*&dir_path=/admin/swf/
+# ||855699.com^*qq.js (easylistchina+easylist.txt: 1881)
+.855699.com/.*qq\.js
+# ||5ilog.com/qq/js/jsgg.js (easylistchina+easylist.txt: 1757)
+.5ilog.com/qq/js/jsgg\.js
+# ||52tian.net/qq/ (easylistchina+easylist.txt: 1716)
+.52tian.net/qq/
+# ||3634.com/qq/ (easylistchina+easylist.txt: 1597)
+.3634.com/qq/
+# ||327qq.com/images/ (easylistchina+easylist.txt: 1569)
+.327qq.com/images/
+# _vmind.qqvideo.tc.qq.com^ (easylistchina+easylist.txt: 1251)
+/.*_vmind\.qqvideo\.tc\.qq\.com[^\w%.-]
+# /vmind.qqvideo.tc.qq.com^ (easylistchina+easylist.txt: 1226)
+/(.*/)?vmind\.qqvideo\.tc\.qq\.com[^\w%.-]
+vmind.qqvideo.tc.qq.com
+# ||wit.qq.com^$third-party (easylistchina+easylist.txt: 980)
+.wit.qq.com
+# ||qq4g.cn^$third-party (easylistchina+easylist.txt: 892)
+.qq4g.cn
+# /qqyouyuead/* (easylistchina+easylist.txt: 204)
+/(.*/)?qqyouyuead/.*
+# /qqlive/conf/playerlottery/* (easylistchina+easylist.txt: 203)
+/(.*/)?qqlive/conf/playerlottery/.*
+# /qqguojiad/* (easylistchina+easylist.txt: 202)
+/(.*/)?qqguojiad/.*
+# ||sinaimg.cn/large/$domain=360-bo.com|chakd.com|kiees.cn|kqiuba.com|lueqiu.com|macappbox.com|pptiyu.com|qqzhibo.net (easylistchina+easylist.txt: 4576)
+# ||tietuku.com^$domain=5ydj.com|99re.city|99re.net|99re6.com|99re8.com|99rehomes.com|btago.com|btbook.net|btshark.org|cnmkv.com|fulisuo1.com|hdbiger.org|kisssub.org|papa1024.com|potplayer.org|qqhzg.com|qqjishu.net|ruoren.com|souxue8.net|totuwo.com|xiaodao.la|xiaodaoyl.com|yunaw.com (easylistchina+easylist.txt: 4816)
+# /js/alls_$domain=911-sss.com|911semm.com|911semm.info|911seqq.info|913sss.com|kuaisou222.com|ylgbt.info|ylgxxbt.com (easylistchina+easylist.txt: 1178)
+# /?$popup,domain=allanalpass.com|amy.gs|any.gs|cash4files.com|deb.gs|dyo.gs|eafyfsuh.net|filesonthe.net|galleries.bz|goneviral.com|linkbucks.com|megaline.co|miniurls.co|picbucks.com|qqc.co|rqq.co|sasontnwc.net|seriousdeals.net|theseblogs.com|tinylinks.co|tnabucks.com|tubeviral.com|ultrafiles.net|urlbeat.net|whackyvidz.com|yyv.co|zff.co (easylistchina+easylist.txt: 1038)
+# ||qq.com/bqq_qfpic/$domain=keywin.org (easylistchina+easylist.txt: 4331)
+.qq.com/bqq_qfpic/
+# ||d3m41swuqq4sv5.cloudfront.net^ (easylistchina+easylist.txt: 40092)
+.d3m41swuqq4sv5.cloudfront.net
+# ||d2tgev5wuprbqq.cloudfront.net^ (easylistchina+easylist.txt: 40065)
+.d2tgev5wuprbqq.cloudfront.net
+# ||d26wy0pxd3qqpv.cloudfront.net^ (easylistchina+easylist.txt: 40038)
+.d26wy0pxd3qqpv.cloudfront.net
+# ||d25xkbr68qqtcn.cloudfront.net^ (easylistchina+easylist.txt: 40035)
+.d25xkbr68qqtcn.cloudfront.net
+# ||yy521.com/qq/qq.js (easylistchina+easylist.txt: 5334)
+.yy521.com/qq/qq\.js
+# ||weixin.qqday.com/js/tj.js (easylistchina+easylist.txt: 5045)
+.weixin.qqday.com/js/tj\.js
+# ||weixin.qqday.com/js/rb.js (easylistchina+easylist.txt: 5044)
+.weixin.qqday.com/js/rb\.js
+# ||voc.com.cn/Frame/qqms_cs.html (easylistchina+easylist.txt: 4988)
+.voc.com.cn/Frame/qqms_cs\.html
+# ||tv6080.com/qqt/ (easylistchina+easylist.txt: 4882)
+.tv6080.com/qqt/
+# ||tianmu.com/js/qq.js (easylistchina+easylist.txt: 4794)
+.tianmu.com/js/qq\.js
+# ||sinaimg.cn/large/005x4Y8Zgw1eqq4k2d5hsj306y06y0ts.jpg (easylistchina+easylist.txt: 4583)
+.sinaimg.cn/large/005x4Y8Zgw1eqq4k2d5hsj306y06y0ts\.jpg
+# ||sinaimg.cn/large/005x4Y8Zgw1eqq4gg0a1oj306y06y0ta.jpg (easylistchina+easylist.txt: 4582)
+.sinaimg.cn/large/005x4Y8Zgw1eqq4gg0a1oj306y06y0ta\.jpg
+# ||rh.qq.com^ (easylistchina+easylist.txt: 4399)
+.rh.qq.com
+# ||qqzuqiu.com/?a=check& (easylistchina+easylist.txt: 4354)
+.qqzuqiu.com/\?a=check&
+# ||qqyy.com/js/public_end_add.js (easylistchina+easylist.txt: 4353)
+.qqyy.com/js/public_end_add\.js
+# ||qqyy.com/js/commAdv (easylistchina+easylist.txt: 4352)
+.qqyy.com/js/commAdv
+# ||qqread.com/swf/ (easylistchina+easylist.txt: 4350)
+.qqread.com/swf/
+# ||qqmcc.org/biz/home_top_960x90.html (easylistchina+easylist.txt: 4348)
+.qqmcc.org/biz/home_top_960x90\.html
+# ||qqkj.cn/js/qqkjnew/lanmuzhuantitongji.js (easylistchina+easylist.txt: 4347)
+.qqkj.cn/js/qqkjnew/lanmuzhuantitongji\.js
+# ||qqjia.com/images/ad (easylistchina+easylist.txt: 4346)
+.qqjia.com/images/ad
+# ||qqjia.com/dan.js (easylistchina+easylist.txt: 4345)
+.qqjia.com/dan\.js
+# ||qqhjy.com/soft/Upload*.gif (easylistchina+easylist.txt: 4344)
+.qqhjy.com/soft/Upload.*\.gif
+# ||qqcyl.net/js/*.html (easylistchina+easylist.txt: 4343)
+.qqcyl.net/js/.*\.html
+# ||qqcyl.com/js/*.html (easylistchina+easylist.txt: 4342)
+.qqcyl.com/js/.*\.html
+# ||qqcf.com/js/Content_Get.js (easylistchina+easylist.txt: 4341)
+.qqcf.com/js/Content_Get\.js
+# ||qq260.com/shout.js (easylistchina+easylist.txt: 4340)
+.qq260.com/shout\.js
+# ||qq.com/qzone/biz/gdt/display/positions/waicai/ (easylistchina+easylist.txt: 4339)
+.qq.com/qzone/biz/gdt/display/positions/waicai/
+# ||qq.com/playgame/videoweb/ (easylistchina+easylist.txt: 4338)
+.qq.com/playgame/videoweb/
+# ||qq.com/PL_adT.htm (easylistchina+easylist.txt: 4337)
+.qq.com/PL_adT\.htm
+# ||qq.com/minivideo_v1/vd/res/enttencentvideo.xml (easylistchina+easylist.txt: 4336)
+.qq.com/minivideo_v1/vd/res/enttencentvideo\.xml
+# ||qq.com/livemsg? (easylistchina+easylist.txt: 4335)
+.qq.com/livemsg\?
+# ||qq.com/Index/getAdsAndHotspot (easylistchina+easylist.txt: 4334)
+.qq.com/Index/getAdsAndHotspot
+# ||qq.com/coral/ADS (easylistchina+easylist.txt: 4332)
+.qq.com/coral/ADS
+# ||qq.com/bbs/bbs_topgg.htm (easylistchina+easylist.txt: 4330)
+.qq.com/bbs/bbs_topgg\.htm
+# ||qq.com/article_qq/ad_article_qq/ (easylistchina+easylist.txt: 4329)
+.qq.com/article_qq/ad_article_qq/
+# ||mail.qq.com/lview? (easylistchina+easylist.txt: 3899)
+.mail.qq.com/lview\?
+# ||l.qq.com/lview? (easylistchina+easylist.txt: 3757)
+.l.qq.com/lview\?
+# ||jinyici.com/qq.js (easylistchina+easylist.txt: 3611)
+.jinyici.com/qq\.js
+# ||gtimg.com/qqlive/ (easylistchina+easylist.txt: 3070)
+.gtimg.com/qqlive/
+# ||gdt.qq.com^ (easylistchina+easylist.txt: 2983)
+.gdt.qq.com
+# ||freep.cn/lianjie/qqtongji.js (easylistchina+easylist.txt: 2924)
+.freep.cn/lianjie/qqtongji\.js
+# ||fmdisk.com/templates/yythems/images/qq (easylistchina+easylist.txt: 2912)
+.fmdisk.com/templates/yythems/images/qq
+# ||djwma.com/qq.jpg (easylistchina+easylist.txt: 2674)
+.djwma.com/qq\.jpg
+# ||chuangshi.qq.com/upload/cmsv2/Banner/ (easylistchina+easylist.txt: 2473)
+.chuangshi.qq.com/upload/cmsv2/Banner/
+# ||anquan.org/static/profile/images/qq-banner.png (easylistchina+easylist.txt: 2097)
+.anquan.org/static/profile/images/qq-banner\.png
+# ||anquan.org/static/auth/images/ppb_cert/qq-browser.jpg (easylistchina+easylist.txt: 2096)
+.anquan.org/static/auth/images/ppb_cert/qq-browser\.jpg
+# ||admin5.com/bd360qq/action/ (easylistchina+easylist.txt: 2023)
+.admin5.com/bd360qq/action/
+# ||ac.tc.qq.com/store_file_download?*&dir_path=/admin/swf/ (easylistchina+easylist.txt: 1985)
+.ac.tc.qq.com/store_file_download\?.*&dir_path=/admin/swf/
+# ||855699.com^*qq.js (easylistchina+easylist.txt: 1881)
+.855699.com/.*qq\.js
+# ||5ilog.com/qq/js/jsgg.js (easylistchina+easylist.txt: 1757)
+.5ilog.com/qq/js/jsgg\.js
+# ||52tian.net/qq/ (easylistchina+easylist.txt: 1716)
+.52tian.net/qq/
+# ||3634.com/qq/ (easylistchina+easylist.txt: 1597)
+.3634.com/qq/
+# ||327qq.com/images/ (easylistchina+easylist.txt: 1569)
+.327qq.com/images/
+# _vmind.qqvideo.tc.qq.com^ (easylistchina+easylist.txt: 1251)
+/.*_vmind\.qqvideo\.tc\.qq\.com[^\w%.-]
+# /vmind.qqvideo.tc.qq.com^ (easylistchina+easylist.txt: 1226)
+/(.*/)?vmind\.qqvideo\.tc\.qq\.com[^\w%.-]
+vmind.qqvideo.tc.qq.com
+# /qqyouyuead/* (easylistchina+easylist.txt: 204)
+/(.*/)?qqyouyuead/.*
+# /qqlive/conf/playerlottery/* (easylistchina+easylist.txt: 203)
+/(.*/)?qqlive/conf/playerlottery/.*
+# /qqguojiad/* (easylistchina+easylist.txt: 202)
+/(.*/)?qqguojiad/.*
+# ||qzs.qq.com/qzone/biz/res/v.swf?loc=$object-subrequest (easylistchina+easylist.txt: 4368)
+.qzs.qq.com/qzone/biz/res/v\.swf\?loc=
+# ||qqread.com/*js/$script (easylistchina+easylist.txt: 4349)
+.qqread.com/.*js/
+# ||wit.qq.com^$third-party (easylistchina+easylist.txt: 980)
+.wit.qq.com
+# ||qq4g.cn^$third-party (easylistchina+easylist.txt: 892)
+.qq4g.cn
+# ||sinaimg.cn/large/$domain=360-bo.com|chakd.com|kiees.cn|kqiuba.com|lueqiu.com|macappbox.com|pptiyu.com|qqzhibo.net (easylistchina+easylist.txt: 4576)
+# ||tietuku.com^$domain=5ydj.com|99re.city|99re.net|99re6.com|99re8.com|99rehomes.com|btago.com|btbook.net|btshark.org|cnmkv.com|fulisuo1.com|hdbiger.org|kisssub.org|papa1024.com|potplayer.org|qqhzg.com|qqjishu.net|ruoren.com|souxue8.net|totuwo.com|xiaodao.la|xiaodaoyl.com|yunaw.com (easylistchina+easylist.txt: 4816)
+# /js/alls_$domain=911-sss.com|911semm.com|911semm.info|911seqq.info|913sss.com|kuaisou222.com|ylgbt.info|ylgxxbt.com (easylistchina+easylist.txt: 1178)
+# /?$popup,domain=allanalpass.com|amy.gs|any.gs|cash4files.com|deb.gs|dyo.gs|eafyfsuh.net|filesonthe.net|galleries.bz|goneviral.com|linkbucks.com|megaline.co|miniurls.co|picbucks.com|qqc.co|rqq.co|sasontnwc.net|seriousdeals.net|theseblogs.com|tinylinks.co|tnabucks.com|tubeviral.com|ultrafiles.net|urlbeat.net|whackyvidz.com|yyv.co|zff.co (easylistchina+easylist.txt: 1038)
+# ||qq.com/bqq_qfpic/$domain=keywin.org (easylistchina+easylist.txt: 4331)
+.qq.com/bqq_qfpic/
+# ||83nsdjqqo1cau183xz.com^$popup,third-party (easylistchina+easylist.txt: 38361)
+.83nsdjqqo1cau183xz.com
+# ||qqtz.com/ad$subdocument (easylistchina+easylist.txt: 4351)
+.qqtz.com/ad
+# ||qq.com/game/footerbar$subdocument (easylistchina+easylist.txt: 4333)
+.qq.com/game/footerbar
+# /?$popup,domain=allanalpass.com|amy.gs|any.gs|cash4files.com|deb.gs|dyo.gs|eafyfsuh.net|filesonthe.net|galleries.bz|goneviral.com|linkbucks.com|megaline.co|miniurls.co|picbucks.com|qqc.co|rqq.co|sasontnwc.net|seriousdeals.net|theseblogs.com|tinylinks.co|tnabucks.com|tubeviral.com|ultrafiles.net|urlbeat.net|whackyvidz.com|yyv.co|zff.co (easylistchina+easylist.txt: 1038)
+# ||83nsdjqqo1cau183xz.com^$popup,third-party (easylistchina+easylist.txt: 38361)
+.83nsdjqqo1cau183xz.com
+# @@||hqq.tv^$elemhide (easylistchina+easylist.txt: 60389)
+.hqq.tv
+# @@||pingjs.qq.com/ping.js (easylistchina+easylist.txt: 10480)
+.pingjs.qq.com/ping\.js
+# @@||qqread.com/swf/qqread_rollpic.swf (easylistchina+easylist.txt: 10347)
+.qqread.com/swf/qqread_rollpic\.swf
+# @@||qq.com^*?ADTAG= (easylistchina+easylist.txt: 10346)
+.qq.com/.*\?ADTAG=
+# @@||qq.com/server/website/CommWebGameSelect_ad.js (easylistchina+easylist.txt: 10345)
+.qq.com/server/website/CommWebGameSelect_ad\.js
+# @@||qq.com/bossweb/jifen/ (easylistchina+easylist.txt: 10344)
+.qq.com/bossweb/jifen/
+# @@||l.qq.com/livemsg?ty=web&ad_type= (easylistchina+easylist.txt: 10296)
+.l.qq.com/livemsg\?ty=web&ad_type=
+# @@||daoju.qq.com/time/*/js/ad/ (easylistchina+easylist.txt: 10221)
+.daoju.qq.com/time/.*/js/ad/
+# @@||cq.qq.com/js/cody/*scroll_ad.js (easylistchina+easylist.txt: 10216)
+.cq.qq.com/js/cody/.*scroll_ad\.js
+# @@||l.qq.com/lview?$domain=888.sports.qq.com (easylistchina+easylist.txt: 10297)
+.l.qq.com/lview\?
+# @@||j.wit.qq.com/sc/crystal_ad.js?$domain=888.sports.qq.com (easylistchina+easylist.txt: 10287)
+.j.wit.qq.com/sc/crystal_ad\.js\?
+# @@/img/ad/*$domain=exp.qq.com (easylistchina+easylist.txt: 10044)
+# @@||popads.net/pop.js$domain=filmovizija.in|go4up.com|hqq.tv|sizedrive.com (easylistchina+easylist.txt: 60658)
+# @@||sms-mmm.com/script.php|$script,domain=hqq.tv (easylistchina+easylist.txt: 60752)
+# @@||sms-mmm.com/pads.js$domain=hqq.tv (easylistchina+easylist.txt: 60751)
+# @@||google-it.info^$script,domain=hqq.tv (easylistchina+easylist.txt: 60362)
+# @@/guanggao/*$domain=icbc.com.cn|igame.qq.com|tuan.duba.com (easylistchina+easylist.txt: 10039)
+# @@||pingjs.qq.com/ping_tcss_ied.js$domain=lol.qq.com (easylistchina+easylist.txt: 10481)
+.pingjs.qq.com/ping_tcss_ied\.js
+# @@/adsbox.$domain=long7.qq.com (easylistchina+easylist.txt: 10011)
+# @@||tajs.qq.com/stats?$domain=qq.com (easylistchina+easylist.txt: 10487)
+.tajs.qq.com/stats\?
+# @@/show_ad_$domain=wb.qq.com (easylistchina+easylist.txt: 10055)
+# @@/advert_$domain=wb.qq.com (easylistchina+easylist.txt: 10017)
+# @@||pingjs.qq.com/ping.js (easylistchina+easylist.txt: 10480)
+.pingjs.qq.com/ping\.js
+# @@||qqread.com/swf/qqread_rollpic.swf (easylistchina+easylist.txt: 10347)
+.qqread.com/swf/qqread_rollpic\.swf
+# @@||qq.com^*?ADTAG= (easylistchina+easylist.txt: 10346)
+.qq.com/.*\?ADTAG=
+# @@||qq.com/server/website/CommWebGameSelect_ad.js (easylistchina+easylist.txt: 10345)
+.qq.com/server/website/CommWebGameSelect_ad\.js
+# @@||qq.com/bossweb/jifen/ (easylistchina+easylist.txt: 10344)
+.qq.com/bossweb/jifen/
+# @@||l.qq.com/livemsg?ty=web&ad_type= (easylistchina+easylist.txt: 10296)
+.l.qq.com/livemsg\?ty=web&ad_type=
+# @@||daoju.qq.com/time/*/js/ad/ (easylistchina+easylist.txt: 10221)
+.daoju.qq.com/time/.*/js/ad/
+# @@||cq.qq.com/js/cody/*scroll_ad.js (easylistchina+easylist.txt: 10216)
+.cq.qq.com/js/cody/.*scroll_ad\.js
+# @@||l.qq.com/lview?$domain=888.sports.qq.com (easylistchina+easylist.txt: 10297)
+.l.qq.com/lview\?
+# @@||j.wit.qq.com/sc/crystal_ad.js?$domain=888.sports.qq.com (easylistchina+easylist.txt: 10287)
+.j.wit.qq.com/sc/crystal_ad\.js\?
+# @@/img/ad/*$domain=exp.qq.com (easylistchina+easylist.txt: 10044)
+# @@||popads.net/pop.js$domain=filmovizija.in|go4up.com|hqq.tv|sizedrive.com (easylistchina+easylist.txt: 60658)
+# @@||sms-mmm.com/script.php|$script,domain=hqq.tv (easylistchina+easylist.txt: 60752)
+# @@||sms-mmm.com/pads.js$domain=hqq.tv (easylistchina+easylist.txt: 60751)
+# @@||google-it.info^$script,domain=hqq.tv (easylistchina+easylist.txt: 60362)
+# @@/guanggao/*$domain=icbc.com.cn|igame.qq.com|tuan.duba.com (easylistchina+easylist.txt: 10039)
+# @@||pingjs.qq.com/ping_tcss_ied.js$domain=lol.qq.com (easylistchina+easylist.txt: 10481)
+.pingjs.qq.com/ping_tcss_ied\.js
+# @@/adsbox.$domain=long7.qq.com (easylistchina+easylist.txt: 10011)
+# @@||tajs.qq.com/stats?$domain=qq.com (easylistchina+easylist.txt: 10487)
+.tajs.qq.com/stats\?
+# @@/show_ad_$domain=wb.qq.com (easylistchina+easylist.txt: 10055)
+# @@/advert_$domain=wb.qq.com (easylistchina+easylist.txt: 10017)
+# @@||hqq.tv^$elemhide (easylistchina+easylist.txt: 60389)
+.hqq.tv
+# @@||pingjs.qq.com/ping.js (easylistchina+easylist.txt: 10480)
+.pingjs.qq.com/ping\.js
+# @@||qqread.com/swf/qqread_rollpic.swf (easylistchina+easylist.txt: 10347)
+.qqread.com/swf/qqread_rollpic\.swf
+# @@||qq.com^*?ADTAG= (easylistchina+easylist.txt: 10346)
+.qq.com/.*\?ADTAG=
+# @@||qq.com/server/website/CommWebGameSelect_ad.js (easylistchina+easylist.txt: 10345)
+.qq.com/server/website/CommWebGameSelect_ad\.js
+# @@||qq.com/bossweb/jifen/ (easylistchina+easylist.txt: 10344)
+.qq.com/bossweb/jifen/
+# @@||l.qq.com/livemsg?ty=web&ad_type= (easylistchina+easylist.txt: 10296)
+.l.qq.com/livemsg\?ty=web&ad_type=
+# @@||daoju.qq.com/time/*/js/ad/ (easylistchina+easylist.txt: 10221)
+.daoju.qq.com/time/.*/js/ad/
+# @@||cq.qq.com/js/cody/*scroll_ad.js (easylistchina+easylist.txt: 10216)
+.cq.qq.com/js/cody/.*scroll_ad\.js
+# @@||sms-mmm.com/script.php|$script,domain=hqq.tv (easylistchina+easylist.txt: 60752)
+# @@||google-it.info^$script,domain=hqq.tv (easylistchina+easylist.txt: 60362)
+# @@||l.qq.com/lview?$domain=888.sports.qq.com (easylistchina+easylist.txt: 10297)
+.l.qq.com/lview\?
+# @@||j.wit.qq.com/sc/crystal_ad.js?$domain=888.sports.qq.com (easylistchina+easylist.txt: 10287)
+.j.wit.qq.com/sc/crystal_ad\.js\?
+# @@/img/ad/*$domain=exp.qq.com (easylistchina+easylist.txt: 10044)
+# @@||popads.net/pop.js$domain=filmovizija.in|go4up.com|hqq.tv|sizedrive.com (easylistchina+easylist.txt: 60658)
+# @@||sms-mmm.com/pads.js$domain=hqq.tv (easylistchina+easylist.txt: 60751)
+# @@/guanggao/*$domain=icbc.com.cn|igame.qq.com|tuan.duba.com (easylistchina+easylist.txt: 10039)
+# @@||pingjs.qq.com/ping_tcss_ied.js$domain=lol.qq.com (easylistchina+easylist.txt: 10481)
+.pingjs.qq.com/ping_tcss_ied\.js
+# @@/adsbox.$domain=long7.qq.com (easylistchina+easylist.txt: 10011)
+# @@||tajs.qq.com/stats?$domain=qq.com (easylistchina+easylist.txt: 10487)
+.tajs.qq.com/stats\?
+# @@/show_ad_$domain=wb.qq.com (easylistchina+easylist.txt: 10055)
+# @@/advert_$domain=wb.qq.com (easylistchina+easylist.txt: 10017)
+
+
+##############################qq end####################################
+
+##############################sohu begin####################################
+# ||sohu.com/interaction/get/getListByVidForVrs.do? (easylistchina.txt: 4632)
+.sohu.com/interaction/get/getListByVidForVrs\.do\?
+# ||sohu.com/adgtr/ (easylistchina.txt: 4631)
+.sohu.com/adgtr/
+# ||sohu.com.cn/ppp/bms/bms.popup. (easylistchina.txt: 4630)
+.sohu.com.cn/ppp/bms/bms\.popup\.
+# ||p.aty.sohu.com/p?cat= (easylistchina.txt: 4108)
+.p.aty.sohu.com/p\?cat=
+# ||m.aty.sohu.com^ (easylistchina.txt: 3875)
+.m.aty.sohu.com
+# ||images.sohu.com/ytv/*.swf (easylistchina.txt: 3413)
+.images.sohu.com/ytv/.*\.swf
+# ||images.sohu.com/ytv/*.jpg (easylistchina.txt: 3412)
+.images.sohu.com/ytv/.*\.jpg
+# ||images.sohu.com/cs/ (easylistchina.txt: 3411)
+.images.sohu.com/cs/
+# ||images.sohu.com/bill/ (easylistchina.txt: 3410)
+.images.sohu.com/bill/
+# ||e.changyan.sohu.com/dataService/getData? (easylistchina.txt: 2765)
+.e.changyan.sohu.com/dataService/getData\?
+# ||726w.com/sohu.html (easylistchina.txt: 1826)
+.726w.com/sohu\.html
+# ||sohu.com/i/?pvid=$popup (easylistchina.txt: 1100)
+.sohu.com/i/\?pvid=
+# ||sohucs.com^*_gif$domain=12580sky.com (easylistchina.txt: 4633)
+.sohucs.com/.*_gif
+# .com/x/$domain=17173.com|17173.tv.sohu.com (easylistchina.txt: 1116)
+# ||info.lm.tv.sohu.com^$domain=gezila.com (easylistchina.txt: 3475)
+.info.lm.tv.sohu.com
+# ||sohu.com/interaction/get/getListByVidForVrs.do? (easylistchina.txt: 4632)
+.sohu.com/interaction/get/getListByVidForVrs\.do\?
+# ||sohu.com/adgtr/ (easylistchina.txt: 4631)
+.sohu.com/adgtr/
+# ||sohu.com.cn/ppp/bms/bms.popup. (easylistchina.txt: 4630)
+.sohu.com.cn/ppp/bms/bms\.popup\.
+# ||p.aty.sohu.com/p?cat= (easylistchina.txt: 4108)
+.p.aty.sohu.com/p\?cat=
+# ||m.aty.sohu.com^ (easylistchina.txt: 3875)
+.m.aty.sohu.com
+# ||images.sohu.com/ytv/*.swf (easylistchina.txt: 3413)
+.images.sohu.com/ytv/.*\.swf
+# ||images.sohu.com/ytv/*.jpg (easylistchina.txt: 3412)
+.images.sohu.com/ytv/.*\.jpg
+# ||images.sohu.com/cs/ (easylistchina.txt: 3411)
+.images.sohu.com/cs/
+# ||images.sohu.com/bill/ (easylistchina.txt: 3410)
+.images.sohu.com/bill/
+# ||e.changyan.sohu.com/dataService/getData? (easylistchina.txt: 2765)
+.e.changyan.sohu.com/dataService/getData\?
+# ||726w.com/sohu.html (easylistchina.txt: 1826)
+.726w.com/sohu\.html
+# ||sohu.com/i/?pvid=$popup (easylistchina.txt: 1100)
+.sohu.com/i/\?pvid=
+# ||sohucs.com^*_gif$domain=12580sky.com (easylistchina.txt: 4633)
+.sohucs.com/.*_gif
+# .com/x/$domain=17173.com|17173.tv.sohu.com (easylistchina.txt: 1116)
+# ||info.lm.tv.sohu.com^$domain=gezila.com (easylistchina.txt: 3475)
+.info.lm.tv.sohu.com
+# ||sohu.com/interaction/get/getListByVidForVrs.do? (easylistchina.txt: 4632)
+.sohu.com/interaction/get/getListByVidForVrs\.do\?
+# ||sohu.com/adgtr/ (easylistchina.txt: 4631)
+.sohu.com/adgtr/
+# ||sohu.com.cn/ppp/bms/bms.popup. (easylistchina.txt: 4630)
+.sohu.com.cn/ppp/bms/bms\.popup\.
+# ||p.aty.sohu.com/p?cat= (easylistchina.txt: 4108)
+.p.aty.sohu.com/p\?cat=
+# ||m.aty.sohu.com^ (easylistchina.txt: 3875)
+.m.aty.sohu.com
+# ||images.sohu.com/ytv/*.swf (easylistchina.txt: 3413)
+.images.sohu.com/ytv/.*\.swf
+# ||images.sohu.com/ytv/*.jpg (easylistchina.txt: 3412)
+.images.sohu.com/ytv/.*\.jpg
+# ||images.sohu.com/cs/ (easylistchina.txt: 3411)
+.images.sohu.com/cs/
+# ||images.sohu.com/bill/ (easylistchina.txt: 3410)
+.images.sohu.com/bill/
+# ||e.changyan.sohu.com/dataService/getData? (easylistchina.txt: 2765)
+.e.changyan.sohu.com/dataService/getData\?
+# ||726w.com/sohu.html (easylistchina.txt: 1826)
+.726w.com/sohu\.html
+# ||sohu.com/i/?pvid=$popup (easylistchina.txt: 1100)
+.sohu.com/i/\?pvid=
+# ||sohucs.com^*_gif$domain=12580sky.com (easylistchina.txt: 4633)
+.sohucs.com/.*_gif
+# .com/x/$domain=17173.com|17173.tv.sohu.com (easylistchina.txt: 1116)
+# ||info.lm.tv.sohu.com^$domain=gezila.com (easylistchina.txt: 3475)
+.info.lm.tv.sohu.com
+# ||sohu.com/i/?pvid=$popup (easylistchina.txt: 1100)
+.sohu.com/i/\?pvid=
+# @@||images.sohu.com/cs/$domain=fmdisk.com (easylistchina.txt: 10267)
+.images.sohu.com/cs/
+# @@||images.sohu.com/cs/$domain=fmdisk.com (easylistchina.txt: 10267)
+.images.sohu.com/cs/
+# @@||images.sohu.com/cs/$domain=fmdisk.com (easylistchina.txt: 10267)
+.images.sohu.com/cs/
+
+# ||v.blog.sohu.com/dostat.do? (easyprivacy.txt: 9921)
+.v.blog.sohu.com/dostat\.do\?
+# ||tv.sohu.com/upload/trace/ (easyprivacy.txt: 9917)
+.tv.sohu.com/upload/trace/
+# ||sohu.com/pv? (easyprivacy.txt: 9883)
+.sohu.com/pv\?
+# ||sohu.com/ctr.gif? (easyprivacy.txt: 9882)
+.sohu.com/ctr\.gif\?
+# ||sohu.com.cn/hdpb.gif? (easyprivacy.txt: 9881)
+.sohu.com.cn/hdpb\.gif\?
+# ||js.sohu.com/wrating0820.js (easyprivacy.txt: 9846)
+.js.sohu.com/wrating0820\.js
+# ||js.sohu.com/track/ (easyprivacy.txt: 9845)
+.js.sohu.com/track/
+# ||his.tv.sohu.com/his/ping.do? (easyprivacy.txt: 9842)
+.his.tv.sohu.com/his/ping\.do\?
+# ||count.vrs.sohu.com^$object-subrequest (easyprivacy.txt: 9823)
+.count.vrs.sohu.com
+# ||sohu.com/pvpb.gif? (easyprivacy.txt: 7043)
+.sohu.com/pvpb\.gif\?
+# ||changyan.sohu.com/stat/ (easyprivacy.txt: 7019)
+.changyan.sohu.com/stat/
+# ||sohu.com/stat/ (easyprivacy.txt: 6361)
+.sohu.com/stat/
+# ||v.blog.sohu.com/dostat.do? (easyprivacy.txt: 9921)
+.v.blog.sohu.com/dostat\.do\?
+# ||tv.sohu.com/upload/trace/ (easyprivacy.txt: 9917)
+.tv.sohu.com/upload/trace/
+# ||sohu.com/pv? (easyprivacy.txt: 9883)
+.sohu.com/pv\?
+# ||sohu.com/ctr.gif? (easyprivacy.txt: 9882)
+.sohu.com/ctr\.gif\?
+# ||sohu.com.cn/hdpb.gif? (easyprivacy.txt: 9881)
+.sohu.com.cn/hdpb\.gif\?
+# ||js.sohu.com/wrating0820.js (easyprivacy.txt: 9846)
+.js.sohu.com/wrating0820\.js
+# ||js.sohu.com/track/ (easyprivacy.txt: 9845)
+.js.sohu.com/track/
+# ||his.tv.sohu.com/his/ping.do? (easyprivacy.txt: 9842)
+.his.tv.sohu.com/his/ping\.do\?
+# ||count.vrs.sohu.com^$object-subrequest (easyprivacy.txt: 9823)
+.count.vrs.sohu.com
+# ||sohu.com/pvpb.gif? (easyprivacy.txt: 7043)
+.sohu.com/pvpb\.gif\?
+# ||changyan.sohu.com/stat/ (easyprivacy.txt: 7019)
+.changyan.sohu.com/stat/
+# ||sohu.com/stat/ (easyprivacy.txt: 6361)
+.sohu.com/stat/
+# ||v.blog.sohu.com/dostat.do? (easyprivacy.txt: 9921)
+.v.blog.sohu.com/dostat\.do\?
+# ||tv.sohu.com/upload/trace/ (easyprivacy.txt: 9917)
+.tv.sohu.com/upload/trace/
+# ||sohu.com/pv? (easyprivacy.txt: 9883)
+.sohu.com/pv\?
+# ||sohu.com/ctr.gif? (easyprivacy.txt: 9882)
+.sohu.com/ctr\.gif\?
+# ||sohu.com.cn/hdpb.gif? (easyprivacy.txt: 9881)
+.sohu.com.cn/hdpb\.gif\?
+# ||js.sohu.com/wrating0820.js (easyprivacy.txt: 9846)
+.js.sohu.com/wrating0820\.js
+# ||js.sohu.com/track/ (easyprivacy.txt: 9845)
+.js.sohu.com/track/
+# ||his.tv.sohu.com/his/ping.do? (easyprivacy.txt: 9842)
+.his.tv.sohu.com/his/ping\.do\?
+# ||sohu.com/pvpb.gif? (easyprivacy.txt: 7043)
+.sohu.com/pvpb\.gif\?
+# ||changyan.sohu.com/stat/ (easyprivacy.txt: 7019)
+.changyan.sohu.com/stat/
+# ||sohu.com/stat/ (easyprivacy.txt: 6361)
+.sohu.com/stat/
+# ||count.vrs.sohu.com^$object-subrequest (easyprivacy.txt: 9823)
+.count.vrs.sohu.com
+# @@||v.blog.sohu.com/dostat.do?*&n=videoList_vids&$script (easyprivacy.txt: 10974)
+.v.blog.sohu.com/dostat\.do\?.*&n=videoList_vids&
+# @@||v.blog.sohu.com/dostat.do?*&n=videoList_vids&$script (easyprivacy.txt: 10974)
+.v.blog.sohu.com/dostat\.do\?.*&n=videoList_vids&
+# @@||v.blog.sohu.com/dostat.do?*&n=videoList_vids&$script (easyprivacy.txt: 10974)
+.v.blog.sohu.com/dostat\.do\?.*&n=videoList_vids&
+
+# ||hot.vrs.sohu.com/vrs_flash.action?vid=$f@s@&plid=\d+&uid=@&plid=7038006&uid=@ (lazy222.txt: 5091)
+.hot.vrs.sohu.com/vrs_flash\.action\?vid=\$f@s@&plid=\\d\+&uid=@&plid=7038006&uid=@
+# |http://www.zhiboba.cc/app/play.aspx?xlid=$s@src="http://tv.sohu.com/upload/swf/20120803/Main.swf"@src="http://update.adbyby.com/swf/sohu_livezb.swf"@ (lazy222.txt: 5080)
+www.zhiboba.cc/app/play\.aspx\?xlid=\$s@src="http://tv\.sohu\.com/upload/swf/20120803/Main\.swf"@src="http://update\.adbyby\.com/swf/sohu_livezb\.swf"@
+# |http://tv.sohu.com/upload/swf/201*/Main.swf$f@s@/Main.swf\?(?!plid)@/Main.swf?plid=7038006&@ (lazy222.txt: 5038)
+tv.sohu.com/upload/swf/201.*/Main\.swf\$f@s@/Main\.swf\\\?\(\?!plid\)@/Main\.swf\?plid=7038006&@
+# |http://tv.sohu.com/upload/swf/*/PlayerShell.swf$f@s@http://tv.sohu.com/upload/swf/.*?/PlayerShell.swf@http://update.adbyby.com/swf/sohu_livezb.swf@ (lazy222.txt: 5037)
+tv.sohu.com/upload/swf/.*/PlayerShell\.swf\$f@s@http://tv\.sohu\.com/upload/swf/\..*\?/PlayerShell\.swf@http://update\.adbyby\.com/swf/sohu_livezb\.swf@
+# |http://hot.vrs.sohu.com/vrs_flash.action$s@"tvfee":0,@"tvfee":1,@ (lazy222.txt: 5009)
+hot.vrs.sohu.com/vrs_flash\.action\$s@"tvfee":0,@"tvfee":1,@
+# |http://www.aikuhu.com/Include/javascript/Player.js$s@"http://tv.sohu.com/upload/swf/*/Main.swf&@"http://update.adbyby.com/swf/sohu_livezb.swf&@ (lazy222.txt: 4937)
+www.aikuhu.com/Include/javascript/Player\.js\$s@"http://tv\.sohu\.com/upload/swf/.*/Main\.swf&@"http://update\.adbyby\.com/swf/sohu_livezb\.swf&@
+# |http://www.imanke.com/static/player/sohu.html$s@var url = 'http://tv.sohu.com/upload/swf/p2p/20140627/Main.swf'@var url = 'http://update.adbyby.com/swf/sohu_livezb.swf'@ (lazy222.txt: 4934)
+www.imanke.com/static/player/sohu\.html\$s@var url = 'http://tv\.sohu\.com/upload/swf/p2p/20140627/Main\.swf'@var url = 'http://update\.adbyby\.com/swf/sohu_livezb\.swf'@
+# |http://tv.sohu.com/upload/static/plugin/g.js$s@cookie("fee_status",null,@cookie("fee_status",1,@ (lazy222.txt: 4929)
+tv.sohu.com/upload/static/plugin/g\.js\$s@cookie\("fee_status",null,@cookie\("fee_status",1,@
+# |http://wpan.cc/$s@<script src="http://163.sohu.sina.360sogou-baidu-soso.com:2345/page/?s=*"></script>@@ (lazy222.txt: 4925)
+wpan.cc/\$s@<script src="http://163\.sohu\.sina\.360sogou-baidu-soso\.com:2345/page/\?s=.*"></script>@@
+# |http://www.bilibili.com/video/$s@src="http://static.hdslb.com/sohu.swf"@src="http://static.hdslb.com/sohu.swf?plid=7038006&"@ (lazy222.txt: 4920)
+www.bilibili.com/video/\$s@src="http://static\.hdslb\.com/sohu\.swf"@src="http://static\.hdslb\.com/sohu\.swf\?plid=7038006&"@
+# ||aty.sohu.com/v?c$s@{"status":1,"data":{"oad":"@{"status":0,"data":{"":"@ (lazy222.txt: 4917)
+.aty.sohu.com/v\?c\$s@\{"status":1,"data":\{"oad":"@\{"status":0,"data":\{"":"@
+# |http://f.aty.sohu.com/f?c$s@{"status":1,"data":{"oad":"@{"status":0,"data":{"":"@ (lazy222.txt: 4916)
+f.aty.sohu.com/f\?c\$s@\{"status":1,"data":\{"oad":"@\{"status":0,"data":\{"":"@
+# |http://www.lepan.cc/$s@<script src="http://sina.qq.sohu.baidu-sogou-google.com:1868/page/?s=*"></script>@@ (lazy222.txt: 4908)
+www.lepan.cc/\$s@<script src="http://sina\.qq\.sohu\.baidu-sogou-google\.com:1868/page/\?s=.*"></script>@@
+# |http://www.lepan.cc/$s@<script src="http://163.sohu.sina.360sogou-baidu-soso.com:2345/page/?s=*"></script>@@ (lazy222.txt: 4907)
+www.lepan.cc/\$s@<script src="http://163\.sohu\.sina\.360sogou-baidu-soso\.com:2345/page/\?s=.*"></script>@@
+# |http://www.fmdisk.com/$s@<script src="http://sina.qq.sohu.baidu-sogou-google.com:1868/page/?s=*"></script>@@ (lazy222.txt: 4904)
+www.fmdisk.com/\$s@<script src="http://sina\.qq\.sohu\.baidu-sogou-google\.com:1868/page/\?s=.*"></script>@@
+# |http://www.fmdisk.com/$s@<script src="http://163.sohu.sina.360sogou-baidu-soso.com:2345/page/?s=*"></script>@@ (lazy222.txt: 4902)
+www.fmdisk.com/\$s@<script src="http://163\.sohu\.sina\.360sogou-baidu-soso\.com:2345/page/\?s=.*"></script>@@
+# |http://17173.tv.sohu.com/v*.html$s@<div style="display:none;" utag="live-recommend">*</div>@@ (lazy222.txt: 4888)
+17173.tv.sohu.com/v.*\.html\$s@<div style="display:none;" utag="live-recommend">.*</div>@@
+# |http://17173.tv.sohu.com/v*.html$s@<script type="text/javascript" ads-src="http://17173im.allyes.com/main/*</script>@@ (lazy222.txt: 4887)
+17173.tv.sohu.com/v.*\.html\$s@<script type="text/javascript" ads-src="http://17173im\.allyes\.com/main/.*</script>@@
+# |http://mini.sohu.com/$s@var ad=@@ (lazy222.txt: 4875)
+mini.sohu.com/\$s@var ad=@@
+# ||live.tv.sohu.com/crossdomain.xml$s@<cross-domain-policy>*</cross-domain-policy>@<cross-domain-policy>	<allow-access-from domain="*" to-ports="*"/>	</cross-domain-policy>@ (lazy222.txt: 4824)
+.live.tv.sohu.com/crossdomain\.xml\$s@<cross-domain-policy>.*</cross-domain-policy>@<cross-domain-policy>	<allow-access-from domain=".*" to-ports=".*"/>	</cross-domain-policy>@
+# |http://my.tv.sohu.com/$s@var plid = pid = playlistId = '*';//plid@var plid = pid = playlistId = '7038006';//plid@ (lazy222.txt: 4794)
+my.tv.sohu.com/\$s@var plid = pid = playlistId = '.*';//plid@var plid = pid = playlistId = '7038006';//plid@
+# |http://tv.sohu.com/commonfrag/vrs_flashPlayer.inc$s@/Main.swf";@/Main.swf?plid=7038006&";@ (lazy222.txt: 4793)
+tv.sohu.com/commonfrag/vrs_flashPlayer\.inc\$s@/Main\.swf";@/Main\.swf\?plid=7038006&";@
+# |http://tv.sohu.com/upload/swf/showVrsPlayer.js$s@vrs_player,@"http://update.adbyby.com/swf/sohu_livezb.swf",@ (lazy222.txt: 4772)
+tv.sohu.com/upload/swf/showVrsPlayer\.js\$s@vrs_player,@"http://update\.adbyby\.com/swf/sohu_livezb\.swf",@
+# |http://js.tv.itc.cn/site/wemedia/play/inc.js$s@a.vrs_player,@"http://update.adbyby.com/swf/sohu_livezb.swf",@ (lazy222.txt: 4771)
+js.tv.itc.cn/site/wemedia/play/inc\.js\$s@a\.vrs_player,@"http://update\.adbyby\.com/swf/sohu_livezb\.swf",@
+# |http://js.tv.itc.cn/site/play/v3/inc.js$s@vrs_player,@"http://update.adbyby.com/swf/sohu_livezb.swf",@ (lazy222.txt: 4770)
+js.tv.itc.cn/site/play/v3/inc\.js\$s@vrs_player,@"http://update\.adbyby\.com/swf/sohu_livezb\.swf",@
+# |http://tv.sohu.com/201*.shtml$s@vrs_player,@"http://update.adbyby.com/swf/sohu_livezb.swf",@ (lazy222.txt: 4769)
+tv.sohu.com/201.*\.shtml\$s@vrs_player,@"http://update\.adbyby\.com/swf/sohu_livezb\.swf",@
+# |http://live.tv.sohu.com/$s@vrs_player = ?http://*/Main.swf?;@vrs_player = 'http://update.adbyby.com/swf/sohu_live.swf';@ (lazy222.txt: 4768)
+live.tv.sohu.com/\$s@vrs_player = \?http://.*/Main\.swf\?;@vrs_player = 'http://update\.adbyby\.com/swf/sohu_live\.swf';@
+# ||my.tv.sohu.com/crossdomain.xml$s@<allow-access-from domain="?.sohu.com" /> ??  <allow-http-request-headers-from domain="?.sohu.com" headers="?.sohu.com" />@<allow-access-from domain="*" /> 	  <allow-http-request-headers-from domain="*" headers="*" />@ (lazy222.txt: 4767)
+.my.tv.sohu.com/crossdomain\.xml\$s@<allow-access-from domain="\?\.sohu\.com" /> \?\?  <allow-http-request-headers-from domain="\?\.sohu\.com" headers="\?\.sohu\.com" />@<allow-access-from domain=".*" /> 	  <allow-http-request-headers-from domain=".*" headers=".*" />@
+# ||vrs.sohu.com/*.action$s@"fee":0,@"fee":1,@ (lazy222.txt: 4765)
+.vrs.sohu.com/.*\.action\$s@"fee":0,@"fee":1,@
+# ||sohu.com/adgtr/ (lazy222.txt: 4692)
+.sohu.com/adgtr/
+# ||sohu.com.cn/ppp/bms/bms.popup. (lazy222.txt: 4691)
+.sohu.com.cn/ppp/bms/bms\.popup\.
+# ||pinglun.sohu.com/sogouad.html (lazy222.txt: 4679)
+.pinglun.sohu.com/sogouad\.html
+# ||images.sohu.com/cs/ (lazy222.txt: 4668)
+.images.sohu.com/cs/
+# ||aty.sohu.com/m? (lazy222.txt: 4658)
+.aty.sohu.com/m\?
+# |http://m.aty.sohu.com/ (lazy222.txt: 4616)
+m.aty.sohu.com
+# ||tv.sohu.com/upload/static/global/hdpv.js (lazy222.txt: 3017)
+.tv.sohu.com/upload/static/global/hdpv\.js
+# ||tv.sohu.com/upload/advert/sohuhd.ad.js (lazy222.txt: 3016)
+.tv.sohu.com/upload/advert/sohuhd\.ad\.js
+# ||tv.sohu.com/upload/Trace/$script (lazy222.txt: 3015)
+.tv.sohu.com/upload/Trace/
+# ||images.sohu.com/ytv/*.jpg|$image (lazy222.txt: 2662)
+.images.sohu.com/ytv/.*\.jpg$
+# ||images.sohu.com/bill/ (lazy222.txt: 2661)
+.images.sohu.com/bill/
+# |http://p.aty.sohu.com/p?cat= (lazy222.txt: 1417)
+p.aty.sohu.com/p\?cat=
+# |http://newflv.sohu.ccgslb.net/113/*&prod=rtb (lazy222.txt: 1411)
+newflv.sohu.ccgslb.net/113/.*&prod=rtb
+# |http://mfiles.sohu.com/tv/csad/ (lazy222.txt: 1395)
+mfiles.sohu.com/tv/csad/
+# |http://images.sohu.com/ytv/*.swf (lazy222.txt: 1248)
+images.sohu.com/ytv/.*\.swf
+# |http://images.sohu.com/ytv/*.mp4 (lazy222.txt: 1247)
+images.sohu.com/ytv/.*\.mp4
+# |http://count.vrs.sohu.com/crossdomain.xml (lazy222.txt: 1111)
+count.vrs.sohu.com/crossdomain\.xml
+# |http://api.my.tv.sohu.com/wm/getads.do? (lazy222.txt: 1024)
+api.my.tv.sohu.com/wm/getads\.do\?
+# ||info.lm.tv.sohu.com^$domain=gezila.com (lazy222.txt: 4670)
+.info.lm.tv.sohu.com
+# ||hot.vrs.sohu.com/vrs_flash.action?vid=$f@s@&plid=\d+&uid=@&plid=7038006&uid=@ (lazy222.txt: 5091)
+.hot.vrs.sohu.com/vrs_flash\.action\?vid=\$f@s@&plid=\\d\+&uid=@&plid=7038006&uid=@
+# |http://www.zhiboba.cc/app/play.aspx?xlid=$s@src="http://tv.sohu.com/upload/swf/20120803/Main.swf"@src="http://update.adbyby.com/swf/sohu_livezb.swf"@ (lazy222.txt: 5080)
+www.zhiboba.cc/app/play\.aspx\?xlid=\$s@src="http://tv\.sohu\.com/upload/swf/20120803/Main\.swf"@src="http://update\.adbyby\.com/swf/sohu_livezb\.swf"@
+# |http://tv.sohu.com/upload/swf/201*/Main.swf$f@s@/Main.swf\?(?!plid)@/Main.swf?plid=7038006&@ (lazy222.txt: 5038)
+tv.sohu.com/upload/swf/201.*/Main\.swf\$f@s@/Main\.swf\\\?\(\?!plid\)@/Main\.swf\?plid=7038006&@
+# |http://tv.sohu.com/upload/swf/*/PlayerShell.swf$f@s@http://tv.sohu.com/upload/swf/.*?/PlayerShell.swf@http://update.adbyby.com/swf/sohu_livezb.swf@ (lazy222.txt: 5037)
+tv.sohu.com/upload/swf/.*/PlayerShell\.swf\$f@s@http://tv\.sohu\.com/upload/swf/\..*\?/PlayerShell\.swf@http://update\.adbyby\.com/swf/sohu_livezb\.swf@
+# |http://hot.vrs.sohu.com/vrs_flash.action$s@"tvfee":0,@"tvfee":1,@ (lazy222.txt: 5009)
+hot.vrs.sohu.com/vrs_flash\.action\$s@"tvfee":0,@"tvfee":1,@
+# |http://www.aikuhu.com/Include/javascript/Player.js$s@"http://tv.sohu.com/upload/swf/*/Main.swf&@"http://update.adbyby.com/swf/sohu_livezb.swf&@ (lazy222.txt: 4937)
+www.aikuhu.com/Include/javascript/Player\.js\$s@"http://tv\.sohu\.com/upload/swf/.*/Main\.swf&@"http://update\.adbyby\.com/swf/sohu_livezb\.swf&@
+# |http://www.imanke.com/static/player/sohu.html$s@var url = 'http://tv.sohu.com/upload/swf/p2p/20140627/Main.swf'@var url = 'http://update.adbyby.com/swf/sohu_livezb.swf'@ (lazy222.txt: 4934)
+www.imanke.com/static/player/sohu\.html\$s@var url = 'http://tv\.sohu\.com/upload/swf/p2p/20140627/Main\.swf'@var url = 'http://update\.adbyby\.com/swf/sohu_livezb\.swf'@
+# |http://tv.sohu.com/upload/static/plugin/g.js$s@cookie("fee_status",null,@cookie("fee_status",1,@ (lazy222.txt: 4929)
+tv.sohu.com/upload/static/plugin/g\.js\$s@cookie\("fee_status",null,@cookie\("fee_status",1,@
+# |http://wpan.cc/$s@<script src="http://163.sohu.sina.360sogou-baidu-soso.com:2345/page/?s=*"></script>@@ (lazy222.txt: 4925)
+wpan.cc/\$s@<script src="http://163\.sohu\.sina\.360sogou-baidu-soso\.com:2345/page/\?s=.*"></script>@@
+# |http://www.bilibili.com/video/$s@src="http://static.hdslb.com/sohu.swf"@src="http://static.hdslb.com/sohu.swf?plid=7038006&"@ (lazy222.txt: 4920)
+www.bilibili.com/video/\$s@src="http://static\.hdslb\.com/sohu\.swf"@src="http://static\.hdslb\.com/sohu\.swf\?plid=7038006&"@
+# ||aty.sohu.com/v?c$s@{"status":1,"data":{"oad":"@{"status":0,"data":{"":"@ (lazy222.txt: 4917)
+.aty.sohu.com/v\?c\$s@\{"status":1,"data":\{"oad":"@\{"status":0,"data":\{"":"@
+# |http://f.aty.sohu.com/f?c$s@{"status":1,"data":{"oad":"@{"status":0,"data":{"":"@ (lazy222.txt: 4916)
+f.aty.sohu.com/f\?c\$s@\{"status":1,"data":\{"oad":"@\{"status":0,"data":\{"":"@
+# |http://www.lepan.cc/$s@<script src="http://sina.qq.sohu.baidu-sogou-google.com:1868/page/?s=*"></script>@@ (lazy222.txt: 4908)
+www.lepan.cc/\$s@<script src="http://sina\.qq\.sohu\.baidu-sogou-google\.com:1868/page/\?s=.*"></script>@@
+# |http://www.lepan.cc/$s@<script src="http://163.sohu.sina.360sogou-baidu-soso.com:2345/page/?s=*"></script>@@ (lazy222.txt: 4907)
+www.lepan.cc/\$s@<script src="http://163\.sohu\.sina\.360sogou-baidu-soso\.com:2345/page/\?s=.*"></script>@@
+# |http://www.fmdisk.com/$s@<script src="http://sina.qq.sohu.baidu-sogou-google.com:1868/page/?s=*"></script>@@ (lazy222.txt: 4904)
+www.fmdisk.com/\$s@<script src="http://sina\.qq\.sohu\.baidu-sogou-google\.com:1868/page/\?s=.*"></script>@@
+# |http://www.fmdisk.com/$s@<script src="http://163.sohu.sina.360sogou-baidu-soso.com:2345/page/?s=*"></script>@@ (lazy222.txt: 4902)
+www.fmdisk.com/\$s@<script src="http://163\.sohu\.sina\.360sogou-baidu-soso\.com:2345/page/\?s=.*"></script>@@
+# |http://17173.tv.sohu.com/v*.html$s@<div style="display:none;" utag="live-recommend">*</div>@@ (lazy222.txt: 4888)
+17173.tv.sohu.com/v.*\.html\$s@<div style="display:none;" utag="live-recommend">.*</div>@@
+# |http://17173.tv.sohu.com/v*.html$s@<script type="text/javascript" ads-src="http://17173im.allyes.com/main/*</script>@@ (lazy222.txt: 4887)
+17173.tv.sohu.com/v.*\.html\$s@<script type="text/javascript" ads-src="http://17173im\.allyes\.com/main/.*</script>@@
+# |http://mini.sohu.com/$s@var ad=@@ (lazy222.txt: 4875)
+mini.sohu.com/\$s@var ad=@@
+# ||live.tv.sohu.com/crossdomain.xml$s@<cross-domain-policy>*</cross-domain-policy>@<cross-domain-policy>	<allow-access-from domain="*" to-ports="*"/>	</cross-domain-policy>@ (lazy222.txt: 4824)
+.live.tv.sohu.com/crossdomain\.xml\$s@<cross-domain-policy>.*</cross-domain-policy>@<cross-domain-policy>	<allow-access-from domain=".*" to-ports=".*"/>	</cross-domain-policy>@
+# |http://my.tv.sohu.com/$s@var plid = pid = playlistId = '*';//plid@var plid = pid = playlistId = '7038006';//plid@ (lazy222.txt: 4794)
+my.tv.sohu.com/\$s@var plid = pid = playlistId = '.*';//plid@var plid = pid = playlistId = '7038006';//plid@
+# |http://tv.sohu.com/commonfrag/vrs_flashPlayer.inc$s@/Main.swf";@/Main.swf?plid=7038006&";@ (lazy222.txt: 4793)
+tv.sohu.com/commonfrag/vrs_flashPlayer\.inc\$s@/Main\.swf";@/Main\.swf\?plid=7038006&";@
+# |http://tv.sohu.com/upload/swf/showVrsPlayer.js$s@vrs_player,@"http://update.adbyby.com/swf/sohu_livezb.swf",@ (lazy222.txt: 4772)
+tv.sohu.com/upload/swf/showVrsPlayer\.js\$s@vrs_player,@"http://update\.adbyby\.com/swf/sohu_livezb\.swf",@
+# |http://js.tv.itc.cn/site/wemedia/play/inc.js$s@a.vrs_player,@"http://update.adbyby.com/swf/sohu_livezb.swf",@ (lazy222.txt: 4771)
+js.tv.itc.cn/site/wemedia/play/inc\.js\$s@a\.vrs_player,@"http://update\.adbyby\.com/swf/sohu_livezb\.swf",@
+# |http://js.tv.itc.cn/site/play/v3/inc.js$s@vrs_player,@"http://update.adbyby.com/swf/sohu_livezb.swf",@ (lazy222.txt: 4770)
+js.tv.itc.cn/site/play/v3/inc\.js\$s@vrs_player,@"http://update\.adbyby\.com/swf/sohu_livezb\.swf",@
+# |http://tv.sohu.com/201*.shtml$s@vrs_player,@"http://update.adbyby.com/swf/sohu_livezb.swf",@ (lazy222.txt: 4769)
+tv.sohu.com/201.*\.shtml\$s@vrs_player,@"http://update\.adbyby\.com/swf/sohu_livezb\.swf",@
+# |http://live.tv.sohu.com/$s@vrs_player = ?http://*/Main.swf?;@vrs_player = 'http://update.adbyby.com/swf/sohu_live.swf';@ (lazy222.txt: 4768)
+live.tv.sohu.com/\$s@vrs_player = \?http://.*/Main\.swf\?;@vrs_player = 'http://update\.adbyby\.com/swf/sohu_live\.swf';@
+# ||my.tv.sohu.com/crossdomain.xml$s@<allow-access-from domain="?.sohu.com" /> ??  <allow-http-request-headers-from domain="?.sohu.com" headers="?.sohu.com" />@<allow-access-from domain="*" /> 	  <allow-http-request-headers-from domain="*" headers="*" />@ (lazy222.txt: 4767)
+.my.tv.sohu.com/crossdomain\.xml\$s@<allow-access-from domain="\?\.sohu\.com" /> \?\?  <allow-http-request-headers-from domain="\?\.sohu\.com" headers="\?\.sohu\.com" />@<allow-access-from domain=".*" /> 	  <allow-http-request-headers-from domain=".*" headers=".*" />@
+# ||vrs.sohu.com/*.action$s@"fee":0,@"fee":1,@ (lazy222.txt: 4765)
+.vrs.sohu.com/.*\.action\$s@"fee":0,@"fee":1,@
+# ||sohu.com/adgtr/ (lazy222.txt: 4692)
+.sohu.com/adgtr/
+# ||sohu.com.cn/ppp/bms/bms.popup. (lazy222.txt: 4691)
+.sohu.com.cn/ppp/bms/bms\.popup\.
+# ||pinglun.sohu.com/sogouad.html (lazy222.txt: 4679)
+.pinglun.sohu.com/sogouad\.html
+# ||images.sohu.com/cs/ (lazy222.txt: 4668)
+.images.sohu.com/cs/
+# ||aty.sohu.com/m? (lazy222.txt: 4658)
+.aty.sohu.com/m\?
+# |http://m.aty.sohu.com/ (lazy222.txt: 4616)
+m.aty.sohu.com
+# ||tv.sohu.com/upload/static/global/hdpv.js (lazy222.txt: 3017)
+.tv.sohu.com/upload/static/global/hdpv\.js
+# ||tv.sohu.com/upload/advert/sohuhd.ad.js (lazy222.txt: 3016)
+.tv.sohu.com/upload/advert/sohuhd\.ad\.js
+# ||tv.sohu.com/upload/Trace/$script (lazy222.txt: 3015)
+.tv.sohu.com/upload/Trace/
+# ||images.sohu.com/ytv/*.jpg|$image (lazy222.txt: 2662)
+.images.sohu.com/ytv/.*\.jpg$
+# ||images.sohu.com/bill/ (lazy222.txt: 2661)
+.images.sohu.com/bill/
+# |http://p.aty.sohu.com/p?cat= (lazy222.txt: 1417)
+p.aty.sohu.com/p\?cat=
+# |http://newflv.sohu.ccgslb.net/113/*&prod=rtb (lazy222.txt: 1411)
+newflv.sohu.ccgslb.net/113/.*&prod=rtb
+# |http://mfiles.sohu.com/tv/csad/ (lazy222.txt: 1395)
+mfiles.sohu.com/tv/csad/
+# |http://images.sohu.com/ytv/*.swf (lazy222.txt: 1248)
+images.sohu.com/ytv/.*\.swf
+# |http://images.sohu.com/ytv/*.mp4 (lazy222.txt: 1247)
+images.sohu.com/ytv/.*\.mp4
+# |http://count.vrs.sohu.com/crossdomain.xml (lazy222.txt: 1111)
+count.vrs.sohu.com/crossdomain\.xml
+# |http://api.my.tv.sohu.com/wm/getads.do? (lazy222.txt: 1024)
+api.my.tv.sohu.com/wm/getads\.do\?
+# ||info.lm.tv.sohu.com^$domain=gezila.com (lazy222.txt: 4670)
+.info.lm.tv.sohu.com
+# ||hot.vrs.sohu.com/vrs_flash.action?vid=$f@s@&plid=\d+&uid=@&plid=7038006&uid=@ (lazy222.txt: 5091)
+.hot.vrs.sohu.com/vrs_flash\.action\?vid=\$f@s@&plid=\\d\+&uid=@&plid=7038006&uid=@
+# |http://www.zhiboba.cc/app/play.aspx?xlid=$s@src="http://tv.sohu.com/upload/swf/20120803/Main.swf"@src="http://update.adbyby.com/swf/sohu_livezb.swf"@ (lazy222.txt: 5080)
+www.zhiboba.cc/app/play\.aspx\?xlid=\$s@src="http://tv\.sohu\.com/upload/swf/20120803/Main\.swf"@src="http://update\.adbyby\.com/swf/sohu_livezb\.swf"@
+# |http://tv.sohu.com/upload/swf/201*/Main.swf$f@s@/Main.swf\?(?!plid)@/Main.swf?plid=7038006&@ (lazy222.txt: 5038)
+tv.sohu.com/upload/swf/201.*/Main\.swf\$f@s@/Main\.swf\\\?\(\?!plid\)@/Main\.swf\?plid=7038006&@
+# |http://tv.sohu.com/upload/swf/*/PlayerShell.swf$f@s@http://tv.sohu.com/upload/swf/.*?/PlayerShell.swf@http://update.adbyby.com/swf/sohu_livezb.swf@ (lazy222.txt: 5037)
+tv.sohu.com/upload/swf/.*/PlayerShell\.swf\$f@s@http://tv\.sohu\.com/upload/swf/\..*\?/PlayerShell\.swf@http://update\.adbyby\.com/swf/sohu_livezb\.swf@
+# |http://hot.vrs.sohu.com/vrs_flash.action$s@"tvfee":0,@"tvfee":1,@ (lazy222.txt: 5009)
+hot.vrs.sohu.com/vrs_flash\.action\$s@"tvfee":0,@"tvfee":1,@
+# |http://www.aikuhu.com/Include/javascript/Player.js$s@"http://tv.sohu.com/upload/swf/*/Main.swf&@"http://update.adbyby.com/swf/sohu_livezb.swf&@ (lazy222.txt: 4937)
+www.aikuhu.com/Include/javascript/Player\.js\$s@"http://tv\.sohu\.com/upload/swf/.*/Main\.swf&@"http://update\.adbyby\.com/swf/sohu_livezb\.swf&@
+# |http://www.imanke.com/static/player/sohu.html$s@var url = 'http://tv.sohu.com/upload/swf/p2p/20140627/Main.swf'@var url = 'http://update.adbyby.com/swf/sohu_livezb.swf'@ (lazy222.txt: 4934)
+www.imanke.com/static/player/sohu\.html\$s@var url = 'http://tv\.sohu\.com/upload/swf/p2p/20140627/Main\.swf'@var url = 'http://update\.adbyby\.com/swf/sohu_livezb\.swf'@
+# |http://tv.sohu.com/upload/static/plugin/g.js$s@cookie("fee_status",null,@cookie("fee_status",1,@ (lazy222.txt: 4929)
+tv.sohu.com/upload/static/plugin/g\.js\$s@cookie\("fee_status",null,@cookie\("fee_status",1,@
+# |http://wpan.cc/$s@<script src="http://163.sohu.sina.360sogou-baidu-soso.com:2345/page/?s=*"></script>@@ (lazy222.txt: 4925)
+wpan.cc/\$s@<script src="http://163\.sohu\.sina\.360sogou-baidu-soso\.com:2345/page/\?s=.*"></script>@@
+# |http://www.bilibili.com/video/$s@src="http://static.hdslb.com/sohu.swf"@src="http://static.hdslb.com/sohu.swf?plid=7038006&"@ (lazy222.txt: 4920)
+www.bilibili.com/video/\$s@src="http://static\.hdslb\.com/sohu\.swf"@src="http://static\.hdslb\.com/sohu\.swf\?plid=7038006&"@
+# ||aty.sohu.com/v?c$s@{"status":1,"data":{"oad":"@{"status":0,"data":{"":"@ (lazy222.txt: 4917)
+.aty.sohu.com/v\?c\$s@\{"status":1,"data":\{"oad":"@\{"status":0,"data":\{"":"@
+# |http://f.aty.sohu.com/f?c$s@{"status":1,"data":{"oad":"@{"status":0,"data":{"":"@ (lazy222.txt: 4916)
+f.aty.sohu.com/f\?c\$s@\{"status":1,"data":\{"oad":"@\{"status":0,"data":\{"":"@
+# |http://www.lepan.cc/$s@<script src="http://sina.qq.sohu.baidu-sogou-google.com:1868/page/?s=*"></script>@@ (lazy222.txt: 4908)
+www.lepan.cc/\$s@<script src="http://sina\.qq\.sohu\.baidu-sogou-google\.com:1868/page/\?s=.*"></script>@@
+# |http://www.lepan.cc/$s@<script src="http://163.sohu.sina.360sogou-baidu-soso.com:2345/page/?s=*"></script>@@ (lazy222.txt: 4907)
+www.lepan.cc/\$s@<script src="http://163\.sohu\.sina\.360sogou-baidu-soso\.com:2345/page/\?s=.*"></script>@@
+# |http://www.fmdisk.com/$s@<script src="http://sina.qq.sohu.baidu-sogou-google.com:1868/page/?s=*"></script>@@ (lazy222.txt: 4904)
+www.fmdisk.com/\$s@<script src="http://sina\.qq\.sohu\.baidu-sogou-google\.com:1868/page/\?s=.*"></script>@@
+# |http://www.fmdisk.com/$s@<script src="http://163.sohu.sina.360sogou-baidu-soso.com:2345/page/?s=*"></script>@@ (lazy222.txt: 4902)
+www.fmdisk.com/\$s@<script src="http://163\.sohu\.sina\.360sogou-baidu-soso\.com:2345/page/\?s=.*"></script>@@
+# |http://17173.tv.sohu.com/v*.html$s@<div style="display:none;" utag="live-recommend">*</div>@@ (lazy222.txt: 4888)
+17173.tv.sohu.com/v.*\.html\$s@<div style="display:none;" utag="live-recommend">.*</div>@@
+# |http://17173.tv.sohu.com/v*.html$s@<script type="text/javascript" ads-src="http://17173im.allyes.com/main/*</script>@@ (lazy222.txt: 4887)
+17173.tv.sohu.com/v.*\.html\$s@<script type="text/javascript" ads-src="http://17173im\.allyes\.com/main/.*</script>@@
+# |http://mini.sohu.com/$s@var ad=@@ (lazy222.txt: 4875)
+mini.sohu.com/\$s@var ad=@@
+# ||live.tv.sohu.com/crossdomain.xml$s@<cross-domain-policy>*</cross-domain-policy>@<cross-domain-policy>	<allow-access-from domain="*" to-ports="*"/>	</cross-domain-policy>@ (lazy222.txt: 4824)
+.live.tv.sohu.com/crossdomain\.xml\$s@<cross-domain-policy>.*</cross-domain-policy>@<cross-domain-policy>	<allow-access-from domain=".*" to-ports=".*"/>	</cross-domain-policy>@
+# |http://my.tv.sohu.com/$s@var plid = pid = playlistId = '*';//plid@var plid = pid = playlistId = '7038006';//plid@ (lazy222.txt: 4794)
+my.tv.sohu.com/\$s@var plid = pid = playlistId = '.*';//plid@var plid = pid = playlistId = '7038006';//plid@
+# |http://tv.sohu.com/commonfrag/vrs_flashPlayer.inc$s@/Main.swf";@/Main.swf?plid=7038006&";@ (lazy222.txt: 4793)
+tv.sohu.com/commonfrag/vrs_flashPlayer\.inc\$s@/Main\.swf";@/Main\.swf\?plid=7038006&";@
+# |http://tv.sohu.com/upload/swf/showVrsPlayer.js$s@vrs_player,@"http://update.adbyby.com/swf/sohu_livezb.swf",@ (lazy222.txt: 4772)
+tv.sohu.com/upload/swf/showVrsPlayer\.js\$s@vrs_player,@"http://update\.adbyby\.com/swf/sohu_livezb\.swf",@
+# |http://js.tv.itc.cn/site/wemedia/play/inc.js$s@a.vrs_player,@"http://update.adbyby.com/swf/sohu_livezb.swf",@ (lazy222.txt: 4771)
+js.tv.itc.cn/site/wemedia/play/inc\.js\$s@a\.vrs_player,@"http://update\.adbyby\.com/swf/sohu_livezb\.swf",@
+# |http://js.tv.itc.cn/site/play/v3/inc.js$s@vrs_player,@"http://update.adbyby.com/swf/sohu_livezb.swf",@ (lazy222.txt: 4770)
+js.tv.itc.cn/site/play/v3/inc\.js\$s@vrs_player,@"http://update\.adbyby\.com/swf/sohu_livezb\.swf",@
+# |http://tv.sohu.com/201*.shtml$s@vrs_player,@"http://update.adbyby.com/swf/sohu_livezb.swf",@ (lazy222.txt: 4769)
+tv.sohu.com/201.*\.shtml\$s@vrs_player,@"http://update\.adbyby\.com/swf/sohu_livezb\.swf",@
+# |http://live.tv.sohu.com/$s@vrs_player = ?http://*/Main.swf?;@vrs_player = 'http://update.adbyby.com/swf/sohu_live.swf';@ (lazy222.txt: 4768)
+live.tv.sohu.com/\$s@vrs_player = \?http://.*/Main\.swf\?;@vrs_player = 'http://update\.adbyby\.com/swf/sohu_live\.swf';@
+# ||my.tv.sohu.com/crossdomain.xml$s@<allow-access-from domain="?.sohu.com" /> ??  <allow-http-request-headers-from domain="?.sohu.com" headers="?.sohu.com" />@<allow-access-from domain="*" /> 	  <allow-http-request-headers-from domain="*" headers="*" />@ (lazy222.txt: 4767)
+.my.tv.sohu.com/crossdomain\.xml\$s@<allow-access-from domain="\?\.sohu\.com" /> \?\?  <allow-http-request-headers-from domain="\?\.sohu\.com" headers="\?\.sohu\.com" />@<allow-access-from domain=".*" /> 	  <allow-http-request-headers-from domain=".*" headers=".*" />@
+# ||vrs.sohu.com/*.action$s@"fee":0,@"fee":1,@ (lazy222.txt: 4765)
+.vrs.sohu.com/.*\.action\$s@"fee":0,@"fee":1,@
+# ||sohu.com/adgtr/ (lazy222.txt: 4692)
+.sohu.com/adgtr/
+# ||sohu.com.cn/ppp/bms/bms.popup. (lazy222.txt: 4691)
+.sohu.com.cn/ppp/bms/bms\.popup\.
+# ||pinglun.sohu.com/sogouad.html (lazy222.txt: 4679)
+.pinglun.sohu.com/sogouad\.html
+# ||images.sohu.com/cs/ (lazy222.txt: 4668)
+.images.sohu.com/cs/
+# ||aty.sohu.com/m? (lazy222.txt: 4658)
+.aty.sohu.com/m\?
+# |http://m.aty.sohu.com/ (lazy222.txt: 4616)
+m.aty.sohu.com
+# ||tv.sohu.com/upload/static/global/hdpv.js (lazy222.txt: 3017)
+.tv.sohu.com/upload/static/global/hdpv\.js
+# ||tv.sohu.com/upload/advert/sohuhd.ad.js (lazy222.txt: 3016)
+.tv.sohu.com/upload/advert/sohuhd\.ad\.js
+# ||images.sohu.com/bill/ (lazy222.txt: 2661)
+.images.sohu.com/bill/
+# |http://p.aty.sohu.com/p?cat= (lazy222.txt: 1417)
+p.aty.sohu.com/p\?cat=
+# |http://newflv.sohu.ccgslb.net/113/*&prod=rtb (lazy222.txt: 1411)
+newflv.sohu.ccgslb.net/113/.*&prod=rtb
+# |http://mfiles.sohu.com/tv/csad/ (lazy222.txt: 1395)
+mfiles.sohu.com/tv/csad/
+# |http://images.sohu.com/ytv/*.swf (lazy222.txt: 1248)
+images.sohu.com/ytv/.*\.swf
+# |http://images.sohu.com/ytv/*.mp4 (lazy222.txt: 1247)
+images.sohu.com/ytv/.*\.mp4
+# |http://count.vrs.sohu.com/crossdomain.xml (lazy222.txt: 1111)
+count.vrs.sohu.com/crossdomain\.xml
+# |http://api.my.tv.sohu.com/wm/getads.do? (lazy222.txt: 1024)
+api.my.tv.sohu.com/wm/getads\.do\?
+# ||images.sohu.com/ytv/*.jpg|$image (lazy222.txt: 2662)
+.images.sohu.com/ytv/.*\.jpg$
+# ||tv.sohu.com/upload/Trace/$script (lazy222.txt: 3015)
+.tv.sohu.com/upload/Trace/
+# ||info.lm.tv.sohu.com^$domain=gezila.com (lazy222.txt: 4670)
+.info.lm.tv.sohu.com
+# @@|http://v.aty.sohu.com/ct?vid= (lazy222.txt: 193)
+v.aty.sohu.com/ct\?vid=
+# @@|http://images.sohu.com/bill/default/wei/wei_v1.4.js$script (lazy222.txt: 160)
+images.sohu.com/bill/default/wei/wei_v1\.4\.js
+# @@|http://v.aty.sohu.com/ct?vid= (lazy222.txt: 193)
+v.aty.sohu.com/ct\?vid=
+# @@|http://images.sohu.com/bill/default/wei/wei_v1.4.js$script (lazy222.txt: 160)
+images.sohu.com/bill/default/wei/wei_v1\.4\.js
+# @@|http://v.aty.sohu.com/ct?vid= (lazy222.txt: 193)
+v.aty.sohu.com/ct\?vid=
+# @@|http://images.sohu.com/bill/default/wei/wei_v1.4.js$script (lazy222.txt: 160)
+images.sohu.com/bill/default/wei/wei_v1\.4\.js
+
+# ||sohu.com/interaction/get/getListByVidForVrs.do? (easylistchina+easylist.txt: 4651)
+.sohu.com/interaction/get/getListByVidForVrs\.do\?
+# ||sohu.com/adgtr/ (easylistchina+easylist.txt: 4650)
+.sohu.com/adgtr/
+# ||sohu.com.cn/ppp/bms/bms.popup. (easylistchina+easylist.txt: 4649)
+.sohu.com.cn/ppp/bms/bms\.popup\.
+# ||p.aty.sohu.com/p?cat= (easylistchina+easylist.txt: 4118)
+.p.aty.sohu.com/p\?cat=
+# ||m.aty.sohu.com^ (easylistchina+easylist.txt: 3885)
+.m.aty.sohu.com
+# ||images.sohu.com/ytv/*.swf (easylistchina+easylist.txt: 3428)
+.images.sohu.com/ytv/.*\.swf
+# ||images.sohu.com/ytv/*.jpg (easylistchina+easylist.txt: 3427)
+.images.sohu.com/ytv/.*\.jpg
+# ||images.sohu.com/cs/ (easylistchina+easylist.txt: 3426)
+.images.sohu.com/cs/
+# ||images.sohu.com/bill/ (easylistchina+easylist.txt: 3425)
+.images.sohu.com/bill/
+# ||e.changyan.sohu.com/dataService/getData? (easylistchina+easylist.txt: 2784)
+.e.changyan.sohu.com/dataService/getData\?
+# ||comment.bjcnc.img.sohucs.com/*_gif (easylistchina+easylist.txt: 2541)
+.comment.bjcnc.img.sohucs.com/.*_gif
+# ||726w.com/sohu.html (easylistchina+easylist.txt: 1835)
+.726w.com/sohu\.html
+# ||sohu.com/i/?pvid=$popup (easylistchina+easylist.txt: 1076)
+.sohu.com/i/\?pvid=
+# .com/x/$domain=17173.com|17173.tv.sohu.com (easylistchina+easylist.txt: 1092)
+# ||info.lm.tv.sohu.com^$domain=gezila.com (easylistchina+easylist.txt: 3490)
+.info.lm.tv.sohu.com
+# ||sohu.com/interaction/get/getListByVidForVrs.do? (easylistchina+easylist.txt: 4651)
+.sohu.com/interaction/get/getListByVidForVrs\.do\?
+# ||sohu.com/adgtr/ (easylistchina+easylist.txt: 4650)
+.sohu.com/adgtr/
+# ||sohu.com.cn/ppp/bms/bms.popup. (easylistchina+easylist.txt: 4649)
+.sohu.com.cn/ppp/bms/bms\.popup\.
+# ||p.aty.sohu.com/p?cat= (easylistchina+easylist.txt: 4118)
+.p.aty.sohu.com/p\?cat=
+# ||m.aty.sohu.com^ (easylistchina+easylist.txt: 3885)
+.m.aty.sohu.com
+# ||images.sohu.com/ytv/*.swf (easylistchina+easylist.txt: 3428)
+.images.sohu.com/ytv/.*\.swf
+# ||images.sohu.com/ytv/*.jpg (easylistchina+easylist.txt: 3427)
+.images.sohu.com/ytv/.*\.jpg
+# ||images.sohu.com/cs/ (easylistchina+easylist.txt: 3426)
+.images.sohu.com/cs/
+# ||images.sohu.com/bill/ (easylistchina+easylist.txt: 3425)
+.images.sohu.com/bill/
+# ||e.changyan.sohu.com/dataService/getData? (easylistchina+easylist.txt: 2784)
+.e.changyan.sohu.com/dataService/getData\?
+# ||comment.bjcnc.img.sohucs.com/*_gif (easylistchina+easylist.txt: 2541)
+.comment.bjcnc.img.sohucs.com/.*_gif
+# ||726w.com/sohu.html (easylistchina+easylist.txt: 1835)
+.726w.com/sohu\.html
+# ||sohu.com/i/?pvid=$popup (easylistchina+easylist.txt: 1076)
+.sohu.com/i/\?pvid=
+# .com/x/$domain=17173.com|17173.tv.sohu.com (easylistchina+easylist.txt: 1092)
+# ||info.lm.tv.sohu.com^$domain=gezila.com (easylistchina+easylist.txt: 3490)
+.info.lm.tv.sohu.com
+# ||sohu.com/interaction/get/getListByVidForVrs.do? (easylistchina+easylist.txt: 4651)
+.sohu.com/interaction/get/getListByVidForVrs\.do\?
+# ||sohu.com/adgtr/ (easylistchina+easylist.txt: 4650)
+.sohu.com/adgtr/
+# ||sohu.com.cn/ppp/bms/bms.popup. (easylistchina+easylist.txt: 4649)
+.sohu.com.cn/ppp/bms/bms\.popup\.
+# ||p.aty.sohu.com/p?cat= (easylistchina+easylist.txt: 4118)
+.p.aty.sohu.com/p\?cat=
+# ||m.aty.sohu.com^ (easylistchina+easylist.txt: 3885)
+.m.aty.sohu.com
+# ||images.sohu.com/ytv/*.swf (easylistchina+easylist.txt: 3428)
+.images.sohu.com/ytv/.*\.swf
+# ||images.sohu.com/ytv/*.jpg (easylistchina+easylist.txt: 3427)
+.images.sohu.com/ytv/.*\.jpg
+# ||images.sohu.com/cs/ (easylistchina+easylist.txt: 3426)
+.images.sohu.com/cs/
+# ||images.sohu.com/bill/ (easylistchina+easylist.txt: 3425)
+.images.sohu.com/bill/
+# ||e.changyan.sohu.com/dataService/getData? (easylistchina+easylist.txt: 2784)
+.e.changyan.sohu.com/dataService/getData\?
+# ||comment.bjcnc.img.sohucs.com/*_gif (easylistchina+easylist.txt: 2541)
+.comment.bjcnc.img.sohucs.com/.*_gif
+# ||726w.com/sohu.html (easylistchina+easylist.txt: 1835)
+.726w.com/sohu\.html
+# ||sohu.com/i/?pvid=$popup (easylistchina+easylist.txt: 1076)
+.sohu.com/i/\?pvid=
+# .com/x/$domain=17173.com|17173.tv.sohu.com (easylistchina+easylist.txt: 1092)
+# ||info.lm.tv.sohu.com^$domain=gezila.com (easylistchina+easylist.txt: 3490)
+.info.lm.tv.sohu.com
+# ||sohu.com/i/?pvid=$popup (easylistchina+easylist.txt: 1076)
+.sohu.com/i/\?pvid=
+# @@||images.sohu.com/cs/$domain=fmdisk.com (easylistchina+easylist.txt: 10277)
+.images.sohu.com/cs/
+# @@||images.sohu.com/cs/$domain=fmdisk.com (easylistchina+easylist.txt: 10277)
+.images.sohu.com/cs/
+# @@||images.sohu.com/cs/$domain=fmdisk.com (easylistchina+easylist.txt: 10277)
+.images.sohu.com/cs/
+
+
+##############################sohu end####################################
+
+##############################letv begin####################################
+.letvimg.com/.*_phone/
+# ||letvimg.com^*/108x70$object (easylistchina.txt: 3798)
+.letvimg.com/.*/108x70
+# ||letvimg.com/img/201503/19/uc1/ (easylistchina.txt: 3797)
+.letvimg.com/img/201503/19/uc1/
+# ||letvimg.com/gugwl/*.swf (easylistchina.txt: 3796)
+.letvimg.com/gugwl/.*\.swf
+# ||letvimg.com*gugwl/$object-subrequest (easylistchina.txt: 3795)
+.letvimg.com*./.*gugwl/
+.letvimg.com*gugwl
+# ||letvcdn.com/js/*_focus_flash.js (easylistchina.txt: 3794)
+.letvcdn.com/js/.*_focus_flash\.js
+# ||letv.com/s?ark=*&cis= (easylistchina.txt: 3793)
+.letv.com/s\?ark=.*&cis=
+# ||letv.com/pzt/hyhmzq/index.shtml (easylistchina.txt: 3792)
+.letv.com/pzt/hyhmzq/index\.shtml
+# ||ark.letv.com/s?vid= (easylistchina.txt: 2102)
+.ark.letv.com/s\?vid=
+# ||ark.letv.com/s?res= (easylistchina.txt: 2101)
+.ark.letv.com/s\?res=
+# ||ark.letv.com/t?$popup (easylistchina.txt: 1076)
+.ark.letv.com/t\?
+# ||letvimg.com^*_phone/ (easylistchina.txt: 3799)
+.letvimg.com/.*_phone/
+# ||letvimg.com^*/108x70$object (easylistchina.txt: 3798)
+.letvimg.com/.*/108x70
+# ||letvimg.com/img/201503/19/uc1/ (easylistchina.txt: 3797)
+.letvimg.com/img/201503/19/uc1/
+# ||letvimg.com/gugwl/*.swf (easylistchina.txt: 3796)
+.letvimg.com/gugwl/.*\.swf
+# ||letvimg.com*gugwl/$object-subrequest (easylistchina.txt: 3795)
+.letvimg.com*./.*gugwl/
+.letvimg.com*gugwl
+# ||letvcdn.com/js/*_focus_flash.js (easylistchina.txt: 3794)
+.letvcdn.com/js/.*_focus_flash\.js
+# ||letv.com/s?ark=*&cis= (easylistchina.txt: 3793)
+.letv.com/s\?ark=.*&cis=
+# ||letv.com/pzt/hyhmzq/index.shtml (easylistchina.txt: 3792)
+.letv.com/pzt/hyhmzq/index\.shtml
+# ||ark.letv.com/s?vid= (easylistchina.txt: 2102)
+.ark.letv.com/s\?vid=
+# ||ark.letv.com/s?res= (easylistchina.txt: 2101)
+.ark.letv.com/s\?res=
+# ||ark.letv.com/t?$popup (easylistchina.txt: 1076)
+.ark.letv.com/t\?
+# ||letvimg.com^*_phone/ (easylistchina.txt: 3799)
+.letvimg.com/.*_phone/
+# ||letvimg.com/img/201503/19/uc1/ (easylistchina.txt: 3797)
+.letvimg.com/img/201503/19/uc1/
+# ||letvimg.com/gugwl/*.swf (easylistchina.txt: 3796)
+.letvimg.com/gugwl/.*\.swf
+# ||letvcdn.com/js/*_focus_flash.js (easylistchina.txt: 3794)
+.letvcdn.com/js/.*_focus_flash\.js
+# ||letv.com/s?ark=*&cis= (easylistchina.txt: 3793)
+.letv.com/s\?ark=.*&cis=
+# ||letv.com/pzt/hyhmzq/index.shtml (easylistchina.txt: 3792)
+.letv.com/pzt/hyhmzq/index\.shtml
+# ||ark.letv.com/s?vid= (easylistchina.txt: 2102)
+.ark.letv.com/s\?vid=
+# ||ark.letv.com/s?res= (easylistchina.txt: 2101)
+.ark.letv.com/s\?res=
+# ||ark.letv.com/t?$popup (easylistchina.txt: 1076)
+.ark.letv.com/t\?
+# ||letvimg.com*gugwl/$object-subrequest (easylistchina.txt: 3795)
+.letvimg.com*./.*gugwl/
+.letvimg.com*gugwl
+# ||letvimg.com^*/108x70$object (easylistchina.txt: 3798)
+.letvimg.com/.*/108x70
+# ||ark.letv.com/t?$popup (easylistchina.txt: 1076)
+.ark.letv.com/t\?
+# @@||letvcloud.com^*&showAd= (easylistchina.txt: 10289)
+.letvcloud.com/.*&showAd=
+# @@||letv.com*/tuiguang/$subdocument (easylistchina.txt: 10288)
+.letv.com*./(.*/)?tuiguang/
+# @@||letvcloud.com^*&showAd= (easylistchina.txt: 10289)
+.letvcloud.com/.*&showAd=
+# @@||letv.com*/tuiguang/$subdocument (easylistchina.txt: 10288)
+.letv.com*./(.*/)?tuiguang/
+# @@||letvcloud.com^*&showAd= (easylistchina.txt: 10289)
+.letvcloud.com/.*&showAd=
+# @@||letv.com*/tuiguang/$subdocument (easylistchina.txt: 10288)
+.letv.com*./(.*/)?tuiguang/
+
+# ||dc.letv.com^ (easyprivacy.txt: 9829)
+.dc.letv.com
+# ||js.letvcdn.com/js/*/stats/ (easyprivacy.txt: 7032)
+.js.letvcdn.com/js/.*/stats/
+# ||dc.letv.com^ (easyprivacy.txt: 9829)
+.dc.letv.com
+# ||js.letvcdn.com/js/*/stats/ (easyprivacy.txt: 7032)
+.js.letvcdn.com/js/.*/stats/
+# ||dc.letv.com^ (easyprivacy.txt: 9829)
+.dc.letv.com
+# ||js.letvcdn.com/js/*/stats/ (easyprivacy.txt: 7032)
+.js.letvcdn.com/js/.*/stats/
+
+# |http://api.letvcloud.com/gpc.php?page_url=$s@<ad>*</ad>@@ (lazy222.txt: 4758)
+api.letvcloud.com/gpc\.php\?page_url=\$s@<ad>.*</ad>@@
+# |http://ark.letv.com/s?ark=$s@<Ad id="*</Ad>@@ (lazy222.txt: 4753)
+ark.letv.com/s\?ark=\$s@<Ad id=".*</Ad>@@
+# ||www.letv.com/zt/cmsapi/playerapi/pccs_$s@<ad  >*</ad>@@ (lazy222.txt: 4750)
+.www.letv.com/zt/cmsapi/playerapi/pccs_\$s@<ad  >.*</ad>@@
+# |http://ark.letv.com/s?ark=*&res=json&v=android (lazy222.txt: 4608)
+ark.letv.com/s\?ark=.*&res=json&v=android
+# ||player.letvcdn.com*.swf| (lazy222.txt: 2853)
+.player.letvcdn.com*./.*\.swf$
+.player.letvcdn.com*.swf
+# ||n.mark.letv.com (lazy222.txt: 2796)
+.n.mark.letv.com*.
+# ||letvimg.com/gugwl/201*.jpg (lazy222.txt: 2747)
+.letvimg.com/gugwl/201.*\.jpg
+# ||dc.letv.com/ (lazy222.txt: 2510)
+.dc.letv.com
+# |http://play.baidu.com/player/static/css/skins/letv.css (lazy222.txt: 1443)
+play.baidu.com/player/static/css/skins/letv\.css
+# |http://i1.letvimg.com/gugwl/201*/loadingyt.swf (lazy222.txt: 1223)
+i1.letvimg.com/gugwl/201.*/loadingyt\.swf
+# |http://ark.letv.com/t?mid= (lazy222.txt: 1027)
+ark.letv.com/t\?mid=
+# |http://ark.letv.com/s?vid= (lazy222.txt: 1026)
+ark.letv.com/s\?vid=
+# |http://*/letv-gug/ (lazy222.txt: 784)
+/(.*/)?letv-gug/
+# |http://cbjs.$script,domain=~www.colafile.com|~61.iqiyi.com|~61.hz.letv.com|~play.v.61.com|~7958.com|~www.u148.net|~www.redocn.com|~www.narutom.com|~tiexue.net|~xdf.cn (lazy222.txt: 1082)
+# |http://*.cn/ad/$domain=~easybuy.com.cn|~kumi.cn|~kumi.hz.letv.com (lazy222.txt: 339)
+# |http://*/tuiguang/$document,domain=~letv.com (lazy222.txt: 869)
+# |http://api.letvcloud.com/gpc.php?page_url=$s@<ad>*</ad>@@ (lazy222.txt: 4758)
+api.letvcloud.com/gpc\.php\?page_url=\$s@<ad>.*</ad>@@
+# |http://ark.letv.com/s?ark=$s@<Ad id="*</Ad>@@ (lazy222.txt: 4753)
+ark.letv.com/s\?ark=\$s@<Ad id=".*</Ad>@@
+# ||www.letv.com/zt/cmsapi/playerapi/pccs_$s@<ad  >*</ad>@@ (lazy222.txt: 4750)
+.www.letv.com/zt/cmsapi/playerapi/pccs_\$s@<ad  >.*</ad>@@
+# |http://ark.letv.com/s?ark=*&res=json&v=android (lazy222.txt: 4608)
+ark.letv.com/s\?ark=.*&res=json&v=android
+# ||player.letvcdn.com*.swf| (lazy222.txt: 2853)
+.player.letvcdn.com*./.*\.swf$
+.player.letvcdn.com*.swf
+# ||n.mark.letv.com (lazy222.txt: 2796)
+.n.mark.letv.com*.
+# ||letvimg.com/gugwl/201*.jpg (lazy222.txt: 2747)
+.letvimg.com/gugwl/201.*\.jpg
+# ||dc.letv.com/ (lazy222.txt: 2510)
+.dc.letv.com
+# |http://play.baidu.com/player/static/css/skins/letv.css (lazy222.txt: 1443)
+play.baidu.com/player/static/css/skins/letv\.css
+# |http://i1.letvimg.com/gugwl/201*/loadingyt.swf (lazy222.txt: 1223)
+i1.letvimg.com/gugwl/201.*/loadingyt\.swf
+# |http://ark.letv.com/t?mid= (lazy222.txt: 1027)
+ark.letv.com/t\?mid=
+# |http://ark.letv.com/s?vid= (lazy222.txt: 1026)
+ark.letv.com/s\?vid=
+# |http://*/letv-gug/ (lazy222.txt: 784)
+/(.*/)?letv-gug/
+# |http://cbjs.$script,domain=~www.colafile.com|~61.iqiyi.com|~61.hz.letv.com|~play.v.61.com|~7958.com|~www.u148.net|~www.redocn.com|~www.narutom.com|~tiexue.net|~xdf.cn (lazy222.txt: 1082)
+# |http://*.cn/ad/$domain=~easybuy.com.cn|~kumi.cn|~kumi.hz.letv.com (lazy222.txt: 339)
+# |http://*/tuiguang/$document,domain=~letv.com (lazy222.txt: 869)
+# |http://api.letvcloud.com/gpc.php?page_url=$s@<ad>*</ad>@@ (lazy222.txt: 4758)
+api.letvcloud.com/gpc\.php\?page_url=\$s@<ad>.*</ad>@@
+# |http://ark.letv.com/s?ark=$s@<Ad id="*</Ad>@@ (lazy222.txt: 4753)
+ark.letv.com/s\?ark=\$s@<Ad id=".*</Ad>@@
+# ||www.letv.com/zt/cmsapi/playerapi/pccs_$s@<ad  >*</ad>@@ (lazy222.txt: 4750)
+.www.letv.com/zt/cmsapi/playerapi/pccs_\$s@<ad  >.*</ad>@@
+# |http://ark.letv.com/s?ark=*&res=json&v=android (lazy222.txt: 4608)
+ark.letv.com/s\?ark=.*&res=json&v=android
+# ||player.letvcdn.com*.swf| (lazy222.txt: 2853)
+.player.letvcdn.com*./.*\.swf$
+.player.letvcdn.com*.swf
+# ||n.mark.letv.com (lazy222.txt: 2796)
+.n.mark.letv.com*.
+# ||letvimg.com/gugwl/201*.jpg (lazy222.txt: 2747)
+.letvimg.com/gugwl/201.*\.jpg
+# ||dc.letv.com/ (lazy222.txt: 2510)
+.dc.letv.com
+# |http://play.baidu.com/player/static/css/skins/letv.css (lazy222.txt: 1443)
+play.baidu.com/player/static/css/skins/letv\.css
+# |http://i1.letvimg.com/gugwl/201*/loadingyt.swf (lazy222.txt: 1223)
+i1.letvimg.com/gugwl/201.*/loadingyt\.swf
+# |http://ark.letv.com/t?mid= (lazy222.txt: 1027)
+ark.letv.com/t\?mid=
+# |http://ark.letv.com/s?vid= (lazy222.txt: 1026)
+ark.letv.com/s\?vid=
+# |http://*/letv-gug/ (lazy222.txt: 784)
+/(.*/)?letv-gug/
+# |http://*/tuiguang/$document,domain=~letv.com (lazy222.txt: 869)
+# |http://cbjs.$script,domain=~www.colafile.com|~61.iqiyi.com|~61.hz.letv.com|~play.v.61.com|~7958.com|~www.u148.net|~www.redocn.com|~www.narutom.com|~tiexue.net|~xdf.cn (lazy222.txt: 1082)
+# |http://*.cn/ad/$domain=~easybuy.com.cn|~kumi.cn|~kumi.hz.letv.com (lazy222.txt: 339)
+# @@||player.letvcdn.com/*/letvPlayer.swf (lazy222.txt: 240)
+.player.letvcdn.com/.*/letvPlayer\.swf
+# @@||player.letvcdn.com*/newplayer/*.swf (lazy222.txt: 239)
+.player.letvcdn.com*./(.*/)?newplayer/.*\.swf
+# @@|http://www.letv.com/shtml/channel/tuiguang/player.html? (lazy222.txt: 211)
+www.letv.com/shtml/channel/tuiguang/player\.html\?
+# @@|http://player.letvcdn.com/p/201*.swf (lazy222.txt: 179)
+player.letvcdn.com/p/201.*\.swf
+# @@|http://player.letvcdn.com/*/plugins/Hint.swf (lazy222.txt: 178)
+player.letvcdn.com/.*/plugins/Hint\.swf
+# @@||player.letvcdn.com/*/letvPlayer.swf (lazy222.txt: 240)
+.player.letvcdn.com/.*/letvPlayer\.swf
+# @@||player.letvcdn.com*/newplayer/*.swf (lazy222.txt: 239)
+.player.letvcdn.com*./(.*/)?newplayer/.*\.swf
+# @@|http://www.letv.com/shtml/channel/tuiguang/player.html? (lazy222.txt: 211)
+www.letv.com/shtml/channel/tuiguang/player\.html\?
+# @@|http://player.letvcdn.com/p/201*.swf (lazy222.txt: 179)
+player.letvcdn.com/p/201.*\.swf
+# @@|http://player.letvcdn.com/*/plugins/Hint.swf (lazy222.txt: 178)
+player.letvcdn.com/.*/plugins/Hint\.swf
+# @@||player.letvcdn.com/*/letvPlayer.swf (lazy222.txt: 240)
+.player.letvcdn.com/.*/letvPlayer\.swf
+# @@||player.letvcdn.com*/newplayer/*.swf (lazy222.txt: 239)
+.player.letvcdn.com*./(.*/)?newplayer/.*\.swf
+# @@|http://www.letv.com/shtml/channel/tuiguang/player.html? (lazy222.txt: 211)
+www.letv.com/shtml/channel/tuiguang/player\.html\?
+# @@|http://player.letvcdn.com/p/201*.swf (lazy222.txt: 179)
+player.letvcdn.com/p/201.*\.swf
+# @@|http://player.letvcdn.com/*/plugins/Hint.swf (lazy222.txt: 178)
+player.letvcdn.com/.*/plugins/Hint\.swf
+
+# ||letvimg.com^*_phone/ (easylistchina+easylist.txt: 3808)
+.letvimg.com/.*_phone/
+# ||letvimg.com^*/108x70$object (easylistchina+easylist.txt: 3807)
+.letvimg.com/.*/108x70
+# ||letvimg.com/img/201503/19/uc1/ (easylistchina+easylist.txt: 3806)
+.letvimg.com/img/201503/19/uc1/
+# ||letvimg.com/gugwl/*.swf (easylistchina+easylist.txt: 3805)
+.letvimg.com/gugwl/.*\.swf
+# ||letvimg.com*gugwl/$object-subrequest (easylistchina+easylist.txt: 3804)
+.letvimg.com*./.*gugwl/
+.letvimg.com*gugwl
+# ||letvcdn.com/js/*_focus_flash.js (easylistchina+easylist.txt: 3803)
+.letvcdn.com/js/.*_focus_flash\.js
+# ||letv.com/s?ark=*&cis= (easylistchina+easylist.txt: 3802)
+.letv.com/s\?ark=.*&cis=
+# ||letv.com/pzt/hyhmzq/index.shtml (easylistchina+easylist.txt: 3801)
+.letv.com/pzt/hyhmzq/index\.shtml
+# ||ark.letv.com/s?vid= (easylistchina+easylist.txt: 2112)
+.ark.letv.com/s\?vid=
+# ||ark.letv.com/s?res= (easylistchina+easylist.txt: 2111)
+.ark.letv.com/s\?res=
+# ||ark.letv.com/t?$popup (easylistchina+easylist.txt: 1053)
+.ark.letv.com/t\?
+# ||letvimg.com^*_phone/ (easylistchina+easylist.txt: 3808)
+.letvimg.com/.*_phone/
+# ||letvimg.com^*/108x70$object (easylistchina+easylist.txt: 3807)
+.letvimg.com/.*/108x70
+# ||letvimg.com/img/201503/19/uc1/ (easylistchina+easylist.txt: 3806)
+.letvimg.com/img/201503/19/uc1/
+# ||letvimg.com/gugwl/*.swf (easylistchina+easylist.txt: 3805)
+.letvimg.com/gugwl/.*\.swf
+# ||letvimg.com*gugwl/$object-subrequest (easylistchina+easylist.txt: 3804)
+.letvimg.com*./.*gugwl/
+.letvimg.com*gugwl
+# ||letvcdn.com/js/*_focus_flash.js (easylistchina+easylist.txt: 3803)
+.letvcdn.com/js/.*_focus_flash\.js
+# ||letv.com/s?ark=*&cis= (easylistchina+easylist.txt: 3802)
+.letv.com/s\?ark=.*&cis=
+# ||letv.com/pzt/hyhmzq/index.shtml (easylistchina+easylist.txt: 3801)
+.letv.com/pzt/hyhmzq/index\.shtml
+# ||ark.letv.com/s?vid= (easylistchina+easylist.txt: 2112)
+.ark.letv.com/s\?vid=
+# ||ark.letv.com/s?res= (easylistchina+easylist.txt: 2111)
+.ark.letv.com/s\?res=
+# ||ark.letv.com/t?$popup (easylistchina+easylist.txt: 1053)
+.ark.letv.com/t\?
+# ||letvimg.com^*_phone/ (easylistchina+easylist.txt: 3808)
+.letvimg.com/.*_phone/
+# ||letvimg.com/img/201503/19/uc1/ (easylistchina+easylist.txt: 3806)
+.letvimg.com/img/201503/19/uc1/
+# ||letvimg.com/gugwl/*.swf (easylistchina+easylist.txt: 3805)
+.letvimg.com/gugwl/.*\.swf
+# ||letvcdn.com/js/*_focus_flash.js (easylistchina+easylist.txt: 3803)
+.letvcdn.com/js/.*_focus_flash\.js
+# ||letv.com/s?ark=*&cis= (easylistchina+easylist.txt: 3802)
+.letv.com/s\?ark=.*&cis=
+# ||letv.com/pzt/hyhmzq/index.shtml (easylistchina+easylist.txt: 3801)
+.letv.com/pzt/hyhmzq/index\.shtml
+# ||ark.letv.com/s?vid= (easylistchina+easylist.txt: 2112)
+.ark.letv.com/s\?vid=
+# ||ark.letv.com/s?res= (easylistchina+easylist.txt: 2111)
+.ark.letv.com/s\?res=
+# ||ark.letv.com/t?$popup (easylistchina+easylist.txt: 1053)
+.ark.letv.com/t\?
+# ||letvimg.com*gugwl/$object-subrequest (easylistchina+easylist.txt: 3804)
+.letvimg.com*./.*gugwl/
+.letvimg.com*gugwl
+# ||letvimg.com^*/108x70$object (easylistchina+easylist.txt: 3807)
+.letvimg.com/.*/108x70
+# ||ark.letv.com/t?$popup (easylistchina+easylist.txt: 1053)
+.ark.letv.com/t\?
+# @@||letvcloud.com^*&showAd= (easylistchina+easylist.txt: 10299)
+.letvcloud.com/.*&showAd=
+# @@||letv.com*/tuiguang/$subdocument (easylistchina+easylist.txt: 10298)
+.letv.com*./(.*/)?tuiguang/
+# @@||letvcloud.com^*&showAd= (easylistchina+easylist.txt: 10299)
+.letvcloud.com/.*&showAd=
+# @@||letv.com*/tuiguang/$subdocument (easylistchina+easylist.txt: 10298)
+.letv.com*./(.*/)?tuiguang/
+# @@||letvcloud.com^*&showAd= (easylistchina+easylist.txt: 10299)
+.letvcloud.com/.*&showAd=
+# @@||letv.com*/tuiguang/$subdocument (easylistchina+easylist.txt: 10298)
+.letv.com*./(.*/)?tuiguang/
+
+
+##############################letv end####################################
+
+##############################hunantv begin####################################
+# ||res.hunantv.com^ (easylistchina.txt: 4384)
+.res.hunantv.com
+# ||hunantv.com/ui/2014/images/hao123.jpg (easylistchina.txt: 3275)
+.hunantv.com/ui/2014/images/hao123\.jpg
+# ||res.hunantv.com^ (easylistchina.txt: 4384)
+.res.hunantv.com
+# ||hunantv.com/ui/2014/images/hao123.jpg (easylistchina.txt: 3275)
+.hunantv.com/ui/2014/images/hao123\.jpg
+# ||res.hunantv.com^ (easylistchina.txt: 4384)
+.res.hunantv.com
+# ||hunantv.com/ui/2014/images/hao123.jpg (easylistchina.txt: 3275)
+.hunantv.com/ui/2014/images/hao123\.jpg
+# @@||hunantv.com/FrameWork/AFP/ (easylistchina.txt: 10258)
+.hunantv.com/FrameWork/AFP/
+# @@||hunantv.com/FrameWork/AFP/ (easylistchina.txt: 10258)
+.hunantv.com/FrameWork/AFP/
+# @@||hunantv.com/FrameWork/AFP/ (easylistchina.txt: 10258)
+.hunantv.com/FrameWork/AFP/
+# ||mp4.res.hunantv.com (lazy222.txt: 2784)
+.mp4.res.hunantv.com*.
+# ||bs.da.hunantv.com (lazy222.txt: 2436)
+.bs.da.hunantv.com*.
+# |http://image.res.hunantv.com/mediafiles/creative/ (lazy222.txt: 1235)
+image.res.hunantv.com/mediafiles/creative/
+# ||mp4.res.hunantv.com (lazy222.txt: 2784)
+.mp4.res.hunantv.com*.
+# ||bs.da.hunantv.com (lazy222.txt: 2436)
+.bs.da.hunantv.com*.
+# |http://image.res.hunantv.com/mediafiles/creative/ (lazy222.txt: 1235)
+image.res.hunantv.com/mediafiles/creative/
+# ||mp4.res.hunantv.com (lazy222.txt: 2784)
+.mp4.res.hunantv.com*.
+# ||bs.da.hunantv.com (lazy222.txt: 2436)
+.bs.da.hunantv.com*.
+# |http://image.res.hunantv.com/mediafiles/creative/ (lazy222.txt: 1235)
+image.res.hunantv.com/mediafiles/creative/
+# @@|http://image.res.hunantv.com/mediafiles/creative/u3154/ (lazy222.txt: 159)
+image.res.hunantv.com/mediafiles/creative/u3154/
+# @@|http://image.res.hunantv.com/mediafiles/creative/u3154/ (lazy222.txt: 159)
+image.res.hunantv.com/mediafiles/creative/u3154/
+# @@|http://image.res.hunantv.com/mediafiles/creative/u3154/ (lazy222.txt: 159)
+image.res.hunantv.com/mediafiles/creative/u3154/
+
+# ||res.hunantv.com^ (easylistchina+easylist.txt: 4394)
+.res.hunantv.com
+# ||hunantv.com/ui/2014/images/hao123.jpg (easylistchina+easylist.txt: 3290)
+.hunantv.com/ui/2014/images/hao123\.jpg
+# ||res.hunantv.com^ (easylistchina+easylist.txt: 4394)
+.res.hunantv.com
+# ||hunantv.com/ui/2014/images/hao123.jpg (easylistchina+easylist.txt: 3290)
+.hunantv.com/ui/2014/images/hao123\.jpg
+# ||res.hunantv.com^ (easylistchina+easylist.txt: 4394)
+.res.hunantv.com
+# ||hunantv.com/ui/2014/images/hao123.jpg (easylistchina+easylist.txt: 3290)
+.hunantv.com/ui/2014/images/hao123\.jpg
+# @@||hunantv.com/FrameWork/AFP/skin_ (easylistchina+easylist.txt: 10268)
+.hunantv.com/FrameWork/AFP/skin_
+# @@||hunantv.com/FrameWork/AFP/skin_ (easylistchina+easylist.txt: 10268)
+.hunantv.com/FrameWork/AFP/skin_
+# @@||hunantv.com/FrameWork/AFP/skin_ (easylistchina+easylist.txt: 10268)
+.hunantv.com/FrameWork/AFP/skin_
+
+
+##############################hunantv end####################################

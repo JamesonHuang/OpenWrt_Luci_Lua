@@ -1,0 +1,23 @@
+----- source -----
+Title: EasyList China+EasyList
+Url: ./list
+Last modified: 15 Feb 2016 03:10 UTC
+Expires: 96 hours
+Version: 201602150310
+License: https://easylist-downloads.adblockplus.org/COPYING
+Homepage: http://abpchina.org/forum/
+------- end ------
+
+----- options -----
+Privoxy path: /etc/privoxy
+Web path: /var/www/privoxy
+CSS web server domain: www.example.com
+------- end ------
+
+Comments: 27
+Elements hiding rules: 2
+Request block rules for exception: 3
+Request block rules total: 68
+Request block rules with domain option: 1
+Request block rules with request type options: 1
+Rules with third party option: 50

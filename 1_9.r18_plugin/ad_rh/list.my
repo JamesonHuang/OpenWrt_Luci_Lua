@@ -1,0 +1,12 @@
+[Adblock Plus 2.1]
+
+!------------------------youku-------------------------------
+!|http://$object,domain=~youku.com|~tudou.com|~iqiyi.com|~pps.tv|~yatu.tv|~1ting.com
+!||k.youku.com
+!^getFlvPath/sid^
+!^youku^.mp4
+||sodu.cc
+||baidu.com
+http://www.baidu.com
+https://www.baidu.com
+!------------------------youku end---------------------------

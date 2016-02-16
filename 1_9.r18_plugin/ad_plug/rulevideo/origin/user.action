@@ -1,0 +1,482 @@
+######################################################################
+# 
+#  File        :  $Source: /cvsroot/ijbswa/current/user.action,v $
+# 
+#  $Id: user.action,v 1.13 2011/11/06 11:36:01 fabiankeil Exp $
+#
+#  Purpose     :  User-maintained actions file, see
+#                 http://www.privoxy.org/user-manual/actions-file.html
+#
+######################################################################
+
+# This is the place to add your personal exceptions and additions to
+# the general policies as defined in default.action. (Here they will be
+# safe from updates to default.action.) Later defined actions always
+# take precedence, so anything defined here should have the last word.
+
+# See http://www.privoxy.org/user-manual/actions-file.html, or the 
+# comments in default.action, for an explanation of what an "action" is
+# and what each action does.
+
+# The examples included here either use bogus sites, or have the actual
+# rules commented out (with the '#' character). Useful aliases are
+# included in the top section as a convenience.
+
+#############################################################################
+# Aliases
+#############################################################################
+{{alias}}
+#############################################################################
+#
+# You can define a short form for a list of permissions - e.g., instead
+# of "-crunch-incoming-cookies -crunch-outgoing-cookies -filter -fast-redirects",
+# you can just write "shop". This is called an alias.
+#
+# Currently, an alias can contain any character except space, tab, '=', '{'
+# or '}'.
+# But please use only 'a'-'z', '0'-'9', '+', and '-'.
+#
+# Alias names are not case sensitive.
+#
+# Aliases beginning with '+' or '-' may be used for system action names 
+# in future releases - so try to avoid alias names like this.  (e.g. 
+# "+crunch-all-cookies" below is not a good name)
+#
+# Aliases must be defined before they are used.
+# 
+# These aliases just save typing later:
+#
++crunch-all-cookies = +crunch-incoming-cookies +crunch-outgoing-cookies
+-crunch-all-cookies = -crunch-incoming-cookies -crunch-outgoing-cookies
+ allow-all-cookies  = -crunch-all-cookies -session-cookies-only -filter{content-cookies}
+ allow-popups       = -filter{all-popups} -filter{unsolicited-popups}
++block-as-image     = +block{Blocked image request.} +handle-as-image
+-block-as-image     = -block
+
+# These aliases define combinations of actions
+# that are useful for certain types of sites:
+#
+fragile     = -block -crunch-all-cookies -filter -fast-redirects -hide-referer -prevent-compression
+shop        = -crunch-all-cookies allow-popups
+
+# Your favourite blend of filters:
+#
+myfilters   = +filter{html-annoyances} +filter{js-annoyances} +filter{all-popups}\
+              +filter{webbugs} +filter{banners-by-size}
+
+# Allow ads for selected useful free sites:
+#
+allow-ads   = -block -filter{banners-by-size} -filter{banners-by-link}
+#... etc.  Customize to your heart's content.
+
+## end aliases ########################################################
+#######################################################################
+
+# Begin examples: #####################################################
+
+# Say you have accounts on some sites that you visit regularly, and you
+# don't want to have to log in manually each time. So you'd like to allow
+# persistent cookies for these sites. The allow-all-cookies alias defined
+# above does exactly that, i.e. it disables crunching of cookies in any
+# direction, and the processing of cookies to make them only temporary.
+#
+{ allow-all-cookies }
+#.sourceforge.net
+#sunsolve.sun.com
+#slashdot.org
+#.yahoo.com
+#.msdn.microsoft.com
+#.redhat.com
+
+# Say the site where you do your homebanking needs to open popup
+# windows, but you have chosen to kill popups uncoditionally by default.
+# This will allow it for your-example-bank.com:
+#
+{ -filter{all-popups} }
+.banking.example.com
+
+# Some hosts and some file types you may not want to filter for
+# various reasons:
+#
+{ -filter }
+
+# Technical documentation is likely to contain strings that might
+# erroneously get altered by the JavaScript-oriented filters:
+#
+#.tldp.org
+#/(.*/)?selfhtml/
+
+# And this stupid host sends streaming video with a wrong MIME type,
+# so that Privoxy thinks it is getting HTML and starts filtering:
+#
+stupid-server.example.com/
+
+
+# Example of a simple "block" action. Say you've seen an ad on your
+# favourite page on example.com that you want to get rid of. You have
+# right-clicked the image, selected "copy image location" and pasted
+# the URL below while removing the leading http://, into a { +block{reason} }
+# section. Note that { +handle-as-image } need not be specified, since
+# all URLs ending in .gif will be tagged as images by the general rules
+# as set in default.action anyway:
+#
+{ +block{Nasty ads.} }
+www.example.com/nasty-ads/sponsor.gif
+
+# The URLs of dynamically generated banners, especially from large banner
+# farms, often don't use the well-known image file name extensions, which
+# makes it impossible for Privoxy to guess the file type just by looking
+# at the URL. 
+# You can use the +block-as-image alias defined above for these cases.
+# Note that objects which match this rule but then turn out NOT to be an
+# image are typically rendered as a "broken image" icon by the browser.
+# Use cautiously.
+#
+{ +block-as-image }
+#.doubleclick.net
+#/Realmedia/ads/
+#ar.atwola.com/
+
+# Now you noticed that the default configuration breaks Forbes
+# Magazine, but you were too lazy to find out which action is the
+# culprit, and you were again too lazy to give feedback, so you just
+# used the fragile alias on the site, and -- whoa! -- it worked. The
+# 'fragile' aliases disables those actions that are most likely to break
+# a site. Also, good for testing purposes to see if it is Privoxy that
+# is causing the problem or not.
+# 
+{ fragile }
+#.forbes.com
+
+# Here are some sites we wish to support, and we will allow their ads
+# through.
+#
+{ allow-ads }
+#.sourceforge.net
+#.slashdot.org
+#.osdn.net
+
+# user.action is generally the best place to define exceptions and
+# additions to the default policies of default.action. Some actions are
+# safe to have their default policies set here though. So let's set a
+# default policy to have a 'blank' image as opposed to the checkerboard
+# pattern for ALL sites. '/' of course matches all URLs.
+# patterns:
+#
+{ +set-image-blocker{blank} }
+#/
+
+# Enable the following section (not the regression-test directives)
+# to rewrite and redirect click-tracking URLs on news.google.com.
+# Disabling JavaScript should work as well and probably works more reliably.
+#
+# Redirected URL = http://news.google.com/news/url?ct2=us%2F0_0_s_1_1_a&sa=t&usg=AFQjCNHJWPc7ffoSXPSqBRz55jDA0KgxOQ&cid=8797762374160&url=http%3A%2F%2Fonline.wsj.com%2Farticle%2FSB10001424052970204485304576640791304008536.html&ei=YcqeTsymCIjxggf8uQE&rt=HOMEPAGE&vm=STANDARD&bvm=section&did=-6537064229385238098
+# Redirect Destination = http://online.wsj.com/article/SB10001424052970204485304576640791304008536.html
+# Ignore = Yes
+#
+#{+fast-redirects{check-decoded-url}}
+#news.google.com/news/url.*&url=http.*&
+
+# Enable the following section (not the regression-test directives)
+# to block various Facebook "like" and similar tracking URLs.  At the
+# time this section was added it was reported to not break Facebook
+# itself but this may have changed by the time you read this. This URL
+# list is probably incomplete and if you don't have an account anyway,
+# you may prefer to block the whole domain.
+#
+# Blocked URL = http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Ffacebook.com%2Farstechnica&width=300&colorscheme=light&show_faces=false&stream=false&header=false&height=62&border_color=%23FFFFFF
+# Ignore = Yes
+# Blocked URL = http://www.facebook.com/plugins/activity.php?site=arstechnica.com&width=300&height=370&header=false&colorscheme=light&recommendations=false&border_color=%23FFFFFF
+# Ignore = Yes
+# Blocked URL = http://www.facebook.com/plugins/fan.php?api_key=368513495882&connections=10&height=250&id=8304333127&locale=en_US&sdk=joey&stream=false&width=377
+# Ignore = Yes
+# Blocked URL = http://www.facebook.com/plugins/like.php?api_key=368513495882&channel_url=http%3A%2F%2Fstatic.ak.fbcdn.net%2Fconnect%2Fxd_proxy.php%3Fversion%3D3%23cb%3Df13997452c%26origin%3Dhttp%253A%252F%252Fonline.wsj.com%252Ff1b037e354%26relation%3Dparent.parent%26transport%3Dpostmessage&extended_social_context=false&href=http%3A%2F%2Fonline.wsj.com%2Farticle%2FSB10001424052970204485304576640791304008536.html&layout=button_count&locale=en_US&node_type=link&ref=wsj_share_FB&sdk=joey&send=false&show_faces=false&width=90
+# Ignore = Yes
+#
+#{+block{Facebook "like" and similar tracking URLs.}}
+#www.facebook.com/(extern|plugins)/(login_status|like(box)?|activity|fan)\.php
+#### by 陈三
+
+# 清理百度推广广告
+{+filter{blockBaiduAd}}
+www.baidu.com
+
+# 清理有道词典广告
+{+filter{blockYoudaoAd}}
+dict.youdao.com
+
+# 清理不卡的推广广告
+{+filter{blockBaiduCproAd}}
+.bukade.com
+
+# 清理爱奇艺视频广告
+{+filter{blockQiyiAd}}
+iface2.iqiyi.com
+data.video.qiyi.com/videos/other/.*\.f4v.*
+36.250.67.14/videos/other/.*\.f4v.*
+36.250.80.27/videos/other/.*\.f4v.*
+
+# 显示知乎全部答案
+{+filter{showZhiHuAnswers}}
+.zhihu.com
+
+# 清理 sohu 视频广告
+{+filter{rmSohuAD}}
+js.tv.itc.cn/base/core/gg_f24973\.js$
+js.tv.itc.cn/gg\.seed\.js$
+
+# 清理乐视视频广告
+{+block{乐视广告}}
+36.250.5.*
+36.250.7.161
+36.250.7.162
+36.250.7.163
+36.250.7.168
+36.250.7.169
+36.250.66.35
+36.250.66.41
+
+# 垃圾采集站
+{+block{垃圾站}}
+.111cn.net
+
+{+block{土豆网视频广告}}
+23.236.121.*/youku/.*\.flv$
+
+27.221.31.12/youku/.*\.flv$
+
+27.221.48.*/youku/.*\.flv$
+
+61.142.132.*/youku/.*\.flv$
+
+61.158.246.*/youku/.*\.(flv|mp4)$
+
+61.158.246.41/youku/.*\.flv$
+61.158.246.42/youku/.*\.flv$
+61.158.246.43/youku/.*\.flv$
+61.158.246.44/youku/.*\.flv$
+61.158.246.45/youku/.*\.flv$
+61.158.246.46/youku/.*\.flv$
+
+119.147.103.*/youku/.*\.flv$
+
+119.147.157.*/youku/.*\.flv$
+
+119.167.128.*/youku/.*\.mp4$
+
+119.167.128.13/youku/.*\.flv$
+119.167.128.38/youku/.*\.flv$
+119.167.128.202/youku/.*\.flv$
+119.167.128.203/youku/.*\.flv$
+119.167.128.204/youku/.*\.flv$
+119.167.128.205/youku/.*\.flv$
+119.167.128.206/youku/.*\.flv$
+119.167.128.207/youku/.*\.flv$
+119.167.128.208/youku/.*\.flv$
+119.167.128.209/youku/.*\.flv$
+119.167.128.210/youku/.*\.flv$
+119.167.128.211/youku/.*\.flv$
+119.167.128.212/youku/.*\.flv$
+119.167.128.213/youku/.*\.flv$
+119.167.128.214/youku/.*\.flv$
+119.167.128.215/youku/.*\.flv$
+
+119.167.129.16/youku/.*\.flv$
+119.167.129.22/youku/.*\.flv$
+
+123.129.231.*/youku/.*\.flv$
+123.129.231.*/youku/.*\.mp4$
+
+182.118.6.*/youku/.*\.mp4$
+
+182.118.6.14/youku/.*\.flv$
+182.118.6.15/youku/.*\.flv$
+182.118.6.16/youku/.*\.flv$
+182.118.6.17/youku/.*\.flv$
+182.118.6.18/youku/.*\.flv$
+182.118.6.19/youku/.*\.flv$
+182.118.6.20/youku/.*\.flv$
+182.118.6.25/youku/.*\.flv$
+182.118.6.42/youku/.*\.flv$
+182.118.6.43/youku/.*\.flv$
+182.118.6.44/youku/.*\.flv$
+182.118.6.45/youku/.*\.flv$
+182.118.6.46/youku/.*\.flv$
+182.118.6.47/youku/.*\.flv$
+182.118.6.48/youku/.*\.flv$
+182.118.6.49/youku/.*\.flv$
+182.118.6.50/youku/.*\.flv$
+182.118.6.51/youku/.*\.flv$
+182.118.6.52/youku/.*\.flv$
+182.118.6.53/youku/.*\.flv$
+182.118.6.54/youku/.*\.flv$
+182.118.6.55/youku/.*\.flv$
+182.118.6.74/youku/.*\.flv$
+182.118.6.75/youku/.*\.flv$
+182.118.6.76/youku/.*\.flv$
+182.118.6.80/youku/.*\.flv$
+182.118.6.82/youku/.*\.flv$
+182.118.6.106/youku/.*\.flv$
+182.118.6.111/youku/.*\.flv$
+182.118.6.112/youku/.*\.flv$
+182.118.6.113/youku/.*\.flv$
+182.118.6.115/youku/.*\.flv$
+
+# 屏蔽迅雷看看视频广告
+{+block{kankan}}
+20141025.float.sandai.net
+
+
+# 屏蔽优酷的视频广告，但目前还有黑屏倒计时的问题
+{+block{优酷视频广告}}
+27.221.18.181/youku/.*\.flv$
+27.221.18.184/youku/.*\.flv$
+
+27.221.31.18/youku/.*\.flv$
+
+27.221.48.141/youku/.*\.mp4$
+
+36.250.10.7/sohu.*\.flv$
+
+61.158.246.*/youku/.*\.flv$
+
+119.167.128.13/youku/.*\.flv$
+119.167.128.14/youku/.*\.flv$
+119.167.128.15/youku/.*\.flv$
+119.167.128.16/youku/.*\.flv$
+119.167.128.25/youku/.*\.flv$
+119.167.128.31/youku/.*\.flv$
+119.167.128.37/youku/.*\.flv$
+119.167.128.201/youku/.*\.flv$
+
+119.167.129.*/youku/.*\.flv$
+
+119.188.38.15/youku/.*\.flv$
+119.188.38.24/youku/.*\.flv$
+
+182.118.6.*/youku/.*\.flv$
+
+{+block{搜狐视频广告}}
+
+data.vod.itc.cn/.*prod=ad.*\.mp4$
+
+36.250.10.3/sohu.*
+36.250.10.9/sohu.*
+36.250.10.10/sohu.*
+
+60.18.224.62/sohu.*\.mp4.*
+
+60.28.168.53/sohu.*
+
+60.217.245.79/sohu.*
+
+101.71.4.4/sohu.*
+101.71.4.8/sohu.*
+101.71.4.18/sohu.*
+
+101.71.5.3/sohu.*
+101.71.5.5/sohu.*
+101.71.5.6/sohu.*
+101.71.5.8/sohu.*
+101.71.5.9/sohu.*
+101.71.5.10/sohu.*
+101.71.5.11/sohu.*
+101.71.5.12/sohu.*
+101.71.5.13/sohu.*
+101.71.5.14/sohu.*
+101.71.5.15/sohu.*
+101.71.5.16/sohu.*
+101.71.5.17/sohu.*
+
+119.39.234.35/sohu.*\.mp4.*
+119.39.234.39/sohu.*\.mp4.*
+119.39.234.40/sohu.*\.mp4.*
+119.39.234.42/sohu.*\.mp4.*
+
+121.29.0.11/sohu.*
+121.29.0.16/sohu.*
+
+122.141.224.203/sohu.*
+122.141.224.212/sohu.*
+
+175.43.20.118/sohu\.vodnew\.lxdns\.com.*
+175.43.124.167/sohu\.vodnew\.lxdns\.com.*
+175.43.124.168/sohu\.vodnew\.lxdns\.com.*
+175.43.124.169/sohu\.vodnew\.lxdns\.com.*
+175.43.124.173/sohu\.vodnew\.lxdns\.com.*
+
+{+block{搜狐}}
+hui.sohu.com/mum/ipqueryjp\?.*
+
+{+block{pptv}}
+asimgs.pplive.cn/imgs/materials/.*\.flv
+112.90.37.104
+112.90.37.108
+
+218.26.242.30
+
+{+block{腾讯视频广告}}
+36.250.4.12
+36.250.4.13
+36.250.4.14
+36.250.4.15
+36.250.4.16
+36.250.4.17
+36.250.4.18
+101.71.72.4
+101.71.72.5
+101.71.72.6
+101.71.72.7
+101.71.72.8
+101.71.72.9
+101.71.72.10
+101.71.72.11
+101.71.72.12
+101.71.72.13
+101.71.72.14
+101.71.72.15
+101.71.72.16
+101.71.72.17
+101.71.72.18
+101.71.72.19
+101.71.72.20
+101.71.72.21
+
+203.205.148.*
+
+lb.gtimg.com/qqlive/.*\.swf$
+
+{+block{有道词典广告}}
+.ydstatic.com/.*product=adpublish.*
+
+{+block{百度联盟广告}}
+ubmcmm.baidustatic.com
+cpro.baidustatic.com
+
+{+block{crunchyroll}}
+.crunchyroll.com/.*LogAdSlot.*
+.crunchyroll.com/vast\?type=website_house
+
+{+block{乐视 iOS 视频广告}}
+n.mark.letv.com/m3u8api/
+
+{+block{爱奇艺视频广告}}
+36.250.67.10/.*\.f4v
+36.250.67.11/.*\.f4v
+119.188.24.202/.*\.f4v
+157.122.96.38/.*\.f4v
+
+{+block{else}}
+gg.jtertp.com
+goods.tudou.com
+
+
+
+
+######################################################
+#     白名单     #
+#####################################################
+{-block}
+.arcgis.com
+ads.twitter.com
+

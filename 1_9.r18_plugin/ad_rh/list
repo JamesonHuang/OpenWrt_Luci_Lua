@@ -1,0 +1,92 @@
+[Adblock Plus 2.0]
+! Checksum: Z1UmMhhD0ZG7Ix+0STzGaw
+! Version: 201602150310
+! Title: EasyList China+EasyList
+! EasyList China and EasyList combination subscription
+! Last modified: 15 Feb 2016 03:10 UTC
+! Expires: 4 days (update frequency)
+! Homepage: http://abpchina.org/forum/
+!
+! *** easylistchina:easylistchina.txt ***
+! Chinese supplement for the EasyList filters
+! License: https://easylist-downloads.adblockplus.org/COPYING
+!
+! Please report any unblocked adverts or problems
+! in the forums (http://abpchina.org/forum/)
+! or via e-mail (easylist.china@gmail.com).
+!
+! Fork of: ChinaList https://github.com/chinalist/chinalist
+/adflash/*
+/attachments/ad/*
+/tan1.js
+@@||hichannel.hinet.net^$object-subrequest
+@@||poster.weather.com.cn/p_files/base/$image
+@@||union.bokecc.com/crossdomain.xml
+hk.search.auctions.yahoo.com###yauadysmh
+hk.yahoo.com###mntl1
+||114lm.com^$third-party
+||116b.com^$third-party
+||12291.com^$third-party
+||1x3x.com^$third-party
+||37pk49.com^$third-party
+||49ko.com^$third-party
+||52lover.info^$third-party
+||7794.com^$third-party
+||77zhuan.com^$third-party
+||a.youdao.com^
+||admaji.com^$third-party
+||adrs.sdo.com^
+||ads80.com^$third-party
+||aifei.info^$third-party
+||artxun.com^$third-party
+||baitaiad.com^$third-party
+||blog.xuite.net/_public/js/ysmad.js
+||bmw100.cn^$third-party
+||boosj.com^$third-party
+||buzzads.com^$third-party
+||caiyifz.com^$third-party
+||cpm360.com^$third-party
+||dian5000.com^$third-party
+||dingge.cc^$third-party
+||ee4kdushuba.com^$third-party
+||flashwing.net^$third-party
+||googleadsl.com^$third-party
+||hiad.myweb.hinet.net^
+||housefun.com.tw^$third-party
+||hz3137.com^$third-party
+||ifocus.cn^$third-party
+||ilepai.com^$third-party
+||image.qndown.com^$third-party
+||kuaiwan.com^$third-party
+||kuqi.com^$third-party
+||lianjie.phpwind.com^$third-party
+||lm.35.com^$third-party
+||log.interest.mix.sina.com.cn^
+||mosa86.com^$third-party
+||niwota.com^$third-party
+||oeya.com^$third-party
+||qling.com^$third-party
+||rayli.com.cn^$third-party
+||rekanw.com^$third-party
+||s.yimg.com/ja/ap/tw/js/
+||s.yimg.com^*/flash_general_$domain=~tw.yahoo.com
+||samboc.com^$third-party
+||sitemaji.com^$third-party
+||szvr.com^$third-party
+||tuiguang.178.com^
+||ubcpm.com^$third-party
+||uctrac.com^$third-party
+||ugoooo.com^$third-party
+||v.xi666.com^$third-party
+||wofan.net^$third-party
+||xixianad.com^$third-party
+||xq12.com^$third-party
+||yy32.com^$third-party
+!------------------------End of ChinaList--------------------
+
+!------------------------youku-------------------------------
+||baidu.com
+||youku.com
+http://www.baidu.com
+https://www.baidu.com
+!------------------------youku end---------------------------

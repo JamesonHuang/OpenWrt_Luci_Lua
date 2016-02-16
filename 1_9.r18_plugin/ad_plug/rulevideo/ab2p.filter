@@ -1,0 +1,158 @@
+#AbBlock generated filters -- don't edit --
+#----- source -----
+#Title: EasyList China
+#Url: https://easylist-downloads.adblockplus.org/easylistchina.txt
+#Last modified: 29 Jan 2016 15:51 UTC
+#Expires: 96 hours
+#Version: 201601291533
+#License: https://easylist-downloads.adblockplus.org/COPYING
+#Homepage: http://abpchina.org/forum/
+#------- end ------
+
+CLIENT-HEADER-TAGGER: ab2p-block-dnt-R1
+s@^referer(?=:[^\n]*[./](?:00fuck\.com|01fuck\.com|1024\.pe|1024bao\.com|20fuck\.com|20men\.com|22fuck\.com|32cao\.com|33fuck\.com|42bao\.com|44fuck\.com|66fuck\.com|67\.228\.203\.174|74bao\.com|75ri\.com|83bao\.com|96ri\.com|atao\.biz|bao36\.com|bao85\.com|baoxxx\.com|cao71\.com|cao89\.com|caoporn\.com|cp001\.xyz|down40\.com|fuck01\.com|fuck44\.com|fuckhao\.com|gan80\.com|gantube\.com|gao08\.com|gao1024\.com|iu91\.co|lang\.pe|lang00\.com|lang51\.com|maichun5\.info|men00\.com|men40\.com|men55\.com|men70\.com|men81\.com|myhhg\.com|porncao\.com|pornhao\.com|ri1024\.com|ri15\.com|ri69\.com|ri86\.com|ri96\.com|rifuck\.com|sejie\.com|sejie3\.us|tb001\.xyz|tube1024\.com|tubewan\.com|ukhuaren\.co|vgan\.pw|vlook\.xyz|wan1024\.com|wanfuck\.com|xxxgao\.com|yh1\.info|yh10\.info)):.*@ab2p-block-dnt@Ti
+
+###########################youku begin###############################
+s@^referer(?=:[^\n]*[./](?:youku\.com)):.*@ab2p-unblock-dnt@Ti
+s@^referer(?=:[^\n]*[./](?:youku\.com)):.*@ab2p-unblock-elem@Ti
+s@^referer(?=:[^\n]*[./](?:youku\.com)):.*@ab2p-unblock-request@Ti
+
+###########################youku end###############################
+
+###########################iqiyi begin###############################
+s@^referer(?=:[^\n]*[./](?:iqiyi\.com)):.*@ab2p-block-dnt@Ti
+s@^referer(?=:[^\n]*[./](?:iqiyi\.com)):.*@ab2p-block-elem@Ti
+s@^referer(?=:[^\n]*[./](?:iqiyi\.com)):.*@ab2p-block-request@Ti
+s@^referer(?=:[^\n]*[./](?:iqiyi\.com)):.*@ab2p-block-xpopup@Ti
+
+s@^referer(?!:[^\n]*[./](?:www\.colafile\.com|61\.iqiyi\.com|61\.hz\.letv\.com|play\.v\.61\.com|7958\.com|www\.u148\.net|www\.redocn\.com|www\.narutom\.com|tiexue\.net|xdf\.cn)):.*@ab2p-block-dnt@Ti
+s@^referer(?!:[^\n]*[./](?:iqiyi\.com|v\.pps\.tv)):.*@ab2p-block-dnt@Ti
+s@^referer(?!:[^\n]*[./](?:www\.colafile\.com|61\.iqiyi\.com|61\.hz\.letv\.com|play\.v\.61\.com|7958\.com|www\.u148\.net|www\.redocn\.com|www\.narutom\.com|tiexue\.net|xdf\.cn)):.*@ab2p-block-elem@Ti
+s@^referer(?!:[^\n]*[./](?:iqiyi\.com|v\.pps\.tv)):.*@ab2p-block-elem@Ti
+s@^referer(?!:[^\n]*[./](?:www\.colafile\.com|61\.iqiyi\.com|61\.hz\.letv\.com|play\.v\.61\.com|7958\.com|www\.u148\.net|www\.redocn\.com|www\.narutom\.com|tiexue\.net|xdf\.cn)):.*@ab2p-block-request-Aj-Cj@Ti
+s@^referer(?!:[^\n]*[./](?:iqiyi\.com|v\.pps\.tv)):.*@ab2p-block-request@Ti
+
+###########################iqiyi end###############################
+
+###########################qq begin###############################
+s@^referer(?=:[^\n]*[./](?:360-bo\.com|chakd\.com|kiees\.cn|kqiuba\.com|lueqiu\.com|macappbox\.com|pptiyu\.com|qqzhibo\.net)):.*@ab2p-block-dnt@Ti
+s@^referer(?=:[^\n]*[./](?:5ydj\.com|99ee1\.com|99re5\.com|99rr6\.com|btago\.com|btbook\.net|btshark\.org|cnmkv\.com|fulisuo1\.com|hdbiger\.org|kisssub\.org|papa1024\.com|potplayer\.org|qqhzg\.com|qqjishu\.net|ruoren\.com|souxue8\.net|totuwo\.com|xiaodao\.la|xiaodaoyl\.com|yunaw\.com)):.*@ab2p-block-dnt@Ti
+s@^referer(?=:[^\n]*[./](?:allanalpass\.com|amy\.gs|any\.gs|cash4files\.com|deb\.gs|dyo\.gs|eafyfsuh\.net|filesonthe\.net|galleries\.bz|goneviral\.com|linkbucks\.com|megaline\.co|miniurls\.co|picbucks\.com|qqc\.co|rqq\.co|sasontnwc\.net|seriousdeals\.net|theseblogs\.com|tinylinks\.co|tnabucks\.com|tubeviral\.com|ultrafiles\.net|urlbeat\.net|whackyvidz\.com|yyv\.co|zff\.co)):.*@ab2p-block-dnt@Ti
+s@^referer(?=:[^\n]*[./](?:360-bo\.com|chakd\.com|kiees\.cn|kqiuba\.com|lueqiu\.com|macappbox\.com|pptiyu\.com|qqzhibo\.net)):.*@ab2p-block-elem@Ti
+s@^referer(?=:[^\n]*[./](?:5ydj\.com|99ee1\.com|99re5\.com|99rr6\.com|btago\.com|btbook\.net|btshark\.org|cnmkv\.com|fulisuo1\.com|hdbiger\.org|kisssub\.org|papa1024\.com|potplayer\.org|qqhzg\.com|qqjishu\.net|ruoren\.com|souxue8\.net|totuwo\.com|xiaodao\.la|xiaodaoyl\.com|yunaw\.com)):.*@ab2p-block-elem@Ti
+s@^referer(?=:[^\n]*[./](?:allanalpass\.com|amy\.gs|any\.gs|cash4files\.com|deb\.gs|dyo\.gs|eafyfsuh\.net|filesonthe\.net|galleries\.bz|goneviral\.com|linkbucks\.com|megaline\.co|miniurls\.co|picbucks\.com|qqc\.co|rqq\.co|sasontnwc\.net|seriousdeals\.net|theseblogs\.com|tinylinks\.co|tnabucks\.com|tubeviral\.com|ultrafiles\.net|urlbeat\.net|whackyvidz\.com|yyv\.co|zff\.co)):.*@ab2p-block-elem@Ti
+s@^referer(?=:[^\n]*[./](?:360-bo\.com|chakd\.com|kiees\.cn|kqiuba\.com|lueqiu\.com|macappbox\.com|pptiyu\.com|qqzhibo\.net)):.*@ab2p-block-request@Ti
+s@^referer(?=:[^\n]*[./](?:5ydj\.com|99ee1\.com|99re5\.com|99rr6\.com|btago\.com|btbook\.net|btshark\.org|cnmkv\.com|fulisuo1\.com|hdbiger\.org|kisssub\.org|papa1024\.com|potplayer\.org|qqhzg\.com|qqjishu\.net|ruoren\.com|souxue8\.net|totuwo\.com|xiaodao\.la|xiaodaoyl\.com|yunaw\.com)):.*@ab2p-block-request@Ti
+s@^referer(?=:[^\n]*[./](?:allanalpass\.com|amy\.gs|any\.gs|cash4files\.com|deb\.gs|dyo\.gs|eafyfsuh\.net|filesonthe\.net|galleries\.bz|goneviral\.com|linkbucks\.com|megaline\.co|miniurls\.co|picbucks\.com|qqc\.co|rqq\.co|sasontnwc\.net|seriousdeals\.net|theseblogs\.com|tinylinks\.co|tnabucks\.com|tubeviral\.com|ultrafiles\.net|urlbeat\.net|whackyvidz\.com|yyv\.co|zff\.co)):.*@ab2p-block-request@Ti
+s@^referer(?=:[^\n]*[./](?:allanalpass\.com|amy\.gs|any\.gs|cash4files\.com|deb\.gs|dyo\.gs|eafyfsuh\.net|filesonthe\.net|galleries\.bz|goneviral\.com|linkbucks\.com|megaline\.co|miniurls\.co|picbucks\.com|qqc\.co|rqq\.co|sasontnwc\.net|seriousdeals\.net|theseblogs\.com|tinylinks\.co|tnabucks\.com|tubeviral\.com|ultrafiles\.net|urlbeat\.net|whackyvidz\.com|yyv\.co|zff\.co)):.*@ab2p-block-xpopup@Ti
+s@^referer(?=:[^\n]*[./](?:888\.sports\.qq\.com)):.*@ab2p-unblock-dnt@Ti
+s@^referer(?=:[^\n]*[./](?:exp\.qq\.com)):.*@ab2p-unblock-dnt@Ti
+s@^referer(?=:[^\n]*[./](?:icbc\.com\.cn|igame\.qq\.com|tuan\.duba\.com)):.*@ab2p-unblock-dnt@Ti
+s@^referer(?=:[^\n]*[./](?:lol\.qq\.com)):.*@ab2p-unblock-dnt@Ti
+s@^referer(?=:[^\n]*[./](?:long7\.qq\.com)):.*@ab2p-unblock-dnt@Ti
+s@^referer(?=:[^\n]*[./](?:pisen\.com\.cn|wb\.qq\.com)):.*@ab2p-unblock-dnt@Ti
+s@^referer(?=:[^\n]*[./](?:qq\.com)):.*@ab2p-unblock-dnt@Ti
+s@^referer(?=:[^\n]*[./](?:wb\.qq\.com)):.*@ab2p-unblock-dnt@Ti
+s@^referer(?=:[^\n]*[./](?:888\.sports\.qq\.com)):.*@ab2p-unblock-elem@Ti
+s@^referer(?=:[^\n]*[./](?:exp\.qq\.com)):.*@ab2p-unblock-elem@Ti
+s@^referer(?=:[^\n]*[./](?:icbc\.com\.cn|igame\.qq\.com|tuan\.duba\.com)):.*@ab2p-unblock-elem@Ti
+s@^referer(?=:[^\n]*[./](?:lol\.qq\.com)):.*@ab2p-unblock-elem@Ti
+s@^referer(?=:[^\n]*[./](?:long7\.qq\.com)):.*@ab2p-unblock-elem@Ti
+s@^referer(?=:[^\n]*[./](?:pisen\.com\.cn|wb\.qq\.com)):.*@ab2p-unblock-elem@Ti
+s@^referer(?=:[^\n]*[./](?:qq\.com)):.*@ab2p-unblock-elem@Ti
+s@^referer(?=:[^\n]*[./](?:wb\.qq\.com)):.*@ab2p-unblock-elem@Ti
+s@^referer(?=:[^\n]*[./](?:888\.sports\.qq\.com)):.*@ab2p-unblock-request@Ti
+s@^referer(?=:[^\n]*[./](?:exp\.qq\.com)):.*@ab2p-unblock-request@Ti
+s@^referer(?=:[^\n]*[./](?:icbc\.com\.cn|igame\.qq\.com|tuan\.duba\.com)):.*@ab2p-unblock-request@Ti
+s@^referer(?=:[^\n]*[./](?:lol\.qq\.com)):.*@ab2p-unblock-request@Ti
+s@^referer(?=:[^\n]*[./](?:long7\.qq\.com)):.*@ab2p-unblock-request@Ti
+s@^referer(?=:[^\n]*[./](?:pisen\.com\.cn|wb\.qq\.com)):.*@ab2p-unblock-request@Ti
+s@^referer(?=:[^\n]*[./](?:qq\.com)):.*@ab2p-unblock-request@Ti
+s@^referer(?=:[^\n]*[./](?:wb\.qq\.com)):.*@ab2p-unblock-request@Ti
+s@^referer(?=:[^\n]*[./](?:dnf\.qq\.com)):.*@ab2p-unblock-dnt@Ti
+s@^referer(?=:[^\n]*[./](?:dnf\.qq\.com)):.*@ab2p-unblock-elem@Ti
+s@^referer(?=:[^\n]*[./](?:dnf\.qq\.com)):.*@ab2p-unblock-request@Ti
+
+
+s@^referer(?=:[^\n]*[./](?:v\.qq\.com)):.*@ab2p-block-dnt@Ti
+s@^referer(?=:[^\n]*[./](?:aknba\.com|www\.360bo\.cc|www\.jisutiyu\.com|www\.51jifenbao\.net|52waha\.com|www\.downmv\.com|www\.btshare\.net|www\.360-bo\.com|www\.jisuzhibo\.net|www\.qqzhibo\.net)):.*@ab2p-block-dnt@Ti
+s@^referer(?=:[^\n]*[./](?:potplayer\.org|cnmkv\.com|qqjishu\.net|souxue8\.net|totuwo\.com|xiaodaoyl\.com|wangyesifu\.com)):.*@ab2p-block-dnt@Ti
+s@^referer(?!:[^\n]*[./](?:gad\.qq\.com)):.*@ab2p-block-dnt@Ti
+s@^referer(?!:[^\n]*[./](?:wuxia\.qq\.com)):.*@ab2p-block-dnt@Ti
+s@^referer(?=:[^\n]*[./](?:v\.qq\.com)):.*@ab2p-block-elem@Ti
+s@^referer(?=:[^\n]*[./](?:aknba\.com|www\.360bo\.cc|www\.jisutiyu\.com|www\.51jifenbao\.net|52waha\.com|www\.downmv\.com|www\.btshare\.net|www\.360-bo\.com|www\.jisuzhibo\.net|www\.qqzhibo\.net)):.*@ab2p-block-elem@Ti
+s@^referer(?=:[^\n]*[./](?:potplayer\.org|cnmkv\.com|qqjishu\.net|souxue8\.net|totuwo\.com|xiaodaoyl\.com|wangyesifu\.com)):.*@ab2p-block-elem@Ti
+s@^referer(?!:[^\n]*[./](?:gad\.qq\.com)):.*@ab2p-block-elem@Ti
+s@^referer(?!:[^\n]*[./](?:wuxia\.qq\.com)):.*@ab2p-block-elem@Ti
+s@^referer(?=:[^\n]*[./](?:potplayer\.org|cnmkv\.com|qqjishu\.net|souxue8\.net|totuwo\.com|xiaodaoyl\.com|wangyesifu\.com)):.*@ab2p-block-request-Ai-Ci@Ti
+s@^referer(?=:[^\n]*[./](?:v\.qq\.com)):.*@ab2p-block-request@Ti
+s@^referer(?=:[^\n]*[./](?:aknba\.com|www\.360bo\.cc|www\.jisutiyu\.com|www\.51jifenbao\.net|52waha\.com|www\.downmv\.com|www\.btshare\.net|www\.360-bo\.com|www\.jisuzhibo\.net|www\.qqzhibo\.net)):.*@ab2p-block-request@Ti
+s@^referer(?!:[^\n]*[./](?:gad\.qq\.com)):.*@ab2p-block-request@Ti
+s@^referer(?!:[^\n]*[./](?:wuxia\.qq\.com)):.*@ab2p-block-request@Ti
+s@^referer(?=:[^\n]*[./](?:gamebbs\.qq\.com)):.*@ab2p-unblock-dnt@Ti
+s@^referer(?=:[^\n]*[./](?:meishichina\.com|vip\.xunlei\.com|lixian\.xunlei\.com|www\.vmall\.com|www\.1688\.com|www\.mm111\.net|jifen\.qq\.com)):.*@ab2p-unblock-dnt@Ti
+s@^referer(?=:[^\n]*[./](?:gamebbs\.qq\.com)):.*@ab2p-unblock-elem@Ti
+s@^referer(?=:[^\n]*[./](?:meishichina\.com|vip\.xunlei\.com|lixian\.xunlei\.com|www\.vmall\.com|www\.1688\.com|www\.mm111\.net|jifen\.qq\.com)):.*@ab2p-unblock-elem@Ti
+s@^referer(?=:[^\n]*[./](?:gamebbs\.qq\.com)):.*@ab2p-unblock-request@Ti
+s@^referer(?=:[^\n]*[./](?:meishichina\.com|vip\.xunlei\.com|lixian\.xunlei\.com|www\.vmall\.com|www\.1688\.com|www\.mm111\.net|jifen\.qq\.com)):.*@ab2p-unblock-request@Ti
+
+s@^referer(?=:[^\n]*[./](?:360-bo\.com|chakd\.com|kiees\.cn|kqiuba\.com|lueqiu\.com|macappbox\.com|pptiyu\.com|qqzhibo\.net)):.*@ab2p-block-dnt@Ti
+s@^referer(?=:[^\n]*[./](?:52jifenbao\.net|5ydj\.com|99ee1\.com|99re5\.com|99rr6\.com|btago\.com|btbook\.net|btshark\.org|cnmkv\.com|fulisuo1\.com|hdbiger\.org|kisssub\.org|papa1024\.com|potplayer\.org|qqhzg\.com|qqjishu\.net|ruoren\.com|souxue8\.net|totuwo\.com|xiaodao\.la|xiaodaoyl\.com|yunaw\.com)):.*@ab2p-block-dnt@Ti
+s@^referer(?=:[^\n]*[./](?:allanalpass\.com|amy\.gs|any\.gs|cash4files\.com|deb\.gs|dyo\.gs|eafyfsuh\.net|filesonthe\.net|galleries\.bz|goneviral\.com|linkbucks\.com|megaline\.co|miniurls\.co|picbucks\.com|qqc\.co|rqq\.co|sasontnwc\.net|seriousdeals\.net|theseblogs\.com|tinylinks\.co|tnabucks\.com|tubeviral\.com|ultrafiles\.net|urlbeat\.net|whackyvidz\.com|yyv\.co|zff\.co)):.*@ab2p-block-dnt@Ti
+s@^referer(?=:[^\n]*[./](?:360-bo\.com|chakd\.com|kiees\.cn|kqiuba\.com|lueqiu\.com|macappbox\.com|pptiyu\.com|qqzhibo\.net)):.*@ab2p-block-elem@Ti
+s@^referer(?=:[^\n]*[./](?:52jifenbao\.net|5ydj\.com|99ee1\.com|99re5\.com|99rr6\.com|btago\.com|btbook\.net|btshark\.org|cnmkv\.com|fulisuo1\.com|hdbiger\.org|kisssub\.org|papa1024\.com|potplayer\.org|qqhzg\.com|qqjishu\.net|ruoren\.com|souxue8\.net|totuwo\.com|xiaodao\.la|xiaodaoyl\.com|yunaw\.com)):.*@ab2p-block-elem@Ti
+s@^referer(?=:[^\n]*[./](?:allanalpass\.com|amy\.gs|any\.gs|cash4files\.com|deb\.gs|dyo\.gs|eafyfsuh\.net|filesonthe\.net|galleries\.bz|goneviral\.com|linkbucks\.com|megaline\.co|miniurls\.co|picbucks\.com|qqc\.co|rqq\.co|sasontnwc\.net|seriousdeals\.net|theseblogs\.com|tinylinks\.co|tnabucks\.com|tubeviral\.com|ultrafiles\.net|urlbeat\.net|whackyvidz\.com|yyv\.co|zff\.co)):.*@ab2p-block-elem@Ti
+s@^referer(?=:[^\n]*[./](?:360-bo\.com|chakd\.com|kiees\.cn|kqiuba\.com|lueqiu\.com|macappbox\.com|pptiyu\.com|qqzhibo\.net)):.*@ab2p-block-request@Ti
+s@^referer(?=:[^\n]*[./](?:52jifenbao\.net|5ydj\.com|99ee1\.com|99re5\.com|99rr6\.com|btago\.com|btbook\.net|btshark\.org|cnmkv\.com|fulisuo1\.com|hdbiger\.org|kisssub\.org|papa1024\.com|potplayer\.org|qqhzg\.com|qqjishu\.net|ruoren\.com|souxue8\.net|totuwo\.com|xiaodao\.la|xiaodaoyl\.com|yunaw\.com)):.*@ab2p-block-request@Ti
+s@^referer(?=:[^\n]*[./](?:allanalpass\.com|amy\.gs|any\.gs|cash4files\.com|deb\.gs|dyo\.gs|eafyfsuh\.net|filesonthe\.net|galleries\.bz|goneviral\.com|linkbucks\.com|megaline\.co|miniurls\.co|picbucks\.com|qqc\.co|rqq\.co|sasontnwc\.net|seriousdeals\.net|theseblogs\.com|tinylinks\.co|tnabucks\.com|tubeviral\.com|ultrafiles\.net|urlbeat\.net|whackyvidz\.com|yyv\.co|zff\.co)):.*@ab2p-block-request@Ti
+s@^referer(?=:[^\n]*[./](?:allanalpass\.com|amy\.gs|any\.gs|cash4files\.com|deb\.gs|dyo\.gs|eafyfsuh\.net|filesonthe\.net|galleries\.bz|goneviral\.com|linkbucks\.com|megaline\.co|miniurls\.co|picbucks\.com|qqc\.co|rqq\.co|sasontnwc\.net|seriousdeals\.net|theseblogs\.com|tinylinks\.co|tnabucks\.com|tubeviral\.com|ultrafiles\.net|urlbeat\.net|whackyvidz\.com|yyv\.co|zff\.co)):.*@ab2p-block-xpopup@Ti
+s@^referer(?=:[^\n]*[./](?:888\.sports\.qq\.com)):.*@ab2p-unblock-dnt@Ti
+s@^referer(?=:[^\n]*[./](?:exp\.qq\.com)):.*@ab2p-unblock-dnt@Ti
+s@^referer(?=:[^\n]*[./](?:icbc\.com\.cn|igame\.qq\.com|tuan\.duba\.com)):.*@ab2p-unblock-dnt@Ti
+s@^referer(?=:[^\n]*[./](?:lol\.qq\.com)):.*@ab2p-unblock-dnt@Ti
+s@^referer(?=:[^\n]*[./](?:long7\.qq\.com)):.*@ab2p-unblock-dnt@Ti
+s@^referer(?=:[^\n]*[./](?:pisen\.com\.cn|wb\.qq\.com)):.*@ab2p-unblock-dnt@Ti
+s@^referer(?=:[^\n]*[./](?:qq\.com)):.*@ab2p-unblock-dnt@Ti
+s@^referer(?=:[^\n]*[./](?:wb\.qq\.com)):.*@ab2p-unblock-dnt@Ti
+s@^referer(?=:[^\n]*[./](?:888\.sports\.qq\.com)):.*@ab2p-unblock-elem@Ti
+s@^referer(?=:[^\n]*[./](?:exp\.qq\.com)):.*@ab2p-unblock-elem@Ti
+s@^referer(?=:[^\n]*[./](?:icbc\.com\.cn|igame\.qq\.com|tuan\.duba\.com)):.*@ab2p-unblock-elem@Ti
+s@^referer(?=:[^\n]*[./](?:lol\.qq\.com)):.*@ab2p-unblock-elem@Ti
+s@^referer(?=:[^\n]*[./](?:long7\.qq\.com)):.*@ab2p-unblock-elem@Ti
+s@^referer(?=:[^\n]*[./](?:pisen\.com\.cn|wb\.qq\.com)):.*@ab2p-unblock-elem@Ti
+s@^referer(?=:[^\n]*[./](?:qq\.com)):.*@ab2p-unblock-elem@Ti
+s@^referer(?=:[^\n]*[./](?:wb\.qq\.com)):.*@ab2p-unblock-elem@Ti
+s@^referer(?=:[^\n]*[./](?:888\.sports\.qq\.com)):.*@ab2p-unblock-request@Ti
+s@^referer(?=:[^\n]*[./](?:exp\.qq\.com)):.*@ab2p-unblock-request@Ti
+s@^referer(?=:[^\n]*[./](?:icbc\.com\.cn|igame\.qq\.com|tuan\.duba\.com)):.*@ab2p-unblock-request@Ti
+s@^referer(?=:[^\n]*[./](?:lol\.qq\.com)):.*@ab2p-unblock-request@Ti
+s@^referer(?=:[^\n]*[./](?:long7\.qq\.com)):.*@ab2p-unblock-request@Ti
+s@^referer(?=:[^\n]*[./](?:pisen\.com\.cn|wb\.qq\.com)):.*@ab2p-unblock-request@Ti
+s@^referer(?=:[^\n]*[./](?:qq\.com)):.*@ab2p-unblock-request@Ti
+s@^referer(?=:[^\n]*[./](?:wb\.qq\.com)):.*@ab2p-unblock-request@Ti
+
+###########################qq end###############################
+
+###########################letv begin###############################
+s@^referer(?!:[^\n]*[./](?:www\.colafile\.com|61\.iqiyi\.com|61\.hz\.letv\.com|play\.v\.61\.com|7958\.com|www\.u148\.net|www\.redocn\.com|www\.narutom\.com|tiexue\.net|xdf\.cn)):.*@ab2p-block-dnt@Ti
+s@^referer(?!:[^\n]*[./](?:easybuy\.com\.cn|kumi\.cn|kumi\.hz\.letv\.com)):.*@ab2p-block-dnt@Ti
+s@^referer(?!:[^\n]*[./](?:letv\.com)):.*@ab2p-block-dnt@Ti
+s@^referer(?!:[^\n]*[./](?:www\.colafile\.com|61\.iqiyi\.com|61\.hz\.letv\.com|play\.v\.61\.com|7958\.com|www\.u148\.net|www\.redocn\.com|www\.narutom\.com|tiexue\.net|xdf\.cn)):.*@ab2p-block-elem@Ti
+s@^referer(?!:[^\n]*[./](?:easybuy\.com\.cn|kumi\.cn|kumi\.hz\.letv\.com)):.*@ab2p-block-elem@Ti
+s@^referer(?!:[^\n]*[./](?:letv\.com)):.*@ab2p-block-elem@Ti
+s@^referer(?!:[^\n]*[./](?:letv\.com)):.*@ab2p-block-request-Ahm-Chm@Ti
+s@^referer(?!:[^\n]*[./](?:www\.colafile\.com|61\.iqiyi\.com|61\.hz\.letv\.com|play\.v\.61\.com|7958\.com|www\.u148\.net|www\.redocn\.com|www\.narutom\.com|tiexue\.net|xdf\.cn)):.*@ab2p-block-request-Aj-Cj@Ti
+s@^referer(?!:[^\n]*[./](?:easybuy\.com\.cn|kumi\.cn|kumi\.hz\.letv\.com)):.*@ab2p-block-request@Ti
+
+###########################letv end###############################
+
+
+###########################sohu begin###############################
+s@^referer(?=:[^\n]*[./](?:17173\.com|17173\.tv\.sohu\.com)):.*@ab2p-block-dnt@Ti
+s@^referer(?=:[^\n]*[./](?:17173\.com|17173\.tv\.sohu\.com)):.*@ab2p-block-elem@Ti
+s@^referer(?=:[^\n]*[./](?:17173\.com|17173\.tv\.sohu\.com)):.*@ab2p-block-request@Ti
+###########################sohu end###############################
+
+###########################hunantv begin###############################
+
+###########################hunantv end###############################
