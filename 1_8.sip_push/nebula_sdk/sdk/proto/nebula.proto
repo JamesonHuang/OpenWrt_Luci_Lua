@@ -1,9 +1,0 @@
-package Nebula;
-
-option java_package = "com.meizu.push.proto";
-message NebulaMsg
-{
-    required string msgid = 1;          //消息id不加密不压缩
-    optional bytes  body  = 2;          //消息内容(可能加密和压缩)
-};
-
